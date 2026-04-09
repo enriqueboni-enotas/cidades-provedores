@@ -2231,7 +2231,8 @@
           h += '<span class="pr-date">' + r.data + '</span></div>';
           h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
           r.itens.forEach(function (it) {
-            h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
+            var txt = it.texto.replace(/\b(CE-\d+)\b/g, '<a href="https://hotmart.atlassian.net/browse/$1" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">$1</a>');
+            h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
           });
           h += '</div></div>';
         });
