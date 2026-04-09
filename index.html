@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidades & Provedores — app-gw</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3350;
+      --accent: #6c63ff;
+      --accent2: #00d4aa;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --text: #e2e8f0;
+      --muted: #8892a4;
+      --code-bg: #12151f;
+      --pr: #3b82f6;
+      --heading: #fff;
+    }
+
+    html.light {
+      --bg: #f4f5f7;
+      --surface: #ffffff;
+      --surface2: #eef0f4;
+      --border: #d1d5db;
+      --accent: #5b52e0;
+      --accent2: #059669;
+      --warn: #d97706;
+      --danger: #dc2626;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --code-bg: #f0f1f5;
+      --pr: #2563eb;
+      --heading: #111827;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+      min-height: 100vh;
+    }
+
+    /* TOPBAR */
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .topbar h1 {
+      font-size: 20px;
+      color: var(--heading);
+    }
+
+    .topbar .stats {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .theme-toggle {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      width: 48px;
+      height: 26px;
+      cursor: pointer;
+      position: relative;
+      transition: background .3s, border-color .3s;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle::after {
+      content: '🌙';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      transition: transform .3s, background .3s;
+    }
+
+    html.light .theme-toggle::after {
+      content: '☀️';
+      transform: translateX(22px);
+      background: var(--warn);
+    }
+
+    /* LANDING */
+    .landing {
+      max-width: 600px;
+      margin: 80px auto 0;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .landing h2 {
+      font-size: 24px;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+
+    .landing p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    .mode-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .mode-btn {
+      flex: 1;
+      max-width: 240px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 20px;
+      cursor: pointer;
+      transition: border-color .2s, transform .15s;
+      text-align: center;
+    }
+
+    .mode-btn:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .mode-btn.active {
+      border-color: var(--accent);
+      background: var(--surface2);
+    }
+
+    .mode-btn .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .mode-btn .label {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .mode-btn .desc {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* SEARCH */
+    .search-area {
+      max-width: 600px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+      display: none;
+    }
+
+    .search-area.on {
+      display: block;
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-wrap input {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      transition: border-color .2s;
+    }
+
+    .search-wrap input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-wrap input::placeholder {
+      color: var(--muted);
+    }
+
+    .ac-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      max-height: 320px;
+      overflow-y: auto;
+      z-index: 50;
+      display: none;
+    }
+
+    .ac-list.on {
+      display: block;
+    }
+
+    .ac-item {
+      padding: 12px 18px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+      transition: background .15s;
+    }
+
+    .ac-item:last-child {
+      border-bottom: none;
+    }
+
+    .ac-item:hover,
+    .ac-item.sel {
+      background: var(--surface2);
+    }
+
+    .ac-item .ac-name {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .ac-item .ac-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .ac-item mark {
+      background: transparent;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .search-hint {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    /* DETAIL */
+    #detail {
+      display: none;
+    }
+
+    #detail.on {
+      display: block;
+    }
+
+    #home.off {
+      display: none;
+    }
+
+    /* BACK BUTTON */
+    .back-btn {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background .2s, border-color .2s, color .2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: fit-content;
+      margin-bottom: 32px;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: var(--accent);
+      color: var(--heading);
+    }
+
+    html.light .back-btn {
+      background: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+
+    html.light .back-btn:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* ── DOSSIÊ HEADER ── */
+    .header {
+      background: linear-gradient(135deg, #1a1d27 0%, #12151f 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 40px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    html.light .header {
+      background: linear-gradient(135deg, #e8eaf0 0%, #dde1ea 100%);
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(108, 99, 255, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(108, 99, 255, 0.15);
+      border: 1px solid rgba(108, 99, 255, 0.3);
+      color: #a78bfa;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--heading);
+      margin-bottom: 10px;
+    }
+
+    .header h1 span {
+      color: var(--accent);
+    }
+
+    .header-meta {
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .header-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--accent);
+    }
+
+    .stat-card .value {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--heading);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title .num {
+      background: var(--accent);
+      color: var(--heading);
+      font-size: 11px;
+      font-weight: 700;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* OVERVIEW GRID */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .overview-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+
+    .overview-item .key {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .overview-item .val {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .badge-ws {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(0, 212, 170, 0.12);
+      border: 1px solid rgba(0, 212, 170, 0.3);
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .badge-robot {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* TABS */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+
+    .tab {
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+
+    .tab.active,
+    .tab:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--heading);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* TABLES */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    thead tr {
+      background: var(--surface2);
+    }
+
+    thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-top: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover {
+      background: rgba(108, 99, 255, 0.05);
+    }
+
+    tbody td {
+      padding: 10px 16px;
+      color: var(--text);
+    }
+
+    .uf-badge {
+      display: inline-block;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .uf-badge.SC {
+      border-color: #3b82f6;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    .uf-badge.RS {
+      border-color: #10b981;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    .uf-badge.PR {
+      border-color: #f59e0b;
+      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.1);
+    }
+
+    .uf-badge.MG {
+      border-color: #8b5cf6;
+      color: #a78bfa;
+      background: rgba(139, 92, 246, 0.1);
+    }
+
+    .uf-badge.SP {
+      border-color: #ef4444;
+      color: #f87171;
+      background: rgba(239, 68, 68, 0.1);
+    }
+
+    .uf-badge.RJ {
+      border-color: #06b6d4;
+      color: #22d3ee;
+      background: rgba(6, 182, 212, 0.1);
+    }
+
+    .uf-badge.GO {
+      border-color: #84cc16;
+      color: #a3e635;
+      background: rgba(132, 204, 22, 0.1);
+    }
+
+    .uf-badge.BA {
+      border-color: #f97316;
+      color: #fb923c;
+      background: rgba(249, 115, 22, 0.1);
+    }
+
+    .ibge {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* SEARCH IN TABLE */
+    .search-wrap-table {
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .search-wrap-table input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px 10px 40px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-wrap-table input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-wrap-table input::placeholder {
+      color: var(--muted);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    /* REGIME */
+    .regime-code {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .regime-ipm {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent2);
+    }
+
+    .regime-fallback {
+      color: var(--warn);
+    }
+
+    .regime-fallback .regime-ipm {
+      color: var(--warn);
+    }
+
+    /* ALERTS */
+    .alert {
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .alert-warn {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: #fcd34d;
+    }
+
+    .alert-info {
+      background: rgba(108, 99, 255, 0.08);
+      border: 1px solid rgba(108, 99, 255, 0.25);
+      color: #a78bfa;
+    }
+
+    .alert-ok {
+      background: rgba(0, 212, 170, 0.08);
+      border: 1px solid rgba(0, 212, 170, 0.25);
+      color: var(--accent2);
+    }
+
+    .alert-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* FEATURES GRID */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .feature-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    .feature-item .icon {
+      font-size: 18px;
+    }
+
+    .feature-item .feat-label {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .feature-item .feat-val {
+      font-weight: 600;
+    }
+
+    .feat-yes {
+      color: var(--accent2);
+    }
+
+    .feat-no {
+      color: var(--danger);
+    }
+
+    /* PR CARDS */
+    .pr-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pr-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pr-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--pr);
+    }
+
+    .pr-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .pr-number {
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .pr-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--heading);
+      flex: 1;
+    }
+
+    .pr-date {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .pr-meta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .pr-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .pr-meta-item .mk {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .pr-meta-item .mv {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .pr-approver {
+      color: var(--accent2);
+    }
+
+    .pr-commits {
+      margin-top: 12px;
+    }
+
+    .pr-commits-title {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .commit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12px;
+      padding: 8px 12px;
+      background: var(--code-bg);
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    .commit-sha {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .commit-msg {
+      color: var(--text);
+    }
+
+    .commit-author {
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .pr-files {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .file-tag {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* CX NOTES */
+    .cx-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cx-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      gap: 14px;
+    }
+
+    .cx-num {
+      background: var(--accent);
+      color: var(--heading);
+      font-size: 12px;
+      font-weight: 700;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .cx-title {
+      font-weight: 600;
+      color: var(--heading);
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .cx-body {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      color: var(--accent2);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── CIDADE DETAIL (legacy styles) ── */
+    .cidade-detail .g {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    @media(max-width:768px) {
+      .cidade-detail .g {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cidade-detail .c {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .cidade-detail .c h2 {
+      font-size: 16px;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cidade-detail .c.f {
+      grid-column: 1/-1;
+    }
+
+    .ir {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .ir:last-child {
+      border-bottom: none;
+    }
+
+    .il {
+      color: var(--muted);
+    }
+
+    .iv {
+      color: var(--text);
+      font-weight: 500;
+      text-align: right;
+      max-width: 60%;
+      word-break: break-all;
+    }
+
+    .ub {
+      margin-bottom: 16px;
+    }
+
+    .ub h3 {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .ui {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .ui .ul {
+      color: var(--muted);
+      font-size: 11px;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .ui .uv {
+      color: var(--accent2);
+      word-break: break-all;
+    }
+
+    .tr {
+      background: var(--code-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .tr h3 {
+      font-size: 14px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .tr p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .tr .fr {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    .et {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .et th {
+      text-align: left;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+    }
+
+    .et td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .et tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cb {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .ci {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .ci h4 {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 16px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .b-a {
+      background: #1a7f37;
+      color: #aff5b4;
+    }
+
+    .b-l {
+      background: #6e4009;
+      color: #f0c96b;
+    }
+
+    .b-r {
+      background: #1a3a5c;
+      color: #79c0ff;
+    }
+
+    .hdr {
+      border-radius: 16px;
+      padding: 32px 40px;
+      margin-bottom: 24px;
+      border: 1px solid #30365a;
+    }
+
+    .hdr h1 {
+      font-size: 28px;
+      color: var(--heading);
+      margin-bottom: 4px;
+    }
+
+    .hdr .sub {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <h1>🏙️ Cidades & Provedores</h1>
+    <div class="topbar-right">
+      <div class="stats" id="stats"></div>
+      <button class="theme-toggle" id="themeToggle" title="Alternar tema"
+        aria-label="Alternar tema claro/escuro"></button>
+    </div>
+  </div>
+
+  <div id="home">
+    <div class="landing">
+      <h2>O que deseja consultar?</h2>
+      <p>Selecione uma opção e busque por nome, código IBGE ou provedor</p>
+      <div class="mode-btns">
+        <div class="mode-btn" id="btnCidade" onclick="setMode('cidade')">
+          <div class="icon">🏙️</div>
+          <div class="label">Cidade</div>
+          <div class="desc">Busque por nome, UF ou código IBGE</div>
+        </div>
+        <div class="mode-btn" id="btnProvedor" onclick="setMode('provedor')">
+          <div class="icon">🔌</div>
+          <div class="label">Provedor</div>
+          <div class="desc">Busque por nome do provedor</div>
+        </div>
+      </div>
+    </div>
+    <div class="search-area" id="searchArea">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="" autocomplete="off">
+        <div class="ac-list" id="acList"></div>
+      </div>
+      <div class="search-hint" id="searchHint"></div>
+    </div>
+  </div>
+
+  <div id="detail">
+    <div id="dc"></div>
+  </div>
+
+  <div id="changelog"></div>
+
+  <div class="footer">Análise extraída do código-fonte do app-gw · Abril 2026</div>
+
+  <script src="Cidades/_index.js"></script>
+  <script src="Provedores/_index.js"></script>
+  <script src="changelog.js"></script>
+  <script>
+    const home = document.getElementById('home');
+    const detailEl = document.getElementById('detail');
+    const dc = document.getElementById('dc');
+    const stats = document.getElementById('stats');
+    const searchArea = document.getElementById('searchArea');
+    const searchInput = document.getElementById('searchInput');
+    const acList = document.getElementById('acList');
+    const searchHint = document.getElementById('searchHint');
+    let mode = '';
+    let acIdx = -1;
+
+    stats.textContent = cidadesIndex.length + ' cidades · ' + provedoresIndex.length + ' provedores';
+
+    function setMode(m) {
+      mode = m;
+      document.getElementById('btnCidade').classList.toggle('active', m === 'cidade');
+      document.getElementById('btnProvedor').classList.toggle('active', m === 'provedor');
+      searchArea.classList.add('on');
+      searchInput.value = '';
+      acList.innerHTML = '';
+      acList.classList.remove('on');
+      acIdx = -1;
+      if (m === 'cidade') {
+        searchInput.placeholder = 'Digite nome da cidade, UF ou código IBGE...';
+        searchHint.textContent = 'Ex: "Belo Horizonte", "SC", "3106200"';
+      } else {
+        searchInput.placeholder = 'Digite o nome do provedor...';
+        searchHint.textContent = 'Ex: "IPM", "GissOnline", "NfseNacional"';
+      }
+      searchInput.focus();
+    }
+
+    /* ── Autocomplete ── */
+    searchInput.addEventListener('input', () => { acIdx = -1; renderAc(); });
+    searchInput.addEventListener('keydown', e => {
+      const items = acList.querySelectorAll('.ac-item');
+      if (!items.length) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); acIdx = Math.min(acIdx + 1, items.length - 1); highlightAc(items); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); acIdx = Math.max(acIdx - 1, 0); highlightAc(items); }
+      else if (e.key === 'Enter' && acIdx >= 0) { e.preventDefault(); items[acIdx].click(); }
+      else if (e.key === 'Escape') { acList.classList.remove('on'); }
+    });
+    document.addEventListener('click', e => { if (!searchArea.contains(e.target)) acList.classList.remove('on'); });
+
+    function highlightAc(items) {
+      items.forEach((it, i) => it.classList.toggle('sel', i === acIdx));
+      if (items[acIdx]) items[acIdx].scrollIntoView({ block: 'nearest' });
+    }
+
+    function hl(text, q) {
+      if (!q) return text;
+      const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      return text.replace(re, '<mark>$1</mark>');
+    }
+
+    function renderAc() {
+      const q = searchInput.value.trim().toLowerCase();
+      if (!q) { acList.classList.remove('on'); acList.innerHTML = ''; return; }
+      let results = [];
+      if (mode === 'cidade') {
+        results = cidadesIndex.filter(c =>
+          c.nome.toLowerCase().includes(q) || c.uf.toLowerCase().includes(q) ||
+          c.ibge.includes(q) || (c.nome.toLowerCase() + '/' + c.uf.toLowerCase()).includes(q)
+        ).sort((a, b) => a.nome.localeCompare(b.nome)).slice(0, 15);
+        acList.innerHTML = results.map(c =>
+          '<div class="ac-item" onclick="abrirCidade(\'' + c.id + '\')">' +
+          '<div class="ac-name">' + hl(c.nome, q) + ' / ' + hl(c.uf, q) + '</div>' +
+          '<div class="ac-sub">IBGE ' + hl(c.ibge, q) + ' · ' + c.provedor + '</div></div>'
+        ).join('');
+      } else {
+        results = provedoresIndex.filter(p =>
+          p.nome.toLowerCase().includes(q) || p.empresa.toLowerCase().includes(q) ||
+          p.versoes.some(v => v.toLowerCase().includes(q))
+        ).sort((a, b) => a.nome.localeCompare(b.nome)).slice(0, 15);
+        acList.innerHTML = results.map(p =>
+          '<div class="ac-item" onclick="abrirProvedor(\'' + p.id + '\')">' +
+          '<div class="ac-name">🔌 ' + hl(p.nome, q) + '</div>' +
+          '<div class="ac-sub">' + hl(p.empresa, q) + ' · ' + p.municipios + ' municípios</div></div>'
+        ).join('');
+      }
+      if (!results.length) {
+        acList.innerHTML = '<div class="ac-item"><div class="ac-sub">Nenhum resultado encontrado</div></div>';
+      }
+      acList.classList.add('on');
+    }
+
+    /* ── Detail: Cidade ── */
+    function abrirCidade(id) {
+      var script = document.createElement('script');
+      script.src = 'Cidades/' + id + '.js';
+      script.onload = function () {
+        renderCidade(cidadeDetalhe);
+        document.head.removeChild(script);
+      };
+      script.onerror = function () {
+        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Cidades/' + id + '.js</span></div></div>';
+        home.classList.add('off'); detailEl.classList.add('on');
+        document.head.removeChild(script);
+      };
+      document.head.appendChild(script);
+    }
+
+    function renderCidade(c) {
+      let h = '';
+      var secNum = 0;
+
+      // HEADER (dossiê style)
+      h += '<div class="header">';
+      h += '<button type="button" class="back-btn" onclick="voltar()">← Voltar</button>';
+      h += '<div class="header-badge">📋 Dossiê Municipal · eNotas Gateway</div>';
+      h += '<h1><span>' + c.nome + '</span> / ' + c.uf + '</h1>';
+      h += '<div class="header-meta">';
+      h += '<span>🔢 IBGE: ' + c.ibge + '</span>';
+      h += '<span>📌 Constante: ' + c.constante + '</span>';
+      h += '<span>📅 Gerado em: março/2026</span>';
+      h += '</div></div>';
+
+      h += '<div class="container">';
+
+      // STATS BAR
+      var nTrat = c.tratamentos ? c.tratamentos.length : 0;
+      var nCaract = c.caracteristicas ? c.caracteristicas.length : 0;
+      h += '<div class="stats-bar">';
+      h += statCard(c.provedorAtual.webService ? 'WS' : 'Robô', 'Integração');
+      h += statCard(nCaract || '—', 'Características');
+      h += statCard(nTrat, 'Tratamentos');
+      h += '</div>';
+
+      // SECTION 1 — Visão Geral
+      secNum++;
+      h += '<div class="section">';
+      h += sectionTitle(secNum, 'Visão Geral do Município');
+      h += '<div class="overview-grid">';
+      h += ovItem('Município', c.nome);
+      h += ovItem('UF', '<span class="uf-badge ' + c.uf + '">' + c.uf + '</span>');
+      h += ovItem('Código IBGE', '<span class="ibge">' + c.ibge + '</span>');
+      h += ovItem('Provedor Atual', '<span class="badge-ws">⚡ ' + c.provedorAtual.nome + '</span>');
+      h += ovItem('WebService', c.provedorAtual.webService ? '<span style="color:var(--accent2)">✓ Sim</span>' : '<span style="color:var(--danger)">✗ Não</span>');
+      h += ovItem('Robô', c.provedorAtual.robo ? '<span style="color:var(--warn)">⚠ Sim</span>' : '<span class="badge-robot">✗ Não</span>');
+      if (c.provedorAtual.versaoAbrasf) h += ovItem('Versão ABRASF', c.provedorAtual.versaoAbrasf);
+      if (c.provedorAtual.namespace) h += ovItem('Namespace', '<code>' + c.provedorAtual.namespace + '</code>');
+      h += ovItem('codigoNoProvedor', c.provedorAtual.codigoNoProvedor ? '<code>' + c.provedorAtual.codigoNoProvedor + '</code>' : '<span style="color:var(--muted)">(vazio)</span>');
+      h += '</div></div>';
+
+      // SECTION — Configuração do Provedor (API)
+      if (c.configuracaoProvedor) {
+        secNum++;
+        var cfg = c.configuracaoProvedor;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Configuração do Provedor');
+
+        // Enum labels
+        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'Usuário e Senha', 'Token', 'Frase Secreta e Senha', 'Usuário, Senha e Token'];
+        var tipoAssLabels = ['Não Utiliza', 'Opcional', 'Obrigatório (Certificado Próprio)', 'Obrigatório (Certificado da Prefeitura)'];
+        var campoLoginLabels = ['Nome de Usuário', 'CNPJ', 'Inscrição Municipal'];
+
+        // Overview com enums e numéricos
+        var infoItems = [];
+        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo Autenticação', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
+        if (cfg.assinaturaDigital != null) infoItems.push({ label: 'Assinatura Digital', val: tipoAssLabels[cfg.assinaturaDigital] || cfg.assinaturaDigital });
+        if (cfg.campoLoginProvedor != null) infoItems.push({ label: 'Campo Login', val: campoLoginLabels[cfg.campoLoginProvedor] || cfg.campoLoginProvedor });
+        if (cfg.valorCancelamentoNFe != null) infoItems.push({ label: 'Prazo Cancelamento', val: cfg.valorCancelamentoNFe + ' dias' });
+        if (cfg.numeroNotasPorLote != null) infoItems.push({ label: 'Notas por Lote', val: cfg.numeroNotasPorLote });
+        if (cfg.numeroLotesParalelos != null && cfg.numeroLotesParalelos > 1) infoItems.push({ label: 'Lotes Paralelos', val: cfg.numeroLotesParalelos });
+        if (cfg.tempoEsperaParaConsultaLoteNFeEmMinutos != null) infoItems.push({ label: 'Espera Consulta Lote', val: cfg.tempoEsperaParaConsultaLoteNFeEmMinutos + ' min' });
+        if (infoItems.length) {
+          h += '<div class="overview-grid">';
+          infoItems.forEach(function (n) { h += ovItem(n.label, '<span style="color:var(--accent);font-weight:700">' + n.val + '</span>'); });
+          h += '</div>';
+        }
+
+        // Flags booleanas
+        var flags = [
+          { key: 'usaAEDF', label: 'Usa AEDF' },
+          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial Tributação' },
+          { key: 'usaCodigoServicoMunicipal', label: 'Usa Código Serviço Municipal' },
+          { key: 'usaDescricaoServico', label: 'Usa Descrição Serviço' },
+          { key: 'usaCNAE', label: 'Usa CNAE' },
+          { key: 'usaNBS', label: 'Usa NBS' },
+          { key: 'usaItemListaServico', label: 'Usa Item Lista Serviço' },
+          { key: 'usaNaturezaOperacao', label: 'Usa Natureza Operação' },
+          { key: 'usaCodigoTributacaoNacional', label: 'Usa Código Tributação Nacional' },
+          { key: 'emTransicaoNFSeNacional', label: 'Em Transição NFSe Nacional' },
+          { key: 'suportaEmissaoNFeSemCliente', label: 'Emissão sem Cliente' },
+          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'Emissão Cliente sem CPF' },
+          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
+          { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
+          { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
+          { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
+          { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
+        ];
+        h += '<div class="features-grid" style="margin-top:16px">';
+        flags.forEach(function (f) {
+          if (cfg[f.key] === undefined || cfg[f.key] === null) return;
+          var yes = cfg[f.key] === true;
+          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
+        });
+        h += '</div>';
+
+        // HelpTipoAutenticacao
+        if (cfg.helpTipoAutenticacao) {
+          var ha = cfg.helpTipoAutenticacao;
+          var haItems = ['certificadoDigital', 'usuario', 'senha', 'token', 'fraseSecreta'].filter(function (k) { return ha[k]; });
+          if (haItems.length) {
+            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Autenticação — Textos de Ajuda</h3>';
+            h += '<div class="cx-list">';
+            haItems.forEach(function (k) {
+              var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, function (s) { return s.toUpperCase(); });
+              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">🔑</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
+            });
+            h += '</div>';
+          }
+        }
+
+        // Helps
+        var helps = [
+          { key: 'helpInscricaoMunicipal', label: 'Inscrição Municipal' },
+          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial Tributação' },
+          { key: 'helpCodigoServicoMunicipal', label: 'Código Serviço Municipal' },
+          { key: 'helpDescricaoServico', label: 'Descrição Serviço' },
+          { key: 'helpCNAE', label: 'CNAE' },
+          { key: 'helpItemListaServico', label: 'Item Lista Serviço' },
+        ];
+        var hasHelps = helps.some(function (hp) { return cfg[hp.key]; });
+        if (hasHelps) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Textos de Ajuda (Help)</h3>';
+          h += '<div class="cx-list">';
+          helps.forEach(function (hp, i) {
+            if (!cfg[hp.key]) return;
+            var txt = cfg[hp.key].replace(/\\r\\n/g, '\n').replace(/\r\n/g, '\n').replace(/\n/g, '<br/>');
+            h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">?</div><div><div class="cx-title">' + hp.label + '</div><div class="cx-body">' + txt + '</div></div></div>';
+          });
+          h += '</div>';
+        }
+
+        // Regimes Especiais de Tributação
+        if (cfg.regimesEspecialTributacao && cfg.regimesEspecialTributacao.length) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de Tributação</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          cfg.regimesEspecialTributacao.forEach(function (r) {
+            h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.nome + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+        }
+
+        // Naturezas de Operação
+        if (cfg.naturezasOperacao && cfg.naturezasOperacao.length) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de Operação</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          cfg.naturezasOperacao.forEach(function (n) {
+            h += '<tr><td><span class="regime-code">' + n.codigo + '</span></td><td>' + n.nome + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+        }
+
+        h += '</div>';
+      }
+
+      // SECTION — Características
+      if (c.caracteristicas && c.caracteristicas.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Características');
+        h += '<div class="table-wrap"><table><thead><tr><th>Característica</th><th>Valor</th></tr></thead><tbody>';
+        c.caracteristicas.forEach(x => {
+          h += '<tr><td>' + x.nome + '</td><td>' + x.valor + '</td></tr>';
+        });
+        h += '</tbody></table></div></div>';
+      }
+
+      // SECTION — Tratamentos Especiais
+      if (c.tratamentos && c.tratamentos.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Tratamentos Especiais');
+        c.tratamentos.forEach((t, i) => {
+          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">📌</span><div>';
+          h += '<strong>' + (i + 1) + '. ' + t.titulo + '</strong><br/>';
+          h += '<span style="color:var(--text)">' + t.descricao + '</span>';
+          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic;margin-top:4px;display:inline-block">' + t.arquivos.map(a => '📁 ' + a).join(' · ') + '</span>';
+          h += '</div></div>';
+        });
+        h += '</div>';
+      }
+
+      // SECTION — Checklist de Configuração
+      if (c.checklistConfiguracao && c.checklistConfiguracao.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Checklist de Configuração');
+        h += '<div class="cx-list">';
+        c.checklistConfiguracao.forEach((item, i) => {
+          h += '<div class="cx-item"><div class="cx-num">✓</div><div><div class="cx-body" style="color:var(--text)">' + item + '</div></div></div>';
+        });
+        h += '</div></div>';
+      }
+
+      // SECTION — Erros Comuns
+      if (c.errosComuns && c.errosComuns.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Erros Comuns');
+        h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Descrição / Solução</th></tr></thead><tbody>';
+        c.errosComuns.forEach(e => {
+          h += '<tr><td><code>' + e.codigo + '</code></td><td>' + e.descricao + '</td></tr>';
+        });
+        h += '</tbody></table></div></div>';
+      }
+
+      // SECTION — Observações para CX
+      if (c.observacoesCX && c.observacoesCX.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Observações para CX');
+        h += '<div class="cx-list">';
+        c.observacoesCX.forEach((cx, i) => {
+          h += '<div class="cx-item"><div class="cx-num">' + (i + 1) + '</div><div><div class="cx-title">' + cx.titulo + '</div><div class="cx-body">' + cx.corpo + '</div></div></div>';
+        });
+        h += '</div></div>';
+      }
+
+      h += '</div>'; // container
+      dc.innerHTML = h;
+      home.classList.add('off'); detailEl.classList.add('on'); window.scrollTo(0, 0);
+    }
+
+    /* ── Detail: Provedor (Dossiê Layout) ── */
+    function abrirProvedor(id) {
+      var script = document.createElement('script');
+      script.src = 'Provedores/' + id + '.js';
+      script.onload = function () {
+        renderProvedor(provedorDetalhe);
+        document.head.removeChild(script);
+      };
+      script.onerror = function () {
+        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Provedores/' + id + '.js</span></div></div>';
+        home.classList.add('off'); detailEl.classList.add('on');
+        document.head.removeChild(script);
+      };
+      document.head.appendChild(script);
+    }
+
+    function renderProvedor(p) {
+      let h = '';
+
+      // HEADER
+      h += '<div class="header">';
+      h += '<button type="button" class="back-btn" onclick="voltar()">← Voltar</button>';
+      h += '<div class="header-badge">📋 Dossiê Fiscal · eNotas Gateway</div>';
+      h += '<h1>Provedor <span>' + p.nome + '</span></h1>';
+      h += '<div class="header-meta">';
+      h += '<span>📁 Fonte: enotas-org/api-gw</span>';
+      h += '<span>📅 Gerado em: março/2026</span>';
+      h += '<span>🎯 Público: Produto &amp; CX</span>';
+      h += '</div></div>';
+
+      h += '<div class="container">';
+
+      // STATS BAR
+      h += '<div class="stats-bar">';
+      h += statCard(p.stats.municipios || '—', 'Municípios');
+      var ufs = new Set();
+      if (p.municipiosLista) {
+        Object.values(p.municipiosLista).forEach(function (arr) { arr.forEach(function (m) { ufs.add(m.uf); }); });
+      }
+      h += statCard(ufs.size || '—', 'Estados');
+      h += statCard('WS', 'Tipo de Integração');
+      if (p.prs && p.prs.length) h += statCard(p.prs.length, 'PRs Recentes');
+      h += '</div>';
+
+      // SECTION — Visão Geral
+      var secNum = 0;
+      secNum++;
+      h += '<div class="section">';
+      h += sectionTitle(secNum, 'Visão Geral do Provedor');
+      if (p.visaoGeral) {
+        h += '<div class="overview-grid">';
+        p.visaoGeral.forEach(item => {
+          h += '<div class="overview-item"><div class="key">' + item.key + '</div>';
+          if (item.type === 'uf-badges') {
+            h += '<div class="val">' + item.val.map(u => '<span class="uf-badge ' + u + '">' + u + '</span> ').join('') + '</div>';
+          } else if (item.html) {
+            h += '<div class="val">' + item.val + '</div>';
+          } else if (item.style) {
+            h += '<div class="val" style="' + item.style + '">' + item.val + '</div>';
+          } else {
+            h += '<div class="val">' + item.val + '</div>';
+          }
+          h += '</div>';
+        });
+        h += '</div>';
+      }
+      h += '</div>';
+
+      // SECTION — Municípios Ativos
+      if (p.municipiosLista) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Municípios Ativos');
+        var tabs = Object.keys(p.municipiosLista);
+        h += '<div class="tabs">';
+        tabs.forEach((t, i) => {
+          var label = t.toUpperCase() + ' — ' + p.municipiosLista[t].length + ' municípios';
+          h += '<button class="tab' + (i === 0 ? ' active' : '') + '" onclick="switchProvTab(this,\'' + t + '\')">' + label + '</button>';
+        });
+        h += '</div>';
+        tabs.forEach((t, i) => {
+          h += '<div id="prov-tab-' + t + '" class="tab-content' + (i === 0 ? ' active' : '') + '">';
+          h += '<div class="search-wrap-table"><span class="search-icon">🔍</span>';
+          h += '<input type="text" id="prov-search-' + t + '" placeholder="Filtrar por município ou UF..." oninput="filterProvTable(\'' + t + '\')" /></div>';
+          h += '<div class="table-wrap"><table id="prov-table-' + t + '"><thead><tr><th>#</th><th>Município</th><th>UF</th><th>Código IBGE</th></tr></thead><tbody>';
+          p.municipiosLista[t].forEach((m, idx) => {
+            h += '<tr><td>' + (idx + 1) + '</td><td>' + m.nome + '</td><td><span class="uf-badge ' + m.uf + '">' + m.uf + '</span></td><td class="ibge">' + m.ibge + '</td></tr>';
+          });
+          h += '</tbody></table></div></div>';
+        });
+        h += '</div>';
+      }
+
+      // SECTION — Regras Fiscais (only if data exists)
+      if (p.mapeamentoRegime || p.regimesTributacao || p.features) {
+        secNum++;
+        var fiscalNum = secNum;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Regras Fiscais Implementadas');
+
+        if (p.mapeamentoRegime) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.1 Mapeamento de Regime Especial de Tributação</h3>';
+          h += '<div class="alert alert-info"><span class="alert-icon">ℹ️</span><span>O ' + p.nome + ' usa uma tabela de mapeamento <strong>própria</strong>, diferente do padrão ABRASF. O código converte o regime unificado interno da eNotas para os códigos aceitos pelo ' + p.nome + ' antes de enviar ao webservice.</span></div>';
+          h += '<div class="table-wrap" style="margin-top:12px"><table><thead><tr><th>Código Unificado eNotas</th><th>Descrição</th><th>Código ' + p.nome + ' enviado</th><th>Observação</th></tr></thead><tbody>';
+          p.mapeamentoRegime.forEach(r => {
+            h += '<tr' + (r.warn ? ' class="regime-fallback"' : '') + '>';
+            h += '<td><span class="regime-code"' + (r.warn ? ' style="color:var(--warn)"' : '') + '>' + r.enotas + '</span></td>';
+            h += '<td>' + r.desc + '</td>';
+            h += '<td><span class="regime-ipm">' + r.ipm + '</span></td>';
+            h += '<td style="color:' + (r.warn ? 'var(--warn)' : 'var(--muted)') + '">' + r.obs + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+
+          var hasWarn = p.mapeamentoRegime.some(r => r.warn);
+          if (hasWarn) {
+            h += '<div class="alert alert-warn" style="margin-top:12px"><span class="alert-icon">⚠️</span><span><strong>Atenção CX:</strong> Os códigos com fallback não têm mapeamento específico no ' + p.nome + ' e caem no código <code>0</code> (Normal). Se um cliente reclamar que o regime não está sendo enviado corretamente, isso é um <strong>comportamento esperado pelo código atual</strong>.</span></div>';
+          }
+        }
+
+        // 3.2 Regimes de Tributação
+        if (p.regimesTributacao) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.2 Tabela de Regimes do Provedor</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Descrição</th></tr></thead><tbody>';
+          p.regimesTributacao.forEach(r => {
+            h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.descricao + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+        }
+
+        // 3.3 Features
+        if (p.features) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.3 Características padrão</h3>';
+          h += '<div class="features-grid">';
+          p.features.forEach(f => {
+            var cls = f.yes ? 'feat-yes' : f.no ? 'feat-no' : '';
+            h += '<div class="feature-item"><span class="icon">' + f.icon + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + cls + '">' + f.val + '</div></div></div>';
+          });
+          h += '</div>';
+          h += '<div class="alert alert-info" style="margin-top:16px"><span class="alert-icon">💡</span><div><strong>Orientações de preenchimento para o cliente:</strong><br/>';
+          h += '<span style="color:var(--text)">• <strong>Código de Serviço Municipal:</strong> código que identifica o serviço (ex: <code>0103</code>).</span><br/>';
+          h += '<span style="color:var(--text)">• <strong>CNAE:</strong> código que identifica o serviço prestado na nota fiscal.</span><br/>';
+          h += '<span style="color:var(--text)">• <strong>Item da Lista de Serviço:</strong> manter a formatação (ex: <code>17.02</code> ou <code>8.02</code>).</span><br/>';
+          h += '<span style="color:var(--text)">• <strong>Descrição do Serviço:</strong> não é transmitida à prefeitura — usada apenas na impressão do PDF.</span></div></div>';
+        }
+        h += '</div>';
+      } // end Regras Fiscais conditional
+
+      // SECTION — Configuração do Provedor (characteristics from C#)
+      if (p.configuracaoProvedor) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Configuração do Provedor');
+        var cfg = p.configuracaoProvedor;
+
+        // Enum labels
+        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'Usuário e Senha', 'Token', 'Frase Secreta e Senha', 'Usuário, Senha e Token'];
+        var tipoAssLabels = ['Não Utiliza', 'Opcional', 'Obrigatório (Certificado Próprio)', 'Obrigatório (Certificado da Prefeitura)'];
+        var campoLoginLabels = ['Nome de Usuário', 'CNPJ', 'Inscrição Municipal'];
+
+        // Overview com enums e numéricos
+        var infoItems = [];
+        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo Autenticação', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
+        if (cfg.assinaturaDigital != null) infoItems.push({ label: 'Assinatura Digital', val: tipoAssLabels[cfg.assinaturaDigital] || cfg.assinaturaDigital });
+        if (cfg.campoLoginProvedor != null) infoItems.push({ label: 'Campo Login', val: campoLoginLabels[cfg.campoLoginProvedor] || cfg.campoLoginProvedor });
+        if (cfg.valorCancelamentoNFe != null) infoItems.push({ label: 'Prazo Cancelamento', val: cfg.valorCancelamentoNFe + ' dias' });
+        if (cfg.numeroNotasPorLote != null) infoItems.push({ label: 'Notas por Lote', val: cfg.numeroNotasPorLote });
+        if (cfg.numeroLotesParalelos != null && cfg.numeroLotesParalelos > 1) infoItems.push({ label: 'Lotes Paralelos', val: cfg.numeroLotesParalelos });
+        if (cfg.tempoEsperaParaConsultaLoteNFeEmMinutos != null) infoItems.push({ label: 'Espera Consulta Lote', val: cfg.tempoEsperaParaConsultaLoteNFeEmMinutos + ' min' });
+        if (infoItems.length) {
+          h += '<div class="overview-grid">';
+          infoItems.forEach(function (n) { h += ovItem(n.label, '<span style="color:var(--accent);font-weight:700">' + n.val + '</span>'); });
+          h += '</div>';
+        }
+
+        // Flags booleanas
+        var provFlags = [
+          { key: 'usaAEDF', label: 'Usa AEDF' },
+          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial Tributação' },
+          { key: 'usaCodigoServicoMunicipal', label: 'Usa Código Serviço Municipal' },
+          { key: 'usaDescricaoServico', label: 'Usa Descrição Serviço' },
+          { key: 'usaCNAE', label: 'Usa CNAE' },
+          { key: 'usaNBS', label: 'Usa NBS' },
+          { key: 'usaItemListaServico', label: 'Usa Item Lista Serviço' },
+          { key: 'usaNaturezaOperacao', label: 'Usa Natureza Operação' },
+          { key: 'usaCodigoTributacaoNacional', label: 'Usa Código Tributação Nacional' },
+          { key: 'emTransicaoNFSeNacional', label: 'Em Transição NFSe Nacional' },
+          { key: 'suportaEmissaoNFeSemCliente', label: 'Emissão sem Cliente' },
+          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'Emissão Cliente sem CPF' },
+          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
+          { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
+          { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
+          { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
+          { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
+          { key: 'enviaEmailCliente', label: 'Envia Email ao Cliente' },
+          { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial' },
+          { key: 'numeroLoteDeveSerSequencial', label: 'Lote Sequencial' },
+          { key: 'suportaConsultaSequencialRps', label: 'Consulta Sequencial RPS' },
+        ];
+        h += '<div class="features-grid" style="margin-top:16px">';
+        provFlags.forEach(function (f) {
+          if (cfg[f.key] === undefined || cfg[f.key] === null) return;
+          var yes = cfg[f.key] === true;
+          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
+        });
+        h += '</div>';
+
+        // HelpTipoAutenticacao
+        if (cfg.helpTipoAutenticacao) {
+          var ha = cfg.helpTipoAutenticacao;
+          var haItems = ['certificadoDigital', 'usuario', 'senha', 'token', 'fraseSecreta'].filter(function (k) { return ha[k]; });
+          if (haItems.length) {
+            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Autenticação — Textos de Ajuda</h3>';
+            h += '<div class="cx-list">';
+            haItems.forEach(function (k) {
+              var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, function (s) { return s.toUpperCase(); });
+              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">🔑</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
+            });
+            h += '</div>';
+          }
+        }
+
+        // Helps gerais
+        var helps = [
+          { key: 'helpInscricaoMunicipal', label: 'Inscrição Municipal' },
+          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial Tributação' },
+          { key: 'helpCodigoServicoMunicipal', label: 'Código Serviço Municipal' },
+          { key: 'helpDescricaoServico', label: 'Descrição Serviço' },
+          { key: 'helpCNAE', label: 'CNAE' },
+          { key: 'helpItemListaServico', label: 'Item Lista Serviço' },
+          { key: 'helpAEDF', label: 'AEDF' },
+        ];
+        var hasHelps = helps.some(function (hp) { return cfg[hp.key]; });
+        if (hasHelps) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Textos de Ajuda (Help)</h3>';
+          h += '<div class="cx-list">';
+          helps.forEach(function (hp) {
+            if (!cfg[hp.key]) return;
+            var txt = cfg[hp.key].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>');
+            h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">?</div><div><div class="cx-title">' + hp.label + '</div><div class="cx-body">' + txt + '</div></div></div>';
+          });
+          h += '</div>';
+        }
+
+        // Regimes Especiais de Tributação
+        if (cfg.regimesEspecialTributacao && cfg.regimesEspecialTributacao.length) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de Tributação</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          cfg.regimesEspecialTributacao.forEach(function (r) {
+            h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.nome + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+        }
+
+        // Naturezas de Operação
+        if (cfg.naturezasOperacao && cfg.naturezasOperacao.length) {
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de Operação</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          cfg.naturezasOperacao.forEach(function (n) {
+            h += '<tr><td><span class="regime-code">' + n.codigo + '</span></td><td>' + n.nome + '</td></tr>';
+          });
+          h += '</tbody></table></div>';
+        }
+
+        h += '</div>';
+      }
+
+      // SECTION — Regras por Município
+      if (p.tratamentosEspeciais && p.tratamentosEspeciais.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Regras Específicas por Município');
+        p.tratamentosEspeciais.forEach((t, i) => {
+          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">📌</span><div><strong>' + (i + 1) + '. ' + t.titulo + '</strong><br/><span style="color:var(--text)">' + t.descricao + '</span>';
+          if (t.municipios) h += '<br/><span style="margin-top:6px;display:inline-block">' + t.municipios.map(m => '<code>' + m + '</code>').join(' ') + '</span>';
+          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic">' + t.arquivos.map(a => '📁 ' + a).join(' · ') + '</span>';
+          h += '</div></div>';
+        });
+        h += '</div>';
+      }
+
+      // SECTION — PRs
+      if (p.prs && p.prs.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Histórico de Alterações — Últimos ' + p.prs.length + ' PRs');
+        h += '<div class="pr-list">';
+        p.prs.forEach(pr => {
+          h += '<div class="pr-card"><div class="pr-header"><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">';
+          h += '<span class="pr-number">PR #' + pr.numero + '</span>';
+          h += '<span class="pr-title">' + pr.titulo + '</span></div>';
+          h += '<span class="pr-date">📅 ' + pr.data + '</span></div>';
+          h += '<div class="pr-meta"><div class="pr-meta-item"><span class="mk">Autor</span><span class="mv">' + pr.autor + '</span></div>';
+          h += '<div class="pr-meta-item"><span class="mk">Aprovadores</span><span class="mv' + (pr.aprovadores ? ' pr-approver' : '') + '">' + (pr.aprovadores || '<span style="color:var(--muted);font-style:italic">Nenhum registrado</span>') + '</span></div></div>';
+          h += '<div class="pr-files">' + pr.arquivos.map(f => '<span class="file-tag">' + f + '</span>').join('') + '</div>';
+          h += '<div class="pr-commits"><div class="pr-commits-title">Commits</div>';
+          pr.commits.forEach(c => {
+            h += '<div class="commit-item"><span class="commit-sha">' + c.sha + '</span><span class="commit-msg">' + c.msg + '</span><span class="commit-author">— ' + c.autor + '</span></div>';
+          });
+          h += '</div></div>';
+        });
+        h += '</div></div>';
+      }
+
+      // SECTION — CX Notes
+      if (p.observacoesCX && p.observacoesCX.length) {
+        secNum++;
+        h += '<div class="section">';
+        h += sectionTitle(secNum, 'Observações para CX');
+        h += '<div class="cx-list">';
+        p.observacoesCX.forEach((cx, i) => {
+          h += '<div class="cx-item"><div class="cx-num">' + (i + 1) + '</div><div><div class="cx-title">' + cx.titulo + '</div><div class="cx-body">' + cx.corpo + '</div></div></div>';
+        });
+        h += '</div></div>';
+      }
+
+      h += '</div>'; // container
+      dc.innerHTML = h;
+      home.classList.add('off'); detailEl.classList.add('on'); window.scrollTo(0, 0);
+    }
+
+    /* ── Provedor Tab/Filter helpers ── */
+    function switchProvTab(btn, tab) {
+      btn.closest('.section').querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      btn.closest('.section').querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.getElementById('prov-tab-' + tab).classList.add('active');
+    }
+    function filterProvTable(tab) {
+      var input = document.getElementById('prov-search-' + tab).value.toLowerCase();
+      var rows = document.querySelectorAll('#prov-table-' + tab + ' tbody tr');
+      rows.forEach(row => { row.style.display = row.textContent.toLowerCase().includes(input) ? '' : 'none'; });
+    }
+
+    /* ── Helpers ── */
+    function voltar() { detailEl.classList.remove('on'); home.classList.remove('off'); window.scrollTo(0, 0); }
+    function row(l, v) { return '<div class="ir"><span class="il">' + l + '</span><span class="iv">' + v + '</span></div>'; }
+    function statCard(val, label) { return '<div class="stat-card"><div class="value">' + val + '</div><div class="label">' + label + '</div></div>'; }
+    function sectionTitle(num, text) { return '<div class="section-title"><span class="num">' + num + '</span> ' + text + '</div>'; }
+    function ovItem(key, val) { return '<div class="overview-item"><div class="key">' + key + '</div><div class="val">' + val + '</div></div>'; }
+    function buildUrlSection(title, urls) {
+      var h = '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:12px 0 8px;text-transform:uppercase;letter-spacing:0.06em">' + title + '</h3>';
+      ['homologacao', 'producao'].forEach(amb => {
+        if (!urls || !urls[amb]) return;
+        h += '<div style="margin-bottom:12px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">' + (amb === 'homologacao' ? 'Homologação' : 'Produção') + '</div>';
+        Object.entries(urls[amb]).forEach(([k, v]) => {
+          var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase());
+          h += '<div style="background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin-bottom:4px;font-size:12px"><span style="color:var(--muted);font-size:11px;display:block;margin-bottom:2px">' + label + '</span><code style="border:none;background:none;padding:0;color:var(--accent2);font-size:12px">' + v + '</code></div>';
+        });
+        h += '</div>';
+      });
+      return h;
+    }
+    function urlBlock(title, urls) {
+      var h = '<div class="ci"><h4>' + title + '</h4>';
+      ['homologacao', 'producao'].forEach(amb => {
+        if (!urls[amb]) return;
+        h += '<div class="ub"><h3>' + (amb === 'homologacao' ? 'Homologação' : 'Produção') + '</h3>';
+        Object.entries(urls[amb]).forEach(([k, v]) => {
+          var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase());
+          h += '<div class="ui"><span class="ul">' + label + '</span><span class="uv">' + v + '</span></div>';
+        });
+        h += '</div>';
+      });
+      return h + '</div>';
+    }
+
+    /* ── Changelog ── */
+    (function () {
+      if (typeof changelogData === 'undefined' || !changelogData.length) return;
+      var el = document.getElementById('changelog');
+      var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
+      h += '<div class="section-title" style="font-size:20px;cursor:pointer" id="cl-toggle">';
+      h += '📋 Últimas Alterações no app-gw <span style="font-size:12px;color:var(--muted);margin-left:8px">(' + changelogData[changelogData.length - 1].data + ' – ' + changelogData[0].data + ') — clique para expandir</span></div>';
+      h += '<div id="cl-content" style="display:none"><div class="pr-list">';
+      changelogData.forEach(function (r) {
+        h += '<div class="pr-card"><div class="pr-header">';
+        h += '<span class="pr-number">' + r.tag + '</span>';
+        h += '<span class="pr-title">' + r.titulo + '</span>';
+        h += '<span class="pr-date">' + r.data + '</span></div>';
+        h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+        r.itens.forEach(function (it) {
+          h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
+        });
+        h += '</div></div>';
+      });
+      h += '</div></div></div>';
+      el.innerHTML = h;
+      document.getElementById('cl-toggle').addEventListener('click', function () {
+        var c = document.getElementById('cl-content');
+        c.style.display = c.style.display === 'none' ? 'block' : 'none';
+      });
+    })();
+
+    /* ── Theme Toggle ── */
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light') document.documentElement.classList.add('light');
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        document.documentElement.classList.toggle('light');
+        localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+
+</html>

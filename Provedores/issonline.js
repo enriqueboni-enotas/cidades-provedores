@@ -1,0 +1,62 @@
+﻿var provedorDetalhe = {
+  id: 'issonline',
+  nome: 'ISSOnline',
+  empresa: 'ISSOnline',
+  stats: {
+    municipios: 6
+  },
+  visaoGeral: [
+    { key: 'Nome', val: 'ISSOnline' },
+    { key: 'Total Municipios', val: '6' },
+    { key: 'Estados Atendidos', val: ['SP', 'PR'], type: 'uf-badges' }
+  ],
+  configuracaoProvedor: {
+    tipoAutenticacao: 2,
+    assinaturaDigital: 0,
+    helpTipoAutenticacao: {
+      certificadoDigital: null,
+      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
+      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
+      token: null,
+      fraseSecreta: null
+    },
+    suportaCancelamentoNFe: true,
+    valorCancelamentoNFe: 30,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: true,
+    usaCodigoServicoMunicipal: true,
+    usaDescricaoServico: true,
+    usaCNAE: false,
+    usaItemListaServico: false,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos formatado com um ponto.\r\nExemplo válido: 08.02',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
+    suportaEmissaoNFeSemCliente: false,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
+    suportaCancelamentoNFeClienteSemCpf: true,
+    enviaEmailCliente: false,
+    regimesEspecialTributacao: [
+      { codigo: '0', nome: ' - ' },
+      { codigo: '1', nome: 'Microempresa Municipal' },
+      { codigo: '2', nome: 'Estimativa' },
+      { codigo: '3', nome: 'Sociedade de Profissionais' },
+      { codigo: '4', nome: 'Cooperativa' },
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+    ]
+  },
+  municipiosLista: {
+    'issonline': [
+      { nome: 'Apiaí', uf: 'SP', ibge: '3502705' },
+      { nome: 'Bilac', uf: 'SP', ibge: '3506409' },
+      { nome: 'Iguaraçu', uf: 'PR', ibge: '4110003' },
+      { nome: 'Salto de Pirapora', uf: 'SP', ibge: '3545308' },
+      { nome: 'Santa Cruz das Palmeiras', uf: 'SP', ibge: '3546306' },
+      { nome: 'Valparaíso', uf: 'SP', ibge: '3556305' }
+    ]
+  }
+};
+
