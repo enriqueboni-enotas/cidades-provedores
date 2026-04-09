@@ -3,12 +3,12 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 217
+    municipios: 215
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '217' },
-    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'RJ', 'AP', 'GO', 'AM', 'PB', 'AL', 'RS', 'BA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '215' },
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'PE', 'MA', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'PB', 'AL', 'RS', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -88,7 +88,6 @@
       { nome: 'Cambuí', uf: 'MG', ibge: '3110608' },
       { nome: 'Canaã dos Carajás', uf: 'PA', ibge: '1502152' },
       { nome: 'Cândido Mota', uf: 'SP', ibge: '3510005' },
-      { nome: 'Capela do Alto', uf: 'SP', ibge: '3510302' },
       { nome: 'Capinzal do Norte', uf: 'MA', ibge: '2102754' },
       { nome: 'Capitólio', uf: 'MG', ibge: '3112802' },
       { nome: 'Carmo do Rio Claro', uf: 'MG', ibge: '3114402' },
@@ -130,7 +129,6 @@
       { nome: 'Itaberá', uf: 'SP', ibge: '3521705' },
       { nome: 'Itacoatiara', uf: 'AM', ibge: '1301902' },
       { nome: 'Itaí', uf: 'SP', ibge: '3521804' },
-      { nome: 'Itaituba', uf: 'PA', ibge: '1503606' },
       { nome: 'Itajobi', uf: 'SP', ibge: '3521903' },
       { nome: 'Itambé', uf: 'PE', ibge: '2607653' },
       { nome: 'Itapecerica', uf: 'MG', ibge: '3133501' },

@@ -5,20 +5,18 @@
   ibge: '3513108',
   constante: 'CodigoIBGE.CravinhosSP',
   provedorAtual: {
-    nome: 'PrimaxOnline',
+    nome: 'FgMaiss',
     namespace: null,
-    codigoNoProvedor: '45.228.319/0001-07',
+    codigoNoProvedor: '45228319000107',
     robo: false,
     webService: true,
-    infoAdicional: 'codigonoprovedor é Cnpj prefeitura',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfe_teste_homologacao.php'
       },
       producao: {
-        recepcaoLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfeenvia.php',
-        consultaLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfeconsulta.php',
-        cancelamentoNFe: 'https://www.primaxonline.com.br/issqn/wservice/wsnfecancela.php'
+        recepcaoLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfeenviapn.php',
+        consultaLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfeconsultaxmlpn.php',
+        cancelamentoNFe: 'https://www.primaxonline.com.br/issqn/wservice/wsnfecancelapn.php'
       }
     }
   },
@@ -27,9 +25,9 @@
     assinaturaDigital: 0,
     helpTipoAutenticacao: {
       certificadoDigital: null,
-      usuario: null,
-      senha: null,
-      token: 'Sua prefeitura exige utilização de usuário e senha',
+      usuario: 'Informe o usuário de acesso ao portal de NFS-e da prefeitura.',
+      senha: 'Informe a senha de acesso ao portal de NFS-e da prefeitura.',
+      token: null,
       fraseSecreta: null
     },
     suportaCancelamentoNFe: true,
@@ -37,26 +35,20 @@
     usaAEDF: false,
     usaRegimeEspecialTributacao: false,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: false,
+    usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 9 dígitos (somente números).\r\nExemplo válido: 631940000',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente de 4 a 5 dígitos formatado com um ponto.\r\nExemplo válido: 8.02 ou 12.11',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
+    suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
-    suportaConsultaSequencialRps: true,
-    naturezasOperacao: [
-      { codigo: '1', nome: '1 – Imune' },
-      { codigo: '2', nome: '2 – Isento' },
-      { codigo: '3', nome: '3 – Tributável' },
-      { codigo: '4', nome: '4 – Exigibilidade suspensa' }
-    ]
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0
   }
 };
 

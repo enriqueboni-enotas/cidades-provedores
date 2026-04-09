@@ -5,66 +5,73 @@
   ibge: '4303400',
   constante: 'CodigoIBGE.CaicaraRS',
   provedorAtual: {
-    nome: 'BethaV2',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
+    nome: 'IPM',
+    namespace: null,
     codigoNoProvedor: null,
     robo: false,
     webService: true,
-    versaoAbrasf: '2.02',
-    infoAdicional: 'cadastro empresa:\n					naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior\n\n					Propriedades do provedor: UsaBethav2Cloud: Usa metodo assincrono',
     urls: {
       homologacao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-test-ws/nfseWS'
+        recepcaoLote: 'System.Xml.XmlElement'
       },
       producao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-ws/nfseWS'
+        recepcaoLote: 'System.Xml.XmlElement',
+        consultaRps: 'System.Xml.XmlElement',
+        downloadPDF: 'C:\tools\Html2Pdf\bin\wkhtmltopdf.exe'
       }
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 2,
     helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: null,
-      senha: null,
+      certificadoDigital: null,
+      usuario: 'Sua prefeitura exige a utilização de usuário e senha para autenticação durante a transmissão das suas notas fiscais.',
+      senha: 'Sua prefeitura exige a utilização de usuário e senha para autenticação durante a transmissão das suas notas fiscais.',
       token: null,
       fraseSecreta: null
     },
-    valorCancelamentoNFe: 60,
-    usaItemListaServico: false,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 0801 ou 0108',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
+    campoLoginProvedor: 1,
+    valorCancelamentoNFe: 0,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: true,
+    usaCodigoServicoMunicipal: true,
+    usaDescricaoServico: true,
+    usaNBS: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\r\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      UsaCnpjPrestador: true,
+      UsaChaveAcesso: false,
+      UsaCnpjPrestador: false,
       UsaCodigoVerificacao: true,
-      UsaNumeroNota: true
+      UsaCpfCnpjTomador: false,
+      UsaInscricaoMunicipalPrestador: false,
+      UsaNumeroNota: false,
+      UsaValorNota: false
     },
     regimesEspecialTributacao: [
-      { codigo: '0', nome: ' - ' },
-      { codigo: '1', nome: 'Microempresa Municipal' },
-      { codigo: '2', nome: 'Estimativa' },
-      { codigo: '3', nome: 'Sociedade de Profissionais' },
-      { codigo: '4', nome: 'Cooperativa' },
-      { codigo: '5', nome: 'MEI - Simples Nacional' },
-      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+      { codigo: '0', nome: 'Tributada Integralmente' },
+      { codigo: '1', nome: 'Tributada Integralmente com ISSRF' },
+      { codigo: '2', nome: 'Tributada Integralmente e sujeita à Substituição Tributária' },
+      { codigo: '3', nome: 'Tributada com redução da base de cálculo' },
+      { codigo: '4', nome: 'Tributada com redução da base de cálculo com ISSRF' },
+      { codigo: '5', nome: 'Tributada com redução da base de cálculo e sujeita à Substituição Tributária' },
+      { codigo: '6', nome: 'Isenta' },
+      { codigo: '7', nome: 'Imune' },
+      { codigo: '8', nome: 'Não Tributada - ISS regime Fixo' },
+      { codigo: '9', nome: 'Não Tributada - ISS regime Estimativa' },
+      { codigo: '10', nome: 'Não Tributada - ISS Construção Civil recolhido antecipadamente' },
+      { codigo: '14', nome: 'Não tributada' },
+      { codigo: '15', nome: 'Não Tributada - Ato Cooperado' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Exigível' },
-      { codigo: '2', nome: 'Não incidência' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Exportação' },
-      { codigo: '5', nome: 'Imunidade' },
-      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
+      { codigo: 'S', nome: 'Tributação no municipio' },
+      { codigo: 'N', nome: 'Tributação fora do municipio' }
     ]
   }
 };

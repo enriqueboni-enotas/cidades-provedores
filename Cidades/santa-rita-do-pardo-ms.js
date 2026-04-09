@@ -17,7 +17,7 @@
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://177.190.74.214:8085/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'http://177.190.74.214:8090/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

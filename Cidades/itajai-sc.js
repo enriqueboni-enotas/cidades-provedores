@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'Publica',
     namespace: 'http://www.publica.inf.br',
-    codigoNoProvedor: 'UsaProxy; UsaPdfPrefeitura; NaoEnviaOutrasRetencoesZerada',
+    codigoNoProvedor: 'UsaProxy; UsaPdfPrefeitura; NaoEnviaOutrasRetencoesZerada, UsaCodigoNBS',
     robo: false,
     webService: true,
     urls: {

@@ -3,11 +3,11 @@
   nome: 'GissOnline',
   empresa: 'GissOnline',
   stats: {
-    municipios: 19
+    municipios: 20
   },
   visaoGeral: [
     { key: 'Nome', val: 'GissOnline' },
-    { key: 'Total Municipios', val: '19' },
+    { key: 'Total Municipios', val: '20' },
     { key: 'Estados Atendidos', val: ['SP', 'PE', 'RJ', 'PR', 'GO', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,6 +61,7 @@
       { nome: 'Guarujá', uf: 'SP', ibge: '3518701' },
       { nome: 'Itu', uf: 'SP', ibge: '3523909' },
       { nome: 'Jaboticabal', uf: 'SP', ibge: '3524303' },
+      { nome: 'Jardinópolis', uf: 'SP', ibge: '3525102' },
       { nome: 'Jundiaí', uf: 'SP', ibge: '3525904' },
       { nome: 'Maceió', uf: 'AL', ibge: '2704302' },
       { nome: 'Matão', uf: 'SP', ibge: '3529302' },

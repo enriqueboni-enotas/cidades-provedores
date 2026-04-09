@@ -7,13 +7,13 @@
   provedorAtual: {
     nome: 'DBSellerv2',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaVersao204AtualizadaSapirangaRS, NaoEnviaCodigoPais',
     robo: false,
     webService: true,
     versaoAbrasf: '2.04',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://nfse.sapiranga.rs.gov.br/webservice/index/homologacao'
+        recepcaoLote: 'https://hom.nfse.sapiranga.rs.gov.br/webservice/index/homologacao'
       },
       producao: {
         recepcaoLote: 'https://nfse.sapiranga.rs.gov.br/webservice/index/producao'

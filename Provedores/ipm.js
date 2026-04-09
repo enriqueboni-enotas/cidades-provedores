@@ -3,12 +3,12 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 109
+    municipios: 111
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '109' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '111' },
+    { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -79,6 +79,7 @@
       { nome: 'Bom Retiro', uf: 'SC', ibge: '4202602' },
       { nome: 'Bombinhas', uf: 'SC', ibge: '4202453' },
       { nome: 'Cachoeirinha', uf: 'RS', ibge: '4303103' },
+      { nome: 'Caiçara', uf: 'RS', ibge: '4303400' },
       { nome: 'Campo Largo', uf: 'PR', ibge: '4104204' },
       { nome: 'Campo Mourão', uf: 'PR', ibge: '4104303' },
       { nome: 'Campo Novo', uf: 'RS', ibge: '4304002' },
@@ -101,6 +102,7 @@
       { nome: 'Guaíra', uf: 'PR', ibge: '4108809' },
       { nome: 'Guaramirim', uf: 'SC', ibge: '4206504' },
       { nome: 'Guarapuava', uf: 'PR', ibge: '4109401' },
+      { nome: 'Guarujá do Sul', uf: 'SC', ibge: '4206603' },
       { nome: 'Horizontina', uf: 'RS', ibge: '4309605' },
       { nome: 'Ibirama', uf: 'SC', ibge: '4206900' },
       { nome: 'Igrejinha', uf: 'RS', ibge: '4310108' },

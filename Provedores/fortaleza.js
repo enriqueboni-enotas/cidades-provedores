@@ -14,6 +14,12 @@
     suportaCancelamentoNFe: true,
     usaCNAE: false,
     numeroNotasPorLote: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://iss.fortaleza.ce.gov.br/grpfor/pagesPublic/validarNota.seam',
+      UsaCnpjPrestador: true,
+      UsaCodigoVerificacao: true,
+      UsaNumeroNota: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

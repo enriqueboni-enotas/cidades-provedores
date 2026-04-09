@@ -3,11 +3,11 @@
   nome: 'Tecnos',
   empresa: 'Tecnos',
   stats: {
-    municipios: 30
+    municipios: 29
   },
   visaoGeral: [
     { key: 'Nome', val: 'Tecnos' },
-    { key: 'Total Municipios', val: '30' },
+    { key: 'Total Municipios', val: '29' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -43,7 +43,6 @@
   municipiosLista: {
     'tecnos': [
       { nome: 'Anta Gorda', uf: 'RS', ibge: '4300703' },
-      { nome: 'Arroio do Meio', uf: 'RS', ibge: '4301008' },
       { nome: 'Bom Princípio', uf: 'RS', ibge: '4302352' },
       { nome: 'Bom Retiro do Sul', uf: 'RS', ibge: '4302402' },
       { nome: 'Cidreira', uf: 'RS', ibge: '4305454' },

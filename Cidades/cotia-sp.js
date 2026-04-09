@@ -15,10 +15,10 @@
       },
       producao: {
         autenticacao: 'https://nfse.cotia.sp.gov.br/ords/cotia/f?p=198:101',
-        recepcaoLote: 'http://webservice.giap.com.br/WSNfsesCotia/nfseresources/ws/v2/emissao',
+        recepcaoLote: 'https://nfse.cotia.sp.gov.br/ords/cotia/ws/nfe/emitir_nfe',
         consultaRps: 'https://nfse.cotia.sp.gov.br/ords/cotia/',
-        consultaNFe: 'http://webservice.giap.com.br/WSNfsesCotia/nfseresources/ws/consulta',
-        cancelamentoNFe: 'http://webservice.giap.com.br/WSNfsesCotia/nfseresources/ws/v2/cancela'
+        consultaNFe: 'https://nfse.cotia.sp.gov.br/ords/cotia/ws/nfe/consulta_nota',
+        cancelamentoNFe: 'https://nfse.cotia.sp.gov.br/ords/cotia/ws/nfe/cancelar_nota'
       }
     }
   },

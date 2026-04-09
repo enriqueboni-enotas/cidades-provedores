@@ -3,11 +3,11 @@
   nome: 'PrimaxOnline',
   empresa: 'PrimaxOnline',
   stats: {
-    municipios: 4
+    municipios: 3
   },
   visaoGeral: [
     { key: 'Nome', val: 'PrimaxOnline' },
-    { key: 'Total Municipios', val: '4' },
+    { key: 'Total Municipios', val: '3' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -48,7 +48,6 @@
   },
   municipiosLista: {
     'primaxonline': [
-      { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' },
       { nome: 'Guariba', uf: 'SP', ibge: '3518602' },
       { nome: 'Ituverava', uf: 'SP', ibge: '3524105' },
       { nome: 'Serrana', uf: 'SP', ibge: '3551504' }

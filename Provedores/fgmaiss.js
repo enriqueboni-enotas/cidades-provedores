@@ -3,11 +3,11 @@
   nome: 'FgMaiss',
   empresa: 'FgMaiss',
   stats: {
-    municipios: 9
+    municipios: 10
   },
   visaoGeral: [
     { key: 'Nome', val: 'FgMaiss' },
-    { key: 'Total Municipios', val: '9' },
+    { key: 'Total Municipios', val: '10' },
     { key: 'Estados Atendidos', val: ['SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -46,6 +46,7 @@
       { nome: 'Avanhandava', uf: 'SP', ibge: '3504404' },
       { nome: 'Barra Bonita', uf: 'SP', ibge: '3505302' },
       { nome: 'Buritama', uf: 'SP', ibge: '3508108' },
+      { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' },
       { nome: 'Igaraçu do Tietê', uf: 'SP', ibge: '3520004' },
       { nome: 'Luís Antônio', uf: 'SP', ibge: '3527603' },
       { nome: 'Porangaba', uf: 'SP', ibge: '3540507' },

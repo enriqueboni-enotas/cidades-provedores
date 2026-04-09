@@ -12,7 +12,7 @@
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        recepcaoLote: 'https://reformatributaria.cidade360.cloud/NFSe.Api.Teste/NotaNacional',
         consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },

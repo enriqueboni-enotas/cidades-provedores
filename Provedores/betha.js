@@ -3,12 +3,12 @@
   nome: 'Betha',
   empresa: 'Betha',
   stats: {
-    municipios: 5
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'Betha' },
-    { key: 'Total Municipios', val: '5' },
-    { key: 'Estados Atendidos', val: ['MS', 'RS', 'PR', 'SC'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '2' },
+    { key: 'Estados Atendidos', val: ['PR', 'RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -61,10 +61,7 @@
   },
   municipiosLista: {
     'betha': [
-      { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
-      { nome: 'Guarujá do Sul', uf: 'SC', ibge: '4206603' },
       { nome: 'Jaguariaíva', uf: 'PR', ibge: '4112009' },
-      { nome: 'Rio Verde de Mato Grosso', uf: 'MS', ibge: '5007406' },
       { nome: 'São Pedro do Sul', uf: 'RS', ibge: '4319406' }
     ]
   }

@@ -3,12 +3,12 @@
   nome: 'Siafic',
   empresa: 'Siafic',
   stats: {
-    municipios: 12
+    municipios: 13
   },
   visaoGeral: [
     { key: 'Nome', val: 'Siafic' },
-    { key: 'Total Municipios', val: '12' },
-    { key: 'Estados Atendidos', val: ['SE', 'BA', 'AL'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '13' },
+    { key: 'Estados Atendidos', val: ['SE', 'AL', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -51,16 +51,17 @@
   },
   municipiosLista: {
     'siafic': [
-      { nome: 'Boca da Mata', uf: 'AL', ibge: '2701001' },
       { nome: 'Itabaianinha', uf: 'SE', ibge: '2803005' },
       { nome: 'Matriz de Camaragibe', uf: 'AL', ibge: '2705101' },
       { nome: 'Neópolis', uf: 'SE', ibge: '2804409' },
       { nome: 'Nossa Senhora das Dores', uf: 'SE', ibge: '2804607' },
       { nome: 'Nossa Senhora de Lourdes', uf: 'SE', ibge: '2804706' },
+      { nome: 'Pão de Açúcar', uf: 'AL', ibge: '2706406' },
       { nome: 'Poço Verde', uf: 'SE', ibge: '2805505' },
       { nome: 'Salgado', uf: 'SE', ibge: '2806206' },
       { nome: 'Santa Luzia do Itanhy', uf: 'SE', ibge: '2806305' },
       { nome: 'Santo Amaro', uf: 'BA', ibge: '2928604' },
+      { nome: 'São Luis do Quitunde', uf: 'AL', ibge: '2708501' },
       { nome: 'Simão Dias', uf: 'SE', ibge: '2807105' },
       { nome: 'Xique-Xique', uf: 'BA', ibge: '2933604' }
     ]

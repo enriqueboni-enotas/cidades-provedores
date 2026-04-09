@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 73
+    municipios: 74
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '73' },
+    { key: 'Total Municipios', val: '74' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -105,6 +105,7 @@
       { nome: 'Mimoso do Sul', uf: 'ES', ibge: '3203403' },
       { nome: 'Montanha', uf: 'ES', ibge: '3203502' },
       { nome: 'Monte Santo de Minas', uf: 'MG', ibge: '3143203' },
+      { nome: 'Nanuque', uf: 'MG', ibge: '3144300' },
       { nome: 'Nova Resende', uf: 'MG', ibge: '3145109' },
       { nome: 'Nova Venécia', uf: 'ES', ibge: '3203908' },
       { nome: 'Pedro Canário', uf: 'ES', ibge: '3204054' },

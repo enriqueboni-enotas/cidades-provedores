@@ -53,7 +53,8 @@
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     naturezasOperacao: [
       { codigo: '1', nome: 'Tributação no municipio' },
-      { codigo: '2', nome: 'Tributação fora do municipio' }
+      { codigo: '2', nome: 'Tributação fora do municipio' },
+      { codigo: '3', nome: 'Tributação fora do país' }
     ]
   }
 };

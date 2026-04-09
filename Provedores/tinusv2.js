@@ -3,18 +3,17 @@
   nome: 'TinusV2',
   empresa: 'TinusV2',
   stats: {
-    municipios: 32
+    municipios: 33
   },
   visaoGeral: [
     { key: 'Nome', val: 'TinusV2' },
-    { key: 'Total Municipios', val: '32' },
+    { key: 'Total Municipios', val: '33' },
     { key: 'Estados Atendidos', val: ['RN', 'PE', 'PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
     usaCodigoServicoMunicipal: true,
-    usaCNAE: false,
     usaNBS: true,
     usaItemListaServico: true,
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
@@ -70,6 +69,7 @@
       { nome: 'Santa Cruz do Capibaribe', uf: 'PE', ibge: '2612505' },
       { nome: 'São Gonçalo do Amarante', uf: 'RN', ibge: '2412005' },
       { nome: 'São José de Mipibu', uf: 'RN', ibge: '2412203' },
+      { nome: 'Serra do Mel', uf: 'RN', ibge: '2413359' },
       { nome: 'Serra Talhada', uf: 'PE', ibge: '2613909' },
       { nome: 'Sousa', uf: 'PB', ibge: '2516201' },
       { nome: 'Touros', uf: 'RN', ibge: '2414407' },

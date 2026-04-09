@@ -12,6 +12,7 @@
     webService: true,
     urls: {
       homologacao: {
+        recepcaoLote: 'https://nfse-sis.cabofrio.rj.gov.br/homologacao/webservices/NFEServices.jws'
       },
       producao: {
         recepcaoLote: 'https://nfse-sis.cabofrio.rj.gov.br/ver20240921/webservices/NFEServices.jws'

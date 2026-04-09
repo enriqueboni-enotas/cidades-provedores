@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 76
+    municipios: 77
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '76' },
+    { key: 'Total Municipios', val: '77' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -68,6 +68,7 @@
       { nome: 'Boituva', uf: 'SP', ibge: '3507001' },
       { nome: 'Cachoeira do Sul', uf: 'RS', ibge: '4303004' },
       { nome: 'Caeté', uf: 'MG', ibge: '3110004' },
+      { nome: 'Canguçu', uf: 'RS', ibge: '4304507' },
       { nome: 'Caratinga', uf: 'MG', ibge: '3113404' },
       { nome: 'Chopinzinho', uf: 'PR', ibge: '4105409' },
       { nome: 'Conchas', uf: 'SP', ibge: '3512308' },

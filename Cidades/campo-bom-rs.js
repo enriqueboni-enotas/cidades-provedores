@@ -35,6 +35,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos (somente números).\r\nExemplo válido: 548',

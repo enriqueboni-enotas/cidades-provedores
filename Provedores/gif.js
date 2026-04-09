@@ -3,11 +3,11 @@
   nome: 'GIF',
   empresa: 'GIF',
   stats: {
-    municipios: 9
+    municipios: 8
   },
   visaoGeral: [
     { key: 'Nome', val: 'GIF' },
-    { key: 'Total Municipios', val: '9' },
+    { key: 'Total Municipios', val: '8' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -27,6 +27,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos (somente números).\r\nExemplo válido: 548',
@@ -51,7 +52,6 @@
       { nome: 'Campo Bom', uf: 'RS', ibge: '4303905' },
       { nome: 'Canoas', uf: 'RS', ibge: '4304606' },
       { nome: 'Carlos Barbosa', uf: 'RS', ibge: '4304804' },
-      { nome: 'Caxias do Sul', uf: 'RS', ibge: '4305108' },
       { nome: 'Farroupilha', uf: 'RS', ibge: '4307906' },
       { nome: 'Garibaldi', uf: 'RS', ibge: '4308607' },
       { nome: 'Santiago', uf: 'RS', ibge: '4317400' },

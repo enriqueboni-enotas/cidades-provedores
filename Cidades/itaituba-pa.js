@@ -5,39 +5,55 @@
   ibge: '1503606',
   constante: 'CodigoIBGE.ItaitubaPA',
   provedorAtual: {
-    nome: 'Fiorilli',
+    nome: 'CoplanV2',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: 'UsaCodigoServicoMunicipal, UsaCNAE',
+    codigoNoProvedor: null,
     robo: false,
     webService: true,
-    versaoAbrasf: '2.02',
-    infoAdicional: 'Validar as propriedades para configurar o provedor no xml\n					NaoSuportaCancelamento - Cidade não suporta cancelamento via websevice	EnviaValorIssZerado - Envia ValorIss zerado nas emissões\n					NaoEnviaValorIss - Não envia ValorIss nas emissões\n					NaoUsaAssinatura - Não assina o XML\n					FracionarAliquotaNoXml - Fraciona a aliquota\n					Formatar4CasasDecimaisAliquotaNoXml - Envia Aliquota com 4 casas decimais\n					UsaCodigoServicoMunicipal - Prefeitura usa codigo de serviço municipal\n					NaoUsarItemListaServico - Prefeitura não usa item da lista de serviços\n					UsaCNAE - Prefeitura usa Cnae\n					UsaExigibilidadeIssUm - Exigibilidade sempre igual a 1\n					UsaImpressaoPdfPorLink - Usa o PDF padrão da prefeitura gerado pelo link\n					UsaCidadePrestacaoParaCancelamento - Usa cidade de prestação para realizar o cancelamento\n					NaoSuportaEmissaoSemTomador - Não suporta emissão sem cliente',
     urls: {
       homologacao: {
-        recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://coplan.inf.br/tributario/itaituba/anfse_ws'
       },
       producao: {
-        recepcaoLote: 'http://itaitubatributos.transparenciabr.net:5661/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://gp.srv.br/tributario/itaituba/anfse_ws'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 2,
+    tipoAutenticacao: 1,
     assinaturaDigital: 2,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
-      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
+      usuario: null,
+      senha: null,
       token: null,
       fraseSecreta: null
     },
+    suportaCancelamentoNFe: true,
+    valorCancelamentoNFe: 30,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    helpInscricaoMunicipal: 'Inscrição Municipal pode ou não conter formatação. Em caso de dúvidas, verifique com a prefeitura.',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\n                        Em algumas cidades esse código é conhecido como código de tributação.\r\n                        Exemplo válido: 01.03 ou 17.02',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n                    Você precisa preencher o item da lista de serviço com 6 dígitos sem formatação.Exemplos válidos: 170201 ou 110401',
-    suportaCancelamentoNFeSemCliente: false,
+    usaDescricaoServico: false,
+    usaCNAE: false,
+    usaNBS: true,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    suportaEmissaoNFeSemCliente: true,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -48,13 +64,10 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Exigível' },
-      { codigo: '2', nome: 'Não incidência' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Exportação' },
-      { codigo: '5', nome: 'Imunidade' },
-      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

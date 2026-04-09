@@ -3,12 +3,12 @@
   nome: 'CoplanV2',
   empresa: 'CoplanV2',
   stats: {
-    municipios: 25
+    municipios: 26
   },
   visaoGeral: [
     { key: 'Nome', val: 'CoplanV2' },
-    { key: 'Total Municipios', val: '25' },
-    { key: 'Estados Atendidos', val: ['MT', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '26' },
+    { key: 'Estados Atendidos', val: ['MT', 'PA', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -73,6 +73,7 @@
       { nome: 'Confresa', uf: 'MT', ibge: '5103353' },
       { nome: 'Diamantino', uf: 'MT', ibge: '5103502' },
       { nome: 'Gaúcha do Norte', uf: 'MT', ibge: '5103858' },
+      { nome: 'Itaituba', uf: 'PA', ibge: '1503606' },
       { nome: 'Juscimeira', uf: 'MT', ibge: '5105200' },
       { nome: 'Matupá', uf: 'MT', ibge: '5105606' },
       { nome: 'Nova Maringá', uf: 'MT', ibge: '5108907' },

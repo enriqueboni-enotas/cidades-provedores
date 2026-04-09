@@ -38,9 +38,9 @@
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: false,
-    suportaCancelamentoNFeSemCliente: false,
-    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
+    suportaCancelamentoNFeClienteSemCpf: true,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

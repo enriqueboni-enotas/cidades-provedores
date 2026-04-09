@@ -27,6 +27,7 @@
   configuracaoProvedor: {
     tipoAutenticacao: 2,
     assinaturaDigital: 2,
+    usaCodigoServicoMunicipal: false,
     usaCNAE: false,
     usaItemListaServico: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,

@@ -30,6 +30,7 @@
     },
     suportaCancelamentoNFe: true,
     usaCNAE: true,
+    usaNBS: true,
     helpInscricaoMunicipal: 'O formato varia de empresa. Verifique a inscrição municipal no portal da prefeitura.\r\n\r\nExemplos válidos: 4301000010 ou 9800000-0',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
     helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 1702, 802',

@@ -3,12 +3,12 @@
   nome: 'IssIntel',
   empresa: 'IssIntel',
   stats: {
-    municipios: 9
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'IssIntel' },
-    { key: 'Total Municipios', val: '9' },
-    { key: 'Estados Atendidos', val: ['PA', 'MG', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '7' },
+    { key: 'Estados Atendidos', val: ['PA', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -67,11 +67,9 @@
       { nome: 'Capitão Poço', uf: 'PA', ibge: '1502301' },
       { nome: 'Conceição do Araguaia', uf: 'PA', ibge: '1502707' },
       { nome: 'Curionópolis', uf: 'PA', ibge: '1502772' },
-      { nome: 'Governador Valadares', uf: 'MG', ibge: '3127701' },
       { nome: 'Porto de Moz', uf: 'PA', ibge: '1505908' },
       { nome: 'São Francisco', uf: 'MG', ibge: '3161106' },
-      { nome: 'São Gonçalo', uf: 'RJ', ibge: '3304904' },
-      { nome: 'Uruará', uf: 'PA', ibge: '1508159' }
+      { nome: 'São Gonçalo', uf: 'RJ', ibge: '3304904' }
     ]
   }
 };

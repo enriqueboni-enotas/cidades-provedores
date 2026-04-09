@@ -5,18 +5,24 @@
   ibge: '4305108',
   constante: 'CodigoIBGE.CaxiasDoSulRS',
   provedorAtual: {
-    nome: 'GIF',
+    nome: 'GIFv2',
     namespace: null,
-    codigoNoProvedor: 'EmiteUmaNotaPorLote;PermiteApenas1Item',
+    codigoNoProvedor: null,
     robo: false,
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://nfsehomol.caxias.rs.gov.br/portal/Servicos'
+        recepcaoLote: 'https://sefinhomol.caxias.rs.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://nfse.caxias.rs.gov.br/portal/Servicos'
+        recepcaoLote: 'https://sefin.caxias.rs.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
@@ -30,29 +36,41 @@
       fraseSecreta: null
     },
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 10,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
-    usaCNAE: false,
-    usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos (somente números).\r\nExemplo válido: 548',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço sem a formatação.\r\n Exemplos válidos: 1702 ou 802',
-    suportaEmissaoNFeSemCliente: false,
-    suportaEmissaoNFeClienteSemCpf: true,
-    suportaCancelamentoNFeSemCliente: false,
-    suportaCancelamentoNFeClienteSemCpf: true,
+    usaDescricaoServico: false,
+    usaCNAE: true,
+    usaNBS: true,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
+    suportaEmissaoNFeSemCliente: true,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
+    suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
-    numeroRpsDeveSerSequencial: true,
+    suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
-      { codigo: '1', nome: 'Simples Nacional' },
-      { codigo: '2', nome: 'SIMEI' },
-      { codigo: '3', nome: 'Normal' }
+      { codigo: '0', nome: ' - ' },
+      { codigo: '1', nome: 'Microempresa Municipal' },
+      { codigo: '2', nome: 'Estimativa' },
+      { codigo: '3', nome: 'Sociedade de Profissionais' },
+      { codigo: '4', nome: 'Cooperativa' },
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+    ],
+    naturezasOperacao: [
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

@@ -3,11 +3,11 @@
   nome: 'GINFESv2',
   empresa: 'GINFESv2',
   stats: {
-    municipios: 18
+    municipios: 17
   },
   visaoGeral: [
     { key: 'Nome', val: 'GINFESv2' },
-    { key: 'Total Municipios', val: '18' },
+    { key: 'Total Municipios', val: '17' },
     { key: 'Estados Atendidos', val: ['SP', 'AL', 'BA'], type: 'uf-badges' }
   ],
   municipiosLista: {
@@ -18,7 +18,6 @@
       { nome: 'Guararema', uf: 'SP', ibge: '3518305' },
       { nome: 'Guarulhos', uf: 'SP', ibge: '3518800' },
       { nome: 'Hortolândia', uf: 'SP', ibge: '3519071' },
-      { nome: 'Jardinópolis', uf: 'SP', ibge: '3525102' },
       { nome: 'Marechal Deodoro', uf: 'AL', ibge: '2704708' },
       { nome: 'Mauá', uf: 'SP', ibge: '3529401' },
       { nome: 'Morro Agudo', uf: 'SP', ibge: '3531902' },

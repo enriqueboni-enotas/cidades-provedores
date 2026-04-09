@@ -3,11 +3,11 @@
   nome: 'Agili',
   empresa: 'Agili',
   stats: {
-    municipios: 28
+    municipios: 29
   },
   visaoGeral: [
     { key: 'Nome', val: 'Agili' },
-    { key: 'Total Municipios', val: '28' },
+    { key: 'Total Municipios', val: '29' },
     { key: 'Estados Atendidos', val: ['MT', 'AL', 'RN', 'MS', 'PB', 'PE', 'PA', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,6 +82,7 @@
       { nome: 'Juara', uf: 'MT', ibge: '5105101' },
       { nome: 'Juína', uf: 'MT', ibge: '5105150' },
       { nome: 'Marcelândia', uf: 'MT', ibge: '5105580' },
+      { nome: 'Mata Grande', uf: 'AL', ibge: '2705002' },
       { nome: 'Nobres', uf: 'MT', ibge: '5105903' },
       { nome: 'Nova Monte Verde', uf: 'MT', ibge: '5108956' },
       { nome: 'Novo Progresso', uf: 'PA', ibge: '1505031' },

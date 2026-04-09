@@ -14,15 +14,14 @@
       homologacao: {
       },
       producao: {
-        autenticacao: 'https://notamunicipal.com.br/enota_floriano/emissor/login.php',
-        recepcaoLote: 'https://notamunicipal.com.br/enota_floriano/emissor/notas.php?btPropria=T&btInserir=T',
-        consultaSituacaoLote: 'https://notamunicipal.com.br/enota_floriano/site/linha_nova_nfe/novalinha.php?quantidade=1&codemissor={0}&a=a',
-        consultaLote: 'https://notamunicipal.com.br/enota_floriano/emissor/inc/notas_pesquisar.ajax.php?txtNumeroNota={0}&txtCodigoVerificacao={1}&txtTomadorCPF={2}&txtTomadorNome={3}&hdcodempresa={4}&btLimpar={5}',
-        consultaRps: 'https://notamunicipal.com.br/enota_floriano/site/temp/{0}.jpg',
-        consultaNFe: 'https://notamunicipal.com.br/enota_floriano/emissor/notas.php',
-        cancelamentoNFe: 'https://notamunicipal.com.br/enota_floriano/emissor/notas.php',
-        inutilizacaoNumeracaoNFe: 'https://notamunicipal.com.br/enota_floriano/emissor/inc/verifica.php',
-        downloadPDF: 'https://notamunicipal.com.br/enota_floriano/site/imprimirnotas.php'
+        recepcaoLote: 'https://enfseapi.elmartecnologia.com.br',
+        consultaSituacaoLote: 'https://nfe.elmartecnologia.com.br/site/linha_nova_nfe/novalinha.php?quantidade=1&codemissor={0}&a=a',
+        consultaLote: 'https://nfe.elmartecnologia.com.br/emissor/inc/notas_pesquisar.ajax.php?txtNumeroNota={0}&txtCodigoVerificacao={1}&hdcodempresa={2}',
+        consultaRps: 'https://nfe.elmartecnologia.com.br/site/temp/{0}.jpg',
+        consultaNFe: 'https://nfe.elmartecnologia.com.br/emissor/notas.php',
+        cancelamentoNFe: 'https://nfe.elmartecnologia.com.br/emissor/notas.php',
+        inutilizacaoNumeracaoNFe: 'https://nfe.elmartecnologia.com.br/emissor/inc/verifica.php',
+        downloadPDF: 'https://nfe.elmartecnologia.com.br/site/imprimirnotas.php'
       }
     }
   },

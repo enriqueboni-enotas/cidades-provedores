@@ -3,11 +3,11 @@
   nome: 'NFOnline',
   empresa: 'NFOnline',
   stats: {
-    municipios: 5
+    municipios: 6
   },
   visaoGeral: [
     { key: 'Nome', val: 'NFOnline' },
-    { key: 'Total Municipios', val: '5' },
+    { key: 'Total Municipios', val: '6' },
     { key: 'Estados Atendidos', val: ['AL', 'PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -43,6 +43,7 @@
   },
   municipiosLista: {
     'nfonline': [
+      { nome: 'Atalaia', uf: 'AL', ibge: '2700409' },
       { nome: 'Cajueiro', uf: 'AL', ibge: '2701308' },
       { nome: 'Coruripe', uf: 'AL', ibge: '2702306' },
       { nome: 'São Bento', uf: 'PB', ibge: '2513901' },

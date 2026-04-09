@@ -3,12 +3,12 @@
   nome: 'GOVBR',
   empresa: 'GOVBR',
   stats: {
-    municipios: 3
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBR' },
-    { key: 'Total Municipios', val: '3' },
-    { key: 'Estados Atendidos', val: ['PR', 'SP'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '2' },
+    { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -50,8 +50,7 @@
   municipiosLista: {
     'govbr': [
       { nome: 'Assis Chateaubriand', uf: 'PR', ibge: '4102000' },
-      { nome: 'Cidade Gaúcha', uf: 'PR', ibge: '4105607' },
-      { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' }
+      { nome: 'Cidade Gaúcha', uf: 'PR', ibge: '4105607' }
     ]
   }
 };

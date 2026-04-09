@@ -23,7 +23,6 @@
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
     usaCodigoServicoMunicipal: true,
-    usaCNAE: false,
     usaNBS: true,
     usaItemListaServico: true,
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',

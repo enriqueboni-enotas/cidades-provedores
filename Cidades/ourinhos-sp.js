@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'FintelIss',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: 'UsaAbrasf204; NaoEnviaValorIssRetido; UsaItemListaServico',
+    codigoNoProvedor: 'UsaAbrasf204; NaoEnviaValorIssRetido; UsaItemListaServico; IgnorarCodigoPaisTomadorNacional',
     robo: false,
     webService: true,
     infoAdicional: 'UsaProxy - Para prefeituras que é necessario para comunicação\n					UsaAbrasf204 - Para prefeituras que usam a versão Abrasf 2.04\n					NaoEnviaValorIssRetido - Não envia a tag ValorIssRetido',

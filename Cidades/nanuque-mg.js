@@ -5,40 +5,45 @@
   ibge: '3144300',
   constante: 'CodigoIBGE.NanuqueMG',
   provedorAtual: {
-    nome: 'NotaInteligente',
-    namespace: 'https://moema-mg.notainteligente.com/nfse_v2.02.xsd',
-    codigoNoProvedor: null,
+    nome: 'EeLv3',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    codigoNoProvedor: 'UsaServicoMunicipalComFormatacao;NaoUsaCnae;UsaDocumentoTomadorExterior;NaoSuportaEmissaoClienteSemEndereco;NaoSuportaEmissaoSemCliente',
     robo: false,
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://treino-nanuque-mg.notainteligente.com/api/action'
       },
       producao: {
-        recepcaoLote: 'https://nanuque-mg.notainteligente.com/api/action'
+        recepcaoLote: 'https://mg-nanuque-pm-nfs-backend.cloud.el.com.br/producao06/NfseWSService'
       }
     }
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 0,
+    helpTipoAutenticacao: {
+      certificadoDigital: 'Obrigatório a utilização de certificado digital.',
+      usuario: null,
+      senha: null,
+      token: null,
+      fraseSecreta: null
+    },
     suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 60,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: false,
-    usaCNAE: true,
+    usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal.\r\n\r\nExemplos válidos: 06421008 ou 634812-2',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 6 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como código de Serviço ou código de serviço nacional. Exemplos válidos: 170901 ou 010201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },

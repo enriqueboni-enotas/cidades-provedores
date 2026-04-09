@@ -3,12 +3,12 @@
   nome: 'NFIss',
   empresa: 'NFIss',
   stats: {
-    municipios: 7
+    municipios: 6
   },
   visaoGeral: [
     { key: 'Nome', val: 'NFIss' },
-    { key: 'Total Municipios', val: '7' },
-    { key: 'Estados Atendidos', val: ['MG', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '6' },
+    { key: 'Estados Atendidos', val: ['RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     usaCNAE: false,
@@ -38,8 +38,7 @@
       { nome: 'Comendador Levy Gasparian', uf: 'RJ', ibge: '3300951' },
       { nome: 'Conceição de Macabu', uf: 'RJ', ibge: '3301405' },
       { nome: 'Cristiano Otoni', uf: 'MG', ibge: '3120409' },
-      { nome: 'Jeceaba', uf: 'MG', ibge: '3135407' },
-      { nome: 'São Brás do Suaçuí', uf: 'MG', ibge: '3160900' }
+      { nome: 'Jeceaba', uf: 'MG', ibge: '3135407' }
     ]
   }
 };

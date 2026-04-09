@@ -3,11 +3,11 @@
   nome: 'QuasarV2',
   empresa: 'QuasarV2',
   stats: {
-    municipios: 2
+    municipios: 3
   },
   visaoGeral: [
     { key: 'Nome', val: 'QuasarV2' },
-    { key: 'Total Municipios', val: '2' },
+    { key: 'Total Municipios', val: '3' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -60,6 +60,7 @@
   municipiosLista: {
     'quasarv2': [
       { nome: 'Igarapé', uf: 'MG', ibge: '3130101' },
+      { nome: 'Mateus Leme', uf: 'MG', ibge: '3140704' },
       { nome: 'Pará de Minas', uf: 'MG', ibge: '3147105' }
     ]
   }

@@ -3,11 +3,11 @@
   nome: 'Sintese',
   empresa: 'Sintese',
   stats: {
-    municipios: 27
+    municipios: 28
   },
   visaoGeral: [
     { key: 'Nome', val: 'Sintese' },
-    { key: 'Total Municipios', val: '27' },
+    { key: 'Total Municipios', val: '28' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -73,6 +73,7 @@
       { nome: 'Pedra Azul', uf: 'MG', ibge: '3148707' },
       { nome: 'Ponto Chique', uf: 'MG', ibge: '3152131' },
       { nome: 'Rio Pardo de Minas', uf: 'MG', ibge: '3155603' },
+      { nome: 'São Brás do Suaçuí', uf: 'MG', ibge: '3160900' },
       { nome: 'São Miguel do Anta', uf: 'MG', ibge: '3163805' },
       { nome: 'São Pedro do Suaçuí', uf: 'MG', ibge: '3164100' },
       { nome: 'Turmalina', uf: 'MG', ibge: '3169703' },

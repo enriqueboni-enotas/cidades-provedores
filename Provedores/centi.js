@@ -3,16 +3,17 @@
   nome: 'Centi',
   empresa: 'Centi',
   stats: {
-    municipios: 31
+    municipios: 32
   },
   visaoGeral: [
     { key: 'Nome', val: 'Centi' },
-    { key: 'Total Municipios', val: '31' },
+    { key: 'Total Municipios', val: '32' },
     { key: 'Estados Atendidos', val: ['GO', 'BA', 'MT'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
     assinaturaDigital: 2,
+    usaCodigoServicoMunicipal: false,
     usaCNAE: false,
     usaItemListaServico: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
@@ -76,6 +77,7 @@
       { nome: 'Santa Helena de Goiás', uf: 'GO', ibge: '5219308' },
       { nome: 'Santo Antônio do Descoberto', uf: 'GO', ibge: '5219753' },
       { nome: 'São Domingos', uf: 'GO', ibge: '5219803' },
+      { nome: 'São Luís de Montes Belos', uf: 'GO', ibge: '5220108' },
       { nome: 'Tangará da Serra', uf: 'MT', ibge: '5107958' },
       { nome: 'Trindade', uf: 'GO', ibge: '5221403' }
     ]

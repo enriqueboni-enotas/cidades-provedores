@@ -3,11 +3,11 @@
   nome: 'TributusV2',
   empresa: 'TributusV2',
   stats: {
-    municipios: 14
+    municipios: 16
   },
   visaoGeral: [
     { key: 'Nome', val: 'TributusV2' },
-    { key: 'Total Municipios', val: '14' },
+    { key: 'Total Municipios', val: '16' },
     { key: 'Estados Atendidos', val: ['PE', 'AL', 'RN'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -43,6 +43,7 @@
     'tributusv2': [
       { nome: 'Bom Conselho', uf: 'PE', ibge: '2602100' },
       { nome: 'Buíque', uf: 'PE', ibge: '2602803' },
+      { nome: 'Capela', uf: 'AL', ibge: '2701704' },
       { nome: 'Escada', uf: 'PE', ibge: '2605202' },
       { nome: 'Lajedo', uf: 'PE', ibge: '2608800' },
       { nome: 'Limoeiro', uf: 'PE', ibge: '2608909' },
@@ -54,7 +55,8 @@
       { nome: 'Pombos', uf: 'PE', ibge: '2611309' },
       { nome: 'Quipapá', uf: 'PE', ibge: '2611507' },
       { nome: 'Ribeirão', uf: 'PE', ibge: '2611804' },
-      { nome: 'Timbaúba', uf: 'PE', ibge: '2615300' }
+      { nome: 'Timbaúba', uf: 'PE', ibge: '2615300' },
+      { nome: 'Viçosa', uf: 'AL', ibge: '2709400' }
     ]
   }
 };

@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'SILv4',
     namespace: 'http://www.sped.fazenda.gov.br/nfse',
-    codigoNoProvedor: null,
+    codigoNoProvedor: '3, UsaConsultaPorRps',
     robo: false,
     webService: true,
     urls: {
@@ -19,6 +19,7 @@
       producao: {
         recepcaoLote: 'https://tributacao.vilavelha.es.gov.br/tbw/services/NotaFiscalNacional',
         consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
+        consultaRps: 'https://tributacao.vilavelha.es.gov.br/',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },

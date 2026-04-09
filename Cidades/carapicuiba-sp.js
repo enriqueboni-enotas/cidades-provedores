@@ -15,10 +15,10 @@
       },
       producao: {
         autenticacao: 'https://carapicuiba.giap.com.br/ords/carapi/f?p=1386:101',
-        recepcaoLote: 'http://webservice.giap.com.br/WSNfsesCarapi/nfseresources/ws/v2/emissao',
+        recepcaoLote: 'https://carapicuiba.giap.com.br/ords/carapi/ws/nfe/emitir_nfe',
         consultaRps: 'https://carapicuiba.giap.com.br/ords/carapi/',
-        consultaNFe: 'http://webservice.giap.com.br/WSNfsesCarapi/nfseresources/ws/consulta',
-        cancelamentoNFe: 'http://webservice.giap.com.br/WSNfsesCarapi/nfseresources/ws/v2/cancela'
+        consultaNFe: 'https://carapicuiba.giap.com.br/ords/carapi/ws/nfe/consulta_nota',
+        cancelamentoNFe: 'https://carapicuiba.giap.com.br/ords/carapi/ws/nfe/cancelar_nota'
       }
     }
   },

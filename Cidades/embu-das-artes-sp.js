@@ -15,10 +15,10 @@
       },
       producao: {
         autenticacao: 'https://nfseembudasartes.obaratec.com.br/ords/embu01/f?p=936:101',
-        recepcaoLote: 'http://webservice.giap.com.br/WSNfsesEmbu/nfseresources/ws/v2/emissao',
+        recepcaoLote: 'https://nfseembudasartes.obaratec.com.br/ords/embu01/wsnf/nfe/emitir_nfe',
         consultaRps: 'https://nfseembudasartes.obaratec.com.br/ords/embu01/',
-        consultaNFe: 'http://webservice.giap.com.br/WSNfsesEmbu/nfseresources/ws/v2/consulta',
-        cancelamentoNFe: 'http://webservice.giap.com.br/WSNfsesEmbu/nfseresources/ws/v2/cancela'
+        consultaNFe: 'https://nfseembudasartes.obaratec.com.br/ords/embu01/wsnf/nfe/consulta_nota',
+        cancelamentoNFe: 'https://nfseembudasartes.obaratec.com.br/ords/embu01/wsnf/nfe/cancelar_nota'
       }
     }
   },
