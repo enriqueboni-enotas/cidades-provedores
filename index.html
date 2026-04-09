@@ -1342,6 +1342,62 @@
     ::-webkit-scrollbar-thumb:hover {
       background: var(--accent);
     }
+
+    /* LOGS TABS */
+    .logs-tabs {
+      display: flex;
+      gap: 0;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .logs-tab {
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color .2s, border-color .2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logs-tab:hover {
+      color: var(--text);
+    }
+
+    .logs-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .logs-tab .tab-count {
+      font-size: 11px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 1px 8px;
+      border-radius: 10px;
+      color: var(--muted);
+    }
+
+    .logs-tab.active .tab-count {
+      background: rgba(89, 129, 227, 0.15);
+      border-color: rgba(89, 129, 227, 0.3);
+      color: var(--accent);
+    }
+
+    .logs-panel {
+      display: none;
+    }
+
+    .logs-panel.active {
+      display: block;
+    }
   </style>
 </head>
 
@@ -1399,15 +1455,14 @@
     <div id="dc"></div>
   </div>
 
-  <div id="changelog"></div>
-  <div id="jira-changelog"></div>
+  <div id="logs-alteracoes"></div>
 
   <div class="footer">Análise extraída do código-fonte do app-gw · Abril 2026</div>
 
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
-  <script src="changelog.js"></script>
-  <script src="jira-changelog.js"></script>
+  <script src="LogsAlteracoes/github-changelog.js"></script>
+  <script src="LogsAlteracoes/jira-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
     (function () {
@@ -2106,58 +2161,65 @@
       return h + '</div>';
     }
 
-    /* ── Changelog ── */
+    /* ── Logs de Alterações (Tabs) ── */
     (function () {
-      if (typeof changelogData === 'undefined' || !changelogData.length) return;
-      var el = document.getElementById('changelog');
-      var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
-      h += '<div class="section-title" style="font-size:20px;cursor:pointer" id="cl-toggle">';
-      h += '📋 Últimas Atualizações <span style="font-size:12px;color:var(--muted);margin-left:8px">(' + changelogData[changelogData.length - 1].data + ' – ' + changelogData[0].data + ') — clique para expandir</span></div>';
-      h += '<div id="cl-content" style="display:none"><div class="pr-list">';
-      changelogData.forEach(function (r) {
-        h += '<div class="pr-card"><div class="pr-header">';
-        h += '<span class="pr-number">' + r.tag + '</span>';
-        h += '<span class="pr-title">' + r.titulo + '</span>';
-        h += '<span class="pr-date">' + r.data + '</span></div>';
-        h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
-        r.itens.forEach(function (it) {
-          h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
-        });
-        h += '</div></div>';
-      });
-      h += '</div></div></div>';
-      el.innerHTML = h;
-      document.getElementById('cl-toggle').addEventListener('click', function () {
-        var c = document.getElementById('cl-content');
-        c.style.display = c.style.display === 'none' ? 'block' : 'none';
-      });
-    })();
-
-    /* ── Jira Changelog (Cards CE resolvidos) ── */
-    (function () {
-      if (typeof jiraChangelogData === 'undefined' || !jiraChangelogData.length) return;
-      var el = document.getElementById('jira-changelog');
+      var hasChangelog = typeof changelogData !== 'undefined' && changelogData.length;
+      var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
+      if (!hasChangelog && !hasJira) return;
+      var el = document.getElementById('logs-alteracoes');
       if (!el) return;
-      var h = '<div style="max-width:1200px;margin:0 auto;padding:0 40px 40px;">';
-      h += '<div class="section-title" style="font-size:20px;cursor:pointer" id="jcl-toggle">';
-      h += '🎫 Cards Resolvidos (Jira CE) <span style="font-size:12px;color:var(--muted);margin-left:8px">(' + jiraChangelogData[jiraChangelogData.length - 1].data + ' – ' + jiraChangelogData[0].data + ') — clique para expandir</span></div>';
-      h += '<div id="jcl-content" style="display:none"><div class="pr-list">';
-      jiraChangelogData.forEach(function (r) {
-        h += '<div class="pr-card"><div class="pr-header">';
-        h += '<span class="pr-number">' + r.tag + '</span>';
-        h += '<span class="pr-title">' + r.titulo + '</span>';
-        h += '<span class="pr-date">' + r.data + '</span></div>';
-        h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
-        r.itens.forEach(function (it) {
-          h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
+
+      function renderItems(data) {
+        var h = '<div class="pr-list">';
+        data.forEach(function (r) {
+          h += '<div class="pr-card"><div class="pr-header">';
+          h += '<span class="pr-number">' + r.tag + '</span>';
+          h += '<span class="pr-title">' + r.titulo + '</span>';
+          h += '<span class="pr-date">' + r.data + '</span></div>';
+          h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+          r.itens.forEach(function (it) {
+            h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
+          });
+          h += '</div></div>';
         });
-        h += '</div></div>';
-      });
-      h += '</div></div></div>';
+        h += '</div>';
+        return h;
+      }
+
+      function dateRange(data) {
+        return data[data.length - 1].data + ' – ' + data[0].data;
+      }
+
+      var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
+      h += '<div class="section-title" style="font-size:20px;margin-bottom:20px">📋 Logs de Alterações</div>';
+      h += '<div class="logs-tabs">';
+      if (hasChangelog) {
+        h += '<button class="logs-tab active" data-panel="panel-changelog">📦 Últimas Atualizações (PRs)';
+        h += ' <span class="tab-count">' + dateRange(changelogData) + '</span></button>';
+      }
+      if (hasJira) {
+        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Cards Resolvidos (Jira CE)';
+        h += ' <span class="tab-count">' + dateRange(jiraChangelogData) + '</span></button>';
+      }
+      h += '</div>';
+      if (hasChangelog) {
+        h += '<div class="logs-panel active" id="panel-changelog">' + renderItems(changelogData) + '</div>';
+      }
+      if (hasJira) {
+        h += '<div class="logs-panel' + (hasChangelog ? '' : ' active') + '" id="panel-jira">' + renderItems(jiraChangelogData) + '</div>';
+      }
+      h += '</div>';
       el.innerHTML = h;
-      document.getElementById('jcl-toggle').addEventListener('click', function () {
-        var c = document.getElementById('jcl-content');
-        c.style.display = c.style.display === 'none' ? 'block' : 'none';
+
+      var tabs = el.querySelectorAll('.logs-tab');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          el.querySelectorAll('.logs-panel').forEach(function (p) { p.classList.remove('active'); });
+          tab.classList.add('active');
+          var panel = document.getElementById(tab.getAttribute('data-panel'));
+          if (panel) panel.classList.add('active');
+        });
       });
     })();
 

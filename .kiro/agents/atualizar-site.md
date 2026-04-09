@@ -46,7 +46,7 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 5. Dias sem PRs devem ter um item com icon '📭', destaque 'Sem alterações' e texto 'Nenhum PR mergeado neste dia.'
 
-6. Reescreva o arquivo `changelog.js` com o array `changelogData` contendo os últimos 10 dias, do mais recente para o mais antigo. O formato é:
+6. Reescreva o arquivo `LogsAlteracoes/github-changelog.js` com o array `changelogData` contendo os últimos 10 dias, do mais recente para o mais antigo. O formato é:
 
    ```javascript
    var changelogData = [
@@ -86,7 +86,7 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
    - Cards `[Autofix]` do mesmo tipo devem ser agrupados juntos.
    - Dias sem cards devem ter icon '📭', destaque 'Sem cards resolvidos', texto 'Nenhum card resolvido neste dia.'
 
-4. Reescreva o arquivo `jira-changelog.js` com o array `jiraChangelogData` no mesmo formato do `changelogData`:
+4. Reescreva o arquivo `LogsAlteracoes/jira-changelog.js` com o array `jiraChangelogData` no mesmo formato do `changelogData`:
 
    ```javascript
    var jiraChangelogData = [
