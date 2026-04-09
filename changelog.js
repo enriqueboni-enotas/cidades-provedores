@@ -251,4 +251,171 @@ var changelogData = [
       },
     ],
   },
+  {
+    tag: '05/04/2026',
+    titulo: 'Sábado — 05 de Abril',
+    data: '05/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '04/04/2026',
+    titulo: 'Sexta-feira — 04 de Abril',
+    data: '04/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '03/04/2026',
+    titulo: 'Quinta-feira — 03 de Abril',
+    data: '03/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '02/04/2026',
+    titulo: 'Quarta-feira — 02 de Abril',
+    data: '02/04/2026',
+    itens: [
+      {
+        icon: '📜',
+        destaque: 'Script de cancelamento de notas inconsistentes',
+        texto:
+          'Adicionado script SQL para disparar cancelamento de notas com status inconsistente. Afeta notas que ficaram travadas em estados intermediários.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cachoeirinha/RS — Situação tributária para tomador exterior',
+        texto:
+          'Ajustada a situação tributária (código 14) para tomadores do exterior em Cachoeirinha/RS no provedor IPM. Afeta tanto v1 quanto v2 do RecepcionarLoteNFe.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Sync com NotaGateway — Conchas/SP, Anitápolis/SC e Pão de Açúcar/AL',
+        texto:
+          'Removido parâmetro tipoNf dos comandos de WebHook. Conchas/SP adicionado às configurações municipais do GOVBRv3. Anitápolis/SC e Pão de Açúcar/AL tiveram configurações atualizadas. Lógica de truncamento no TxtBuilder aprimorada.',
+      },
+    ],
+  },
+  {
+    tag: '01/04/2026',
+    titulo: 'Terça-feira — 01 de Abril',
+    data: '01/04/2026',
+    itens: [
+      {
+        icon: '🔗',
+        destaque: 'Paranapanema/SP — Atualização de provedor',
+        texto:
+          'Paranapanema/SP migrou de GOVBRv3 para GOVBRv2 com link de produção atualizado. Adicionadas informações de provedor e metadados.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'Novo provedor Cravinhos/SP (FgMaiss)',
+        texto:
+          'Implementado novo provedor web service para Cravinhos/SP com operações de envio, consulta e cancelamento. Inclui referências WSDL e configurações de endpoint.',
+      },
+      {
+        icon: '📊',
+        destaque: 'GOVBRv3 — Alíquota ISS para Simples Nacional',
+        texto:
+          'Adicionada coleção SempreEnviaAliquotaIssEmpresasSimplesNacional com novos municípios. Ajuste na lógica de atribuição de pAliq no RecepcionarLote.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'NfseNacionalV2 — Resolução de natureza de operação',
+        texto:
+          'Adicionada condição para resolver natureza de operação para subscription específica (UnoSolucoes).',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Truncamento de SerieRps para 4 caracteres',
+        texto:
+          'SerieRps agora é truncado para no máximo 4 caracteres no IdentificacaoRpsDto, evitando rejeições por série muito longa.',
+      },
+    ],
+  },
+  {
+    tag: '31/03/2026',
+    titulo: 'Segunda-feira — 31 de Março',
+    data: '31/03/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Paranapanema/SP adicionado ao GOVBRv3',
+        texto:
+          'Adicionada configuração de Paranapanema/SP com URLs de homologação e produção no provedor GOVBRv3.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Sync com NotaGateway — Múltiplas melhorias',
+        texto:
+          'Atualização de Newtonsoft.Json para 13.0.3. Novos campos de endereço para tomador do exterior (NfseNacionalV2 e TinusV2). Validação de endereço estrangeiro aprimorada. Tratamento de FaultException no Directa. Novas propriedades ExigibilidadeSuspensa e ItemNFeServico.',
+      },
+      {
+        icon: '🏗️',
+        destaque: 'IBS/CBS no layout Barueri 4.2',
+        texto:
+          'Suporte a emissão com IBS/CBS no layout 4.2 de Barueri. Versão do layout agora é dinâmica baseada na presença de dados IBS/CBS. Busca condicional de XML no portal nacional.',
+      },
+      {
+        icon: '📊',
+        destaque: 'GOVBRv3 — Novas regras de alíquota e cancelamento',
+        texto:
+          'Santa Terezinha de Itaipu/PR adicionada à lista de não-cancelamento. Refatoração da lógica de cálculo de ISS. Correção de casing do NIF no CpfCnpj. Resolução de código de serviço municipal no EeL.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'SIGISSv5 — Chave de acesso e cancelamento',
+        texto:
+          'Extração de chave de acesso do XML na consulta de lote. Atualização de suporte a cancelamento para municípios. Simplificação da criação de WS client no SIGISSv1.',
+      },
+    ],
+  },
+  {
+    tag: '30/03/2026',
+    titulo: 'Domingo — 30 de Março',
+    data: '30/03/2026',
+    itens: [
+      {
+        icon: '🔧',
+        destaque: 'Limeira/SP — Código de Tributação Nacional e Municipal',
+        texto:
+          'Limeira/SP adicionada às HashSets UsaCodigoTributacaoMunicipio e UsaCodigoTributacaoNacional no provedor IIBrasil. Implementada lógica de UsaCodigoTributacaoNacional no ObterCaracteristicasCore. Posteriormente simplificada com remoção de redundâncias.',
+      },
+      {
+        icon: '❌',
+        destaque: 'Varginha/MG — RPS sequencial obrigatório',
+        texto:
+          'Adicionada exigência de RPS sequencial (NumeroRpsDeveSerSequencial) para Varginha/MG no provedor BethaV3. Evita gravação de RPS quando notas retornam negadas.',
+      },
+      {
+        icon: '📮',
+        destaque: 'eTransparência — Remove CEP para tomador do exterior',
+        texto:
+          'Removido envio do CEP para tomadores do exterior no provedor eTransparência. Prefeitura estava retornando rejeição por CEP inválido em notas internacionais.',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Resolução de conflitos — Sync 30/03',
+        texto:
+          'Merge de conflitos entre branches dev e main com integração de todas as mudanças pendentes.',
+      },
+    ],
+  },
 ];
