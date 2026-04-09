@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cidades & Provedores — app-gw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -14,40 +17,97 @@
       padding: 0;
     }
 
+    /* Cosmos Dark (default) */
     :root {
-      --bg: #0f1117;
-      --surface: #1a1d27;
-      --surface2: #22263a;
-      --border: #2e3350;
-      --accent: #6c63ff;
-      --accent2: #00d4aa;
-      --warn: #f59e0b;
-      --danger: #ef4444;
-      --text: #e2e8f0;
-      --muted: #8892a4;
-      --code-bg: #12151f;
-      --pr: #3b82f6;
-      --heading: #fff;
+      --bg: var(--hc-color-neutral-100);
+      --surface: var(--hc-color-neutral-200);
+      --surface2: var(--hc-color-neutral-300);
+      --border: var(--hc-color-neutral-400);
+      --accent: var(--hc-color-primary-500);
+      --accent2: var(--hc-color-secondary-500);
+      --warn: var(--hc-color-warning-400);
+      --danger: var(--hc-color-danger-400);
+      --text: var(--hc-color-neutral-800);
+      --muted: var(--hc-color-neutral-500);
+      --code-bg: var(--hc-color-neutral-0);
+      --pr: var(--hc-color-info-400);
+      --heading: var(--hc-color-neutral-1000);
+
+      /* Cosmos dark tokens */
+      --hc-color-primary-100: #162c64;
+      --hc-color-primary-200: #253f82;
+      --hc-color-primary-300: #355cc0;
+      --hc-color-primary-400: #5981e3;
+      --hc-color-primary-500: #89a8f8;
+      --hc-color-primary-600: #bed1ff;
+      --hc-color-primary-700: #ebf0ff;
+      --hc-color-secondary-100: #024242;
+      --hc-color-secondary-200: #066262;
+      --hc-color-secondary-300: #0a9090;
+      --hc-color-secondary-400: #51c1c3;
+      --hc-color-secondary-500: #7cdbdb;
+      --hc-color-secondary-600: #a2eaea;
+      --hc-color-secondary-700: #edffff;
+      --hc-color-success-400: #009d43;
+      --hc-color-success-500: #4acc82;
+      --hc-color-warning-400: #efba0f;
+      --hc-color-warning-500: #fbd458;
+      --hc-color-danger-400: #d6342c;
+      --hc-color-danger-500: #e37570;
+      --hc-color-info-400: #5981e3;
+      --hc-color-info-500: #89a8f8;
+      --hc-color-neutral-0: #000000;
+      --hc-color-neutral-100: #191c1f;
+      --hc-color-neutral-200: #282c2f;
+      --hc-color-neutral-300: #32363b;
+      --hc-color-neutral-400: #464b52;
+      --hc-color-neutral-500: #707780;
+      --hc-color-neutral-600: #9ea4ac;
+      --hc-color-neutral-700: #c9ced4;
+      --hc-color-neutral-800: #e6e9ed;
+      --hc-color-neutral-900: #f7f9fa;
+      --hc-color-neutral-1000: #ffffff;
     }
 
+    /* Cosmos Light */
     html.light {
-      --bg: #f4f5f7;
-      --surface: #ffffff;
-      --surface2: #eef0f4;
-      --border: #d1d5db;
-      --accent: #5b52e0;
-      --accent2: #059669;
-      --warn: #d97706;
-      --danger: #dc2626;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --code-bg: #f0f1f5;
-      --pr: #2563eb;
-      --heading: #111827;
+      --hc-color-primary-100: #ebf0ff;
+      --hc-color-primary-200: #bed1ff;
+      --hc-color-primary-300: #89a8f8;
+      --hc-color-primary-400: #5981e3;
+      --hc-color-primary-500: #355cc0;
+      --hc-color-primary-600: #253f82;
+      --hc-color-primary-700: #162c64;
+      --hc-color-secondary-100: #edffff;
+      --hc-color-secondary-200: #a2eaea;
+      --hc-color-secondary-300: #7cdbdb;
+      --hc-color-secondary-400: #51c1c3;
+      --hc-color-secondary-500: #0a9090;
+      --hc-color-secondary-600: #066262;
+      --hc-color-secondary-700: #024242;
+      --hc-color-success-400: #009d43;
+      --hc-color-success-500: #006e2f;
+      --hc-color-warning-400: #efba0f;
+      --hc-color-warning-500: #a47c00;
+      --hc-color-danger-400: #d6342c;
+      --hc-color-danger-500: #a81a0a;
+      --hc-color-info-400: #5981e3;
+      --hc-color-info-500: #355cc0;
+      --hc-color-neutral-0: #ffffff;
+      --hc-color-neutral-100: #f7f9fa;
+      --hc-color-neutral-200: #e6e9ed;
+      --hc-color-neutral-300: #c9ced4;
+      --hc-color-neutral-400: #9ea4ac;
+      --hc-color-neutral-500: #707780;
+      --hc-color-neutral-600: #464b52;
+      --hc-color-neutral-700: #32363b;
+      --hc-color-neutral-800: #282c2f;
+      --hc-color-neutral-900: #191c1f;
+      --hc-color-neutral-1000: #000000;
     }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -325,7 +385,7 @@
 
     /* ── DOSSIÊ HEADER ── */
     .header {
-      background: linear-gradient(135deg, #1a1d27 0%, #12151f 100%);
+      background: linear-gradient(135deg, var(--hc-color-neutral-200) 0%, var(--hc-color-neutral-100) 100%);
       border-bottom: 1px solid var(--border);
       padding: 32px 40px 36px;
       position: relative;
@@ -333,7 +393,7 @@
     }
 
     html.light .header {
-      background: linear-gradient(135deg, #e8eaf0 0%, #dde1ea 100%);
+      background: linear-gradient(135deg, var(--hc-color-neutral-200) 0%, var(--hc-color-neutral-100) 100%);
     }
 
     .header::before {
@@ -351,9 +411,9 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(108, 99, 255, 0.15);
-      border: 1px solid rgba(108, 99, 255, 0.3);
-      color: #a78bfa;
+      background: rgba(89, 129, 227, 0.15);
+      border: 1px solid rgba(89, 129, 227, 0.3);
+      color: var(--hc-color-primary-500);
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -495,8 +555,8 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      background: rgba(0, 212, 170, 0.12);
-      border: 1px solid rgba(0, 212, 170, 0.3);
+      background: rgba(81, 193, 195, 0.12);
+      border: 1px solid rgba(81, 193, 195, 0.3);
       color: var(--accent2);
       font-size: 12px;
       font-weight: 600;
@@ -508,9 +568,9 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      background: rgba(239, 68, 68, 0.12);
-      border: 1px solid rgba(239, 68, 68, 0.3);
-      color: #f87171;
+      background: rgba(214, 52, 44, 0.12);
+      border: 1px solid rgba(214, 52, 44, 0.3);
+      color: var(--danger);
       font-size: 12px;
       font-weight: 600;
       padding: 3px 10px;
@@ -585,7 +645,7 @@
     }
 
     tbody tr:hover {
-      background: rgba(108, 99, 255, 0.05);
+      background: rgba(89, 129, 227, 0.05);
     }
 
     tbody td {
@@ -605,55 +665,55 @@
     }
 
     .uf-badge.SC {
-      border-color: #3b82f6;
-      color: #60a5fa;
-      background: rgba(59, 130, 246, 0.1);
+      border-color: var(--hc-color-info-400);
+      color: var(--hc-color-info-500);
+      background: rgba(89, 129, 227, 0.1);
     }
 
     .uf-badge.RS {
-      border-color: #10b981;
-      color: #34d399;
-      background: rgba(16, 185, 129, 0.1);
+      border-color: var(--hc-color-secondary-400);
+      color: var(--hc-color-secondary-500);
+      background: rgba(81, 193, 195, 0.1);
     }
 
     .uf-badge.PR {
-      border-color: #f59e0b;
-      color: #fbbf24;
-      background: rgba(245, 158, 11, 0.1);
+      border-color: var(--hc-color-warning-400);
+      color: var(--hc-color-warning-500);
+      background: rgba(239, 186, 15, 0.1);
     }
 
     .uf-badge.MG {
-      border-color: #8b5cf6;
-      color: #a78bfa;
-      background: rgba(139, 92, 246, 0.1);
+      border-color: #7c5ee2;
+      color: #ac93fc;
+      background: rgba(124, 94, 226, 0.1);
     }
 
     .uf-badge.SP {
-      border-color: #ef4444;
-      color: #f87171;
-      background: rgba(239, 68, 68, 0.1);
+      border-color: var(--hc-color-danger-400);
+      color: var(--hc-color-danger-500);
+      background: rgba(214, 52, 44, 0.1);
     }
 
     .uf-badge.RJ {
-      border-color: #06b6d4;
-      color: #22d3ee;
-      background: rgba(6, 182, 212, 0.1);
+      border-color: var(--hc-color-secondary-300);
+      color: var(--hc-color-secondary-400);
+      background: rgba(10, 144, 144, 0.1);
     }
 
     .uf-badge.GO {
-      border-color: #84cc16;
-      color: #a3e635;
-      background: rgba(132, 204, 22, 0.1);
+      border-color: var(--hc-color-success-400);
+      color: var(--hc-color-success-500);
+      background: rgba(0, 157, 67, 0.1);
     }
 
     .uf-badge.BA {
-      border-color: #f97316;
-      color: #fb923c;
-      background: rgba(249, 115, 22, 0.1);
+      border-color: var(--hc-color-warning-400);
+      color: var(--hc-color-warning-500);
+      background: rgba(239, 186, 15, 0.1);
     }
 
     .ibge {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       font-size: 12px;
       color: var(--muted);
     }
@@ -696,14 +756,14 @@
 
     /* REGIME */
     .regime-code {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       font-size: 13px;
       font-weight: 700;
       color: var(--accent);
     }
 
     .regime-ipm {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       font-size: 13px;
       font-weight: 700;
       color: var(--accent2);
@@ -730,20 +790,20 @@
     }
 
     .alert-warn {
-      background: rgba(245, 158, 11, 0.08);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      color: #fcd34d;
+      background: rgba(239, 186, 15, 0.08);
+      border: 1px solid rgba(239, 186, 15, 0.25);
+      color: var(--warn);
     }
 
     .alert-info {
-      background: rgba(108, 99, 255, 0.08);
-      border: 1px solid rgba(108, 99, 255, 0.25);
-      color: #a78bfa;
+      background: rgba(89, 129, 227, 0.08);
+      border: 1px solid rgba(89, 129, 227, 0.25);
+      color: var(--accent);
     }
 
     .alert-ok {
-      background: rgba(0, 212, 170, 0.08);
-      border: 1px solid rgba(0, 212, 170, 0.25);
+      background: rgba(81, 193, 195, 0.08);
+      border: 1px solid rgba(81, 193, 195, 0.25);
       color: var(--accent2);
     }
 
@@ -830,9 +890,9 @@
     .pr-number {
       font-size: 12px;
       font-weight: 700;
-      background: rgba(59, 130, 246, 0.12);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      color: #60a5fa;
+      background: rgba(89, 129, 227, 0.12);
+      border: 1px solid rgba(89, 129, 227, 0.3);
+      color: var(--pr);
       padding: 3px 10px;
       border-radius: 20px;
     }
@@ -904,7 +964,7 @@
     }
 
     .commit-sha {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       color: var(--accent);
       font-weight: 700;
       flex-shrink: 0;
@@ -927,7 +987,7 @@
     }
 
     .file-tag {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       font-size: 11px;
       background: var(--code-bg);
       border: 1px solid var(--border);
@@ -981,7 +1041,7 @@
     }
 
     code {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
       background: var(--code-bg);
       border: 1px solid var(--border);
       color: var(--accent2);
@@ -1167,25 +1227,25 @@
     }
 
     .b-a {
-      background: #1a7f37;
-      color: #aff5b4;
+      background: var(--hc-color-success-400);
+      color: #edfff5;
     }
 
     .b-l {
-      background: #6e4009;
-      color: #f0c96b;
+      background: #6c5200;
+      color: var(--hc-color-warning-500);
     }
 
     .b-r {
-      background: #1a3a5c;
-      color: #79c0ff;
+      background: var(--hc-color-primary-200);
+      color: var(--hc-color-primary-500);
     }
 
     .hdr {
       border-radius: 16px;
       padding: 32px 40px;
       margin-bottom: 24px;
-      border: 1px solid #30365a;
+      border: 1px solid var(--border);
     }
 
     .hdr h1 {
