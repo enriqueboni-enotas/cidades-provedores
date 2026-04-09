@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFS-e Negadas — Análise Cruzada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #f7f9fa;
+      --surface: #fff;
+      --surface2: #e6e9ed;
+      --border: #c9ced4;
+      --accent: #355cc0;
+      --accent2: #0a9090;
+      --danger: #d6342c;
+      --warn: #efba0f;
+      --text: #282c2f;
+      --muted: #707780;
+      --heading: #191c1f
+    }
+
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px
+    }
+
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .topbar h1 {
+      font-size: 20px;
+      color: var(--heading)
+    }
+
+    .topbar .sub {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center
+    }
+
+    .stat-card .value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 4px
+    }
+
+    .stat-card .value.danger {
+      color: var(--danger)
+    }
+
+    .stat-card .value.warn {
+      color: var(--warn)
+    }
+
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .06em
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 32px
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 32px
+    }
+
+    @media(max-width:900px) {
+
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px
+    }
+
+    .card h2 {
+      font-size: 16px;
+      color: var(--heading);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 350px
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px
+    }
+
+    thead tr {
+      background: var(--surface2)
+    }
+
+    thead th {
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted)
+    }
+
+    tbody tr {
+      border-top: 1px solid var(--border)
+    }
+
+    tbody tr:hover {
+      background: rgba(53, 92, 192, .04)
+    }
+
+    tbody td {
+      padding: 8px 12px
+    }
+
+    .bar-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .bar-bg {
+      height: 8px;
+      border-radius: 4px;
+      background: var(--accent);
+      opacity: .7
+    }
+
+    .num {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--surface2);
+      color: var(--muted)
+    }
+
+    .footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div>
+      <h1>📊 NFS-e Negadas — Análise Cruzada</h1>
+      <div class="sub">Período: 05/02/2026 a 09/04/2026 · Fonte: Astrobox (dh_app_enotas.nfe_negadas)</div>
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="value danger">1.78M</div>
+        <div class="label">Total de Negações</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">27</div>
+        <div class="label">UFs Afetadas</div>
+      </div>
+      <div class="stat-card">
+        <div class="value warn">183.7K</div>
+        <div class="label">Falta de Pagamento</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">97.8K</div>
+        <div class="label">Certificado Vencido</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2>📈 Evolução Mensal</h2>
+        <div class="chart-wrap"><canvas id="chartMes"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>🗺️ Top 10 UFs</h2>
+        <div class="chart-wrap"><canvas id="chartUF"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2>🏙️ Top 20 Cidades</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Cidade</th>
+              <th>UF</th>
+              <th style="text-align:right">Qtd</th>
+              <th style="width:40%"></th>
+            </tr>
+          </thead>
+          <tbody id="tbCidades"></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>🏢 Top 20 Empresas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Cidade/UF</th>
+              <th style="text-align:right">Qtd</th>
+            </tr>
+          </thead>
+          <tbody id="tbEmpresas"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:32px">
+      <h2>⚠️ Top 30 Motivos de Negação</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:5%">#</th>
+            <th>Motivo</th>
+            <th style="text-align:right;width:12%">Qtd</th>
+            <th style="width:30%"></th>
+          </tr>
+        </thead>
+        <tbody id="tbMotivos"></tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-bottom:32px">
+      <h2>💰 Falta de Pagamento — Top 15 Cidades</h2>
+      <div class="chart-wrap"><canvas id="chartPagamento"></canvas></div>
+    </div>
+
+  </div>
+  <div class="footer">Gerado em 09/04/2026 via Astrobox API · eNotas app-gw</div>
+</body>
+<script>
+  var meses = { labels: ['Fev/26', 'Mar/26', 'Abr/26'], data: [800969, 786429, 191943] };
+  var ufs = [
+    { uf: 'SP', qtd: 572100 }, { uf: 'MG', qtd: 294275 }, { uf: 'PR', qtd: 189172 }, { uf: 'SC', qtd: 116270 }, { uf: 'RJ', qtd: 111698 },
+    { uf: 'DF', qtd: 107143 }, { uf: 'RS', qtd: 92751 }, { uf: 'ES', qtd: 65998 }, { uf: 'CE', qtd: 43183 }, { uf: 'BA', qtd: 38778 }
+  ];
+  var cidades = [
+    { c: 'São Paulo', uf: 'SP', q: 150631 }, { c: 'Uberlândia', uf: 'MG', q: 137567 }, { c: 'Brasília', uf: 'DF', q: 107143 },
+    { c: 'Barueri', uf: 'SP', q: 105646 }, { c: 'Belo Horizonte', uf: 'MG', q: 71129 }, { c: 'Rio de Janeiro', uf: 'RJ', q: 64494 },
+    { c: 'Vila Velha', uf: 'ES', q: 49385 }, { c: 'São Bernardo do Campo', uf: 'SP', q: 44430 }, { c: 'Porto Alegre', uf: 'RS', q: 43061 },
+    { c: 'Curitiba', uf: 'PR', q: 42070 }, { c: 'Florianópolis', uf: 'SC', q: 37669 }, { c: 'Recife', uf: 'PE', q: 33491 },
+    { c: 'Maringá', uf: 'PR', q: 31178 }, { c: 'Franca', uf: 'SP', q: 29101 }, { c: 'Fortaleza', uf: 'CE', q: 28478 },
+    { c: 'Pinhais', uf: 'PR', q: 28178 }, { c: 'Paranavaí', uf: 'PR', q: 26447 }, { c: 'Taboão da Serra', uf: 'SP', q: 23654 },
+    { c: 'Salvador', uf: 'BA', q: 23434 }, { c: 'Bragança Paulista', uf: 'SP', q: 23119 }
+  ];
+  var empresas = [
+    { e: 'ROCKET NEGOCIOS DIGITAIS', l: 'Uberlândia/MG', q: 107664 }, { e: 'LITHIUM SOFTWARE', l: 'Pinhais/PR', q: 26948 },
+    { e: 'DIGITAL PLUS MARKETING', l: 'São Paulo/SP', q: 26841 }, { e: 'APROVASIM CURSOS', l: 'Franca/SP', q: 25199 },
+    { e: 'LAB. TECNOLOGIA EDUCACIONAL', l: 'Paranavaí/PR', q: 24750 }, { e: 'PS NUTRI DIGITAL', l: 'Americana/SP', q: 17939 },
+    { e: 'CASAR EVENTOS', l: 'São Paulo/SP', q: 17389 }, { e: 'ERNESTO FRANCISCO REIS FILHO', l: 'São Paulo/SP', q: 17067 },
+    { e: 'AIQFOME', l: 'Maringá/PR', q: 14617 }, { e: 'GOSHME SOLUCOES', l: 'Salvador/BA', q: 13221 },
+    { e: 'CYFER ACADEMY', l: 'Barueri/SP', q: 13172 }, { e: 'VENDA DE CURSOS ONLINE OSP 1', l: 'Brasília/DF', q: 12106 },
+    { e: 'POUBEL BROTHERS', l: 'Rio Bonito/RJ', q: 11543 }, { e: 'PERSONAL TRAINER ACADEMY', l: 'Curitiba/PR', q: 11193 },
+    { e: 'VOU APRENDER ITALIANO', l: 'Bragança Paulista/SP', q: 11133 }, { e: 'D+3 PRODUCOES ARTISTICAS', l: 'Rio de Janeiro/RJ', q: 11067 },
+    { e: 'GENEBRA EDICOES DE LIVROS', l: 'Recife/PE', q: 10710 }, { e: 'A. M. SOLUCOES TECNOLOGICAS', l: 'São José de Ribamar/MA', q: 9482 },
+    { e: 'ZAPSIGN', l: 'Nova Lima/MG', q: 9450 }, { e: 'YAMPI DESENVOLVIMENTO', l: 'Ibitinga/SP', q: 8950 }
+  ];
+  var motivos = [
+    { m: 'Bloqueada por falta de pagamento', q: 183785 }, { m: 'Certificado digital vencido', q: 97789 },
+    { m: 'CPF ou CNPJ do tomador não informado', q: 43713 }, { m: 'Campo codigoNBS não informado', q: 43476 },
+    { m: 'Cidade do cliente não encontrada no IBGE', q: 43178 }, { m: 'Erro não catalogado', q: 38755 },
+    { m: 'Não Optante com tributos do Simples informados', q: 33681 }, { m: 'Código NBS inválido', q: 32430 },
+    { m: 'Lista de Serviço sem desdobramento nacional', q: 31157 }, { m: 'Série do RPS fora do intervalo (1–49.999)', q: 30589 },
+    { m: 'Código de tributação inválido', q: 29658 }, { m: 'CEP do tomador não existe/não pertence ao município', q: 29129 },
+    { m: 'tpOper obrigatório (Compra Governamental)', q: 25768 }, { m: 'Cidade da API não encontrada no IBGE', q: 24752 },
+    { m: 'Código de Serviço municipal não informado', q: 24496 }, { m: 'Município não parametrizado para emissores nacionais', q: 18884 },
+    { m: 'CPF/CNPJ do cliente inválido', q: 17693 }, { m: 'Email do tomador inválido', q: 17122 },
+    { m: 'Série DPS fora da faixa (80000–89999)', q: 16036 }, { m: 'Emissor não habilitado (781)', q: 15254 },
+    { m: 'Autorização fora de prazo (150)', q: 15052 }, { m: 'Emissor não habilitado (203)', q: 14986 },
+    { m: 'Código tributação municipal inválido/não administrado', q: 14706 }, { m: 'Endereço do tomador incompleto/inválido', q: 13972 },
+    { m: 'Percentual tributo federal sem valor individualizado', q: 13266 }, { m: 'Falha no Schema XML do lote', q: 12942 },
+    { m: 'Credenciais da prefeitura inválidas', q: 11528 }, { m: 'Grupo Atividade/Evento obrigatório (item 12)', q: 11464 },
+    { m: 'Emissão automática interrompida (app desativado)', q: 11236 }, { m: 'Série DPS fora da faixa do tipo de emissor', q: 11129 }
+  ];
+  var pagamento = [
+    { c: 'Uberlândia/MG', q: 107725 }, { c: 'Barueri/SP', q: 22747 }, { c: 'Vila Velha/ES', q: 5512 }, { c: 'São Paulo/SP', q: 4695 },
+    { c: 'Viçosa/MG', q: 4426 }, { c: 'Palhoça/SC', q: 3733 }, { c: 'Belo Horizonte/MG', q: 3077 }, { c: 'Goiânia/GO', q: 3000 },
+    { c: 'São José dos Pinhais/PR', q: 2975 }, { c: 'Maceió/AL', q: 2204 }, { c: 'Curitiba/PR', q: 1959 },
+    { c: 'Porto Alegre/RS', q: 1859 }, { c: 'Lauro de Freitas/BA', q: 1517 }, { c: 'Recife/PE', q: 1294 }, { c: 'Aparecida de Goiânia/GO', q: 1278 }
+  ];
+
+  function fmt(n) { return n.toLocaleString('pt-BR') }
+  var maxCid = cidades[0].q;
+
+  // Tabela cidades
+  var tb1 = document.getElementById('tbCidades');
+  cidades.forEach(function (r) {
+    tb1.innerHTML += '<tr><td>' + r.c + '</td><td><span class="tag">' + r.uf + '</span></td><td class="num" style="text-align:right">' + fmt(r.q) + '</td><td><div class="bar-cell"><div class="bar-bg" style="width:' + Math.round(r.q / maxCid * 100) + '%"></div></div></td></tr>';
+  });
+
+  // Tabela empresas
+  var tb2 = document.getElementById('tbEmpresas');
+  empresas.forEach(function (r) {
+    tb2.innerHTML += '<tr><td>' + r.e + '</td><td style="font-size:12px;color:var(--muted)">' + r.l + '</td><td class="num" style="text-align:right">' + fmt(r.q) + '</td></tr>';
+  });
+
+  // Tabela motivos
+  var maxMot = motivos[0].q;
+  var tb3 = document.getElementById('tbMotivos');
+  motivos.forEach(function (r, i) {
+    tb3.innerHTML += '<tr><td class="num">' + (i + 1) + '</td><td>' + r.m + '</td><td class="num" style="text-align:right">' + fmt(r.q) + '</td><td><div class="bar-cell"><div class="bar-bg" style="width:' + Math.round(r.q / maxMot * 100) + '%;background:' + (i < 3 ? 'var(--danger)' : 'var(--accent)') + '"></div></div></td></tr>';
+  });
+
+  // Chart meses
+  new Chart(document.getElementById('chartMes'), { type: 'bar', data: { labels: meses.labels, datasets: [{ label: 'Negações', data: meses.data, backgroundColor: 'rgba(53,92,192,0.7)', borderRadius: 6 }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { callback: function (v) { return (v / 1000) + 'K' } } } } } });
+
+  // Chart UFs
+  new Chart(document.getElementById('chartUF'), { type: 'bar', data: { labels: ufs.map(function (u) { return u.uf }), datasets: [{ label: 'Negações', data: ufs.map(function (u) { return u.qtd }), backgroundColor: ['#355cc0', '#5981e3', '#89a8f8', '#0a9090', '#51c1c3', '#7cdbdb', '#efba0f', '#fbd458', '#d6342c', '#e37570'], borderRadius: 6 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { callback: function (v) { return (v / 1000) + 'K' } } } } } });
+
+  // Chart pagamento
+  new Chart(document.getElementById('chartPagamento'), { type: 'bar', data: { labels: pagamento.map(function (p) { return p.c }), datasets: [{ label: 'Falta de Pagamento', data: pagamento.map(function (p) { return p.q }), backgroundColor: 'rgba(214,52,44,0.7)', borderRadius: 6 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { callback: function (v) { return (v / 1000) + 'K' } } } } } });
+</script>
+
+</html>
