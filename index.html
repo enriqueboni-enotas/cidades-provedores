@@ -1448,6 +1448,7 @@
   <script src="Provedores/_index.js"></script>
   <script src="LogsAlteracoes/github-changelog.js"></script>
   <script src="LogsAlteracoes/jira-changelog.js"></script>
+  <script src="LogsAlteracoes/nfe-negadas-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
     (function () {
@@ -2150,7 +2151,8 @@
     (function () {
       var hasChangelog = typeof changelogData !== 'undefined' && changelogData.length;
       var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
-      if (!hasChangelog && !hasJira) return;
+      var hasNegadas = typeof nfeNegadasData !== 'undefined' && nfeNegadasData.length;
+      if (!hasChangelog && !hasJira && !hasNegadas) return;
       var el = document.getElementById('logs-alteracoes');
       if (!el) return;
 
@@ -2184,12 +2186,18 @@
       if (hasJira) {
         h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Cards Resolvidos (CE)</button>';
       }
+      if (hasNegadas) {
+        h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">❌ NF-e Negadas</button>';
+      }
       h += '</div>';
       if (hasChangelog) {
         h += '<div class="logs-panel active" id="panel-changelog">' + renderItems(changelogData) + '</div>';
       }
       if (hasJira) {
         h += '<div class="logs-panel' + (hasChangelog ? '' : ' active') + '" id="panel-jira">' + renderItems(jiraChangelogData) + '</div>';
+      }
+      if (hasNegadas) {
+        h += '<div class="logs-panel' + (!hasChangelog && !hasJira ? ' active' : '') + '" id="panel-negadas">' + renderItems(nfeNegadasData) + '</div>';
       }
       h += '</div>';
       el.innerHTML = h;
