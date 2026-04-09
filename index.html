@@ -1400,12 +1400,14 @@
   </div>
 
   <div id="changelog"></div>
+  <div id="jira-changelog"></div>
 
   <div class="footer">Análise extraída do código-fonte do app-gw · Abril 2026</div>
 
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
   <script src="changelog.js"></script>
+  <script src="jira-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
     (function () {
@@ -2127,6 +2129,34 @@
       el.innerHTML = h;
       document.getElementById('cl-toggle').addEventListener('click', function () {
         var c = document.getElementById('cl-content');
+        c.style.display = c.style.display === 'none' ? 'block' : 'none';
+      });
+    })();
+
+    /* ── Jira Changelog (Cards CE resolvidos) ── */
+    (function () {
+      if (typeof jiraChangelogData === 'undefined' || !jiraChangelogData.length) return;
+      var el = document.getElementById('jira-changelog');
+      if (!el) return;
+      var h = '<div style="max-width:1200px;margin:0 auto;padding:0 40px 40px;">';
+      h += '<div class="section-title" style="font-size:20px;cursor:pointer" id="jcl-toggle">';
+      h += '🎫 Cards Resolvidos (Jira CE) <span style="font-size:12px;color:var(--muted);margin-left:8px">(' + jiraChangelogData[jiraChangelogData.length - 1].data + ' – ' + jiraChangelogData[0].data + ') — clique para expandir</span></div>';
+      h += '<div id="jcl-content" style="display:none"><div class="pr-list">';
+      jiraChangelogData.forEach(function (r) {
+        h += '<div class="pr-card"><div class="pr-header">';
+        h += '<span class="pr-number">' + r.tag + '</span>';
+        h += '<span class="pr-title">' + r.titulo + '</span>';
+        h += '<span class="pr-date">' + r.data + '</span></div>';
+        h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+        r.itens.forEach(function (it) {
+          h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + it.texto + '</p>';
+        });
+        h += '</div></div>';
+      });
+      h += '</div></div></div>';
+      el.innerHTML = h;
+      document.getElementById('jcl-toggle').addEventListener('click', function () {
+        var c = document.getElementById('jcl-content');
         c.style.display = c.style.display === 'none' ? 'block' : 'none';
       });
     })();

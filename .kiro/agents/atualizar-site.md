@@ -68,7 +68,46 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 7. Os dias da semana em português: Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado.
 8. Os meses em português: Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.
 
-## Etapa 4: Commit e Push
+## Etapa 4: Atualizar o Jira Changelog — Cards CE resolvidos (últimos 10 dias)
+
+1. Use o Atlassian CLI (`acli`) para buscar cards resolvidos do projeto CE com produto e-Notas, agrupados por dia. Para cada dia dos últimos 10, execute:
+
+   ```bash
+   acli jira workitem search --jql "project = CE AND cf[14189] = e-Notas AND status changed to Done DURING (\"YYYY-MM-DD\",\"YYYY-MM-DD+1\") ORDER BY key DESC" --fields "key,summary" --json --paginate
+   ```
+
+2. Para cada dia, agrupe os cards por assunto/tema (sincronização, emissão, cancelamento, financeiro, autofix, etc.). Cada item agrupado deve ter:
+   - `icon`: emoji relevante (🔄 sincronização, ❌ erros de emissão, 🤖 autofix, 💰 financeiro, 🌐 exterior, 🏙️ municipal, 🧾 inutilização, etc.)
+   - `destaque`: descrição curta do assunto agrupado, incluindo cidade/UF quando relevante. Exemplo: "Sincronização de nota em Barueri/SP"
+   - `texto`: quantidade de cards e lista de keys. Exemplo: "5 cards (CE-24312, CE-24266, CE-24250, CE-24119, CE-24378)"
+
+3. Regras de agrupamento:
+   - Evitar colocar nome do cliente no destaque (ex: "LITHIUM SOFTWARE"). Ler a descrição para entender o assunto real.
+   - Cards `[Autofix]` do mesmo tipo devem ser agrupados juntos.
+   - Dias sem cards devem ter icon '📭', destaque 'Sem cards resolvidos', texto 'Nenhum card resolvido neste dia.'
+
+4. Reescreva o arquivo `jira-changelog.js` com o array `jiraChangelogData` no mesmo formato do `changelogData`:
+
+   ```javascript
+   var jiraChangelogData = [
+     {
+       tag: 'DD/MM/YYYY',
+       titulo: 'DiaDaSemana — DD de Mês',
+       data: 'DD/MM/YYYY',
+       itens: [
+         {
+           icon: '🔄',
+           destaque: 'Sincronização de nota em Barueri/SP',
+           texto: '5 cards (CE-24312, CE-24266, CE-24250, CE-24119, CE-24378)',
+         },
+       ],
+     },
+   ];
+   ```
+
+5. IMPORTANTE: O `DURING` do Jira pode retornar cards que já apareceram em dias anteriores. Cada card deve ser contado apenas no primeiro dia em que aparece (o dia mais recente). Mantenha um set de keys já vistas para deduplicar.
+
+## Etapa 5: Commit e Push
 
 1. No diretório do workspace, execute:
    ```
