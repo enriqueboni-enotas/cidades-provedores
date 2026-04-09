@@ -1344,59 +1344,112 @@
     }
 
     /* LOGS TABS */
-    .logs-tabs {
+    .logs-container {
       display: flex;
       gap: 0;
-      border-bottom: 2px solid var(--border);
-      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 400px;
+    }
+
+    .logs-sidebar {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      min-width: 220px;
+      flex-shrink: 0;
     }
 
     .logs-tab {
-      padding: 12px 24px;
-      font-size: 14px;
+      padding: 16px 20px;
+      font-size: 13px;
       font-weight: 600;
       cursor: pointer;
       border: none;
       background: transparent;
       color: var(--muted);
-      border-bottom: 2px solid transparent;
-      margin-bottom: -2px;
-      transition: color .2s, border-color .2s;
+      border-left: 3px solid transparent;
+      transition: color .2s, background .2s, border-color .2s;
+      text-align: left;
       display: flex;
-      align-items: center;
-      gap: 8px;
+      flex-direction: column;
+      gap: 4px;
     }
 
     .logs-tab:hover {
       color: var(--text);
+      background: var(--surface2);
     }
 
     .logs-tab.active {
       color: var(--accent);
-      border-bottom-color: var(--accent);
+      background: var(--bg);
+      border-left-color: var(--accent);
     }
 
-    .logs-tab .tab-count {
+    .logs-tab .tab-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .logs-tab .tab-range {
       font-size: 11px;
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      padding: 1px 8px;
-      border-radius: 10px;
       color: var(--muted);
+      font-weight: 400;
     }
 
-    .logs-tab.active .tab-count {
-      background: rgba(89, 129, 227, 0.15);
-      border-color: rgba(89, 129, 227, 0.3);
+    .logs-tab.active .tab-range {
       color: var(--accent);
+      opacity: 0.7;
+    }
+
+    .logs-content {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 600px;
     }
 
     .logs-panel {
       display: none;
+      padding: 24px;
     }
 
     .logs-panel.active {
       display: block;
+    }
+
+    @media (max-width: 768px) {
+      .logs-container {
+        flex-direction: column;
+      }
+
+      .logs-sidebar {
+        flex-direction: row;
+        min-width: unset;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+      }
+
+      .logs-tab {
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        white-space: nowrap;
+        padding: 12px 16px;
+      }
+
+      .logs-tab.active {
+        border-bottom-color: var(--accent);
+        border-left-color: transparent;
+      }
+
+      .logs-content {
+        max-height: unset;
+      }
     }
   </style>
 </head>
@@ -2161,7 +2214,7 @@
       return h + '</div>';
     }
 
-    /* ── Logs de Alterações (Tabs) ── */
+    /* ── Logs de Alterações (Tabs laterais) ── */
     (function () {
       var hasChangelog = typeof changelogData !== 'undefined' && changelogData.length;
       var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
@@ -2192,23 +2245,27 @@
 
       var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
       h += '<div class="section-title" style="font-size:20px;margin-bottom:20px">📋 Logs de Alterações</div>';
-      h += '<div class="logs-tabs">';
+      h += '<div class="logs-container">';
+      h += '<div class="logs-sidebar">';
       if (hasChangelog) {
-        h += '<button class="logs-tab active" data-panel="panel-changelog">📦 Últimas Atualizações (PRs)';
-        h += ' <span class="tab-count">' + dateRange(changelogData) + '</span></button>';
+        h += '<button class="logs-tab active" data-panel="panel-changelog">';
+        h += '<span class="tab-label">📦 Últimas Atualizações</span>';
+        h += '<span class="tab-range">' + dateRange(changelogData) + '</span></button>';
       }
       if (hasJira) {
-        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Cards Resolvidos (Jira CE)';
-        h += ' <span class="tab-count">' + dateRange(jiraChangelogData) + '</span></button>';
+        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">';
+        h += '<span class="tab-label">🎫 Cards Resolvidos (CE)</span>';
+        h += '<span class="tab-range">' + dateRange(jiraChangelogData) + '</span></button>';
       }
       h += '</div>';
+      h += '<div class="logs-content">';
       if (hasChangelog) {
         h += '<div class="logs-panel active" id="panel-changelog">' + renderItems(changelogData) + '</div>';
       }
       if (hasJira) {
         h += '<div class="logs-panel' + (hasChangelog ? '' : ' active') + '" id="panel-jira">' + renderItems(jiraChangelogData) + '</div>';
       }
-      h += '</div>';
+      h += '</div></div></div>';
       el.innerHTML = h;
 
       var tabs = el.querySelectorAll('.logs-tab');
