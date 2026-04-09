@@ -1199,6 +1199,71 @@
       font-size: 14px;
     }
 
+    /* SKELETON */
+    @keyframes shimmer {
+      0% {
+        background-position: -400px 0;
+      }
+
+      100% {
+        background-position: 400px 0;
+      }
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+      background-size: 800px 100%;
+      animation: shimmer 1.5s infinite ease-in-out;
+      border-radius: 8px;
+    }
+
+    .skeleton-landing {
+      max-width: 600px;
+      margin: 80px auto 0;
+      padding: 0 24px;
+    }
+
+    .skeleton-title {
+      height: 28px;
+      width: 60%;
+      margin: 0 auto 12px;
+    }
+
+    .skeleton-subtitle {
+      height: 16px;
+      width: 40%;
+      margin: 0 auto 32px;
+    }
+
+    .skeleton-cards {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .skeleton-card {
+      flex: 1;
+      max-width: 240px;
+      height: 140px;
+      border-radius: 14px;
+    }
+
+    .skeleton-search {
+      height: 48px;
+      max-width: 600px;
+      margin: 28px auto 0;
+      border-radius: 12px;
+    }
+
+    .skeleton-stats {
+      height: 16px;
+      width: 200px;
+    }
+
+    .skeleton-hide {
+      display: none;
+    }
+
     /* SCROLLBAR */
     ::-webkit-scrollbar {
       width: 6px;
@@ -1224,13 +1289,27 @@
   <div class="topbar">
     <h1>🏙️ Cidades & Provedores</h1>
     <div class="topbar-right">
-      <div class="stats" id="stats"></div>
+      <div class="stats" id="stats">
+        <div class="skeleton skeleton-stats">&nbsp;</div>
+      </div>
       <button class="theme-toggle" id="themeToggle" title="Alternar tema"
         aria-label="Alternar tema claro/escuro"></button>
     </div>
   </div>
 
-  <div id="home">
+  <div id="skeleton-home">
+    <div class="skeleton-landing">
+      <div class="skeleton skeleton-title">&nbsp;</div>
+      <div class="skeleton skeleton-subtitle">&nbsp;</div>
+      <div class="skeleton-cards">
+        <div class="skeleton skeleton-card">&nbsp;</div>
+        <div class="skeleton skeleton-card">&nbsp;</div>
+      </div>
+      <div class="skeleton skeleton-search">&nbsp;</div>
+    </div>
+  </div>
+
+  <div id="home" class="skeleton-hide">
     <div class="landing">
       <h2>O que deseja consultar?</h2>
       <p>Selecione uma opção e busque por nome, código IBGE ou provedor</p>
@@ -1268,6 +1347,11 @@
   <script src="Provedores/_index.js"></script>
   <script src="changelog.js"></script>
   <script>
+    /* ── Skeleton → Content ── */
+    (function () {
+      document.getElementById('skeleton-home').style.display = 'none';
+      document.getElementById('home').classList.remove('skeleton-hide');
+    })();
     const home = document.getElementById('home');
     const detailEl = document.getElementById('detail');
     const dc = document.getElementById('dc');
