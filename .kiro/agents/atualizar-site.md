@@ -1,10 +1,10 @@
 ---
 name: atualizar-site
-description: 'Atualiza os arquivos de configuração de provedores e cidades a partir da branch dev do app-gw, gera o changelog dos últimos 10 dias e faz push para o GitHub Pages.'
+description: 'Atualiza os arquivos de configuração de provedores e cidades a partir da branch dev do app-gw, gera o changelog dos últimos 12 dias e faz push para o GitHub Pages.'
 tools: ['shell', 'read', 'write', 'web']
 ---
 
-Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 3 etapas em sequência:
+Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 5 etapas em sequência:
 
 ## Etapa 1: Garantir que o app-gw local está atualizado (branch dev)
 
@@ -27,15 +27,15 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 2. Execute o comando: `powershell -ExecutionPolicy Bypass -File gerar.ps1` no diretório do workspace.
 
-## Etapa 3: Atualizar o Changelog (últimos 10 dias)
+## Etapa 3: Atualizar o Changelog GitHub (últimos 12 dias)
 
-1. Use o GitHub CLI (`gh`) para buscar PRs mergeados no repositório `enotas-org/app-gw` dos últimos 10 dias:
+1. Use o GitHub CLI (`gh`) para buscar PRs mergeados no repositório `enotas-org/app-gw` dos últimos 12 dias:
 
-   ```
+   ```bash
    gh pr list --repo enotas-org/app-gw --state merged --limit 100 --json number,title,mergedAt,author,body
    ```
 
-2. Filtre apenas os PRs com `mergedAt` nos últimos 10 dias a partir da data atual.
+2. Filtre apenas os PRs com `mergedAt` nos últimos 12 dias a partir da data atual.
 
 3. Agrupe os PRs por dia (usando a data de merge, convertida para o fuso horário de Brasília UTC-3).
 
@@ -46,7 +46,7 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 5. Dias sem PRs devem ter um item com icon '📭', destaque 'Sem alterações' e texto 'Nenhum PR mergeado neste dia.'
 
-6. Reescreva o arquivo `LogsAlteracoes/github-changelog.js` com o array `changelogData` contendo os últimos 10 dias, do mais recente para o mais antigo. O formato é:
+6. Reescreva o arquivo `LogsAlteracoes/github-changelog.js` com o array `changelogData` contendo os últimos 12 dias, do mais recente para o mais antigo. O formato é:
 
    ```javascript
    var changelogData = [
@@ -68,9 +68,9 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 7. Os dias da semana em português: Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado.
 8. Os meses em português: Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.
 
-## Etapa 4: Atualizar o Jira Changelog — Cards CE resolvidos (últimos 10 dias)
+## Etapa 4: Atualizar o Jira Changelog — Cards CE resolvidos (últimos 12 dias)
 
-1. Use o Atlassian CLI (`acli`) para buscar cards resolvidos do projeto CE com produto e-Notas, agrupados por dia. Para cada dia dos últimos 10, execute:
+1. Use o Atlassian CLI (`acli`) para buscar cards resolvidos do projeto CE com produto e-Notas, agrupados por dia. Para cada dia dos últimos 12, execute:
 
    ```bash
    acli jira workitem search --jql "project = CE AND cf[14189] = e-Notas AND status changed to Done DURING (\"YYYY-MM-DD\",\"YYYY-MM-DD+1\") ORDER BY key DESC" --fields "key,summary" --json --paginate
@@ -110,7 +110,7 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 ## Etapa 5: Commit e Push
 
 1. No diretório do workspace, execute:
-   ```
+   ```bash
    git add -A
    git commit -m "atualiza cidades, provedores e changelog"
    git push
@@ -121,7 +121,7 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 - O repositório do workspace é `c:\Git-Repositories\CidadesProvedores`
 - O repositório do app-gw é `c:\Git-Repositories\app-gw` (org: enotas-org/app-gw)
 - Sempre use a branch `dev` do app-gw para pegar os dados mais recentes
-- O changelog deve cobrir SEMPRE os últimos 10 dias a partir da data atual
+- O changelog deve cobrir SEMPRE os últimos 12 dias a partir da data atual
 - PRs com título "Notagateway sync" ou "Conflito" são merges de sincronização — analise o body deles para extrair as mudanças reais
 - PRs que são apenas scripts SQL (liquibase) ou mudanças de teste podem ser ignorados ou resumidos brevemente
 - Foque nas mudanças que afetam provedores, cidades, emissão de notas, cancelamento, e configurações municipais
