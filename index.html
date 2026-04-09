@@ -2244,18 +2244,15 @@
       }
 
       var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
-      h += '<div class="section-title" style="font-size:20px;margin-bottom:20px">📋 Logs de Alterações</div>';
       h += '<div class="logs-container">';
       h += '<div class="logs-sidebar">';
       if (hasChangelog) {
         h += '<button class="logs-tab active" data-panel="panel-changelog">';
-        h += '<span class="tab-label">📦 Últimas Atualizações</span>';
-        h += '<span class="tab-range">' + dateRange(changelogData) + '</span></button>';
+        h += '<span class="tab-label">📦 Últimas Atualizações</span></button>';
       }
       if (hasJira) {
         h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">';
-        h += '<span class="tab-label">🎫 Cards Resolvidos (CE)</span>';
-        h += '<span class="tab-range">' + dateRange(jiraChangelogData) + '</span></button>';
+        h += '<span class="tab-label">🎫 Cards Resolvidos (CE)</span></button>';
       }
       h += '</div>';
       h += '<div class="logs-content">';
