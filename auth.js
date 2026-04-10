@@ -182,7 +182,7 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXm
     var authUrl = buildAuthUrl();
     overlay.innerHTML =
       '<div class="auth-box">' +
-      '<div class="auth-logo"><img src="hotmart-logo.svg" alt="Hotmart" style="height:40px;width:auto"></div>' +
+      '<div class="auth-logo"><img src="hotmart-logo.svg" alt="Hotmart" style="height:32px;width:auto"><span style="color:#E0DED8;font-size:20px;margin:0 12px">|</span><img src="enotas-logo.png" alt="eNotas" style="height:24px;width:auto"></div>' +
       '<div class="auth-title">Acesso Restrito</div>' +
       '<div class="auth-subtitle">Este conteúdo é exclusivo para colaboradores Hotmart.<br>Faça login com sua conta <strong>@hotmart.com</strong></div>' +
       '<a class="auth-btn" href="' + authUrl + '">' +
