@@ -2458,7 +2458,7 @@
             h += '<tr><td colspan="4" style="font-weight:600;font-size:12px;padding:8px 16px;background:var(--border);color:var(--heading)"><span style="color:' + cam.cor + '">●</span> ' + cam.nome + ' (' + cam.descricao + ') — ' + cam.total + ' tickets (' + cam.pct + '%)</td></tr>';
             cam.assuntos.forEach(function (a) {
               var jqlLink = 'https://hotmart.atlassian.net/issues/?jql=key in (' + a.keys + ')';
-              h += '<tr><td style="text-align:left"><span style="background:' + cam.cor + ';color:#fff;padding:2px 8px;border-radius:3px;font-size:11px;font-weight:600">' + cam.nome + '</span></td>';
+              h += '<tr style="background:var(--surface)"><td style="text-align:left"><span style="background:' + cam.cor + ';color:#fff;padding:2px 8px;border-radius:3px;font-size:11px;font-weight:600">' + cam.nome + '</span></td>';
               h += '<td style="text-align:left;font-weight:500;color:var(--heading)">' + a.assunto + '</td>';
               h += '<td style="text-align:right"><a href="' + jqlLink + '" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:700">' + a.qtd + '</a></td>';
               h += '<td style="text-align:right;color:var(--text);font-weight:500">' + a.pct + '%</td></tr>';
