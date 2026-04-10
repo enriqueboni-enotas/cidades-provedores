@@ -2442,9 +2442,9 @@
       var totalNotas = empresas.reduce(function (s, e) { return s + e.qtd; }, 0);
 
       var h = '<div class="modal-summary">' + empresas.length + ' empresas · ' + totalNotas.toLocaleString('pt-BR') + ' notas no total</div>';
-      h += '<div class="table-wrap"><table><thead><tr><th>#</th><th>Empresa (Razão Social)</th><th>ID Empresa</th><th style="text-align:right">Qtd Notas</th></tr></thead><tbody>';
+      h += '<div class="table-wrap"><table><thead><tr><th>#</th><th>ID Empresa</th><th style="text-align:right">Qtd Notas</th></tr></thead><tbody>';
       empresas.forEach(function (e, i) {
-        h += '<tr><td>' + (i + 1) + '</td><td>' + e.razao + '</td><td><code style="font-size:11px">' + e.id + '</code></td><td style="text-align:right;font-weight:600;color:var(--accent)">' + e.qtd.toLocaleString('pt-BR') + '</td></tr>';
+        h += '<tr><td>' + (i + 1) + '</td><td><code style="font-size:12px;letter-spacing:0.5px;padding:4px 10px">' + e.id + '</code></td><td style="text-align:right;font-weight:600;color:var(--accent)">' + e.qtd.toLocaleString('pt-BR') + '</td></tr>';
       });
       h += '</tbody></table></div>';
       body.innerHTML = h;
