@@ -33,7 +33,7 @@ var SESSION_HOURS = 8;
  * 4. Deploy → New deployment → Web app → Execute as: Me → Anyone → Deploy
  * 5. Cole a URL abaixo
  */
-var ACCESS_LOG_URL = '';
+var ACCESS_LOG_URL = 'https://script.google.com/a/macros/hotmart.com/s/AKfycbz0s-_PjMazuY6pGH2e3ko3vNHiavfYCHEVmG2Kprv5S8aAfgldzvY0VNKcfqc0lk1BkQ/exec';
 
 (function () {
   'use strict';
