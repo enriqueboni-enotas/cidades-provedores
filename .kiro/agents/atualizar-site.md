@@ -4,7 +4,7 @@ description: 'Atualiza os arquivos de configuração de provedores e cidades a p
 tools: ['shell', 'read', 'write', 'web']
 ---
 
-Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 5 etapas em sequência:
+Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 6 etapas em sequência:
 
 ## Etapa 1: Garantir que o app-gw local está atualizado (branch dev)
 
@@ -165,19 +165,21 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 Para cada dia dos últimos 12, gere um arquivo JSON em `LogsAlteracoes/nfe-negadas-detalhe/YYYY-MM-DD.json` com o detalhe por empresa. Execute a query:
 
 ```sql
-SELECT motivo_situacao, empresa_id, razao_social, count(distinct coalesce(n_fe_id, hub_event_id)) as qtd
+SELECT motivo_situacao, empresa_id, count(distinct coalesce(n_fe_id, hub_event_id)) as qtd
 FROM dh_app_enotas.nfe_negadas
 WHERE lastmodified_at >= 'YYYY-MM-DD 00:00:00'
   AND lastmodified_at < 'YYYY-MM-DD+1 00:00:00'
-GROUP BY motivo_situacao, empresa_id, razao_social
+GROUP BY motivo_situacao, empresa_id
 ORDER BY qtd DESC
 ```
 
-Salve o resultado como um array JSON em `LogsAlteracoes/nfe-negadas-detalhe/YYYY-MM-DD.json`. Cada objeto deve ter: `motivo_situacao`, `empresa_id`, `razao_social`, `qtd`.
+Salve o resultado como um array JSON em `LogsAlteracoes/nfe-negadas-detalhe/YYYY-MM-DD.json`. Cada objeto deve ter: `motivo_situacao`, `empresa_id`, `qtd`.
+
+IMPORTANTE: NÃO incluir `razao_social` nos JSONs de detalhe. O site é público e não deve expor dados sensíveis de empresas. Apenas o ID (UUID) e a quantidade de notas devem ser exibidos.
 
 Antes de gerar, limpe os arquivos antigos da pasta `LogsAlteracoes/nfe-negadas-detalhe/` para não manter dados obsoletos.
 
-O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch quando o usuário clica em um motivo na aba NF-e Negadas.
+O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch quando o usuário clica em um motivo na aba NF-e Negadas. O modal exibe uma tabela com ID Empresa e Qtd Notas, ordenada por quantidade desc.
 
 ## Etapa 6: Commit e Push
 
@@ -198,3 +200,5 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
 - PRs que são apenas scripts SQL (liquibase) ou mudanças de teste podem ser ignorados ou resumidos brevemente
 - Foque nas mudanças que afetam provedores, cidades, emissão de notas, cancelamento, e configurações municipais
 - Escreva tudo em português brasileiro
+- O site é PÚBLICO (GitHub Pages). NUNCA incluir dados sensíveis como razão social, CNPJ, nomes de clientes ou qualquer PII nos arquivos gerados. Apenas IDs (UUIDs) são permitidos para identificar empresas.
+- Não alterar o `index.html` — ele já contém toda a lógica de renderização, tabs, modal de drill-down, etc. Apenas os arquivos `.js` de dados e os `.json` de detalhe devem ser regenerados.
