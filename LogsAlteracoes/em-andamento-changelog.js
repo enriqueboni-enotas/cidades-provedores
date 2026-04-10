@@ -125,7 +125,7 @@ var emAndamentoData = {
     },
   ],
   compiladoSemanal: {
-    periodo: '06/04 a 10/04/2026',
+    periodo: '06/04 a 12/04/2026',
     totalTickets: 50,
     sincronizacao: 2,
     semAssignee: 37,
