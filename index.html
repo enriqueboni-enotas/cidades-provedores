@@ -1583,6 +1583,7 @@
   <script src="LogsAlteracoes/github-changelog.js"></script>
   <script src="LogsAlteracoes/jira-tickets-changelog.js"></script>
   <script src="LogsAlteracoes/nfe-negadas-changelog.js"></script>
+  <script src="LogsAlteracoes/em-andamento-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
     (function () {
@@ -2287,7 +2288,8 @@
       var hasChangelog = typeof changelogData !== 'undefined' && changelogData.length;
       var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
       var hasNegadas = typeof nfeNegadasData !== 'undefined' && nfeNegadasData.length;
-      if (!hasChangelog && !hasJira && !hasNegadas) return;
+      var hasEmAndamento = typeof emAndamentoData !== 'undefined' && emAndamentoData;
+      if (!hasChangelog && !hasJira && !hasNegadas && !hasEmAndamento) return;
       var el = document.getElementById('logs-alteracoes');
       if (!el) return;
 
@@ -2315,6 +2317,43 @@
         return h;
       }
 
+      function renderEmAndamento(data) {
+        var h = '';
+        // Tickets abertos por status
+        if (data.ticketsAbertos && data.ticketsAbertos.length) {
+          h += '<div class="section-title" style="margin-top:0"><span class="num">🎫</span> Tickets CE em aberto (' + data.ticketsAbertos.reduce(function (s, g) { return s + g.itens.length }, 0) + ')</div>';
+          data.ticketsAbertos.forEach(function (grupo) {
+            h += '<div class="pr-card" style="margin-bottom:16px"><div class="pr-header">';
+            h += '<span class="pr-number">' + grupo.icon + ' ' + grupo.status + '</span>';
+            h += '<span class="pr-title">' + grupo.itens.length + ' tickets</span></div>';
+            h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+            grupo.itens.forEach(function (it) {
+              h += '<p>' + grupo.icon + ' <a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
+            });
+            h += '</div></div>';
+          });
+        }
+        // Aguardando deploy
+        if (data.aguardandoDeploy && data.aguardandoDeploy.length) {
+          var totalCommits = data.aguardandoDeploy.reduce(function (s, d) { return s + d.itens.length }, 0);
+          h += '<div class="section-title"><span class="num">🚀</span> Aguardando deploy — notagateway-sync → main (' + totalCommits + ' commits)</div>';
+          h += '<div class="pr-list">';
+          data.aguardandoDeploy.forEach(function (dia) {
+            h += '<div class="pr-card"><div class="pr-header">';
+            h += '<span class="pr-number">' + dia.tag + '</span>';
+            h += '<span class="pr-title">' + dia.titulo + '</span></div>';
+            h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+            dia.itens.forEach(function (it) {
+              var prLink = it.pr ? ' <a href="https://github.com/enotas-org/app-gw/pull/' + it.pr + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">PR #' + it.pr + '</a>' : '';
+              h += '<p>' + it.icon + ' ' + it.texto + prLink + ' <span style="color:var(--muted);font-size:11px">— ' + it.autor + '</span></p>';
+            });
+            h += '</div></div>';
+          });
+          h += '</div>';
+        }
+        return h;
+      }
+
       function dateRange(data) {
         return data[data.length - 1].data + ' – ' + data[0].data;
       }
@@ -2330,6 +2369,9 @@
       if (hasNegadas) {
         h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">❌ NF-e Negadas</button>';
       }
+      if (hasEmAndamento) {
+        h += '<button class="logs-tab" data-panel="panel-andamento">🔧 Em Andamento</button>';
+      }
       h += '</div>';
       if (hasChangelog) {
         h += '<div class="logs-panel active" id="panel-changelog">' + renderItems(changelogData) + '</div>';
@@ -2339,6 +2381,9 @@
       }
       if (hasNegadas) {
         h += '<div class="logs-panel' + (!hasChangelog && !hasJira ? ' active' : '') + '" id="panel-negadas">' + renderItems(nfeNegadasData, true) + '</div>';
+      }
+      if (hasEmAndamento) {
+        h += '<div class="logs-panel" id="panel-andamento">' + renderEmAndamento(emAndamentoData) + '</div>';
       }
       h += '</div>';
       el.innerHTML = h;
