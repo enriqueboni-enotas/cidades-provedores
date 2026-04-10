@@ -99,20 +99,20 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXm
   // ── CSS ──
   var style = document.createElement('style');
   style.textContent = [
-    '#auth-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#0D0D0D;font-family:"Inter",-apple-system,sans-serif}',
-    'html.light #auth-overlay{background:#FAFAFA}',
-    '.auth-box{text-align:center;max-width:420px;padding:48px 40px;background:#1A1A1A;border:1px solid #2E2E2E;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.3)}',
-    'html.light .auth-box{background:#fff;border-color:#E0E0E0;box-shadow:0 12px 40px rgba(0,0,0,.08)}',
+    '#auth-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#F5F5F0;font-family:"Nunito Sans",-apple-system,sans-serif}',
+    'html:not(.light) #auth-overlay{background:#141414}',
+    '.auth-box{text-align:center;max-width:420px;padding:48px 40px;background:#fff;border:1px solid #E0DED8;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.06)}',
+    'html:not(.light) .auth-box{background:#1E1E1E;border-color:#333;box-shadow:0 12px 40px rgba(0,0,0,.3)}',
     '.auth-logo{font-size:48px;margin-bottom:20px}',
-    '.auth-title{font-size:24px;font-weight:700;color:#fff;margin-bottom:8px;letter-spacing:-0.3px}',
-    'html.light .auth-title{color:#0D0D0D}',
-    '.auth-subtitle{font-size:14px;color:#8A8A8A;margin-bottom:36px;line-height:1.6}',
-    '.auth-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:12px;border:2px solid #2E2E2E;background:#1A1A1A;color:#E0E0E0;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit;text-decoration:none}',
-    'html.light .auth-btn{background:#fff;border-color:#E0E0E0;color:#333}',
+    '.auth-title{font-size:24px;font-weight:700;color:#0D0D0D;margin-bottom:8px;letter-spacing:-0.3px}',
+    'html:not(.light) .auth-title{color:#fff}',
+    '.auth-subtitle{font-size:14px;color:#707780;margin-bottom:36px;line-height:1.6}',
+    '.auth-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:12px;border:2px solid #E0DED8;background:#fff;color:#32363b;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit;text-decoration:none}',
+    'html:not(.light) .auth-btn{background:#2A2A2A;border-color:#444;color:#E0E0E0}',
     '.auth-btn:hover{border-color:#F04E23;box-shadow:0 4px 16px rgba(240,78,35,.15);transform:translateY(-2px)}',
     '.auth-btn svg{width:20px;height:20px}',
     '.auth-error{color:#d6342c;font-size:13px;margin-top:16px;display:none}',
-    '.auth-user-bar{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.7)}',
+    '.auth-user-bar{display:flex;align-items:center;gap:8px;font-size:13px;color:#32363b}',
     'html:not(.light) .auth-user-bar{color:rgba(255,255,255,0.7)}',
     '.auth-user-bar img{width:24px;height:24px;border-radius:50%}',
     '.auth-logout{background:none;border:none;color:#707780;cursor:pointer;font-size:12px;text-decoration:underline;padding:0;font-family:inherit}',
@@ -182,7 +182,7 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXm
     var authUrl = buildAuthUrl();
     overlay.innerHTML =
       '<div class="auth-box">' +
-      '<div class="auth-logo"><svg viewBox="0 0 28 28" width="48" height="48" fill="none"><path d="M14 0C6.3 0 0 6.3 0 14s6.3 14 14 14 14-6.3 14-14S21.7 0 14 0zm6.3 18.9c-.4.4-1 .4-1.4 0l-4.9-4.9-4.9 4.9c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l4.9-4.9-4.9-4.9c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L14 11.1l4.9-4.9c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4.9 4.9 4.9 4.9c.4.5.4 1.1 0 1.5z" fill="#F04E23"/></svg></div>' +
+      '<div class="auth-logo"><img src="hotmart-logo.svg" alt="Hotmart" style="height:40px;width:auto"></div>' +
       '<div class="auth-title">Acesso Restrito</div>' +
       '<div class="auth-subtitle">Este conteúdo é exclusivo para colaboradores Hotmart.<br>Faça login com sua conta <strong>@hotmart.com</strong></div>' +
       '<a class="auth-btn" href="' + authUrl + '">' +
