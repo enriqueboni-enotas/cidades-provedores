@@ -69,12 +69,17 @@ var ACCESS_LOG_URL = 'https://script.google.com/a/macros/hotmart.com/s/AKfycbz0s
     if (!ACCESS_LOG_URL || !u) return;
     try {
       var page = window.location.pathname.split('/').pop() || 'index.html';
-      navigator.sendBeacon(ACCESS_LOG_URL, JSON.stringify({
-        email: u.email,
-        name: u.name,
-        page: page,
-        action: action || 'page_view'
-      }));
+      fetch(ACCESS_LOG_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          email: u.email,
+          name: u.name,
+          page: page,
+          action: action || 'page_view'
+        })
+      }).catch(function () {});
     } catch (e) { /* silencioso */ }
   }
 
