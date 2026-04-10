@@ -2447,6 +2447,27 @@
             h += '</div></div>';
           });
         }
+        // Compilado semanal
+        if (data.compiladoSemanal) {
+          var cs = data.compiladoSemanal;
+          h += '<div style="margin-top:32px;border-top:1px solid var(--border);padding-top:24px">';
+          h += '<div style="font-size:16px;font-weight:600;color:var(--heading);margin-bottom:4px">Principais Assuntos — Semana ' + cs.periodo + '</div>';
+          h += '<div style="font-size:12px;color:var(--muted);margin-bottom:16px">Total: ' + cs.totalTickets + ' tickets · Sincronização: ' + cs.sincronizacao + ' · Sem assignee: ' + cs.semAssignee + ' (' + Math.round(cs.semAssignee / cs.totalTickets * 100) + '%) · Reaberturas: ' + cs.reaberturas + '</div>';
+          h += '<div class="table-wrap"><table><thead><tr><th style="text-align:left">Camada</th><th style="text-align:left">Assunto</th><th style="text-align:right;width:50px">Qtd</th><th style="text-align:right;width:55px">%</th></tr></thead><tbody>';
+          cs.camadas.forEach(function (cam) {
+            h += '<tr style="background:var(--surface2)"><td colspan="4" style="font-weight:600;font-size:12px;padding:6px 16px"><span style="color:' + cam.cor + '">●</span> ' + cam.nome + ' (' + cam.descricao + ') — ' + cam.total + ' tickets (' + cam.pct + '%)</td></tr>';
+            cam.assuntos.forEach(function (a) {
+              var jqlLink = 'https://hotmart.atlassian.net/issues/?jql=key in (' + a.keys + ')';
+              h += '<tr><td style="text-align:left"><span style="background:' + cam.cor + ';color:#fff;padding:1px 6px;border-radius:3px;font-size:11px">' + cam.nome + '</span></td>';
+              h += '<td style="text-align:left;font-weight:500">' + a.assunto + '</td>';
+              h += '<td style="text-align:right"><a href="' + jqlLink + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:600">' + a.qtd + '</a></td>';
+              h += '<td style="text-align:right">' + a.pct + '%</td></tr>';
+            });
+          });
+          h += '<tr style="font-weight:700;background:var(--surface2)"><td colspan="2" style="text-align:left">TOTAL</td><td style="text-align:right">' + cs.totalTickets + '</td><td style="text-align:right">100%</td></tr>';
+          h += '</tbody></table></div>';
+          h += '</div>';
+        }
         return h;
       }
 

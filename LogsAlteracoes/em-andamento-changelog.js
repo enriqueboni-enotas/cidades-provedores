@@ -124,4 +124,122 @@ var emAndamentoData = {
       ],
     },
   ],
+  compiladoSemanal: {
+    periodo: '06/04 a 10/04/2026',
+    totalTickets: 50,
+    sincronizacao: 2,
+    semAssignee: 37,
+    reaberturas: 3,
+    camadas: [
+      {
+        nome: 'GW',
+        cor: '#F04E23',
+        descricao: 'Gateway NFS-e/NF-e com prefeituras',
+        total: 16,
+        pct: '32,0',
+        assuntos: [
+          {
+            assunto: 'Emissão exterior / Tomador estrangeiro',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25551,CE-25494,CE-25263,CE-25254,CE-25219,CE-25106',
+          },
+          {
+            assunto: 'Ajuste de XML / Layout de prefeitura',
+            qtd: 5,
+            pct: '10,0',
+            keys: 'CE-25509,CE-25446,CE-25337,CE-25229,CE-25112',
+          },
+          {
+            assunto: 'Sincronização de notas — Manual',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25421,CE-25221,CE-24229',
+          },
+          {
+            assunto: 'Configuração municipal / CTN / Tributos',
+            qtd: 2,
+            pct: '4,0',
+            keys: 'CE-25488,CE-25193',
+          },
+        ],
+      },
+      {
+        nome: 'Emissor',
+        cor: '#8A8A8A',
+        descricao: 'Painel, importação, configuração, faturamento',
+        total: 17,
+        pct: '34,0',
+        assuntos: [
+          {
+            assunto: 'Faturamento / Excedentes indevidos',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25450,CE-25350,CE-25348,CE-25336,CE-25323,CE-24806',
+          },
+          {
+            assunto: 'Configuração / Dados municipais / Tributos',
+            qtd: 4,
+            pct: '8,0',
+            keys: 'CE-25591,CE-25563,CE-25525,CE-25383',
+          },
+          {
+            assunto: 'Importação de vendas / Integração',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25566,CE-25560,CE-25212',
+          },
+          {
+            assunto: 'Painel / SMU / Relatórios',
+            qtd: 4,
+            pct: '8,0',
+            keys: 'CE-25596,CE-25514,CE-25352,CE-25231',
+          },
+        ],
+      },
+      {
+        nome: 'GW/Emissor',
+        cor: '#707780',
+        descricao: 'Ambíguo — depende do caso',
+        total: 11,
+        pct: '22,0',
+        assuntos: [
+          {
+            assunto: 'Erro / Falha na emissão de notas',
+            qtd: 5,
+            pct: '10,0',
+            keys: 'CE-25559,CE-25552,CE-25508,CE-25188,CE-24852',
+          },
+          {
+            assunto: 'CSRT / NF-e produto / Vendas Pagar.me',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25447,CE-25137,CE-25015',
+          },
+          {
+            assunto: 'Atualização de município / Sistema',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25283,CE-25218,CE-24387',
+          },
+        ],
+      },
+      {
+        nome: 'Outros',
+        cor: '#C8C5BC',
+        descricao: 'Melhoria IE, Shopify, PDF, pesquisa vendas',
+        total: 6,
+        pct: '12,0',
+        assuntos: [
+          {
+            assunto:
+              'Outros (melhoria IE, Shopify, bug visual, pesquisa vendas, NF-e complementar)',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25516,CE-25222,CE-25195,CE-25163,CE-24175,CE-23878',
+          },
+        ],
+      },
+    ],
+  },
 };
