@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cidades & Provedores — app-gw</title>
+  <title>Cidades & Provedores â€” app-gw</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,23 +17,23 @@
       padding: 0;
     }
 
-    /* Hotmart.com style — Dark theme (default) */
+    /* Hotmart Help Center ÔÇö Dark theme */
     :root {
-      --bg: #0D0D0D;
-      --surface: #1A1A1A;
-      --surface2: #242424;
-      --border: #2E2E2E;
+      --bg: #141414;
+      --surface: #1E1E1E;
+      --surface2: #2A2A2A;
+      --border: #333;
       --accent: #F04E23;
-      --accent2: #51c1c3;
+      --accent2: #32363b;
       --warn: #efba0f;
       --danger: #e37570;
       --text: #E0E0E0;
       --muted: #8A8A8A;
-      --code-bg: #141414;
-      --pr: #89a8f8;
+      --code-bg: #1A1A1A;
+      --pr: #8A8A8A;
       --heading: #FFFFFF;
 
-      /* Cosmos DS semantic tokens — dark */
+      /* Cosmos DS semantic tokens ÔÇö dark */
       --cds-color-cta: #89a8f8;
       --cds-color-positive: #4acc82;
       --cds-color-negative: #e37570;
@@ -76,20 +76,20 @@
       --hc-color-neutral-1000: #ffffff;
     }
 
-    /* Hotmart.com style — Light theme */
+    /* Hotmart Help Center ÔÇö Light theme */
     html.light {
-      --bg: #FAFAFA;
+      --bg: #F5F5F0;
       --surface: #FFFFFF;
-      --surface2: #F0F0F0;
-      --border: #E0E0E0;
+      --surface2: #F0F0EB;
+      --border: #E0DED8;
       --accent: #F04E23;
-      --accent2: #0a9090;
+      --accent2: #32363b;
       --warn: #efba0f;
       --danger: #d6342c;
-      --text: #333333;
+      --text: #32363b;
       --muted: #707780;
-      --code-bg: #F5F5F5;
-      --pr: #5981e3;
+      --code-bg: #F8F8F5;
+      --pr: #707780;
       --heading: #0D0D0D;
 
       --hc-color-primary-100: #ebf0ff;
@@ -128,7 +128,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+      font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -171,13 +171,8 @@
       width: auto;
     }
 
-    html:not(.light) .hotmart-logo {
-      filter: brightness(0) invert(1);
-    }
-
-    html:not(.light) .enotas-logo {
-      filter: brightness(0) invert(1);
-    }
+    html:not(.light) .hotmart-logo { filter: brightness(0) invert(1); }
+    html:not(.light) .enotas-logo { filter: brightness(0) invert(1); }
 
     .topbar-divider {
       width: 1px;
@@ -212,8 +207,8 @@
     }
 
     .theme-toggle {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: #F0F0EB;
+      border: 1px solid #E0DED8;
       border-radius: 20px;
       width: 48px;
       height: 26px;
@@ -223,20 +218,20 @@
       flex-shrink: 0;
     }
 
-    html.light .theme-toggle {
-      background: #E0DED8;
-      border-color: #C8C5BC;
+    html:not(.light) .theme-toggle {
+      background: #333;
+      border-color: #444;
     }
 
     .theme-toggle::after {
-      content: '🌙';
+      content: '­ƒîÖ';
       position: absolute;
       top: 3px;
       left: 3px;
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
+      background: #ccc;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -245,9 +240,9 @@
     }
 
     html.light .theme-toggle::after {
-      content: '☀️';
+      content: 'ÔÿÇ´©Å';
       transform: translateX(22px);
-      background: #32363b;
+      background: #F04E23;
     }
 
     /* LANDING */
@@ -293,18 +288,19 @@
     .mode-btn:hover {
       border-color: #F04E23;
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(240, 78, 35, 0.12);
+      box-shadow: 0 8px 24px rgba(240,78,35,0.12);
     }
 
     .mode-btn.active {
       border-color: #F04E23;
       background: var(--surface);
-      box-shadow: 0 0 0 3px rgba(240, 78, 35, 0.15);
+      box-shadow: 0 0 0 3px rgba(240,78,35,0.15);
     }
 
     .mode-btn .icon {
-      font-size: 32px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
     }
 
     .mode-btn .label {
@@ -430,7 +426,7 @@
     /* BACK BUTTON */
     .back-btn {
       background: rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255,255,255,0.6);
       border: 1px solid rgba(255, 255, 255, 0.15);
       padding: 6px 16px;
       border-radius: 8px;
@@ -453,7 +449,7 @@
     html.light .back-btn {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.15);
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255,255,255,0.6);
     }
 
     html.light .back-btn:hover {
@@ -461,7 +457,7 @@
       color: #fff;
     }
 
-    /* ── DOSSIÊ HEADER ── */
+    /* ÔöÇÔöÇ DOSSI├è HEADER ÔöÇÔöÇ */
     .header {
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
       border-bottom: none;
@@ -514,7 +510,7 @@
     }
 
     .header-meta {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255,255,255,0.5);
       font-size: 13px;
       display: flex;
       gap: 24px;
@@ -1136,7 +1132,7 @@
       color: var(--muted);
     }
 
-    /* ── CIDADE DETAIL (legacy styles) ── */
+    /* ÔöÇÔöÇ CIDADE DETAIL (legacy styles) ÔöÇÔöÇ */
     .cidade-detail .g {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1424,13 +1420,13 @@
     /* LOGS TABS */
     .logs-tabs {
       display: flex;
-      gap: 0;
-      border-bottom: 2px solid var(--border);
+      gap: 4px;
+      border-bottom: 1px solid var(--border);
       margin-bottom: 24px;
     }
 
     .logs-tab {
-      padding: 12px 24px;
+      padding: 12px 20px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
@@ -1438,20 +1434,23 @@
       background: transparent;
       color: var(--muted);
       border-bottom: 2px solid transparent;
-      margin-bottom: -2px;
+      margin-bottom: -1px;
       transition: color .2s, border-color .2s;
       display: flex;
       align-items: center;
       gap: 8px;
+      border-radius: 8px 8px 0 0;
     }
 
     .logs-tab:hover {
-      color: var(--text);
+      color: var(--heading);
+      background: var(--surface);
     }
 
     .logs-tab.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
+      color: var(--heading);
+      border-bottom-color: #F04E23;
+      background: var(--surface);
     }
 
     .logs-panel {
@@ -1616,15 +1615,15 @@
   <div id="home" class="skeleton-hide">
     <div class="landing">
       <h2>O que deseja consultar?</h2>
-      <p>Selecione uma opção e busque por nome, código IBGE ou provedor</p>
+      <p>Selecione uma opÃ§Ã£o e busque por nome, cÃ³digo IBGE ou provedor</p>
       <div class="mode-btns">
         <div class="mode-btn" id="btnCidade" onclick="setMode('cidade')">
-          <div class="icon">🏙️</div>
+          <div class="icon">ðŸ™ï¸</div>
           <div class="label">Cidade</div>
-          <div class="desc">Busque por nome, UF ou código IBGE</div>
+          <div class="desc">Busque por nome, UF ou cÃ³digo IBGE</div>
         </div>
         <div class="mode-btn" id="btnProvedor" onclick="setMode('provedor')">
-          <div class="icon">🔌</div>
+          <div class="icon">ðŸ”Œ</div>
           <div class="label">Provedor</div>
           <div class="desc">Busque por nome do provedor</div>
         </div>
@@ -1653,7 +1652,7 @@
           <h3 id="nfeModalTitle"></h3>
           <div class="modal-date" id="nfeModalDate"></div>
         </div>
-        <button class="modal-close" onclick="fecharModal()" aria-label="Fechar">✕</button>
+        <button class="modal-close" onclick="fecharModal()" aria-label="Fechar">âœ•</button>
       </div>
       <div class="modal-body" id="nfeModalBody">
         <div class="modal-loading">Carregando...</div>
@@ -1661,7 +1660,7 @@
     </div>
   </div>
 
-  <div class="footer">Hotmart — Cidades & Provedores · Dados extraídos do app-gw · 2026</div>
+  <div class="footer">Hotmart â€” Cidades & Provedores Â· Dados extraÃ­dos do app-gw Â· 2026</div>
 
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
@@ -1671,7 +1670,7 @@
   <script src="LogsAlteracoes/em-andamento-changelog.js"></script>
   <script src="LogsAlteracoes/aguardando-deploy-changelog.js"></script>
   <script>
-    /* ── Skeleton → Content ── */
+    /* â”€â”€ Skeleton â†’ Content â”€â”€ */
     (function () {
       document.getElementById('skeleton-home').style.display = 'none';
       document.getElementById('home').classList.remove('skeleton-hide');
@@ -1689,7 +1688,7 @@
     let acIdx = -1;
 
     var lastUpdate = (typeof changelogData !== 'undefined' && changelogData.length) ? changelogData[0].data : '';
-    stats.textContent = cidadesIndex.length + ' cidades · ' + provedoresIndex.length + ' provedores' + (lastUpdate ? ' · Atualizado em ' + lastUpdate : '');
+    stats.textContent = cidadesIndex.length + ' cidades Â· ' + provedoresIndex.length + ' provedores' + (lastUpdate ? ' Â· Atualizado em ' + lastUpdate : '');
 
     function setMode(m) {
       mode = m;
@@ -1702,7 +1701,7 @@
       acList.classList.remove('on');
       acIdx = -1;
       if (m === 'cidade') {
-        searchInput.placeholder = 'Digite nome da cidade, UF ou código IBGE...';
+        searchInput.placeholder = 'Digite nome da cidade, UF ou cÃ³digo IBGE...';
         searchHint.textContent = 'Ex: "Belo Horizonte", "SC", "3106200"';
       } else {
         searchInput.placeholder = 'Digite o nome do provedor...';
@@ -1711,7 +1710,7 @@
       searchInput.focus();
     }
 
-    /* ── Autocomplete ── */
+    /* â”€â”€ Autocomplete â”€â”€ */
     var _searchLogTimer = null;
     searchInput.addEventListener('input', () => {
       acIdx = -1; renderAc();
@@ -1754,7 +1753,7 @@
         acList.innerHTML = results.map(c =>
           '<div class="ac-item" onclick="abrirCidade(\'' + c.id + '\')">' +
           '<div class="ac-name">' + hl(c.nome, q) + ' / ' + hl(c.uf, q) + '</div>' +
-          '<div class="ac-sub">IBGE ' + hl(c.ibge, q) + ' · ' + c.provedor + '</div></div>'
+          '<div class="ac-sub">IBGE ' + hl(c.ibge, q) + ' Â· ' + c.provedor + '</div></div>'
         ).join('');
       } else {
         results = provedoresIndex.filter(p =>
@@ -1763,8 +1762,8 @@
         ).sort((a, b) => a.nome.localeCompare(b.nome)).slice(0, 15);
         acList.innerHTML = results.map(p =>
           '<div class="ac-item" onclick="abrirProvedor(\'' + p.id + '\')">' +
-          '<div class="ac-name">🔌 ' + hl(p.nome, q) + '</div>' +
-          '<div class="ac-sub">' + hl(p.empresa, q) + ' · ' + p.municipios + ' municípios</div></div>'
+          '<div class="ac-name">ðŸ”Œ ' + hl(p.nome, q) + '</div>' +
+          '<div class="ac-sub">' + hl(p.empresa, q) + ' Â· ' + p.municipios + ' municÃ­pios</div></div>'
         ).join('');
       }
       if (!results.length) {
@@ -1773,7 +1772,7 @@
       acList.classList.add('on');
     }
 
-    /* ── Detail: Cidade ── */
+    /* â”€â”€ Detail: Cidade â”€â”€ */
     function abrirCidade(id) {
       if (window._authLogEvent) window._authLogEvent('view_cidade', id);
       var script = document.createElement('script');
@@ -1783,7 +1782,7 @@
         document.head.removeChild(script);
       };
       script.onerror = function () {
-        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Cidades/' + id + '.js</span></div></div>';
+        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">âš ï¸</span><span>Arquivo de detalhe nÃ£o encontrado: Cidades/' + id + '.js</span></div></div>';
         home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none';
         document.head.removeChild(script);
       };
@@ -1794,15 +1793,15 @@
       let h = '';
       var secNum = 0;
 
-      // HEADER (dossiê style)
+      // HEADER (dossiÃª style)
       h += '<div class="header">';
-      h += '<button type="button" class="back-btn" onclick="voltar()">← Voltar</button>';
-      h += '<div class="header-badge">📋 Dossiê Municipal · eNotas Gateway</div>';
+      h += '<button type="button" class="back-btn" onclick="voltar()">â† Voltar</button>';
+      h += '<div class="header-badge">ðŸ“‹ DossiÃª Municipal Â· eNotas Gateway</div>';
       h += '<h1><span>' + c.nome + '</span> / ' + c.uf + '</h1>';
       h += '<div class="header-meta">';
-      h += '<span>🔢 IBGE: ' + c.ibge + '</span>';
-      h += '<span>📌 Constante: ' + c.constante + '</span>';
-      h += '<span>📅 Gerado em: março/2026</span>';
+      h += '<span>ðŸ”¢ IBGE: ' + c.ibge + '</span>';
+      h += '<span>ðŸ“Œ Constante: ' + c.constante + '</span>';
+      h += '<span>ðŸ“… Gerado em: marÃ§o/2026</span>';
       h += '</div></div>';
 
       h += '<div class="container">';
@@ -1811,42 +1810,42 @@
       var nTrat = c.tratamentos ? c.tratamentos.length : 0;
       var nCaract = c.caracteristicas ? c.caracteristicas.length : 0;
       h += '<div class="stats-bar">';
-      h += statCard(c.provedorAtual.webService ? 'WS' : 'Robô', 'Integração');
-      h += statCard(nCaract || '—', 'Características');
+      h += statCard(c.provedorAtual.webService ? 'WS' : 'RobÃ´', 'IntegraÃ§Ã£o');
+      h += statCard(nCaract || 'â€”', 'CaracterÃ­sticas');
       h += statCard(nTrat, 'Tratamentos');
       h += '</div>';
 
-      // SECTION 1 — Visão Geral
+      // SECTION 1 â€” VisÃ£o Geral
       secNum++;
       h += '<div class="section">';
-      h += sectionTitle(secNum, 'Visão Geral do Município');
+      h += sectionTitle(secNum, 'VisÃ£o Geral do MunicÃ­pio');
       h += '<div class="overview-grid">';
-      h += ovItem('Município', c.nome);
+      h += ovItem('MunicÃ­pio', c.nome);
       h += ovItem('UF', '<span class="uf-badge ' + c.uf + '">' + c.uf + '</span>');
-      h += ovItem('Código IBGE', '<span class="ibge">' + c.ibge + '</span>');
-      h += ovItem('Provedor Atual', '<span class="badge-ws">⚡ ' + c.provedorAtual.nome + '</span>');
-      h += ovItem('WebService', c.provedorAtual.webService ? '<span style="color:var(--accent2)">✓ Sim</span>' : '<span style="color:var(--danger)">✗ Não</span>');
-      h += ovItem('Robô', c.provedorAtual.robo ? '<span style="color:var(--warn)">⚠ Sim</span>' : '<span class="badge-robot">✗ Não</span>');
-      if (c.provedorAtual.versaoAbrasf) h += ovItem('Versão ABRASF', c.provedorAtual.versaoAbrasf);
+      h += ovItem('CÃ³digo IBGE', '<span class="ibge">' + c.ibge + '</span>');
+      h += ovItem('Provedor Atual', '<span class="badge-ws">âš¡ ' + c.provedorAtual.nome + '</span>');
+      h += ovItem('WebService', c.provedorAtual.webService ? '<span style="color:var(--accent2)">âœ“ Sim</span>' : '<span style="color:var(--danger)">âœ— NÃ£o</span>');
+      h += ovItem('RobÃ´', c.provedorAtual.robo ? '<span style="color:var(--warn)">âš  Sim</span>' : '<span class="badge-robot">âœ— NÃ£o</span>');
+      if (c.provedorAtual.versaoAbrasf) h += ovItem('VersÃ£o ABRASF', c.provedorAtual.versaoAbrasf);
       if (c.provedorAtual.namespace) h += ovItem('Namespace', '<code>' + c.provedorAtual.namespace + '</code>');
       h += ovItem('codigoNoProvedor', c.provedorAtual.codigoNoProvedor ? '<code>' + c.provedorAtual.codigoNoProvedor + '</code>' : '<span style="color:var(--muted)">(vazio)</span>');
       h += '</div></div>';
 
-      // SECTION — Configuração do Provedor (API)
+      // SECTION â€” ConfiguraÃ§Ã£o do Provedor (API)
       if (c.configuracaoProvedor) {
         secNum++;
         var cfg = c.configuracaoProvedor;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Configuração do Provedor');
+        h += sectionTitle(secNum, 'ConfiguraÃ§Ã£o do Provedor');
 
         // Enum labels
-        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'Usuário e Senha', 'Token', 'Frase Secreta e Senha', 'Usuário, Senha e Token'];
-        var tipoAssLabels = ['Não Utiliza', 'Opcional', 'Obrigatório (Certificado Próprio)', 'Obrigatório (Certificado da Prefeitura)'];
-        var campoLoginLabels = ['Nome de Usuário', 'CNPJ', 'Inscrição Municipal'];
+        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'UsuÃ¡rio e Senha', 'Token', 'Frase Secreta e Senha', 'UsuÃ¡rio, Senha e Token'];
+        var tipoAssLabels = ['NÃ£o Utiliza', 'Opcional', 'ObrigatÃ³rio (Certificado PrÃ³prio)', 'ObrigatÃ³rio (Certificado da Prefeitura)'];
+        var campoLoginLabels = ['Nome de UsuÃ¡rio', 'CNPJ', 'InscriÃ§Ã£o Municipal'];
 
-        // Overview com enums e numéricos
+        // Overview com enums e numÃ©ricos
         var infoItems = [];
-        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo Autenticação', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
+        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo AutenticaÃ§Ã£o', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
         if (cfg.assinaturaDigital != null) infoItems.push({ label: 'Assinatura Digital', val: tipoAssLabels[cfg.assinaturaDigital] || cfg.assinaturaDigital });
         if (cfg.campoLoginProvedor != null) infoItems.push({ label: 'Campo Login', val: campoLoginLabels[cfg.campoLoginProvedor] || cfg.campoLoginProvedor });
         if (cfg.valorCancelamentoNFe != null) infoItems.push({ label: 'Prazo Cancelamento', val: cfg.valorCancelamentoNFe + ' dias' });
@@ -1862,28 +1861,28 @@
         // Flags booleanas
         var flags = [
           { key: 'usaAEDF', label: 'Usa AEDF' },
-          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial Tributação' },
-          { key: 'usaCodigoServicoMunicipal', label: 'Usa Código Serviço Municipal' },
-          { key: 'usaDescricaoServico', label: 'Usa Descrição Serviço' },
+          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial TributaÃ§Ã£o' },
+          { key: 'usaCodigoServicoMunicipal', label: 'Usa CÃ³digo ServiÃ§o Municipal' },
+          { key: 'usaDescricaoServico', label: 'Usa DescriÃ§Ã£o ServiÃ§o' },
           { key: 'usaCNAE', label: 'Usa CNAE' },
           { key: 'usaNBS', label: 'Usa NBS' },
-          { key: 'usaItemListaServico', label: 'Usa Item Lista Serviço' },
-          { key: 'usaNaturezaOperacao', label: 'Usa Natureza Operação' },
-          { key: 'usaCodigoTributacaoNacional', label: 'Usa Código Tributação Nacional' },
-          { key: 'emTransicaoNFSeNacional', label: 'Em Transição NFSe Nacional' },
-          { key: 'suportaEmissaoNFeSemCliente', label: 'Emissão sem Cliente' },
-          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'Emissão Cliente sem CPF' },
-          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
+          { key: 'usaItemListaServico', label: 'Usa Item Lista ServiÃ§o' },
+          { key: 'usaNaturezaOperacao', label: 'Usa Natureza OperaÃ§Ã£o' },
+          { key: 'usaCodigoTributacaoNacional', label: 'Usa CÃ³digo TributaÃ§Ã£o Nacional' },
+          { key: 'emTransicaoNFSeNacional', label: 'Em TransiÃ§Ã£o NFSe Nacional' },
+          { key: 'suportaEmissaoNFeSemCliente', label: 'EmissÃ£o sem Cliente' },
+          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'EmissÃ£o Cliente sem CPF' },
+          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'EmissÃ£o Cliente sem EndereÃ§o' },
           { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
           { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
           { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
-          { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
+          { key: 'suportaEmissaoParalela', label: 'EmissÃ£o Paralela' },
         ];
         h += '<div class="features-grid" style="margin-top:16px">';
         flags.forEach(function (f) {
           if (cfg[f.key] === undefined || cfg[f.key] === null) return;
           var yes = cfg[f.key] === true;
-          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
+          h += '<div class="feature-item"><span class="icon">' + (yes ? 'âœ…' : 'âŒ') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'NÃ£o') + '</div></div></div>';
         });
         h += '</div>';
 
@@ -1892,11 +1891,11 @@
           var ha = cfg.helpTipoAutenticacao;
           var haItems = ['certificadoDigital', 'usuario', 'senha', 'token', 'fraseSecreta'].filter(function (k) { return ha[k]; });
           if (haItems.length) {
-            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Autenticação — Textos de Ajuda</h3>';
+            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">AutenticaÃ§Ã£o â€” Textos de Ajuda</h3>';
             h += '<div class="cx-list">';
             haItems.forEach(function (k) {
               var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, function (s) { return s.toUpperCase(); });
-              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">🔑</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
+              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">ðŸ”‘</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
             });
             h += '</div>';
           }
@@ -1904,12 +1903,12 @@
 
         // Helps
         var helps = [
-          { key: 'helpInscricaoMunicipal', label: 'Inscrição Municipal' },
-          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial Tributação' },
-          { key: 'helpCodigoServicoMunicipal', label: 'Código Serviço Municipal' },
-          { key: 'helpDescricaoServico', label: 'Descrição Serviço' },
+          { key: 'helpInscricaoMunicipal', label: 'InscriÃ§Ã£o Municipal' },
+          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial TributaÃ§Ã£o' },
+          { key: 'helpCodigoServicoMunicipal', label: 'CÃ³digo ServiÃ§o Municipal' },
+          { key: 'helpDescricaoServico', label: 'DescriÃ§Ã£o ServiÃ§o' },
           { key: 'helpCNAE', label: 'CNAE' },
-          { key: 'helpItemListaServico', label: 'Item Lista Serviço' },
+          { key: 'helpItemListaServico', label: 'Item Lista ServiÃ§o' },
         ];
         var hasHelps = helps.some(function (hp) { return cfg[hp.key]; });
         if (hasHelps) {
@@ -1923,20 +1922,20 @@
           h += '</div>';
         }
 
-        // Regimes Especiais de Tributação
+        // Regimes Especiais de TributaÃ§Ã£o
         if (cfg.regimesEspecialTributacao && cfg.regimesEspecialTributacao.length) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de Tributação</h3>';
-          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de TributaÃ§Ã£o</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>Nome</th></tr></thead><tbody>';
           cfg.regimesEspecialTributacao.forEach(function (r) {
             h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.nome + '</td></tr>';
           });
           h += '</tbody></table></div>';
         }
 
-        // Naturezas de Operação
+        // Naturezas de OperaÃ§Ã£o
         if (cfg.naturezasOperacao && cfg.naturezasOperacao.length) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de Operação</h3>';
-          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de OperaÃ§Ã£o</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>Nome</th></tr></thead><tbody>';
           cfg.naturezasOperacao.forEach(function (n) {
             h += '<tr><td><span class="regime-code">' + n.codigo + '</span></td><td>' + n.nome + '</td></tr>';
           });
@@ -1946,62 +1945,62 @@
         h += '</div>';
       }
 
-      // SECTION — Características
+      // SECTION â€” CaracterÃ­sticas
       if (c.caracteristicas && c.caracteristicas.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Características');
-        h += '<div class="table-wrap"><table><thead><tr><th>Característica</th><th>Valor</th></tr></thead><tbody>';
+        h += sectionTitle(secNum, 'CaracterÃ­sticas');
+        h += '<div class="table-wrap"><table><thead><tr><th>CaracterÃ­stica</th><th>Valor</th></tr></thead><tbody>';
         c.caracteristicas.forEach(x => {
           h += '<tr><td>' + x.nome + '</td><td>' + x.valor + '</td></tr>';
         });
         h += '</tbody></table></div></div>';
       }
 
-      // SECTION — Tratamentos Especiais
+      // SECTION â€” Tratamentos Especiais
       if (c.tratamentos && c.tratamentos.length) {
         secNum++;
         h += '<div class="section">';
         h += sectionTitle(secNum, 'Tratamentos Especiais');
         c.tratamentos.forEach((t, i) => {
-          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">📌</span><div>';
+          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">ðŸ“Œ</span><div>';
           h += '<strong>' + (i + 1) + '. ' + t.titulo + '</strong><br/>';
           h += '<span style="color:var(--text)">' + t.descricao + '</span>';
-          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic;margin-top:4px;display:inline-block">' + t.arquivos.map(a => '📁 ' + a).join(' · ') + '</span>';
+          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic;margin-top:4px;display:inline-block">' + t.arquivos.map(a => 'ðŸ“ ' + a).join(' Â· ') + '</span>';
           h += '</div></div>';
         });
         h += '</div>';
       }
 
-      // SECTION — Checklist de Configuração
+      // SECTION â€” Checklist de ConfiguraÃ§Ã£o
       if (c.checklistConfiguracao && c.checklistConfiguracao.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Checklist de Configuração');
+        h += sectionTitle(secNum, 'Checklist de ConfiguraÃ§Ã£o');
         h += '<div class="cx-list">';
         c.checklistConfiguracao.forEach((item, i) => {
-          h += '<div class="cx-item"><div class="cx-num">✓</div><div><div class="cx-body" style="color:var(--text)">' + item + '</div></div></div>';
+          h += '<div class="cx-item"><div class="cx-num">âœ“</div><div><div class="cx-body" style="color:var(--text)">' + item + '</div></div></div>';
         });
         h += '</div></div>';
       }
 
-      // SECTION — Erros Comuns
+      // SECTION â€” Erros Comuns
       if (c.errosComuns && c.errosComuns.length) {
         secNum++;
         h += '<div class="section">';
         h += sectionTitle(secNum, 'Erros Comuns');
-        h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Descrição / Solução</th></tr></thead><tbody>';
+        h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>DescriÃ§Ã£o / SoluÃ§Ã£o</th></tr></thead><tbody>';
         c.errosComuns.forEach(e => {
           h += '<tr><td><code>' + e.codigo + '</code></td><td>' + e.descricao + '</td></tr>';
         });
         h += '</tbody></table></div></div>';
       }
 
-      // SECTION — Observações para CX
+      // SECTION â€” ObservaÃ§Ãµes para CX
       if (c.observacoesCX && c.observacoesCX.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Observações para CX');
+        h += sectionTitle(secNum, 'ObservaÃ§Ãµes para CX');
         h += '<div class="cx-list">';
         c.observacoesCX.forEach((cx, i) => {
           h += '<div class="cx-item"><div class="cx-num">' + (i + 1) + '</div><div><div class="cx-title">' + cx.titulo + '</div><div class="cx-body">' + cx.corpo + '</div></div></div>';
@@ -2014,7 +2013,7 @@
       home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none'; window.scrollTo(0, 0);
     }
 
-    /* ── Detail: Provedor (Dossiê Layout) ── */
+    /* â”€â”€ Detail: Provedor (DossiÃª Layout) â”€â”€ */
     function abrirProvedor(id) {
       if (window._authLogEvent) window._authLogEvent('view_provedor', id);
       var script = document.createElement('script');
@@ -2024,7 +2023,7 @@
         document.head.removeChild(script);
       };
       script.onerror = function () {
-        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Provedores/' + id + '.js</span></div></div>';
+        dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">âš ï¸</span><span>Arquivo de detalhe nÃ£o encontrado: Provedores/' + id + '.js</span></div></div>';
         home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none';
         document.head.removeChild(script);
       };
@@ -2036,34 +2035,34 @@
 
       // HEADER
       h += '<div class="header">';
-      h += '<button type="button" class="back-btn" onclick="voltar()">← Voltar</button>';
-      h += '<div class="header-badge">📋 Dossiê Fiscal · eNotas Gateway</div>';
+      h += '<button type="button" class="back-btn" onclick="voltar()">â† Voltar</button>';
+      h += '<div class="header-badge">ðŸ“‹ DossiÃª Fiscal Â· eNotas Gateway</div>';
       h += '<h1>Provedor <span>' + p.nome + '</span></h1>';
       h += '<div class="header-meta">';
-      h += '<span>📁 Fonte: enotas-org/api-gw</span>';
-      h += '<span>📅 Gerado em: março/2026</span>';
-      h += '<span>🎯 Público: Produto &amp; CX</span>';
+      h += '<span>ðŸ“ Fonte: enotas-org/api-gw</span>';
+      h += '<span>ðŸ“… Gerado em: marÃ§o/2026</span>';
+      h += '<span>ðŸŽ¯ PÃºblico: Produto &amp; CX</span>';
       h += '</div></div>';
 
       h += '<div class="container">';
 
       // STATS BAR
       h += '<div class="stats-bar">';
-      h += statCard(p.stats.municipios || '—', 'Municípios');
+      h += statCard(p.stats.municipios || 'â€”', 'MunicÃ­pios');
       var ufs = new Set();
       if (p.municipiosLista) {
         Object.values(p.municipiosLista).forEach(function (arr) { arr.forEach(function (m) { ufs.add(m.uf); }); });
       }
-      h += statCard(ufs.size || '—', 'Estados');
-      h += statCard('WS', 'Tipo de Integração');
+      h += statCard(ufs.size || 'â€”', 'Estados');
+      h += statCard('WS', 'Tipo de IntegraÃ§Ã£o');
       if (p.prs && p.prs.length) h += statCard(p.prs.length, 'PRs Recentes');
       h += '</div>';
 
-      // SECTION — Visão Geral
+      // SECTION â€” VisÃ£o Geral
       var secNum = 0;
       secNum++;
       h += '<div class="section">';
-      h += sectionTitle(secNum, 'Visão Geral do Provedor');
+      h += sectionTitle(secNum, 'VisÃ£o Geral do Provedor');
       if (p.visaoGeral) {
         h += '<div class="overview-grid">';
         p.visaoGeral.forEach(item => {
@@ -2083,23 +2082,23 @@
       }
       h += '</div>';
 
-      // SECTION — Municípios Ativos
+      // SECTION â€” MunicÃ­pios Ativos
       if (p.municipiosLista) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Municípios Ativos');
+        h += sectionTitle(secNum, 'MunicÃ­pios Ativos');
         var tabs = Object.keys(p.municipiosLista);
         h += '<div class="tabs">';
         tabs.forEach((t, i) => {
-          var label = t.toUpperCase() + ' — ' + p.municipiosLista[t].length + ' municípios';
+          var label = t.toUpperCase() + ' â€” ' + p.municipiosLista[t].length + ' municÃ­pios';
           h += '<button class="tab' + (i === 0 ? ' active' : '') + '" onclick="switchProvTab(this,\'' + t + '\')">' + label + '</button>';
         });
         h += '</div>';
         tabs.forEach((t, i) => {
           h += '<div id="prov-tab-' + t + '" class="tab-content' + (i === 0 ? ' active' : '') + '">';
-          h += '<div class="search-wrap-table"><span class="search-icon">🔍</span>';
-          h += '<input type="text" id="prov-search-' + t + '" placeholder="Filtrar por município ou UF..." oninput="filterProvTable(\'' + t + '\')" /></div>';
-          h += '<div class="table-wrap"><table id="prov-table-' + t + '"><thead><tr><th>#</th><th>Município</th><th>UF</th><th>Código IBGE</th></tr></thead><tbody>';
+          h += '<div class="search-wrap-table"><span class="search-icon">ðŸ”</span>';
+          h += '<input type="text" id="prov-search-' + t + '" placeholder="Filtrar por municÃ­pio ou UF..." oninput="filterProvTable(\'' + t + '\')" /></div>';
+          h += '<div class="table-wrap"><table id="prov-table-' + t + '"><thead><tr><th>#</th><th>MunicÃ­pio</th><th>UF</th><th>CÃ³digo IBGE</th></tr></thead><tbody>';
           p.municipiosLista[t].forEach((m, idx) => {
             h += '<tr><td>' + (idx + 1) + '</td><td>' + m.nome + '</td><td><span class="uf-badge ' + m.uf + '">' + m.uf + '</span></td><td class="ibge">' + m.ibge + '</td></tr>';
           });
@@ -2108,7 +2107,7 @@
         h += '</div>';
       }
 
-      // SECTION — Regras Fiscais (only if data exists)
+      // SECTION â€” Regras Fiscais (only if data exists)
       if (p.mapeamentoRegime || p.regimesTributacao || p.features) {
         secNum++;
         var fiscalNum = secNum;
@@ -2116,9 +2115,9 @@
         h += sectionTitle(secNum, 'Regras Fiscais Implementadas');
 
         if (p.mapeamentoRegime) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.1 Mapeamento de Regime Especial de Tributação</h3>';
-          h += '<div class="alert alert-info"><span class="alert-icon">ℹ️</span><span>O ' + p.nome + ' usa uma tabela de mapeamento <strong>própria</strong>, diferente do padrão ABRASF. O código converte o regime unificado interno da eNotas para os códigos aceitos pelo ' + p.nome + ' antes de enviar ao webservice.</span></div>';
-          h += '<div class="table-wrap" style="margin-top:12px"><table><thead><tr><th>Código Unificado eNotas</th><th>Descrição</th><th>Código ' + p.nome + ' enviado</th><th>Observação</th></tr></thead><tbody>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.1 Mapeamento de Regime Especial de TributaÃ§Ã£o</h3>';
+          h += '<div class="alert alert-info"><span class="alert-icon">â„¹ï¸</span><span>O ' + p.nome + ' usa uma tabela de mapeamento <strong>prÃ³pria</strong>, diferente do padrÃ£o ABRASF. O cÃ³digo converte o regime unificado interno da eNotas para os cÃ³digos aceitos pelo ' + p.nome + ' antes de enviar ao webservice.</span></div>';
+          h += '<div class="table-wrap" style="margin-top:12px"><table><thead><tr><th>CÃ³digo Unificado eNotas</th><th>DescriÃ§Ã£o</th><th>CÃ³digo ' + p.nome + ' enviado</th><th>ObservaÃ§Ã£o</th></tr></thead><tbody>';
           p.mapeamentoRegime.forEach(r => {
             h += '<tr' + (r.warn ? ' class="regime-fallback"' : '') + '>';
             h += '<td><span class="regime-code"' + (r.warn ? ' style="color:var(--warn)"' : '') + '>' + r.enotas + '</span></td>';
@@ -2130,14 +2129,14 @@
 
           var hasWarn = p.mapeamentoRegime.some(r => r.warn);
           if (hasWarn) {
-            h += '<div class="alert alert-warn" style="margin-top:12px"><span class="alert-icon">⚠️</span><span><strong>Atenção CX:</strong> Os códigos com fallback não têm mapeamento específico no ' + p.nome + ' e caem no código <code>0</code> (Normal). Se um cliente reclamar que o regime não está sendo enviado corretamente, isso é um <strong>comportamento esperado pelo código atual</strong>.</span></div>';
+            h += '<div class="alert alert-warn" style="margin-top:12px"><span class="alert-icon">âš ï¸</span><span><strong>AtenÃ§Ã£o CX:</strong> Os cÃ³digos com fallback nÃ£o tÃªm mapeamento especÃ­fico no ' + p.nome + ' e caem no cÃ³digo <code>0</code> (Normal). Se um cliente reclamar que o regime nÃ£o estÃ¡ sendo enviado corretamente, isso Ã© um <strong>comportamento esperado pelo cÃ³digo atual</strong>.</span></div>';
           }
         }
 
-        // 3.2 Regimes de Tributação
+        // 3.2 Regimes de TributaÃ§Ã£o
         if (p.regimesTributacao) {
           h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.2 Tabela de Regimes do Provedor</h3>';
-          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Descrição</th></tr></thead><tbody>';
+          h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>DescriÃ§Ã£o</th></tr></thead><tbody>';
           p.regimesTributacao.forEach(r => {
             h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.descricao + '</td></tr>';
           });
@@ -2146,37 +2145,37 @@
 
         // 3.3 Features
         if (p.features) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.3 Características padrão</h3>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">' + fiscalNum + '.3 CaracterÃ­sticas padrÃ£o</h3>';
           h += '<div class="features-grid">';
           p.features.forEach(f => {
             var cls = f.yes ? 'feat-yes' : f.no ? 'feat-no' : '';
             h += '<div class="feature-item"><span class="icon">' + f.icon + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + cls + '">' + f.val + '</div></div></div>';
           });
           h += '</div>';
-          h += '<div class="alert alert-info" style="margin-top:16px"><span class="alert-icon">💡</span><div><strong>Orientações de preenchimento para o cliente:</strong><br/>';
-          h += '<span style="color:var(--text)">• <strong>Código de Serviço Municipal:</strong> código que identifica o serviço (ex: <code>0103</code>).</span><br/>';
-          h += '<span style="color:var(--text)">• <strong>CNAE:</strong> código que identifica o serviço prestado na nota fiscal.</span><br/>';
-          h += '<span style="color:var(--text)">• <strong>Item da Lista de Serviço:</strong> manter a formatação (ex: <code>17.02</code> ou <code>8.02</code>).</span><br/>';
-          h += '<span style="color:var(--text)">• <strong>Descrição do Serviço:</strong> não é transmitida à prefeitura — usada apenas na impressão do PDF.</span></div></div>';
+          h += '<div class="alert alert-info" style="margin-top:16px"><span class="alert-icon">ðŸ’¡</span><div><strong>OrientaÃ§Ãµes de preenchimento para o cliente:</strong><br/>';
+          h += '<span style="color:var(--text)">â€¢ <strong>CÃ³digo de ServiÃ§o Municipal:</strong> cÃ³digo que identifica o serviÃ§o (ex: <code>0103</code>).</span><br/>';
+          h += '<span style="color:var(--text)">â€¢ <strong>CNAE:</strong> cÃ³digo que identifica o serviÃ§o prestado na nota fiscal.</span><br/>';
+          h += '<span style="color:var(--text)">â€¢ <strong>Item da Lista de ServiÃ§o:</strong> manter a formataÃ§Ã£o (ex: <code>17.02</code> ou <code>8.02</code>).</span><br/>';
+          h += '<span style="color:var(--text)">â€¢ <strong>DescriÃ§Ã£o do ServiÃ§o:</strong> nÃ£o Ã© transmitida Ã  prefeitura â€” usada apenas na impressÃ£o do PDF.</span></div></div>';
         }
         h += '</div>';
       } // end Regras Fiscais conditional
 
-      // SECTION — Configuração do Provedor (characteristics from C#)
+      // SECTION â€” ConfiguraÃ§Ã£o do Provedor (characteristics from C#)
       if (p.configuracaoProvedor) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Configuração do Provedor');
+        h += sectionTitle(secNum, 'ConfiguraÃ§Ã£o do Provedor');
         var cfg = p.configuracaoProvedor;
 
         // Enum labels
-        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'Usuário e Senha', 'Token', 'Frase Secreta e Senha', 'Usuário, Senha e Token'];
-        var tipoAssLabels = ['Não Utiliza', 'Opcional', 'Obrigatório (Certificado Próprio)', 'Obrigatório (Certificado da Prefeitura)'];
-        var campoLoginLabels = ['Nome de Usuário', 'CNPJ', 'Inscrição Municipal'];
+        var tipoAuthLabels = ['Nenhuma', 'Certificado', 'UsuÃ¡rio e Senha', 'Token', 'Frase Secreta e Senha', 'UsuÃ¡rio, Senha e Token'];
+        var tipoAssLabels = ['NÃ£o Utiliza', 'Opcional', 'ObrigatÃ³rio (Certificado PrÃ³prio)', 'ObrigatÃ³rio (Certificado da Prefeitura)'];
+        var campoLoginLabels = ['Nome de UsuÃ¡rio', 'CNPJ', 'InscriÃ§Ã£o Municipal'];
 
-        // Overview com enums e numéricos
+        // Overview com enums e numÃ©ricos
         var infoItems = [];
-        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo Autenticação', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
+        if (cfg.tipoAutenticacao != null) infoItems.push({ label: 'Tipo AutenticaÃ§Ã£o', val: tipoAuthLabels[cfg.tipoAutenticacao] || cfg.tipoAutenticacao });
         if (cfg.assinaturaDigital != null) infoItems.push({ label: 'Assinatura Digital', val: tipoAssLabels[cfg.assinaturaDigital] || cfg.assinaturaDigital });
         if (cfg.campoLoginProvedor != null) infoItems.push({ label: 'Campo Login', val: campoLoginLabels[cfg.campoLoginProvedor] || cfg.campoLoginProvedor });
         if (cfg.valorCancelamentoNFe != null) infoItems.push({ label: 'Prazo Cancelamento', val: cfg.valorCancelamentoNFe + ' dias' });
@@ -2192,22 +2191,22 @@
         // Flags booleanas
         var provFlags = [
           { key: 'usaAEDF', label: 'Usa AEDF' },
-          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial Tributação' },
-          { key: 'usaCodigoServicoMunicipal', label: 'Usa Código Serviço Municipal' },
-          { key: 'usaDescricaoServico', label: 'Usa Descrição Serviço' },
+          { key: 'usaRegimeEspecialTributacao', label: 'Usa Regime Especial TributaÃ§Ã£o' },
+          { key: 'usaCodigoServicoMunicipal', label: 'Usa CÃ³digo ServiÃ§o Municipal' },
+          { key: 'usaDescricaoServico', label: 'Usa DescriÃ§Ã£o ServiÃ§o' },
           { key: 'usaCNAE', label: 'Usa CNAE' },
           { key: 'usaNBS', label: 'Usa NBS' },
-          { key: 'usaItemListaServico', label: 'Usa Item Lista Serviço' },
-          { key: 'usaNaturezaOperacao', label: 'Usa Natureza Operação' },
-          { key: 'usaCodigoTributacaoNacional', label: 'Usa Código Tributação Nacional' },
-          { key: 'emTransicaoNFSeNacional', label: 'Em Transição NFSe Nacional' },
-          { key: 'suportaEmissaoNFeSemCliente', label: 'Emissão sem Cliente' },
-          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'Emissão Cliente sem CPF' },
-          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
+          { key: 'usaItemListaServico', label: 'Usa Item Lista ServiÃ§o' },
+          { key: 'usaNaturezaOperacao', label: 'Usa Natureza OperaÃ§Ã£o' },
+          { key: 'usaCodigoTributacaoNacional', label: 'Usa CÃ³digo TributaÃ§Ã£o Nacional' },
+          { key: 'emTransicaoNFSeNacional', label: 'Em TransiÃ§Ã£o NFSe Nacional' },
+          { key: 'suportaEmissaoNFeSemCliente', label: 'EmissÃ£o sem Cliente' },
+          { key: 'suportaEmissaoNFeClienteSemCpf', label: 'EmissÃ£o Cliente sem CPF' },
+          { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'EmissÃ£o Cliente sem EndereÃ§o' },
           { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
           { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
           { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
-          { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
+          { key: 'suportaEmissaoParalela', label: 'EmissÃ£o Paralela' },
           { key: 'enviaEmailCliente', label: 'Envia Email ao Cliente' },
           { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial' },
           { key: 'numeroLoteDeveSerSequencial', label: 'Lote Sequencial' },
@@ -2217,7 +2216,7 @@
         provFlags.forEach(function (f) {
           if (cfg[f.key] === undefined || cfg[f.key] === null) return;
           var yes = cfg[f.key] === true;
-          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
+          h += '<div class="feature-item"><span class="icon">' + (yes ? 'âœ…' : 'âŒ') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'NÃ£o') + '</div></div></div>';
         });
         h += '</div>';
 
@@ -2226,11 +2225,11 @@
           var ha = cfg.helpTipoAutenticacao;
           var haItems = ['certificadoDigital', 'usuario', 'senha', 'token', 'fraseSecreta'].filter(function (k) { return ha[k]; });
           if (haItems.length) {
-            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Autenticação — Textos de Ajuda</h3>';
+            h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">AutenticaÃ§Ã£o â€” Textos de Ajuda</h3>';
             h += '<div class="cx-list">';
             haItems.forEach(function (k) {
               var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, function (s) { return s.toUpperCase(); });
-              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">🔑</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
+              h += '<div class="cx-item"><div class="cx-num" style="background:var(--accent2)">ðŸ”‘</div><div><div class="cx-title">' + label + '</div><div class="cx-body">' + ha[k].replace(/\\r\\n/g, '<br/>').replace(/\\n/g, '<br/>') + '</div></div></div>';
             });
             h += '</div>';
           }
@@ -2238,12 +2237,12 @@
 
         // Helps gerais
         var helps = [
-          { key: 'helpInscricaoMunicipal', label: 'Inscrição Municipal' },
-          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial Tributação' },
-          { key: 'helpCodigoServicoMunicipal', label: 'Código Serviço Municipal' },
-          { key: 'helpDescricaoServico', label: 'Descrição Serviço' },
+          { key: 'helpInscricaoMunicipal', label: 'InscriÃ§Ã£o Municipal' },
+          { key: 'helpRegimeEspecialTributacao', label: 'Regime Especial TributaÃ§Ã£o' },
+          { key: 'helpCodigoServicoMunicipal', label: 'CÃ³digo ServiÃ§o Municipal' },
+          { key: 'helpDescricaoServico', label: 'DescriÃ§Ã£o ServiÃ§o' },
           { key: 'helpCNAE', label: 'CNAE' },
-          { key: 'helpItemListaServico', label: 'Item Lista Serviço' },
+          { key: 'helpItemListaServico', label: 'Item Lista ServiÃ§o' },
           { key: 'helpAEDF', label: 'AEDF' },
         ];
         var hasHelps = helps.some(function (hp) { return cfg[hp.key]; });
@@ -2258,20 +2257,20 @@
           h += '</div>';
         }
 
-        // Regimes Especiais de Tributação
+        // Regimes Especiais de TributaÃ§Ã£o
         if (cfg.regimesEspecialTributacao && cfg.regimesEspecialTributacao.length) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de Tributação</h3>';
-          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Regimes Especiais de TributaÃ§Ã£o</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>Nome</th></tr></thead><tbody>';
           cfg.regimesEspecialTributacao.forEach(function (r) {
             h += '<tr><td><span class="regime-code">' + r.codigo + '</span></td><td>' + r.nome + '</td></tr>';
           });
           h += '</tbody></table></div>';
         }
 
-        // Naturezas de Operação
+        // Naturezas de OperaÃ§Ã£o
         if (cfg.naturezasOperacao && cfg.naturezasOperacao.length) {
-          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de Operação</h3>';
-          h += '<div class="table-wrap"><table><thead><tr><th>Código</th><th>Nome</th></tr></thead><tbody>';
+          h += '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:24px 0 12px;text-transform:uppercase;letter-spacing:0.06em;">Naturezas de OperaÃ§Ã£o</h3>';
+          h += '<div class="table-wrap"><table><thead><tr><th>CÃ³digo</th><th>Nome</th></tr></thead><tbody>';
           cfg.naturezasOperacao.forEach(function (n) {
             h += '<tr><td><span class="regime-code">' + n.codigo + '</span></td><td>' + n.nome + '</td></tr>';
           });
@@ -2281,48 +2280,48 @@
         h += '</div>';
       }
 
-      // SECTION — Regras por Município
+      // SECTION â€” Regras por MunicÃ­pio
       if (p.tratamentosEspeciais && p.tratamentosEspeciais.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Regras Específicas por Município');
+        h += sectionTitle(secNum, 'Regras EspecÃ­ficas por MunicÃ­pio');
         p.tratamentosEspeciais.forEach((t, i) => {
-          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">📌</span><div><strong>' + (i + 1) + '. ' + t.titulo + '</strong><br/><span style="color:var(--text)">' + t.descricao + '</span>';
+          h += '<div class="alert alert-info" style="margin-bottom:8px"><span class="alert-icon">ðŸ“Œ</span><div><strong>' + (i + 1) + '. ' + t.titulo + '</strong><br/><span style="color:var(--text)">' + t.descricao + '</span>';
           if (t.municipios) h += '<br/><span style="margin-top:6px;display:inline-block">' + t.municipios.map(m => '<code>' + m + '</code>').join(' ') + '</span>';
-          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic">' + t.arquivos.map(a => '📁 ' + a).join(' · ') + '</span>';
+          if (t.arquivos) h += '<br/><span style="color:var(--muted);font-size:11px;font-style:italic">' + t.arquivos.map(a => 'ðŸ“ ' + a).join(' Â· ') + '</span>';
           h += '</div></div>';
         });
         h += '</div>';
       }
 
-      // SECTION — PRs
+      // SECTION â€” PRs
       if (p.prs && p.prs.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Histórico de Alterações — Últimos ' + p.prs.length + ' PRs');
+        h += sectionTitle(secNum, 'HistÃ³rico de AlteraÃ§Ãµes â€” Ãšltimos ' + p.prs.length + ' PRs');
         h += '<div class="pr-list">';
         p.prs.forEach(pr => {
           h += '<div class="pr-card"><div class="pr-header"><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">';
           h += '<span class="pr-number">PR #' + pr.numero + '</span>';
           h += '<span class="pr-title">' + pr.titulo + '</span></div>';
-          h += '<span class="pr-date">📅 ' + pr.data + '</span></div>';
+          h += '<span class="pr-date">ðŸ“… ' + pr.data + '</span></div>';
           h += '<div class="pr-meta"><div class="pr-meta-item"><span class="mk">Autor</span><span class="mv">' + pr.autor + '</span></div>';
           h += '<div class="pr-meta-item"><span class="mk">Aprovadores</span><span class="mv' + (pr.aprovadores ? ' pr-approver' : '') + '">' + (pr.aprovadores || '<span style="color:var(--muted);font-style:italic">Nenhum registrado</span>') + '</span></div></div>';
           h += '<div class="pr-files">' + pr.arquivos.map(f => '<span class="file-tag">' + f + '</span>').join('') + '</div>';
           h += '<div class="pr-commits"><div class="pr-commits-title">Commits</div>';
           pr.commits.forEach(c => {
-            h += '<div class="commit-item"><span class="commit-sha">' + c.sha + '</span><span class="commit-msg">' + c.msg + '</span><span class="commit-author">— ' + c.autor + '</span></div>';
+            h += '<div class="commit-item"><span class="commit-sha">' + c.sha + '</span><span class="commit-msg">' + c.msg + '</span><span class="commit-author">â€” ' + c.autor + '</span></div>';
           });
           h += '</div></div>';
         });
         h += '</div></div>';
       }
 
-      // SECTION — CX Notes
+      // SECTION â€” CX Notes
       if (p.observacoesCX && p.observacoesCX.length) {
         secNum++;
         h += '<div class="section">';
-        h += sectionTitle(secNum, 'Observações para CX');
+        h += sectionTitle(secNum, 'ObservaÃ§Ãµes para CX');
         h += '<div class="cx-list">';
         p.observacoesCX.forEach((cx, i) => {
           h += '<div class="cx-item"><div class="cx-num">' + (i + 1) + '</div><div><div class="cx-title">' + cx.titulo + '</div><div class="cx-body">' + cx.corpo + '</div></div></div>';
@@ -2335,7 +2334,7 @@
       home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none'; window.scrollTo(0, 0);
     }
 
-    /* ── Provedor Tab/Filter helpers ── */
+    /* â”€â”€ Provedor Tab/Filter helpers â”€â”€ */
     function switchProvTab(btn, tab) {
       btn.closest('.section').querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       btn.classList.add('active');
@@ -2348,7 +2347,7 @@
       rows.forEach(row => { row.style.display = row.textContent.toLowerCase().includes(input) ? '' : 'none'; });
     }
 
-    /* ── Helpers ── */
+    /* â”€â”€ Helpers â”€â”€ */
     function voltar() { detailEl.classList.remove('on'); home.classList.remove('off'); if (logsEl) logsEl.style.display = ''; window.scrollTo(0, 0); }
     function row(l, v) { return '<div class="ir"><span class="il">' + l + '</span><span class="iv">' + v + '</span></div>'; }
     function statCard(val, label) { return '<div class="stat-card"><div class="value">' + val + '</div><div class="label">' + label + '</div></div>'; }
@@ -2358,7 +2357,7 @@
       var h = '<h3 style="font-size:14px;color:var(--muted);font-weight:600;margin:12px 0 8px;text-transform:uppercase;letter-spacing:0.06em">' + title + '</h3>';
       ['homologacao', 'producao'].forEach(amb => {
         if (!urls || !urls[amb]) return;
-        h += '<div style="margin-bottom:12px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">' + (amb === 'homologacao' ? 'Homologação' : 'Produção') + '</div>';
+        h += '<div style="margin-bottom:12px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">' + (amb === 'homologacao' ? 'HomologaÃ§Ã£o' : 'ProduÃ§Ã£o') + '</div>';
         Object.entries(urls[amb]).forEach(([k, v]) => {
           var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase());
           h += '<div style="background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin-bottom:4px;font-size:12px"><span style="color:var(--muted);font-size:11px;display:block;margin-bottom:2px">' + label + '</span><code style="border:none;background:none;padding:0;color:var(--accent2);font-size:12px">' + v + '</code></div>';
@@ -2371,7 +2370,7 @@
       var h = '<div class="ci"><h4>' + title + '</h4>';
       ['homologacao', 'producao'].forEach(amb => {
         if (!urls[amb]) return;
-        h += '<div class="ub"><h3>' + (amb === 'homologacao' ? 'Homologação' : 'Produção') + '</h3>';
+        h += '<div class="ub"><h3>' + (amb === 'homologacao' ? 'HomologaÃ§Ã£o' : 'ProduÃ§Ã£o') + '</h3>';
         Object.entries(urls[amb]).forEach(([k, v]) => {
           var label = k.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase());
           h += '<div class="ui"><span class="ul">' + label + '</span><span class="uv">' + v + '</span></div>';
@@ -2381,7 +2380,7 @@
       return h + '</div>';
     }
 
-    /* ── Logs de Alterações (Tabs laterais) ── */
+    /* â”€â”€ Logs de AlteraÃ§Ãµes (Tabs laterais) â”€â”€ */
     (function () {
       var hasChangelog = typeof changelogData !== 'undefined' && changelogData.length;
       var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
@@ -2405,7 +2404,7 @@
             if (isNegadas) {
               var dataIso = r.data.split('/').reverse().join('-');
               var enc = encodeURIComponent(it.destaque);
-              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">🔍</span></p>';
+              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">ðŸ”</span></p>';
             } else {
               h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
             }
@@ -2425,7 +2424,7 @@
             h += '<span class="pr-title">' + grupo.itens.length + ' tickets</span></div>';
             h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
             grupo.itens.forEach(function (it) {
-              h += '<p>' + grupo.icon + ' <a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
+              h += '<p>' + grupo.icon + ' <a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> â€” <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
             });
             h += '</div></div>';
           });
@@ -2435,7 +2434,7 @@
 
       function renderAguardandoDeploy(data) {
         var totalCommits = data.reduce(function (s, d) { return s + d.itens.length }, 0);
-        var h = '<div class="section-title" style="margin-top:0"><span class="num">🚀</span> notagateway-sync → dev (' + totalCommits + ' commits pendentes)</div>';
+        var h = '<div class="section-title" style="margin-top:0"><span class="num">ðŸš€</span> notagateway-sync â†’ dev (' + totalCommits + ' commits pendentes)</div>';
         h += '<div class="pr-list">';
         data.forEach(function (dia) {
           h += '<div class="pr-card"><div class="pr-header">';
@@ -2444,7 +2443,7 @@
           h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
           dia.itens.forEach(function (it) {
             var prLink = it.pr ? ' <a href="https://github.com/enotas-org/app-gw/pull/' + it.pr + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">PR #' + it.pr + '</a>' : '';
-            h += '<p>' + it.icon + ' ' + it.texto + prLink + ' <span style="color:var(--muted);font-size:11px">— ' + it.autor + '</span></p>';
+            h += '<p>' + it.icon + ' ' + it.texto + prLink + ' <span style="color:var(--muted);font-size:11px">â€” ' + it.autor + '</span></p>';
           });
           h += '</div></div>';
         });
@@ -2453,25 +2452,25 @@
       }
 
       function dateRange(data) {
-        return data[data.length - 1].data + ' – ' + data[0].data;
+        return data[data.length - 1].data + ' â€“ ' + data[0].data;
       }
 
       var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
       h += '<div class="logs-tabs">';
       if (hasChangelog) {
-        h += '<button class="logs-tab active" data-panel="panel-changelog">📦 Últimas Atualizações</button>';
+        h += '<button class="logs-tab active" data-panel="panel-changelog">ðŸ“¦ Ãšltimas AtualizaÃ§Ãµes</button>';
       }
       if (hasJira) {
-        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Tickets Resolvidos (CE)</button>';
+        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">ðŸŽ« Tickets Resolvidos (CE)</button>';
       }
       if (hasNegadas) {
-        h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">❌ NF-e Negadas</button>';
+        h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">âŒ NF-e Negadas</button>';
       }
       if (hasEmAndamento) {
-        h += '<button class="logs-tab" data-panel="panel-andamento">🔧 Em Andamento</button>';
+        h += '<button class="logs-tab" data-panel="panel-andamento">ðŸ”§ Em Andamento</button>';
       }
       if (hasAguardandoDeploy) {
-        h += '<button class="logs-tab" data-panel="panel-deploy">🚀 Aguardando Deploy</button>';
+        h += '<button class="logs-tab" data-panel="panel-deploy">ðŸš€ Aguardando Deploy</button>';
       }
       h += '</div>';
       if (hasChangelog) {
@@ -2505,7 +2504,7 @@
       });
     })();
 
-    /* ── Modal NF-e Negadas ── */
+    /* â”€â”€ Modal NF-e Negadas â”€â”€ */
     var nfeCache = {};
     function fecharModal() {
       document.getElementById('nfeModal').classList.remove('on');
@@ -2558,7 +2557,7 @@
         })
         .catch(function () {
           if (window.location.protocol === 'file:') {
-            body.innerHTML = '<div class="modal-loading" style="color:var(--muted)">Detalhe por empresa não disponível localmente.<br><span style="font-size:12px">O drill-down funciona apenas no servidor (GitHub Pages) devido a restrições do navegador com protocolo file://</span></div>';
+            body.innerHTML = '<div class="modal-loading" style="color:var(--muted)">Detalhe por empresa nÃ£o disponÃ­vel localmente.<br><span style="font-size:12px">O drill-down funciona apenas no servidor (GitHub Pages) devido a restriÃ§Ãµes do navegador com protocolo file://</span></div>';
           } else {
             body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
           }
@@ -2596,7 +2595,7 @@
       var empresas = Object.values(empresaMap).sort(function (a, b) { return b.qtd - a.qtd; });
       var totalNotas = empresas.reduce(function (s, e) { return s + e.qtd; }, 0);
 
-      var h = '<div class="modal-summary">' + empresas.length + ' empresas · ' + totalNotas.toLocaleString('pt-BR') + ' notas no total</div>';
+      var h = '<div class="modal-summary">' + empresas.length + ' empresas Â· ' + totalNotas.toLocaleString('pt-BR') + ' notas no total</div>';
       h += '<div class="table-wrap"><table><thead><tr><th>#</th><th>ID Empresa</th><th style="text-align:right">Qtd Notas</th></tr></thead><tbody>';
       empresas.forEach(function (e, i) {
         h += '<tr><td>' + (i + 1) + '</td><td><code style="font-size:12px;letter-spacing:0.5px;padding:4px 10px">' + e.id + '</code></td><td style="text-align:right;font-weight:600;color:var(--accent)">' + e.qtd.toLocaleString('pt-BR') + '</td></tr>';
@@ -2605,7 +2604,7 @@
       body.innerHTML = h;
     }
 
-    /* ── Theme Toggle ── */
+    /* â”€â”€ Theme Toggle â”€â”€ */
     (function () {
       var saved = localStorage.getItem('theme');
       if (saved === 'dark') document.documentElement.classList.remove('light');
