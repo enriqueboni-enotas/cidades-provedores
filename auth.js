@@ -69,17 +69,14 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbzfGKa-9Sbhfu9cTLt
     if (!ACCESS_LOG_URL || !u) return;
     try {
       var page = window.location.pathname.split('/').pop() || 'index.html';
-      fetch(ACCESS_LOG_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({
-          email: u.email,
-          name: u.name,
-          page: page,
-          action: action || 'page_view'
-        })
-      }).catch(function () {});
+      var payload = JSON.stringify({
+        email: u.email,
+        name: u.name,
+        page: page,
+        action: action || 'page_view'
+      });
+      var blob = new Blob([payload], { type: 'application/json; charset=utf-8' });
+      navigator.sendBeacon(ACCESS_LOG_URL, blob);
     } catch (e) { /* silencioso */ }
   }
 
