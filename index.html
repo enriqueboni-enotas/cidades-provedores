@@ -1686,7 +1686,8 @@
     let mode = '';
     let acIdx = -1;
 
-    stats.textContent = cidadesIndex.length + ' cidades · ' + provedoresIndex.length + ' provedores';
+    var lastUpdate = (typeof changelogData !== 'undefined' && changelogData.length) ? changelogData[0].data : '';
+    stats.textContent = cidadesIndex.length + ' cidades · ' + provedoresIndex.length + ' provedores' + (lastUpdate ? ' · Atualizado em ' + lastUpdate : '');
 
     function setMode(m) {
       mode = m;
