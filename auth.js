@@ -225,6 +225,18 @@ var ACCESS_LOG_URL =
   }
 
   function showUserInTopbar(u) {
+    // Fix nomes com encoding quebrado (UTF-8 lido como Latin-1)
+    var displayName = u.name;
+    try {
+      if (/[\xC0-\xFF]/.test(displayName)) {
+        var bytes = new Uint8Array(displayName.length);
+        for (var i = 0; i < displayName.length; i++)
+          bytes[i] = displayName.charCodeAt(i);
+        displayName = new TextDecoder('utf-8').decode(bytes);
+      }
+    } catch (e) {
+      /* mantém original */
+    }
     var topbar =
       document.querySelector('.topbar-right') ||
       document.querySelector('.topbar');
@@ -236,7 +248,7 @@ var ACCESS_LOG_URL =
         ? '<img src="' + u.picture + '" alt="" referrerpolicy="no-referrer">'
         : '') +
       '<span>' +
-      u.name +
+      displayName +
       '</span>' +
       '<button class="auth-logout" id="auth-logout-btn">sair</button>';
     var right = topbar.querySelector('.topbar-right');
