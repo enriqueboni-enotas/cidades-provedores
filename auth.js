@@ -70,7 +70,10 @@ var ACCESS_LOG_URL =
   function decodeJwt(token) {
     try {
       var b = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-      return JSON.parse(atob(b));
+      var raw = atob(b);
+      var bytes = new Uint8Array(raw.length);
+      for (var i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+      return JSON.parse(new TextDecoder('utf-8').decode(bytes));
     } catch (e) {
       return null;
     }
