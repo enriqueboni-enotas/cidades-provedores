@@ -33,7 +33,7 @@ var SESSION_HOURS = 8;
  * 4. Deploy → New deployment → Web app → Execute as: Me → Anyone → Deploy
  * 5. Cole a URL abaixo
  */
-var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbxkZiNcg3n-t7qHdsXWyV48RKJFyfQDXns-_OQV2m61uzqOsCvm6v020ovWh7AikxFkjA/exec';
+var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXmm4PByiKPVDLjGhL-m2c4QDYTkvrm57V-sSJ_Zz15bhWqD9sm4VA/exec';
 
 (function () {
   'use strict';
