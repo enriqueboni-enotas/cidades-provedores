@@ -83,8 +83,10 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbxkZiNcg3n-t7qHdsX
         action: action || 'page_view',
         detail: detail || ''
       });
-      var blob = new Blob([payload], { type: 'application/json; charset=utf-8' });
-      navigator.sendBeacon(ACCESS_LOG_URL, blob);
+      // Usar GET com query param para evitar problemas de CORS/redirect do Apps Script
+      var url = ACCESS_LOG_URL + '?data=' + encodeURIComponent(payload);
+      var img = new Image();
+      img.src = url;
     } catch (e) { /* silencioso */ }
   }
 
