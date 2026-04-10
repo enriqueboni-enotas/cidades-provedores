@@ -54,6 +54,83 @@ O site é protegido por autenticação Google OAuth2 restrita ao domínio `@hotm
 └── gerar.ps1                   # Script PowerShell de geração de dados
 ```
 
+## Arquitetura
+
+```mermaid
+flowchart TB
+    subgraph Fontes de Dados
+        GW["🔥 enotas-org/app-gw\n(branch dev)"]
+        GH["GitHub API\n(PRs mergeados)"]
+        JR["Jira API\n(Tickets CE)"]
+        AB["Astrobox API\n(NF-e negadas)"]
+    end
+
+    subgraph Agente Kiro — atualizar-site
+        E1["1. git pull app-gw dev"]
+        E2["2. gerar.ps1\nXML → JS"]
+        E3["3. gh pr list\n→ github-changelog.js"]
+        E4["4. acli jira search\n→ jira-tickets-changelog.js"]
+        E5["5. Astrobox query\n→ nfe-negadas-changelog.js\n→ nfe-negadas-detalhe/*.json"]
+        E6["6. git push main"]
+    end
+
+    subgraph GitHub Pages
+        IDX["index.html\n(Busca + Changelog)"]
+        NFE["nfe-negadas.html\n(Dashboard)"]
+        AUTH["auth.js\n(OAuth2 + Logs)"]
+        CID["Cidades/*.js\n(3.661 arquivos)"]
+        PRV["Provedores/*.js\n(144 arquivos)"]
+        LOG["LogsAlteracoes/*.js"]
+    end
+
+    subgraph Serviços Externos
+        GOO["Google OAuth2\n(@hotmart.com)"]
+        GSH["Google Sheets\n(Log de acessos)"]
+    end
+
+    subgraph Usuário
+        USR["Colaborador Hotmart\n(browser)"]
+    end
+
+    GW --> E1 --> E2
+    GH --> E3
+    JR --> E4
+    AB --> E5
+    E2 --> CID & PRV
+    E3 & E4 & E5 --> LOG
+    E6 --> IDX & NFE
+
+    USR -->|"login @hotmart.com"| GOO
+    GOO -->|"id_token JWT"| AUTH
+    AUTH -->|"page_view, search,\nview_cidade..."| GSH
+    USR --> IDX & NFE
+    IDX --> CID & PRV & LOG
+```
+
+### Fluxo de atualização
+
+```mermaid
+sequenceDiagram
+    participant Dev as Dev / Kiro
+    participant GW as app-gw (dev)
+    participant GH as GitHub API
+    participant JR as Jira API
+    participant AB as Astrobox
+    participant GP as GitHub Pages
+
+    Dev->>GW: git pull origin dev
+    Dev->>Dev: gerar.ps1 → Cidades/*.js + Provedores/*.js
+    Dev->>GH: gh pr list (últimos 12 dias)
+    Dev->>Dev: → github-changelog.js
+    Dev->>JR: acli jira search (CE, e-Notas)
+    Dev->>Dev: → jira-tickets-changelog.js
+    Dev->>AB: SQL query (nfe_negadas)
+    Dev->>Dev: → nfe-negadas-changelog.js + detalhe/*.json
+    Dev->>GP: git push main
+    GP->>GP: GitHub Actions deploy
+    Note over GP: Site atualizado em ~30s
+```
+
 ## Como atualizar os dados
 
 Use o agente Kiro `atualizar-site` que executa automaticamente:
