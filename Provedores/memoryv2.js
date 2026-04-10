@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'memoryv2',
   nome: 'MemoryV2',
   empresa: 'MemoryV2',
@@ -12,9 +12,8 @@
   ],
   municipiosLista: {
     'memoryv2': [
-      { nome: 'Matozinhos', uf: 'MG', ibge: '3141108' },
-      { nome: 'Virgem da Lapa', uf: 'MG', ibge: '3171600' }
+      { nome: 'Matozinhos', uf: 'MG', ibge: '3141108' }
+,      { nome: 'Virgem da Lapa', uf: 'MG', ibge: '3171600' }
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'corinto-mg',
   nome: 'Corinto',
   uf: 'MG',
@@ -21,4 +21,3 @@
     }
   }
 };
-

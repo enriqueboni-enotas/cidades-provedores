@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'oriximina-pa',
   nome: 'Oriximiná',
   uf: 'PA',
@@ -36,12 +36,12 @@
     usaDescricaoServico: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 4 dígitos (somente números).\r\nExemplo válido: 0108',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui 4 dígitos (somente números).\nExemplo válido: 0108',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 dígitos (somente números).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplos válidos: 1211 ou 0802',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 dígitos (somente números).\n\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\nExemplos válidos: 1211 ou 0802',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
@@ -51,14 +51,14 @@
     numeroRpsDeveSerSequencial: true,
     numeroNotasPorLote: 30,
     autenticidadeNota: {
-      urlVerificacao: 'https://onlinecba.issnetonline.com.br/cuiaba/NotaDigital/VerificaAutenticidade.aspx',
       UsaChaveAcesso: false,
       UsaCnpjPrestador: false,
       UsaCodigoVerificacao: true,
       UsaCpfCnpjTomador: false,
       UsaInscricaoMunicipalPrestador: true,
       UsaNumeroNota: true,
-      UsaValorNota: false
+      UsaValorNota: false,
+      urlVerificacao: 'https://onlinecba.issnetonline.com.br/cuiaba/NotaDigital/VerificaAutenticidade.aspx'
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -71,4 +71,3 @@
     ]
   }
 };
-

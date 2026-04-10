@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'andira-pr',
   nome: 'Andirá',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

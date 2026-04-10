@@ -1,0 +1,420 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - link "FAZ + DE R$ 10 MIL/MÊS? Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como. FALAR COM ESPECIALISTA" [ref=e7] [cursor=pointer]:
+          - /url: https://signup.hotmart.com/pt-br/growth-leads-lp-migracao-p-pcf-o-palco-fire-o?utm_medium=organic&utm_campaign=home&utm_content=cta_banner&utm_term=desktop
+          - paragraph [ref=e8]: FAZ + DE R$ 10 MIL/MÊS?
+          - img [ref=e10]
+          - paragraph [ref=e12]: Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como.
+          - img [ref=e14]
+          - paragraph [ref=e16]: FALAR COM ESPECIALISTA
+        - link "FAZ + DE R$ 10 MIL/MÊS? Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como. FALAR COM ESPECIALISTA" [ref=e18] [cursor=pointer]:
+          - /url: https://signup.hotmart.com/pt-br/growth-leads-lp-migracao-p-pcf-o-palco-fire-o?utm_medium=organic&utm_campaign=home&utm_content=cta_banner&utm_term=desktop
+          - paragraph [ref=e19]: FAZ + DE R$ 10 MIL/MÊS?
+          - img [ref=e21]
+          - paragraph [ref=e23]: Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como.
+          - img [ref=e25]
+          - paragraph [ref=e27]: FALAR COM ESPECIALISTA
+        - link "FAZ + DE R$ 10 MIL/MÊS? Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como. FALAR COM ESPECIALISTA" [ref=e29] [cursor=pointer]:
+          - /url: https://signup.hotmart.com/pt-br/growth-leads-lp-migracao-p-pcf-o-palco-fire-o?utm_medium=organic&utm_campaign=home&utm_content=cta_banner&utm_term=desktop
+          - paragraph [ref=e30]: FAZ + DE R$ 10 MIL/MÊS?
+          - img [ref=e32]
+          - paragraph [ref=e34]: Você pode subir ao palco do Hotmart FIRE 2026 e desbloquear recompensas! Descubra como.
+          - img [ref=e36]
+          - paragraph [ref=e38]: FALAR COM ESPECIALISTA
+      - generic [ref=e42]:
+        - link "Página Inicial" [ref=e44] [cursor=pointer]:
+          - /url: https://hotmart.com/pt-br
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - img [ref=e56]
+        - navigation [ref=e59]:
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - button "Produto" [ref=e62] [cursor=pointer]:
+                - generic [ref=e63]: Produto
+                - img [ref=e65]
+            - listitem [ref=e67]:
+              - button "Soluções" [ref=e68] [cursor=pointer]:
+                - generic [ref=e69]: Soluções
+                - img [ref=e71]
+            - listitem [ref=e73]:
+              - link "Taxa" [ref=e74] [cursor=pointer]:
+                - /url: https://hotmart.com/pt-br/taxa-hotmart
+                - generic [ref=e75]: Taxa
+            - listitem [ref=e76]:
+              - link "Comprar um curso" [ref=e77] [cursor=pointer]:
+                - /url: https://hotmart.com/pt-br/marketplace
+                - generic [ref=e78]: Comprar um curso
+            - listitem [ref=e79]:
+              - link "Ajuda" [ref=e80] [cursor=pointer]:
+                - /url: https://help.hotmart.com/pt-br
+                - generic [ref=e81]: Ajuda
+        - list [ref=e84]:
+          - listitem [ref=e85]:
+            - button "Entrar" [ref=e86] [cursor=pointer]:
+              - generic: Entrar
+              - generic:
+                - img
+          - listitem [ref=e87]:
+            - link "Comece gratuitamente" [ref=e88] [cursor=pointer]:
+              - /url: /pt-br/signup
+      - generic [ref=e90]:
+        - img "No centro da imagem há uma jovem mulher com pele escura e cabelo com tranças, usando uma blusa preta, segurando um smartphone cinza na frente do rosto, com expressão neutra e fundo laranja e marrom em degradê" [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - heading "Aqui o seu negócio digital acontece!" [level=1] [ref=e96]
+              - list [ref=e97]:
+                - listitem [ref=e98]:
+                  - img [ref=e100]
+                  - text: Crie, gerencie e venda para o mundo
+                - listitem [ref=e102]:
+                  - img [ref=e104]
+                  - text: Ecossistema mais completo do mercado
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: Seguro e confiável
+              - generic [ref=e108]:
+                - img "5 estrelas amarelas posicionadas horizontalmente uma ao lado da outra" [ref=e109]
+                - paragraph [ref=e110]: "4.6"
+                - img "Icone da loja de aplicativos do Android" [ref=e111]
+                - img "Icone da loja de aplicativos da Apple" [ref=e112]
+              - paragraph [ref=e113]: Baseado em +200.000 avaliações
+          - generic [ref=e116]:
+            - heading "Crie sua conta agora. É gratuito" [level=2] [ref=e118]:
+              - generic [ref=e119]: Crie sua conta agora. É gratuito
+            - iframe [ref=e121]:
+              - main [ref=f9e2]:
+                - generic [ref=f9e8]:
+                  - generic [ref=f9e10]:
+                    - generic [ref=f9e11]:
+                      - button [ref=f9e12] [cursor=pointer]:
+                        - img [ref=f9e13]
+                      - button [ref=f9e15] [cursor=pointer]:
+                        - img [ref=f9e16]
+                    - generic [ref=f9e25]: Ou
+                  - generic [ref=f9e27]:
+                    - textbox "Digite seu nome completo" [ref=f9e31]
+                    - textbox "Digite seu e-mail" [ref=f9e35]
+                    - generic [ref=f9e38]:
+                      - generic:
+                        - textbox "Digite sua senha" [ref=f9e39]
+                        - button [ref=f9e41] [cursor=pointer]:
+                          - img [ref=f9e42]
+                    - generic [ref=f9e48]:
+                      - text: Ao me cadastrar, declaro que sou maior de idade, li e concordo com os
+                      - link "Termos e as Políticas" [ref=f9e49] [cursor=pointer]:
+                        - /url: https://hotmart.com/pt-br/legal
+                      - text: da plataforma.
+                    - button "Criar conta" [ref=f9e51] [cursor=pointer]
+      - generic [ref=e123]:
+        - img "Imagem ilustrativa do Acesso Antecipado" [ref=e125]
+        - generic [ref=e126]:
+          - paragraph [ref=e128]: Conheça o programa Acesso Antecipado
+          - heading "Comece com os mesmos benefícios de quem já fatura alto na Hotmart" [level=3] [ref=e130]
+          - paragraph [ref=e131]:
+            - text: "Desbloqueie as ferramentas e o suporte que os top players usam para escalar seus resultados:"
+            - strong [ref=e132]: Canva PRO, Manychat PRO, gerente de contas
+            - text: e muito mais.
+          - link "Conhecer benefícios" [ref=e133] [cursor=pointer]:
+            - /url: https://signup.hotmart.com/pt-br/acesso-antecipado-o
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - heading "Entre agora para a maior plataforma de produtos digitais do mundo." [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - heading "+ 50 Bilhões" [level=3] [ref=e141]
+              - paragraph [ref=e142]: De reais em vendas
+            - generic [ref=e143]:
+              - heading "+ 25 Milhões" [level=3] [ref=e144]
+              - paragraph [ref=e145]: De compradores
+            - generic [ref=e146]:
+              - heading "+ 200 Mil" [level=3] [ref=e147]
+              - paragraph [ref=e148]: Produtores vendendo aqui
+        - img [ref=e151]
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - img [ref=e180]
+          - paragraph [ref=e182]: Inteligência artificial da Hotmart
+        - generic [ref=e183]:
+          - heading "A primeira (e única no Brasil) integrada com inteligência artificial para negócios digitais." [level=2] [ref=e185]
+          - paragraph [ref=e186]: Do curso online ao ebook, da comunidade ao produto físico, criar seu produto em 60 segundos é só uma das coisas que podemos fazer juntos.
+        - generic [ref=e187]:
+          - button "Reproduzir vídeo" [ref=e189] [cursor=pointer]:
+            - img [ref=e191]
+            - text: Reproduzir vídeo
+          - img "Vídeo simulando a criação de um curso na Hotmart" [ref=e195]
+      - generic [ref=e198]:
+        - generic [ref=e200]:
+          - generic [ref=e201]:
+            - heading "Você foca no conteúdo. E a Hotmart aumenta suas conversões." [level=3] [ref=e202]:
+              - text: Você foca no conteúdo.
+              - text: E a Hotmart aumenta suas conversões.
+            - link "Vender mais agora" [ref=e203] [cursor=pointer]:
+              - /url: /pt-br/signup
+          - generic [ref=e204]:
+            - img "Foto de um smartphone exibindo uma tela de pagamento, com alimentos à esquerda, incluindo fatias de pão e tomates, e uma superfície de pedra ao fundo" [ref=e206]
+            - generic [ref=e207]:
+              - heading "+7% em vendas com nosso preenchimento automático." [level=4] [ref=e208]
+              - paragraph [ref=e209]:
+                - text: Seu cliente compra rápido com o nosso checkout que preenche tudo automaticamente.
+                - strong [ref=e210]: E você aumenta suas vendas sem esforço
+                - text: . Fácil para ele, eficiente para você.
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - img "Tela de um celular mostrando uma oferta de um e-book sobre introdução à cerâmica, ao lado de utensílios de cerâmica brancos e uma xícara na mesa" [ref=e217]
+            - generic [ref=e218]:
+              - heading "A gente recomenda, você fatura" [level=4] [ref=e219]
+              - paragraph [ref=e220]:
+                - text: "Recomendações automáticas: seu cliente compra um produto e já indicamos o próximo, na hora mais favorável para conversão."
+                - strong [ref=e221]: Ticket médio até 48% maior, no piloto automático.
+          - generic [ref=e222]:
+            - img "Tela de um celular apresentando opções de pagamento, como cartão de crédito, cartão pela internet e boleto parcelado, com uma pessoa usando o telefone na mesa de madeira." [ref=e224]
+            - generic [ref=e225]:
+              - heading "Checkout feito para ninguém desistir." [level=4] [ref=e226]
+              - paragraph [ref=e227]:
+                - strong [ref=e228]: Você vende muito mais e o tempo todo.
+                - text: Como? Nosso checkout suporta milhões de transações simultâneas, além de carregar em 1 segundo. Assim, nenhum cliente desiste.
+          - generic [ref=e229]:
+            - img "Pessoa sorrindo, segurando um smartphone, na frente de uma estante com produtos, indicando uma venda concluída, com notificações de vendas na tela do aparelho." [ref=e231]
+            - generic [ref=e232]:
+              - heading "Seu produto fala várias línguas" [level=4] [ref=e233]
+              - paragraph [ref=e234]:
+                - text: Venda para o mundo todo com
+                - strong [ref=e235]: traduções e conversões automáticas para 22 moedas.
+                - text: São mais de 40 meios de pagamento locais e mais de 70 idiomas para você chegar onde quiser.
+      - generic [ref=e238]:
+        - paragraph [ref=e240]: Clientes satisfeitos sempre voltam
+        - heading "Encante com nossa área de membros e aumente até 14% de recompra." [level=3] [ref=e242]
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - 'button "Gamificação e personalização: seu conteúdo irresistível." [ref=e248] [cursor=pointer]':
+                - 'heading "Gamificação e personalização: seu conteúdo irresistível." [level=4] [ref=e249]'
+              - paragraph [ref=e250]: Mais de 20 opções de identidade visual (trilhas, módulos, banners) com gamificação, recompensas e progresso para motivar seus clientes.
+            - img "Foto de um aplicativo móvel em um smartphone, exibindo a tela de um curso online." [ref=e252]
+          - button "Suporte de IA que aprende com você, atende como você, mas nunca dorme." [ref=e255] [cursor=pointer]:
+            - heading "Suporte de IA que aprende com você, atende como você, mas nunca dorme." [level=4] [ref=e256]
+        - link "Cadastre-se agora" [ref=e257] [cursor=pointer]:
+          - /url: /pt-br/signup
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - heading "Aqui acontece" [level=2] [ref=e264]
+            - heading "de verdade." [level=2] [ref=e265]
+          - generic [ref=e266]:
+            - paragraph [ref=e267]: Agora é pra valer! Conte com o melhor ecossistema para o seu negócio acontecer.
+            - link "Comece agora" [ref=e268] [cursor=pointer]:
+              - /url: /pt-br/signup
+        - img "Mulher sorridente sentada em posição de lótus sobre um tapete de yoga laranja no jardim, com as mãos unidas, usando roupa esportiva, enquanto grava um vídeo com um celular em um suporte." [ref=e270]
+      - generic [ref=e272]:
+        - heading "Dúvidas? Nós temos as respostas." [level=3] [ref=e275]
+        - generic [ref=e276]:
+          - group [ref=e278]:
+            - generic "01 Qual a melhor plataforma para vender cursos online?" [ref=e279] [cursor=pointer]:
+              - generic [ref=e280]: "01"
+              - paragraph [ref=e281]: Qual a melhor plataforma para vender cursos online?
+              - img [ref=e283]
+          - group [ref=e285]:
+            - generic "02 O que é a Hotmart e como funciona?" [ref=e286] [cursor=pointer]:
+              - generic [ref=e287]: "02"
+              - paragraph [ref=e288]: O que é a Hotmart e como funciona?
+              - img [ref=e290]
+          - group [ref=e292]:
+            - generic "03 É possível ganhar dinheiro na Hotmart?" [ref=e293] [cursor=pointer]:
+              - generic [ref=e294]: "03"
+              - paragraph [ref=e295]: É possível ganhar dinheiro na Hotmart?
+              - img [ref=e297]
+          - group [ref=e299]:
+            - 'generic "04 Hotmart: quanto custa? É gratuita?" [ref=e300] [cursor=pointer]':
+              - generic [ref=e301]: "04"
+              - paragraph [ref=e302]: "Hotmart: quanto custa? É gratuita?"
+              - img [ref=e304]
+          - group [ref=e306]:
+            - generic "05 Como posso criar um produto digital do zero na Hotmart?" [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]: "05"
+              - paragraph [ref=e309]: Como posso criar um produto digital do zero na Hotmart?
+              - img [ref=e311]
+          - group [ref=e313]:
+            - generic "06 Quanto a Hotmart cobra por venda?" [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]: "06"
+              - paragraph [ref=e316]: Quanto a Hotmart cobra por venda?
+              - img [ref=e318]
+          - group [ref=e320]:
+            - generic "07 Quantos produtos posso vender na Hotmart?" [ref=e321] [cursor=pointer]:
+              - generic [ref=e322]: "07"
+              - paragraph [ref=e323]: Quantos produtos posso vender na Hotmart?
+              - img [ref=e325]
+          - group [ref=e327]:
+            - generic "08 Qual é o valor mínimo para sacar comissões na Hotmart?" [ref=e328] [cursor=pointer]:
+              - generic [ref=e329]: "08"
+              - paragraph [ref=e330]: Qual é o valor mínimo para sacar comissões na Hotmart?
+              - img [ref=e332]
+          - group [ref=e334]:
+            - generic "09 Como vender na Hotmart fora do Brasil?" [ref=e335] [cursor=pointer]:
+              - generic [ref=e336]: "09"
+              - paragraph [ref=e337]: Como vender na Hotmart fora do Brasil?
+              - img [ref=e339]
+          - group [ref=e341]:
+            - generic "10 Todas as ferramentas da Hotmart são gratuitas?" [ref=e342] [cursor=pointer]:
+              - generic [ref=e343]: "10"
+              - paragraph [ref=e344]: Todas as ferramentas da Hotmart são gratuitas?
+              - img [ref=e346]
+      - generic [ref=e348]:
+        - navigation [ref=e350]:
+          - list [ref=e351]:
+            - listitem [ref=e352]:
+              - generic [ref=e353]: Inicio
+        - generic [ref=e354]:
+          - navigation [ref=e355]:
+            - strong [ref=e356]: A Empresa
+            - list [ref=e357]:
+              - listitem [ref=e358]:
+                - link "Sobre Hotmart" [ref=e359] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/sobre-nos
+              - listitem [ref=e360]:
+                - link "Trabalhe Conosco" [ref=e361] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/trabalhe-conosco
+              - listitem [ref=e362]:
+                - link "Ouvidoria" [ref=e363] [cursor=pointer]:
+                  - /url: https://www.contatoseguro.com.br/pt/ouvidoriahotmart
+              - listitem [ref=e364]:
+                - link "Portal para Autoridades" [ref=e365] [cursor=pointer]:
+                  - /url: https://legal.hotmart.co/pt-br/law-enforcement-form
+              - listitem [ref=e366]:
+                - link "Sala de Imprensa" [ref=e367] [cursor=pointer]:
+                  - /url: https://press.hotmart.com/
+              - listitem [ref=e368]:
+                - link "Sustentabilidade (ESG)" [ref=e369] [cursor=pointer]:
+                  - /url: https://esg.hotmart.com
+              - listitem [ref=e370]:
+                - link "Hotmart Trends" [ref=e371] [cursor=pointer]:
+                  - /url: https://trends.hotmart.com/
+          - navigation [ref=e372]:
+            - strong [ref=e373]: Usando a Hotmart
+            - list [ref=e374]:
+              - listitem [ref=e375]:
+                - link "Soluções" [ref=e376] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/solucoes
+              - listitem [ref=e377]:
+                - link "Por Dentro das Novidades" [ref=e378] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/novidades
+              - listitem [ref=e379]:
+                - link "Comprar um curso" [ref=e380] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/marketplace
+              - listitem [ref=e381]:
+                - link "App da Hotmart" [ref=e382] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/app-da-hotmart
+              - listitem [ref=e383]:
+                - link "Hotmart Developers" [ref=e384] [cursor=pointer]:
+                  - /url: https://developers.hotmart.com/docs/pt-BR/
+              - listitem [ref=e385]:
+                - link "Acelerador de Vendas" [ref=e386] [cursor=pointer]:
+                  - /url: https://extensoes.hotmart.com/planos?utm_source=homehotmart&utm_medium=botaohome&utm_campaign=homehotmart
+              - listitem [ref=e387]:
+                - link "Hotmart Journey" [ref=e388] [cursor=pointer]:
+                  - /url: https://campaign.hotmart.com/hotmart-journey
+          - navigation [ref=e389]:
+            - strong [ref=e390]: Educação
+            - list [ref=e391]:
+              - listitem [ref=e392]:
+                - link "Academy" [ref=e393] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=rtoUz56U16M&utm_source=home_hotmart&utm_medium=home_hotmart&utm_campaign=home_hotmart&utm_id=home_hotmart
+              - listitem [ref=e394]:
+                - link "Blog Hotmart" [ref=e395] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/blog
+              - listitem [ref=e396]:
+                - link "Youtube da Hotmart" [ref=e397] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@hotmart
+          - navigation [ref=e398]:
+            - strong [ref=e399]: Ajuda
+            - list [ref=e400]:
+              - listitem [ref=e401]:
+                - link "Mapa do site" [ref=e402] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/mapa-do-site
+              - listitem [ref=e403]:
+                - link "Central de Ajuda" [ref=e404] [cursor=pointer]:
+                  - /url: https://help.hotmart.com/pt-br
+              - listitem [ref=e405]:
+                - link "Termos e Políticas" [ref=e406] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/legal
+              - listitem [ref=e407]:
+                - link "Política de Privacidade" [ref=e408] [cursor=pointer]:
+                  - /url: https://hotmart.com/pt-br/legal/privacidade-de-dados
+              - listitem [ref=e409]:
+                - link "YouTube Help Center" [ref=e410] [cursor=pointer]:
+                  - /url: https://youtube.com/hotmarthelpcenter
+        - generic [ref=e411]:
+          - generic [ref=e414] [cursor=pointer]:
+            - generic [ref=e415]: Português - Brasil
+            - img [ref=e417]
+          - generic [ref=e419]:
+            - generic [ref=e420]:
+              - text: Feito com
+              - generic [ref=e421]:
+                - img [ref=e423]
+                - img [ref=e426]
+              - generic [ref=e428]:
+                - generic [ref=e429]: em Belo Horizonte
+                - generic [ref=e430]: em Madrid
+                - generic [ref=e431]: em Amsterdam
+                - generic [ref=e432]: em Bogotá
+                - generic [ref=e433]: na Cidade do México
+                - generic [ref=e434]: em Nova Iorque
+            - list [ref=e438]:
+              - listitem [ref=e439]:
+                - link "Visite nosso Instagram" [ref=e440] [cursor=pointer]:
+                  - /url: https://www.instagram.com/hotmart/
+                  - generic [ref=e442]:
+                    - img
+              - listitem [ref=e443]:
+                - link "Visite nosso YouTube" [ref=e444] [cursor=pointer]:
+                  - /url: https://youtube.com/hotmart
+                  - generic [ref=e446]:
+                    - img
+              - listitem [ref=e447]:
+                - link "Visite nosso TikTok" [ref=e448] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@hotmart
+                  - generic [ref=e450]:
+                    - img
+              - listitem [ref=e451]:
+                - link "Visite nosso LinkedIn" [ref=e452] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/hotmart/mycompany/
+                  - generic [ref=e454]:
+                    - img
+              - listitem [ref=e455]:
+                - link "Visite nosso X (Twitter)" [ref=e456] [cursor=pointer]:
+                  - /url: https://x.com/hotmart
+                  - generic [ref=e458]:
+                    - img
+              - listitem [ref=e459]:
+                - link "Visite nosso Facebook" [ref=e460] [cursor=pointer]:
+                  - /url: https://www.facebook.com/hotmartofficial
+                  - generic [ref=e462]:
+                    - img
+              - listitem [ref=e463]:
+                - link "Visite nosso Pinterest" [ref=e464] [cursor=pointer]:
+                  - /url: https://br.pinterest.com/hotmartofficial/
+                  - generic [ref=e466]:
+                    - img
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - generic [ref=e469]:
+              - link "Termos e Políticas" [ref=e470] [cursor=pointer]:
+                - /url: https://hotmart.com/pt-br/legal
+              - button "Preferências de Cookies" [ref=e471] [cursor=pointer]:
+                - generic: Preferências de Cookies
+            - link "Canal de Denúncias (Linha Ética)" [ref=e473] [cursor=pointer]:
+              - /url: https://contatoseguro.com.br/pt/ethicsline.hotmart.co
+            - generic [ref=e474]: Hotmart - 2011-2026 © Todos os direitos reservados
+            - generic [ref=e475]:
+              - text: Launch Pad Tecnologia, Serviços e Pagamentos Ltda.
+              - text: CNPJ nº. 13.427.325/0001-05
+              - text: "Endereço: Avenida Assis Chateaubriand, nº 499, Bairro Floresta, Belo Horizonte -MG, CEP nº 30.150-101"
+            - link "Central de Ajuda" [ref=e477] [cursor=pointer]:
+              - /url: https://help.hotmart.com/pt-br
+          - link "Hotmart Company" [ref=e479] [cursor=pointer]:
+            - /url: https://hotmart.co/
+            - img "Hotmart Company" [ref=e480]
+  - alert [ref=e481]

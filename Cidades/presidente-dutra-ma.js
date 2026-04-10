@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'presidente-dutra-ma',
   nome: 'Presidente Dutra',
   uf: 'MA',
@@ -37,7 +37,7 @@
     usaDescricaoServico: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 03115',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 5 dígitos (somente números).\nExemplo válido: 03115',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -66,4 +66,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'conceicao-de-macabu-rj',
   nome: 'Conceição de Macabu',
   uf: 'RJ',
@@ -42,4 +42,3 @@
     ]
   }
 };
-

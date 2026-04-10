@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'blumenau-sc',
   nome: 'Blumenau',
   uf: 'SC',
@@ -20,4 +20,3 @@
     }
   }
 };
-

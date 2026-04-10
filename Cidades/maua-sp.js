@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'maua-sp',
   nome: 'Mauá',
   uf: 'SP',
@@ -24,4 +24,3 @@
     }
   }
 };
-

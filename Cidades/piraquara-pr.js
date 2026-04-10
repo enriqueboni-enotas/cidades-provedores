@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'piraquara-pr',
   nome: 'Piraquara',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

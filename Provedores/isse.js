@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'isse',
   nome: 'ISSe',
   empresa: 'ISSe',
@@ -15,7 +15,7 @@
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 4 dígitos (somente números).\r\nExemplo válido: 0108',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui 4 dígitos (somente números).\nExemplo válido: 0108',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: true,
@@ -46,4 +46,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'pedralva-mg',
   nome: 'Pedralva',
   uf: 'MG',
@@ -32,8 +32,8 @@
     },
     usaCodigoServicoMunicipal: true,
     helpInscricaoMunicipal: 'Inscrição Municipal pode ou não conter formatação. Em caso de dúvidas, verifique com a prefeitura.',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\n                        Em algumas cidades esse código é conhecido como código de tributação.\r\n                        Exemplo válido: 01.03 ou 17.02',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n                    Você precisa preencher o item da lista de serviço com 6 dígitos sem formatação.Exemplos válidos: 170201 ou 110401',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \n                        Em algumas cidades esse código é conhecido como código de tributação.\n                        Exemplo válido: 01.03 ou 17.02',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\n                    Você precisa preencher o item da lista de serviço com 6 dígitos sem formatação.Exemplos válidos: 170201 ou 110401',
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
@@ -57,4 +57,3 @@
     ]
   }
 };
-

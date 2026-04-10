@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'carmo-do-rio-verde-go',
   nome: 'Carmo do Rio Verde',
   uf: 'GO',
@@ -56,4 +56,3 @@
     ]
   }
 };
-

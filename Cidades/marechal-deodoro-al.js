@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'marechal-deodoro-al',
   nome: 'Marechal Deodoro',
   uf: 'AL',
@@ -21,4 +21,3 @@
     }
   }
 };
-

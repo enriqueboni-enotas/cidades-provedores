@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-miguel-do-iguacu-pr',
   nome: 'São Miguel do Iguaçu',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

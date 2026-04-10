@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'catalao-go',
   nome: 'Catalão',
   uf: 'GO',
@@ -56,4 +56,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'morro-agudo-sp',
   nome: 'Morro Agudo',
   uf: 'SP',
@@ -21,4 +21,3 @@
     }
   }
 };
-

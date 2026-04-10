@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santaluz-ba',
   nome: 'Santaluz',
   uf: 'BA',
@@ -46,4 +46,3 @@
     ]
   }
 };
-

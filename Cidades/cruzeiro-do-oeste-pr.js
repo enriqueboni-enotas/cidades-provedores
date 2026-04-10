@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'cruzeiro-do-oeste-pr',
   nome: 'Cruzeiro do Oeste',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

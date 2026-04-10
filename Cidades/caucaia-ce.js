@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'caucaia-ce',
   nome: 'Caucaia',
   uf: 'CE',
@@ -27,8 +27,8 @@
     usaCNAE: false,
     usaItemListaServico: true,
     usaNaturezaOperacao: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n                Exemplos: 960330100 e 8513900000',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal corresponde à classificação do contribuinte na tabela da LC\r\n116. Usar até 04 (quatro) dígitos, fazendo a separação com “ponto” (Ex: 8.02, 14.01).',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\n                Exemplos: 960330100 e 8513900000',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal corresponde à classificação do contribuinte na tabela da LC\n116. Usar até 04 (quatro) dígitos, fazendo a separação com “ponto” (Ex: 8.02, 14.01).',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -41,4 +41,3 @@
     ]
   }
 };
-

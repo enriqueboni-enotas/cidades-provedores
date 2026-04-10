@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'salvador-ba',
   nome: 'Salvador',
   uf: 'BA',
@@ -26,7 +26,7 @@
         consultaLote: 'https://nfse.salvador.ba.gov.br/rps/CONSULTALOTERPS/ConsultaLoteRPS.svc',
         consultaRps: 'https://nfse.salvador.ba.gov.br/rps/CONSULTANFSERPS/ConsultaNfseRPS.svc',
         consultaNFe: 'https://nfse.salvador.ba.gov.br/rps/CONSULTANFSE/ConsultaNfse.svc',
-        cancelamentoNFe: 'System.Xml.XmlElement',
+        cancelamentoNFe: 'https://nfse.salvador.ba.gov.br/site/contribuinte/nota/notaprint.aspx?cancelar=1&inscricao={0}&nf={1}&verificacao={2}',
         downloadPDF: 'https://nfse.salvador.ba.gov.br/site/contribuinte/nota/notaprintimg.aspx?nf={0}&inscricao={1}&verificacao={2}&returnurl=%2fsite%2fpublico%2fverificacao.aspx%3ftipo%3d0&imprimir=1&cancelada=1'
       }
     }
@@ -50,12 +50,12 @@
     usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 7 dígitos (somente números).\r\nExemplo válido: 2002001',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui 7 dígitos (somente números).\nExemplo válido: 2002001',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 7 dígitos (somente números).\r\nExemplo válido: 5240199',
-    helpItemListaServico: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 4 dígitos (somente números).\r\nExemplo válido: 0108',
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. \n\nEle possui 7 dígitos (somente números).\nExemplo válido: 5240199',
+    helpItemListaServico: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. \n\nEle possui 4 dígitos (somente números).\nExemplo válido: 0108',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
@@ -74,4 +74,3 @@
     ]
   }
 };
-

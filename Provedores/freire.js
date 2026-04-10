@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'freire',
   nome: 'Freire',
   empresa: 'Freire',
@@ -37,15 +37,14 @@
   },
   municipiosLista: {
     'freire': [
-      { nome: 'Botuporã', uf: 'BA', ibge: '2904209' },
-      { nome: 'Maracás', uf: 'BA', ibge: '2920502' },
-      { nome: 'Morro do Chapéu', uf: 'BA', ibge: '2921708' },
-      { nome: 'Muritiba', uf: 'BA', ibge: '2922300' },
-      { nome: 'Pé de Serra', uf: 'BA', ibge: '2924058' },
-      { nome: 'Queimadas', uf: 'BA', ibge: '2925808' },
-      { nome: 'Santaluz', uf: 'BA', ibge: '2928000' },
-      { nome: 'São Gonçalo dos Campos', uf: 'BA', ibge: '2929305' }
+      { nome: 'Botuporã', uf: 'BA', ibge: '2904209' }
+,      { nome: 'Maracás', uf: 'BA', ibge: '2920502' }
+,      { nome: 'Morro do Chapéu', uf: 'BA', ibge: '2921708' }
+,      { nome: 'Muritiba', uf: 'BA', ibge: '2922300' }
+,      { nome: 'Pé de Serra', uf: 'BA', ibge: '2924058' }
+,      { nome: 'Queimadas', uf: 'BA', ibge: '2925808' }
+,      { nome: 'Santaluz', uf: 'BA', ibge: '2928000' }
+,      { nome: 'São Gonçalo dos Campos', uf: 'BA', ibge: '2929305' }
     ]
   }
 };
-

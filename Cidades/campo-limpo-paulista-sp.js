@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'campo-limpo-paulista-sp',
   nome: 'Campo Limpo Paulista',
   uf: 'SP',
@@ -37,7 +37,7 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 03115',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 5 dígitos (somente números).\nExemplo válido: 03115',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -63,4 +63,3 @@
     ]
   }
 };
-

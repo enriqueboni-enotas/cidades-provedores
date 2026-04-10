@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'seropedica-rj',
   nome: 'Seropédica',
   uf: 'RJ',
@@ -44,4 +44,3 @@
     ]
   }
 };
-

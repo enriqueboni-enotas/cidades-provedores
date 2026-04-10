@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santo-antonio-do-amparo-mg',
   nome: 'Santo Antônio do Amparo',
   uf: 'MG',
@@ -36,10 +36,10 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nCódigo deve conter de 4 a 5 dígitos.\r\nExemplo válido: (1.08, 17.09)',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\n\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nCódigo deve conter de 4 a 5 dígitos.\nExemplo válido: (1.08, 17.09)',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o item lista serviço que identifica o serviço prestado na nota fiscal. \r\n\r\nCódigo deve conter de 4 a 5 dígitos.\r\nExemplo válido: (1.08, 17.09)',
+    helpItemListaServico: 'Informe aqui o item lista serviço que identifica o serviço prestado na nota fiscal. \n\nCódigo deve conter de 4 a 5 dígitos.\nExemplo válido: (1.08, 17.09)',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -66,4 +66,3 @@
     ]
   }
 };
-

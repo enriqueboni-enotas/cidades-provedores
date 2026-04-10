@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'embu-guacu-sp',
   nome: 'Embu-Guaçu',
   uf: 'SP',
@@ -21,4 +21,3 @@
     }
   }
 };
-

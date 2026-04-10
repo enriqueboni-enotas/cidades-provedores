@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'geisweb',
   nome: 'GeisWeb',
   empresa: 'GeisWeb',
@@ -27,7 +27,7 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 03115',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 5 dígitos (somente números).\nExemplo válido: 03115',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -54,13 +54,12 @@
   },
   municipiosLista: {
     'geisweb': [
-      { nome: 'Anhembi', uf: 'SP', ibge: '3502309' },
-      { nome: 'Cajamar', uf: 'SP', ibge: '3509205' },
-      { nome: 'Campo Limpo Paulista', uf: 'SP', ibge: '3509601' },
-      { nome: 'Guareí', uf: 'SP', ibge: '3518503' },
-      { nome: 'Pardinho', uf: 'SP', ibge: '3536109' },
-      { nome: 'Tietê', uf: 'SP', ibge: '3554508' }
+      { nome: 'Anhembi', uf: 'SP', ibge: '3502309' }
+,      { nome: 'Cajamar', uf: 'SP', ibge: '3509205' }
+,      { nome: 'Campo Limpo Paulista', uf: 'SP', ibge: '3509601' }
+,      { nome: 'Guareí', uf: 'SP', ibge: '3518503' }
+,      { nome: 'Pardinho', uf: 'SP', ibge: '3536109' }
+,      { nome: 'Tietê', uf: 'SP', ibge: '3554508' }
     ]
   }
 };
-

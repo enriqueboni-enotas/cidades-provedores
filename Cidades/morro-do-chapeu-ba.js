@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'morro-do-chapeu-ba',
   nome: 'Morro do Chapéu',
   uf: 'BA',
@@ -45,4 +45,3 @@
     ]
   }
 };
-

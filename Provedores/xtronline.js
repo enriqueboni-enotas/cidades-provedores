@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'xtronline',
   nome: 'XTROnline',
   empresa: 'XTROnline',
@@ -29,8 +29,8 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 4 a 5 dígitos sem formatação.\r\nExemplo válido: 101, 1701',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\n\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 4 a 5 dígitos sem formatação.\nExemplo válido: 101, 1701',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -48,12 +48,11 @@
   },
   municipiosLista: {
     'xtronline': [
-      { nome: 'Baturité', uf: 'CE', ibge: '2302107' },
-      { nome: 'Brejo Santo', uf: 'CE', ibge: '2302503' },
-      { nome: 'Jaguaruana', uf: 'CE', ibge: '2307007' },
-      { nome: 'Marco', uf: 'CE', ibge: '2307809' },
-      { nome: 'Várzea Alegre', uf: 'CE', ibge: '2314003' }
+      { nome: 'Baturité', uf: 'CE', ibge: '2302107' }
+,      { nome: 'Brejo Santo', uf: 'CE', ibge: '2302503' }
+,      { nome: 'Jaguaruana', uf: 'CE', ibge: '2307007' }
+,      { nome: 'Marco', uf: 'CE', ibge: '2307809' }
+,      { nome: 'Várzea Alegre', uf: 'CE', ibge: '2314003' }
     ]
   }
 };
-

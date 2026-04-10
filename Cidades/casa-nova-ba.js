@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'casa-nova-ba',
   nome: 'Casa Nova',
   uf: 'BA',
@@ -47,4 +47,3 @@
     ]
   }
 };
-

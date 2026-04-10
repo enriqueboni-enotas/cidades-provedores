@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'aspect',
   nome: 'Aspect',
   empresa: 'Aspect',
@@ -29,9 +29,9 @@
     usaCNAE: false,
     usaItemListaServico: false,
     usaNaturezaOperacao: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– Exemplo: 17.06',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\n– Exemplo: 17.06',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -42,10 +42,9 @@
   },
   municipiosLista: {
     'aspect': [
-      { nome: 'Capistrano', uf: 'CE', ibge: '2302909' },
-      { nome: 'Morrinhos', uf: 'CE', ibge: '2308906' },
-      { nome: 'Ocara', uf: 'CE', ibge: '2309458' }
+      { nome: 'Capistrano', uf: 'CE', ibge: '2302909' }
+,      { nome: 'Morrinhos', uf: 'CE', ibge: '2308906' }
+,      { nome: 'Ocara', uf: 'CE', ibge: '2309458' }
     ]
   }
 };
-

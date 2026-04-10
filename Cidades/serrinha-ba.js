@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'serrinha-ba',
   nome: 'Serrinha',
   uf: 'BA',
@@ -19,4 +19,3 @@
     }
   }
 };
-

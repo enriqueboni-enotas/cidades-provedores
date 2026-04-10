@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'contenda-pr',
   nome: 'Contenda',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

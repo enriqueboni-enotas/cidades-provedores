@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'vera-cruz-rn',
   nome: 'Vera Cruz',
   uf: 'RN',
@@ -36,9 +36,9 @@
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 5 dígitos (números com formatação) que identifica o serviço prestado na nota fiscal. \r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 08.01 ou 16.08',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 5 dígitos (números com formatação) que identifica o serviço prestado na nota fiscal. \nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 08.01 ou 16.08',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -67,4 +67,3 @@
     ]
   }
 };
-

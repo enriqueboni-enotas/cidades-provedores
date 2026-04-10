@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'ivaipora-pr',
   nome: 'Ivaiporã',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

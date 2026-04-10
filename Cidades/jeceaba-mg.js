@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'jeceaba-mg',
   nome: 'Jeceaba',
   uf: 'MG',
@@ -42,4 +42,3 @@
     ]
   }
 };
-

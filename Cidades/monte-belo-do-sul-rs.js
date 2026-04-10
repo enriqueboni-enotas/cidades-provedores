@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'monte-belo-do-sul-rs',
   nome: 'Monte Belo do Sul',
   uf: 'RS',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

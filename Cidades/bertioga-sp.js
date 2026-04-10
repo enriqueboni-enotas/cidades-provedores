@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'bertioga-sp',
   nome: 'Bertioga',
   uf: 'SP',
@@ -21,4 +21,3 @@
     }
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'neves-paulista-sp',
   nome: 'Neves Paulista',
   uf: 'SP',
@@ -41,4 +41,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'itanhem-ba',
   nome: 'Itanhém',
   uf: 'BA',
@@ -47,4 +47,3 @@
     ]
   }
 };
-

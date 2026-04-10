@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'modelo-sc',
   nome: 'Modelo',
   uf: 'SC',
@@ -12,11 +12,11 @@
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'System.Xml.XmlElement'
+        recepcaoLote: 'https://nfse-modelo.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao'
       },
       producao: {
-        recepcaoLote: 'System.Xml.XmlElement',
-        consultaRps: 'System.Xml.XmlElement',
+        recepcaoLote: 'https://nfse-modelo.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao',
+        consultaRps: 'https://nfse-modelo.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao',
         downloadPDF: 'C:\tools\Html2Pdf\bin\wkhtmltopdf.exe'
       }
     }
@@ -37,8 +37,8 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaNBS: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\r\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\n\nExemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -75,4 +75,3 @@
     ]
   }
 };
-

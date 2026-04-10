@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'garibaldi-rs',
   nome: 'Garibaldi',
   uf: 'RS',
@@ -38,10 +38,10 @@
     usaCNAE: false,
     usaNBS: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos (somente números).\r\nExemplo válido: 548',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\n\nExemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 3 a 4 dígitos (somente números).\nExemplo válido: 548',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço sem a formatação.\r\n Exemplos válidos: 1702 ou 802',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\n \n Você precisa preencher o item da lista de serviço sem a formatação.\n Exemplos válidos: 1702 ou 802',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaCancelamentoNFeSemCliente: false,
@@ -57,4 +57,3 @@
     ]
   }
 };
-

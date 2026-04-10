@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-bento-pb',
   nome: 'São Bento',
   uf: 'PB',
@@ -26,7 +26,7 @@
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nExemplos válidos: 041201 e 170101',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \n\nExemplos válidos: 041201 e 170101',
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: false,
@@ -52,4 +52,3 @@
     ]
   }
 };
-

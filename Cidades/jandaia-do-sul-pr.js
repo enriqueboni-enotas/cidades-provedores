@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'jandaia-do-sul-pr',
   nome: 'Jandaia do Sul',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

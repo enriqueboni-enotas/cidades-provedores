@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-sebastiao-do-cai-rs',
   nome: 'São Sebastião do Caí',
   uf: 'RS',
@@ -54,4 +54,3 @@
     ]
   }
 };
-

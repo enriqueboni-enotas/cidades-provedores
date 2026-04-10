@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'tremembe-sp',
   nome: 'Tremembé',
   uf: 'SP',
@@ -19,4 +19,3 @@
     }
   }
 };
-

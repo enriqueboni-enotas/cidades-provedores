@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'sigissv1',
   nome: 'SIGISSv1',
   empresa: 'SIGISSv1',
@@ -12,11 +12,10 @@
   ],
   municipiosLista: {
     'sigissv1': [
-      { nome: 'Itapira', uf: 'SP', ibge: '3522604' },
-      { nome: 'Marília', uf: 'SP', ibge: '3529005' },
-      { nome: 'Rio Grande', uf: 'RS', ibge: '4315602' },
-      { nome: 'Tremembé', uf: 'SP', ibge: '3554805' }
+      { nome: 'Itapira', uf: 'SP', ibge: '3522604' }
+,      { nome: 'Marília', uf: 'SP', ibge: '3529005' }
+,      { nome: 'Rio Grande', uf: 'RS', ibge: '4315602' }
+,      { nome: 'Tremembé', uf: 'SP', ibge: '3554805' }
     ]
   }
 };
-

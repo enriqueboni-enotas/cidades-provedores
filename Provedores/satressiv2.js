@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'satressiv2',
   nome: 'SatreSsIV2',
   empresa: 'SatreSsIV2',
@@ -30,7 +30,7 @@
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -59,11 +59,10 @@
   },
   municipiosLista: {
     'satressiv2': [
-      { nome: 'Itaitinga', uf: 'CE', ibge: '2306256' },
-      { nome: 'Lavras da Mangabeira', uf: 'CE', ibge: '2307502' },
-      { nome: 'Massapê', uf: 'CE', ibge: '2308005' },
-      { nome: 'Varjota', uf: 'CE', ibge: '2313955' }
+      { nome: 'Itaitinga', uf: 'CE', ibge: '2306256' }
+,      { nome: 'Lavras da Mangabeira', uf: 'CE', ibge: '2307502' }
+,      { nome: 'Massapê', uf: 'CE', ibge: '2308005' }
+,      { nome: 'Varjota', uf: 'CE', ibge: '2313955' }
     ]
   }
 };
-

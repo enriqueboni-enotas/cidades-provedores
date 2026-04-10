@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'itaruma-go',
   nome: 'Itarumã',
   uf: 'GO',
@@ -32,14 +32,14 @@
     usaItemListaServico: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      urlVerificacao: 'https://trindade.centi.com.br/notafiscal/verificar',
       UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
       UsaCpfCnpjTomador: false,
       UsaInscricaoMunicipalPrestador: false,
       UsaNumeroNota: true,
-      UsaValorNota: false
+      UsaValorNota: false,
+      urlVerificacao: 'https://trindade.centi.com.br/notafiscal/verificar'
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -61,4 +61,3 @@
     ]
   }
 };
-

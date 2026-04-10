@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'porto-rico-pr',
   nome: 'Porto Rico',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

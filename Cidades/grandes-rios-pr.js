@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'grandes-rios-pr',
   nome: 'Grandes Rios',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

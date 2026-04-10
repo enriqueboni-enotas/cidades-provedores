@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'navirai-ms',
   nome: 'Naviraí',
   uf: 'MS',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

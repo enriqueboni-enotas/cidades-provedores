@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'querencia-do-norte-pr',
   nome: 'Querência do Norte',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

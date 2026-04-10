@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'muritiba-ba',
   nome: 'Muritiba',
   uf: 'BA',
@@ -46,4 +46,3 @@
     ]
   }
 };
-

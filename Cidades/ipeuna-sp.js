@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'ipeuna-sp',
   nome: 'Ipeúna',
   uf: 'SP',
@@ -36,7 +36,7 @@
     usaDescricaoServico: false,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\n\nExemplo válido: 11356',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Esse código tem que estar cadastrado nas minhas atividades no portal da prefeitura. Exemplo: 574 referente ao item 07.09',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
@@ -57,4 +57,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-jose-da-lapa-mg',
   nome: 'São José da Lapa',
   uf: 'MG',
@@ -25,7 +25,7 @@
     usaCodigoServicoMunicipal: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação.\r\n\r\nDeve seguir a formatação como nos exemplos: 01.03, 16.02',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \nEm algumas cidades esse código é conhecido como código de tributação.\n\nDeve seguir a formatação como nos exemplos: 01.03, 16.02',
     suportaEmissaoNFeSemCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
@@ -48,4 +48,3 @@
     ]
   }
 };
-

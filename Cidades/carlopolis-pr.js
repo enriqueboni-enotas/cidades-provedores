@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'carlopolis-pr',
   nome: 'Carlópolis',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

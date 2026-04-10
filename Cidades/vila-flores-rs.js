@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'vila-flores-rs',
   nome: 'Vila Flores',
   uf: 'RS',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

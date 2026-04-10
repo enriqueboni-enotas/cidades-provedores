@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'modernizacaopublica',
   nome: 'ModernizacaoPublica',
   empresa: 'ModernizacaoPublica',
@@ -37,14 +37,13 @@
   },
   municipiosLista: {
     'modernizacaopublica': [
-      { nome: 'Arraial do Cabo', uf: 'RJ', ibge: '3300258' },
-      { nome: 'Belford Roxo', uf: 'RJ', ibge: '3300456' },
-      { nome: 'Cabo Frio', uf: 'RJ', ibge: '3300704' },
-      { nome: 'Magé', uf: 'RJ', ibge: '3302502' },
-      { nome: 'Mesquita', uf: 'RJ', ibge: '3302858' },
-      { nome: 'São Pedro da Aldeia', uf: 'RJ', ibge: '3305208' },
-      { nome: 'Seropédica', uf: 'RJ', ibge: '3305554' }
+      { nome: 'Arraial do Cabo', uf: 'RJ', ibge: '3300258' }
+,      { nome: 'Belford Roxo', uf: 'RJ', ibge: '3300456' }
+,      { nome: 'Cabo Frio', uf: 'RJ', ibge: '3300704' }
+,      { nome: 'Magé', uf: 'RJ', ibge: '3302502' }
+,      { nome: 'Mesquita', uf: 'RJ', ibge: '3302858' }
+,      { nome: 'Seropédica', uf: 'RJ', ibge: '3305554' }
+,      { nome: 'São Pedro da Aldeia', uf: 'RJ', ibge: '3305208' }
     ]
   }
 };
-

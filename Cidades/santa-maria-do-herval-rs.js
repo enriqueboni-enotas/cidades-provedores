@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santa-maria-do-herval-rs',
   nome: 'Santa Maria do Herval',
   uf: 'RS',
@@ -54,4 +54,3 @@
     ]
   }
 };
-
