@@ -17,21 +17,21 @@
       padding: 0;
     }
 
-    /* Hotmart Help Center style — Dark theme (default) */
+    /* Hotmart.com style — Dark theme (default) */
     :root {
-      --bg: var(--hc-color-neutral-100);
-      --surface: var(--hc-color-neutral-200);
-      --surface2: var(--hc-color-neutral-300);
-      --border: var(--hc-color-neutral-400);
+      --bg: #0D0D0D;
+      --surface: #1A1A1A;
+      --surface2: #242424;
+      --border: #2E2E2E;
       --accent: #F04E23;
-      --accent2: var(--hc-color-secondary-500);
-      --warn: var(--hc-color-warning-400);
-      --danger: var(--hc-color-danger-400);
-      --text: var(--hc-color-neutral-800);
-      --muted: var(--hc-color-neutral-500);
-      --code-bg: var(--hc-color-neutral-0);
-      --pr: var(--hc-color-info-400);
-      --heading: var(--hc-color-neutral-1000);
+      --accent2: #51c1c3;
+      --warn: #efba0f;
+      --danger: #e37570;
+      --text: #E0E0E0;
+      --muted: #8A8A8A;
+      --code-bg: #141414;
+      --pr: #89a8f8;
+      --heading: #FFFFFF;
 
       /* Cosmos DS semantic tokens — dark */
       --cds-color-cta: #89a8f8;
@@ -76,8 +76,22 @@
       --hc-color-neutral-1000: #ffffff;
     }
 
-    /* Hotmart Help Center style — Light theme */
+    /* Hotmart.com style — Light theme */
     html.light {
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+      --surface2: #F0F0F0;
+      --border: #E0E0E0;
+      --accent: #F04E23;
+      --accent2: #0a9090;
+      --warn: #efba0f;
+      --danger: #d6342c;
+      --text: #333333;
+      --muted: #707780;
+      --code-bg: #F5F5F5;
+      --pr: #5981e3;
+      --heading: #0D0D0D;
+
       --hc-color-primary-100: #ebf0ff;
       --hc-color-primary-200: #bed1ff;
       --hc-color-primary-300: #89a8f8;
@@ -124,8 +138,8 @@
 
     /* TOPBAR */
     .topbar {
-      background: #fff;
-      border-bottom: 1px solid #e6e9ed;
+      background: #0D0D0D;
+      border-bottom: 1px solid #2E2E2E;
       padding: 0 32px;
       height: 56px;
       display: flex;
@@ -136,9 +150,9 @@
       z-index: 100;
     }
 
-    html:not(.light) .topbar {
-      background: #1a1a2e;
-      border-bottom-color: rgba(255,255,255,0.08);
+    html.light .topbar {
+      background: #0D0D0D;
+      border-bottom-color: #2E2E2E;
     }
 
     .topbar-left {
@@ -150,36 +164,36 @@
     .hotmart-logo {
       height: 22px;
       width: auto;
-      color: #1a1a2e;
+      color: #fff;
     }
 
-    html:not(.light) .hotmart-logo {
+    html.light .hotmart-logo {
       color: #fff;
     }
 
     .topbar-divider {
       width: 1px;
       height: 24px;
-      background: #e6e9ed;
+      background: rgba(255,255,255,0.15);
     }
 
-    html:not(.light) .topbar-divider {
+    html.light .topbar-divider {
       background: rgba(255,255,255,0.15);
     }
 
     .topbar h1 {
       font-size: 16px;
       font-weight: 600;
-      color: #1a1a2e;
+      color: #fff;
       letter-spacing: -0.2px;
     }
 
-    html:not(.light) .topbar h1 {
+    html.light .topbar h1 {
       color: #fff;
     }
 
     .topbar .stats {
-      color: #707780;
+      color: rgba(255,255,255,0.5);
       font-size: 13px;
     }
 
@@ -190,8 +204,8 @@
     }
 
     .theme-toggle {
-      background: #f0f2f5;
-      border: 1px solid #e6e9ed;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
       border-radius: 20px;
       width: 48px;
       height: 26px;
@@ -201,7 +215,7 @@
       flex-shrink: 0;
     }
 
-    html:not(.light) .theme-toggle {
+    html.light .theme-toggle {
       background: rgba(255,255,255,0.1);
       border-color: rgba(255,255,255,0.15);
     }
@@ -214,7 +228,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: #c9ced4;
+      background: rgba(255,255,255,0.2);
       display: flex;
       align-items: center;
       justify-content: center;
