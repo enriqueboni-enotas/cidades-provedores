@@ -60,7 +60,12 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXm
   function decodeJwt(token) {
     try {
       var b = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-      return JSON.parse(atob(b));
+      var raw = atob(b);
+      // Decode UTF-8 bytes correctly
+      var utf8 = decodeURIComponent(Array.prototype.map.call(raw, function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+      return JSON.parse(utf8);
     } catch (e) { return null; }
   }
 
