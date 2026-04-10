@@ -2550,13 +2550,17 @@
       }
 
       fetch('LogsAlteracoes/nfe-negadas-detalhe/' + dataIso + '.json')
-        .then(function (r) { return r.json(); })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (data) {
           nfeCache[dataIso] = data;
           renderModalData(data, destaque, body);
         })
         .catch(function () {
-          body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
+          if (window.location.protocol === 'file:') {
+            body.innerHTML = '<div class="modal-loading" style="color:var(--muted)">Detalhe por empresa não disponível localmente.<br><span style="font-size:12px">O drill-down funciona apenas no servidor (GitHub Pages) devido a restrições do navegador com protocolo file://</span></div>';
+          } else {
+            body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
+          }
         });
     }
 
