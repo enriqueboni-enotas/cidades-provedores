@@ -1581,7 +1581,7 @@
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
   <script src="LogsAlteracoes/github-changelog.js"></script>
-  <script src="LogsAlteracoes/jira-changelog.js"></script>
+  <script src="LogsAlteracoes/jira-tickets-changelog.js"></script>
   <script src="LogsAlteracoes/nfe-negadas-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
@@ -2325,7 +2325,7 @@
         h += '<button class="logs-tab active" data-panel="panel-changelog">📦 Últimas Atualizações</button>';
       }
       if (hasJira) {
-        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Cards Resolvidos (CE)</button>';
+        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Tickets Resolvidos (CE)</button>';
       }
       if (hasNegadas) {
         h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">❌ NF-e Negadas</button>';

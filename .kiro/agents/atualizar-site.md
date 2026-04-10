@@ -68,9 +68,9 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 7. Os dias da semana em português: Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado.
 8. Os meses em português: Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.
 
-## Etapa 4: Atualizar o Jira Changelog — Cards CE resolvidos (últimos 12 dias)
+## Etapa 4: Atualizar o Jira Changelog — Tickets CE resolvidos (últimos 12 dias)
 
-1. Use o Atlassian CLI (`acli`) para buscar cards resolvidos do projeto CE com produto e-Notas, agrupados por dia. Para cada dia dos últimos 12, execute:
+1. Use o Atlassian CLI (`acli`) para buscar tickets resolvidos do projeto CE com produto e-Notas, agrupados por dia. Para cada dia dos últimos 12, execute:
 
    ```bash
    acli jira workitem search --jql "project = CE AND cf[14189] = e-Notas AND status changed to Done DURING (\"YYYY-MM-DD\",\"YYYY-MM-DD+1\") ORDER BY key DESC" --fields "key,summary" --json --paginate
@@ -84,9 +84,9 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 3. Regras de agrupamento:
    - Evitar colocar nome do cliente no destaque (ex: "LITHIUM SOFTWARE"). Ler a descrição para entender o assunto real.
    - Cards `[Autofix]` do mesmo tipo devem ser agrupados juntos.
-   - Dias sem cards devem ter icon '📭', destaque 'Sem cards resolvidos', texto 'Nenhum card resolvido neste dia.'
+   - Dias sem tickets devem ter icon '📭', destaque 'Sem tickets resolvidos', texto 'Nenhum ticket resolvido neste dia.'
 
-4. Reescreva o arquivo `LogsAlteracoes/jira-changelog.js` com o array `jiraChangelogData` no mesmo formato do `changelogData`:
+4. Reescreva o arquivo `LogsAlteracoes/jira-tickets-changelog.js` com o array `jiraChangelogData` no mesmo formato do `changelogData`:
 
    ```javascript
    var jiraChangelogData = [

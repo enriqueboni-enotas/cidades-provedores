@@ -160,8 +160,8 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '📭',
-        destaque: 'Sem cards resolvidos',
-        texto: 'Nenhum card resolvido neste dia.',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
@@ -172,8 +172,8 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '📭',
-        destaque: 'Sem cards resolvidos',
-        texto: 'Nenhum card resolvido neste dia.',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
