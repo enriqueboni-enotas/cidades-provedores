@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'guarulhos-sp',
   nome: 'Guarulhos',
   uf: 'SP',
@@ -24,4 +24,3 @@
     }
   }
 };
-

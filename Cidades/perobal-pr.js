@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'perobal-pr',
   nome: 'Perobal',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

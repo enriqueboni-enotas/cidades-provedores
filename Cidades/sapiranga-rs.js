@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sapiranga-rs',
   nome: 'Sapiranga',
   uf: 'RS',
@@ -21,4 +21,3 @@
     }
   }
 };
-

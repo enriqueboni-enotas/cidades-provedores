@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'conceicao-do-jacuipe-ba',
   nome: 'Conceição do Jacuípe',
   uf: 'BA',
@@ -19,4 +19,3 @@
     }
   }
 };
-

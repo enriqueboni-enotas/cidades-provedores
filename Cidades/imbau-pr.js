@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'imbau-pr',
   nome: 'Imbaú',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

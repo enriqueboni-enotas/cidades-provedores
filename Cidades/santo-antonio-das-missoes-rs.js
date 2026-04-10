@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santo-antonio-das-missoes-rs',
   nome: 'Santo Antônio das Missões',
   uf: 'RS',
@@ -43,7 +43,7 @@
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\r\n\r\nExemplos válidos: 4301000010 ou 131436001',
+    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\n\nExemplos válidos: 4301000010 ou 131436001',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -70,4 +70,3 @@
     ]
   }
 };
-

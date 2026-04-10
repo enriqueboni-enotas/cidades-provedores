@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'raul-soares-mg',
   nome: 'Raul Soares',
   uf: 'MG',
@@ -37,11 +37,11 @@
     usaDescricaoServico: true,
     usaCNAE: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\r\n            Exemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 00016',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 10 dígitos (somente números).\n            Exemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 5 dígitos (somente números).\nExemplo válido: 00016',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal.\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 6319400',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço sem a formatação.\r\n Exemplos válidos: 1702 ou 802',
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal.\nEle possui geralmente 5 dígitos (somente números).\nExemplo válido: 6319400',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\n \n Você precisa preencher o item da lista de serviço sem a formatação.\n Exemplos válidos: 1702 ou 802',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -68,4 +68,3 @@
     ]
   }
 };
-

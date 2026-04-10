@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'ipm',
   nome: 'IPM',
   empresa: 'IPM',
@@ -26,8 +26,8 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaNBS: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\r\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\n\nExemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -65,118 +65,117 @@
   },
   municipiosLista: {
     'ipm': [
-      { nome: 'Agrolândia', uf: 'SC', ibge: '4200200' },
-      { nome: 'Alvorada', uf: 'RS', ibge: '4300604' },
-      { nome: 'Apiúna', uf: 'SC', ibge: '4201257' },
-      { nome: 'Arapongas', uf: 'PR', ibge: '4101507' },
-      { nome: 'Araquari', uf: 'SC', ibge: '4201307' },
-      { nome: 'Araranguá', uf: 'SC', ibge: '4201406' },
-      { nome: 'Ascurra', uf: 'SC', ibge: '4201703' },
-      { nome: 'Balneário Barra do Sul', uf: 'SC', ibge: '4202057' },
-      { nome: 'Balneário Piçarras', uf: 'SC', ibge: '4212809' },
-      { nome: 'Barra Velha', uf: 'SC', ibge: '4202107' },
-      { nome: 'Bom Despacho', uf: 'MG', ibge: '3107406' },
-      { nome: 'Bom Retiro', uf: 'SC', ibge: '4202602' },
-      { nome: 'Bombinhas', uf: 'SC', ibge: '4202453' },
-      { nome: 'Cachoeirinha', uf: 'RS', ibge: '4303103' },
-      { nome: 'Caiçara', uf: 'RS', ibge: '4303400' },
-      { nome: 'Campo Largo', uf: 'PR', ibge: '4104204' },
-      { nome: 'Campo Mourão', uf: 'PR', ibge: '4104303' },
-      { nome: 'Campo Novo', uf: 'RS', ibge: '4304002' },
-      { nome: 'Carambeí', uf: 'PR', ibge: '4104659' },
-      { nome: 'Carmo do Cajuru', uf: 'MG', ibge: '3114204' },
-      { nome: 'Carmópolis de Minas', uf: 'MG', ibge: '3114501' },
-      { nome: 'Cascavel', uf: 'PR', ibge: '4104808' },
-      { nome: 'Castro', uf: 'PR', ibge: '4104907' },
-      { nome: 'Concórdia', uf: 'SC', ibge: '4204301' },
-      { nome: 'Corupá', uf: 'SC', ibge: '4204509' },
-      { nome: 'Dois Irmãos', uf: 'RS', ibge: '4306403' },
-      { nome: 'Enéas Marques', uf: 'PR', ibge: '4107405' },
-      { nome: 'Estrela Velha', uf: 'RS', ibge: '4307815' },
-      { nome: 'Fraiburgo', uf: 'SC', ibge: '4205506' },
-      { nome: 'Garopaba', uf: 'SC', ibge: '4205704' },
-      { nome: 'Garuva', uf: 'SC', ibge: '4205803' },
-      { nome: 'Gravataí', uf: 'RS', ibge: '4309209' },
-      { nome: 'Guabiruba', uf: 'SC', ibge: '4206306' },
-      { nome: 'Guaíba', uf: 'RS', ibge: '4309308' },
-      { nome: 'Guaíra', uf: 'PR', ibge: '4108809' },
-      { nome: 'Guaramirim', uf: 'SC', ibge: '4206504' },
-      { nome: 'Guarapuava', uf: 'PR', ibge: '4109401' },
-      { nome: 'Guarujá do Sul', uf: 'SC', ibge: '4206603' },
-      { nome: 'Horizontina', uf: 'RS', ibge: '4309605' },
-      { nome: 'Ibirama', uf: 'SC', ibge: '4206900' },
-      { nome: 'Igrejinha', uf: 'RS', ibge: '4310108' },
-      { nome: 'Indaial', uf: 'SC', ibge: '4207502' },
-      { nome: 'Itapoá', uf: 'SC', ibge: '4208450' },
-      { nome: 'Ituporanga', uf: 'SC', ibge: '4208500' },
-      { nome: 'Jaboticaba', uf: 'RS', ibge: '4310850' },
-      { nome: 'Jacinto Machado', uf: 'SC', ibge: '4208708' },
-      { nome: 'Jaguaruna', uf: 'SC', ibge: '4208807' },
-      { nome: 'Lagoa Vermelha', uf: 'RS', ibge: '4311304' },
-      { nome: 'Lapa', uf: 'PR', ibge: '4113205' },
-      { nome: 'Laurentino', uf: 'SC', ibge: '4209508' },
-      { nome: 'Lontras', uf: 'SC', ibge: '4209904' },
-      { nome: 'Luiz Alves', uf: 'SC', ibge: '4210001' },
-      { nome: 'Marechal Cândido Rondon', uf: 'PR', ibge: '4114609' },
-      { nome: 'Maripá', uf: 'PR', ibge: '4115358' },
-      { nome: 'Massaranduba', uf: 'SC', ibge: '4210605' },
-      { nome: 'Modelo', uf: 'SC', ibge: '4210902' },
-      { nome: 'Morro da Fumaça', uf: 'SC', ibge: '4211207' },
-      { nome: 'Nova Erechim', uf: 'SC', ibge: '4211405' },
-      { nome: 'Nova Santa Rita', uf: 'RS', ibge: '4313375' },
-      { nome: 'Osório', uf: 'RS', ibge: '4313508' },
-      { nome: 'Ouro', uf: 'SC', ibge: '4211801' },
-      { nome: 'Ouro Verde do Oeste', uf: 'PR', ibge: '4117453' },
-      { nome: 'Palhoça', uf: 'SC', ibge: '4211900' },
-      { nome: 'Palmeira das Missões', uf: 'RS', ibge: '4313706' },
-      { nome: 'Palmitinho', uf: 'RS', ibge: '4313805' },
-      { nome: 'Panambi', uf: 'RS', ibge: '4313904' },
-      { nome: 'Paraíso', uf: 'SC', ibge: '4212239' },
-      { nome: 'Paranaguá', uf: 'PR', ibge: '4118204' },
-      { nome: 'Paranavaí', uf: 'PR', ibge: '4118402' },
-      { nome: 'Penha', uf: 'SC', ibge: '4212502' },
-      { nome: 'Pinhais', uf: 'PR', ibge: '4119152' },
-      { nome: 'Pinhalzinho', uf: 'SC', ibge: '4212908' },
-      { nome: 'Pomerode', uf: 'SC', ibge: '4213203' },
-      { nome: 'Porto Belo', uf: 'SC', ibge: '4213500' },
-      { nome: 'Praia Grande', uf: 'SC', ibge: '4213807' },
-      { nome: 'Presidente Getúlio', uf: 'SC', ibge: '4214003' },
-      { nome: 'Rio Branco do Sul', uf: 'PR', ibge: '4122206' },
-      { nome: 'Rio do Campo', uf: 'SC', ibge: '4214508' },
-      { nome: 'Rio do Sul', uf: 'SC', ibge: '4214805' },
-      { nome: 'Rio dos Cedros', uf: 'SC', ibge: '4214706' },
-      { nome: 'Rio Negrinho', uf: 'SC', ibge: '4215000' },
-      { nome: 'Rio Negro', uf: 'PR', ibge: '4122305' },
-      { nome: 'Rodeio', uf: 'SC', ibge: '4215109' },
-      { nome: 'Salete', uf: 'SC', ibge: '4215307' },
-      { nome: 'Santa Helena', uf: 'PR', ibge: '4123501' },
-      { nome: 'Santa Rosa', uf: 'RS', ibge: '4317202' },
-      { nome: 'Santa Rosa do Sul', uf: 'SC', ibge: '4215653' },
-      { nome: 'Santo Antônio da Platina', uf: 'PR', ibge: '4124103' },
-      { nome: 'Santo Antônio do Monte', uf: 'MG', ibge: '3160405' },
-      { nome: 'Santo Augusto', uf: 'RS', ibge: '4317806' },
-      { nome: 'São Bento do Sul', uf: 'SC', ibge: '4215802' },
-      { nome: 'São Carlos', uf: 'SC', ibge: '4216008' },
-      { nome: 'São Francisco do Sul', uf: 'SC', ibge: '4216206' },
-      { nome: 'São João do Itaperiú', uf: 'SC', ibge: '4216354' },
-      { nome: 'São João do Polêsine', uf: 'RS', ibge: '4318432' },
-      { nome: 'São José', uf: 'SC', ibge: '4216602' },
-      { nome: 'São José do Cedro', uf: 'SC', ibge: '4216701' },
-      { nome: 'Seara', uf: 'SC', ibge: '4217501' },
-      { nome: 'Sobradinho', uf: 'RS', ibge: '4320701' },
-      { nome: 'Taió', uf: 'SC', ibge: '4217808' },
-      { nome: 'Telêmaco Borba', uf: 'PR', ibge: '4127106' },
-      { nome: 'Tijucas', uf: 'SC', ibge: '4218004' },
-      { nome: 'Timbé do Sul', uf: 'SC', ibge: '4218103' },
-      { nome: 'Timbó', uf: 'SC', ibge: '4218202' },
-      { nome: 'Três Barras', uf: 'SC', ibge: '4218301' },
-      { nome: 'Três Pontas', uf: 'MG', ibge: '3169406' },
-      { nome: 'Treviso', uf: 'SC', ibge: '4218350' },
-      { nome: 'Treze Tílias', uf: 'SC', ibge: '4218509' },
-      { nome: 'Vera Cruz', uf: 'RS', ibge: '4322707' },
-      { nome: 'Videira', uf: 'SC', ibge: '4219309' },
-      { nome: 'Zortéa', uf: 'SC', ibge: '4219853' }
+      { nome: 'Agrolândia', uf: 'SC', ibge: '4200200' }
+,      { nome: 'Alvorada', uf: 'RS', ibge: '4300604' }
+,      { nome: 'Apiúna', uf: 'SC', ibge: '4201257' }
+,      { nome: 'Arapongas', uf: 'PR', ibge: '4101507' }
+,      { nome: 'Araquari', uf: 'SC', ibge: '4201307' }
+,      { nome: 'Araranguá', uf: 'SC', ibge: '4201406' }
+,      { nome: 'Ascurra', uf: 'SC', ibge: '4201703' }
+,      { nome: 'Balneário Barra do Sul', uf: 'SC', ibge: '4202057' }
+,      { nome: 'Balneário Piçarras', uf: 'SC', ibge: '4212809' }
+,      { nome: 'Barra Velha', uf: 'SC', ibge: '4202107' }
+,      { nome: 'Bom Despacho', uf: 'MG', ibge: '3107406' }
+,      { nome: 'Bom Retiro', uf: 'SC', ibge: '4202602' }
+,      { nome: 'Bombinhas', uf: 'SC', ibge: '4202453' }
+,      { nome: 'Cachoeirinha', uf: 'RS', ibge: '4303103' }
+,      { nome: 'Caiçara', uf: 'RS', ibge: '4303400' }
+,      { nome: 'Campo Largo', uf: 'PR', ibge: '4104204' }
+,      { nome: 'Campo Mourão', uf: 'PR', ibge: '4104303' }
+,      { nome: 'Campo Novo', uf: 'RS', ibge: '4304002' }
+,      { nome: 'Carambeí', uf: 'PR', ibge: '4104659' }
+,      { nome: 'Carmo do Cajuru', uf: 'MG', ibge: '3114204' }
+,      { nome: 'Carmópolis de Minas', uf: 'MG', ibge: '3114501' }
+,      { nome: 'Cascavel', uf: 'PR', ibge: '4104808' }
+,      { nome: 'Castro', uf: 'PR', ibge: '4104907' }
+,      { nome: 'Concórdia', uf: 'SC', ibge: '4204301' }
+,      { nome: 'Corupá', uf: 'SC', ibge: '4204509' }
+,      { nome: 'Dois Irmãos', uf: 'RS', ibge: '4306403' }
+,      { nome: 'Enéas Marques', uf: 'PR', ibge: '4107405' }
+,      { nome: 'Estrela Velha', uf: 'RS', ibge: '4307815' }
+,      { nome: 'Fraiburgo', uf: 'SC', ibge: '4205506' }
+,      { nome: 'Garopaba', uf: 'SC', ibge: '4205704' }
+,      { nome: 'Garuva', uf: 'SC', ibge: '4205803' }
+,      { nome: 'Gravataí', uf: 'RS', ibge: '4309209' }
+,      { nome: 'Guabiruba', uf: 'SC', ibge: '4206306' }
+,      { nome: 'Guaramirim', uf: 'SC', ibge: '4206504' }
+,      { nome: 'Guarapuava', uf: 'PR', ibge: '4109401' }
+,      { nome: 'Guarujá do Sul', uf: 'SC', ibge: '4206603' }
+,      { nome: 'Guaíba', uf: 'RS', ibge: '4309308' }
+,      { nome: 'Guaíra', uf: 'PR', ibge: '4108809' }
+,      { nome: 'Horizontina', uf: 'RS', ibge: '4309605' }
+,      { nome: 'Ibirama', uf: 'SC', ibge: '4206900' }
+,      { nome: 'Igrejinha', uf: 'RS', ibge: '4310108' }
+,      { nome: 'Indaial', uf: 'SC', ibge: '4207502' }
+,      { nome: 'Itapoá', uf: 'SC', ibge: '4208450' }
+,      { nome: 'Ituporanga', uf: 'SC', ibge: '4208500' }
+,      { nome: 'Jaboticaba', uf: 'RS', ibge: '4310850' }
+,      { nome: 'Jacinto Machado', uf: 'SC', ibge: '4208708' }
+,      { nome: 'Jaguaruna', uf: 'SC', ibge: '4208807' }
+,      { nome: 'Lagoa Vermelha', uf: 'RS', ibge: '4311304' }
+,      { nome: 'Lapa', uf: 'PR', ibge: '4113205' }
+,      { nome: 'Laurentino', uf: 'SC', ibge: '4209508' }
+,      { nome: 'Lontras', uf: 'SC', ibge: '4209904' }
+,      { nome: 'Luiz Alves', uf: 'SC', ibge: '4210001' }
+,      { nome: 'Marechal Cândido Rondon', uf: 'PR', ibge: '4114609' }
+,      { nome: 'Maripá', uf: 'PR', ibge: '4115358' }
+,      { nome: 'Massaranduba', uf: 'SC', ibge: '4210605' }
+,      { nome: 'Modelo', uf: 'SC', ibge: '4210902' }
+,      { nome: 'Morro da Fumaça', uf: 'SC', ibge: '4211207' }
+,      { nome: 'Nova Erechim', uf: 'SC', ibge: '4211405' }
+,      { nome: 'Nova Santa Rita', uf: 'RS', ibge: '4313375' }
+,      { nome: 'Osório', uf: 'RS', ibge: '4313508' }
+,      { nome: 'Ouro', uf: 'SC', ibge: '4211801' }
+,      { nome: 'Ouro Verde do Oeste', uf: 'PR', ibge: '4117453' }
+,      { nome: 'Palhoça', uf: 'SC', ibge: '4211900' }
+,      { nome: 'Palmeira das Missões', uf: 'RS', ibge: '4313706' }
+,      { nome: 'Palmitinho', uf: 'RS', ibge: '4313805' }
+,      { nome: 'Panambi', uf: 'RS', ibge: '4313904' }
+,      { nome: 'Paranaguá', uf: 'PR', ibge: '4118204' }
+,      { nome: 'Paranavaí', uf: 'PR', ibge: '4118402' }
+,      { nome: 'Paraíso', uf: 'SC', ibge: '4212239' }
+,      { nome: 'Penha', uf: 'SC', ibge: '4212502' }
+,      { nome: 'Pinhais', uf: 'PR', ibge: '4119152' }
+,      { nome: 'Pinhalzinho', uf: 'SC', ibge: '4212908' }
+,      { nome: 'Pomerode', uf: 'SC', ibge: '4213203' }
+,      { nome: 'Porto Belo', uf: 'SC', ibge: '4213500' }
+,      { nome: 'Praia Grande', uf: 'SC', ibge: '4213807' }
+,      { nome: 'Presidente Getúlio', uf: 'SC', ibge: '4214003' }
+,      { nome: 'Rio Branco do Sul', uf: 'PR', ibge: '4122206' }
+,      { nome: 'Rio Negrinho', uf: 'SC', ibge: '4215000' }
+,      { nome: 'Rio Negro', uf: 'PR', ibge: '4122305' }
+,      { nome: 'Rio do Campo', uf: 'SC', ibge: '4214508' }
+,      { nome: 'Rio do Sul', uf: 'SC', ibge: '4214805' }
+,      { nome: 'Rio dos Cedros', uf: 'SC', ibge: '4214706' }
+,      { nome: 'Rodeio', uf: 'SC', ibge: '4215109' }
+,      { nome: 'Salete', uf: 'SC', ibge: '4215307' }
+,      { nome: 'Santa Helena', uf: 'PR', ibge: '4123501' }
+,      { nome: 'Santa Rosa', uf: 'RS', ibge: '4317202' }
+,      { nome: 'Santa Rosa do Sul', uf: 'SC', ibge: '4215653' }
+,      { nome: 'Santo Antônio da Platina', uf: 'PR', ibge: '4124103' }
+,      { nome: 'Santo Antônio do Monte', uf: 'MG', ibge: '3160405' }
+,      { nome: 'Santo Augusto', uf: 'RS', ibge: '4317806' }
+,      { nome: 'Seara', uf: 'SC', ibge: '4217501' }
+,      { nome: 'Sobradinho', uf: 'RS', ibge: '4320701' }
+,      { nome: 'São Bento do Sul', uf: 'SC', ibge: '4215802' }
+,      { nome: 'São Carlos', uf: 'SC', ibge: '4216008' }
+,      { nome: 'São Francisco do Sul', uf: 'SC', ibge: '4216206' }
+,      { nome: 'São José', uf: 'SC', ibge: '4216602' }
+,      { nome: 'São José do Cedro', uf: 'SC', ibge: '4216701' }
+,      { nome: 'São João do Itaperiú', uf: 'SC', ibge: '4216354' }
+,      { nome: 'São João do Polêsine', uf: 'RS', ibge: '4318432' }
+,      { nome: 'Taió', uf: 'SC', ibge: '4217808' }
+,      { nome: 'Telêmaco Borba', uf: 'PR', ibge: '4127106' }
+,      { nome: 'Tijucas', uf: 'SC', ibge: '4218004' }
+,      { nome: 'Timbé do Sul', uf: 'SC', ibge: '4218103' }
+,      { nome: 'Timbó', uf: 'SC', ibge: '4218202' }
+,      { nome: 'Treviso', uf: 'SC', ibge: '4218350' }
+,      { nome: 'Treze Tílias', uf: 'SC', ibge: '4218509' }
+,      { nome: 'Três Barras', uf: 'SC', ibge: '4218301' }
+,      { nome: 'Três Pontas', uf: 'MG', ibge: '3169406' }
+,      { nome: 'Vera Cruz', uf: 'RS', ibge: '4322707' }
+,      { nome: 'Videira', uf: 'SC', ibge: '4219309' }
+,      { nome: 'Zortéa', uf: 'SC', ibge: '4219853' }
     ]
   }
 };
-

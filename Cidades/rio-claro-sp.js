@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'rio-claro-sp',
   nome: 'Rio Claro',
   uf: 'SP',
@@ -21,4 +21,3 @@
     }
   }
 };
-

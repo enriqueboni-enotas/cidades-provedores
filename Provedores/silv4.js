@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'silv4',
   nome: 'SILv4',
   empresa: 'SILv4',
@@ -30,7 +30,7 @@
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -60,16 +60,15 @@
   },
   municipiosLista: {
     'silv4': [
-      { nome: 'Bauru', uf: 'SP', ibge: '3506003' },
-      { nome: 'Cariacica', uf: 'ES', ibge: '3201308' },
-      { nome: 'Cubatão', uf: 'SP', ibge: '3513504' },
-      { nome: 'Franca', uf: 'SP', ibge: '3516200' },
-      { nome: 'Itapevi', uf: 'SP', ibge: '3522505' },
-      { nome: 'Itaquaquecetuba', uf: 'SP', ibge: '3523107' },
-      { nome: 'Jandira', uf: 'SP', ibge: '3525003' },
-      { nome: 'Mogi das Cruzes', uf: 'SP', ibge: '3530607' },
-      { nome: 'Vila Velha', uf: 'ES', ibge: '3205200' }
+      { nome: 'Bauru', uf: 'SP', ibge: '3506003' }
+,      { nome: 'Cariacica', uf: 'ES', ibge: '3201308' }
+,      { nome: 'Cubatão', uf: 'SP', ibge: '3513504' }
+,      { nome: 'Franca', uf: 'SP', ibge: '3516200' }
+,      { nome: 'Itapevi', uf: 'SP', ibge: '3522505' }
+,      { nome: 'Itaquaquecetuba', uf: 'SP', ibge: '3523107' }
+,      { nome: 'Jandira', uf: 'SP', ibge: '3525003' }
+,      { nome: 'Mogi das Cruzes', uf: 'SP', ibge: '3530607' }
+,      { nome: 'Vila Velha', uf: 'ES', ibge: '3205200' }
     ]
   }
 };
-

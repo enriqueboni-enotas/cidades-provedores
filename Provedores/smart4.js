@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'smart4',
   nome: 'Smart4',
   empresa: 'Smart4',
@@ -27,7 +27,7 @@
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter até 9 dígitos somente números. Exemplo: 17450.',
-    helpCodigoServicoMunicipal: 'O Código do Serviço Municipal (Atividade) deve conter até no máximo 10 dígitos. \r\nNormalmente encontrado no portal da prefeitura.',
+    helpCodigoServicoMunicipal: 'O Código do Serviço Municipal (Atividade) deve conter até no máximo 10 dígitos. \nNormalmente encontrado no portal da prefeitura.',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -43,12 +43,11 @@
   },
   municipiosLista: {
     'smart4': [
-      { nome: 'Araci', uf: 'BA', ibge: '2902104' },
-      { nome: 'Bonito', uf: 'BA', ibge: '2904050' },
-      { nome: 'Gandu', uf: 'BA', ibge: '2911204' },
-      { nome: 'Monte Santo', uf: 'BA', ibge: '2921500' },
-      { nome: 'Mundo Novo', uf: 'BA', ibge: '2922102' }
+      { nome: 'Araci', uf: 'BA', ibge: '2902104' }
+,      { nome: 'Bonito', uf: 'BA', ibge: '2904050' }
+,      { nome: 'Gandu', uf: 'BA', ibge: '2911204' }
+,      { nome: 'Monte Santo', uf: 'BA', ibge: '2921500' }
+,      { nome: 'Mundo Novo', uf: 'BA', ibge: '2922102' }
     ]
   }
 };
-

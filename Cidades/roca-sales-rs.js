@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'roca-sales-rs',
   nome: 'Roca Sales',
   uf: 'RS',
@@ -54,4 +54,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'fgmaiss',
   nome: 'FgMaiss',
   empresa: 'FgMaiss',
@@ -28,9 +28,9 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\n\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente de 4 a 5 dígitos formatado com um ponto.\r\nExemplo válido: 8.02 ou 12.11',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente de 4 a 5 dígitos formatado com um ponto.\nExemplo válido: 8.02 ou 12.11',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -42,17 +42,16 @@
   },
   municipiosLista: {
     'fgmaiss': [
-      { nome: 'Areiópolis', uf: 'SP', ibge: '3503604' },
-      { nome: 'Avanhandava', uf: 'SP', ibge: '3504404' },
-      { nome: 'Barra Bonita', uf: 'SP', ibge: '3505302' },
-      { nome: 'Buritama', uf: 'SP', ibge: '3508108' },
-      { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' },
-      { nome: 'Igaraçu do Tietê', uf: 'SP', ibge: '3520004' },
-      { nome: 'Luís Antônio', uf: 'SP', ibge: '3527603' },
-      { nome: 'Porangaba', uf: 'SP', ibge: '3540507' },
-      { nome: 'Tanabi', uf: 'SP', ibge: '3553401' },
-      { nome: 'Três Rios', uf: 'RJ', ibge: '3306008' }
+      { nome: 'Areiópolis', uf: 'SP', ibge: '3503604' }
+,      { nome: 'Avanhandava', uf: 'SP', ibge: '3504404' }
+,      { nome: 'Barra Bonita', uf: 'SP', ibge: '3505302' }
+,      { nome: 'Buritama', uf: 'SP', ibge: '3508108' }
+,      { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' }
+,      { nome: 'Igaraçu do Tietê', uf: 'SP', ibge: '3520004' }
+,      { nome: 'Luís Antônio', uf: 'SP', ibge: '3527603' }
+,      { nome: 'Porangaba', uf: 'SP', ibge: '3540507' }
+,      { nome: 'Tanabi', uf: 'SP', ibge: '3553401' }
+,      { nome: 'Três Rios', uf: 'RJ', ibge: '3306008' }
     ]
   }
 };
-

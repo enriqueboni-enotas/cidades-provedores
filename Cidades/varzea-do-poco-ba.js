@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'varzea-do-poco-ba',
   nome: 'Várzea do Poço',
   uf: 'BA',
@@ -46,4 +46,3 @@
     ]
   }
 };
-

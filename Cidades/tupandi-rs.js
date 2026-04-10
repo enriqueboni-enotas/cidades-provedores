@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'tupandi-rs',
   nome: 'Tupandi',
   uf: 'RS',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

@@ -1,0 +1,105 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - paragraph [ref=e6]: Este site utiliza cookies
+    - paragraph [ref=e8]:
+      - text: Utilizamos cookies para viabilizar o funcionamento deste site, disponibilizar funcionalidades, inclusive de segurança, e personalizar sua navegação e outras interações com a Hotmart. Em nosso
+      - link "Aviso de Cookies" [ref=e9] [cursor=pointer]:
+        - /url: https://www.hotmart.com/pt-br/legal/politica-de-cookies
+      - text: ", você encontra mais informações sobre o que são cookies, quais utilizamos na Plataforma Hotmart, para que servem e como gerenciá-los."
+    - button "OK" [ref=e11] [cursor=pointer]
+  - generic [ref=e15]:
+    - banner [ref=e16]:
+      - generic [ref=e18]:
+        - link "Hotmart" [ref=e19] [cursor=pointer]:
+          - /url: /pt-br
+          - img "Hotmart" [ref=e22]
+        - navigation [ref=e25]:
+          - list [ref=e26]:
+            - listitem [ref=e27]:
+              - link "Central de Ajuda" [ref=e28] [cursor=pointer]:
+                - /url: /pt-br
+        - button "Entrar" [ref=e30] [cursor=pointer]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - heading "Olá, como podemos ajudar?" [level=1] [ref=e35]
+        - paragraph [ref=e36]: Utilize a Inteligência Artificial para gerar a melhor resposta. Basta descrever o que precisa.
+        - generic [ref=e37]:
+          - searchbox "Pesquisar artigos" [ref=e39]
+          - button "Gerar" [ref=e40] [cursor=pointer]:
+            - generic [ref=e41]: Gerar
+            - img [ref=e43]
+      - generic [ref=e47]:
+        - generic [ref=e48] [cursor=pointer]: Sou Comprador
+        - generic [ref=e49] [cursor=pointer]: Sou Produtor
+        - generic [ref=e50] [cursor=pointer]: Sou Afiliado
+    - generic [ref=e53]:
+      - heading "Estas são as dúvidas mais frequentes por aqui" [level=5] [ref=e54]
+      - generic [ref=e55]:
+        - link "Assinatura e pagamentos recorrentes" [ref=e57] [cursor=pointer]:
+          - /url: /pt-br/section/25851792423821/assinatura-e-pagamentos-recorrentes?profile=BUYER
+          - generic [ref=e58]:
+            - heading "Assinatura e pagamentos recorrentes" [level=6] [ref=e59]
+            - img [ref=e61]
+        - link "Quero comprar e preciso de ajuda" [ref=e64] [cursor=pointer]:
+          - /url: /pt-br/section/25851759781773/quero-comprar-e-preciso-de-ajuda?profile=BUYER
+          - generic [ref=e65]:
+            - heading "Quero comprar e preciso de ajuda" [level=6] [ref=e66]
+            - img [ref=e68]
+        - link "Dúvidas sobre o produto que comprei" [ref=e71] [cursor=pointer]:
+          - /url: /pt-br/section/25851812872205/duvidas-sobre-o-produto-que-comprei?profile=BUYER
+          - generic [ref=e72]:
+            - heading "Dúvidas sobre o produto que comprei" [level=6] [ref=e73]
+            - img [ref=e75]
+        - link "Minha conta e acesso" [ref=e78] [cursor=pointer]:
+          - /url: /pt-br/section/25851794870285/minha-conta-e-acesso?profile=BUYER
+          - generic [ref=e79]:
+            - heading "Minha conta e acesso" [level=6] [ref=e80]
+            - img [ref=e82]
+        - link "Cancelamento, reembolso e cobrança não identificada" [ref=e85] [cursor=pointer]:
+          - /url: /pt-br/section/25851824108173/cancelamento-reembolso-e-cobranca-nao-identificada?profile=BUYER
+          - generic [ref=e86]:
+            - heading "Cancelamento, reembolso e cobrança não identificada" [level=6] [ref=e87]
+            - img [ref=e89]
+        - link "Gerenciando sua conta" [ref=e92] [cursor=pointer]:
+          - /url: /pt-br/section/25855157439757/gerenciando-sua-conta?profile=BUYER
+          - generic [ref=e93]:
+            - heading "Gerenciando sua conta" [level=6] [ref=e94]
+            - img [ref=e96]
+      - link "Preciso de ajuda em outro tema" [ref=e98] [cursor=pointer]:
+        - /url: /pt-br/categories/25851725931533/comprei-ou-quero-comprar-e-preciso-de-ajuda?profile=BUYER
+        - generic [ref=e99]:
+          - paragraph [ref=e100]: Preciso de ajuda em outro tema
+          - img [ref=e102]
+    - contentinfo [ref=e104]:
+      - link "Hotmart" [ref=e106] [cursor=pointer]:
+        - /url: /pt-br
+        - img "Hotmart" [ref=e107]
+      - generic [ref=e108]:
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - img [ref=e113] [cursor=pointer]
+          - listitem [ref=e115]:
+            - img [ref=e118] [cursor=pointer]
+          - listitem [ref=e120]:
+            - img [ref=e123] [cursor=pointer]
+        - generic [ref=e126] [cursor=pointer]:
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - generic [ref=e129]: Idioma
+              - generic [ref=e130]: Português - Brasil
+            - img [ref=e132]
+          - list:
+            - listitem: Português - Brasil
+            - listitem: English
+            - listitem: Español
+            - listitem: Français
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: Hotmart — 2011-2026 © Todos os direitos reservados
+        - navigation [ref=e137]:
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - link "Site Hotmart" [ref=e140] [cursor=pointer]:
+                - /url: https://www.hotmart.com
+            - listitem [ref=e141]:
+              - link "Plataforma Hotmart" [ref=e142] [cursor=pointer]:
+                - /url: https://app.hotmart.com

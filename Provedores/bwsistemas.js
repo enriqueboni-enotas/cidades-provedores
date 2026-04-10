@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'bwsistemas',
   nome: 'BWSistemas',
   empresa: 'BWSistemas',
@@ -34,11 +34,10 @@
   },
   municipiosLista: {
     'bwsistemas': [
-      { nome: 'Ipiguá', uf: 'SP', ibge: '3521150' },
-      { nome: 'Macaubal', uf: 'SP', ibge: '3528106' },
-      { nome: 'Neves Paulista', uf: 'SP', ibge: '3532504' },
-      { nome: 'Paranapuã', uf: 'SP', ibge: '3535903' }
+      { nome: 'Ipiguá', uf: 'SP', ibge: '3521150' }
+,      { nome: 'Macaubal', uf: 'SP', ibge: '3528106' }
+,      { nome: 'Neves Paulista', uf: 'SP', ibge: '3532504' }
+,      { nome: 'Paranapuã', uf: 'SP', ibge: '3535903' }
     ]
   }
 };
-

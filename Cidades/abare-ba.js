@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'abare-ba',
   nome: 'Abaré',
   uf: 'BA',
@@ -19,4 +19,3 @@
     }
   }
 };
-

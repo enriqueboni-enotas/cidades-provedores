@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'salvador-do-sul-rs',
   nome: 'Salvador do Sul',
   uf: 'RS',
@@ -53,4 +53,3 @@
     ]
   }
 };
-

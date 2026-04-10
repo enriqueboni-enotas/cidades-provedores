@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'belford-roxo-rj',
   nome: 'Belford Roxo',
   uf: 'RJ',
@@ -45,4 +45,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'rlz',
   nome: 'RLZ',
   empresa: 'RLZ',
@@ -39,4 +39,3 @@
     ]
   }
 };
-

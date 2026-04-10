@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'arraial-do-cabo-rj',
   nome: 'Arraial do Cabo',
   uf: 'RJ',
@@ -44,4 +44,3 @@
     ]
   }
 };
-

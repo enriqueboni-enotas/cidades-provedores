@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'ipiranga-pr',
   nome: 'Ipiranga',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

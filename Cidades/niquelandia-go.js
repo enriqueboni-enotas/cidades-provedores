@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'niquelandia-go',
   nome: 'Niquelândia',
   uf: 'GO',
@@ -56,4 +56,3 @@
     ]
   }
 };
-

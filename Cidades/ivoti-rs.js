@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'ivoti-rs',
   nome: 'Ivoti',
   uf: 'RS',
@@ -54,4 +54,3 @@
     ]
   }
 };
-

@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-pedro-da-aldeia-rj',
   nome: 'São Pedro da Aldeia',
   uf: 'RJ',
@@ -45,4 +45,3 @@
     ]
   }
 };
-

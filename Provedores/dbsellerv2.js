@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'dbsellerv2',
   nome: 'DBSellerv2',
   empresa: 'DBSellerv2',
@@ -12,10 +12,9 @@
   ],
   municipiosLista: {
     'dbsellerv2': [
-      { nome: 'Charqueadas', uf: 'RS', ibge: '4305355' },
-      { nome: 'Corinto', uf: 'MG', ibge: '3119104' },
-      { nome: 'Sapiranga', uf: 'RS', ibge: '4319901' }
+      { nome: 'Charqueadas', uf: 'RS', ibge: '4305355' }
+,      { nome: 'Corinto', uf: 'MG', ibge: '3119104' }
+,      { nome: 'Sapiranga', uf: 'RS', ibge: '4319901' }
     ]
   }
 };
-

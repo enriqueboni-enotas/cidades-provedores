@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santa-tereza-do-oeste-pr',
   nome: 'Santa Tereza do Oeste',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

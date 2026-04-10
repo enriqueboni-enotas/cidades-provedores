@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'euclides-da-cunha-ba',
   nome: 'Euclides da Cunha',
   uf: 'BA',
@@ -19,4 +19,3 @@
     }
   }
 };
-

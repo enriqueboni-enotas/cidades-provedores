@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'tapejara-pr',
   nome: 'Tapejara',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

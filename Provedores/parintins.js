@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'parintins',
   nome: 'Parintins',
   empresa: 'Parintins',
@@ -29,10 +29,10 @@
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente somente números.\r\nExemplo válido: ex: 100506213, 1706',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\n\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente somente números.\nExemplo válido: ex: 100506213, 1706',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 9 dígitos sem formatação.\r\nExemplo válido: 17.06',
+    helpItemListaServico: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 9 dígitos sem formatação.\nExemplo válido: 17.06',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -51,4 +51,3 @@
     ]
   }
 };
-

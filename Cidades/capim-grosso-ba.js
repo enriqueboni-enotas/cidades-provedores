@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'capim-grosso-ba',
   nome: 'Capim Grosso',
   uf: 'BA',
@@ -46,4 +46,3 @@
     ]
   }
 };
-

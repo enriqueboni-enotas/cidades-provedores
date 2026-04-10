@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'laranjeiras-do-sul-pr',
   nome: 'Laranjeiras do Sul',
   uf: 'PR',
@@ -48,8 +48,8 @@
     enviaEmailCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic',
-      UsaCodigoVerificacao: true
+      UsaCodigoVerificacao: true,
+      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic'
     },
     naturezasOperacao: [
       { codigo: '1', nome: 'Tributado no municipio' },
@@ -59,4 +59,3 @@
     ]
   }
 };
-

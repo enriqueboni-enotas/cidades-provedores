@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'bocaiuva-do-sul-pr',
   nome: 'Bocaiúva do Sul',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

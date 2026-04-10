@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'rafael-jambeiro-ba',
   nome: 'Rafael Jambeiro',
   uf: 'BA',
@@ -47,4 +47,3 @@
     ]
   }
 };
-

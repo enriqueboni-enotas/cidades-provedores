@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'pareci-novo-rs',
   nome: 'Pareci Novo',
   uf: 'RS',
@@ -58,4 +58,3 @@
     ]
   }
 };
-

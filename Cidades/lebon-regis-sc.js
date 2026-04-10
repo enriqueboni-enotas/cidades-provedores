@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'lebon-regis-sc',
   nome: 'Lebon Régis',
   uf: 'SC',
@@ -34,9 +34,9 @@
     usaCNAE: false,
     emTransicaoNFSeNacional: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Esse é o código de identificação do serviço prestado na nota fiscal e é formado por 3 a 4 números.\r\n\r\nExemplos válidos: 1401 ou 0802',
+    helpCodigoServicoMunicipal: 'Esse é o código de identificação do serviço prestado na nota fiscal e é formado por 3 a 4 números.\n\nExemplos válidos: 1401 ou 0802',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -63,4 +63,3 @@
     ]
   }
 };
-

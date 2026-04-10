@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'fortaleza',
   nome: 'Fortaleza',
   empresa: 'Fortaleza',
@@ -15,10 +15,10 @@
     usaCNAE: false,
     numeroNotasPorLote: 5,
     autenticidadeNota: {
-      urlVerificacao: 'https://iss.fortaleza.ce.gov.br/grpfor/pagesPublic/validarNota.seam',
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaNumeroNota: true
+      UsaNumeroNota: true,
+      urlVerificacao: 'https://iss.fortaleza.ce.gov.br/grpfor/pagesPublic/validarNota.seam'
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -44,4 +44,3 @@
     ]
   }
 };
-

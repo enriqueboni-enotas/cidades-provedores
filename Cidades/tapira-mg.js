@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'tapira-mg',
   nome: 'Tapira',
   uf: 'MG',
@@ -25,7 +25,7 @@
       certificadoDigital: null,
       usuario: null,
       senha: null,
-      token: 'Chave de acesso ao serviço de integração da prefeitura.\r\n                    \r\nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal Governa com seu usuário e senha, entre no menu “Gerenciamento/Configurar Padrão”, e configure que a empresa irá utilizar o modulo de Web Service. \r\nNeste momento será gerado para esta empresa sua Chave de Acesso, basta copiar e colar o valor da chave de acesso neste campo.',
+      token: 'Chave de acesso ao serviço de integração da prefeitura.\n                    \nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal Governa com seu usuário e senha, entre no menu “Gerenciamento/Configurar Padrão”, e configure que a empresa irá utilizar o modulo de Web Service. \nNeste momento será gerado para esta empresa sua Chave de Acesso, basta copiar e colar o valor da chave de acesso neste campo.',
       fraseSecreta: null
     },
     campoLoginProvedor: 2,
@@ -36,7 +36,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     emTransicaoNFSeNacional: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 4 a 5 dígitos com formatação.\r\nExemplo válido: 1.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 4 a 5 dígitos com formatação.\nExemplo válido: 1.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -71,4 +71,3 @@
     ]
   }
 };
-

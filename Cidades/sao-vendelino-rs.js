@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'sao-vendelino-rs',
   nome: 'São Vendelino',
   uf: 'RS',
@@ -54,4 +54,3 @@
     ]
   }
 };
-

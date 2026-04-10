@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'nfiss',
   nome: 'NFIss',
   empresa: 'NFIss',
@@ -8,7 +8,7 @@
   visaoGeral: [
     { key: 'Nome', val: 'NFIss' },
     { key: 'Total Municipios', val: '6' },
-    { key: 'Estados Atendidos', val: ['RJ', 'MG'], type: 'uf-badges' }
+    { key: 'Estados Atendidos', val: ['MG', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     usaCNAE: false,
@@ -33,13 +33,12 @@
   },
   municipiosLista: {
     'nfiss': [
-      { nome: 'Belo Vale', uf: 'MG', ibge: '3106408' },
-      { nome: 'Carapebus', uf: 'RJ', ibge: '3300936' },
-      { nome: 'Comendador Levy Gasparian', uf: 'RJ', ibge: '3300951' },
-      { nome: 'Conceição de Macabu', uf: 'RJ', ibge: '3301405' },
-      { nome: 'Cristiano Otoni', uf: 'MG', ibge: '3120409' },
-      { nome: 'Jeceaba', uf: 'MG', ibge: '3135407' }
+      { nome: 'Belo Vale', uf: 'MG', ibge: '3106408' }
+,      { nome: 'Carapebus', uf: 'RJ', ibge: '3300936' }
+,      { nome: 'Comendador Levy Gasparian', uf: 'RJ', ibge: '3300951' }
+,      { nome: 'Conceição de Macabu', uf: 'RJ', ibge: '3301405' }
+,      { nome: 'Cristiano Otoni', uf: 'MG', ibge: '3120409' }
+,      { nome: 'Jeceaba', uf: 'MG', ibge: '3135407' }
     ]
   }
 };
-

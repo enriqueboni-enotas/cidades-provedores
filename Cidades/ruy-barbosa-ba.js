@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'ruy-barbosa-ba',
   nome: 'Ruy Barbosa',
   uf: 'BA',
@@ -19,4 +19,3 @@
     }
   }
 };
-

@@ -1,202 +1,142 @@
 var changelogData = [
   {
+    tag: '10/04/2026',
+    titulo: 'Sexta-feira — 10 de Abril',
+    data: '10/04/2026',
+    itens: [
+      {
+        icon: '📊',
+        destaque: 'Lógica Hotmart para definir UsaNBS no provedor FgMaiss',
+        texto: 'Adiciona lógica para determinar UsaNBS para municípios Hotmart no ObterCaracteristicasCore do provedor FgMaiss (PR #685)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Zera pTotTribFed para Franca/SP no XML NFSe',
+        texto: 'Estende zeragem de pTotTribFed para Franca/SP; refatora código para usar constantes CodigoIBGE (PR #684)',
+      },
+    ],
+  },
+  {
     tag: '09/04/2026',
-    titulo: 'Quarta-feira — 09 de Abril',
+    titulo: 'Quinta-feira — 09 de Abril',
     data: '09/04/2026',
     itens: [
       {
-        icon: '🤖',
-        destaque: 'Melhorias na consulta por RPS em Barueri/SP',
-        texto:
-          'Logs detalhados para rastreamento do processo de consulta, incluindo resolução de captcha. PDF da nota salvo automaticamente ao consultar por RPS.',
+        icon: '🔧',
+        destaque: 'Ajuste critérios de exportação e cancelamento GissOnline',
+        texto: 'Ajusta critérios de exportação para usar código IBGE 9999999; remove rejeição automática de cancelamento no GissOnline (PR #683)',
       },
       {
-        icon: '📍',
-        destaque:
-          'Correção de endereço para tomador do exterior (eTransparência)',
-        texto:
-          'Sistema agora pula atribuição de endereço para clientes estrangeiros e define TipoLogLocPre como "Rua". Lógica de endereço no reg20 prefere endereço do Tomador com fallback para Empresa.',
+        icon: '🔧',
+        destaque: 'Melhorias na consulta de lote NFS-e Barueri',
+        texto: 'Melhora logs de rastreamento; tratamento de erros de captcha; ajusta campo RPS para 10 dígitos; salva PDF ao consultar por RPS (PR #682)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Verifica tomador estrangeiro no eTransparência',
+        texto: 'Adiciona verificação de tomador estrangeiro para pular atribuição de endereço e define TipoLogLocPre como "Rua" (PR #681)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Melhoria no tratamento de endereço reg20 eTransparência',
+        texto: 'Prioriza endereço do Tomador quando disponível, com fallback para endereço da Empresa (PR #680)',
       },
     ],
   },
   {
     tag: '08/04/2026',
-    titulo: 'Terça-feira — 08 de Abril',
+    titulo: 'Quarta-feira — 08 de Abril',
     data: '08/04/2026',
     itens: [
       {
-        icon: '🏙️',
-        destaque: 'Novas cidades no Portal Nacional',
-        texto:
-          'Governador Valadares/MG e Boca da Mata/AL migraram para o portal nacional (NfseNacionalV2).',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Endpoints atualizados',
-        texto:
-          'Jardim/MS endpoint atualizado. Santa Rita do Pardo/MS mudou porta de 8085 para 8090. Link de homologação de Contagem/MG corrigido.',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Correção no envio de alíquota (Palmas/TO)',
-        texto:
-          'Corrigido envio da alíquota de ISS quando serviço prestado fora do município sem retenção.',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP sem formatação (eTransparência/NotaControl)',
-        texto: 'CEP do local de prestação enviado sem pontos ou traços.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Retry no cancelamento',
-        texto:
-          'Quando a prefeitura responde "Tente novamente", o sistema faz novas tentativas automaticamente.',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Bloqueio de regeneração de API Key',
-        texto:
-          'Possível bloquear regeneração de API Key para empresas específicas via configuração.',
-      },
-      {
-        icon: '🏢',
-        destaque: 'Conta Azul — Município de incidência',
-        texto:
-          'Município de incidência agora é sempre o do prestador para a empresa Conta Azul.',
-      },
-      {
-        icon: '🌍',
-        destaque: 'Critério de exportação ajustado (Portal Nacional)',
-        texto:
-          'Nota só é exportação quando IBGE é 9999999. Cancelamento no GissOnline liberado.',
+        icon: '🧮',
+        destaque: 'Validação base de cálculo PIS/COFINS zerada',
+        texto: 'Adiciona validação que rejeita notas com BaseCalculoPisCofins zero quando PIS/COFINS estão presentes, evitando travamento na fila (PR #679)',
       },
       {
         icon: '🌐',
-        destaque: 'ISSQN exterior (eTransparência)',
-        texto:
-          'Notas de serviço no exterior preenchem corretamente campos do relatório. Alíquota de ISS zerada para tomador exterior.',
+        destaque: 'Ajustes ISSQN exterior e PDF para notas estrangeiras',
+        texto: 'Trata notas de serviço do exterior (IBGE 9999999) no relatório PDF; zera alíquota ISS para empresa específica com tomador exterior (PR #678)',
       },
       {
-        icon: '🤖',
-        destaque: 'Consulta NFS-e por RPS em Barueri/SP',
-        texto:
-          'Consulta via web scraping com resolução automática de captcha (AntiCaptcha). Nova operação ConsultarNFeRpsV3.',
+        icon: '🆕',
+        destaque: 'Consulta NFS-e por RPS com AntiCaptcha em Barueri',
+        texto: 'Implementa fluxo de consulta NFS-e por RPS via web scraping com resolução automática de captcha usando AntiCaptcha (PR #676)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Novos municípios e lógica ISS no WebISS',
+        texto: 'Adiciona novos municípios à configuração; implementa lógica de alíquota ISS no WebISS; bloqueio de atualização de API key para subscriptions específicas (PR #677)',
       },
     ],
   },
   {
     tag: '07/04/2026',
-    titulo: 'Segunda-feira — 07 de Abril',
+    titulo: 'Terça-feira — 07 de Abril',
     data: '07/04/2026',
     itens: [
       {
+        icon: '🔢',
+        destaque: 'Normalização de série RPS na consulta de lote',
+        texto: 'Adiciona helper NormalizarSerie para tratar "-" como vazio e garantir comparação consistente de séries RPS (PR #675)',
+      },
+      {
         icon: '🆕',
-        destaque: 'Novo provedor GIFv2 no layout nacional',
-        texto:
-          'Criado novo provedor GIFv2 seguindo o layout do portal nacional.',
+        destaque: 'Novo provedor GIFv2 implementado',
+        texto: 'Implementa provedor GIFv2 completo com operações de emissão, consulta, cancelamento e geração de PDF; inclui testes unitários (PR #674)',
       },
       {
         icon: '🏙️',
-        destaque: 'Mudanças de provedor em várias cidades',
-        texto:
-          'Arroio do Meio/RS migra para NfseNacionalV2. Itaituba/PA para CoplanV2. Serra do Mel/RN para TinusV2. Jardinópolis/SP para GissOnline. Embu das Artes/SP URLs atualizadas.',
-      },
-      {
-        icon: '🏢',
-        destaque: 'Vinhedo/SP permite emissão sem tomador',
-        texto:
-          'Configurado Vinhedo/SP para permitir emissão de NFS-e sem dados do tomador.',
-      },
-      {
-        icon: '📊',
-        destaque: 'GOVBRv3 — Ajustes de alíquota e flags',
-        texto:
-          'Itabira/MG, Boituva/SP e Pejuçara/RS removidos da flag SempreEnviaAliquotaIssEmpresasSimplesNacional. São Gonçalo do Rio Abaixo/MG incluído na regra UsaCIntContribComCodigoServico.',
+        destaque: 'Remove RPS sequencial para Varginha/MG',
+        texto: 'Remove obrigatoriedade de RPS sequencial para Varginha/MG no BethaV3; reseta número RPS e série em caso de erro (PR #673)',
       },
       {
         icon: '🔧',
-        destaque: 'Normalização de série RPS (SIGISSv5) e Varginha/MG',
-        texto:
-          'Corrigida comparação de série RPS por diferenças de formatação. Removida exigência de RPS sequencial para Varginha/MG.',
-      },
-      {
-        icon: '🧮',
-        destaque: 'PIS/COFINS e IBS/CBS',
-        texto:
-          'Ajustes PIS/Cofins Sapiranga/RS. CST do PIS/COFINS enviado conforme prestador. Validação de NBS para não travar fila. Ajuste tag cClassTrib.',
+        destaque: 'Correção de sintaxe no provedor IPM',
+        texto: 'Corrige erro de sintaxe (vírgula por ponto-e-vírgula) no RecepcionarLoteNFe do IPM (PR #672)',
       },
       {
         icon: '🌐',
-        destaque: 'Tratamento de tomador estrangeiro',
-        texto:
-          'Tratamento de tomador exterior em Cachoeirinha/RS. Cotia/SP configurado para enviar código obra.',
+        destaque: 'Tratamento tomador estrangeiro no IPM',
+        texto: 'Adiciona PaisPrestacaoServico ao modelo ItemNfse; atualiza condição de prestador estrangeiro incluindo país de prestação (PR #671)',
       },
       {
-        icon: '🔧',
-        destaque: 'IDs de responsável técnico atualizados',
-        texto: 'Adicionados novos IDs na lista de responsável técnico.',
+        icon: '🧮',
+        destaque: 'Correções CST PIS/COFINS e validação NBS',
+        texto: 'Corrige nome de propriedade cClassTrib; melhora tratamento CST para PIS/COFINS; valida código NBS; atualiza configurações municipais (PR #670)',
       },
     ],
   },
   {
     tag: '06/04/2026',
-    titulo: 'Domingo — 06 de Abril',
+    titulo: 'Segunda-feira — 06 de Abril',
     data: '06/04/2026',
     itens: [
       {
         icon: '🌐',
-        destaque: 'NFS-e para serviço no exterior (eTransparência)',
-        texto:
-          'Regras para notas com IBGE 9999999: preenche endereço do tomador, zera ISS, adiciona país/cidade/estado/CEP.',
+        destaque: 'Tratamento NFS-e com prestação de serviço no exterior',
+        texto: 'Define código IBGE 9999999 para serviços no exterior; verifica se serviço é prestado a entidade estrangeira (PR #669)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Permissões de backoffice atualizadas',
+        texto: 'Adiciona novos usuários às permissões especiais de backoffice em HML e PRD (PR #668)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Suporte a moeda estrangeira no vServMoeda',
+        texto: 'Permite uso de valor em moeda estrangeira (valorServicoMoedaEstrangeira) no campo vServMoeda da NFSe Nacional v2 (PRs #663, #665, #666, #667)',
       },
       {
         icon: '🏙️',
-        destaque: 'Mudanças de provedor em várias cidades',
-        texto:
-          'Caiçara/RS e Guarujá do Sul/SC migram para IPM. Colina/SP para NfseNacionalV2. São Luís de Montes Belos/GO volta para Centi. Ortigueira/PR para Bethav3. Jardinópolis/SP para GissOnline. Capela do Alto/SP adere ao portal nacional.',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Links de integração atualizados',
-        texto:
-          'Cotia/SP e Carapicuíba/SP tiveram links atualizados. Araraquara/SP atualizado para layout padrão com número do lote.',
-      },
-      {
-        icon: '🧮',
-        destaque: 'Impostos retidos PIS/COFINS/CSLL (TinusV2)',
-        texto:
-          'Refatorado cálculo de impostos federais retidos. Corrigido bug que atribuía AliquotaCofins igual à AliquotaPis.',
-      },
-      {
-        icon: '🏗️',
-        destaque: 'Obras para SIGISSv5 e IssIntel + CNO para IPM',
-        texto:
-          'Envio de dados de construção civil para SIGISSv5 e IssIntel. Campo CNO implementado para IPM.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Alíquota ISS e configurações municipais',
-        texto:
-          'Uberaba/MG não envia alíquota para não optantes. Juazeiro/BA na lista de municípios sem MunicipioIncidencia. Canguçu/RS e Álvares Machado/SP no GOVBRv3. Coplan V2 não envia alíquota zero.',
-      },
-      {
-        icon: '🛡️',
-        destaque: 'Proteção contra fila travada e validações',
-        texto:
-          'Try/catch para evitar travamento quando busca por município falha. Validação de metadados antes de inserir. Normalização de NBS. Reenvio automático no KbfSistemas.',
-      },
-      {
-        icon: '🌍',
-        destaque: 'Variação de país e autenticidade de nota',
-        texto:
-          'Variações de nome para Ilhas Virgens Britânicas. Verificação de autenticidade para Fortaleza/CE. Moeda estrangeira (vServMoeda) corrigida no portal nacional.',
+        destaque: 'Proxy estático Franco da Rocha/SP e imunidade tributária',
+        texto: 'Adiciona proxy estático ao SIGISSv5 de Franco da Rocha/SP; insere novo GUID de imunidade tipo 3 no mapeamento (PR #664)',
       },
     ],
   },
   {
     tag: '05/04/2026',
-    titulo: 'Sábado — 05 de Abril',
+    titulo: 'Domingo — 05 de Abril',
     data: '05/04/2026',
     itens: [
       {
@@ -208,7 +148,7 @@ var changelogData = [
   },
   {
     tag: '04/04/2026',
-    titulo: 'Sexta-feira — 04 de Abril',
+    titulo: 'Sábado — 04 de Abril',
     data: '04/04/2026',
     itens: [
       {
@@ -220,179 +160,101 @@ var changelogData = [
   },
   {
     tag: '03/04/2026',
-    titulo: 'Quinta-feira — 03 de Abril',
+    titulo: 'Sexta-feira — 03 de Abril',
     data: '03/04/2026',
     itens: [
       {
-        icon: '🧮',
-        destaque: 'IBS/CBS para Sapiranga/RS (DBSeller)',
-        texto:
-          'Preenchimento dos campos IBS/CBS nos itens de serviço. Lógica de organização das tags cIndOp, cClassTrib e CodigoNbs no XML.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Correções de XML e proxy',
-        texto:
-          'Reordenação das tags CSTPisCofins e TpRetPisCofins para lotes com múltiplas notas. Ajuste de MunicipioIncidencia para evitar NullReferenceException. Proxy static no envio.',
-      },
-      {
-        icon: '💱',
-        destaque: 'Moeda estrangeira para notas do exterior',
-        texto:
-          'Envio do valor da moeda estrangeira para notas com tomador do exterior.',
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
       },
     ],
   },
   {
     tag: '02/04/2026',
-    titulo: 'Quarta-feira — 02 de Abril',
+    titulo: 'Quinta-feira — 02 de Abril',
     data: '02/04/2026',
     itens: [
       {
-        icon: '📜',
+        icon: '🔧',
         destaque: 'Script de cancelamento de notas inconsistentes',
-        texto:
-          'Script SQL para disparar cancelamento de notas com status inconsistente.',
+        texto: 'Adiciona script SQL para disparar cancelamento de notas com status inconsistente (PR #662)',
       },
       {
         icon: '🏙️',
-        destaque: 'Cachoeirinha/RS — Situação tributária para tomador exterior',
-        texto:
-          'Ajustada situação tributária (código 14) para tomadores do exterior no provedor IPM.',
+        destaque: 'Ajuste situação tributária Cachoeirinha/RS',
+        texto: 'Ajusta situação tributária 14 para tomador exterior em Cachoeirinha/RS no provedor IPM (PR #661)',
       },
       {
-        icon: '🔧',
-        destaque: 'Sync com NotaGateway',
-        texto:
-          'Insere empresa na propriedade TipoImunidadePorEmpresa com valor 3.',
+        icon: '🏙️',
+        destaque: 'Configurações municipais e melhorias diversas',
+        texto: 'Atualiza configurações de Anitápolis/SC e Pão de Açúcar/AL; remove tipoNf do WebHook; adiciona Conchas/SP ao GOVBRv3; trunca SerieRps para 4 caracteres; tratamento evento Asaas (PR #660)',
       },
     ],
   },
   {
     tag: '01/04/2026',
-    titulo: 'Terça-feira — 01 de Abril',
+    titulo: 'Quarta-feira — 01 de Abril',
     data: '01/04/2026',
     itens: [
       {
-        icon: '🔗',
-        destaque: 'Paranapanema/SP — Atualização de provedor',
-        texto:
-          'Migrou de GOVBRv3 para GOVBRv2 com link de produção atualizado.',
-      },
-      {
         icon: '🏙️',
-        destaque: 'Novas cidades e migrações',
-        texto:
-          'Anitápolis/SC migra para Emissor Nacional. Pão de Açúcar/AL ativado no provedor Siafic. Conchas/SP incluído nas regras de cIntContrib.',
+        destaque: 'Atualiza Paranapanema/SP para GOVBRv2',
+        texto: 'Muda provedor de Paranapanema/SP de GOVBRv3 para GOVBRv2 com link de produção atualizado (PR #659)',
       },
       {
-        icon: '📊',
-        destaque: 'GOVBRv3 — Alíquota ISS para Simples Nacional',
-        texto:
-          'Mais municípios na flag SempreEnviaAliquotaIssEmpresasSimplesNacional. Envio de evento para empresa Asaas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Truncamento e formatação',
-        texto:
-          'Truncate na formatação do TxtBuilder para evitar espaço indevido. Série RPS formatada como número. Removido campo de seleção de tipo de nota na interface de reenvio.',
+        icon: '🆕',
+        destaque: 'Novo provedor FgMaiss para Cravinhos/SP',
+        texto: 'Implementa web services de envio, consulta e cancelamento para Cravinhos/SP no provedor FgMaiss; adiciona alíquota ISS para Simples Nacional no GOVBRv3 (PR #658)',
       },
     ],
   },
   {
     tag: '31/03/2026',
-    titulo: 'Segunda-feira — 31 de Março',
+    titulo: 'Terça-feira — 31 de Março',
     data: '31/03/2026',
     itens: [
       {
         icon: '🏙️',
-        destaque: 'Paranapanema/SP adicionado ao GOVBRv3',
-        texto: 'Configuração com URLs de homologação e produção.',
+        destaque: 'Paranapanema/SP adicionada ao GOVBRv3',
+        texto: 'Adiciona configuração de Paranapanema/SP com URLs de homologação e produção no provedor GOVBRv3 (PR #654)',
       },
       {
-        icon: '🏗️',
-        destaque: 'IBS/CBS no layout 4.2 de Barueri/SP',
-        texto:
-          'Suporte a emissão com IBS/CBS. Versão do layout dinâmica baseada na presença de IBS/CBS.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Novas cidades e migrações',
-        texto:
-          'Cravinhos/SP atualizado para versão 2026. Mata Grande/AL para Agili. São Luis do Quitunde/AL para Siafic. Atualização de provedor BethaV3.',
+        icon: '🧮',
+        destaque: 'Melhorias em regras tributárias e IBS/CBS',
+        texto: 'Adiciona regra de ISS para GOVBRv3; refatora cálculo de alíquota ISS; melhora formatação IBSCBS; expande configurações municipais; corrige casing NIF (PR #655)',
       },
       {
         icon: '🔧',
-        destaque: 'Correções e ajustes diversos',
-        texto:
-          'Tratamento de FaultException para NotaControl. Olinda: não envia mais EX na UF para tomador exterior. Directa: remove CodigoMunicipio para tomador exterior. Ajuste de município de incidência. Lógica temporária para normalizar emissões no GOVBRv3.',
+        destaque: 'Suporte IBS/CBS no layout 4.2 de Barueri',
+        texto: 'Implementa emissão IBS/CBS no layout 4.2 de Barueri; consulta XML condicional do portal nacional; melhora tratamento de null reference; remove desconto hardcoded de Juiz de Fora (PR #656)',
       },
       {
-        icon: '📊',
-        destaque: 'Novos campos no NFeServico',
-        texto:
-          'Adicionados: descontoCondicionado, paisPrestacaoServico, exportacao, nfseIndicativoDecisaoJudicial, exigibilidadeSuspensa. Correção de desconto condicionado/incondicionado.',
+        icon: '🌐',
+        destaque: 'Validação de endereço estrangeiro e Newtonsoft atualizado',
+        texto: 'Atualiza Newtonsoft.Json para 13.0.3; adiciona validação de endereço estrangeiro; melhora tratamento de erros FaultException; novas propriedades no NFeServico (PR #657)',
       },
     ],
   },
   {
     tag: '30/03/2026',
-    titulo: 'Domingo — 30 de Março',
+    titulo: 'Segunda-feira — 30 de Março',
     data: '30/03/2026',
     itens: [
       {
-        icon: '🔧',
-        destaque: 'Limeira/SP — Código de Tributação Nacional e Municipal',
-        texto:
-          'Limeira/SP adicionada às HashSets UsaCodigoTributacaoMunicipio e UsaCodigoTributacaoNacional no provedor IIBrasil.',
-      },
-      {
-        icon: '❌',
-        destaque: 'Varginha/MG — RPS sequencial',
-        texto:
-          'Adicionada exigência de RPS sequencial para Varginha/MG no BethaV3. Não grava RPS quando notas retornam negadas.',
-      },
-      {
-        icon: '📮',
-        destaque: 'eTransparência — Remove CEP para tomador do exterior',
-        texto:
-          'Removido envio do CEP para tomadores do exterior. Prefeitura retornava rejeição.',
-      },
-      {
         icon: '🏙️',
-        destaque: 'Mudanças de provedor e configurações',
-        texto:
-          'Várias cidades aderiram ao portal nacional. Capela/AL para TributusV2. Viçosa/AL para TributusV2. São Brás do Suaçuí/MG para Sintese. São Ludgero para BethaV3. Ipatinga retirada da lista de cidades sem cancelamento.',
+        destaque: 'Limeira/SP adaptada para CTN e CTM',
+        texto: 'Adiciona Limeira/SP aos HashSets UsaCodigoTributacaoMunicipio e UsaCodigoTributacaoNacional no provedor IIBrasil (PRs #649, #650, #653)',
       },
       {
-        icon: '📊',
-        destaque: 'Ajustes de alíquota e tributação',
-        texto:
-          'Nova regra de alíquota para GOVBRv3. Ajuste de CodigoTributacaoNfseNacional para Iconha/ES. Correção de xLocalidadeIncid via IBGE no SIMv2. Ajuste Nif Natal/RN. Marília/SP atualizada para versão 2026.',
+        icon: '🔢',
+        destaque: 'RPS sequencial para Varginha/MG',
+        texto: 'Adiciona requisito de número RPS sequencial para Varginha/MG no BethaV3 (PR #651)',
       },
-    ],
-  },
-  {
-    tag: '29/03/2026',
-    titulo: 'Sábado — 29 de Março',
-    data: '29/03/2026',
-    itens: [
       {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '28/03/2026',
-    titulo: 'Sexta-feira — 28 de Março',
-    data: '28/03/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit neste dia.',
+        icon: '🌐',
+        destaque: 'Remove CEP para tomadores do exterior',
+        texto: 'Remove envio do CEP para tomadores do exterior no eTransparência, corrigindo rejeição da prefeitura (PR #652)',
       },
     ],
   },

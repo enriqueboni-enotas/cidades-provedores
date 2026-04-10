@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'reboucas-pr',
   nome: 'Rebouças',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

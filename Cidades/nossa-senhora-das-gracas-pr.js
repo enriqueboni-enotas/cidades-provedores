@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'nossa-senhora-das-gracas-pr',
   nome: 'Nossa Senhora das Graças',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

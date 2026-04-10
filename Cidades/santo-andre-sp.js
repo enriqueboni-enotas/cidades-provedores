@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'santo-andre-sp',
   nome: 'Santo André',
   uf: 'SP',
@@ -24,4 +24,3 @@
     }
   }
 };
-

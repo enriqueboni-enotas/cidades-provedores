@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'loanda-pr',
   nome: 'Loanda',
   uf: 'PR',
@@ -57,4 +57,3 @@
     ]
   }
 };
-

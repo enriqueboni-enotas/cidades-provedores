@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'capivari-sp',
   nome: 'Capivari',
   uf: 'SP',
@@ -21,4 +21,3 @@
     }
   }
 };
-

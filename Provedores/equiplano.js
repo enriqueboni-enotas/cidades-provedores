@@ -1,4 +1,4 @@
-﻿var provedorDetalhe = {
+var provedorDetalhe = {
   id: 'equiplano',
   nome: 'Equiplano',
   empresa: 'Equiplano',
@@ -39,8 +39,8 @@
     enviaEmailCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic',
-      UsaCodigoVerificacao: true
+      UsaCodigoVerificacao: true,
+      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic'
     },
     naturezasOperacao: [
       { codigo: '1', nome: 'Tributado no municipio' },
@@ -51,34 +51,33 @@
   },
   municipiosLista: {
     'equiplano': [
-      { nome: 'Cafelândia', uf: 'PR', ibge: '4103453' },
-      { nome: 'Cantagalo', uf: 'PR', ibge: '4104451' },
-      { nome: 'Capanema', uf: 'PR', ibge: '4104501' },
-      { nome: 'Curiúva', uf: 'PR', ibge: '4107009' },
-      { nome: 'Dois Vizinhos', uf: 'PR', ibge: '4107207' },
-      { nome: 'Francisco Beltrão', uf: 'PR', ibge: '4108403' },
-      { nome: 'Imbituva', uf: 'PR', ibge: '4110102' },
-      { nome: 'Itaperuçu', uf: 'PR', ibge: '4111258' },
-      { nome: 'Laranjeiras do Sul', uf: 'PR', ibge: '4113304' },
-      { nome: 'Missal', uf: 'PR', ibge: '4116059' },
-      { nome: 'Nova Laranjeiras', uf: 'PR', ibge: '4117057' },
-      { nome: 'Piên', uf: 'PR', ibge: '4119103' },
-      { nome: 'Planalto', uf: 'PR', ibge: '4119806' },
-      { nome: 'Pranchita', uf: 'PR', ibge: '4120358' },
-      { nome: 'Prudentópolis', uf: 'PR', ibge: '4120606' },
-      { nome: 'Quedas do Iguaçu', uf: 'PR', ibge: '4120903' },
-      { nome: 'Realeza', uf: 'PR', ibge: '4121406' },
-      { nome: 'Reserva', uf: 'PR', ibge: '4121703' },
-      { nome: 'Rondon', uf: 'PR', ibge: '4122602' },
-      { nome: 'Santa Amélia', uf: 'PR', ibge: '4123105' },
-      { nome: 'São João', uf: 'PR', ibge: '4124806' },
-      { nome: 'São Tomé', uf: 'PR', ibge: '4126108' },
-      { nome: 'Terra Rica', uf: 'PR', ibge: '4127304' },
-      { nome: 'Tijucas do Sul', uf: 'PR', ibge: '4127601' },
-      { nome: 'Toledo', uf: 'PR', ibge: '4127700' },
-      { nome: 'Turvo', uf: 'PR', ibge: '4127965' },
-      { nome: 'Verê', uf: 'PR', ibge: '4128609' }
+      { nome: 'Cafelândia', uf: 'PR', ibge: '4103453' }
+,      { nome: 'Cantagalo', uf: 'PR', ibge: '4104451' }
+,      { nome: 'Capanema', uf: 'PR', ibge: '4104501' }
+,      { nome: 'Curiúva', uf: 'PR', ibge: '4107009' }
+,      { nome: 'Dois Vizinhos', uf: 'PR', ibge: '4107207' }
+,      { nome: 'Francisco Beltrão', uf: 'PR', ibge: '4108403' }
+,      { nome: 'Imbituva', uf: 'PR', ibge: '4110102' }
+,      { nome: 'Itaperuçu', uf: 'PR', ibge: '4111258' }
+,      { nome: 'Laranjeiras do Sul', uf: 'PR', ibge: '4113304' }
+,      { nome: 'Missal', uf: 'PR', ibge: '4116059' }
+,      { nome: 'Nova Laranjeiras', uf: 'PR', ibge: '4117057' }
+,      { nome: 'Piên', uf: 'PR', ibge: '4119103' }
+,      { nome: 'Planalto', uf: 'PR', ibge: '4119806' }
+,      { nome: 'Pranchita', uf: 'PR', ibge: '4120358' }
+,      { nome: 'Prudentópolis', uf: 'PR', ibge: '4120606' }
+,      { nome: 'Quedas do Iguaçu', uf: 'PR', ibge: '4120903' }
+,      { nome: 'Realeza', uf: 'PR', ibge: '4121406' }
+,      { nome: 'Reserva', uf: 'PR', ibge: '4121703' }
+,      { nome: 'Rondon', uf: 'PR', ibge: '4122602' }
+,      { nome: 'Santa Amélia', uf: 'PR', ibge: '4123105' }
+,      { nome: 'São João', uf: 'PR', ibge: '4124806' }
+,      { nome: 'São Tomé', uf: 'PR', ibge: '4126108' }
+,      { nome: 'Terra Rica', uf: 'PR', ibge: '4127304' }
+,      { nome: 'Tijucas do Sul', uf: 'PR', ibge: '4127601' }
+,      { nome: 'Toledo', uf: 'PR', ibge: '4127700' }
+,      { nome: 'Turvo', uf: 'PR', ibge: '4127965' }
+,      { nome: 'Verê', uf: 'PR', ibge: '4128609' }
     ]
   }
 };
-

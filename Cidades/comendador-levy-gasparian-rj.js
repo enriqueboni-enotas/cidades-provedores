@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'comendador-levy-gasparian-rj',
   nome: 'Comendador Levy Gasparian',
   uf: 'RJ',
@@ -42,4 +42,3 @@
     ]
   }
 };
-

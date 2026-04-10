@@ -1,4 +1,4 @@
-﻿var cidadeDetalhe = {
+var cidadeDetalhe = {
   id: 'vale-real-rs',
   nome: 'Vale Real',
   uf: 'RS',
@@ -58,4 +58,3 @@
     ]
   }
 };
-
