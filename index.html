@@ -17,20 +17,20 @@
       padding: 0;
     }
 
-    /* Cosmos DS — Dark theme (default) */
+    /* Hotmart Help Center style — Dark theme (default) */
     :root {
       --bg: var(--hc-color-neutral-100);
       --surface: var(--hc-color-neutral-200);
       --surface2: var(--hc-color-neutral-300);
       --border: var(--hc-color-neutral-400);
-      --accent: var(--cds-color-cta);
-      --accent2: var(--cds-color-positive);
-      --warn: var(--cds-color-attention);
-      --danger: var(--cds-color-negative);
+      --accent: #F04E23;
+      --accent2: var(--hc-color-secondary-500);
+      --warn: var(--hc-color-warning-400);
+      --danger: var(--hc-color-danger-400);
       --text: var(--hc-color-neutral-800);
       --muted: var(--hc-color-neutral-500);
       --code-bg: var(--hc-color-neutral-0);
-      --pr: var(--cds-color-informative);
+      --pr: var(--hc-color-info-400);
       --heading: var(--hc-color-neutral-1000);
 
       /* Cosmos DS semantic tokens — dark */
@@ -76,14 +76,8 @@
       --hc-color-neutral-1000: #ffffff;
     }
 
-    /* Cosmos DS — Light theme */
+    /* Hotmart Help Center style — Light theme */
     html.light {
-      --cds-color-cta: #355cc0;
-      --cds-color-positive: #009d43;
-      --cds-color-negative: #d6342c;
-      --cds-color-attention: #efba0f;
-      --cds-color-informative: #5981e3;
-
       --hc-color-primary-100: #ebf0ff;
       --hc-color-primary-200: #bed1ff;
       --hc-color-primary-300: #89a8f8;
@@ -130,8 +124,8 @@
 
     /* TOPBAR */
     .topbar {
-      background: #1a1a2e;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: #fff;
+      border-bottom: 1px solid #e6e9ed;
       padding: 0 32px;
       height: 56px;
       display: flex;
@@ -140,6 +134,11 @@
       position: sticky;
       top: 0;
       z-index: 100;
+    }
+
+    html:not(.light) .topbar {
+      background: #1a1a2e;
+      border-bottom-color: rgba(255,255,255,0.08);
     }
 
     .topbar-left {
@@ -151,24 +150,36 @@
     .hotmart-logo {
       height: 22px;
       width: auto;
+      color: #1a1a2e;
+    }
+
+    html:not(.light) .hotmart-logo {
       color: #fff;
     }
 
     .topbar-divider {
       width: 1px;
       height: 24px;
+      background: #e6e9ed;
+    }
+
+    html:not(.light) .topbar-divider {
       background: rgba(255,255,255,0.15);
     }
 
     .topbar h1 {
       font-size: 16px;
       font-weight: 600;
-      color: #fff;
+      color: #1a1a2e;
       letter-spacing: -0.2px;
     }
 
+    html:not(.light) .topbar h1 {
+      color: #fff;
+    }
+
     .topbar .stats {
-      color: rgba(255,255,255,0.5);
+      color: #707780;
       font-size: 13px;
     }
 
@@ -179,8 +190,8 @@
     }
 
     .theme-toggle {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: #f0f2f5;
+      border: 1px solid #e6e9ed;
       border-radius: 20px;
       width: 48px;
       height: 26px;
@@ -188,6 +199,11 @@
       position: relative;
       transition: background .3s, border-color .3s;
       flex-shrink: 0;
+    }
+
+    html:not(.light) .theme-toggle {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.15);
     }
 
     .theme-toggle::after {
@@ -198,7 +214,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.2);
+      background: #c9ced4;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -209,7 +225,7 @@
     html.light .theme-toggle::after {
       content: '☀️';
       transform: translateX(22px);
-      background: #efba0f;
+      background: #F04E23;
     }
 
     /* LANDING */
@@ -253,15 +269,15 @@
     }
 
     .mode-btn:hover {
-      border-color: var(--accent);
+      border-color: #F04E23;
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(53,92,192,0.12);
+      box-shadow: 0 8px 24px rgba(240,78,35,0.12);
     }
 
     .mode-btn.active {
-      border-color: var(--accent);
+      border-color: #F04E23;
       background: var(--surface);
-      box-shadow: 0 0 0 3px rgba(53,92,192,0.15);
+      box-shadow: 0 0 0 3px rgba(240,78,35,0.15);
     }
 
     .mode-btn .icon {
