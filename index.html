@@ -1592,6 +1592,7 @@
     const home = document.getElementById('home');
     const detailEl = document.getElementById('detail');
     const dc = document.getElementById('dc');
+    const logsEl = document.getElementById('logs-alteracoes');
     const stats = document.getElementById('stats');
     const searchArea = document.getElementById('searchArea');
     const searchInput = document.getElementById('searchInput');
@@ -1685,7 +1686,7 @@
       };
       script.onerror = function () {
         dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Cidades/' + id + '.js</span></div></div>';
-        home.classList.add('off'); detailEl.classList.add('on');
+        home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none';
         document.head.removeChild(script);
       };
       document.head.appendChild(script);
@@ -1912,7 +1913,7 @@
 
       h += '</div>'; // container
       dc.innerHTML = h;
-      home.classList.add('off'); detailEl.classList.add('on'); window.scrollTo(0, 0);
+      home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none'; window.scrollTo(0, 0);
     }
 
     /* ── Detail: Provedor (Dossiê Layout) ── */
@@ -1925,7 +1926,7 @@
       };
       script.onerror = function () {
         dc.innerHTML = '<div class="container"><div class="alert alert-warn"><span class="alert-icon">⚠️</span><span>Arquivo de detalhe não encontrado: Provedores/' + id + '.js</span></div></div>';
-        home.classList.add('off'); detailEl.classList.add('on');
+        home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none';
         document.head.removeChild(script);
       };
       document.head.appendChild(script);
@@ -2232,7 +2233,7 @@
 
       h += '</div>'; // container
       dc.innerHTML = h;
-      home.classList.add('off'); detailEl.classList.add('on'); window.scrollTo(0, 0);
+      home.classList.add('off'); detailEl.classList.add('on'); if (logsEl) logsEl.style.display = 'none'; window.scrollTo(0, 0);
     }
 
     /* ── Provedor Tab/Filter helpers ── */
@@ -2249,7 +2250,7 @@
     }
 
     /* ── Helpers ── */
-    function voltar() { detailEl.classList.remove('on'); home.classList.remove('off'); window.scrollTo(0, 0); }
+    function voltar() { detailEl.classList.remove('on'); home.classList.remove('off'); if (logsEl) logsEl.style.display = ''; window.scrollTo(0, 0); }
     function row(l, v) { return '<div class="ir"><span class="il">' + l + '</span><span class="iv">' + v + '</span></div>'; }
     function statCard(val, label) { return '<div class="stat-card"><div class="value">' + val + '</div><div class="label">' + label + '</div></div>'; }
     function sectionTitle(num, text) { return '<div class="section-title"><span class="num">' + num + '</span> ' + text + '</div>'; }
