@@ -298,8 +298,9 @@
     }
 
     .mode-btn .icon {
-      font-size: 32px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
     }
 
     .mode-btn .label {
@@ -1419,13 +1420,13 @@
     /* LOGS TABS */
     .logs-tabs {
       display: flex;
-      gap: 0;
-      border-bottom: 2px solid var(--border);
+      gap: 4px;
+      border-bottom: 1px solid var(--border);
       margin-bottom: 24px;
     }
 
     .logs-tab {
-      padding: 12px 24px;
+      padding: 12px 20px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
@@ -1433,20 +1434,23 @@
       background: transparent;
       color: var(--muted);
       border-bottom: 2px solid transparent;
-      margin-bottom: -2px;
+      margin-bottom: -1px;
       transition: color .2s, border-color .2s;
       display: flex;
       align-items: center;
       gap: 8px;
+      border-radius: 8px 8px 0 0;
     }
 
     .logs-tab:hover {
-      color: var(--text);
+      color: var(--heading);
+      background: var(--surface);
     }
 
     .logs-tab.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
+      color: var(--heading);
+      border-bottom-color: #F04E23;
+      background: var(--surface);
     }
 
     .logs-panel {
@@ -1614,12 +1618,12 @@
       <p>Selecione uma opção e busque por nome, código IBGE ou provedor</p>
       <div class="mode-btns">
         <div class="mode-btn" id="btnCidade" onclick="setMode('cidade')">
-          <div class="icon">🏙️</div>
+          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></div>
           <div class="label">Cidade</div>
           <div class="desc">Busque por nome, UF ou código IBGE</div>
         </div>
         <div class="mode-btn" id="btnProvedor" onclick="setMode('provedor')">
-          <div class="icon">🔌</div>
+          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M6 8h12l-1 10H7L6 8z"/><path d="M12 18v4"/><circle cx="12" cy="5" r="1"/></svg></div>
           <div class="label">Provedor</div>
           <div class="desc">Busque por nome do provedor</div>
         </div>
@@ -1656,7 +1660,7 @@
     </div>
   </div>
 
-  <div class="footer">Hotmart — Cidades & Provedores · Dados extraídos do app-gw · 2026</div>
+  <div class="footer">Hotmart · eNotas — Cidades & Provedores · Dados extraídos do app-gw · 2026</div>
 
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
@@ -2452,16 +2456,16 @@
       var h = '<div style="max-width:1200px;margin:0 auto;padding:40px;">';
       h += '<div class="logs-tabs">';
       if (hasChangelog) {
-        h += '<button class="logs-tab active" data-panel="panel-changelog">📦 Últimas Atualizações</button>';
+        h += '<button class="logs-tab active" data-panel="panel-changelog"><span style="color:#F04E23">●</span> Últimas Atualizações</button>';
       }
       if (hasJira) {
-        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira">🎫 Tickets Resolvidos (CE)</button>';
+        h += '<button class="logs-tab' + (hasChangelog ? '' : ' active') + '" data-panel="panel-jira"><span style="color:#5981e3">●</span> Tickets Resolvidos (CE)</button>';
       }
       if (hasNegadas) {
-        h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas">❌ NF-e Negadas</button>';
+        h += '<button class="logs-tab' + (!hasChangelog && !hasJira ? ' active' : '') + '" data-panel="panel-negadas"><span style="color:#d6342c">●</span> NF-e Negadas</button>';
       }
       if (hasEmAndamento) {
-        h += '<button class="logs-tab" data-panel="panel-andamento">🔧 Em Andamento</button>';
+        h += '<button class="logs-tab" data-panel="panel-andamento"><span style="color:#efba0f">●</span> Em Andamento</button>';
       }
       h += '</div>';
       if (hasChangelog) {
