@@ -2388,6 +2388,20 @@
       var el = document.getElementById('logs-alteracoes');
       if (!el) return;
 
+      // ── Emoji → Dot icon mapping ──
+      var emojiColorMap = {
+        '🏙️':'#F04E23','🔧':'#707780','🆕':'#009d43','📊':'#5981e3','🔗':'#5981e3',
+        '🌐':'#0a9090','🌍':'#0a9090','🤖':'#707780','📍':'#F04E23','🧾':'#efba0f',
+        '📮':'#efba0f','🔄':'#5981e3','🔒':'#d6342c','🏢':'#707780','🧮':'#5981e3',
+        '🏗️':'#707780','🛡️':'#009d43','📭':'#c9ced4','💱':'#efba0f','📜':'#707780',
+        '❌':'#d6342c','💰':'#efba0f','👤':'#707780','📋':'#5981e3','🔢':'#707780',
+        '⏸️':'#efba0f','🎫':'#5981e3','🚀':'#F04E23','🔍':'#707780',
+      };
+      function iconify(emoji) {
+        var color = emojiColorMap[emoji] || '#F04E23';
+        return '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + color + ';margin-right:6px;vertical-align:middle"></span>';
+      }
+
       function renderItems(data, isNegadas) {
         var h = '<div class="pr-list">';
         data.forEach(function (r) {
@@ -2398,12 +2412,13 @@
           h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
           r.itens.forEach(function (it) {
             var txt = it.texto.replace(/\b(CE-\d+)\b/g, '<a href="https://hotmart.atlassian.net/browse/$1" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">$1</a>');
+            var ic = iconify(it.icon);
             if (isNegadas) {
               var dataIso = r.data.split('/').reverse().join('-');
               var enc = encodeURIComponent(it.destaque);
-              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">🔍</span></p>';
+              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + ic + '<span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">↗</span></p>';
             } else {
-              h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
+              h += '<p>' + ic + '<span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
             }
           });
           h += '</div></div>';
@@ -2416,14 +2431,14 @@
         var h = '';
         // Tickets abertos por status
         if (data.ticketsAbertos && data.ticketsAbertos.length) {
-          h += '<div class="section-title" style="margin-top:0"><span class="num">🎫</span> Tickets CE em aberto (' + data.ticketsAbertos.reduce(function (s, g) { return s + g.itens.length }, 0) + ')</div>';
+          h += '<div class="section-title" style="margin-top:0"><span class="num" style="background:#5981e3">T</span> Tickets CE em aberto (' + data.ticketsAbertos.reduce(function (s, g) { return s + g.itens.length }, 0) + ')</div>';
           data.ticketsAbertos.forEach(function (grupo) {
             h += '<div class="pr-card" style="margin-bottom:16px"><div class="pr-header">';
-            h += '<span class="pr-number">' + grupo.icon + ' ' + grupo.status + '</span>';
+            h += '<span class="pr-number">' + iconify(grupo.icon) + grupo.status + '</span>';
             h += '<span class="pr-title">' + grupo.itens.length + ' tickets</span></div>';
             h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
             grupo.itens.forEach(function (it) {
-              h += '<p>' + grupo.icon + ' <a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
+            h += '<p>' + iconify(grupo.icon) + '<a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
             });
             h += '</div></div>';
           });
@@ -2431,7 +2446,7 @@
         // Aguardando deploy
         if (data.aguardandoDeploy && data.aguardandoDeploy.length) {
           var totalCommits = data.aguardandoDeploy.reduce(function (s, d) { return s + d.itens.length }, 0);
-          h += '<div class="section-title"><span class="num">🚀</span> Aguardando deploy — notagateway-sync → main (' + totalCommits + ' commits)</div>';
+          h += '<div class="section-title"><span class="num" style="background:#F04E23">D</span> Aguardando deploy — notagateway-sync → main (' + totalCommits + ' commits)</div>';
           h += '<div class="pr-list">';
           data.aguardandoDeploy.forEach(function (dia) {
             h += '<div class="pr-card"><div class="pr-header">';
