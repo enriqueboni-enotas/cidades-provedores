@@ -107,7 +107,60 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 5. IMPORTANTE: O `DURING` do Jira pode retornar cards que já apareceram em dias anteriores. Cada card deve ser contado apenas no primeiro dia em que aparece (o dia mais recente). Mantenha um set de keys já vistas para deduplicar.
 
-## Etapa 5: Commit e Push
+## Etapa 5: Atualizar NF-e Negadas — Top motivos por dia (últimos 12 dias)
+
+1. Para cada dia dos últimos 12, execute a seguinte query no Astrobox (datasource `dh-athena`, ID `4491e172-f9f6-496c-a2fc-747638d5f080`) via API REST ou script `astrobox-query.py`:
+
+   ```sql
+   SELECT motivo_situacao, count(distinct coalesce(n_fe_id, hub_event_id)) as qtd
+   FROM dh_app_enotas.nfe_negadas
+   WHERE lastmodified_at >= 'YYYY-MM-DD 00:00:00'
+     AND lastmodified_at < 'YYYY-MM-DD+1 00:00:00'
+   GROUP BY motivo_situacao
+   ORDER BY qtd DESC
+   LIMIT 10
+   ```
+
+   Para executar via curl (PowerShell):
+
+   ```powershell
+   $token = (Get-Content "$env:USERPROFILE\.env" | Where-Object { $_ -match '^ASTROBOX_TOKEN=' }) -replace '^ASTROBOX_TOKEN=',''
+   $sql = "SELECT motivo_situacao, count(distinct coalesce(n_fe_id, hub_event_id)) as qtd FROM dh_app_enotas.nfe_negadas WHERE lastmodified_at >= 'YYYY-MM-DD 00:00:00' AND lastmodified_at < 'YYYY-MM-DD+1 00:00:00' GROUP BY motivo_situacao ORDER BY qtd DESC"
+   $body = (@{sql=$sql; dataSourceId="4491e172-f9f6-496c-a2fc-747638d5f080"; parameters=@{_gmt="-03:00"}; limit=10} | ConvertTo-Json -Compress)
+   Invoke-WebRequest -UseBasicParsing -Uri 'https://api-astrobox.hotmart.com/v1/executor/reactive/real-time' -Method POST -Headers @{"Authorization"="Bearer $token";"Content-Type"="application/x-ndjson";"Accept"="application/x-ndjson";"Origin"="https://astrobox.hotmart.com";"x-client-name"="astrobox"} -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
+   ```
+
+2. O campo `motivo_situacao` é um JSON string com a estrutura `{"mensagemErro":"...","acaoCorrecao":...}`. Extraia o `mensagemErro` e remova tags HTML.
+
+3. Para cada dia, gere os top 10 motivos como itens no formato:
+   - `icon`: emoji relevante (💰 bloqueio/pagamento, 🔒 certificado, 📋 NBS/lista serviço, 👤 CPF/CNPJ, 🏙️ cidade IBGE, 📮 CEP, ❌ emissor não habilitado, 🌐 exterior, 🔢 RPS/série, 🧮 tributos, 🧾 tributação, ⏸️ app desativado, etc.)
+   - `destaque`: motivo resumido em português. Exemplo: "Certificado digital vencido"
+   - `texto`: quantidade de notas distintas e cidade/UF quando relevante. Exemplo: "1.287 notas" ou "1.862 notas — Vitória/ES"
+
+4. Para identificar a cidade principal de um motivo, pode-se rodar a query com `uf, cidade` no GROUP BY para os motivos mais relevantes, ou usar a query completa com `uf, cidade` quando necessário.
+
+5. Reescreva o arquivo `LogsAlteracoes/nfe-negadas-changelog.js` com o array `nfeNegadasData`:
+
+   ```javascript
+   var nfeNegadasData = [
+     {
+       tag: 'DD/MM/YYYY',
+       titulo: 'DiaDaSemana — DD de Mês',
+       data: 'DD/MM/YYYY',
+       itens: [
+         {
+           icon: '🔒',
+           destaque: 'Certificado digital vencido',
+           texto: '1.287 notas',
+         },
+       ],
+     },
+   ];
+   ```
+
+6. Se o token do Astrobox estiver expirado (HTTP 401/403 ou exit code 2), ativar a skill `hotmart-oauth` para renovar o token e atualizar `$HOME/.env`.
+
+## Etapa 6: Commit e Push
 
 1. No diretório do workspace, execute:
    ```bash
