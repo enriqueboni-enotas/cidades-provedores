@@ -31,7 +31,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '709 notas',
       },
       {
@@ -46,7 +46,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🧾',
-        destaque: 'Erro ao criar rascunho da nota fiscal.\nCorreção: ---',
+        destaque: 'Erro ao criar rascunho da nota fiscal. \nCorreção: ---',
         texto: '357 notas',
       },
       {
@@ -63,7 +63,7 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
+        destaque: 'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
         texto: '4.020 notas',
       },
       {
@@ -88,7 +88,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🔢',
-        destaque: 'Erro com número sequencial (RPS: 2654 - RPS Esperada: 2660)\nCorreção: Verifique se a sequência não está falha',
+        destaque: 'Erro com número sequencial (RPS: 2654 - RPS Esperada: 2660) \nCorreção: Verifique se a sequência não está falha',
         texto: '896 notas',
       },
       {
@@ -103,7 +103,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '543 notas',
       },
       {
@@ -165,7 +165,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '354 notas',
       }
     ],
@@ -202,7 +202,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
+        destaque: 'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
         texto: '762 notas',
       },
       {
@@ -222,7 +222,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '339 notas',
       }
     ],
@@ -264,7 +264,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '664 notas',
       },
       {
@@ -316,7 +316,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '247 notas',
       },
       {
@@ -336,7 +336,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'Falha Schema Xml\n The element "endExt" in namespace "http://www.sped.fazenda.gov.br/nfse" has invalid child element ...',
+        destaque: 'Falha Schema Xml \n The element "endExt" in namespace "http://www.sped.fazenda.gov.br/nfse" has invalid child element...',
         texto: '164 notas',
       }
     ],
@@ -373,7 +373,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '248 notas',
       },
       {
@@ -425,7 +425,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '506 notas',
       },
       {
@@ -445,7 +445,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'RPS já informado.(Numero RPS: 16814)\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o m...',
+        destaque: 'RPS já informado.(Numero RPS: 16814) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o ...',
         texto: '305 notas',
       },
       {
@@ -477,7 +477,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '1.536 notas',
       },
       {
@@ -492,7 +492,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'RPS já informado.(Numero RPS: 3736)\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o me...',
+        destaque: 'RPS já informado.(Numero RPS: 3736) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o m...',
         texto: '800 notas',
       },
       {
@@ -502,7 +502,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '629 notas',
       },
       {
@@ -534,7 +534,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '1.513 notas',
       },
       {
@@ -564,7 +564,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CNPJ não encontrado na base de dados\nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador ...',
+        destaque: 'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
         texto: '676 notas',
       }
     ],
@@ -591,7 +591,7 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
         texto: '3.439 notas',
       },
       {
@@ -621,7 +621,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'RPS já informado.(Numero RPS: 44442)\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o m...',
+        destaque: 'RPS já informado.(Numero RPS: 44442) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o ...',
         texto: '1.157 notas',
       }
     ],
