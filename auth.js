@@ -17,6 +17,24 @@ var AUTH_STORAGE_KEY = 'gw_auth_user';
 var AUTH_EXPIRY_KEY = 'gw_auth_expiry';
 var SESSION_HOURS = 8;
 
+/**
+ * LOG DE ACESSOS — Google Sheets via Apps Script
+ *
+ * SETUP:
+ * 1. Crie uma Google Sheet com headers: Timestamp | Email | Nome | Página | Ação
+ * 2. Acesse https://script.google.com → Novo projeto
+ * 3. Cole o código:
+ *    function doPost(e) {
+ *      var sheet = SpreadsheetApp.openById('SEU_SPREADSHEET_ID').getActiveSheet();
+ *      var data = JSON.parse(e.postData.contents);
+ *      sheet.appendRow([new Date().toISOString(), data.email, data.name, data.page, data.action]);
+ *      return ContentService.createTextOutput('ok');
+ *    }
+ * 4. Deploy → New deployment → Web app → Execute as: Me → Anyone → Deploy
+ * 5. Cole a URL abaixo
+ */
+var ACCESS_LOG_URL = '';
+
 (function () {
   'use strict';
 
@@ -44,6 +62,20 @@ var SESSION_HOURS = 8;
       var b = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
       return JSON.parse(atob(b));
     } catch (e) { return null; }
+  }
+
+  // ── Log de acesso (fire-and-forget) ──
+  function logAccess(u, action) {
+    if (!ACCESS_LOG_URL || !u) return;
+    try {
+      var page = window.location.pathname.split('/').pop() || 'index.html';
+      navigator.sendBeacon(ACCESS_LOG_URL, JSON.stringify({
+        email: u.email,
+        name: u.name,
+        page: page,
+        action: action || 'page_view'
+      }));
+    } catch (e) { /* silencioso */ }
   }
 
   // ── CSS ──
@@ -170,6 +202,7 @@ var SESSION_HOURS = 8;
       if (result) {
         user = result;
         saveSession(user);
+        logAccess(user, 'login');
       }
     }
 
@@ -177,6 +210,7 @@ var SESSION_HOURS = 8;
 
     if (user) {
       showUserInTopbar(user);
+      logAccess(user, 'page_view');
       return;
     }
 
