@@ -1,5 +1,5 @@
 ---
-name: atualizar-site
+name: atualizador-do-site
 description: 'Atualiza os arquivos de configuração de provedores e cidades a partir da branch dev do app-gw, gera o changelog dos últimos 12 dias e faz push para o GitHub Pages.'
 tools: ['shell', 'read', 'write', 'web']
 ---
