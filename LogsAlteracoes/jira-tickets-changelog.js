@@ -1,5 +1,27 @@
 var jiraChangelogData = [
   {
+    tag: '10/04/2026',
+    titulo: 'Sexta-feira — 10 de Abril',
+    data: '10/04/2026',
+    itens: [
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas em Barueri/SP',
+        texto: '2 cards (CE-25475, CE-24297)',
+      },
+      {
+        icon: '💰',
+        destaque: 'Financeiro — fatura de excedentes indevida',
+        texto: '1 card (CE-25294)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Ajuste de XML — Franca/SP',
+        texto: '1 card (CE-25261)',
+      },
+    ],
+  },
+  {
     tag: '09/04/2026',
     titulo: 'Quarta-feira — 09 de Abril',
     data: '09/04/2026',
@@ -276,6 +298,98 @@ var jiraChangelogData = [
         icon: '💰',
         destaque: 'Financeiro — cobrança indevida de excedentes',
         texto: '1 card (CE-24314)',
+      },
+    ],
+  },
+  {
+    tag: '30/03/2026',
+    titulo: 'Domingo — 30 de Março',
+    data: '30/03/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '29/03/2026',
+    titulo: 'Sábado — 29 de Março',
+    data: '29/03/2026',
+    itens: [
+      {
+        icon: '💳',
+        destaque: 'Vendas Pagar.me 2.0 e importação de vendas',
+        texto:
+          '6 cards (CE-25091, CE-25064, CE-25038, CE-25029, CE-24987, CE-24983)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas',
+        texto: '3 cards (CE-25011, CE-24488, CE-24345)',
+      },
+      {
+        icon: '🤖',
+        destaque: 'Sincronização emissor ↔ embed (autofix)',
+        texto: '2 cards (CE-25122, CE-25099)',
+      },
+      {
+        icon: '🛡️',
+        destaque: 'Envio do campo CSRT — SEFAZ PR',
+        texto: '1 card (CE-25137)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Falha no provisionamento',
+        texto: '1 card (CE-25105)',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Prefeitura rejeita nota do exterior (CEP preenchido automaticamente)',
+        texto: '1 card (CE-25046)',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Erro no ajuste dos percentuais de tributos',
+        texto: '1 card (CE-25033)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Envio do NBS no PDF da nota — Itaperuna/RJ',
+        texto: '1 card (CE-24673)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Ajuste de layout — Saquarema/RJ',
+        texto: '1 card (CE-23981)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'XML de inutilização para consulta/download',
+        texto: '1 card (CE-24611)',
+      },
+      {
+        icon: '📦',
+        destaque: 'Dados complementares da NF-e na importação',
+        texto: '1 card (CE-24450)',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Cancelamento automático de notas para vendas canceladas na Pagar.me',
+        texto: '1 card (CE-24442)',
+      },
+      {
+        icon: '🏢',
+        destaque: 'Vendas de comissão de afiliado não importadas',
+        texto: '1 card (CE-24707)',
+      },
+      {
+        icon: '⚙️',
+        destaque: 'Campo código do serviço bloqueado e teste interno',
+        texto: '2 cards (CE-24644, CE-25079)',
       },
     ],
   },

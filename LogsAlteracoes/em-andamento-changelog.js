@@ -30,6 +30,14 @@ var emAndamentoData = {
       status: 'Open',
       icon: '📋',
       itens: [
+        {
+          key: 'CE-25596',
+          destaque: 'Alterar painel para SMU — Araraquara/SP',
+        },
+        {
+          key: 'CE-25591',
+          destaque: 'Campo CNAE não disponível no cadastro da empresa',
+        },
         { key: 'CE-25566', destaque: 'Integração com Woocommerce' },
         {
           key: 'CE-25563',

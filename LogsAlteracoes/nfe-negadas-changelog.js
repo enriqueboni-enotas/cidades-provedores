@@ -1,5 +1,62 @@
 var nfeNegadasData = [
   {
+    tag: '10/04/2026',
+    titulo: 'Sexta-feira — 10 de Abril',
+    data: '10/04/2026',
+    itens: [
+      {
+        icon: '⏸️',
+        destaque: 'Emissão automática interrompida (app desativado)',
+        texto: '5.565 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.272 notas',
+      },
+      {
+        icon: '🔄',
+        destaque: 'NFS-e duplicada (mesmo id)',
+        texto: '1.037 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '887 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ do tomador obrigatório',
+        texto: '739 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
+        texto: '702 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório',
+        texto: '464 notas',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Situação perante Simples Nacional não confere com cadastro',
+        texto: '371 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro ao criar rascunho da nota fiscal',
+        texto: '355 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Item da lista de serviço com formato inválido',
+        texto: '283 notas',
+      },
+    ],
+  },
+  {
     tag: '09/04/2026',
     titulo: 'Quarta-feira — 09 de Abril',
     data: '09/04/2026',
@@ -676,65 +733,6 @@ var nfeNegadasData = [
         icon: '🔢',
         destaque: 'Série RPS deve conter apenas números (1 a 49.999)',
         texto: '187 notas',
-      },
-    ],
-  },
-  {
-    tag: '28/03/2026',
-    titulo: 'Sexta-feira — 28 de Março',
-    data: '28/03/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.544 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.195 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Código de tributação municipal não administrado pelo município',
-        texto: '482 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório',
-        texto: '355 notas',
-      },
-      {
-        icon: '📋',
-        destaque:
-          'Atividade/Evento obrigatório para item 12 da lista de serviços',
-        texto: '313 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série RPS deve conter apenas números (1 a 49.999)',
-        texto: '275 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Serviço não permite retenção de ISS',
-        texto: '271 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação inválido',
-        texto: '264 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ do tomador obrigatório',
-        texto: '249 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Emissor não habilitado para NF-e/NFC-e (781)',
-        texto: '210 notas',
       },
     ],
   },
