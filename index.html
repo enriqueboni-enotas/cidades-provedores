@@ -1383,6 +1383,124 @@
     .logs-panel.active {
       display: block;
     }
+
+    /* NF-e Negadas clickable items */
+    .nfe-clickable {
+      cursor: pointer;
+      transition: background .15s;
+      border-radius: 6px;
+      padding: 4px 8px;
+      margin: -4px -8px;
+    }
+
+    .nfe-clickable:hover {
+      background: rgba(89, 129, 227, 0.08);
+    }
+
+    /* Modal overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .modal-overlay.on {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .modal-header h3 {
+      font-size: 16px;
+      color: var(--heading);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .modal-header .modal-date {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .modal-close {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background .2s, color .2s;
+    }
+
+    .modal-close:hover {
+      background: var(--danger);
+      color: var(--heading);
+    }
+
+    .modal-body {
+      padding: 20px 24px;
+      overflow-y: auto;
+    }
+
+    .modal-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .modal-body thead th {
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 1;
+    }
+
+    .modal-loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .modal-summary {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 
@@ -1441,6 +1559,22 @@
   </div>
 
   <div id="logs-alteracoes"></div>
+
+  <!-- Modal NF-e Negadas detalhe -->
+  <div class="modal-overlay" id="nfeModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 id="nfeModalTitle"></h3>
+          <div class="modal-date" id="nfeModalDate"></div>
+        </div>
+        <button class="modal-close" onclick="fecharModal()" aria-label="Fechar">✕</button>
+      </div>
+      <div class="modal-body" id="nfeModalBody">
+        <div class="modal-loading">Carregando...</div>
+      </div>
+    </div>
+  </div>
 
   <div class="footer">Análise extraída do código-fonte do app-gw · Abril 2026</div>
 
@@ -2156,7 +2290,7 @@
       var el = document.getElementById('logs-alteracoes');
       if (!el) return;
 
-      function renderItems(data) {
+      function renderItems(data, isNegadas) {
         var h = '<div class="pr-list">';
         data.forEach(function (r) {
           h += '<div class="pr-card"><div class="pr-header">';
@@ -2166,7 +2300,13 @@
           h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
           r.itens.forEach(function (it) {
             var txt = it.texto.replace(/\b(CE-\d+)\b/g, '<a href="https://hotmart.atlassian.net/browse/$1" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">$1</a>');
-            h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
+            if (isNegadas) {
+              var dataIso = r.data.split('/').reverse().join('-');
+              var enc = encodeURIComponent(it.destaque);
+              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">🔍</span></p>';
+            } else {
+              h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
+            }
           });
           h += '</div></div>';
         });
@@ -2197,7 +2337,7 @@
         h += '<div class="logs-panel' + (hasChangelog ? '' : ' active') + '" id="panel-jira">' + renderItems(jiraChangelogData) + '</div>';
       }
       if (hasNegadas) {
-        h += '<div class="logs-panel' + (!hasChangelog && !hasJira ? ' active' : '') + '" id="panel-negadas">' + renderItems(nfeNegadasData) + '</div>';
+        h += '<div class="logs-panel' + (!hasChangelog && !hasJira ? ' active' : '') + '" id="panel-negadas">' + renderItems(nfeNegadasData, true) + '</div>';
       }
       h += '</div>';
       el.innerHTML = h;
@@ -2213,6 +2353,102 @@
         });
       });
     })();
+
+    /* ── Modal NF-e Negadas ── */
+    var nfeCache = {};
+    function fecharModal() {
+      document.getElementById('nfeModal').classList.remove('on');
+    }
+    document.getElementById('nfeModal').addEventListener('click', function (e) {
+      if (e.target === this) fecharModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') fecharModal();
+    });
+
+    function extrairMensagem(motivo) {
+      try {
+        var obj = JSON.parse(motivo);
+        var msg = obj.mensagemErro || '';
+        return msg.replace(/<[^>]+>/g, '').replace(/\\r\\n/g, ' ').replace(/\r\n/g, ' ').trim();
+      } catch (e) { return motivo; }
+    }
+
+    function normalizarTexto(t) {
+      return t.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9 ]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function abrirModalNfe(dataIso, destaqueEnc, dataDisplay) {
+      var destaque = decodeURIComponent(destaqueEnc);
+      var modal = document.getElementById('nfeModal');
+      var title = document.getElementById('nfeModalTitle');
+      var dateEl = document.getElementById('nfeModalDate');
+      var body = document.getElementById('nfeModalBody');
+
+      title.textContent = destaque;
+      dateEl.textContent = dataDisplay;
+      body.innerHTML = '<div class="modal-loading">Carregando dados...</div>';
+      modal.classList.add('on');
+
+      if (nfeCache[dataIso]) {
+        renderModalData(nfeCache[dataIso], destaque, body);
+        return;
+      }
+
+      fetch('LogsAlteracoes/nfe-negadas-detalhe/' + dataIso + '.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          nfeCache[dataIso] = data;
+          renderModalData(data, destaque, body);
+        })
+        .catch(function () {
+          body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
+        });
+    }
+
+    function renderModalData(allData, destaque, body) {
+      var destaqueNorm = normalizarTexto(destaque);
+      var keywords = destaqueNorm.split(' ').filter(function (w) { return w.length > 2; });
+
+      var filtered = allData.filter(function (row) {
+        var msg = normalizarTexto(extrairMensagem(row.motivo_situacao));
+        var matchCount = 0;
+        for (var i = 0; i < keywords.length; i++) {
+          if (msg.indexOf(keywords[i]) !== -1) matchCount++;
+        }
+        return matchCount >= Math.max(2, Math.floor(keywords.length * 0.5));
+      });
+
+      if (!filtered.length) {
+        body.innerHTML = '<div class="modal-loading">Nenhuma empresa encontrada para este motivo.</div>';
+        return;
+      }
+
+      // Aggregate by empresa
+      var empresaMap = {};
+      filtered.forEach(function (row) {
+        var key = row.empresa_id;
+        if (!empresaMap[key]) {
+          empresaMap[key] = { id: row.empresa_id, razao: row.razao_social, qtd: 0 };
+        }
+        empresaMap[key].qtd += parseInt(row.qtd) || 1;
+      });
+
+      var empresas = Object.values(empresaMap).sort(function (a, b) { return b.qtd - a.qtd; });
+      var totalNotas = empresas.reduce(function (s, e) { return s + e.qtd; }, 0);
+
+      var h = '<div class="modal-summary">' + empresas.length + ' empresas · ' + totalNotas.toLocaleString('pt-BR') + ' notas no total</div>';
+      h += '<div class="table-wrap"><table><thead><tr><th>#</th><th>Empresa (Razão Social)</th><th>ID Empresa</th><th style="text-align:right">Qtd Notas</th></tr></thead><tbody>';
+      empresas.forEach(function (e, i) {
+        h += '<tr><td>' + (i + 1) + '</td><td>' + e.razao + '</td><td><code style="font-size:11px">' + e.id + '</code></td><td style="text-align:right;font-weight:600;color:var(--accent)">' + e.qtd.toLocaleString('pt-BR') + '</td></tr>';
+      });
+      h += '</tbody></table></div>';
+      body.innerHTML = h;
+    }
 
     /* ── Theme Toggle ── */
     (function () {

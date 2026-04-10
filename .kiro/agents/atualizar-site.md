@@ -160,6 +160,25 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 6. Se o token do Astrobox estiver expirado (HTTP 401/403 ou exit code 2), ativar a skill `hotmart-oauth` para renovar o token e atualizar `$HOME/.env`.
 
+### 5.1: Gerar arquivos de detalhe por dia (drill-down modal)
+
+Para cada dia dos últimos 12, gere um arquivo JSON em `LogsAlteracoes/nfe-negadas-detalhe/YYYY-MM-DD.json` com o detalhe por empresa. Execute a query:
+
+```sql
+SELECT motivo_situacao, empresa_id, razao_social, count(distinct coalesce(n_fe_id, hub_event_id)) as qtd
+FROM dh_app_enotas.nfe_negadas
+WHERE lastmodified_at >= 'YYYY-MM-DD 00:00:00'
+  AND lastmodified_at < 'YYYY-MM-DD+1 00:00:00'
+GROUP BY motivo_situacao, empresa_id, razao_social
+ORDER BY qtd DESC
+```
+
+Salve o resultado como um array JSON em `LogsAlteracoes/nfe-negadas-detalhe/YYYY-MM-DD.json`. Cada objeto deve ter: `motivo_situacao`, `empresa_id`, `razao_social`, `qtd`.
+
+Antes de gerar, limpe os arquivos antigos da pasta `LogsAlteracoes/nfe-negadas-detalhe/` para não manter dados obsoletos.
+
+O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch quando o usuário clica em um motivo na aba NF-e Negadas.
+
 ## Etapa 6: Commit e Push
 
 1. No diretório do workspace, execute:
