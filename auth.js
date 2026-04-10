@@ -105,6 +105,10 @@ var ACCESS_LOG_URL = 'https://script.google.com/a/macros/hotmart.com/s/AKfycbz0s
   // ── Google OAuth2 Implicit Flow (redirect) ──
   function buildAuthUrl() {
     var redirect = window.location.href.split('#')[0].split('?')[0];
+    // Garantir barra final em diretórios (index.html)
+    if (redirect.match(/\/[^.\/]+$/) === null && !redirect.endsWith('/')) {
+      redirect += '/';
+    }
     var params = [
       'client_id=' + encodeURIComponent(GOOGLE_CLIENT_ID),
       'redirect_uri=' + encodeURIComponent(redirect),
