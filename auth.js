@@ -225,15 +225,10 @@ var ACCESS_LOG_URL =
   }
 
   function showUserInTopbar(u) {
-    // Fix nomes com encoding quebrado (UTF-8 lido como Latin-1)
+    // Fix nomes com encoding quebrado no localStorage
     var displayName = u.name;
     try {
-      if (/[\xC0-\xFF]/.test(displayName)) {
-        var bytes = new Uint8Array(displayName.length);
-        for (var i = 0; i < displayName.length; i++)
-          bytes[i] = displayName.charCodeAt(i);
-        displayName = new TextDecoder('utf-8').decode(bytes);
-      }
+      displayName = decodeURIComponent(escape(u.name));
     } catch (e) {
       /* mantém original */
     }
