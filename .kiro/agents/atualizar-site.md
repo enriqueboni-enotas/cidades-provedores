@@ -4,7 +4,7 @@ description: 'Atualiza os arquivos de configuração de provedores e cidades a p
 tools: ['shell', 'read', 'write', 'web']
 ---
 
-Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 6 etapas em sequência:
+Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 9 etapas em sequência:
 
 ## Etapa 1: Garantir que o app-gw local está atualizado (branch dev)
 
@@ -181,7 +181,101 @@ Antes de gerar, limpe os arquivos antigos da pasta `LogsAlteracoes/nfe-negadas-d
 
 O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch quando o usuário clica em um motivo na aba NF-e Negadas. O modal exibe uma tabela com ID Empresa e Qtd Notas, ordenada por quantidade desc.
 
-## Etapa 6: Commit e Push
+## Etapa 6: Atualizar Em Andamento — Tickets CE abertos
+
+1. Use o Atlassian CLI para buscar todos os tickets CE abertos com produto e-Notas:
+
+   ```bash
+   acli jira workitem search --jql "project = CE AND cf[14189] = e-Notas AND status NOT IN (Done, Canceled, Closed) ORDER BY status ASC, key DESC" --fields "key,summary,status" --json --paginate
+   ```
+
+2. Agrupe os tickets por status (Under Analysis, Reopened, Open). Para cada ticket:
+   - `key`: chave do ticket (ex: CE-25450)
+   - `destaque`: descrição curta do assunto, sem nome de cliente. Incluir cidade/UF quando relevante.
+
+3. Reescreva o arquivo `LogsAlteracoes/em-andamento-changelog.js` com a variável `emAndamentoData`:
+
+   ```javascript
+   var emAndamentoData = {
+     ticketsAbertos: [
+       { status: 'Under Analysis', icon: '🔍', itens: [ { key: 'CE-XXXXX', destaque: '...' } ] },
+       { status: 'Reopened', icon: '🔄', itens: [...] },
+       { status: 'Open', icon: '📋', itens: [...] },
+     ],
+     compiladoSemanal: { ... },  // ver Etapa 8
+   };
+   ```
+
+## Etapa 7: Atualizar Aguardando Deploy — Commits notagateway-sync → dev
+
+1. Busque os commits que estão na branch `notagateway-sync` mas ainda não na `dev`:
+
+   ```bash
+   git -C "c:\Git-Repositories\app-gw" fetch origin notagateway-sync dev
+   git -C "c:\Git-Repositories\app-gw" log --oneline origin/notagateway-sync --not origin/dev --no-merges --format="%h|%s|%an|%ad" --date=short -50
+   ```
+
+2. Agrupe os commits por dia. Para cada commit:
+   - `icon`: emoji relevante
+   - `texto`: descrição detalhada e contextualizada do que mudou, por que mudou e qual o impacto (estilo explicativo, não técnico demais)
+   - `pr`: número do PR (extrair do título "Merged PR XXXX: ...")
+   - `autor`: nome do autor
+
+3. Reescreva o arquivo `LogsAlteracoes/aguardando-deploy-changelog.js` com a variável `aguardandoDeployData`:
+
+   ```javascript
+   var aguardandoDeployData = [
+     {
+       tag: 'DD/MM/YYYY',
+       titulo: 'DiaDaSemana — DD de Mês',
+       itens: [
+         {
+           icon: '🏙️',
+           texto: 'Descrição detalhada e contextualizada...',
+           pr: 8834,
+           autor: 'Nome',
+         },
+       ],
+     },
+   ];
+   ```
+
+4. IMPORTANTE: Os textos devem ter contexto suficiente para que o N2/CX entenda o impacto. Exemplo bom: "Migração de São João Batista do Glória/MG para o provedor MemoryV2 — o município trocou de sistema de NFS-e. As URLs, namespace e configurações foram atualizadas para o novo provedor."
+
+## Etapa 8: Atualizar Compilado Semanal — Principais assuntos CE
+
+1. A semana vai de domingo a sábado. Calcule o domingo mais recente (ou o atual se hoje for domingo) e o sábado seguinte.
+
+2. Analise todos os tickets abertos (da Etapa 6) e agrupe por camada e assunto:
+   - **GW** (cor #F04E23): tickets relacionados ao gateway NFS-e/NF-e com prefeituras (sincronização, XML, layout, emissão exterior, configuração municipal)
+   - **Emissor** (cor #8A8A8A): tickets do painel/emissor (faturamento, excedentes, configuração, importação de vendas, painel SMU, relatórios)
+   - **GW/Emissor** (cor #707780): tickets ambíguos que podem ser de qualquer camada (erros de emissão genéricos, CSRT, atualização de município)
+   - **Outros** (cor #C8C5BC): melhorias, integrações, bugs visuais, pesquisa de vendas
+
+3. Para cada assunto, liste as keys dos tickets separadas por vírgula (para gerar link JQL).
+
+4. Adicione o compilado como propriedade `compiladoSemanal` dentro do `emAndamentoData`:
+
+   ```javascript
+   compiladoSemanal: {
+     periodo: 'DD/MM a DD/MM/YYYY',
+     totalTickets: N,
+     sincronizacao: N,
+     semAssignee: N,
+     reaberturas: N,
+     camadas: [
+       {
+         nome: 'GW', cor: '#F04E23', descricao: 'Gateway NFS-e/NF-e com prefeituras',
+         total: N, pct: 'XX,X',
+         assuntos: [
+           { assunto: 'Emissão exterior / Tomador estrangeiro', qtd: N, pct: 'XX,X', keys: 'CE-XXXXX,CE-XXXXX' },
+         ],
+       },
+     ],
+   }
+   ```
+
+## Etapa 9: Commit e Push
 
 1. No diretório do workspace, execute:
    ```bash
@@ -190,7 +284,7 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
    git push
    ```
 
-## Regras importantes:
+## Regras importantes
 
 - O repositório do workspace é `c:\Git-Repositories\CidadesProvedores`
 - O repositório do app-gw é `c:\Git-Repositories\app-gw` (org: enotas-org/app-gw)
@@ -201,4 +295,7 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
 - Foque nas mudanças que afetam provedores, cidades, emissão de notas, cancelamento, e configurações municipais
 - Escreva tudo em português brasileiro
 - O site é PÚBLICO (GitHub Pages). NUNCA incluir dados sensíveis como razão social, CNPJ, nomes de clientes ou qualquer PII nos arquivos gerados. Apenas IDs (UUIDs) são permitidos para identificar empresas.
-- Não alterar o `index.html` — ele já contém toda a lógica de renderização, tabs, modal de drill-down, etc. Apenas os arquivos `.js` de dados e os `.json` de detalhe devem ser regenerados.
+- Não alterar o `index.html` — ele já contém toda a lógica de renderização, tabs, modal de drill-down, compilado semanal, etc. Apenas os arquivos `.js` de dados e os `.json` de detalhe devem ser regenerados.
+- Os textos do `github-changelog.js` e `aguardando-deploy-changelog.js` devem ser detalhados e contextualizados — explicar o que mudou, por que mudou e qual o impacto. Não usar descrições genéricas.
+- A semana do compilado semanal vai de domingo a sábado.
+- O `aguardando-deploy-changelog.js` compara `notagateway-sync` vs `dev` (não vs main).

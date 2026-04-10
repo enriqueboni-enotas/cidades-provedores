@@ -30,6 +30,14 @@ var emAndamentoData = {
       status: 'Open',
       icon: '📋',
       itens: [
+        {
+          key: 'CE-25596',
+          destaque: 'Alterar painel para SMU — Araraquara/SP',
+        },
+        {
+          key: 'CE-25591',
+          destaque: 'Campo CNAE não disponível no cadastro da empresa',
+        },
         { key: 'CE-25566', destaque: 'Integração com Woocommerce' },
         {
           key: 'CE-25563',
@@ -116,343 +124,122 @@ var emAndamentoData = {
       ],
     },
   ],
-  aguardandoDeploy: [
-    {
-      tag: '10/04/2026',
-      titulo: 'Sexta-feira — 10 de Abril',
-      itens: [
-        {
-          icon: '🗑️',
-          texto: 'Remove código desnecessário',
-          pr: 8834,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🔧',
-          texto: 'Ajuste na extração do número da nota fiscal',
-          pr: 8806,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🆕',
-          texto:
-            'Ativa UsaNovoFormatoPisCofins e cria consulta por RPS para provedor',
-          pr: 8814,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🛡️',
-          texto: 'Tratamento para mensagem em tentativa de cancelamento',
-          pr: 8820,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🏙️',
-          texto: 'São João Batista do Glória/MG → MemoryV2',
-          pr: 8823,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🌐',
-          texto: 'Adrianópolis/PR aderiu ao portal nacional',
-          pr: 8829,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🌐',
-          texto: 'Tangará/SC aderiu ao portal nacional',
-          pr: 8826,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '⏸️',
-          texto: 'Desabilita emissão em lote para empresa',
-          pr: 8825,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '📋',
-          texto: 'Envio do Código NBS para empresa específica',
-          pr: 8819,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '🔧',
-          texto: 'Adiciona AutenticidadeNota',
-          pr: 8818,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🌐',
-          texto: 'Serrania/MG aderiu ao portal nacional',
-          pr: 8815,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🏙️',
-          texto:
-            'Inclui empresaID na lista de incidência no município do prestador',
-          pr: 8812,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Socorro/SP → BethaV3',
-          pr: 8809,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '📊',
-          texto:
-            'Remove municípios da flag SempreEnviaAliquotaIssEmpresasSimplesNacional',
-          pr: 8805,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '🧾',
-          texto:
-            'Ajusta geração da DACE para cenários de contingência (DanfeMS)',
-          pr: 8827,
-          autor: 'Gabriel Mesquita',
-        },
-      ],
-    },
-    {
-      tag: '08/04/2026',
-      titulo: 'Terça-feira — 08 de Abril',
-      itens: [
-        {
-          icon: '🔧',
-          texto: 'Ajuste para não travar a fila',
-          pr: 8811,
-          autor: 'Alex Ramos',
-        },
-        {
-          icon: '🌐',
-          texto:
-            'Ajuste portal nacional: exportação apenas se serviço prestado fora + cancelamento GissOnline',
-          pr: null,
-          autor: 'Jonathan Souza',
-        },
-        {
-          icon: '🔒',
-          texto: 'Bloqueia atualização de API key por subscription ID',
-          pr: 8800,
-          autor: 'Thales Fonseca',
-        },
-        {
-          icon: '🌐',
-          texto: 'Boca da Mata/AL aderiu ao portal nacional',
-          pr: 8808,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🌐',
-          texto: 'Governador Valadares/MG aderiu ao portal nacional',
-          pr: 8807,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Santa Rita do Pardo/MS — altera porta de 8085 para 8090',
-          pr: 8804,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '📮',
-          texto: 'Remove formatação do CEP do local de prestação',
-          pr: 8802,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🔗',
-          texto: 'Atualiza link de homologação de Contagem/MG',
-          pr: 8801,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🔄',
-          texto:
-            'Retry no cancelamento para garantir cancelamento na API e na prefeitura',
-          pr: 8798,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '🔗',
-          texto: 'Atualiza endpoint de Jardim/MS',
-          pr: 8797,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '🏙️',
-          texto:
-            'MunicípioIncidência como município do prestador para Conta Azul',
-          pr: 8793,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '📊',
-          texto: 'Cenário de envio de alíquota para empresa',
-          pr: 8791,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '📊',
-          texto:
-            'Corrige envio da alíquota em prestação fora do município com ISS não retido',
-          pr: 8717,
-          autor: 'Henrique Cassio',
-        },
-      ],
-    },
-    {
-      tag: '07/04/2026',
-      titulo: 'Segunda-feira — 07 de Abril',
-      itens: [
-        {
-          icon: '📊',
-          texto:
-            'Remove municípios da flag SempreEnviaAliquotaIssEmpresasSimplesNacional (GOVBRv3)',
-          pr: 8792,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '🏙️',
-          texto:
-            'São Gonçalo do Rio Abaixo/MG — regra UsaCIntContribComCodigoServico',
-          pr: 8779,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Vinhedo/SP — permite emissão sem tomador',
-          pr: 8776,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Arroio do Meio/RS → NfseNacionalV2',
-          pr: 8788,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🆕',
-          texto: 'Novo provedor GIFv2 no layout nacional',
-          pr: 8376,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🔗',
-          texto: 'Atualiza URLs de Embu das Artes/SP',
-          pr: 8781,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Cotia/SP — código 704 envia código obra',
-          pr: 8778,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Itaituba/PA → CoplanV2',
-          pr: 8789,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Serra do Mel/RN → TinusV2',
-          pr: 8775,
-          autor: 'Henrique Cassio',
-        },
-        {
-          icon: '📊',
-          texto:
-            'Remove Pejuçara/RS da flag SempreEnviaAliquotaIssEmpresasSimplesNacional',
-          pr: 8772,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '🧮',
-          texto: 'Ajusta tag cClassTrib',
-          pr: 8771,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '📋',
-          texto: 'Validação codigoNBS para não travar a fila',
-          pr: 8766,
-          autor: 'Alex Ramos',
-        },
-        {
-          icon: '🧮',
-          texto: 'Ajuste para enviar CST do PIS/COFINS conforme prestador',
-          pr: 8743,
-          autor: 'Thiago Souza',
-        },
-      ],
-    },
-    {
-      tag: '06/04/2026',
-      titulo: 'Domingo — 06 de Abril',
-      itens: [
-        {
-          icon: '📋',
-          texto: 'Normaliza NBS antes da validação para evitar envio vazio',
-          pr: null,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🏙️',
-          texto: 'Jardinópolis/SP → GissOnline',
-          pr: null,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '📋',
-          texto: 'Informa NBS válido',
-          pr: null,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🔧',
-          texto: 'Adiciona IDs em responsável técnico',
-          pr: null,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🧮',
-          texto:
-            'Ajusta fallback de IBS/CBS para deduzir apenas Simples Nacional',
-          pr: null,
-          autor: 'Davidson Souza',
-        },
-        {
-          icon: '🧮',
-          texto:
-            'Ajustes nos envios de impostos retidos na tag CSLL e apuração própria',
-          pr: 8740,
-          autor: 'Thiago Souza',
-        },
-        {
-          icon: '🆕',
-          texto: 'Novo modelo de envio de Obras para SIGISSv5',
-          pr: 8728,
-          autor: 'Felippe Salvo',
-        },
-        {
-          icon: '📊',
-          texto: 'Empresas não optantes de Uberaba/MG não enviam alíquota',
-          pr: 8722,
-          autor: 'Vitor Fernandes',
-        },
-        {
-          icon: '🆕',
-          texto: 'Campo CNO para o provedor IPM',
-          pr: 8721,
-          autor: 'Felippe Salvo',
-        },
-      ],
-    },
-  ],
+  compiladoSemanal: {
+    periodo: '05/04 a 11/04/2026',
+    totalTickets: 50,
+    sincronizacao: 2,
+    semAssignee: 37,
+    reaberturas: 3,
+    camadas: [
+      {
+        nome: 'GW',
+        cor: '#F04E23',
+        descricao: 'Gateway NFS-e/NF-e com prefeituras',
+        total: 16,
+        pct: '32,0',
+        assuntos: [
+          {
+            assunto: 'Emissão exterior / Tomador estrangeiro',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25551,CE-25494,CE-25263,CE-25254,CE-25219,CE-25106',
+          },
+          {
+            assunto: 'Ajuste de XML / Layout de prefeitura',
+            qtd: 5,
+            pct: '10,0',
+            keys: 'CE-25509,CE-25446,CE-25337,CE-25229,CE-25112',
+          },
+          {
+            assunto: 'Sincronização de notas — Manual',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25421,CE-25221,CE-24229',
+          },
+          {
+            assunto: 'Configuração municipal / CTN / Tributos',
+            qtd: 2,
+            pct: '4,0',
+            keys: 'CE-25488,CE-25193',
+          },
+        ],
+      },
+      {
+        nome: 'Emissor',
+        cor: '#8A8A8A',
+        descricao: 'Painel, importação, configuração, faturamento',
+        total: 17,
+        pct: '34,0',
+        assuntos: [
+          {
+            assunto: 'Faturamento / Excedentes indevidos',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25450,CE-25350,CE-25348,CE-25336,CE-25323,CE-24806',
+          },
+          {
+            assunto: 'Configuração / Dados municipais / Tributos',
+            qtd: 4,
+            pct: '8,0',
+            keys: 'CE-25591,CE-25563,CE-25525,CE-25383',
+          },
+          {
+            assunto: 'Importação de vendas / Integração',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25566,CE-25560,CE-25212',
+          },
+          {
+            assunto: 'Painel / SMU / Relatórios',
+            qtd: 4,
+            pct: '8,0',
+            keys: 'CE-25596,CE-25514,CE-25352,CE-25231',
+          },
+        ],
+      },
+      {
+        nome: 'GW/Emissor',
+        cor: '#707780',
+        descricao: 'Ambíguo — depende do caso',
+        total: 11,
+        pct: '22,0',
+        assuntos: [
+          {
+            assunto: 'Erro / Falha na emissão de notas',
+            qtd: 5,
+            pct: '10,0',
+            keys: 'CE-25559,CE-25552,CE-25508,CE-25188,CE-24852',
+          },
+          {
+            assunto: 'CSRT / NF-e produto / Vendas Pagar.me',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25447,CE-25137,CE-25015',
+          },
+          {
+            assunto: 'Atualização de município / Sistema',
+            qtd: 3,
+            pct: '6,0',
+            keys: 'CE-25283,CE-25218,CE-24387',
+          },
+        ],
+      },
+      {
+        nome: 'Outros',
+        cor: '#C8C5BC',
+        descricao: 'Melhoria IE, Shopify, PDF, pesquisa vendas',
+        total: 6,
+        pct: '12,0',
+        assuntos: [
+          {
+            assunto:
+              'Outros (melhoria IE, Shopify, bug visual, pesquisa vendas, NF-e complementar)',
+            qtd: 6,
+            pct: '12,0',
+            keys: 'CE-25516,CE-25222,CE-25195,CE-25163,CE-24175,CE-23878',
+          },
+        ],
+      },
+    ],
+  },
 };

@@ -7,7 +7,7 @@
   <title>Cidades & Provedores — app-gw</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -17,7 +17,7 @@
       padding: 0;
     }
 
-    /* Hotmart Help Center — Dark theme */
+    /* Hotmart.com style — Dark theme (default) */
     :root {
       --bg: #141414;
       --surface: #1E1E1E;
@@ -76,7 +76,7 @@
       --hc-color-neutral-1000: #ffffff;
     }
 
-    /* Hotmart Help Center — Light theme */
+    /* Hotmart.com style — Light theme */
     html.light {
       --bg: #F5F5F0;
       --surface: #FFFFFF;
@@ -171,8 +171,13 @@
       width: auto;
     }
 
-    html:not(.light) .hotmart-logo { filter: brightness(0) invert(1); }
-    html:not(.light) .enotas-logo { filter: brightness(0) invert(1); }
+    html:not(.light) .hotmart-logo {
+      filter: brightness(0) invert(1);
+    }
+
+    html:not(.light) .enotas-logo {
+      filter: brightness(0) invert(1);
+    }
 
     .topbar-divider {
       width: 1px;
@@ -207,8 +212,8 @@
     }
 
     .theme-toggle {
-      background: #F0F0EB;
-      border: 1px solid #E0DED8;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 20px;
       width: 48px;
       height: 26px;
@@ -218,9 +223,9 @@
       flex-shrink: 0;
     }
 
-    html:not(.light) .theme-toggle {
-      background: #333;
-      border-color: #444;
+    html.light .theme-toggle {
+      background: #E0DED8;
+      border-color: #C8C5BC;
     }
 
     .theme-toggle::after {
@@ -231,7 +236,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: #ccc;
+      background: rgba(255, 255, 255, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -242,7 +247,7 @@
     html.light .theme-toggle::after {
       content: '☀️';
       transform: translateX(22px);
-      background: #F04E23;
+      background: #32363b;
     }
 
     /* LANDING */
@@ -288,13 +293,13 @@
     .mode-btn:hover {
       border-color: #F04E23;
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(240,78,35,0.12);
+      box-shadow: 0 8px 24px rgba(240, 78, 35, 0.12);
     }
 
     .mode-btn.active {
       border-color: #F04E23;
       background: var(--surface);
-      box-shadow: 0 0 0 3px rgba(240,78,35,0.15);
+      box-shadow: 0 0 0 3px rgba(240, 78, 35, 0.15);
     }
 
     .mode-btn .icon {
@@ -426,7 +431,7 @@
     /* BACK BUTTON */
     .back-btn {
       background: rgba(255, 255, 255, 0.08);
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
       border: 1px solid rgba(255, 255, 255, 0.15);
       padding: 6px 16px;
       border-radius: 8px;
@@ -449,7 +454,7 @@
     html.light .back-btn {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.15);
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
     }
 
     html.light .back-btn:hover {
@@ -510,7 +515,7 @@
     }
 
     .header-meta {
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       font-size: 13px;
       display: flex;
       gap: 24px;
@@ -1420,13 +1425,13 @@
     /* LOGS TABS */
     .logs-tabs {
       display: flex;
-      gap: 4px;
-      border-bottom: 1px solid var(--border);
+      gap: 0;
+      border-bottom: 2px solid var(--border);
       margin-bottom: 24px;
     }
 
     .logs-tab {
-      padding: 12px 20px;
+      padding: 12px 24px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
@@ -1434,23 +1439,20 @@
       background: transparent;
       color: var(--muted);
       border-bottom: 2px solid transparent;
-      margin-bottom: -1px;
+      margin-bottom: -2px;
       transition: color .2s, border-color .2s;
       display: flex;
       align-items: center;
       gap: 8px;
-      border-radius: 8px 8px 0 0;
     }
 
     .logs-tab:hover {
-      color: var(--heading);
-      background: var(--surface);
+      color: var(--text);
     }
 
     .logs-tab.active {
-      color: var(--heading);
-      border-bottom-color: #F04E23;
-      background: var(--surface);
+      color: var(--accent);
+      border-bottom-color: var(--accent);
     }
 
     .logs-panel {
@@ -1615,15 +1617,31 @@
   <div id="home" class="skeleton-hide">
     <div class="landing">
       <h2>O que deseja consultar?</h2>
-      <p>Base de conhecimento do eNotas Gateway. Consulte configurações de municípios, provedores de NFS-e, tratamentos especiais e acompanhe as últimas atualizações do sistema.</p>
+      <p>Base de conhecimento do eNotas Gateway. Consulte configurações de municípios, provedores de NFS-e, tratamentos
+        especiais e acompanhe as últimas atualizações do sistema.</p>
       <div class="mode-btns">
         <div class="mode-btn" id="btnCidade" onclick="setMode('cidade')">
-          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></div>
+          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18" />
+              <path d="M5 21V7l8-4v18" />
+              <path d="M19 21V11l-6-4" />
+              <path d="M9 9v.01" />
+              <path d="M9 12v.01" />
+              <path d="M9 15v.01" />
+              <path d="M9 18v.01" />
+            </svg></div>
           <div class="label">Cidade</div>
           <div class="desc">Busque por nome, UF ou código IBGE</div>
         </div>
         <div class="mode-btn" id="btnProvedor" onclick="setMode('provedor')">
-          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M6 8h12l-1 10H7L6 8z"/><path d="M12 18v4"/><circle cx="12" cy="5" r="1"/></svg></div>
+          <div class="icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F04E23"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v6" />
+              <path d="M6 8h12l-1 10H7L6 8z" />
+              <path d="M12 18v4" />
+              <circle cx="12" cy="5" r="1" />
+            </svg></div>
           <div class="label">Provedor</div>
           <div class="desc">Busque por nome do provedor</div>
         </div>
@@ -1660,7 +1678,7 @@
     </div>
   </div>
 
-  <div class="footer">Hotmart · eNotas — Cidades & Provedores · Dados extraídos do app-gw · 2026</div>
+  <div class="footer">Hotmart — Cidades & Provedores · Dados extraídos do app-gw · 2026</div>
 
   <script src="Cidades/_index.js"></script>
   <script src="Provedores/_index.js"></script>
@@ -1668,6 +1686,7 @@
   <script src="LogsAlteracoes/jira-tickets-changelog.js"></script>
   <script src="LogsAlteracoes/nfe-negadas-changelog.js"></script>
   <script src="LogsAlteracoes/em-andamento-changelog.js"></script>
+  <script src="LogsAlteracoes/aguardando-deploy-changelog.js"></script>
   <script>
     /* ── Skeleton → Content ── */
     (function () {
@@ -2385,23 +2404,10 @@
       var hasJira = typeof jiraChangelogData !== 'undefined' && jiraChangelogData.length;
       var hasNegadas = typeof nfeNegadasData !== 'undefined' && nfeNegadasData.length;
       var hasEmAndamento = typeof emAndamentoData !== 'undefined' && emAndamentoData;
-      if (!hasChangelog && !hasJira && !hasNegadas && !hasEmAndamento) return;
+      var hasAguardandoDeploy = typeof aguardandoDeployData !== 'undefined' && aguardandoDeployData.length;
+      if (!hasChangelog && !hasJira && !hasNegadas && !hasEmAndamento && !hasAguardandoDeploy) return;
       var el = document.getElementById('logs-alteracoes');
       if (!el) return;
-
-      // ── Emoji → Dot icon mapping ──
-      var emojiColorMap = {
-        '🏙️':'#F04E23','🔧':'#8A8A8A','🆕':'#009d43','📊':'#8A8A8A','🔗':'#8A8A8A',
-        '🌐':'#8A8A8A','🌍':'#8A8A8A','🤖':'#8A8A8A','📍':'#F04E23','🧾':'#8A8A8A',
-        '📮':'#8A8A8A','🔄':'#8A8A8A','🔒':'#d6342c','🏢':'#8A8A8A','🧮':'#8A8A8A',
-        '🏗️':'#8A8A8A','🛡️':'#009d43','📭':'#c9ced4','💱':'#8A8A8A','📜':'#8A8A8A',
-        '❌':'#d6342c','💰':'#F04E23','👤':'#8A8A8A','📋':'#8A8A8A','🔢':'#8A8A8A',
-        '⏸️':'#8A8A8A','🎫':'#8A8A8A','🚀':'#F04E23','🔍':'#8A8A8A',
-      };
-      function iconify(emoji) {
-        var color = emojiColorMap[emoji] || '#F04E23';
-        return '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + color + ';margin-right:6px;vertical-align:middle"></span>';
-      }
 
       function renderItems(data, isNegadas) {
         var h = '<div class="pr-list">';
@@ -2413,13 +2419,12 @@
           h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
           r.itens.forEach(function (it) {
             var txt = it.texto.replace(/\b(CE-\d+)\b/g, '<a href="https://hotmart.atlassian.net/browse/$1" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">$1</a>');
-            var ic = iconify(it.icon);
             if (isNegadas) {
               var dataIso = r.data.split('/').reverse().join('-');
               var enc = encodeURIComponent(it.destaque);
-              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + ic + '<span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">↗</span></p>';
+              h += '<p class="nfe-clickable" onclick="abrirModalNfe(\'' + dataIso + '\',\'' + enc + '\',\'' + r.data + '\')">' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + ' <span style="font-size:11px;color:var(--muted)">🔍</span></p>';
             } else {
-              h += '<p>' + ic + '<span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
+              h += '<p>' + it.icon + ' <span style="color:var(--accent2);font-weight:600">' + it.destaque + ':</span> ' + txt + '</p>';
             }
           });
           h += '</div></div>';
@@ -2430,38 +2435,58 @@
 
       function renderEmAndamento(data) {
         var h = '';
-        // Tickets abertos por status
         if (data.ticketsAbertos && data.ticketsAbertos.length) {
-          h += '<div class="section-title" style="margin-top:0"><span class="num" style="background:#8A8A8A">T</span> Tickets CE em aberto (' + data.ticketsAbertos.reduce(function (s, g) { return s + g.itens.length }, 0) + ')</div>';
           data.ticketsAbertos.forEach(function (grupo) {
             h += '<div class="pr-card" style="margin-bottom:16px"><div class="pr-header">';
-            h += '<span class="pr-number">' + iconify(grupo.icon) + grupo.status + '</span>';
+            h += '<span class="pr-number">' + grupo.icon + ' ' + grupo.status + '</span>';
             h += '<span class="pr-title">' + grupo.itens.length + ' tickets</span></div>';
             h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
             grupo.itens.forEach(function (it) {
-            h += '<p>' + iconify(grupo.icon) + '<a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
+              h += '<p>' + grupo.icon + ' <a href="https://hotmart.atlassian.net/browse/' + it.key + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">' + it.key + '</a> — <span style="color:var(--accent2);font-weight:500">' + it.destaque + '</span></p>';
             });
             h += '</div></div>';
           });
         }
-        // Aguardando deploy
-        if (data.aguardandoDeploy && data.aguardandoDeploy.length) {
-          var totalCommits = data.aguardandoDeploy.reduce(function (s, d) { return s + d.itens.length }, 0);
-          h += '<div class="section-title"><span class="num" style="background:#F04E23">D</span> Aguardando deploy — notagateway-sync → main (' + totalCommits + ' commits)</div>';
-          h += '<div class="pr-list">';
-          data.aguardandoDeploy.forEach(function (dia) {
-            h += '<div class="pr-card"><div class="pr-header">';
-            h += '<span class="pr-number">' + dia.tag + '</span>';
-            h += '<span class="pr-title">' + dia.titulo + '</span></div>';
-            h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
-            dia.itens.forEach(function (it) {
-              var prLink = it.pr ? ' <a href="https://github.com/enotas-org/app-gw/pull/' + it.pr + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">PR #' + it.pr + '</a>' : '';
-              h += '<p>' + it.icon + ' ' + it.texto + prLink + ' <span style="color:var(--muted);font-size:11px">— ' + it.autor + '</span></p>';
+        // Compilado semanal
+        if (data.compiladoSemanal) {
+          var cs = data.compiladoSemanal;
+          h += '<div style="margin-top:32px;border-top:1px solid var(--border);padding-top:24px">';
+          h += '<div style="font-size:16px;font-weight:600;color:var(--heading);margin-bottom:4px">Principais Assuntos — Semana ' + cs.periodo + '</div>';
+          h += '<div style="font-size:12px;color:var(--muted);margin-bottom:16px">Total: ' + cs.totalTickets + ' tickets · Sincronização: ' + cs.sincronizacao + ' · Sem assignee: ' + cs.semAssignee + ' (' + Math.round(cs.semAssignee / cs.totalTickets * 100) + '%) · Reaberturas: ' + cs.reaberturas + '</div>';
+          h += '<div class="table-wrap"><table><thead><tr><th style="text-align:left;background:#32363b;color:#fff">Camada</th><th style="text-align:left;background:#32363b;color:#fff">Assunto</th><th style="text-align:right;width:50px;background:#32363b;color:#fff">Qtd</th><th style="text-align:right;width:55px;background:#32363b;color:#fff">%</th></tr></thead><tbody>';
+          cs.camadas.forEach(function (cam) {
+            h += '<tr><td colspan="4" style="font-weight:600;font-size:12px;padding:8px 16px;background:var(--border);color:var(--heading)"><span style="color:' + cam.cor + '">●</span> ' + cam.nome + ' (' + cam.descricao + ') — ' + cam.total + ' tickets (' + cam.pct + '%)</td></tr>';
+            cam.assuntos.forEach(function (a) {
+              var jqlLink = 'https://hotmart.atlassian.net/issues/?jql=key in (' + a.keys + ')';
+              h += '<tr style="background:var(--surface)"><td style="text-align:left"><span style="background:' + cam.cor + ';color:#fff;padding:2px 8px;border-radius:3px;font-size:11px;font-weight:600">' + cam.nome + '</span></td>';
+              h += '<td style="text-align:left;font-weight:500;color:var(--heading)">' + a.assunto + '</td>';
+              h += '<td style="text-align:right"><a href="' + jqlLink + '" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:700">' + a.qtd + '</a></td>';
+              h += '<td style="text-align:right;color:var(--text);font-weight:500">' + a.pct + '%</td></tr>';
             });
-            h += '</div></div>';
           });
+          h += '<tr style="font-weight:700;background:var(--border)"><td colspan="2" style="text-align:left;color:var(--heading)">TOTAL</td><td style="text-align:right;color:var(--heading)">' + cs.totalTickets + '</td><td style="text-align:right;color:var(--heading)">100%</td></tr>';
+          h += '</tbody></table></div>';
           h += '</div>';
         }
+        return h;
+      }
+
+      function renderAguardandoDeploy(data) {
+        var totalCommits = data.reduce(function (s, d) { return s + d.itens.length }, 0);
+        var h = '<div class="section-title" style="margin-top:0"><span class="num">🚀</span> notagateway-sync → dev (' + totalCommits + ' commits pendentes)</div>';
+        h += '<div class="pr-list">';
+        data.forEach(function (dia) {
+          h += '<div class="pr-card"><div class="pr-header">';
+          h += '<span class="pr-number">' + dia.tag + '</span>';
+          h += '<span class="pr-title">' + dia.titulo + '</span></div>';
+          h += '<div style="font-size:13px;color:var(--text);line-height:1.8">';
+          dia.itens.forEach(function (it) {
+            var prLink = it.pr ? ' <a href="https://github.com/enotas-org/app-gw/pull/' + it.pr + '" target="_blank" style="color:var(--pr);text-decoration:none;font-weight:500">PR #' + it.pr + '</a>' : '';
+            h += '<p>' + it.icon + ' ' + it.texto + prLink + ' <span style="color:var(--muted);font-size:11px">— ' + it.autor + '</span></p>';
+          });
+          h += '</div></div>';
+        });
+        h += '</div>';
         return h;
       }
 
@@ -2483,6 +2508,9 @@
       if (hasEmAndamento) {
         h += '<button class="logs-tab" data-panel="panel-andamento"><span style="color:#efba0f">●</span> Em Andamento</button>';
       }
+      if (hasAguardandoDeploy) {
+        h += '<button class="logs-tab" data-panel="panel-deploy"><span style="color:#009d43">●</span> Aguardando Deploy</button>';
+      }
       h += '</div>';
       if (hasChangelog) {
         h += '<div class="logs-panel active" id="panel-changelog">' + renderItems(changelogData) + '</div>';
@@ -2495,6 +2523,9 @@
       }
       if (hasEmAndamento) {
         h += '<div class="logs-panel" id="panel-andamento">' + renderEmAndamento(emAndamentoData) + '</div>';
+      }
+      if (hasAguardandoDeploy) {
+        h += '<div class="logs-panel" id="panel-deploy">' + renderAguardandoDeploy(aguardandoDeployData) + '</div>';
       }
       h += '</div>';
       el.innerHTML = h;
@@ -2558,13 +2589,17 @@
       }
 
       fetch('LogsAlteracoes/nfe-negadas-detalhe/' + dataIso + '.json')
-        .then(function (r) { return r.json(); })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (data) {
           nfeCache[dataIso] = data;
           renderModalData(data, destaque, body);
         })
         .catch(function () {
-          body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
+          if (window.location.protocol === 'file:') {
+            body.innerHTML = '<div class="modal-loading" style="color:var(--muted)">Detalhe por empresa não disponível localmente.<br><span style="font-size:12px">O drill-down funciona apenas no servidor (GitHub Pages) devido a restrições do navegador com protocolo file://</span></div>';
+          } else {
+            body.innerHTML = '<div class="modal-loading" style="color:var(--danger)">Erro ao carregar dados de detalhe para ' + dataIso + '</div>';
+          }
         });
     }
 
@@ -2612,7 +2647,7 @@
     (function () {
       var saved = localStorage.getItem('theme');
       if (saved === 'dark') document.documentElement.classList.remove('light');
-      else document.documentElement.classList.add('light');
+      else if (saved !== 'light') document.documentElement.classList.add('light');
       document.getElementById('themeToggle').addEventListener('click', function () {
         document.documentElement.classList.toggle('light');
         localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
