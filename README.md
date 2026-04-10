@@ -58,38 +58,38 @@ O site é protegido por autenticação Google OAuth2 restrita ao domínio `@hotm
 
 ```mermaid
 flowchart TB
-    subgraph Fontes de Dados
-        GW["🔥 enotas-org/app-gw\n(branch dev)"]
-        GH["GitHub API\n(PRs mergeados)"]
-        JR["Jira API\n(Tickets CE)"]
-        AB["Astrobox API\n(NF-e negadas)"]
+    subgraph Fontes["Fontes de Dados"]
+        GW["app-gw\nbranch dev"]
+        GH["GitHub API\nPRs mergeados"]
+        JR["Jira API\nTickets CE"]
+        AB["Astrobox API\nNF-e negadas"]
     end
 
-    subgraph Agente Kiro — atualizar-site
+    subgraph Agente["Agente Kiro - atualizar-site"]
         E1["1. git pull app-gw dev"]
-        E2["2. gerar.ps1\nXML → JS"]
-        E3["3. gh pr list\n→ github-changelog.js"]
-        E4["4. acli jira search\n→ jira-tickets-changelog.js"]
-        E5["5. Astrobox query\n→ nfe-negadas-changelog.js\n→ nfe-negadas-detalhe/*.json"]
+        E2["2. gerar.ps1\nXML para JS"]
+        E3["3. gh pr list\ngithub-changelog.js"]
+        E4["4. acli jira search\njira-tickets-changelog.js"]
+        E5["5. Astrobox query\nnfe-negadas-changelog.js"]
         E6["6. git push main"]
     end
 
-    subgraph GitHub Pages
-        IDX["index.html\n(Busca + Changelog)"]
-        NFE["nfe-negadas.html\n(Dashboard)"]
-        AUTH["auth.js\n(OAuth2 + Logs)"]
-        CID["Cidades/*.js\n(3.661 arquivos)"]
-        PRV["Provedores/*.js\n(144 arquivos)"]
-        LOG["LogsAlteracoes/*.js"]
+    subgraph Pages["GitHub Pages"]
+        IDX["index.html"]
+        NFE["nfe-negadas.html"]
+        AUTH["auth.js"]
+        CID["Cidades - 3661 arquivos"]
+        PRV["Provedores - 144 arquivos"]
+        LOG["LogsAlteracoes"]
     end
 
-    subgraph Serviços Externos
-        GOO["Google OAuth2\n(@hotmart.com)"]
-        GSH["Google Sheets\n(Log de acessos)"]
+    subgraph Externos["Servicos Externos"]
+        GOO["Google OAuth2\nhotmart.com"]
+        GSH["Google Sheets\nLog de acessos"]
     end
 
-    subgraph Usuário
-        USR["Colaborador Hotmart\n(browser)"]
+    subgraph User["Usuario"]
+        USR["Colaborador Hotmart"]
     end
 
     GW --> E1 --> E2
@@ -100,9 +100,9 @@ flowchart TB
     E3 & E4 & E5 --> LOG
     E6 --> IDX & NFE
 
-    USR -->|"login @hotmart.com"| GOO
+    USR -->|"login hotmart.com"| GOO
     GOO -->|"id_token JWT"| AUTH
-    AUTH -->|"page_view, search,\nview_cidade..."| GSH
+    AUTH -->|"tracking eventos"| GSH
     USR --> IDX & NFE
     IDX --> CID & PRV & LOG
 ```
