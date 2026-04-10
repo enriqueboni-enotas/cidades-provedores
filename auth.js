@@ -21,13 +21,13 @@ var SESSION_HOURS = 8;
  * LOG DE ACESSOS — Google Sheets via Apps Script
  *
  * SETUP:
- * 1. Crie uma Google Sheet com headers: Timestamp | Email | Nome | Página | Ação
+ * 1. Crie uma Google Sheet com headers: Timestamp | Email | Nome | Página | Ação | Detalhe
  * 2. Acesse https://script.google.com → Novo projeto
  * 3. Cole o código:
  *    function doPost(e) {
  *      var sheet = SpreadsheetApp.openById('SEU_SPREADSHEET_ID').getActiveSheet();
  *      var data = JSON.parse(e.postData.contents);
- *      sheet.appendRow([new Date().toISOString(), data.email, data.name, data.page, data.action]);
+ *      sheet.appendRow([data.timestamp, data.email, data.name, data.page, data.action, data.detail]);
  *      return ContentService.createTextOutput('ok');
  *    }
  * 4. Deploy → New deployment → Web app → Execute as: Me → Anyone → Deploy
@@ -65,20 +65,34 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbzfGKa-9Sbhfu9cTLt
   }
 
   // ── Log de acesso (fire-and-forget) ──
-  function logAccess(u, action) {
+  function brTimestamp() {
+    var d = new Date();
+    var br = new Date(d.getTime() - 3 * 3600000);
+    return br.toISOString().replace('T', ' ').substring(0, 19);
+  }
+
+  function logAccess(u, action, detail) {
     if (!ACCESS_LOG_URL || !u) return;
     try {
       var page = window.location.pathname.split('/').pop() || 'index.html';
       var payload = JSON.stringify({
+        timestamp: brTimestamp(),
         email: u.email,
         name: u.name,
         page: page,
-        action: action || 'page_view'
+        action: action || 'page_view',
+        detail: detail || ''
       });
       var blob = new Blob([payload], { type: 'application/json; charset=utf-8' });
       navigator.sendBeacon(ACCESS_LOG_URL, blob);
     } catch (e) { /* silencioso */ }
   }
+
+  // ── Tracking de interações (exposto globalmente) ──
+  window._authLogEvent = function (action, detail) {
+    var u = getStoredUser();
+    if (u) logAccess(u, action, detail);
+  };
 
   // ── CSS ──
   var style = document.createElement('style');

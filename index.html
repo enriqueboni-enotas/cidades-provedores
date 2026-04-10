@@ -1607,6 +1607,7 @@
 
     function setMode(m) {
       mode = m;
+      if (window._authLogEvent) window._authLogEvent('select_mode', m);
       document.getElementById('btnCidade').classList.toggle('active', m === 'cidade');
       document.getElementById('btnProvedor').classList.toggle('active', m === 'provedor');
       searchArea.classList.add('on');
@@ -1625,7 +1626,15 @@
     }
 
     /* ── Autocomplete ── */
-    searchInput.addEventListener('input', () => { acIdx = -1; renderAc(); });
+    var _searchLogTimer = null;
+    searchInput.addEventListener('input', () => {
+      acIdx = -1; renderAc();
+      clearTimeout(_searchLogTimer);
+      _searchLogTimer = setTimeout(function () {
+        var q = searchInput.value.trim();
+        if (q.length >= 3 && window._authLogEvent) window._authLogEvent('search', mode + ': ' + q);
+      }, 1500);
+    });
     searchInput.addEventListener('keydown', e => {
       const items = acList.querySelectorAll('.ac-item');
       if (!items.length) return;
@@ -1680,6 +1689,7 @@
 
     /* ── Detail: Cidade ── */
     function abrirCidade(id) {
+      if (window._authLogEvent) window._authLogEvent('view_cidade', id);
       var script = document.createElement('script');
       script.src = 'Cidades/' + id + '.js';
       script.onload = function () {
@@ -1920,6 +1930,7 @@
 
     /* ── Detail: Provedor (Dossiê Layout) ── */
     function abrirProvedor(id) {
+      if (window._authLogEvent) window._authLogEvent('view_provedor', id);
       var script = document.createElement('script');
       script.src = 'Provedores/' + id + '.js';
       script.onload = function () {
@@ -2397,6 +2408,7 @@
           tab.classList.add('active');
           var panel = document.getElementById(tab.getAttribute('data-panel'));
           if (panel) panel.classList.add('active');
+          if (window._authLogEvent) window._authLogEvent('view_tab', tab.textContent.trim());
         });
       });
     })();
