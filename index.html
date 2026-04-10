@@ -2427,7 +2427,6 @@
       function renderEmAndamento(data) {
         var h = '';
         if (data.ticketsAbertos && data.ticketsAbertos.length) {
-          h += '<div class="section-title" style="margin-top:0"><span class="num">🎫</span> Tickets CE em aberto (' + data.ticketsAbertos.reduce(function (s, g) { return s + g.itens.length }, 0) + ')</div>';
           data.ticketsAbertos.forEach(function (grupo) {
             h += '<div class="pr-card" style="margin-bottom:16px"><div class="pr-header">';
             h += '<span class="pr-number">' + grupo.icon + ' ' + grupo.status + '</span>';
