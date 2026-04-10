@@ -7,7 +7,7 @@
   <title>Cidades & Provedores — app-gw</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *,
     *::before,
@@ -17,21 +17,28 @@
       padding: 0;
     }
 
-    /* Cosmos Dark (default) */
+    /* Cosmos DS — Dark theme (default) */
     :root {
       --bg: var(--hc-color-neutral-100);
       --surface: var(--hc-color-neutral-200);
       --surface2: var(--hc-color-neutral-300);
       --border: var(--hc-color-neutral-400);
-      --accent: var(--hc-color-primary-500);
-      --accent2: var(--hc-color-secondary-500);
-      --warn: var(--hc-color-warning-400);
-      --danger: var(--hc-color-danger-400);
+      --accent: var(--cds-color-cta);
+      --accent2: var(--cds-color-positive);
+      --warn: var(--cds-color-attention);
+      --danger: var(--cds-color-negative);
       --text: var(--hc-color-neutral-800);
       --muted: var(--hc-color-neutral-500);
       --code-bg: var(--hc-color-neutral-0);
-      --pr: var(--hc-color-info-400);
+      --pr: var(--cds-color-informative);
       --heading: var(--hc-color-neutral-1000);
+
+      /* Cosmos DS semantic tokens — dark */
+      --cds-color-cta: #89a8f8;
+      --cds-color-positive: #4acc82;
+      --cds-color-negative: #e37570;
+      --cds-color-attention: #fbd458;
+      --cds-color-informative: #89a8f8;
 
       /* Cosmos dark tokens */
       --hc-color-primary-100: #162c64;
@@ -69,8 +76,14 @@
       --hc-color-neutral-1000: #ffffff;
     }
 
-    /* Cosmos Light */
+    /* Cosmos DS — Light theme */
     html.light {
+      --cds-color-cta: #355cc0;
+      --cds-color-positive: #009d43;
+      --cds-color-negative: #d6342c;
+      --cds-color-attention: #efba0f;
+      --cds-color-informative: #5981e3;
+
       --hc-color-primary-100: #ebf0ff;
       --hc-color-primary-200: #bed1ff;
       --hc-color-primary-300: #89a8f8;
@@ -107,7 +120,7 @@
     }
 
     body {
-      font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+      font-family: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;

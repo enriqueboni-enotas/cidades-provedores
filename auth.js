@@ -99,7 +99,7 @@ var ACCESS_LOG_URL = 'https://script.google.com/macros/s/AKfycbx_qYKBYcBuU69NfXm
   // ── CSS ──
   var style = document.createElement('style');
   style.textContent = [
-    '#auth-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#f7f9fa;font-family:"Nunito Sans",-apple-system,sans-serif}',
+    '#auth-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#f7f9fa;font-family:"Inter",-apple-system,sans-serif}',
     'html:not(.light) #auth-overlay{background:#191c1f}',
     '.auth-box{text-align:center;max-width:400px;padding:48px 40px;background:#fff;border:1px solid #c9ced4;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,.08)}',
     'html:not(.light) .auth-box{background:#282c2f;border-color:#464b52;box-shadow:0 8px 32px rgba(0,0,0,.3)}',
