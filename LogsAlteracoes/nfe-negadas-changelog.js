@@ -5,9 +5,50 @@ var nfeNegadasData = [
     data: '12/04/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Dados ainda em processamento',
-        texto: 'Domingo — dados parciais do dia.',
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.216 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão automática interrompida (app desativado)',
+        texto: '1.046 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '857 notas',
+      },
+      { icon: '🌍', destaque: 'País deve ser informado', texto: '613 notas' },
+      {
+        icon: '🏢',
+        destaque: 'CNPJ não encontrado na base de dados',
+        texto: '362 notas',
+      },
+      {
+        icon: '🔐',
+        destaque: 'Bloqueio temporário pelo Suporte eNotas',
+        texto: '249 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório',
+        texto: '232 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série RPS deve conter apenas números (1 a 49.999)',
+        texto: '223 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série DPS fora da faixa definida (80000 a 89999)',
+        texto: '215 notas',
+      },
+      {
+        icon: '🏗️',
+        destaque: 'Informações do imóvel obrigatórias para operação informada',
+        texto: '185 notas',
       },
     ],
   },
