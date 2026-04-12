@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'tucano-ba',
   nome: 'Tucano',
   uf: 'BA',
@@ -46,3 +46,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

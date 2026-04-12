@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'agili',
   nome: 'Agili',
   empresa: 'Agili',
@@ -8,7 +8,7 @@ var provedorDetalhe = {
   visaoGeral: [
     { key: 'Nome', val: 'Agili' },
     { key: 'Total Municipios', val: '29' },
-    { key: 'Estados Atendidos', val: ['MT', 'AL', 'PE', 'RN', 'MS', 'PB', 'PA', 'PR'], type: 'uf-badges' }
+    { key: 'Estados Atendidos', val: ['MT', 'AL', 'RN', 'MS', 'PB', 'PE', 'PA', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
@@ -31,7 +31,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: true,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\n\nExemplo válido: 11356',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplos: 17.14.01 e 4.12.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpItemListaServico: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Ele possui geralmente 4 ou 5 dígitos com formatação. Exemplo válido: 4.03 ou 14.03',
@@ -43,8 +43,8 @@ var provedorDetalhe = {
     enviaEmailCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      UsaCodigoVerificacao: true,
-      urlVerificacao: 'https://blue.rondonopolis.mt.gov.br/portal/rondonopolis/#/autenticidade'
+      urlVerificacao: 'https://blue.rondonopolis.mt.gov.br/portal/rondonopolis/#/autenticidade',
+      UsaCodigoVerificacao: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -69,35 +69,36 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'agili': [
-      { nome: 'Aliança', uf: 'PE', ibge: '2600708' }
-,      { nome: 'Apodi', uf: 'RN', ibge: '2401008' }
-,      { nome: 'Aripuanã', uf: 'MT', ibge: '5101407' }
-,      { nome: 'Carlinda', uf: 'MT', ibge: '5102793' }
-,      { nome: 'Conquista D\'Oeste', uf: 'MT', ibge: '5103361' }
-,      { nome: 'Delmiro Gouveia', uf: 'AL', ibge: '2702405' }
-,      { nome: 'Florânia', uf: 'RN', ibge: '2403806' }
-,      { nome: 'Ipiranga do Norte', uf: 'MT', ibge: '5104526' }
-,      { nome: 'Japaratinga', uf: 'AL', ibge: '2703601' }
-,      { nome: 'Jateí', uf: 'MS', ibge: '5005103' }
-,      { nome: 'Juara', uf: 'MT', ibge: '5105101' }
-,      { nome: 'Juína', uf: 'MT', ibge: '5105150' }
-,      { nome: 'Marcelândia', uf: 'MT', ibge: '5105580' }
-,      { nome: 'Mata Grande', uf: 'AL', ibge: '2705002' }
-,      { nome: 'Nobres', uf: 'MT', ibge: '5105903' }
-,      { nome: 'Nova Monte Verde', uf: 'MT', ibge: '5108956' }
-,      { nome: 'Novo Progresso', uf: 'PA', ibge: '1505031' }
-,      { nome: 'Palmeira dos Índios', uf: 'AL', ibge: '2706307' }
-,      { nome: 'Paranaíta', uf: 'MT', ibge: '5106299' }
-,      { nome: 'Poconé', uf: 'MT', ibge: '5106505' }
-,      { nome: 'Porto Alegre do Norte', uf: 'MT', ibge: '5106778' }
-,      { nome: 'Rondonópolis', uf: 'MT', ibge: '5107602' }
-,      { nome: 'Sanharó', uf: 'PE', ibge: '2612406' }
-,      { nome: 'Santa Cecília do Pavão', uf: 'PR', ibge: '4123204' }
-,      { nome: 'Santa Rita', uf: 'PB', ibge: '2513703' }
-,      { nome: 'Sorriso', uf: 'MT', ibge: '5107925' }
-,      { nome: 'São João do Rio do Peixe', uf: 'PB', ibge: '2500700' }
-,      { nome: 'Vera', uf: 'MT', ibge: '5108501' }
-,      { nome: 'Vicentina', uf: 'MS', ibge: '5008404' }
+      { nome: 'Aliança', uf: 'PE', ibge: '2600708' },
+      { nome: 'Apodi', uf: 'RN', ibge: '2401008' },
+      { nome: 'Aripuanã', uf: 'MT', ibge: '5101407' },
+      { nome: 'Carlinda', uf: 'MT', ibge: '5102793' },
+      { nome: 'Conquista D\'Oeste', uf: 'MT', ibge: '5103361' },
+      { nome: 'Delmiro Gouveia', uf: 'AL', ibge: '2702405' },
+      { nome: 'Florânia', uf: 'RN', ibge: '2403806' },
+      { nome: 'Ipiranga do Norte', uf: 'MT', ibge: '5104526' },
+      { nome: 'Japaratinga', uf: 'AL', ibge: '2703601' },
+      { nome: 'Jateí', uf: 'MS', ibge: '5005103' },
+      { nome: 'Juara', uf: 'MT', ibge: '5105101' },
+      { nome: 'Juína', uf: 'MT', ibge: '5105150' },
+      { nome: 'Marcelândia', uf: 'MT', ibge: '5105580' },
+      { nome: 'Mata Grande', uf: 'AL', ibge: '2705002' },
+      { nome: 'Nobres', uf: 'MT', ibge: '5105903' },
+      { nome: 'Nova Monte Verde', uf: 'MT', ibge: '5108956' },
+      { nome: 'Novo Progresso', uf: 'PA', ibge: '1505031' },
+      { nome: 'Palmeira dos Índios', uf: 'AL', ibge: '2706307' },
+      { nome: 'Paranaíta', uf: 'MT', ibge: '5106299' },
+      { nome: 'Poconé', uf: 'MT', ibge: '5106505' },
+      { nome: 'Porto Alegre do Norte', uf: 'MT', ibge: '5106778' },
+      { nome: 'Rondonópolis', uf: 'MT', ibge: '5107602' },
+      { nome: 'Sanharó', uf: 'PE', ibge: '2612406' },
+      { nome: 'Santa Cecília do Pavão', uf: 'PR', ibge: '4123204' },
+      { nome: 'Santa Rita', uf: 'PB', ibge: '2513703' },
+      { nome: 'São João do Rio do Peixe', uf: 'PB', ibge: '2500700' },
+      { nome: 'Sorriso', uf: 'MT', ibge: '5107925' },
+      { nome: 'Vera', uf: 'MT', ibge: '5108501' },
+      { nome: 'Vicentina', uf: 'MS', ibge: '5008404' }
     ]
   }
 };
+

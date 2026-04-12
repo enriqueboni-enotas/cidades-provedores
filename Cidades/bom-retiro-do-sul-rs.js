@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'bom-retiro-do-sul-rs',
   nome: 'Bom Retiro do Sul',
   uf: 'RS',
@@ -54,3 +54,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

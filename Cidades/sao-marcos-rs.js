@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-marcos-rs',
   nome: 'São Marcos',
   uf: 'RS',
@@ -54,3 +54,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

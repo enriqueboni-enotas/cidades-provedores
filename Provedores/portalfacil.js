@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'portalfacil',
   nome: 'PortalFacil',
   empresa: 'PortalFacil',
@@ -22,12 +22,12 @@ var provedorDetalhe = {
     valorCancelamentoNFe: 60,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 3 ou 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\n\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 801 ou 1401',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 3 ou 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 801 ou 1401',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \n \n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\n Exemplos válidos: 17.02 ou 08.02',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -55,15 +55,16 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'portalfacil': [
-      { nome: 'Aimorés', uf: 'MG', ibge: '3101102' }
-,      { nome: 'Além Paraiba', uf: 'MG', ibge: '3101508' }
-,      { nome: 'Colinas', uf: 'MA', ibge: '2103505' }
-,      { nome: 'Governador Nunes Freire', uf: 'MA', ibge: '2104677' }
-,      { nome: 'Ipaba', uf: 'MG', ibge: '3131158' }
-,      { nome: 'João Lisboa', uf: 'MA', ibge: '2105500' }
-,      { nome: 'Marliéria', uf: 'MG', ibge: '3140308' }
-,      { nome: 'Santa Inês', uf: 'MA', ibge: '2109908' }
-,      { nome: 'Água Boa', uf: 'MG', ibge: '3100609' }
+      { nome: 'Água Boa', uf: 'MG', ibge: '3100609' },
+      { nome: 'Aimorés', uf: 'MG', ibge: '3101102' },
+      { nome: 'Além Paraiba', uf: 'MG', ibge: '3101508' },
+      { nome: 'Colinas', uf: 'MA', ibge: '2103505' },
+      { nome: 'Governador Nunes Freire', uf: 'MA', ibge: '2104677' },
+      { nome: 'Ipaba', uf: 'MG', ibge: '3131158' },
+      { nome: 'João Lisboa', uf: 'MA', ibge: '2105500' },
+      { nome: 'Marliéria', uf: 'MG', ibge: '3140308' },
+      { nome: 'Santa Inês', uf: 'MA', ibge: '2109908' }
     ]
   }
 };
+

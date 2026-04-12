@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'santa-cruz-das-palmeiras-sp',
   nome: 'Santa Cruz das Palmeiras',
   uf: 'SP',
@@ -36,9 +36,9 @@ var cidadeDetalhe = {
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 5 dígitos formatado com um ponto.\nExemplo válido: 08.02',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos formatado com um ponto.\r\nExemplo válido: 08.02',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

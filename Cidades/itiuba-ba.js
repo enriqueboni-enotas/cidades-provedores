@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'itiuba-ba',
   nome: 'Itiúba',
   uf: 'BA',
@@ -47,3 +47,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

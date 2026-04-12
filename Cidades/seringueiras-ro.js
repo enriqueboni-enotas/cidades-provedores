@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'seringueiras-ro',
   nome: 'Seringueiras',
   uf: 'RO',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

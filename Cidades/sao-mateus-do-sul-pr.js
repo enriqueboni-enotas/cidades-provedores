@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-mateus-do-sul-pr',
   nome: 'São Mateus do Sul',
   uf: 'PR',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

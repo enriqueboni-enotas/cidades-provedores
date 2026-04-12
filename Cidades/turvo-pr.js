@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'turvo-pr',
   nome: 'Turvo',
   uf: 'PR',
@@ -49,8 +49,8 @@ var cidadeDetalhe = {
     enviaEmailCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      UsaCodigoVerificacao: true,
-      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic'
+      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic',
+      UsaCodigoVerificacao: true
     },
     naturezasOperacao: [
       { codigo: '1', nome: 'Tributado no municipio' },
@@ -60,3 +60,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

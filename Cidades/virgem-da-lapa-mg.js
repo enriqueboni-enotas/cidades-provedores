@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'virgem-da-lapa-mg',
   nome: 'Virgem da Lapa',
   uf: 'MG',
@@ -20,3 +20,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

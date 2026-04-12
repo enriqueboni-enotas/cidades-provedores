@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'governa',
   nome: 'Governa',
   empresa: 'Governa',
@@ -17,7 +17,7 @@ var provedorDetalhe = {
       certificadoDigital: null,
       usuario: null,
       senha: null,
-      token: 'Chave de acesso ao serviço de integração da prefeitura.\n                    \nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal Governa com seu usuário e senha, entre no menu “Gerenciamento/Configurar Padrão”, e configure que a empresa irá utilizar o modulo de Web Service. \nNeste momento será gerado para esta empresa sua Chave de Acesso, basta copiar e colar o valor da chave de acesso neste campo.',
+      token: 'Chave de acesso ao serviço de integração da prefeitura.\r\n                    \r\nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal Governa com seu usuário e senha, entre no menu “Gerenciamento/Configurar Padrão”, e configure que a empresa irá utilizar o modulo de Web Service. \r\nNeste momento será gerado para esta empresa sua Chave de Acesso, basta copiar e colar o valor da chave de acesso neste campo.',
       fraseSecreta: null
     },
     campoLoginProvedor: 2,
@@ -28,7 +28,7 @@ var provedorDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     emTransicaoNFSeNacional: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 4 a 5 dígitos com formatação.\nExemplo válido: 1.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 4 a 5 dígitos com formatação.\r\nExemplo válido: 1.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -64,13 +64,14 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'governa': [
-      { nome: 'Campo Florido', uf: 'MG', ibge: '3111408' }
-,      { nome: 'Carmo do Paranaíba', uf: 'MG', ibge: '3114303' }
-,      { nome: 'Conceição das Alagoas', uf: 'MG', ibge: '3117306' }
-,      { nome: 'Lagoa Formosa', uf: 'MG', ibge: '3137502' }
-,      { nome: 'Nova Ponte', uf: 'MG', ibge: '3145000' }
-,      { nome: 'Perdizes', uf: 'MG', ibge: '3149804' }
-,      { nome: 'Tapira', uf: 'MG', ibge: '3168101' }
+      { nome: 'Campo Florido', uf: 'MG', ibge: '3111408' },
+      { nome: 'Carmo do Paranaíba', uf: 'MG', ibge: '3114303' },
+      { nome: 'Conceição das Alagoas', uf: 'MG', ibge: '3117306' },
+      { nome: 'Lagoa Formosa', uf: 'MG', ibge: '3137502' },
+      { nome: 'Nova Ponte', uf: 'MG', ibge: '3145000' },
+      { nome: 'Perdizes', uf: 'MG', ibge: '3149804' },
+      { nome: 'Tapira', uf: 'MG', ibge: '3168101' }
     ]
   }
 };
+

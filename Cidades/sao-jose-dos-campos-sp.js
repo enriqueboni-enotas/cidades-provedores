@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-jose-dos-campos-sp',
   nome: 'São José dos Campos',
   uf: 'SP',
@@ -30,7 +30,7 @@ var cidadeDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\n\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 863050400 ou 620150101',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 863050400 ou 620150101',
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -51,3 +51,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

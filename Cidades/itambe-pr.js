@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'itambe-pr',
   nome: 'Itambé',
   uf: 'PR',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

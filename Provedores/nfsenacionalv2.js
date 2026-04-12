@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'nfsenacionalv2',
   nome: 'NfseNacionalV2',
   empresa: 'NfseNacionalV2',
@@ -8,7 +8,7 @@ var provedorDetalhe = {
   visaoGeral: [
     { key: 'Nome', val: 'NfseNacionalV2' },
     { key: 'Total Municipios', val: '1823' },
-    { key: 'Estados Atendidos', val: ['MG', 'SP', 'RS', 'BA', 'PR', 'GO', 'SC', 'PA', 'PI', 'RN', 'PB', 'AL', 'CE', 'MA', 'PE', 'TO', 'MT', 'RJ', 'ES', 'MS', 'SE', 'RO', 'AM', 'RR', 'AC', 'AP'], type: 'uf-badges' }
+    { key: 'Estados Atendidos', val: ['MG', 'SP', 'RS', 'BA', 'PR', 'GO', 'SC', 'PA', 'PI', 'RN', 'PB', 'AL', 'MA', 'CE', 'PE', 'TO', 'MT', 'RJ', 'ES', 'MS', 'SE', 'RO', 'AM', 'RR', 'AC', 'AP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -30,7 +30,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -61,1829 +61,1830 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'nfsenacionalv2': [
-      { nome: 'Abadia de Goiás', uf: 'GO', ibge: '5200050' }
-,      { nome: 'Abadia dos Dourados', uf: 'MG', ibge: '3100104' }
-,      { nome: 'Abaetetuba', uf: 'PA', ibge: '1500107' }
-,      { nome: 'Abdon Batista', uf: 'SC', ibge: '4200051' }
-,      { nome: 'Abel Figueiredo', uf: 'PA', ibge: '1500131' }
-,      { nome: 'Abre Campo', uf: 'MG', ibge: '3100302' }
-,      { nome: 'Acarape', uf: 'CE', ibge: '2300150' }
-,      { nome: 'Acari', uf: 'RN', ibge: '2400109' }
-,      { nome: 'Acará', uf: 'PA', ibge: '1500206' }
-,      { nome: 'Acreúna', uf: 'GO', ibge: '5200134' }
-,      { nome: 'Adolfo', uf: 'SP', ibge: '3500204' }
-,      { nome: 'Afogados da Ingazeira', uf: 'PE', ibge: '2600104' }
-,      { nome: 'Aguanil', uf: 'MG', ibge: '3100807' }
-,      { nome: 'Agudos', uf: 'SP', ibge: '3500709' }
-,      { nome: 'Aguiar', uf: 'PB', ibge: '2500205' }
-,      { nome: 'Aiquara', uf: 'BA', ibge: '2900603' }
-,      { nome: 'Alagoa Grande', uf: 'PB', ibge: '2500304' }
-,      { nome: 'Alambari', uf: 'SP', ibge: '3500758' }
-,      { nome: 'Albertina', uf: 'MG', ibge: '3101409' }
-,      { nome: 'Alcantil', uf: 'PB', ibge: '2500536' }
-,      { nome: 'Alcântaras', uf: 'CE', ibge: '2300507' }
-,      { nome: 'Alegrete do Piauí', uf: 'PI', ibge: '2200277' }
-,      { nome: 'Alenquer', uf: 'PA', ibge: '1500404' }
-,      { nome: 'Alfredo Vasconcelos', uf: 'MG', ibge: '3101631' }
-,      { nome: 'Alfredo Wagner', uf: 'SC', ibge: '4200705' }
-,      { nome: 'Algodão de Jandaíra', uf: 'PB', ibge: '2500577' }
-,      { nome: 'Alhandra', uf: 'PB', ibge: '2500601' }
-,      { nome: 'Almadina', uf: 'BA', ibge: '2900900' }
-,      { nome: 'Aloândia', uf: 'GO', ibge: '5200506' }
-,      { nome: 'Alpercata', uf: 'MG', ibge: '3101805' }
-,      { nome: 'Alpinópolis', uf: 'MG', ibge: '3101904' }
-,      { nome: 'Altair', uf: 'SP', ibge: '3500907' }
-,      { nome: 'Altamira', uf: 'PA', ibge: '1500602' }
-,      { nome: 'Altamira do Paraná', uf: 'PR', ibge: '4100459' }
-,      { nome: 'Altinópolis', uf: 'SP', ibge: '3501004' }
-,      { nome: 'Alto Alegre', uf: 'SP', ibge: '3501103' }
-,      { nome: 'Alto Alegre do Pindaré', uf: 'MA', ibge: '2100477' }
-,      { nome: 'Alto Alegre dos Parecis', uf: 'RO', ibge: '1100379' }
-,      { nome: 'Alto Feliz', uf: 'RS', ibge: '4300570' }
-,      { nome: 'Alto Longá', uf: 'PI', ibge: '2200301' }
-,      { nome: 'Alto Paraíso', uf: 'RO', ibge: '1100403' }
-,      { nome: 'Alto Paraíso de Goiás', uf: 'GO', ibge: '5200605' }
-,      { nome: 'Alto Rio Novo', uf: 'ES', ibge: '3200359' }
-,      { nome: 'Altônia', uf: 'PR', ibge: '4100509' }
-,      { nome: 'Alumínio', uf: 'SP', ibge: '3501152' }
-,      { nome: 'Alvarenga', uf: 'MG', ibge: '3102209' }
-,      { nome: 'Alvorada D\'Oeste', uf: 'RO', ibge: '1100346' }
-,      { nome: 'Alvorada do Gurguéia', uf: 'PI', ibge: '2200459' }
-,      { nome: 'Amajari', uf: 'RR', ibge: '1400027' }
-,      { nome: 'Amaralina', uf: 'GO', ibge: '5200829' }
-,      { nome: 'Amargosa', uf: 'BA', ibge: '2901007' }
-,      { nome: 'Amaturá', uf: 'AM', ibge: '1300060' }
-,      { nome: 'Amorinópolis', uf: 'GO', ibge: '5200902' }
-,      { nome: 'Ampére', uf: 'PR', ibge: '4101002' }
-,      { nome: 'América Dourada', uf: 'BA', ibge: '2901155' }
-,      { nome: 'Américo Brasiliense', uf: 'SP', ibge: '3501707' }
-,      { nome: 'Anadia', uf: 'AL', ibge: '2700201' }
-,      { nome: 'Anajás', uf: 'PA', ibge: '1500701' }
-,      { nome: 'Analândia', uf: 'SP', ibge: '3502002' }
-,      { nome: 'Ananindeua', uf: 'PA', ibge: '1500800' }
-,      { nome: 'Anapu', uf: 'PA', ibge: '1500859' }
-,      { nome: 'Anaurilândia', uf: 'MS', ibge: '5000807' }
-,      { nome: 'Anchieta', uf: 'SC', ibge: '4200804' }
-,      { nome: 'Andorinha', uf: 'BA', ibge: '2901353' }
-,      { nome: 'Andradas', uf: 'MG', ibge: '3102605' }
-,      { nome: 'Andradina', uf: 'SP', ibge: '3502101' }
-,      { nome: 'Angatuba', uf: 'SP', ibge: '3502200' }
-,      { nome: 'Angelim', uf: 'PE', ibge: '2601003' }
-,      { nome: 'Angelândia', uf: 'MG', ibge: '3102852' }
-,      { nome: 'Angico', uf: 'TO', ibge: '1701051' }
-,      { nome: 'Anguera', uf: 'BA', ibge: '2901502' }
-,      { nome: 'Anicuns', uf: 'GO', ibge: '5201306' }
-,      { nome: 'Anitápolis', uf: 'SC', ibge: '4201109' }
-,      { nome: 'Antas', uf: 'BA', ibge: '2901601' }
-,      { nome: 'Antonina do Norte', uf: 'CE', ibge: '2300804' }
-,      { nome: 'Antônio Carlos', uf: 'MG', ibge: '3102902' }
-,      { nome: 'Antônio João', uf: 'MS', ibge: '5000906' }
-,      { nome: 'Antônio Martins', uf: 'RN', ibge: '2400901' }
-,      { nome: 'Antônio Prado', uf: 'RS', ibge: '4300802' }
-,      { nome: 'Aparecida', uf: 'SP', ibge: '3502507' }
-,      { nome: 'Aparecida d\'Oeste', uf: 'SP', ibge: '3502606' }
-,      { nome: 'Aperibé', uf: 'RJ', ibge: '3300159' }
-,      { nome: 'Apiacás', uf: 'MT', ibge: '5100805' }
-,      { nome: 'Apucarana', uf: 'PR', ibge: '4101408' }
-,      { nome: 'Apuiarés', uf: 'CE', ibge: '2300903' }
-,      { nome: 'Aracatu', uf: 'BA', ibge: '2902005' }
-,      { nome: 'Aragarças', uf: 'GO', ibge: '5201702' }
-,      { nome: 'Aragominas', uf: 'TO', ibge: '1701309' }
-,      { nome: 'Araguanã', uf: 'MA', ibge: '2100873' }
-,      { nome: 'Araguanã', uf: 'TO', ibge: '1702158' }
-,      { nome: 'Aramari', uf: 'BA', ibge: '2902203' }
-,      { nome: 'Arame', uf: 'MA', ibge: '2100956' }
-,      { nome: 'Aramina', uf: 'SP', ibge: '3503000' }
-,      { nome: 'Arapeí', uf: 'SP', ibge: '3503158' }
-,      { nome: 'Arapiraca', uf: 'AL', ibge: '2700300' }
-,      { nome: 'Araporã', uf: 'MG', ibge: '3103751' }
-,      { nome: 'Araputanga', uf: 'MT', ibge: '5101258' }
-,      { nome: 'Arapuá', uf: 'MG', ibge: '3103801' }
-,      { nome: 'Arari', uf: 'MA', ibge: '2101004' }
-,      { nome: 'Arataca', uf: 'BA', ibge: '2902252' }
-,      { nome: 'Aratiba', uf: 'RS', ibge: '4300901' }
-,      { nome: 'Aratuípe', uf: 'BA', ibge: '2902302' }
-,      { nome: 'Araxá', uf: 'MG', ibge: '3104007' }
-,      { nome: 'Araçariguama', uf: 'SP', ibge: '3502754' }
-,      { nome: 'Araças', uf: 'BA', ibge: '2902054' }
-,      { nome: 'Araçatuba', uf: 'SP', ibge: '3502804' }
-,      { nome: 'Araçaí', uf: 'MG', ibge: '3103207' }
-,      { nome: 'Araçoiaba', uf: 'PE', ibge: '2601052' }
-,      { nome: 'Araújos', uf: 'MG', ibge: '3103900' }
-,      { nome: 'Areia de Baraúnas', uf: 'PB', ibge: '2501153' }
-,      { nome: 'Areial', uf: 'PB', ibge: '2501203' }
-,      { nome: 'Areias', uf: 'SP', ibge: '3503505' }
-,      { nome: 'Arenápolis', uf: 'MT', ibge: '5101308' }
-,      { nome: 'Aricanduva', uf: 'MG', ibge: '3104452' }
-,      { nome: 'Armazém', uf: 'SC', ibge: '4201505' }
-,      { nome: 'Aroazes', uf: 'PI', ibge: '2200905' }
-,      { nome: 'Aroeiras', uf: 'PB', ibge: '2501302' }
-,      { nome: 'Arraias', uf: 'TO', ibge: '1702406' }
-,      { nome: 'Arroio do Meio', uf: 'RS', ibge: '4301008' }
-,      { nome: 'Arroio do Padre', uf: 'RS', ibge: '4301073' }
-,      { nome: 'Aruanã', uf: 'GO', ibge: '5202502' }
-,      { nome: 'Arujá', uf: 'SP', ibge: '3503901' }
-,      { nome: 'Astolfo Dutra', uf: 'MG', ibge: '3104601' }
-,      { nome: 'Atalaia', uf: 'PR', ibge: '4102208' }
-,      { nome: 'Ataléia', uf: 'MG', ibge: '3104700' }
-,      { nome: 'Atibaia', uf: 'SP', ibge: '3504107' }
-,      { nome: 'Atílio Vivácqua', uf: 'ES', ibge: '3200706' }
-,      { nome: 'Aurora', uf: 'CE', ibge: '2301703' }
-,      { nome: 'Avaí', uf: 'SP', ibge: '3504305' }
-,      { nome: 'Avelino Lopes', uf: 'PI', ibge: '2201101' }
-,      { nome: 'Axixá', uf: 'MA', ibge: '2101103' }
-,      { nome: 'Babaçulândia', uf: 'TO', ibge: '1703008' }
-,      { nome: 'Bady Bassitt', uf: 'SP', ibge: '3504602' }
-,      { nome: 'Bagre', uf: 'PA', ibge: '1501105' }
-,      { nome: 'Baixio', uf: 'CE', ibge: '2301802' }
-,      { nome: 'Baldim', uf: 'MG', ibge: '3105004' }
-,      { nome: 'Baliza', uf: 'GO', ibge: '5203104' }
-,      { nome: 'Balneário Arroio do Silva', uf: 'SC', ibge: '4201950' }
-,      { nome: 'Balneário Camboriú', uf: 'SC', ibge: '4202008' }
-,      { nome: 'Balneário Pinhal', uf: 'RS', ibge: '4301636' }
-,      { nome: 'Balneário Rincão', uf: 'SC', ibge: '4220000' }
-,      { nome: 'Balsas', uf: 'MA', ibge: '2101400' }
-,      { nome: 'Bambuí', uf: 'MG', ibge: '3105103' }
-,      { nome: 'Bananal', uf: 'SP', ibge: '3504909' }
-,      { nome: 'Bandeira', uf: 'MG', ibge: '3105202' }
-,      { nome: 'Bandeirante', uf: 'SC', ibge: '4202081' }
-,      { nome: 'Bandeirantes', uf: 'MS', ibge: '5001508' }
-,      { nome: 'Bandeirantes do Tocantins', uf: 'TO', ibge: '1703057' }
-,      { nome: 'Banzaê', uf: 'BA', ibge: '2902658' }
-,      { nome: 'Barcelona', uf: 'RN', ibge: '2401503' }
-,      { nome: 'Barra Funda', uf: 'RS', ibge: '4301958' }
-,      { nome: 'Barra Longa', uf: 'MG', ibge: '3105707' }
-,      { nome: 'Barra de Santa Rosa', uf: 'PB', ibge: '2501609' }
-,      { nome: 'Barra de São Francisco', uf: 'ES', ibge: '3200904' }
-,      { nome: 'Barra de São Miguel', uf: 'AL', ibge: '2700607' }
-,      { nome: 'Barra do Chapéu', uf: 'SP', ibge: '3505351' }
-,      { nome: 'Barra do Corda', uf: 'MA', ibge: '2101608' }
-,      { nome: 'Barra do Jacaré', uf: 'PR', ibge: '4102703' }
-,      { nome: 'Barra do Mendes', uf: 'BA', ibge: '2903003' }
-,      { nome: 'Barra do Rio Azul', uf: 'RS', ibge: '4301925' }
-,      { nome: 'Barra do Rocha', uf: 'BA', ibge: '2903102' }
-,      { nome: 'Barra do Turvo', uf: 'SP', ibge: '3505401' }
-,      { nome: 'Barras', uf: 'PI', ibge: '2201200' }
-,      { nome: 'Barrinha', uf: 'SP', ibge: '505609' }
-,      { nome: 'Barro', uf: 'CE', ibge: '2302008' }
-,      { nome: 'Barroso', uf: 'MG', ibge: '3105905' }
-,      { nome: 'Barão', uf: 'RS', ibge: '4301651' }
-,      { nome: 'Barão de Antonina', uf: 'SP', ibge: '3505005' }
-,      { nome: 'Barão de Cotegipe', uf: 'RS', ibge: '4301701' }
-,      { nome: 'Barão do Monte Alto', uf: 'MG', ibge: '3105509' }
-,      { nome: 'Barão do Triunfo', uf: 'RS', ibge: '4301750' }
-,      { nome: 'Batalha', uf: 'AL', ibge: '2700706' }
-,      { nome: 'Batatais', uf: 'SP', ibge: '3505906' }
-,      { nome: 'Batayporã', uf: 'MS', ibge: '5002001' }
-,      { nome: 'Baía Formosa', uf: 'RN', ibge: '2401404' }
-,      { nome: 'Bela Vista da Caroba', uf: 'PR', ibge: '4102752' }
-,      { nome: 'Bela Vista de Goiás', uf: 'GO', ibge: '5203302' }
-,      { nome: 'Bela Vista do Piauí', uf: 'PI', ibge: '2201556' }
-,      { nome: 'Belo Campo', uf: 'BA', ibge: '2903508' }
-,      { nome: 'Belo Horizonte', uf: 'MG', ibge: '3106200' }
-,      { nome: 'Belo Monte', uf: 'AL', ibge: '2700904' }
-,      { nome: 'Belo Oriente', uf: 'MG', ibge: '3106309' }
-,      { nome: 'Belém', uf: 'AL', ibge: '2700805' }
-,      { nome: 'Belém do São Francisco', uf: 'PE', ibge: '2601607' }
-,      { nome: 'Beneditinos', uf: 'PI', ibge: '2201606' }
-,      { nome: 'Benedito Leite', uf: 'MA', ibge: '2101806' }
-,      { nome: 'Benevides', uf: 'PA', ibge: '1501501' }
-,      { nome: 'Benjamin Constant do Sul', uf: 'RS', ibge: '4302055' }
-,      { nome: 'Bento Fernandes', uf: 'RN', ibge: '2401602' }
-,      { nome: 'Bento Gonçalves', uf: 'RS', ibge: '4302105' }
-,      { nome: 'Bequimão', uf: 'MA', ibge: '2101905' }
-,      { nome: 'Berilo', uf: 'MG', ibge: '3106507' }
-,      { nome: 'Berizal', uf: 'MG', ibge: '3106655' }
-,      { nome: 'Bernardino Batista', uf: 'PB', ibge: '2502052' }
-,      { nome: 'Bernardino de Campos', uf: 'SP', ibge: '3506300' }
-,      { nome: 'Bertolínia', uf: 'PI', ibge: '2201705' }
-,      { nome: 'Betim', uf: 'MG', ibge: '3106705' }
-,      { nome: 'Betânia', uf: 'PE', ibge: '2601805' }
-,      { nome: 'Birigui', uf: 'SP', ibge: '3506508' }
-,      { nome: 'Biritinga', uf: 'BA', ibge: '2903607' }
-,      { nome: 'Bituruna', uf: 'PR', ibge: '4102901' }
-,      { nome: 'Boa Esperança do Iguaçu', uf: 'PR', ibge: '4103024' }
-,      { nome: 'Boa Hora', uf: 'PI', ibge: '2201770' }
-,      { nome: 'Boa Nova', uf: 'BA', ibge: '2903706' }
-,      { nome: 'Boa Ventura', uf: 'PB', ibge: '2502102' }
-,      { nome: 'Boa Vista', uf: 'RR', ibge: '1400100' }
-,      { nome: 'Boa Vista da Aparecida', uf: 'PR', ibge: '4103057' }
-,      { nome: 'Boa Vista das Missões', uf: 'RS', ibge: '4302154' }
-,      { nome: 'Boa Vista do Incra', uf: 'RS', ibge: '4302238' }
-,      { nome: 'Boa Vista do Sul', uf: 'RS', ibge: '4302253' }
-,      { nome: 'Boca da Mata', uf: 'AL', ibge: '2701001' }
-,      { nome: 'Bom Jesus da Penha', uf: 'MG', ibge: '3107604' }
-,      { nome: 'Bom Jesus das Selvas', uf: 'MA', ibge: '2102036' }
-,      { nome: 'Bom Jesus do Itabapoana', uf: 'RJ', ibge: '3300605' }
-,      { nome: 'Bom Jesus do Tocantins', uf: 'PA', ibge: '1501576' }
-,      { nome: 'Bom Jesus dos Perdões', uf: 'SP', ibge: '3507100' }
-,      { nome: 'Bom Progresso', uf: 'RS', ibge: '4302378' }
-,      { nome: 'Bom Sucesso', uf: 'MG', ibge: '3108008' }
-,      { nome: 'Bom Sucesso', uf: 'PR', ibge: '4103206' }
-,      { nome: 'Bonfim', uf: 'RR', ibge: '1400159' }
-,      { nome: 'Bonfim do Piauí', uf: 'PI', ibge: '2201929' }
-,      { nome: 'Bonfinópolis de Minas', uf: 'MG', ibge: '3108206' }
-,      { nome: 'Bonito', uf: 'PA', ibge: '1501600' }
-,      { nome: 'Bonito de Santa Fé', uf: 'PB', ibge: '2502409' }
-,      { nome: 'Bonópolis', uf: 'GO', ibge: '5203575' }
-,      { nome: 'Boqueirão do Piauí', uf: 'PI', ibge: '2201945' }
-,      { nome: 'Boquira', uf: 'BA', ibge: '2904100' }
-,      { nome: 'Boracéia', uf: 'SP', ibge: '3507308' }
-,      { nome: 'Borba', uf: 'AM', ibge: '1300805' }
-,      { nome: 'Borborema', uf: 'SP', ibge: '3507407' }
-,      { nome: 'Borebi', uf: 'SP', ibge: '3507456' }
-,      { nome: 'Botucatu', uf: 'SP', ibge: '3507506' }
-,      { nome: 'Botuverá', uf: 'SC', ibge: '4202701' }
-,      { nome: 'Braganey', uf: 'PR', ibge: '4103354' }
-,      { nome: 'Bragança', uf: 'PA', ibge: '1501709' }
-,      { nome: 'Brasileira', uf: 'PI', ibge: '2201960' }
-,      { nome: 'Brasilândia de Minas', uf: 'MG', ibge: '3108552' }
-,      { nome: 'Brasilândia do Sul', uf: 'PR', ibge: '4103370' }
-,      { nome: 'Brasília de Minas', uf: 'MG', ibge: '3108602' }
-,      { nome: 'Braço do Norte', uf: 'SC', ibge: '4202800' }
-,      { nome: 'Brejetuba', uf: 'ES', ibge: '3201159' }
-,      { nome: 'Brejo Grande do Araguaia', uf: 'PA', ibge: '1501758' }
-,      { nome: 'Brejolândia', uf: 'BA', ibge: '2904407' }
-,      { nome: 'Brejão', uf: 'PE', ibge: '2602407' }
-,      { nome: 'Brochier', uf: 'RS', ibge: '4302659' }
-,      { nome: 'Brotas', uf: 'SP', ibge: '3507902' }
-,      { nome: 'Brumadinho', uf: 'MG', ibge: '3109006' }
-,      { nome: 'Brunópolis', uf: 'SC', ibge: '4202875' }
-,      { nome: 'Brusque', uf: 'SC', ibge: '4202909' }
-,      { nome: 'Bujari', uf: 'AC', ibge: '1200138' }
-,      { nome: 'Bujaru', uf: 'PA', ibge: '1501907' }
-,      { nome: 'Buri', uf: 'SP', ibge: '3508009' }
-,      { nome: 'Buriti Alegre', uf: 'GO', ibge: '5203906' }
-,      { nome: 'Buritinópolis', uf: 'GO', ibge: '5203962' }
-,      { nome: 'Buritirama', uf: 'BA', ibge: '2904753' }
-,      { nome: 'Buritizeiro', uf: 'MG', ibge: '3109402' }
-,      { nome: 'Butiá', uf: 'RS', ibge: '4302709' }
-,      { nome: 'Caapiranga', uf: 'AM', ibge: '1300839' }
-,      { nome: 'Caatiba', uf: 'BA', ibge: '2904803' }
-,      { nome: 'Cabeceiras do Piauí', uf: 'PI', ibge: '2202059' }
-,      { nome: 'Cabixi', uf: 'RO', ibge: '1100031' }
-,      { nome: 'Cacequi', uf: 'RS', ibge: '4302907' }
-,      { nome: 'Cachoeira Dourada', uf: 'MG', ibge: '3109808' }
-,      { nome: 'Cachoeira Paulista', uf: 'SP', ibge: '3508603' }
-,      { nome: 'Cachoeira de Goiás', uf: 'GO', ibge: '5204201' }
-,      { nome: 'Cachoeira de Pajeú', uf: 'MG', ibge: '3102704' }
-,      { nome: 'Cachoeira do Piriá', uf: 'PA', ibge: '1501956' }
-,      { nome: 'Cachoeirinha', uf: 'TO', ibge: '1703826' }
-,      { nome: 'Cachoeiro de Itapemirim', uf: 'ES', ibge: '3201209' }
-,      { nome: 'Cacique Doble', uf: 'RS', ibge: '4303202' }
-,      { nome: 'Caculé', uf: 'BA', ibge: '2905008' }
-,      { nome: 'Caetanópolis', uf: 'MG', ibge: '3109907' }
-,      { nome: 'Caetés', uf: 'PE', ibge: '2603207' }
-,      { nome: 'Caiana', uf: 'MG', ibge: '3110103' }
-,      { nome: 'Caiapônia', uf: 'GO', ibge: '5204409' }
-,      { nome: 'Caiuá', uf: 'SP', ibge: '3509106' }
-,      { nome: 'Caiçara do Rio do Vento', uf: 'RN', ibge: '2401909' }
-,      { nome: 'Cajazeiras', uf: 'PB', ibge: '2503704' }
-,      { nome: 'Caldas', uf: 'MG', ibge: '3110301' }
-,      { nome: 'Caldas Brandão', uf: 'PB', ibge: '2503803' }
-,      { nome: 'Caldazinha', uf: 'GO', ibge: '5204557' }
-,      { nome: 'Caldeirão Grande', uf: 'BA', ibge: '2905503' }
-,      { nome: 'Calçado', uf: 'PE', ibge: '2603306' }
-,      { nome: 'Camacho', uf: 'MG', ibge: '3110400' }
-,      { nome: 'Camalaú', uf: 'PB', ibge: '2503902' }
-,      { nome: 'Camamu', uf: 'BA', ibge: '2905800' }
-,      { nome: 'Cambuci', uf: 'RJ', ibge: '3300902' }
-,      { nome: 'Cambuquira', uf: 'MG', ibge: '3110707' }
-,      { nome: 'Cambé', uf: 'PR', ibge: '4103701' }
-,      { nome: 'Cametá', uf: 'PA', ibge: '1502103' }
-,      { nome: 'Campanha', uf: 'MG', ibge: '3110905' }
-,      { nome: 'Campestre de Goiás', uf: 'GO', ibge: '5204607' }
-,      { nome: 'Campina da Lagoa', uf: 'PR', ibge: '4103909' }
-,      { nome: 'Campina do Monte Alegre', uf: 'SP', ibge: '3509452' }
-,      { nome: 'Campina do Simão', uf: 'PR', ibge: '4103958' }
-,      { nome: 'Campo Alegre', uf: 'AL', ibge: '2701407' }
-,      { nome: 'Campo Alegre de Goiás', uf: 'GO', ibge: '5204805' }
-,      { nome: 'Campo Alegre de Lourdes', uf: 'BA', ibge: '2905909' }
-,      { nome: 'Campo Belo', uf: 'MG', ibge: '3111200' }
-,      { nome: 'Campo Belo do Sul', uf: 'SC', ibge: '4203402' }
-,      { nome: 'Campo Erê', uf: 'SC', ibge: '4203501' }
-,      { nome: 'Campo Grande do Piauí', uf: 'PI', ibge: '2202133' }
-,      { nome: 'Campo do Meio', uf: 'MG', ibge: '3111309' }
-,      { nome: 'Campos Altos', uf: 'MG', ibge: '3111507' }
-,      { nome: 'Campos Novos', uf: 'SC', ibge: '4203600' }
-,      { nome: 'Campos Sales', uf: 'CE', ibge: '2302701' }
-,      { nome: 'Campos de Júlio', uf: 'MT', ibge: '5102686' }
-,      { nome: 'Campos do Jordão', uf: 'SP', ibge: '3509700' }
-,      { nome: 'Cana Verde', uf: 'MG', ibge: '3111903' }
-,      { nome: 'Cananéia', uf: 'SP', ibge: '3509908' }
-,      { nome: 'Canapi', uf: 'AL', ibge: '2701605' }
-,      { nome: 'Canarana', uf: 'MT', ibge: '5102702' }
-,      { nome: 'Canarana', uf: 'BA', ibge: '2906204' }
-,      { nome: 'Canas', uf: 'SP', ibge: '3509957' }
-,      { nome: 'Canavieira', uf: 'PI', ibge: '2202251' }
-,      { nome: 'Candeal', uf: 'BA', ibge: '2906402' }
-,      { nome: 'Candeias', uf: 'MG', ibge: '3112000' }
-,      { nome: 'Candeias do Jamari', uf: 'RO', ibge: '1100809' }
-,      { nome: 'Canela', uf: 'RS', ibge: '4304408' }
-,      { nome: 'Canguaretama', uf: 'RN', ibge: '2402204' }
-,      { nome: 'Canhoba', uf: 'SE', ibge: '2801108' }
-,      { nome: 'Cantagalo', uf: 'MG', ibge: '3112059' }
-,      { nome: 'Canto do Buriti', uf: 'PI', ibge: '2202307' }
-,      { nome: 'Canudos do Vale', uf: 'RS', ibge: '4304614' }
-,      { nome: 'Canápolis', uf: 'BA', ibge: '2906105' }
-,      { nome: 'Capanema', uf: 'PA', ibge: '1502202' }
-,      { nome: 'Caparaó', uf: 'MG', ibge: '3112109' }
-,      { nome: 'Capela Nova', uf: 'MG', ibge: '3112208' }
-,      { nome: 'Capela do Alto', uf: 'SP', ibge: '3510302' }
-,      { nome: 'Capela do Alto Alegre', uf: 'BA', ibge: '2906857' }
-,      { nome: 'Capetinga', uf: 'MG', ibge: '3112406' }
-,      { nome: 'Capinzal', uf: 'SC', ibge: '4203907' }
-,      { nome: 'Capitão', uf: 'RS', ibge: '4304697' }
-,      { nome: 'Capitão de Campos', uf: 'PI', ibge: '2202406' }
-,      { nome: 'Capivari de Baixo', uf: 'SC', ibge: '4203956' }
-,      { nome: 'Capivari do Sul', uf: 'RS', ibge: '4304671' }
-,      { nome: 'Capoeiras', uf: 'PE', ibge: '2603801' }
-,      { nome: 'Capão Bonito', uf: 'SP', ibge: '3510203' }
-,      { nome: 'Capão Bonito do Sul', uf: 'RS', ibge: '4304622' }
-,      { nome: 'Capão da Canoa', uf: 'RS', ibge: '4304630' }
-,      { nome: 'Caracaraí', uf: 'RR', ibge: '1400209' }
-,      { nome: 'Caracol', uf: 'MS', ibge: '5002803' }
-,      { nome: 'Caranaíba', uf: 'MG', ibge: '3113107' }
-,      { nome: 'Carandaí', uf: 'MG', ibge: '3113206' }
-,      { nome: 'Carangola', uf: 'MG', ibge: '3113305' }
-,      { nome: 'Caravelas', uf: 'BA', ibge: '2906907' }
-,      { nome: 'Caraá', uf: 'RS', ibge: '4304713' }
-,      { nome: 'Caraí', uf: 'MG', ibge: '3113008' }
-,      { nome: 'Caraúbas', uf: 'PB', ibge: '2504074' }
-,      { nome: 'Caraúbas do Piauí', uf: 'PI', ibge: '2202539' }
-,      { nome: 'Carbonita', uf: 'MG', ibge: '3113503' }
-,      { nome: 'Careaçu', uf: 'MG', ibge: '3113602' }
-,      { nome: 'Careiro da Várzea', uf: 'AM', ibge: '1301159' }
-,      { nome: 'Caririaçu', uf: 'CE', ibge: '2303204' }
-,      { nome: 'Cariré', uf: 'CE', ibge: '2303105' }
-,      { nome: 'Carlos Chagas', uf: 'MG', ibge: '3113701' }
-,      { nome: 'Carlos Gomes', uf: 'RS', ibge: '4304853' }
-,      { nome: 'Carmo da Cachoeira', uf: 'MG', ibge: '3113909' }
-,      { nome: 'Carmo da Mata', uf: 'MG', ibge: '3114006' }
-,      { nome: 'Carmo de Minas', uf: 'MG', ibge: '3114105' }
-,      { nome: 'Carmolândia', uf: 'TO', ibge: '1703883' }
-,      { nome: 'Carmésia', uf: 'MG', ibge: '3113800' }
-,      { nome: 'Carnaubais', uf: 'RN', ibge: '2402501' }
-,      { nome: 'Carnaubeira da Penha', uf: 'PE', ibge: '2603926' }
-,      { nome: 'Carnaíba', uf: 'PE', ibge: '2603900' }
-,      { nome: 'Carnaúba dos Dantas', uf: 'RN', ibge: '2402402' }
-,      { nome: 'Carneiros', uf: 'AL', ibge: '2701803' }
-,      { nome: 'Caroebe', uf: 'RR', ibge: '1400233' }
-,      { nome: 'Carrancas', uf: 'MG', ibge: '3114600' }
-,      { nome: 'Carutapera', uf: 'MA', ibge: '2102903' }
-,      { nome: 'Casa Grande', uf: 'MG', ibge: '3114907' }
-,      { nome: 'Cascalho Rico', uf: 'MG', ibge: '3115003' }
-,      { nome: 'Casimiro de Abreu', uf: 'RJ', ibge: '3301306' }
-,      { nome: 'Casinhas', uf: 'PE', ibge: '2604155' }
-,      { nome: 'Cassilândia', uf: 'MS', ibge: '5002902' }
-,      { nome: 'Castanhal', uf: 'PA', ibge: '1502400' }
-,      { nome: 'Castelo', uf: 'ES', ibge: '3201407' }
-,      { nome: 'Castelândia', uf: 'GO', ibge: '5205059' }
-,      { nome: 'Catanduvas', uf: 'SC', ibge: '4204004' }
-,      { nome: 'Catarina', uf: 'CE', ibge: '2303600' }
-,      { nome: 'Catas Altas da Noruega', uf: 'MG', ibge: '3115409' }
-,      { nome: 'Catiguá', uf: 'SP', ibge: '3511201' }
-,      { nome: 'Catingueira', uf: 'PB', ibge: '2504207' }
-,      { nome: 'Catolândia', uf: 'BA', ibge: '2907400' }
-,      { nome: 'Catuji', uf: 'MG', ibge: '3115458' }
-,      { nome: 'Catunda', uf: 'CE', ibge: '2303659' }
-,      { nome: 'Caturaí', uf: 'GO', ibge: '5205208' }
-,      { nome: 'Catuti', uf: 'MG', ibge: '3115474' }
-,      { nome: 'Cavalcante', uf: 'GO', ibge: '5205307' }
-,      { nome: 'Caxias', uf: 'MA', ibge: '2103000' }
-,      { nome: 'Caxingó', uf: 'PI', ibge: '2202653' }
-,      { nome: 'Caçador', uf: 'SC', ibge: '4203006' }
-,      { nome: 'Caçapava do Sul', uf: 'RS', ibge: '4302808' }
-,      { nome: 'Cedral', uf: 'SP', ibge: '3511300' }
-,      { nome: 'Cedral', uf: 'MA', ibge: '2103109' }
-,      { nome: 'Cedro', uf: 'CE', ibge: '2303808' }
-,      { nome: 'Cedro de São João', uf: 'SE', ibge: '2801603' }
-,      { nome: 'Centenário', uf: 'RS', ibge: '4305116' }
-,      { nome: 'Centenário do Sul', uf: 'PR', ibge: '4105102' }
-,      { nome: 'Central de Minas', uf: 'MG', ibge: '3115706' }
-,      { nome: 'Centralina', uf: 'MG', ibge: '3115805' }
-,      { nome: 'Centro do Guilherme', uf: 'MA', ibge: '2103158' }
-,      { nome: 'Ceres', uf: 'GO', ibge: '5205406' }
-,      { nome: 'Cerqueira César', uf: 'SP', ibge: '3511409' }
-,      { nome: 'Cerquilho', uf: 'SP', ibge: '3511508' }
-,      { nome: 'Cerrito', uf: 'RS', ibge: '4305124' }
-,      { nome: 'Cerro Azul', uf: 'PR', ibge: '4105201' }
-,      { nome: 'Cerro Corá', uf: 'RN', ibge: '2402709' }
-,      { nome: 'Cerro Grande', uf: 'RS', ibge: '4305157' }
-,      { nome: 'Cerro Grande do Sul', uf: 'RS', ibge: '4305173' }
-,      { nome: 'Cerro Largo', uf: 'RS', ibge: '4305207' }
-,      { nome: 'Cesário Lange', uf: 'SP', ibge: '3511607' }
-,      { nome: 'Chapada', uf: 'RS', ibge: '4305306' }
-,      { nome: 'Chapada do Norte', uf: 'MG', ibge: '3116100' }
-,      { nome: 'Chapadão do Céu', uf: 'GO', ibge: '5205471' }
-,      { nome: 'Charqueada', uf: 'SP', ibge: '3511706' }
-,      { nome: 'Charrua', uf: 'RS', ibge: '4305371' }
-,      { nome: 'Chaval', uf: 'CE', ibge: '2303907' }
-,      { nome: 'Chupinguaia', uf: 'RO', ibge: '1100924' }
-,      { nome: 'Cianorte', uf: 'PR', ibge: '4105508' }
-,      { nome: 'Cipó', uf: 'BA', ibge: '2907905' }
-,      { nome: 'Claraval', uf: 'MG', ibge: '3116407' }
-,      { nome: 'Cocal', uf: 'PI', ibge: '2202703' }
-,      { nome: 'Cocal de Telha', uf: 'PI', ibge: '2202711' }
-,      { nome: 'Cocal do Sul', uf: 'SC', ibge: '4204251' }
-,      { nome: 'Cocalzinho de Goiás', uf: 'GO', ibge: '5205513' }
-,      { nome: 'Codajás', uf: 'AM', ibge: '1301308' }
-,      { nome: 'Codó', uf: 'MA', ibge: '2103307' }
-,      { nome: 'Coité do Nóia', uf: 'AL', ibge: '2702009' }
-,      { nome: 'Colatina', uf: 'ES', ibge: '3201506' }
-,      { nome: 'Colina', uf: 'SP', ibge: '3512001' }
-,      { nome: 'Colinas', uf: 'RS', ibge: '4305587' }
-,      { nome: 'Colinas do Sul', uf: 'GO', ibge: '5205521' }
-,      { nome: 'Colombo', uf: 'PR', ibge: '4105805' }
-,      { nome: 'Coluna', uf: 'MG', ibge: '3116803' }
-,      { nome: 'Colômbia', uf: 'SP', ibge: '3512100' }
-,      { nome: 'Colônia Leopoldina', uf: 'AL', ibge: '2702108' }
-,      { nome: 'Comendador Gomes', uf: 'MG', ibge: '3116902' }
-,      { nome: 'Comodoro', uf: 'MT', ibge: '5103304' }
-,      { nome: 'Conceição da Barra', uf: 'ES', ibge: '3201605' }
-,      { nome: 'Conceição da Barra de Minas', uf: 'MG', ibge: '3115201' }
-,      { nome: 'Conceição do Coité', uf: 'BA', ibge: '2908408' }
-,      { nome: 'Conceição do Rio Verde', uf: 'MG', ibge: '3117702' }
-,      { nome: 'Conceição dos Ouros', uf: 'MG', ibge: '3117801' }
-,      { nome: 'Concórdia do Pará', uf: 'PA', ibge: '1502756' }
-,      { nome: 'Conde', uf: 'PB', ibge: '2504603' }
-,      { nome: 'Condeúba', uf: 'BA', ibge: '2908705' }
-,      { nome: 'Congo', uf: 'PB', ibge: '2504702' }
-,      { nome: 'Congonhal', uf: 'MG', ibge: '3117900' }
-,      { nome: 'Congonhas', uf: 'MG', ibge: '3118007' }
-,      { nome: 'Congonhas do Norte', uf: 'MG', ibge: '3118106' }
-,      { nome: 'Conquista', uf: 'MG', ibge: '3118205' }
-,      { nome: 'Constantina', uf: 'RS', ibge: '4305801' }
-,      { nome: 'Contendas do Sincorá', uf: 'BA', ibge: '2908804' }
-,      { nome: 'Coqueiral', uf: 'MG', ibge: '3118700' }
-,      { nome: 'Coração de Maria', uf: 'BA', ibge: '2908903' }
-,      { nome: 'Cordeiros', uf: 'BA', ibge: '2909000' }
-,      { nome: 'Cordilheira Alta', uf: 'SC', ibge: '4204350' }
-,      { nome: 'Cordislândia', uf: 'MG', ibge: '3119005' }
-,      { nome: 'Cornélio Procópio', uf: 'PR', ibge: '4106407' }
-,      { nome: 'Coronel Bicaco', uf: 'RS', ibge: '4305900' }
-,      { nome: 'Coronel Fabriciano', uf: 'MG', ibge: '3119401' }
-,      { nome: 'Coronel Freitas', uf: 'SC', ibge: '4204400' }
-,      { nome: 'Coronel Murta', uf: 'MG', ibge: '3119500' }
-,      { nome: 'Coronel Xavier Chaves', uf: 'MG', ibge: '3119708' }
-,      { nome: 'Correntes', uf: 'PE', ibge: '2604700' }
-,      { nome: 'Correntina', uf: 'BA', ibge: '2909307' }
-,      { nome: 'Corumbataí do Sul', uf: 'PR', ibge: '4106555' }
-,      { nome: 'Corumbaíba', uf: 'GO', ibge: '5205901' }
-,      { nome: 'Cosmópolis', uf: 'SP', ibge: '3512803' }
-,      { nome: 'Cotiporã', uf: 'RS', ibge: '4305959' }
-,      { nome: 'Couto Magalhães', uf: 'TO', ibge: '1706001' }
-,      { nome: 'Coxilha', uf: 'RS', ibge: '4305975' }
-,      { nome: 'Coxim', uf: 'MS', ibge: '5003306' }
-,      { nome: 'Cravolândia', uf: 'BA', ibge: '2909505' }
-,      { nome: 'Craíbas', uf: 'AL', ibge: '2702355' }
-,      { nome: 'Criciúma', uf: 'SC', ibge: '4204608' }
-,      { nome: 'Cristais', uf: 'MG', ibge: '3120201' }
-,      { nome: 'Cristais Paulista', uf: 'SP', ibge: '3513207' }
-,      { nome: 'Cristino Castro', uf: 'PI', ibge: '2203107' }
-,      { nome: 'Crisólita', uf: 'MG', ibge: '3120151' }
-,      { nome: 'Crixás', uf: 'GO', ibge: '5206404' }
-,      { nome: 'Croatá', uf: 'CE', ibge: '2304236' }
-,      { nome: 'Cromínia', uf: 'GO', ibge: '5206503' }
-,      { nome: 'Cruzaltense', uf: 'RS', ibge: '4306130' }
-,      { nome: 'Cruzeiro', uf: 'SP', ibge: '3513405' }
-,      { nome: 'Cruzeiro da Fortaleza', uf: 'MG', ibge: '3120706' }
-,      { nome: 'Cruzeiro do Sul', uf: 'PR', ibge: '4106704' }
-,      { nome: 'Cruzeiro do Sul', uf: 'RS', ibge: '4306205' }
-,      { nome: 'Cruzeta', uf: 'RN', ibge: '2403004' }
-,      { nome: 'Cubati', uf: 'PB', ibge: '2505006' }
-,      { nome: 'Cumari', uf: 'GO', ibge: '5206602' }
-,      { nome: 'Cumaru do Norte', uf: 'PA', ibge: '1502764' }
-,      { nome: 'Cunha', uf: 'SP', ibge: '3513603' }
-,      { nome: 'Curaçá', uf: 'BA', ibge: '2909901' }
-,      { nome: 'Curitiba', uf: 'PR', ibge: '4106902' }
-,      { nome: 'Curral de Dentro', uf: 'MG', ibge: '3120870' }
-,      { nome: 'Curralinho', uf: 'PA', ibge: '1502806' }
-,      { nome: 'Curralinhos', uf: 'PI', ibge: '2203255' }
-,      { nome: 'Curuá', uf: 'PA', ibge: '1502855' }
-,      { nome: 'Curvelo', uf: 'MG', ibge: '3120904' }
-,      { nome: 'Curvelândia', uf: 'MT', ibge: '5103437' }
-,      { nome: 'Custódia', uf: 'PE', ibge: '2605103' }
-,      { nome: 'Cândido Sales', uf: 'BA', ibge: '2906709' }
-,      { nome: 'Córrego Fundo', uf: 'MG', ibge: '3119955' }
-,      { nome: 'Córrego Novo', uf: 'MG', ibge: '3120003' }
-,      { nome: 'Damianópolis', uf: 'GO', ibge: '5206701' }
-,      { nome: 'Damião', uf: 'PB', ibge: '2505352' }
-,      { nome: 'Damolândia', uf: 'GO', ibge: '5206800' }
-,      { nome: 'Datas', uf: 'MG', ibge: '3121001' }
-,      { nome: 'Delta', uf: 'MG', ibge: '3121258' }
-,      { nome: 'Derrubadas', uf: 'RS', ibge: '4306320' }
-,      { nome: 'Descalvado', uf: 'SP', ibge: '3513702' }
-,      { nome: 'Descanso', uf: 'SC', ibge: '4204905' }
-,      { nome: 'Descoberto', uf: 'MG', ibge: '3121308' }
-,      { nome: 'Desterro', uf: 'PB', ibge: '2505402' }
-,      { nome: 'Desterro de Entre Rios', uf: 'MG', ibge: '3121407' }
-,      { nome: 'Diamante do Norte', uf: 'PR', ibge: '4107108' }
-,      { nome: 'Diamantina', uf: 'MG', ibge: '3121605' }
-,      { nome: 'Dionísio Cerqueira', uf: 'SC', ibge: '4205001' }
-,      { nome: 'Diorama', uf: 'GO', ibge: '5207105' }
-,      { nome: 'Divino', uf: 'MG', ibge: '3122009' }
-,      { nome: 'Divino das Laranjeiras', uf: 'MG', ibge: '3122108' }
-,      { nome: 'Divino de São Lourenço', uf: 'ES', ibge: '3201803' }
-,      { nome: 'Divinolândia de Minas', uf: 'MG', ibge: '3122207' }
-,      { nome: 'Divinópolis', uf: 'MG', ibge: '3122306' }
-,      { nome: 'Divinópolis de Goiás', uf: 'GO', ibge: '5208301' }
-,      { nome: 'Divinópolis do Tocantins', uf: 'TO', ibge: '1707108' }
-,      { nome: 'Divisa Alegre', uf: 'MG', ibge: '3122355' }
-,      { nome: 'Divisa Nova', uf: 'MG', ibge: '3122405' }
-,      { nome: 'Divisópolis', uf: 'MG', ibge: '3122454' }
-,      { nome: 'Dois Irmãos das Missões', uf: 'RS', ibge: '4306429' }
-,      { nome: 'Dois Irmãos do Buriti', uf: 'MS', ibge: '5003488' }
-,      { nome: 'Dom Aquino', uf: 'MT', ibge: '5103601' }
-,      { nome: 'Dom Bosco', uf: 'MG', ibge: '3122470' }
-,      { nome: 'Dom Feliciano', uf: 'RS', ibge: '4306502' }
-,      { nome: 'Dom Inocêncio', uf: 'PI', ibge: '2203453' }
-,      { nome: 'Dom Joaquim', uf: 'MG', ibge: '3122603' }
-,      { nome: 'Dom Pedro de Alcântara', uf: 'RS', ibge: '4306551' }
-,      { nome: 'Dona Euzébia', uf: 'MG', ibge: '3122900' }
-,      { nome: 'Dores de Campos', uf: 'MG', ibge: '3123007' }
-,      { nome: 'Dores de Guanhães', uf: 'MG', ibge: '3123106' }
-,      { nome: 'Doresópolis', uf: 'MG', ibge: '3123403' }
-,      { nome: 'Doutor Camargo', uf: 'PR', ibge: '4107306' }
-,      { nome: 'Doutor Ricardo', uf: 'RS', ibge: '4306759' }
-,      { nome: 'Doutor Ulysses', uf: 'PR', ibge: '4128633' }
-,      { nome: 'Doverlândia', uf: 'GO', ibge: '5207253' }
-,      { nome: 'Durandé', uf: 'MG', ibge: '3123528' }
-,      { nome: 'Dário Meira', uf: 'BA', ibge: '2910008' }
-,      { nome: 'Eldorado', uf: 'SP', ibge: '3514809' }
-,      { nome: 'Eldorado do Carajás', uf: 'PA', ibge: '1502954' }
-,      { nome: 'Elesbão Veloso', uf: 'PI', ibge: '2203503' }
-,      { nome: 'Elias Fausto', uf: 'SP', ibge: '3514908' }
-,      { nome: 'Elisiário', uf: 'SP', ibge: '3514924' }
-,      { nome: 'Elói Mendes', uf: 'MG', ibge: '3123601' }
-,      { nome: 'Embaúba', uf: 'SP', ibge: '3514957' }
-,      { nome: 'Encantado', uf: 'RS', ibge: '4306809' }
-,      { nome: 'Engenheiro Beltrão', uf: 'PR', ibge: '4107504' }
-,      { nome: 'Engenheiro Navarro', uf: 'MG', ibge: '3123809' }
-,      { nome: 'Engenheiro Paulo de Frontin', uf: 'RJ', ibge: '3301801' }
-,      { nome: 'Engenho Velho', uf: 'RS', ibge: '4306924' }
-,      { nome: 'Entre Rios', uf: 'SC', ibge: '4205175' }
-,      { nome: 'Entre Rios de Minas', uf: 'MG', ibge: '3123908' }
-,      { nome: 'Entre Rios do Oeste', uf: 'PR', ibge: '4107538' }
-,      { nome: 'Entre Rios do Sul', uf: 'RS', ibge: '4306957' }
-,      { nome: 'Erebango', uf: 'RS', ibge: '4306973' }
-,      { nome: 'Erechim', uf: 'RS', ibge: '4307005' }
-,      { nome: 'Ernestina', uf: 'RS', ibge: '4307054' }
-,      { nome: 'Erval Grande', uf: 'RS', ibge: '4307203' }
-,      { nome: 'Esperantinópolis', uf: 'MA', ibge: '2104008' }
-,      { nome: 'Esperança do Sul', uf: 'RS', ibge: '4307450' }
-,      { nome: 'Espumoso', uf: 'RS', ibge: '4307500' }
-,      { nome: 'Espírito Santo', uf: 'RN', ibge: '2403509' }
-,      { nome: 'Espírito Santo do Dourado', uf: 'MG', ibge: '3124401' }
-,      { nome: 'Esteio', uf: 'RS', ibge: '4307708' }
-,      { nome: 'Estrela', uf: 'RS', ibge: '4307807' }
-,      { nome: 'Estrela de Alagoas', uf: 'AL', ibge: '2702553' }
-,      { nome: 'Estrela do Sul', uf: 'MG', ibge: '3124807' }
-,      { nome: 'Eunápolis', uf: 'BA', ibge: '2910727' }
-,      { nome: 'Fama', uf: 'MG', ibge: '3125200' }
-,      { nome: 'Faxinalzinho', uf: 'RS', ibge: '4308052' }
-,      { nome: 'Fazenda Nova', uf: 'GO', ibge: '5207600' }
-,      { nome: 'Fazenda Vilanova', uf: 'RS', ibge: '4308078' }
-,      { nome: 'Feira Grande', uf: 'AL', ibge: '2702603' }
-,      { nome: 'Feira da Mata', uf: 'BA', ibge: '2910776' }
-,      { nome: 'Felipe Guerra', uf: 'RN', ibge: '2403707' }
-,      { nome: 'Felisburgo', uf: 'MG', ibge: '3125606' }
-,      { nome: 'Feliz Deserto', uf: 'AL', ibge: '2702702' }
-,      { nome: 'Fernando Pedroza', uf: 'RN', ibge: '2403756' }
-,      { nome: 'Fernandópolis', uf: 'SP', ibge: '3515509' }
-,      { nome: 'Ferros', uf: 'MG', ibge: '3125903' }
-,      { nome: 'Figueira', uf: 'PR', ibge: '4107751' }
-,      { nome: 'Figueirópolis D\'Oeste', uf: 'MT', ibge: '5103809' }
-,      { nome: 'Filadélfia', uf: 'TO', ibge: '1707702' }
-,      { nome: 'Firmino Alves', uf: 'BA', ibge: '2910909' }
-,      { nome: 'Firminópolis', uf: 'GO', ibge: '5207808' }
-,      { nome: 'Flor da Serra do Sul', uf: 'PR', ibge: '4107850' }
-,      { nome: 'Flor do Sertão', uf: 'SC', ibge: '4205357' }
-,      { nome: 'Flores', uf: 'PE', ibge: '2605608' }
-,      { nome: 'Flores de Goiás', uf: 'GO', ibge: '5207907' }
-,      { nome: 'Flores do Piauí', uf: 'PI', ibge: '2203800' }
-,      { nome: 'Floresta', uf: 'PE', ibge: '2605707' }
-,      { nome: 'Floresta Azul', uf: 'BA', ibge: '2911006' }
-,      { nome: 'Florestal', uf: 'MG', ibge: '3126000' }
-,      { nome: 'Florestópolis', uf: 'PR', ibge: '4108007' }
-,      { nome: 'Floriano Peixoto', uf: 'RS', ibge: '4308250' }
-,      { nome: 'Florianópolis', uf: 'SC', ibge: '4205407' }
-,      { nome: 'Flórida', uf: 'PR', ibge: '4108106' }
-,      { nome: 'Formosa', uf: 'GO', ibge: '5208004' }
-,      { nome: 'Formosa do Rio Preto', uf: 'BA', ibge: '2911105' }
-,      { nome: 'Forquetinha', uf: 'RS', ibge: '4308433' }
-,      { nome: 'Forquilhinha', uf: 'SC', ibge: '4205456' }
-,      { nome: 'Fortuna de Minas', uf: 'MG', ibge: '3126406' }
-,      { nome: 'Francisco Ayres', uf: 'PI', ibge: '2204105' }
-,      { nome: 'Francisco Badaró', uf: 'MG', ibge: '3126505' }
-,      { nome: 'Francisco Dantas', uf: 'RN', ibge: '2403905' }
-,      { nome: 'Francisco Morato', uf: 'SP', ibge: '3516309' }
-,      { nome: 'Franciscópolis', uf: 'MG', ibge: '3126752' }
-,      { nome: 'Frecheirinha', uf: 'CE', ibge: '2304509' }
-,      { nome: 'Frederico Westphalen', uf: 'RS', ibge: '4308508' }
-,      { nome: 'Frei Gaspar', uf: 'MG', ibge: '3126802' }
-,      { nome: 'Frei Inocêncio', uf: 'MG', ibge: '3126901' }
-,      { nome: 'Frei Lagonegro', uf: 'MG', ibge: '3126950' }
-,      { nome: 'Frei Paulo', uf: 'SE', ibge: '2802304' }
-,      { nome: 'Fronteira', uf: 'MG', ibge: '3127008' }
-,      { nome: 'Fronteira dos Vales', uf: 'MG', ibge: '3127057' }
-,      { nome: 'Fronteiras', uf: 'PI', ibge: '2204303' }
-,      { nome: 'Frutuoso Gomes', uf: 'RN', ibge: '2404002' }
-,      { nome: 'Fátima', uf: 'BA', ibge: '2910750' }
-,      { nome: 'Fátima do Sul', uf: 'MS', ibge: '5003801' }
-,      { nome: 'Fênix', uf: 'PR', ibge: '4107702' }
-,      { nome: 'Gado Bravo', uf: 'PB', ibge: '2506251' }
-,      { nome: 'Galiléia', uf: 'MG', ibge: '3127305' }
-,      { nome: 'Galvão', uf: 'SC', ibge: '4205605' }
-,      { nome: 'Garrafão do Norte', uf: 'PA', ibge: '1503077' }
-,      { nome: 'Garça', uf: 'SP', ibge: '3516705' }
-,      { nome: 'Gaspar', uf: 'SC', ibge: '4205902' }
-,      { nome: 'Gaurama', uf: 'RS', ibge: '4308706' }
-,      { nome: 'General Carneiro', uf: 'MT', ibge: '5103908' }
-,      { nome: 'Glaucilândia', uf: 'MG', ibge: '3127354' }
-,      { nome: 'Glicério', uf: 'SP', ibge: '3517109' }
-,      { nome: 'Glória', uf: 'BA', ibge: '2911402' }
-,      { nome: 'Glória D\'Oeste', uf: 'MT', ibge: '5103957' }
-,      { nome: 'Goiandira', uf: 'GO', ibge: '5208509' }
-,      { nome: 'Goianá', uf: 'MG', ibge: '3127388' }
-,      { nome: 'Goiatuba', uf: 'GO', ibge: '5209101' }
-,      { nome: 'Goioxim', uf: 'PR', ibge: '4108650' }
-,      { nome: 'Goiás', uf: 'GO', ibge: '5208905' }
-,      { nome: 'Governador Celso Ramos', uf: 'SC', ibge: '4206009' }
-,      { nome: 'Governador Valadares', uf: 'MG', ibge: '3127701' }
-,      { nome: 'Gramado dos Loureiros', uf: 'RS', ibge: '4309126' }
-,      { nome: 'Gravatal', uf: 'SC', ibge: '4206207' }
-,      { nome: 'Graça Aranha', uf: 'MA', ibge: '2104701' }
-,      { nome: 'Grupiara', uf: 'MG', ibge: '3127909' }
-,      { nome: 'Grão Mogol', uf: 'MG', ibge: '3127800' }
-,      { nome: 'Grão-Pará', uf: 'SC', ibge: '4206108' }
-,      { nome: 'Guaiúba', uf: 'CE', ibge: '2304954' }
-,      { nome: 'Guajará-Mirim', uf: 'RO', ibge: '1100106' }
-,      { nome: 'Guapiara', uf: 'SP', ibge: '3517604' }
-,      { nome: 'Guapiaçu', uf: 'SP', ibge: '3517505' }
-,      { nome: 'Guapimirim', uf: 'RJ', ibge: '3301850' }
-,      { nome: 'Guaraci', uf: 'PR', ibge: '4109203' }
-,      { nome: 'Guaraciaba', uf: 'SC', ibge: '4206405' }
-,      { nome: 'Guaraciaba', uf: 'MG', ibge: '3128204' }
-,      { nome: 'Guaraciaba do Norte', uf: 'CE', ibge: '2305001' }
-,      { nome: 'Guarantã do Norte', uf: 'MT', ibge: '5104104' }
-,      { nome: 'Guarapari', uf: 'ES', ibge: '3202405' }
-,      { nome: 'Guaratinguetá', uf: 'SP', ibge: '3518404' }
-,      { nome: 'Guaratuba', uf: 'PR', ibge: '4109609' }
-,      { nome: 'Guaraí', uf: 'TO', ibge: '1709302' }
-,      { nome: 'Guarda-Mor', uf: 'MG', ibge: '3128600' }
-,      { nome: 'Guaíra', uf: 'SP', ibge: '3517406' }
-,      { nome: 'Guidoval', uf: 'MG', ibge: '3128808' }
-,      { nome: 'Guimarânia', uf: 'MG', ibge: '3128907' }
-,      { nome: 'Guiratinga', uf: 'MT', ibge: '5104203' }
-,      { nome: 'Guiricema', uf: 'MG', ibge: '3129004' }
-,      { nome: 'Gurupá', uf: 'PA', ibge: '1503101' }
-,      { nome: 'Heliópolis', uf: 'BA', ibge: '2911857' }
-,      { nome: 'Herval', uf: 'RS', ibge: '4307104' }
-,      { nome: 'Herval d\'Oeste', uf: 'SC', ibge: '4206702' }
-,      { nome: 'Herveiras', uf: 'RS', ibge: '4309571' }
-,      { nome: 'Hidrolândia', uf: 'GO', ibge: '5209705' }
-,      { nome: 'Humaitá', uf: 'RS', ibge: '4309704' }
-,      { nome: 'Humaitá', uf: 'AM', ibge: '1301704' }
-,      { nome: 'Iacanga', uf: 'SP', ibge: '3519105' }
-,      { nome: 'Iacri', uf: 'SP', ibge: '3519204' }
-,      { nome: 'Iati', uf: 'PE', ibge: '2606507' }
-,      { nome: 'Ibaiti', uf: 'PR', ibge: '4109708' }
-,      { nome: 'Ibarama', uf: 'RS', ibge: '4309753' }
-,      { nome: 'Ibateguara', uf: 'AL', ibge: '2703007' }
-,      { nome: 'Ibiapina', uf: 'CE', ibge: '2305308' }
-,      { nome: 'Ibiaçá', uf: 'RS', ibge: '4309803' }
-,      { nome: 'Ibicaraí', uf: 'BA', ibge: '2912103' }
-,      { nome: 'Ibiquera', uf: 'BA', ibge: '2912608' }
-,      { nome: 'Ibiracatu', uf: 'MG', ibge: '3129657' }
-,      { nome: 'Ibirapuitã', uf: 'RS', ibge: '4309951' }
-,      { nome: 'Ibirarema', uf: 'SP', ibge: '3519501' }
-,      { nome: 'Ibiraçu', uf: 'ES', ibge: '3202504' }
-,      { nome: 'Ibirité', uf: 'MG', ibge: '3129806' }
-,      { nome: 'Ibitiara', uf: 'BA', ibge: '2913002' }
-,      { nome: 'Ibitinga', uf: 'SP', ibge: '3519600' }
-,      { nome: 'Ibitirama', uf: 'ES', ibge: '3202553' }
-,      { nome: 'Ibituruna', uf: 'MG', ibge: '3130002' }
-,      { nome: 'Ibiá', uf: 'MG', ibge: '3129509' }
-,      { nome: 'Ibiúna', uf: 'SP', ibge: '3519709' }
-,      { nome: 'Icém', uf: 'SP', ibge: '3519808' }
-,      { nome: 'Igarapé-Miri', uf: 'PA', ibge: '1503309' }
-,      { nome: 'Iguaba Grande', uf: 'RJ', ibge: '3301876' }
-,      { nome: 'Iguape', uf: 'SP', ibge: '3520301' }
-,      { nome: 'Iguatama', uf: 'MG', ibge: '3130309' }
-,      { nome: 'Ijaci', uf: 'MG', ibge: '3130408' }
-,      { nome: 'Ilha Grande', uf: 'PI', ibge: '2204659' }
-,      { nome: 'Ilicínea', uf: 'MG', ibge: '3130507' }
-,      { nome: 'Ilópolis', uf: 'RS', ibge: '4310306' }
-,      { nome: 'Imaruí', uf: 'SC', ibge: '4207205' }
-,      { nome: 'Imbituba', uf: 'SC', ibge: '4207304' }
-,      { nome: 'Imbé', uf: 'RS', ibge: '4310330' }
-,      { nome: 'Imigrante', uf: 'RS', ibge: '4310363' }
-,      { nome: 'Imperatriz', uf: 'MA', ibge: '2105302' }
-,      { nome: 'Inconfidentes', uf: 'MG', ibge: '3130606' }
-,      { nome: 'Indaiatuba', uf: 'SP', ibge: '3520509' }
-,      { nome: 'Independência', uf: 'CE', ibge: '2305605' }
-,      { nome: 'Indianópolis', uf: 'MG', ibge: '3130705' }
-,      { nome: 'Indiaroba', uf: 'SE', ibge: '2802809' }
-,      { nome: 'Indiavaí', uf: 'MT', ibge: '5104500' }
-,      { nome: 'Ingazeira', uf: 'PE', ibge: '2607109' }
-,      { nome: 'Ingaí', uf: 'MG', ibge: '3130804' }
-,      { nome: 'Inhaúma', uf: 'MG', ibge: '3131000' }
-,      { nome: 'Ipameri', uf: 'GO', ibge: '5210109' }
-,      { nome: 'Ipanema', uf: 'MG', ibge: '3131208' }
-,      { nome: 'Ipanguaçu', uf: 'RN', ibge: '2404705' }
-,      { nome: 'Ipaporanga', uf: 'CE', ibge: '2305654' }
-,      { nome: 'Ipaumirim', uf: 'CE', ibge: '2305704' }
-,      { nome: 'Ipaussu', uf: 'SP', ibge: '3520905' }
-,      { nome: 'Ipiaçu', uf: 'MG', ibge: '3131406' }
-,      { nome: 'Ipiranga do Piauí', uf: 'PI', ibge: '2204808' }
-,      { nome: 'Ipiranga do Sul', uf: 'RS', ibge: '4310462' }
-,      { nome: 'Iporanga', uf: 'SP', ibge: '3521200' }
-,      { nome: 'Iporã do Oeste', uf: 'SC', ibge: '4207650' }
-,      { nome: 'Ipuiúna', uf: 'MG', ibge: '3131505' }
-,      { nome: 'Iracema', uf: 'CE', ibge: '2306009' }
-,      { nome: 'Iracema', uf: 'RR', ibge: '1400282' }
-,      { nome: 'Iraceminha', uf: 'SC', ibge: '4207759' }
-,      { nome: 'Iracemápolis', uf: 'SP', ibge: '3521408' }
-,      { nome: 'Irajuba', uf: 'BA', ibge: '2914208' }
-,      { nome: 'Iramaia', uf: 'BA', ibge: '2914307' }
-,      { nome: 'Iranduba', uf: 'AM', ibge: '1301852' }
-,      { nome: 'Irapuru', uf: 'SP', ibge: '3521606' }
-,      { nome: 'Irapuã', uf: 'SP', ibge: '3521507' }
-,      { nome: 'Iraquara', uf: 'BA', ibge: '2914406' }
-,      { nome: 'Irará', uf: 'BA', ibge: '2914505' }
-,      { nome: 'Iraí', uf: 'RS', ibge: '4310504' }
-,      { nome: 'Iraí de Minas', uf: 'MG', ibge: '3131604' }
-,      { nome: 'Iretama', uf: 'PR', ibge: '4110805' }
-,      { nome: 'Isaías Coelho', uf: 'PI', ibge: '2204907' }
-,      { nome: 'Israelândia', uf: 'GO', ibge: '5210307' }
-,      { nome: 'Itaara', uf: 'RS', ibge: '4310538' }
-,      { nome: 'Itabirito', uf: 'MG', ibge: '3131901' }
-,      { nome: 'Itagimirim', uf: 'BA', ibge: '2915304' }
-,      { nome: 'Itaguaru', uf: 'GO', ibge: '5210604' }
-,      { nome: 'Itaguatins', uf: 'TO', ibge: '1710706' }
-,      { nome: 'Itaipulândia', uf: 'PR', ibge: '4110953' }
-,      { nome: 'Itaiópolis', uf: 'SC', ibge: '4208104' }
-,      { nome: 'Itajubá', uf: 'MG', ibge: '3132404' }
-,      { nome: 'Itamari', uf: 'BA', ibge: '2915700' }
-,      { nome: 'Itambacuri', uf: 'MG', ibge: '3132701' }
-,      { nome: 'Itambaracá', uf: 'PR', ibge: '4111001' }
-,      { nome: 'Itamonte', uf: 'MG', ibge: '3133006' }
-,      { nome: 'Itanhaém', uf: 'SP', ibge: '3522109' }
-,      { nome: 'Itanhomi', uf: 'MG', ibge: '3133204' }
-,      { nome: 'Itaoca', uf: 'SP', ibge: '3522158' }
-,      { nome: 'Itapajé', uf: 'CE', ibge: '2306306' }
-,      { nome: 'Itaparica', uf: 'BA', ibge: '2916104' }
-,      { nome: 'Itapecerica da Serra', uf: 'SP', ibge: '3522208' }
-,      { nome: 'Itapema', uf: 'SC', ibge: '4208302' }
-,      { nome: 'Itapetininga', uf: 'SP', ibge: '3522307' }
-,      { nome: 'Itapicuru', uf: 'BA', ibge: '2916500' }
-,      { nome: 'Itapiranga', uf: 'AM', ibge: '1302009' }
-,      { nome: 'Itapirapuã Paulista', uf: 'SP', ibge: '3522653' }
-,      { nome: 'Itaporã do Tocantins', uf: 'TO', ibge: '1711100' }
-,      { nome: 'Itapura', uf: 'SP', ibge: '3523008' }
-,      { nome: 'Itapuã do Oeste', uf: 'RO', ibge: '1101104' }
-,      { nome: 'Itapé', uf: 'BA', ibge: '2916203' }
-,      { nome: 'Itaquara', uf: 'BA', ibge: '2916708' }
-,      { nome: 'Itaqui', uf: 'RS', ibge: '4310603' }
-,      { nome: 'Itarantim', uf: 'BA', ibge: '2916807' }
-,      { nome: 'Itararé', uf: 'SP', ibge: '3523206' }
-,      { nome: 'Itariri', uf: 'SP', ibge: '3523305' }
-,      { nome: 'Itati', uf: 'RS', ibge: '4310652' }
-,      { nome: 'Itatiaia', uf: 'RJ', ibge: '3302254' }
-,      { nome: 'Itatiaiuçu', uf: 'MG', ibge: '3133709' }
-,      { nome: 'Itatim', uf: 'BA', ibge: '2916856' }
-,      { nome: 'Itatinga', uf: 'SP', ibge: '3523503' }
-,      { nome: 'Itatuba', uf: 'PB', ibge: '2507200' }
-,      { nome: 'Itaverava', uf: 'MG', ibge: '3133907' }
-,      { nome: 'Itaíba', uf: 'PE', ibge: '2607505' }
-,      { nome: 'Itaúba', uf: 'MT', ibge: '5104559' }
-,      { nome: 'Itinga', uf: 'MG', ibge: '3134004' }
-,      { nome: 'Itirapuã', uf: 'SP', ibge: '3523701' }
-,      { nome: 'Itiruçu', uf: 'BA', ibge: '2916906' }
-,      { nome: 'Itororó', uf: 'BA', ibge: '2917102' }
-,      { nome: 'Ituberá', uf: 'BA', ibge: '2917300' }
-,      { nome: 'Ituiutaba', uf: 'MG', ibge: '3134202' }
-,      { nome: 'Itumirim', uf: 'MG', ibge: '3134301' }
-,      { nome: 'Itupeva', uf: 'SP', ibge: '3524006' }
-,      { nome: 'Itupiranga', uf: 'PA', ibge: '1503705' }
-,      { nome: 'Iturama', uf: 'MG', ibge: '3134400' }
-,      { nome: 'Itutinga', uf: 'MG', ibge: '3134509' }
-,      { nome: 'Itápolis', uf: 'SP', ibge: '3522703' }
-,      { nome: 'Iuiú', uf: 'BA', ibge: '2917334' }
-,      { nome: 'Ivatuba', uf: 'PR', ibge: '4111605' }
-,      { nome: 'Ivorá', uf: 'RS', ibge: '4310751' }
-,      { nome: 'Içara', uf: 'SC', ibge: '4207007' }
-,      { nome: 'Iúna', uf: 'ES', ibge: '3203007' }
-,      { nome: 'Jaboti', uf: 'PR', ibge: '4111704' }
-,      { nome: 'Jacareí', uf: 'SP', ibge: '3524402' }
-,      { nome: 'Jacaré dos Homens', uf: 'AL', ibge: '2703403' }
-,      { nome: 'Jacinto', uf: 'MG', ibge: '3134707' }
-,      { nome: 'Jacutinga', uf: 'RS', ibge: '4310900' }
-,      { nome: 'Jaguarari', uf: 'BA', ibge: '2917706' }
-,      { nome: 'Jampruca', uf: 'MG', ibge: '3135076' }
-,      { nome: 'Jandaíra', uf: 'RN', ibge: '2405108' }
-,      { nome: 'Janduís', uf: 'RN', ibge: '2405207' }
-,      { nome: 'Janiópolis', uf: 'PR', ibge: '4112207' }
-,      { nome: 'Japi', uf: 'RN', ibge: '2405405' }
-,      { nome: 'Jaquirana', uf: 'RS', ibge: '4311122' }
-,      { nome: 'Jaraguari', uf: 'MS', ibge: '5004908' }
-,      { nome: 'Jardim Olinda', uf: 'PR', ibge: '4112603' }
-,      { nome: 'Jardim de Angicos', uf: 'RN', ibge: '2405504' }
-,      { nome: 'Jardim de Piranhas', uf: 'RN', ibge: '2405603' }
-,      { nome: 'Jardim do Seridó', uf: 'RN', ibge: '2405702' }
-,      { nome: 'Jardinópolis', uf: 'SC', ibge: '4208955' }
-,      { nome: 'Jari', uf: 'RS', ibge: '4311130' }
-,      { nome: 'Jataizinho', uf: 'PR', ibge: '4112702' }
-,      { nome: 'Jataúba', uf: 'PE', ibge: '2608008' }
-,      { nome: 'Jauru', uf: 'MT', ibge: '5105002' }
-,      { nome: 'Jaú', uf: 'SP', ibge: '3525300' }
-,      { nome: 'Jequitaí', uf: 'MG', ibge: '3135605' }
-,      { nome: 'Jequitibá', uf: 'MG', ibge: '3135704' }
-,      { nome: 'Jequitinhonha', uf: 'MG', ibge: '3135803' }
-,      { nome: 'Jequiá da Praia', uf: 'AL', ibge: '2703759' }
-,      { nome: 'Jeriquara', uf: 'SP', ibge: '3525409' }
-,      { nome: 'Jerumenha', uf: 'PI', ibge: '2205300' }
-,      { nome: 'Jesúpolis', uf: 'GO', ibge: '5212055' }
-,      { nome: 'Joanópolis', uf: 'SP', ibge: '3525508' }
-,      { nome: 'Joaquim Pires', uf: 'PI', ibge: '2205409' }
-,      { nome: 'Joaçaba', uf: 'SC', ibge: '4209003' }
-,      { nome: 'Joaíma', uf: 'MG', ibge: '3136009' }
-,      { nome: 'Joca Claudino', uf: 'PB', ibge: '2513653' }
-,      { nome: 'Josenópolis', uf: 'MG', ibge: '3136579' }
-,      { nome: 'José Raydan', uf: 'MG', ibge: '3136553' }
-,      { nome: 'João Pinheiro', uf: 'MG', ibge: '3136306' }
-,      { nome: 'João Ramalho', uf: 'SP', ibge: '3525607' }
-,      { nome: 'Juatuba', uf: 'MG', ibge: '3136652' }
-,      { nome: 'Juazeiro do Piauí', uf: 'PI', ibge: '2205516' }
-,      { nome: 'Jucati', uf: 'PE', ibge: '2608255' }
-,      { nome: 'Jucuruçu', uf: 'BA', ibge: '2918456' }
-,      { nome: 'Jumirim', uf: 'SP', ibge: '3525854' }
-,      { nome: 'Jundiaí do Sul', uf: 'PR', ibge: '4112900' }
-,      { nome: 'Jundiá', uf: 'AL', ibge: '2703908' }
-,      { nome: 'Jundiá', uf: 'RN', ibge: '2406155' }
-,      { nome: 'Jupiá', uf: 'SC', ibge: '4209177' }
-,      { nome: 'Juquitiba', uf: 'SP', ibge: '3526209' }
-,      { nome: 'Juquiá', uf: 'SP', ibge: '3526100' }
-,      { nome: 'Juramento', uf: 'MG', ibge: '3136801' }
-,      { nome: 'Juripiranga', uf: 'PB', ibge: '2507903' }
-,      { nome: 'Juru', uf: 'PB', ibge: '2508000' }
-,      { nome: 'Jussara', uf: 'BA', ibge: '2918506' }
-,      { nome: 'Jussiape', uf: 'BA', ibge: '2918605' }
-,      { nome: 'Ladainha', uf: 'MG', ibge: '3137007' }
-,      { nome: 'Ladário', uf: 'MS', ibge: '5005202' }
-,      { nome: 'Lagamar', uf: 'MG', ibge: '3137106' }
-,      { nome: 'Lago da Pedra', uf: 'MA', ibge: '2105708' }
-,      { nome: 'Lago dos Rodrigues', uf: 'MA', ibge: '2105948' }
-,      { nome: 'Lagoa Alegre', uf: 'PI', ibge: '2205557' }
-,      { nome: 'Lagoa Bonita do Sul', uf: 'RS', ibge: '4311239' }
-,      { nome: 'Lagoa Dourada', uf: 'MG', ibge: '3137403' }
-,      { nome: 'Lagoa Grande', uf: 'MG', ibge: '3137536' }
-,      { nome: 'Lagoa Salgada', uf: 'RN', ibge: '2406601' }
-,      { nome: 'Lagoa Santa', uf: 'GO', ibge: '5212253' }
-,      { nome: 'Lagoa da Canoa', uf: 'AL', ibge: '2704104' }
-,      { nome: 'Lagoa de Velhos', uf: 'RN', ibge: '2406403' }
-,      { nome: 'Lagoa do Piauí', uf: 'PI', ibge: '2205581' }
-,      { nome: 'Lagoa dos Patos', uf: 'MG', ibge: '3137304' }
-,      { nome: 'Lagoinha', uf: 'SP', ibge: '3526308' }
-,      { nome: 'Laguna', uf: 'SC', ibge: '4209409' }
-,      { nome: 'Laguna Carapã', uf: 'MS', ibge: '5005251' }
-,      { nome: 'Lajeado', uf: 'RS', ibge: '4311403' }
-,      { nome: 'Lajeado do Bugre', uf: 'RS', ibge: '4311429' }
-,      { nome: 'Lajedinho', uf: 'BA', ibge: '2919009' }
-,      { nome: 'Lajinha', uf: 'MG', ibge: '3137700' }
-,      { nome: 'Lamarão', uf: 'BA', ibge: '2919108' }
-,      { nome: 'Lambari D\'Oeste', uf: 'MT', ibge: '5105234' }
-,      { nome: 'Landri Sales', uf: 'PI', ibge: '2205607' }
-,      { nome: 'Lapão', uf: 'BA', ibge: '2919157' }
-,      { nome: 'Lassance', uf: 'MG', ibge: '3138104' }
-,      { nome: 'Lauro Müller', uf: 'SC', ibge: '4209607' }
-,      { nome: 'Lavrinhas', uf: 'SP', ibge: '3526605' }
-,      { nome: 'Lavínia', uf: 'SP', ibge: '3526506' }
-,      { nome: 'Lençóis Paulista', uf: 'SP', ibge: '3526803' }
-,      { nome: 'Limoeiro de Anadia', uf: 'AL', ibge: '2704203' }
-,      { nome: 'Limoeiro do Ajuru', uf: 'PA', ibge: '1504000' }
-,      { nome: 'Lins', uf: 'SP', ibge: '3527108' }
-,      { nome: 'Livramento', uf: 'PB', ibge: '2508505' }
-,      { nome: 'Londrina', uf: 'PR', ibge: '4113700' }
-,      { nome: 'Lorena', uf: 'SP', ibge: '3527207' }
-,      { nome: 'Louveira', uf: 'SP', ibge: '3527306' }
-,      { nome: 'Lucianópolis', uf: 'SP', ibge: '3527504' }
-,      { nome: 'Lucrécia', uf: 'RN', ibge: '2406908' }
-,      { nome: 'Lucélia', uf: 'SP', ibge: '3527405' }
-,      { nome: 'Luiziana', uf: 'PR', ibge: '4113734' }
-,      { nome: 'Luminárias', uf: 'MG', ibge: '3138708' }
-,      { nome: 'Lupércio', uf: 'SP', ibge: '3527801' }
-,      { nome: 'Luz', uf: 'MG', ibge: '3138807' }
-,      { nome: 'Luzerna', uf: 'SC', ibge: '4210035' }
-,      { nome: 'Luís Correia', uf: 'PI', ibge: '2205706' }
-,      { nome: 'Luís Eduardo Magalhães', uf: 'BA', ibge: '2919553' }
-,      { nome: 'Luís Gomes', uf: 'RN', ibge: '2407005' }
-,      { nome: 'Macambira', uf: 'SE', ibge: '2803708' }
-,      { nome: 'Macaúbas', uf: 'BA', ibge: '2919801' }
-,      { nome: 'Machacalis', uf: 'MG', ibge: '3138906' }
-,      { nome: 'Machado', uf: 'MG', ibge: '3139003' }
-,      { nome: 'Madre de Deus', uf: 'BA', ibge: '2919926' }
-,      { nome: 'Madre de Deus de Minas', uf: 'MG', ibge: '3139102' }
-,      { nome: 'Maetinga', uf: 'BA', ibge: '2919959' }
-,      { nome: 'Magalhães Barata', uf: 'PA', ibge: '1504109' }
-,      { nome: 'Magda', uf: 'SP', ibge: '3528304' }
-,      { nome: 'Mairinque', uf: 'SP', ibge: '3528403' }
-,      { nome: 'Major Sales', uf: 'RN', ibge: '2407252' }
-,      { nome: 'Malhada de Pedras', uf: 'BA', ibge: '2920304' }
-,      { nome: 'Mamonas', uf: 'MG', ibge: '3139250' }
-,      { nome: 'Manaus', uf: 'AM', ibge: '1302603' }
-,      { nome: 'Mandaguari', uf: 'PR', ibge: '4114203' }
-,      { nome: 'Manfrinópolis', uf: 'PR', ibge: '4114351' }
-,      { nome: 'Manga', uf: 'MG', ibge: '3139300' }
-,      { nome: 'Mangueirinha', uf: 'PR', ibge: '4114401' }
-,      { nome: 'Manhumirim', uf: 'MG', ibge: '3139508' }
-,      { nome: 'Manicoré', uf: 'AM', ibge: '1302702' }
-,      { nome: 'Manoel Emídio', uf: 'PI', ibge: '2205904' }
-,      { nome: 'Maquiné', uf: 'RS', ibge: '4311775' }
-,      { nome: 'Maracajá', uf: 'SC', ibge: '4210407' }
-,      { nome: 'Maracaí', uf: 'SP', ibge: '3528809' }
-,      { nome: 'Maranhãozinho', uf: 'MA', ibge: '2106375' }
-,      { nome: 'Marapoama', uf: 'SP', ibge: '3528858' }
-,      { nome: 'Marau', uf: 'RS', ibge: '4311809' }
-,      { nome: 'Maravilha', uf: 'SC', ibge: '4210506' }
-,      { nome: 'Maravilha', uf: 'AL', ibge: '2704609' }
-,      { nome: 'Maravilhas', uf: 'MG', ibge: '3139706' }
-,      { nome: 'Marcelino Ramos', uf: 'RS', ibge: '4311908' }
-,      { nome: 'Marcelino Vieira', uf: 'RN', ibge: '2407302' }
-,      { nome: 'Marcos Parente', uf: 'PI', ibge: '2206001' }
-,      { nome: 'Mariana', uf: 'MG', ibge: '3140001' }
-,      { nome: 'Mariana Pimentel', uf: 'RS', ibge: '4311981' }
-,      { nome: 'Maricá', uf: 'RJ', ibge: '3302700' }
-,      { nome: 'Marilena', uf: 'PR', ibge: '4115002' }
-,      { nome: 'Mariluz', uf: 'PR', ibge: '4115101' }
-,      { nome: 'Marilândia do Sul', uf: 'PR', ibge: '4114906' }
-,      { nome: 'Marinópolis', uf: 'SP', ibge: '3529104' }
-,      { nome: 'Marituba', uf: 'PA', ibge: '1504422' }
-,      { nome: 'Mariápolis', uf: 'SP', ibge: '3528908' }
-,      { nome: 'Marmeleiro', uf: 'PR', ibge: '4115408' }
-,      { nome: 'Marques de Souza', uf: 'RS', ibge: '4312054' }
-,      { nome: 'Marquinho', uf: 'PR', ibge: '4115457' }
-,      { nome: 'Martins', uf: 'RN', ibge: '2407401' }
-,      { nome: 'Martins Soares', uf: 'MG', ibge: '3140530' }
-,      { nome: 'Martinópole', uf: 'CE', ibge: '2307908' }
-,      { nome: 'Marzagão', uf: 'GO', ibge: '5212907' }
-,      { nome: 'Mascote', uf: 'BA', ibge: '2920908' }
-,      { nome: 'Massaranduba', uf: 'PB', ibge: '2509206' }
-,      { nome: 'Mathias Lobato', uf: 'MG', ibge: '3171501' }
-,      { nome: 'Matias Cardoso', uf: 'MG', ibge: '3140852' }
-,      { nome: 'Matinhos', uf: 'PR', ibge: '4115705' }
-,      { nome: 'Mato Castelhano', uf: 'RS', ibge: '4312138' }
-,      { nome: 'Mato Rico', uf: 'PR', ibge: '4115739' }
-,      { nome: 'Mato Verde', uf: 'MG', ibge: '3141009' }
-,      { nome: 'Matrinchã', uf: 'GO', ibge: '5212956' }
-,      { nome: 'Matutina', uf: 'MG', ibge: '3141207' }
-,      { nome: 'Maurilândia', uf: 'GO', ibge: '5213004' }
-,      { nome: 'Maurilândia do Tocantins', uf: 'TO', ibge: '1712801' }
-,      { nome: 'Maximiliano de Almeida', uf: 'RS', ibge: '4312203' }
-,      { nome: 'Meleiro', uf: 'SC', ibge: '4210803' }
-,      { nome: 'Mendes', uf: 'RJ', ibge: '3302809' }
-,      { nome: 'Mercedes', uf: 'PR', ibge: '4115853' }
-,      { nome: 'Meridiano', uf: 'SP', ibge: '3529609' }
-,      { nome: 'Meruoca', uf: 'CE', ibge: '2308203' }
-,      { nome: 'Miguel Alves', uf: 'PI', ibge: '2206209' }
-,      { nome: 'Milhã', uf: 'CE', ibge: '2308351' }
-,      { nome: 'Minador do Negrão', uf: 'AL', ibge: '2705309' }
-,      { nome: 'Mira Estrela', uf: 'SP', ibge: '3530003' }
-,      { nome: 'Miracatu', uf: 'SP', ibge: '3529906' }
-,      { nome: 'Miracema do Tocantins', uf: 'TO', ibge: '1713205' }
-,      { nome: 'Miraguaí', uf: 'RS', ibge: '4312302' }
-,      { nome: 'Miranda do Norte', uf: 'MA', ibge: '2106755' }
-,      { nome: 'Mirangaba', uf: 'BA', ibge: '2921401' }
-,      { nome: 'Mirante', uf: 'BA', ibge: '2921450' }
-,      { nome: 'Mirante da Serra', uf: 'RO', ibge: '1101302' }
-,      { nome: 'Mirante do Paranapanema', uf: 'SP', ibge: '3530201' }
-,      { nome: 'Mirassol d\'Oeste', uf: 'MT', ibge: '5105622' }
-,      { nome: 'Miraíma', uf: 'CE', ibge: '2308377' }
-,      { nome: 'Mocajuba', uf: 'PA', ibge: '1504604' }
-,      { nome: 'Mogeiro', uf: 'PB', ibge: '2509404' }
-,      { nome: 'Mogi Guaçu', uf: 'SP', ibge: '3530706' }
-,      { nome: 'Moju', uf: 'PA', ibge: '1504703' }
-,      { nome: 'Mojuí dos Campos', uf: 'PA', ibge: '1504752' }
-,      { nome: 'Mombuca', uf: 'SP', ibge: '3530904' }
-,      { nome: 'Mondaí', uf: 'SC', ibge: '4211009' }
-,      { nome: 'Monjolos', uf: 'MG', ibge: '3142502' }
-,      { nome: 'Montadas', uf: 'PB', ibge: '2509503' }
-,      { nome: 'Montalvânia', uf: 'MG', ibge: '3142700' }
-,      { nome: 'Montanhas', uf: 'RN', ibge: '2407708' }
-,      { nome: 'Monte Alegre', uf: 'PA', ibge: '1504802' }
-,      { nome: 'Monte Alegre de Minas', uf: 'MG', ibge: '3142809' }
-,      { nome: 'Monte Azul', uf: 'MG', ibge: '3142908' }
-,      { nome: 'Monte Belo', uf: 'MG', ibge: '3143005' }
-,      { nome: 'Monte Carmelo', uf: 'MG', ibge: '3143104' }
-,      { nome: 'Monte Castelo', uf: 'SC', ibge: '4211108' }
-,      { nome: 'Monte Castelo', uf: 'SP', ibge: '3531605' }
-,      { nome: 'Monte Mor', uf: 'SP', ibge: '3531803' }
-,      { nome: 'Monteirópolis', uf: 'AL', ibge: '2705408' }
-,      { nome: 'Montenegro', uf: 'RS', ibge: '4312401' }
-,      { nome: 'Montes Altos', uf: 'MA', ibge: '2107001' }
-,      { nome: 'Montes Claros', uf: 'MG', ibge: '3143302' }
-,      { nome: 'Montezuma', uf: 'MG', ibge: '3143450' }
-,      { nome: 'Morada Nova de Minas', uf: 'MG', ibge: '3143500' }
-,      { nome: 'Moraújo', uf: 'CE', ibge: '2308807' }
-,      { nome: 'Moreira Sales', uf: 'PR', ibge: '4116109' }
-,      { nome: 'Mormaço', uf: 'RS', ibge: '4312427' }
-,      { nome: 'Morrinhos do Sul', uf: 'RS', ibge: '4312443' }
-,      { nome: 'Morro da Garça', uf: 'MG', ibge: '3143609' }
-,      { nome: 'Morro do Chapéu do Piauí', uf: 'PI', ibge: '2206670' }
-,      { nome: 'Mostardas', uf: 'RS', ibge: '4312500' }
-,      { nome: 'Muaná', uf: 'PA', ibge: '1504901' }
-,      { nome: 'Mucambo', uf: 'CE', ibge: '2309003' }
-,      { nome: 'Mucugê', uf: 'BA', ibge: '2921906' }
-,      { nome: 'Muitos Capões', uf: 'RS', ibge: '4312617' }
-,      { nome: 'Mulungu', uf: 'CE', ibge: '2309102' }
-,      { nome: 'Munhoz de Melo', uf: 'PR', ibge: '4116307' }
-,      { nome: 'Muniz Ferreira', uf: 'BA', ibge: '2922201' }
-,      { nome: 'Muquém de São Francisco', uf: 'BA', ibge: '2922250' }
-,      { nome: 'Muriaé', uf: 'MG', ibge: '3143906' }
-,      { nome: 'Murici', uf: 'AL', ibge: '2705507' }
-,      { nome: 'Murici dos Portelas', uf: 'PI', ibge: '2206696' }
-,      { nome: 'Muricilândia', uf: 'TO', ibge: '1713957' }
-,      { nome: 'Murutinga do Sul', uf: 'SP', ibge: '3532108' }
-,      { nome: 'Mutum', uf: 'MG', ibge: '3144003' }
-,      { nome: 'Mutunópolis', uf: 'GO', ibge: '5214101' }
-,      { nome: 'Muzambinho', uf: 'MG', ibge: '3144102' }
-,      { nome: 'Mâncio Lima', uf: 'AC', ibge: '1200336' }
-,      { nome: 'Mãe do Rio', uf: 'PA', ibge: '1504059' }
-,      { nome: 'Nacip Raydan', uf: 'MG', ibge: '3144201' }
-,      { nome: 'Nazareno', uf: 'MG', ibge: '3144508' }
-,      { nome: 'Nazaré', uf: 'TO', ibge: '1714302' }
-,      { nome: 'Nazaré do Piauí', uf: 'PI', ibge: '2206704' }
-,      { nome: 'Nazário', uf: 'GO', ibge: '5214408' }
-,      { nome: 'Nerópolis', uf: 'GO', ibge: '5214507' }
-,      { nome: 'Nhandeara', uf: 'SP', ibge: '3532603' }
-,      { nome: 'Nilópolis', uf: 'RJ', ibge: '3303203' }
-,      { nome: 'Ninheira', uf: 'MG', ibge: '3144656' }
-,      { nome: 'Nioaque', uf: 'MS', ibge: '5005806' }
-,      { nome: 'Niterói', uf: 'RJ', ibge: '3303302' }
-,      { nome: 'Nonoai', uf: 'RS', ibge: '4312708' }
-,      { nome: 'Nordestina', uf: 'BA', ibge: '2922656' }
-,      { nome: 'Normandia', uf: 'RR', ibge: '1400407' }
-,      { nome: 'Nossa Senhora de Nazaré', uf: 'PI', ibge: '2206753' }
-,      { nome: 'Nossa Senhora do Livramento', uf: 'MT', ibge: '5106109' }
-,      { nome: 'Nossa Senhora dos Remédios', uf: 'PI', ibge: '2206803' }
-,      { nome: 'Nova Aurora', uf: 'GO', ibge: '5214804' }
-,      { nome: 'Nova Bassano', uf: 'RS', ibge: '4312906' }
-,      { nome: 'Nova Belém', uf: 'MG', ibge: '3144672' }
-,      { nome: 'Nova Boa Vista', uf: 'RS', ibge: '4312955' }
-,      { nome: 'Nova Bréscia', uf: 'RS', ibge: '4313003' }
-,      { nome: 'Nova Candelária', uf: 'RS', ibge: '4313011' }
-,      { nome: 'Nova Cantu', uf: 'PR', ibge: '4116802' }
-,      { nome: 'Nova Esperança do Piriá', uf: 'PA', ibge: '1504950' }
-,      { nome: 'Nova Europa', uf: 'SP', ibge: '3532900' }
-,      { nome: 'Nova Friburgo', uf: 'RJ', ibge: '3303401' }
-,      { nome: 'Nova Guataporanga', uf: 'SP', ibge: '3533106' }
-,      { nome: 'Nova Iguaçu de Goiás', uf: 'GO', ibge: '5214879' }
-,      { nome: 'Nova Independência', uf: 'SP', ibge: '3533205' }
-,      { nome: 'Nova Itaberaba', uf: 'SC', ibge: '4211454' }
-,      { nome: 'Nova Lima', uf: 'MG', ibge: '3144805' }
-,      { nome: 'Nova Módica', uf: 'MG', ibge: '3144904' }
-,      { nome: 'Nova Odessa', uf: 'SP', ibge: '3533403' }
-,      { nome: 'Nova Olímpia', uf: 'PR', ibge: '4117206' }
-,      { nome: 'Nova Petrópolis', uf: 'RS', ibge: '4313201' }
-,      { nome: 'Nova Porteirinha', uf: 'MG', ibge: '3145059' }
-,      { nome: 'Nova Prata', uf: 'RS', ibge: '4313300' }
-,      { nome: 'Nova Prata do Iguaçu', uf: 'PR', ibge: '4117255' }
-,      { nome: 'Nova Roma', uf: 'GO', ibge: '5214903' }
-,      { nome: 'Nova Santa Helena', uf: 'MT', ibge: '5106190' }
-,      { nome: 'Nova Tebas', uf: 'PR', ibge: '4117271' }
-,      { nome: 'Nova Timboteua', uf: 'PA', ibge: '1505007' }
-,      { nome: 'Nova Ubiratã', uf: 'MT', ibge: '5106240' }
-,      { nome: 'Nova União', uf: 'RO', ibge: '1101435' }
-,      { nome: 'Nova Veneza', uf: 'SC', ibge: '4211603' }
-,      { nome: 'Nova Xavantina', uf: 'MT', ibge: '5106257' }
-,      { nome: 'Novais', uf: 'SP', ibge: '3533254' }
-,      { nome: 'Novo Barreiro', uf: 'RS', ibge: '4313490' }
-,      { nome: 'Novo Horizonte', uf: 'SP', ibge: '3533502' }
-,      { nome: 'Novo Horizonte', uf: 'BA', ibge: '2923035' }
-,      { nome: 'Novo Horizonte do Oeste', uf: 'RO', ibge: '1100502' }
-,      { nome: 'Novo Jardim', uf: 'TO', ibge: '1715259' }
-,      { nome: 'Novo Lino', uf: 'AL', ibge: '2705606' }
-,      { nome: 'Novo Oriente', uf: 'CE', ibge: '2309409' }
-,      { nome: 'Novo Oriente de Minas', uf: 'MG', ibge: '3145356' }
-,      { nome: 'Novo Repartimento', uf: 'PA', ibge: '1505064' }
-,      { nome: 'Novo Tiradentes', uf: 'RS', ibge: '4313441' }
-,      { nome: 'Novo Triunfo', uf: 'BA', ibge: '2923050' }
-,      { nome: 'Novorizonte', uf: 'MG', ibge: '3145372' }
-,      { nome: 'Não-Me-Toque', uf: 'RS', ibge: '4312658' }
-,      { nome: 'Oeiras do Pará', uf: 'PA', ibge: '1505205' }
-,      { nome: 'Olho d\'Água do Casado', uf: 'AL', ibge: '2705804' }
-,      { nome: 'Olivedos', uf: 'PB', ibge: '2510501' }
-,      { nome: 'Oliveira', uf: 'MG', ibge: '3145604' }
-,      { nome: 'Olivença', uf: 'AL', ibge: '2706000' }
-,      { nome: 'Oratórios', uf: 'MG', ibge: '3145851' }
-,      { nome: 'Orleans', uf: 'SC', ibge: '4211702' }
-,      { nome: 'Orós', uf: 'CE', ibge: '2309508' }
-,      { nome: 'Ouro Branco', uf: 'AL', ibge: '2706109' }
-,      { nome: 'Ouro Preto', uf: 'MG', ibge: '3146107' }
-,      { nome: 'Ourolândia', uf: 'BA', ibge: '2923357' }
-,      { nome: 'Ouvidor', uf: 'GO', ibge: '5215504' }
-,      { nome: 'Pacaembu', uf: 'SP', ibge: '3534906' }
-,      { nome: 'Pacaraima', uf: 'RR', ibge: '1400456' }
-,      { nome: 'Pacatuba', uf: 'SE', ibge: '2804904' }
-,      { nome: 'Padre Bernardo', uf: 'GO', ibge: '5215603' }
-,      { nome: 'Padre Marcos', uf: 'PI', ibge: '2207207' }
-,      { nome: 'Padre Paraíso', uf: 'MG', ibge: '3146305' }
-,      { nome: 'Pai Pedro', uf: 'MG', ibge: '3146552' }
-,      { nome: 'Paiçandu', uf: 'PR', ibge: '4117503' }
-,      { nome: 'Palestina', uf: 'AL', ibge: '2706208' }
-,      { nome: 'Palestina do Pará', uf: 'PA', ibge: '1505494' }
-,      { nome: 'Palma Sola', uf: 'SC', ibge: '4212007' }
-,      { nome: 'Palmares Paulista', uf: 'SP', ibge: '3535101' }
-,      { nome: 'Palmeirante', uf: 'TO', ibge: '1715705' }
-,      { nome: 'Palmeirópolis', uf: 'TO', ibge: '1715754' }
-,      { nome: 'Palminópolis', uf: 'GO', ibge: '5215900' }
-,      { nome: 'Palmitos', uf: 'SC', ibge: '4212106' }
-,      { nome: 'Palmópolis', uf: 'MG', ibge: '3146750' }
-,      { nome: 'Palotina', uf: 'PR', ibge: '4117909' }
-,      { nome: 'Panorama', uf: 'SP', ibge: '3535408' }
-,      { nome: 'Papagaios', uf: 'MG', ibge: '3146909' }
-,      { nome: 'Paracatu', uf: 'MG', ibge: '3147006' }
-,      { nome: 'Paragominas', uf: 'PA', ibge: '1505502' }
-,      { nome: 'Paraguaçu', uf: 'MG', ibge: '3147204' }
-,      { nome: 'Paraguaçu Paulista', uf: 'SP', ibge: '3535507' }
-,      { nome: 'Paraibano', uf: 'MA', ibge: '2107704' }
-,      { nome: 'Paranapoema', uf: 'PR', ibge: '4118303' }
-,      { nome: 'Paranatama', uf: 'PE', ibge: '2610301' }
-,      { nome: 'Paranatinga', uf: 'MT', ibge: '5106307' }
-,      { nome: 'Paraopeba', uf: 'MG', ibge: '3147402' }
-,      { nome: 'Parari', uf: 'PB', ibge: '2510659' }
-,      { nome: 'Parauapebas', uf: 'PA', ibge: '1505536' }
-,      { nome: 'Paraíso do Sul', uf: 'RS', ibge: '4314027' }
-,      { nome: 'Paraúna', uf: 'GO', ibge: '5216403' }
-,      { nome: 'Parecis', uf: 'RO', ibge: '1101450' }
-,      { nome: 'Parelhas', uf: 'RN', ibge: '2408904' }
-,      { nome: 'Pariconha', uf: 'AL', ibge: '2706422' }
-,      { nome: 'Pariquera-Açu', uf: 'SP', ibge: '3536208' }
-,      { nome: 'Parnaíba', uf: 'PI', ibge: '2207702' }
-,      { nome: 'Parobé', uf: 'RS', ibge: '4314050' }
-,      { nome: 'Passa Quatro', uf: 'MG', ibge: '3147600' }
-,      { nome: 'Passa Tempo', uf: 'MG', ibge: '3147709' }
-,      { nome: 'Passagem', uf: 'RN', ibge: '2409209' }
-,      { nome: 'Passagem Franca', uf: 'MA', ibge: '2107902' }
-,      { nome: 'Passagem Franca do Piauí', uf: 'PI', ibge: '2207751' }
-,      { nome: 'Passo Fundo', uf: 'RS', ibge: '4314100' }
-,      { nome: 'Passo de Torres', uf: 'SC', ibge: '4212254' }
-,      { nome: 'Passo do Sobrado', uf: 'RS', ibge: '4314076' }
-,      { nome: 'Patos de Minas', uf: 'MG', ibge: '3148004' }
-,      { nome: 'Paty do Alferes', uf: 'RJ', ibge: '3303856' }
-,      { nome: 'Paulicéia', uf: 'SP', ibge: '3536406' }
-,      { nome: 'Paulistas', uf: 'MG', ibge: '3148400' }
-,      { nome: 'Paulistânia', uf: 'SP', ibge: '3536570' }
-,      { nome: 'Paulo Bento', uf: 'RS', ibge: '4314134' }
-,      { nome: 'Paulo Jacinto', uf: 'AL', ibge: '2706604' }
-,      { nome: 'Pavussu', uf: 'PI', ibge: '2207850' }
-,      { nome: 'Pavão', uf: 'MG', ibge: '3148509' }
-,      { nome: 'Paço do Lumiar', uf: 'MA', ibge: '2107506' }
-,      { nome: 'Peabiru', uf: 'PR', ibge: '4118808' }
-,      { nome: 'Pederneiras', uf: 'SP', ibge: '3536703' }
-,      { nome: 'Pedra Branca', uf: 'PB', ibge: '2511004' }
-,      { nome: 'Pedra Grande', uf: 'RN', ibge: '2409506' }
-,      { nome: 'Pedra Lavrada', uf: 'PB', ibge: '2511103' }
-,      { nome: 'Pedra Preta', uf: 'RN', ibge: '2409605' }
-,      { nome: 'Pedra do Indaiá', uf: 'MG', ibge: '3148905' }
-,      { nome: 'Pedranópolis', uf: 'SP', ibge: '3536901' }
-,      { nome: 'Pedras de Maria da Cruz', uf: 'MG', ibge: '3149150' }
-,      { nome: 'Pedregulho', uf: 'SP', ibge: '3537008' }
-,      { nome: 'Pedrinópolis', uf: 'MG', ibge: '3149200' }
-,      { nome: 'Pedro Afonso', uf: 'TO', ibge: '1716505' }
-,      { nome: 'Pedro Alexandre', uf: 'BA', ibge: '2924207' }
-,      { nome: 'Pedro Avelino', uf: 'RN', ibge: '2409704' }
-,      { nome: 'Pedro Laurentino', uf: 'PI', ibge: '2207934' }
-,      { nome: 'Pedro Velho', uf: 'RN', ibge: '2409803' }
-,      { nome: 'Pedro de Toledo', uf: 'SP', ibge: '3537206' }
-,      { nome: 'Peixe-Boi', uf: 'PA', ibge: '1505601' }
-,      { nome: 'Pentecoste', uf: 'CE', ibge: '2310704' }
-,      { nome: 'Penápolis', uf: 'SP', ibge: '3537305' }
-,      { nome: 'Perdigão', uf: 'MG', ibge: '3149705' }
-,      { nome: 'Pereiras', uf: 'SP', ibge: '3537503' }
-,      { nome: 'Pereiro', uf: 'CE', ibge: '2310803' }
-,      { nome: 'Peruíbe', uf: 'SP', ibge: '3537602' }
-,      { nome: 'Pescador', uf: 'MG', ibge: '3150000' }
-,      { nome: 'Pescaria Brava', uf: 'SC', ibge: '4212650' }
-,      { nome: 'Petrolina de Goiás', uf: 'GO', ibge: '5216809' }
-,      { nome: 'Petrolândia', uf: 'PE', ibge: '2611002' }
-,      { nome: 'Petrópolis', uf: 'RJ', ibge: '3303906' }
-,      { nome: 'Peçanha', uf: 'MG', ibge: '3148608' }
-,      { nome: 'Picuí', uf: 'PB', ibge: '2511400' }
-,      { nome: 'Piedade do Rio Grande', uf: 'MG', ibge: '3150307' }
-,      { nome: 'Piedade dos Gerais', uf: 'MG', ibge: '3150406' }
-,      { nome: 'Pilão Arcado', uf: 'BA', ibge: '2924405' }
-,      { nome: 'Pimenta', uf: 'MG', ibge: '3150505' }
-,      { nome: 'Pindamonhangaba', uf: 'SP', ibge: '3538006' }
-,      { nome: 'Pindaí', uf: 'BA', ibge: '2924504' }
-,      { nome: 'Pindoba', uf: 'AL', ibge: '2707008' }
-,      { nome: 'Pinhal Grande', uf: 'RS', ibge: '4314472' }
-,      { nome: 'Pinhal da Serra', uf: 'RS', ibge: '4314464' }
-,      { nome: 'Pinhal de São Bento', uf: 'PR', ibge: '4119251' }
-,      { nome: 'Pinheirinho do Vale', uf: 'RS', ibge: '4314498' }
-,      { nome: 'Pinheiros', uf: 'ES', ibge: '3204104' }
-,      { nome: 'Pinhão', uf: 'SE', ibge: '2805208' }
-,      { nome: 'Pintópolis', uf: 'MG', ibge: '3150570' }
-,      { nome: 'Pio IX', uf: 'PI', ibge: '2208205' }
-,      { nome: 'Piquet Carneiro', uf: 'CE', ibge: '2310902' }
-,      { nome: 'Piracema', uf: 'MG', ibge: '3150604' }
-,      { nome: 'Piracicaba', uf: 'SP', ibge: '3538709' }
-,      { nome: 'Pirapora', uf: 'MG', ibge: '3151206' }
-,      { nome: 'Pirapozinho', uf: 'SP', ibge: '3539202' }
-,      { nome: 'Pirassununga', uf: 'SP', ibge: '3539301' }
-,      { nome: 'Piraí do Sul', uf: 'PR', ibge: '4119400' }
-,      { nome: 'Piraúba', uf: 'MG', ibge: '3151305' }
-,      { nome: 'Pires Ferreira', uf: 'CE', ibge: '2310951' }
-,      { nome: 'Piripiri', uf: 'PI', ibge: '2208403' }
-,      { nome: 'Pitangueiras', uf: 'SP', ibge: '3539509' }
-,      { nome: 'Pitangueiras', uf: 'PR', ibge: '4119657' }
-,      { nome: 'Piumhi', uf: 'MG', ibge: '3151503' }
-,      { nome: 'Piçarra', uf: 'PA', ibge: '1505635' }
-,      { nome: 'Planaltina', uf: 'GO', ibge: '5217609' }
-,      { nome: 'Planaltina do Paraná', uf: 'PR', ibge: '4119707' }
-,      { nome: 'Plácido de Castro', uf: 'AC', ibge: '1200385' }
-,      { nome: 'Pocinhos', uf: 'PB', ibge: '2512002' }
-,      { nome: 'Pocrane', uf: 'MG', ibge: '3151909' }
-,      { nome: 'Pojuca', uf: 'BA', ibge: '2925204' }
-,      { nome: 'Pompéia', uf: 'SP', ibge: '3540002' }
-,      { nome: 'Pompéu', uf: 'MG', ibge: '3152006' }
-,      { nome: 'Ponta de Pedras', uf: 'PA', ibge: '1505700' }
-,      { nome: 'Pontal do Paraná', uf: 'PR', ibge: '4119954' }
-,      { nome: 'Pontalinda', uf: 'SP', ibge: '3540259' }
-,      { nome: 'Ponte Nova', uf: 'MG', ibge: '3152105' }
-,      { nome: 'Ponte Preta', uf: 'RS', ibge: '4314787' }
-,      { nome: 'Ponte Serrada', uf: 'SC', ibge: '4213401' }
-,      { nome: 'Pontes Gestal', uf: 'SP', ibge: '3540309' }
-,      { nome: 'Ponto Belo', uf: 'ES', ibge: '3204252' }
-,      { nome: 'Pontão', uf: 'RS', ibge: '4314779' }
-,      { nome: 'Poranga', uf: 'CE', ibge: '2311009' }
-,      { nome: 'Portalegre', uf: 'RN', ibge: '2410207' }
-,      { nome: 'Porteirão', uf: 'GO', ibge: '5218052' }
-,      { nome: 'Portel', uf: 'PA', ibge: '1505809' }
-,      { nome: 'Portelândia', uf: 'GO', ibge: '5218102' }
-,      { nome: 'Porto', uf: 'PI', ibge: '2208502' }
-,      { nome: 'Porto Alegre', uf: 'RS', ibge: '4314902' }
-,      { nome: 'Porto Calvo', uf: 'AL', ibge: '2707305' }
-,      { nome: 'Porto Estrela', uf: 'MT', ibge: '5106851' }
-,      { nome: 'Porto Lucena', uf: 'RS', ibge: '4315008' }
-,      { nome: 'Porto Real', uf: 'RJ', ibge: '3304110' }
-,      { nome: 'Porto da Folha', uf: 'SE', ibge: '2805604' }
-,      { nome: 'Potim', uf: 'SP', ibge: '3540754' }
-,      { nome: 'Potiraguá', uf: 'BA', ibge: '2925402' }
-,      { nome: 'Potiretama', uf: 'CE', ibge: '2311231' }
-,      { nome: 'Poté', uf: 'MG', ibge: '3152402' }
-,      { nome: 'Pouso Alto', uf: 'MG', ibge: '3152600' }
-,      { nome: 'Pouso Novo', uf: 'RS', ibge: '4315131' }
-,      { nome: 'Poxoréu', uf: 'MT', ibge: '5107008' }
-,      { nome: 'Poço Redondo', uf: 'SE', ibge: '2805406' }
-,      { nome: 'Poço das Antas', uf: 'RS', ibge: '4314753' }
-,      { nome: 'Poço das Trincheiras', uf: 'AL', ibge: '2707206' }
-,      { nome: 'Pracinha', uf: 'SP', ibge: '3540853' }
-,      { nome: 'Prados', uf: 'MG', ibge: '3152709' }
-,      { nome: 'Prainha', uf: 'PA', ibge: '1506005' }
-,      { nome: 'Prata', uf: 'PB', ibge: '2512200' }
-,      { nome: 'Pratinha', uf: 'MG', ibge: '3153004' }
-,      { nome: 'Presidente Alves', uf: 'SP', ibge: '3541109' }
-,      { nome: 'Presidente Figueiredo', uf: 'AM', ibge: '1303536' }
-,      { nome: 'Presidente Kennedy', uf: 'TO', ibge: '1718402' }
-,      { nome: 'Presidente Kennedy', uf: 'ES', ibge: '3204302' }
-,      { nome: 'Presidente Lucena', uf: 'RS', ibge: '4315149' }
-,      { nome: 'Presidente Olegário', uf: 'MG', ibge: '3153400' }
-,      { nome: 'Presidente Tancredo Neves', uf: 'BA', ibge: '2925758' }
-,      { nome: 'Presidente Venceslau', uf: 'SP', ibge: '3541505' }
-,      { nome: 'Primavera de Rondônia', uf: 'RO', ibge: '1101476' }
-,      { nome: 'Princesa', uf: 'SC', ibge: '4214151' }
-,      { nome: 'Progresso', uf: 'RS', ibge: '4315156' }
-,      { nome: 'Puxinanã', uf: 'PB', ibge: '2512408' }
-,      { nome: 'Quadra', uf: 'SP', ibge: '3541653' }
-,      { nome: 'Quatiguá', uf: 'PR', ibge: '4120705' }
-,      { nome: 'Quatro Irmãos', uf: 'RS', ibge: '4315313' }
-,      { nome: 'Quebrangulo', uf: 'AL', ibge: '2707602' }
-,      { nome: 'Queluz', uf: 'SP', ibge: '3541901' }
-,      { nome: 'Queluzito', uf: 'MG', ibge: '3153806' }
-,      { nome: 'Quilombo', uf: 'SC', ibge: '4214201' }
-,      { nome: 'Quinta do Sol', uf: 'PR', ibge: '4121109' }
-,      { nome: 'Quixaba', uf: 'PE', ibge: '2611533' }
-,      { nome: 'Rafael Fernandes', uf: 'RN', ibge: '2410504' }
-,      { nome: 'Rafard', uf: 'SP', ibge: '3542107' }
-,      { nome: 'Raposa', uf: 'MA', ibge: '2109452' }
-,      { nome: 'Recife', uf: 'PE', ibge: '2611606' }
-,      { nome: 'Recursolândia', uf: 'TO', ibge: '1718501' }
-,      { nome: 'Redenção', uf: 'PA', ibge: '1506138' }
-,      { nome: 'Redenção da Serra', uf: 'SP', ibge: '3542305' }
-,      { nome: 'Relvado', uf: 'RS', ibge: '4315453' }
-,      { nome: 'Remígio', uf: 'PB', ibge: '2512705' }
-,      { nome: 'Resende', uf: 'RJ', ibge: '3304201' }
-,      { nome: 'Resende Costa', uf: 'MG', ibge: '3154200' }
-,      { nome: 'Reserva do Cabaçal', uf: 'MT', ibge: '5107156' }
-,      { nome: 'Reserva do Iguaçu', uf: 'PR', ibge: '4121752' }
-,      { nome: 'Resplendor', uf: 'MG', ibge: '3154309' }
-,      { nome: 'Ressaquinha', uf: 'MG', ibge: '3154408' }
-,      { nome: 'Restinga', uf: 'SP', ibge: '3542701' }
-,      { nome: 'Retirolândia', uf: 'BA', ibge: '2926103' }
-,      { nome: 'Riacho de Santana', uf: 'BA', ibge: '2926400' }
-,      { nome: 'Riacho de Santo Antônio', uf: 'PB', ibge: '2512788' }
-,      { nome: 'Riachuelo', uf: 'RN', ibge: '2410900' }
-,      { nome: 'Riachão das Neves', uf: 'BA', ibge: '2926202' }
-,      { nome: 'Riachão do Dantas', uf: 'SE', ibge: '2805802' }
-,      { nome: 'Ribeirão Branco', uf: 'SP', ibge: '3543006' }
-,      { nome: 'Ribeirão Vermelho', uf: 'MG', ibge: '3154705' }
-,      { nome: 'Ribeirão das Neves', uf: 'MG', ibge: '3154606' }
-,      { nome: 'Ribeirão do Largo', uf: 'BA', ibge: '2926657' }
-,      { nome: 'Rifaina', uf: 'SP', ibge: '3543600' }
-,      { nome: 'Rinópolis', uf: 'SP', ibge: '3543808' }
-,      { nome: 'Rio Acima', uf: 'MG', ibge: '3154804' }
-,      { nome: 'Rio Branco', uf: 'AC', ibge: '1200401' }
-,      { nome: 'Rio Branco', uf: 'MT', ibge: '5107206' }
-,      { nome: 'Rio Branco do Ivaí', uf: 'PR', ibge: '4122172' }
-,      { nome: 'Rio Casca', uf: 'MG', ibge: '3154903' }
-,      { nome: 'Rio Formoso', uf: 'PE', ibge: '2611903' }
-,      { nome: 'Rio Largo', uf: 'AL', ibge: '2707701' }
-,      { nome: 'Rio Negro', uf: 'MS', ibge: '5007307' }
-,      { nome: 'Rio Preto da Eva', uf: 'AM', ibge: '1303569' }
-,      { nome: 'Rio Quente', uf: 'GO', ibge: '5218789' }
-,      { nome: 'Rio Rufino', uf: 'SC', ibge: '4215059' }
-,      { nome: 'Rio Vermelho', uf: 'MG', ibge: '3156007' }
-,      { nome: 'Rio das Flores', uf: 'RJ', ibge: '3304508' }
-,      { nome: 'Rio de Janeiro', uf: 'RJ', ibge: '3304557' }
-,      { nome: 'Rio do Prado', uf: 'MG', ibge: '3155108' }
-,      { nome: 'Rio dos Índios', uf: 'RS', ibge: '4315552' }
-,      { nome: 'Ritápolis', uf: 'MG', ibge: '3156106' }
-,      { nome: 'Riversul', uf: 'SP', ibge: '3543501' }
-,      { nome: 'Rochedo', uf: 'MS', ibge: '5007505' }
-,      { nome: 'Rodeio Bonito', uf: 'RS', ibge: '4315909' }
-,      { nome: 'Rodeiro', uf: 'MG', ibge: '3156304' }
-,      { nome: 'Rodolfo Fernandes', uf: 'RN', ibge: '2411007' }
-,      { nome: 'Romaria', uf: 'MG', ibge: '3156403' }
-,      { nome: 'Romelândia', uf: 'SC', ibge: '4215208' }
-,      { nome: 'Ronda Alta', uf: 'RS', ibge: '4316105' }
-,      { nome: 'Rondinha', uf: 'RS', ibge: '4316204' }
-,      { nome: 'Rondon do Pará', uf: 'PA', ibge: '1506187' }
-,      { nome: 'Roseira', uf: 'SP', ibge: '3544301' }
-,      { nome: 'Rosário do Catete', uf: 'SE', ibge: '2806107' }
-,      { nome: 'Rosário do Ivaí', uf: 'PR', ibge: '4122651' }
-,      { nome: 'Rubiataba', uf: 'GO', ibge: '5218904' }
-,      { nome: 'Rubim', uf: 'MG', ibge: '3156601' }
-,      { nome: 'Rubinéia', uf: 'SP', ibge: '3544509' }
-,      { nome: 'Rubiácea', uf: 'SP', ibge: '3544400' }
-,      { nome: 'Rurópolis', uf: 'PA', ibge: '1506195' }
-,      { nome: 'Sabará', uf: 'MG', ibge: '3156700' }
-,      { nome: 'Sabinópolis', uf: 'MG', ibge: '3156809' }
-,      { nome: 'Sagres', uf: 'SP', ibge: '3544707' }
-,      { nome: 'Sairé', uf: 'PE', ibge: '2612000' }
-,      { nome: 'Saldanha Marinho', uf: 'RS', ibge: '4316436' }
-,      { nome: 'Sales', uf: 'SP', ibge: '3544806' }
-,      { nome: 'Salinas', uf: 'MG', ibge: '3157005' }
-,      { nome: 'Salinópolis', uf: 'PA', ibge: '1506203' }
-,      { nome: 'Salitre', uf: 'CE', ibge: '2311959' }
-,      { nome: 'Salmourão', uf: 'SP', ibge: '3545100' }
-,      { nome: 'Saltinho', uf: 'SP', ibge: '3545159' }
-,      { nome: 'Salto', uf: 'SP', ibge: '3545209' }
-,      { nome: 'Salto Grande', uf: 'SP', ibge: '3545407' }
-,      { nome: 'Salto Veloso', uf: 'SC', ibge: '4215406' }
-,      { nome: 'Salto da Divisa', uf: 'MG', ibge: '3157104' }
-,      { nome: 'Salto do Céu', uf: 'MT', ibge: '5107750' }
-,      { nome: 'Salto do Jacuí', uf: 'RS', ibge: '4316451' }
-,      { nome: 'Salvaterra', uf: 'PA', ibge: '1506302' }
-,      { nome: 'Sambaíba', uf: 'MA', ibge: '2109700' }
-,      { nome: 'Sangão', uf: 'SC', ibge: '4215455' }
-,      { nome: 'Sant\'Ana do Livramento', uf: 'RS', ibge: '4317103' }
-,      { nome: 'Santa Brígida', uf: 'BA', ibge: '2927606' }
-,      { nome: 'Santa Bárbara de Goiás', uf: 'GO', ibge: '5219100' }
-,      { nome: 'Santa Bárbara do Monte Verde', uf: 'MG', ibge: '3157278' }
-,      { nome: 'Santa Bárbara do Tugúrio', uf: 'MG', ibge: '3157302' }
-,      { nome: 'Santa Clara do Sul', uf: 'RS', ibge: '4316758' }
-,      { nome: 'Santa Cruz Cabrália', uf: 'BA', ibge: '2927705' }
-,      { nome: 'Santa Cruz de Minas', uf: 'MG', ibge: '3157336' }
-,      { nome: 'Santa Cruz de Monte Castelo', uf: 'PR', ibge: '4123303' }
-,      { nome: 'Santa Cruz do Piauí', uf: 'PI', ibge: '2209104' }
-,      { nome: 'Santa Cruz do Sul', uf: 'RS', ibge: '4316808' }
-,      { nome: 'Santa Efigênia de Minas', uf: 'MG', ibge: '3157500' }
-,      { nome: 'Santa Ernestina', uf: 'SP', ibge: '3546504' }
-,      { nome: 'Santa Filomena', uf: 'PI', ibge: '2209203' }
-,      { nome: 'Santa Fé de Minas', uf: 'MG', ibge: '3157609' }
-,      { nome: 'Santa Helena de Minas', uf: 'MG', ibge: '3157658' }
-,      { nome: 'Santa Inês', uf: 'PR', ibge: '4123600' }
-,      { nome: 'Santa Inês', uf: 'BA', ibge: '2927903' }
-,      { nome: 'Santa Isabel', uf: 'SP', ibge: '3546801' }
-,      { nome: 'Santa Isabel', uf: 'GO', ibge: '5219357' }
-,      { nome: 'Santa Isabel do Ivaí', uf: 'PR', ibge: '4123709' }
-,      { nome: 'Santa Izabel do Pará', uf: 'PA', ibge: '1506500' }
-,      { nome: 'Santa Leopoldina', uf: 'ES', ibge: '3204500' }
-,      { nome: 'Santa Luzia', uf: 'MG', ibge: '3157807' }
-,      { nome: 'Santa Luzia', uf: 'PB', ibge: '2513406' }
-,      { nome: 'Santa Luzia', uf: 'BA', ibge: '2928059' }
-,      { nome: 'Santa Luzia do Pará', uf: 'PA', ibge: '1506559' }
-,      { nome: 'Santa Margarida', uf: 'MG', ibge: '3157906' }
-,      { nome: 'Santa Margarida do Sul', uf: 'RS', ibge: '4316972' }
-,      { nome: 'Santa Maria da Serra', uf: 'SP', ibge: '3547007' }
-,      { nome: 'Santa Maria das Barreiras', uf: 'PA', ibge: '1506583' }
-,      { nome: 'Santa Maria do Cambucá', uf: 'PE', ibge: '2612703' }
-,      { nome: 'Santa Maria do Pará', uf: 'PA', ibge: '1506609' }
-,      { nome: 'Santa Maria do Salto', uf: 'MG', ibge: '3158102' }
-,      { nome: 'Santa Maria do Tocantins', uf: 'TO', ibge: '1718881' }
-,      { nome: 'Santa Mercedes', uf: 'SP', ibge: '3547106' }
-,      { nome: 'Santa Mônica', uf: 'PR', ibge: '4123956' }
-,      { nome: 'Santa Quitéria', uf: 'CE', ibge: '2312205' }
-,      { nome: 'Santa Rita de Cássia', uf: 'BA', ibge: '2928406' }
-,      { nome: 'Santa Rita de Ibitipoca', uf: 'MG', ibge: '3159407' }
-,      { nome: 'Santa Rita do Araguaia', uf: 'GO', ibge: '5219407' }
-,      { nome: 'Santa Rita do Novo Destino', uf: 'GO', ibge: '5219456' }
-,      { nome: 'Santa Rita do Sapucaí', uf: 'MG', ibge: '3159605' }
-,      { nome: 'Santa Rita do Tocantins', uf: 'TO', ibge: '1718899' }
-,      { nome: 'Santa Rosa da Serra', uf: 'MG', ibge: '3159704' }
-,      { nome: 'Santa Rosa de Goiás', uf: 'GO', ibge: '5219506' }
-,      { nome: 'Santa Rosa de Viterbo', uf: 'SP', ibge: '3547601' }
-,      { nome: 'Santa Rosa do Purus', uf: 'AC', ibge: '1200435' }
-,      { nome: 'Santa Teresinha', uf: 'BA', ibge: '2928505' }
-,      { nome: 'Santa Tereza de Goiás', uf: 'GO', ibge: '5219605' }
-,      { nome: 'Santa Terezinha', uf: 'MT', ibge: '5107776' }
-,      { nome: 'Santa Terezinha', uf: 'PE', ibge: '2612802' }
-,      { nome: 'Santa Terezinha de Goiás', uf: 'GO', ibge: '5219704' }
-,      { nome: 'Santa Terezinha do Progresso', uf: 'SC', ibge: '4215687' }
-,      { nome: 'Santa Terezinha do Tocantins', uf: 'TO', ibge: '1720002' }
-,      { nome: 'Santana de Cataguases', uf: 'MG', ibge: '3158409' }
-,      { nome: 'Santana de Pirapama', uf: 'MG', ibge: '3158508' }
-,      { nome: 'Santana do Araguaia', uf: 'PA', ibge: '1506708' }
-,      { nome: 'Santana do Itararé', uf: 'PR', ibge: '4124004' }
-,      { nome: 'Santana do Jacaré', uf: 'MG', ibge: '3158805' }
-,      { nome: 'Santana do Manhuaçu', uf: 'MG', ibge: '3158904' }
-,      { nome: 'Santana do Seridó', uf: 'RN', ibge: '2411429' }
-,      { nome: 'Santana do São Francisco', uf: 'SE', ibge: '2806404' }
-,      { nome: 'Santana dos Montes', uf: 'MG', ibge: '3159100' }
-,      { nome: 'Santanópolis', uf: 'BA', ibge: '2928307' }
-,      { nome: 'Santarém', uf: 'PA', ibge: '1506807' }
-,      { nome: 'Santarém Novo', uf: 'PA', ibge: '1506906' }
-,      { nome: 'Santiago do Sul', uf: 'SC', ibge: '4215695' }
-,      { nome: 'Santo Amaro das Brotas', uf: 'SE', ibge: '2806602' }
-,      { nome: 'Santo Antônio da Alegria', uf: 'SP', ibge: '3547908' }
-,      { nome: 'Santo Antônio da Barra', uf: 'GO', ibge: '5219712' }
-,      { nome: 'Santo Antônio da Patrulha', uf: 'RS', ibge: '4317608' }
-,      { nome: 'Santo Antônio de Pádua', uf: 'RJ', ibge: '3304706' }
-,      { nome: 'Santo Antônio do Aracanguá', uf: 'SP', ibge: '3548054' }
-,      { nome: 'Santo Antônio do Caiuá', uf: 'PR', ibge: '4124202' }
-,      { nome: 'Santo Antônio do Jacinto', uf: 'MG', ibge: '3160306' }
-,      { nome: 'Santo Antônio do Paraíso', uf: 'PR', ibge: '4124301' }
-,      { nome: 'Santo Antônio do Pinhal', uf: 'SP', ibge: '3548203' }
-,      { nome: 'Santo Antônio do Planalto', uf: 'RS', ibge: '4317756' }
-,      { nome: 'Santo Antônio do Retiro', uf: 'MG', ibge: '3160454' }
-,      { nome: 'Santo Antônio do Rio Abaixo', uf: 'MG', ibge: '3160504' }
-,      { nome: 'Santo Antônio do Tauá', uf: 'PA', ibge: '1507003' }
-,      { nome: 'Santo Antônio dos Milagres', uf: 'PI', ibge: '2209450' }
-,      { nome: 'Santo Inácio do Piauí', uf: 'PI', ibge: '2209500' }
-,      { nome: 'Santópolis do Aguapeí', uf: 'SP', ibge: '3548401' }
-,      { nome: 'Sapopema', uf: 'PR', ibge: '4126207' }
-,      { nome: 'Sapucaia', uf: 'PA', ibge: '1507755' }
-,      { nome: 'Sarandi', uf: 'RS', ibge: '4320107' }
-,      { nome: 'Sarapuí', uf: 'SP', ibge: '3551108' }
-,      { nome: 'Sardoá', uf: 'MG', ibge: '3165503' }
-,      { nome: 'Sarzedo', uf: 'MG', ibge: '3165537' }
-,      { nome: 'Sebastianópolis do Sul', uf: 'SP', ibge: '3551306' }
-,      { nome: 'Sebastião Leal', uf: 'PI', ibge: '2210631' }
-,      { nome: 'Seberi', uf: 'RS', ibge: '4320206' }
-,      { nome: 'Sede Nova', uf: 'RS', ibge: '4320230' }
-,      { nome: 'Selbach', uf: 'RS', ibge: '4320305' }
-,      { nome: 'Senador Amaral', uf: 'MG', ibge: '3165578' }
-,      { nome: 'Senador Elói de Souza', uf: 'RN', ibge: '2413102' }
-,      { nome: 'Senador José Porfírio', uf: 'PA', ibge: '1507805' }
-,      { nome: 'Senador La Rocque', uf: 'MA', ibge: '2111763' }
-,      { nome: 'Senador Modestino Gonçalves', uf: 'MG', ibge: '3165909' }
-,      { nome: 'Serafina Corrêa', uf: 'RS', ibge: '4320404' }
-,      { nome: 'Serra', uf: 'ES', ibge: '3205002' }
-,      { nome: 'Serra Branca', uf: 'PB', ibge: '2515500' }
-,      { nome: 'Serra Nova Dourada', uf: 'MT', ibge: '5107883' }
-,      { nome: 'Serra da Raiz', uf: 'PB', ibge: '2515609' }
-,      { nome: 'Serra da Saudade', uf: 'MG', ibge: '3166600' }
-,      { nome: 'Serra do Ramalho', uf: 'BA', ibge: '2930154' }
-,      { nome: 'Serra do Salitre', uf: 'MG', ibge: '3166808' }
-,      { nome: 'Serra dos Aimorés', uf: 'MG', ibge: '3166709' }
-,      { nome: 'Serranópolis', uf: 'GO', ibge: '5220504' }
-,      { nome: 'Serranópolis de Minas', uf: 'MG', ibge: '3166956' }
-,      { nome: 'Serranópolis do Iguaçu', uf: 'PR', ibge: '4126355' }
-,      { nome: 'Serrinha', uf: 'RN', ibge: '2413508' }
-,      { nome: 'Serrolândia', uf: 'BA', ibge: '2930600' }
-,      { nome: 'Sertãozinho', uf: 'SP', ibge: '3551702' }
-,      { nome: 'Sete Barras', uf: 'SP', ibge: '3551801' }
-,      { nome: 'Sete Lagoas', uf: 'MG', ibge: '3167202' }
-,      { nome: 'Sete de Setembro', uf: 'RS', ibge: '4320578' }
-,      { nome: 'Setubinha', uf: 'MG', ibge: '3165552' }
-,      { nome: 'Severiano Melo', uf: 'RN', ibge: '2413607' }
-,      { nome: 'Siderópolis', uf: 'SC', ibge: '4217600' }
-,      { nome: 'Sigefredo Pacheco', uf: 'PI', ibge: '2210656' }
-,      { nome: 'Silvanópolis', uf: 'TO', ibge: '1720655' }
-,      { nome: 'Silveiras', uf: 'SP', ibge: '3552007' }
-,      { nome: 'Silves', uf: 'AM', ibge: '1304005' }
-,      { nome: 'Simonésia', uf: 'MG', ibge: '3167608' }
-,      { nome: 'Sinimbu', uf: 'RS', ibge: '4320677' }
-,      { nome: 'Siqueira Campos', uf: 'PR', ibge: '4126603' }
-,      { nome: 'Sirinhaém', uf: 'PE', ibge: '2614204' }
-,      { nome: 'Siriri', uf: 'SE', ibge: '2807204' }
-,      { nome: 'Sobradinho', uf: 'BA', ibge: '2930774' }
-,      { nome: 'Socorro', uf: 'SP', ibge: '3552106' }
-,      { nome: 'Soledade', uf: 'RS', ibge: '4320800' }
-,      { nome: 'Sonora', uf: 'MS', ibge: '5007935' }
-,      { nome: 'Sossêgo', uf: 'PB', ibge: '2516151' }
-,      { nome: 'Soure', uf: 'PA', ibge: '1507904' }
-,      { nome: 'Souto Soares', uf: 'BA', ibge: '2930808' }
-,      { nome: 'Sucupira do Riachão', uf: 'MA', ibge: '2111953' }
-,      { nome: 'Sul Brasil', uf: 'SC', ibge: '4217758' }
-,      { nome: 'São Benedito', uf: 'CE', ibge: '2312304' }
-,      { nome: 'São Benedito do Rio Preto', uf: 'MA', ibge: '2110401' }
-,      { nome: 'São Benedito do Sul', uf: 'PE', ibge: '2612901' }
-,      { nome: 'São Bento', uf: 'MA', ibge: '2110500' }
-,      { nome: 'São Bento Abade', uf: 'MG', ibge: '3160801' }
-,      { nome: 'São Bento do Norte', uf: 'RN', ibge: '2411601' }
-,      { nome: 'São Brás', uf: 'AL', ibge: '2708204' }
-,      { nome: 'São Caetano de Odivelas', uf: 'PA', ibge: '1507102' }
-,      { nome: 'São Carlos', uf: 'SP', ibge: '3548906' }
-,      { nome: 'São Desidério', uf: 'BA', ibge: '2928901' }
-,      { nome: 'São Domingos', uf: 'SE', ibge: '2806800' }
-,      { nome: 'São Domingos do Capim', uf: 'PA', ibge: '1507201' }
-,      { nome: 'São Fernando', uf: 'RN', ibge: '2411809' }
-,      { nome: 'São Francisco', uf: 'SP', ibge: '3549003' }
-,      { nome: 'São Francisco', uf: 'SE', ibge: '2806909' }
-,      { nome: 'São Francisco de Assis do Piauí', uf: 'PI', ibge: '2209658' }
-,      { nome: 'São Francisco de Goiás', uf: 'GO', ibge: '5219902' }
-,      { nome: 'São Francisco de Itabapoana', uf: 'RJ', ibge: '3304755' }
-,      { nome: 'São Francisco de Paula', uf: 'RS', ibge: '4318200' }
-,      { nome: 'São Francisco de Paula', uf: 'MG', ibge: '3161205' }
-,      { nome: 'São Francisco do Brejão', uf: 'MA', ibge: '2110856' }
-,      { nome: 'São Francisco do Glória', uf: 'MG', ibge: '3161403' }
-,      { nome: 'São Francisco do Oeste', uf: 'RN', ibge: '2411908' }
-,      { nome: 'São Francisco do Pará', uf: 'PA', ibge: '1507409' }
-,      { nome: 'São Félix de Minas', uf: 'MG', ibge: '3161056' }
-,      { nome: 'São Félix do Coribe', uf: 'BA', ibge: '2929057' }
-,      { nome: 'São Félix do Tocantins', uf: 'TO', ibge: '1720150' }
-,      { nome: 'São Félix do Xingu', uf: 'PA', ibge: '1507300' }
-,      { nome: 'São Gabriel', uf: 'BA', ibge: '2929255' }
-,      { nome: 'São Geraldo', uf: 'MG', ibge: '3161502' }
-,      { nome: 'São Geraldo da Piedade', uf: 'MG', ibge: '3161601' }
-,      { nome: 'São Gonçalo do Abaeté', uf: 'MG', ibge: '3161700' }
-,      { nome: 'São Gonçalo do Piauí', uf: 'PI', ibge: '2209807' }
-,      { nome: 'São Gonçalo do Rio Preto', uf: 'MG', ibge: '3125507' }
-,      { nome: 'São Gonçalo do Sapucaí', uf: 'MG', ibge: '3162005' }
-,      { nome: 'São Gotardo', uf: 'MG', ibge: '3162104' }
-,      { nome: 'São Joaquim de Bicas', uf: 'MG', ibge: '3162922' }
-,      { nome: 'São Joaquim do Monte', uf: 'PE', ibge: '2613305' }
-,      { nome: 'São Jorge do Patrocínio', uf: 'PR', ibge: '4125357' }
-,      { nome: 'São José da Bela Vista', uf: 'SP', ibge: '3549508' }
-,      { nome: 'São José da Laje', uf: 'AL', ibge: '2708303' }
-,      { nome: 'São José da Varginha', uf: 'MG', ibge: '3163102' }
-,      { nome: 'São José das Missões', uf: 'RS', ibge: '4318457' }
-,      { nome: 'São José de Piranhas', uf: 'PB', ibge: '2514503' }
-,      { nome: 'São José de Ribamar', uf: 'MA', ibge: '2111201' }
-,      { nome: 'São José do Barreiro', uf: 'SP', ibge: '3549607' }
-,      { nome: 'São José do Bonfim', uf: 'PB', ibge: '2514602' }
-,      { nome: 'São José do Brejo do Cruz', uf: 'PB', ibge: '2514651' }
-,      { nome: 'São José do Calçado', uf: 'ES', ibge: '3204807' }
-,      { nome: 'São José do Campestre', uf: 'RN', ibge: '2412302' }
-,      { nome: 'São José do Divino', uf: 'MG', ibge: '3163300' }
-,      { nome: 'São José do Divino', uf: 'PI', ibge: '2210052' }
-,      { nome: 'São José do Hortêncio', uf: 'RS', ibge: '4318481' }
-,      { nome: 'São José do Jacuri', uf: 'MG', ibge: '3163508' }
-,      { nome: 'São José do Seridó', uf: 'RN', ibge: '2412401' }
-,      { nome: 'São José do Vale do Rio Preto', uf: 'RJ', ibge: '3305158' }
-,      { nome: 'São José dos Cordeiros', uf: 'PB', ibge: '2514800' }
-,      { nome: 'São José dos Pinhais', uf: 'PR', ibge: '4125506' }
-,      { nome: 'São José dos Ramos', uf: 'PB', ibge: '2514453' }
-,      { nome: 'São João Nepomuceno', uf: 'MG', ibge: '3162906' }
-,      { nome: 'São João da Baliza', uf: 'RR', ibge: '1400506' }
-,      { nome: 'São João da Boa Vista', uf: 'SP', ibge: '3549102' }
-,      { nome: 'São João da Fronteira', uf: 'PI', ibge: '2209872' }
-,      { nome: 'São João da Lagoa', uf: 'MG', ibge: '3162252' }
-,      { nome: 'São João da Ponte', uf: 'MG', ibge: '3162401' }
-,      { nome: 'São João da Serra', uf: 'PI', ibge: '2209906' }
-,      { nome: 'São João da Varjota', uf: 'PI', ibge: '2209955' }
-,      { nome: 'São João das Missões', uf: 'MG', ibge: '3162450' }
-,      { nome: 'São João de Meriti', uf: 'RJ', ibge: '3305109' }
-,      { nome: 'São João de Pirabas', uf: 'PA', ibge: '1507474' }
-,      { nome: 'São João del Rei', uf: 'MG', ibge: '3162500' }
-,      { nome: 'São João do Cariri', uf: 'PB', ibge: '2514008' }
-,      { nome: 'São João do Manhuaçu', uf: 'MG', ibge: '3162559' }
-,      { nome: 'São João do Oeste', uf: 'SC', ibge: '4216255' }
-,      { nome: 'São João do Pacuí', uf: 'MG', ibge: '3162658' }
-,      { nome: 'São João do Soter', uf: 'MA', ibge: '2111078' }
-,      { nome: 'São João do Tigre', uf: 'PB', ibge: '2514107' }
-,      { nome: 'São Julião', uf: 'PI', ibge: '2210300' }
-,      { nome: 'São Leopoldo', uf: 'RS', ibge: '4318705' }
-,      { nome: 'São Lourenço da Serra', uf: 'SP', ibge: '3549953' }
-,      { nome: 'São Lourenço do Oeste', uf: 'SC', ibge: '4216909' }
-,      { nome: 'São Luis do Piauí', uf: 'PI', ibge: '2210375' }
-,      { nome: 'São Luiz', uf: 'RR', ibge: '1400605' }
-,      { nome: 'São Luiz do Paraitinga', uf: 'SP', ibge: '3550001' }
-,      { nome: 'São Luís', uf: 'MA', ibge: '2111300' }
-,      { nome: 'São Luíz do Norte', uf: 'GO', ibge: '5220157' }
-,      { nome: 'São Manuel', uf: 'SP', ibge: '3550100' }
-,      { nome: 'São Martinho', uf: 'SC', ibge: '4217105' }
-,      { nome: 'São Mateus do Maranhão', uf: 'MA', ibge: '2111508' }
-,      { nome: 'São Miguel de Taipu', uf: 'PB', ibge: '2515005' }
-,      { nome: 'São Miguel do Araguaia', uf: 'GO', ibge: '5220207' }
-,      { nome: 'São Miguel do Fidalgo', uf: 'PI', ibge: '2210391' }
-,      { nome: 'São Miguel do Guaporé', uf: 'RO', ibge: '1100320' }
-,      { nome: 'São Miguel do Oeste', uf: 'SC', ibge: '4217204' }
-,      { nome: 'São Patrício', uf: 'GO', ibge: '5220280' }
-,      { nome: 'São Paulo de Olivença', uf: 'AM', ibge: '1303908' }
-,      { nome: 'São Paulo do Potengi', uf: 'RN', ibge: '2412609' }
-,      { nome: 'São Pedro da Cipa', uf: 'MT', ibge: '5107404' }
-,      { nome: 'São Pedro da União', uf: 'MG', ibge: '3163904' }
-,      { nome: 'São Pedro das Missões', uf: 'RS', ibge: '4319364' }
-,      { nome: 'São Pedro de Alcântara', uf: 'SC', ibge: '4217253' }
-,      { nome: 'São Pedro do Iguaçu', uf: 'PR', ibge: '4125753' }
-,      { nome: 'São Pedro do Paraná', uf: 'PR', ibge: '4125902' }
-,      { nome: 'São Pedro dos Ferros', uf: 'MG', ibge: '3164001' }
-,      { nome: 'São Rafael', uf: 'RN', ibge: '2412807' }
-,      { nome: 'São Romão', uf: 'MG', ibge: '3164209' }
-,      { nome: 'São Roque de Minas', uf: 'MG', ibge: '3164308' }
-,      { nome: 'São Sebastião da Boa Vista', uf: 'PA', ibge: '1507706' }
-,      { nome: 'São Sebastião de Lagoa de Roça', uf: 'PB', ibge: '2515104' }
-,      { nome: 'São Sebastião do Alto', uf: 'RJ', ibge: '3305307' }
-,      { nome: 'São Sebastião do Maranhão', uf: 'MG', ibge: '3164506' }
-,      { nome: 'São Sebastião do Oeste', uf: 'MG', ibge: '3164605' }
-,      { nome: 'São Sebastião do Paraíso', uf: 'MG', ibge: '3164704' }
-,      { nome: 'São Sebastião do Passé', uf: 'BA', ibge: '2929503' }
-,      { nome: 'São Simão', uf: 'SP', ibge: '3550902' }
-,      { nome: 'São Tiago', uf: 'MG', ibge: '3165008' }
-,      { nome: 'São Tomás de Aquino', uf: 'MG', ibge: '3165107' }
-,      { nome: 'São Tomé', uf: 'RN', ibge: '2412906' }
-,      { nome: 'São Tomé das Letras', uf: 'MG', ibge: '3165206' }
-,      { nome: 'São Valentim', uf: 'RS', ibge: '4319703' }
-,      { nome: 'São Valério', uf: 'TO', ibge: '1720499' }
-,      { nome: 'São Vicente de Minas', uf: 'MG', ibge: '3165305' }
-,      { nome: 'Sítio Novo', uf: 'RN', ibge: '2413706' }
-,      { nome: 'Sítio d\'Abadia', uf: 'GO', ibge: '5220702' }
-,      { nome: 'Sítio do Mato', uf: 'BA', ibge: '2930758' }
-,      { nome: 'Tabira', uf: 'PE', ibge: '2614600' }
-,      { nome: 'Tabocas do Brejo Velho', uf: 'BA', ibge: '2930907' }
-,      { nome: 'Taboleiro Grande', uf: 'RN', ibge: '2413805' }
-,      { nome: 'Tacaimbó', uf: 'PE', ibge: '2614709' }
-,      { nome: 'Tacuru', uf: 'MS', ibge: '5007950' }
-,      { nome: 'Taguatinga', uf: 'TO', ibge: '1720903' }
-,      { nome: 'Taguaí', uf: 'SP', ibge: '3553005' }
-,      { nome: 'Taipas do Tocantins', uf: 'TO', ibge: '1720937' }
-,      { nome: 'Tambaú', uf: 'SP', ibge: '3553302' }
-,      { nome: 'Tanhaçu', uf: 'BA', ibge: '2931004' }
-,      { nome: 'Tanque d\'Arca', uf: 'AL', ibge: '2709004' }
-,      { nome: 'Tanque do Piauí', uf: 'PI', ibge: '2210979' }
-,      { nome: 'Taperoá', uf: 'PB', ibge: '2516508' }
-,      { nome: 'Tapiramutá', uf: 'BA', ibge: '2931301' }
-,      { nome: 'Tapiraí', uf: 'SP', ibge: '3553500' }
-,      { nome: 'Taquara', uf: 'RS', ibge: '4321204' }
-,      { nome: 'Taquaral de Goiás', uf: 'GO', ibge: '5221007' }
-,      { nome: 'Taquarana', uf: 'AL', ibge: '2709103' }
-,      { nome: 'Taquaraçu de Minas', uf: 'MG', ibge: '3168309' }
-,      { nome: 'Taquari', uf: 'RS', ibge: '4321303' }
-,      { nome: 'Taquaritinga', uf: 'SP', ibge: '3553708' }
-,      { nome: 'Taquarituba', uf: 'SP', ibge: '3553807' }
-,      { nome: 'Taquarivaí', uf: 'SP', ibge: '3553856' }
-,      { nome: 'Tarumã', uf: 'SP', ibge: '3553955' }
-,      { nome: 'Tasso Fragoso', uf: 'MA', ibge: '2112001' }
-,      { nome: 'Tatuí', uf: 'SP', ibge: '3554003' }
-,      { nome: 'Tavares', uf: 'PB', ibge: '2516607' }
-,      { nome: 'Teixeira', uf: 'PB', ibge: '2516706' }
-,      { nome: 'Teixeirópolis', uf: 'RO', ibge: '1101559' }
-,      { nome: 'Tejupá', uf: 'SP', ibge: '3554201' }
-,      { nome: 'Tenente Laurentino Cruz', uf: 'RN', ibge: '2414159' }
-,      { nome: 'Tenório', uf: 'PB', ibge: '2516755' }
-,      { nome: 'Teodoro Sampaio', uf: 'BA', ibge: '2931400' }
-,      { nome: 'Teotônio Vilela', uf: 'AL', ibge: '2709152' }
-,      { nome: 'Terenos', uf: 'MS', ibge: '5008008' }
-,      { nome: 'Terezinha', uf: 'PE', ibge: '2615102' }
-,      { nome: 'Terezópolis de Goiás', uf: 'GO', ibge: '5221197' }
-,      { nome: 'Terra Alta', uf: 'PA', ibge: '1507961' }
-,      { nome: 'Terra Roxa', uf: 'PR', ibge: '4127403' }
-,      { nome: 'Terra Santa', uf: 'PA', ibge: '1507979' }
-,      { nome: 'Tesouro', uf: 'MT', ibge: '5108105' }
-,      { nome: 'Teófilo Otoni', uf: 'MG', ibge: '3168606' }
-,      { nome: 'Tibau do Sul', uf: 'RN', ibge: '2414209' }
-,      { nome: 'Timóteo', uf: 'MG', ibge: '3168705' }
-,      { nome: 'Tiradentes', uf: 'MG', ibge: '3168804' }
-,      { nome: 'Tiros', uf: 'MG', ibge: '3168903' }
-,      { nome: 'Tocantins', uf: 'MG', ibge: '3169000' }
-,      { nome: 'Tocantinópolis', uf: 'TO', ibge: '1721208' }
-,      { nome: 'Toropi', uf: 'RS', ibge: '4321493' }
-,      { nome: 'Torre de Pedra', uf: 'SP', ibge: '3554656' }
-,      { nome: 'Torrinha', uf: 'SP', ibge: '3554706' }
-,      { nome: 'Tracuateua', uf: 'PA', ibge: '1508035' }
-,      { nome: 'Tracunhaém', uf: 'PE', ibge: '2615508' }
-,      { nome: 'Trairão', uf: 'PA', ibge: '1508050' }
-,      { nome: 'Tramandaí', uf: 'RS', ibge: '4321600' }
-,      { nome: 'Travesseiro', uf: 'RS', ibge: '4321626' }
-,      { nome: 'Treze de Maio', uf: 'SC', ibge: '4218400' }
-,      { nome: 'Trindade do Sul', uf: 'RS', ibge: '4321956' }
-,      { nome: 'Triunfo Potiguar', uf: 'RN', ibge: '2414456' }
-,      { nome: 'Trombas', uf: 'GO', ibge: '5221452' }
-,      { nome: 'Três Arroios', uf: 'RS', ibge: '4321634' }
-,      { nome: 'Três Forquilhas', uf: 'RS', ibge: '4321832' }
-,      { nome: 'Três Marias', uf: 'MG', ibge: '3169356' }
-,      { nome: 'Três Ranchos', uf: 'GO', ibge: '5221304' }
-,      { nome: 'Tubarão', uf: 'SC', ibge: '4218707' }
-,      { nome: 'Tucumã', uf: 'PA', ibge: '1508084' }
-,      { nome: 'Tucuruí', uf: 'PA', ibge: '1508100' }
-,      { nome: 'Tumiritinga', uf: 'MG', ibge: '3169505' }
-,      { nome: 'Tunas do Paraná', uf: 'PR', ibge: '4127882' }
-,      { nome: 'Tupaciguara', uf: 'MG', ibge: '3169604' }
-,      { nome: 'Tupanciretã', uf: 'RS', ibge: '4322202' }
-,      { nome: 'Tuparetama', uf: 'PE', ibge: '2615904' }
-,      { nome: 'Tupiratins', uf: 'TO', ibge: '1721307' }
-,      { nome: 'Turiaçu', uf: 'MA', ibge: '2112407' }
-,      { nome: 'Turilândia', uf: 'MA', ibge: '2112456' }
-,      { nome: 'Turvelândia', uf: 'GO', ibge: '5221551' }
-,      { nome: 'Turvo', uf: 'SC', ibge: '4218806' }
-,      { nome: 'Turvânia', uf: 'GO', ibge: '5221502' }
-,      { nome: 'Tutóia', uf: 'MA', ibge: '2112506' }
-,      { nome: 'Ubaitaba', uf: 'BA', ibge: '2932200' }
-,      { nome: 'Ubarana', uf: 'SP', ibge: '3555356' }
-,      { nome: 'Ubatuba', uf: 'SP', ibge: '3555406' }
-,      { nome: 'Ubaí', uf: 'MG', ibge: '3170008' }
-,      { nome: 'Uberlândia', uf: 'MG', ibge: '3170206' }
-,      { nome: 'Uchoa', uf: 'SP', ibge: '3555604' }
-,      { nome: 'Uiramutã', uf: 'RR', ibge: '1400704' }
-,      { nome: 'Ulianópolis', uf: 'PA', ibge: '1508126' }
-,      { nome: 'Umburatiba', uf: 'MG', ibge: '3170305' }
-,      { nome: 'Umbuzeiro', uf: 'PB', ibge: '2517001' }
-,      { nome: 'Umirim', uf: 'CE', ibge: '2313757' }
-,      { nome: 'Unaí', uf: 'MG', ibge: '3170404' }
-,      { nome: 'Unistalda', uf: 'RS', ibge: '4322376' }
-,      { nome: 'União da Vitória', uf: 'PR', ibge: '4128203' }
-,      { nome: 'União de Minas', uf: 'MG', ibge: '3170438' }
-,      { nome: 'União dos Palmares', uf: 'AL', ibge: '2709301' }
-,      { nome: 'Upanema', uf: 'RN', ibge: '2414605' }
-,      { nome: 'Urandi', uf: 'BA', ibge: '2932606' }
-,      { nome: 'Uruana', uf: 'GO', ibge: '5221700' }
-,      { nome: 'Uruará', uf: 'PA', ibge: '1508159' }
-,      { nome: 'Uruaçu', uf: 'GO', ibge: '5221601' }
-,      { nome: 'Urubici', uf: 'SC', ibge: '4218905' }
-,      { nome: 'Urucuia', uf: 'MG', ibge: '3170529' }
-,      { nome: 'Urucânia', uf: 'MG', ibge: '3170503' }
-,      { nome: 'Urutaí', uf: 'GO', ibge: '5221809' }
-,      { nome: 'Utinga', uf: 'BA', ibge: '2932804' }
-,      { nome: 'Vale Verde', uf: 'RS', ibge: '4322525' }
-,      { nome: 'Vale de São Domingos', uf: 'MT', ibge: '5108352' }
-,      { nome: 'Valença', uf: 'RJ', ibge: '3306107' }
-,      { nome: 'Valparaíso de Goiás', uf: 'GO', ibge: '5221858' }
-,      { nome: 'Vargem', uf: 'SC', ibge: '4219150' }
-,      { nome: 'Vargem', uf: 'SP', ibge: '3556354' }
-,      { nome: 'Vargem Alegre', uf: 'MG', ibge: '3170578' }
-,      { nome: 'Vargem Alta', uf: 'ES', ibge: '3205036' }
-,      { nome: 'Vargem Bonita', uf: 'SC', ibge: '4219176' }
-,      { nome: 'Vargem Bonita', uf: 'MG', ibge: '3170602' }
-,      { nome: 'Vazante', uf: 'MG', ibge: '3171006' }
-,      { nome: 'Venâncio Aires', uf: 'RS', ibge: '4322608' }
-,      { nome: 'Veranópolis', uf: 'RS', ibge: '4322806' }
-,      { nome: 'Verdelândia', uf: 'MG', ibge: '3171030' }
-,      { nome: 'Vereda', uf: 'BA', ibge: '2933257' }
-,      { nome: 'Veredinha', uf: 'MG', ibge: '3171071' }
-,      { nome: 'Vermelho Novo', uf: 'MG', ibge: '3171154' }
-,      { nome: 'Vespasiano', uf: 'MG', ibge: '3171204' }
-,      { nome: 'Vespasiano Correa', uf: 'RS', ibge: '4322855' }
-,      { nome: 'Viadutos', uf: 'RS', ibge: '4322905' }
-,      { nome: 'Vicente Dutra', uf: 'RS', ibge: '4323101' }
-,      { nome: 'Vicentinópolis', uf: 'GO', ibge: '5222054' }
-,      { nome: 'Victor Graeff', uf: 'RS', ibge: '4323200' }
-,      { nome: 'Vigia', uf: 'PA', ibge: '1508209' }
-,      { nome: 'Vila Nova dos Martírios', uf: 'MA', ibge: '2112852' }
-,      { nome: 'Vila Propício', uf: 'GO', ibge: '5222302' }
-,      { nome: 'Virginópolis', uf: 'MG', ibge: '3171808' }
-,      { nome: 'Visconde do Rio Branco', uf: 'MG', ibge: '3172004' }
-,      { nome: 'Viseu', uf: 'PA', ibge: '1508308' }
-,      { nome: 'Vista Alegre do Alto', uf: 'SP', ibge: '3556909' }
-,      { nome: 'Vitorino', uf: 'PR', ibge: '4128708' }
-,      { nome: 'Vitória', uf: 'ES', ibge: '3205309' }
-,      { nome: 'Vitória do Jari', uf: 'AP', ibge: '1600808' }
-,      { nome: 'Vitória do Xingu', uf: 'PA', ibge: '1508357' }
-,      { nome: 'Viçosa', uf: 'MG', ibge: '3171303' }
-,      { nome: 'Viçosa do Ceará', uf: 'CE', ibge: '2314102' }
-,      { nome: 'Votorantim', uf: 'SP', ibge: '3557006' }
-,      { nome: 'Votuporanga', uf: 'SP', ibge: '3557105' }
-,      { nome: 'Várzea', uf: 'RN', ibge: '2414704' }
-,      { nome: 'Várzea Branca', uf: 'PI', ibge: '2211357' }
-,      { nome: 'Várzea Grande', uf: 'MT', ibge: '5108402' }
-,      { nome: 'Várzea da Roça', uf: 'BA', ibge: '2933059' }
-,      { nome: 'Wagner', uf: 'BA', ibge: '2933406' }
-,      { nome: 'Wall Ferraz', uf: 'PI', ibge: '2211704' }
-,      { nome: 'Wanderlândia', uf: 'TO', ibge: '1722081' }
-,      { nome: 'Wenceslau Braz', uf: 'PR', ibge: '4128500' }
-,      { nome: 'Wenceslau Braz', uf: 'MG', ibge: '3172202' }
-,      { nome: 'Wenceslau Guimarães', uf: 'BA', ibge: '2933505' }
-,      { nome: 'Xambioá', uf: 'TO', ibge: '1722107' }
-,      { nome: 'Xangri-lá', uf: 'RS', ibge: '4323804' }
-,      { nome: 'Xanxerê', uf: 'SC', ibge: '4219507' }
-,      { nome: 'Xapuri', uf: 'AC', ibge: '1200708' }
-,      { nome: 'Xaxim', uf: 'SC', ibge: '4219705' }
-,      { nome: 'Xinguara', uf: 'PA', ibge: '1508407' }
-,      { nome: 'Zé Doca', uf: 'MA', ibge: '2114007' }
-,      { nome: 'vargem Grande', uf: 'MA', ibge: '2112704' }
-,      { nome: 'Água Branca', uf: 'AL', ibge: '2700102' }
-,      { nome: 'Água Limpa', uf: 'GO', ibge: '5200209' }
-,      { nome: 'Água Santa', uf: 'RS', ibge: '4300059' }
-,      { nome: 'Águas Belas', uf: 'PE', ibge: '2600500' }
-,      { nome: 'Águas Lindas de Goiás', uf: 'GO', ibge: '5200258' }
-,      { nome: 'Águas Vermelhas', uf: 'MG', ibge: '3101003' }
-,      { nome: 'Águas de São Pedro', uf: 'SP', ibge: '3500600' }
-,      { nome: 'Áurea', uf: 'RS', ibge: '4301552' }
-,      { nome: 'Óbidos', uf: 'PA', ibge: '1505106' }
-,      { nome: 'Óleo', uf: 'SP', ibge: '3533809' }
+      { nome: 'Abadia de Goiás', uf: 'GO', ibge: '5200050' },
+      { nome: 'Abadia dos Dourados', uf: 'MG', ibge: '3100104' },
+      { nome: 'Abaetetuba', uf: 'PA', ibge: '1500107' },
+      { nome: 'Abdon Batista', uf: 'SC', ibge: '4200051' },
+      { nome: 'Abel Figueiredo', uf: 'PA', ibge: '1500131' },
+      { nome: 'Abre Campo', uf: 'MG', ibge: '3100302' },
+      { nome: 'Acará', uf: 'PA', ibge: '1500206' },
+      { nome: 'Acarape', uf: 'CE', ibge: '2300150' },
+      { nome: 'Acari', uf: 'RN', ibge: '2400109' },
+      { nome: 'Acreúna', uf: 'GO', ibge: '5200134' },
+      { nome: 'Adolfo', uf: 'SP', ibge: '3500204' },
+      { nome: 'Afogados da Ingazeira', uf: 'PE', ibge: '2600104' },
+      { nome: 'Água Branca', uf: 'AL', ibge: '2700102' },
+      { nome: 'Água Limpa', uf: 'GO', ibge: '5200209' },
+      { nome: 'Água Santa', uf: 'RS', ibge: '4300059' },
+      { nome: 'Aguanil', uf: 'MG', ibge: '3100807' },
+      { nome: 'Águas Belas', uf: 'PE', ibge: '2600500' },
+      { nome: 'Águas de São Pedro', uf: 'SP', ibge: '3500600' },
+      { nome: 'Águas Lindas de Goiás', uf: 'GO', ibge: '5200258' },
+      { nome: 'Águas Vermelhas', uf: 'MG', ibge: '3101003' },
+      { nome: 'Agudos', uf: 'SP', ibge: '3500709' },
+      { nome: 'Aguiar', uf: 'PB', ibge: '2500205' },
+      { nome: 'Aiquara', uf: 'BA', ibge: '2900603' },
+      { nome: 'Alagoa Grande', uf: 'PB', ibge: '2500304' },
+      { nome: 'Alambari', uf: 'SP', ibge: '3500758' },
+      { nome: 'Albertina', uf: 'MG', ibge: '3101409' },
+      { nome: 'Alcântaras', uf: 'CE', ibge: '2300507' },
+      { nome: 'Alcantil', uf: 'PB', ibge: '2500536' },
+      { nome: 'Alegrete do Piauí', uf: 'PI', ibge: '2200277' },
+      { nome: 'Alenquer', uf: 'PA', ibge: '1500404' },
+      { nome: 'Alfredo Vasconcelos', uf: 'MG', ibge: '3101631' },
+      { nome: 'Alfredo Wagner', uf: 'SC', ibge: '4200705' },
+      { nome: 'Algodão de Jandaíra', uf: 'PB', ibge: '2500577' },
+      { nome: 'Alhandra', uf: 'PB', ibge: '2500601' },
+      { nome: 'Almadina', uf: 'BA', ibge: '2900900' },
+      { nome: 'Aloândia', uf: 'GO', ibge: '5200506' },
+      { nome: 'Alpercata', uf: 'MG', ibge: '3101805' },
+      { nome: 'Alpinópolis', uf: 'MG', ibge: '3101904' },
+      { nome: 'Altair', uf: 'SP', ibge: '3500907' },
+      { nome: 'Altamira', uf: 'PA', ibge: '1500602' },
+      { nome: 'Altamira do Paraná', uf: 'PR', ibge: '4100459' },
+      { nome: 'Altinópolis', uf: 'SP', ibge: '3501004' },
+      { nome: 'Alto Alegre', uf: 'SP', ibge: '3501103' },
+      { nome: 'Alto Alegre do Pindaré', uf: 'MA', ibge: '2100477' },
+      { nome: 'Alto Alegre dos Parecis', uf: 'RO', ibge: '1100379' },
+      { nome: 'Alto Feliz', uf: 'RS', ibge: '4300570' },
+      { nome: 'Alto Longá', uf: 'PI', ibge: '2200301' },
+      { nome: 'Alto Paraíso', uf: 'RO', ibge: '1100403' },
+      { nome: 'Alto Paraíso de Goiás', uf: 'GO', ibge: '5200605' },
+      { nome: 'Alto Rio Novo', uf: 'ES', ibge: '3200359' },
+      { nome: 'Altônia', uf: 'PR', ibge: '4100509' },
+      { nome: 'Alumínio', uf: 'SP', ibge: '3501152' },
+      { nome: 'Alvarenga', uf: 'MG', ibge: '3102209' },
+      { nome: 'Alvorada do Gurguéia', uf: 'PI', ibge: '2200459' },
+      { nome: 'Alvorada D\'Oeste', uf: 'RO', ibge: '1100346' },
+      { nome: 'Amajari', uf: 'RR', ibge: '1400027' },
+      { nome: 'Amaralina', uf: 'GO', ibge: '5200829' },
+      { nome: 'Amargosa', uf: 'BA', ibge: '2901007' },
+      { nome: 'Amaturá', uf: 'AM', ibge: '1300060' },
+      { nome: 'América Dourada', uf: 'BA', ibge: '2901155' },
+      { nome: 'Américo Brasiliense', uf: 'SP', ibge: '3501707' },
+      { nome: 'Amorinópolis', uf: 'GO', ibge: '5200902' },
+      { nome: 'Ampére', uf: 'PR', ibge: '4101002' },
+      { nome: 'Anadia', uf: 'AL', ibge: '2700201' },
+      { nome: 'Anajás', uf: 'PA', ibge: '1500701' },
+      { nome: 'Analândia', uf: 'SP', ibge: '3502002' },
+      { nome: 'Ananindeua', uf: 'PA', ibge: '1500800' },
+      { nome: 'Anapu', uf: 'PA', ibge: '1500859' },
+      { nome: 'Anaurilândia', uf: 'MS', ibge: '5000807' },
+      { nome: 'Anchieta', uf: 'SC', ibge: '4200804' },
+      { nome: 'Andorinha', uf: 'BA', ibge: '2901353' },
+      { nome: 'Andradas', uf: 'MG', ibge: '3102605' },
+      { nome: 'Andradina', uf: 'SP', ibge: '3502101' },
+      { nome: 'Angatuba', uf: 'SP', ibge: '3502200' },
+      { nome: 'Angelândia', uf: 'MG', ibge: '3102852' },
+      { nome: 'Angelim', uf: 'PE', ibge: '2601003' },
+      { nome: 'Angico', uf: 'TO', ibge: '1701051' },
+      { nome: 'Anguera', uf: 'BA', ibge: '2901502' },
+      { nome: 'Anicuns', uf: 'GO', ibge: '5201306' },
+      { nome: 'Anitápolis', uf: 'SC', ibge: '4201109' },
+      { nome: 'Antas', uf: 'BA', ibge: '2901601' },
+      { nome: 'Antonina do Norte', uf: 'CE', ibge: '2300804' },
+      { nome: 'Antônio Carlos', uf: 'MG', ibge: '3102902' },
+      { nome: 'Antônio João', uf: 'MS', ibge: '5000906' },
+      { nome: 'Antônio Martins', uf: 'RN', ibge: '2400901' },
+      { nome: 'Antônio Prado', uf: 'RS', ibge: '4300802' },
+      { nome: 'Aparecida', uf: 'SP', ibge: '3502507' },
+      { nome: 'Aparecida d\'Oeste', uf: 'SP', ibge: '3502606' },
+      { nome: 'Aperibé', uf: 'RJ', ibge: '3300159' },
+      { nome: 'Apiacás', uf: 'MT', ibge: '5100805' },
+      { nome: 'Apucarana', uf: 'PR', ibge: '4101408' },
+      { nome: 'Apuiarés', uf: 'CE', ibge: '2300903' },
+      { nome: 'Araçaí', uf: 'MG', ibge: '3103207' },
+      { nome: 'Araçariguama', uf: 'SP', ibge: '3502754' },
+      { nome: 'Araças', uf: 'BA', ibge: '2902054' },
+      { nome: 'Aracatu', uf: 'BA', ibge: '2902005' },
+      { nome: 'Araçatuba', uf: 'SP', ibge: '3502804' },
+      { nome: 'Araçoiaba', uf: 'PE', ibge: '2601052' },
+      { nome: 'Aragarças', uf: 'GO', ibge: '5201702' },
+      { nome: 'Aragominas', uf: 'TO', ibge: '1701309' },
+      { nome: 'Araguanã', uf: 'MA', ibge: '2100873' },
+      { nome: 'Araguanã', uf: 'TO', ibge: '1702158' },
+      { nome: 'Aramari', uf: 'BA', ibge: '2902203' },
+      { nome: 'Arame', uf: 'MA', ibge: '2100956' },
+      { nome: 'Aramina', uf: 'SP', ibge: '3503000' },
+      { nome: 'Arapeí', uf: 'SP', ibge: '3503158' },
+      { nome: 'Arapiraca', uf: 'AL', ibge: '2700300' },
+      { nome: 'Araporã', uf: 'MG', ibge: '3103751' },
+      { nome: 'Arapuá', uf: 'MG', ibge: '3103801' },
+      { nome: 'Araputanga', uf: 'MT', ibge: '5101258' },
+      { nome: 'Arari', uf: 'MA', ibge: '2101004' },
+      { nome: 'Arataca', uf: 'BA', ibge: '2902252' },
+      { nome: 'Aratiba', uf: 'RS', ibge: '4300901' },
+      { nome: 'Aratuípe', uf: 'BA', ibge: '2902302' },
+      { nome: 'Araújos', uf: 'MG', ibge: '3103900' },
+      { nome: 'Araxá', uf: 'MG', ibge: '3104007' },
+      { nome: 'Areia de Baraúnas', uf: 'PB', ibge: '2501153' },
+      { nome: 'Areial', uf: 'PB', ibge: '2501203' },
+      { nome: 'Areias', uf: 'SP', ibge: '3503505' },
+      { nome: 'Arenápolis', uf: 'MT', ibge: '5101308' },
+      { nome: 'Aricanduva', uf: 'MG', ibge: '3104452' },
+      { nome: 'Armazém', uf: 'SC', ibge: '4201505' },
+      { nome: 'Aroazes', uf: 'PI', ibge: '2200905' },
+      { nome: 'Aroeiras', uf: 'PB', ibge: '2501302' },
+      { nome: 'Arraias', uf: 'TO', ibge: '1702406' },
+      { nome: 'Arroio do Meio', uf: 'RS', ibge: '4301008' },
+      { nome: 'Arroio do Padre', uf: 'RS', ibge: '4301073' },
+      { nome: 'Aruanã', uf: 'GO', ibge: '5202502' },
+      { nome: 'Arujá', uf: 'SP', ibge: '3503901' },
+      { nome: 'Astolfo Dutra', uf: 'MG', ibge: '3104601' },
+      { nome: 'Atalaia', uf: 'PR', ibge: '4102208' },
+      { nome: 'Ataléia', uf: 'MG', ibge: '3104700' },
+      { nome: 'Atibaia', uf: 'SP', ibge: '3504107' },
+      { nome: 'Atílio Vivácqua', uf: 'ES', ibge: '3200706' },
+      { nome: 'Áurea', uf: 'RS', ibge: '4301552' },
+      { nome: 'Aurora', uf: 'CE', ibge: '2301703' },
+      { nome: 'Avaí', uf: 'SP', ibge: '3504305' },
+      { nome: 'Avelino Lopes', uf: 'PI', ibge: '2201101' },
+      { nome: 'Axixá', uf: 'MA', ibge: '2101103' },
+      { nome: 'Babaçulândia', uf: 'TO', ibge: '1703008' },
+      { nome: 'Bady Bassitt', uf: 'SP', ibge: '3504602' },
+      { nome: 'Bagre', uf: 'PA', ibge: '1501105' },
+      { nome: 'Baía Formosa', uf: 'RN', ibge: '2401404' },
+      { nome: 'Baixio', uf: 'CE', ibge: '2301802' },
+      { nome: 'Baldim', uf: 'MG', ibge: '3105004' },
+      { nome: 'Baliza', uf: 'GO', ibge: '5203104' },
+      { nome: 'Balneário Arroio do Silva', uf: 'SC', ibge: '4201950' },
+      { nome: 'Balneário Camboriú', uf: 'SC', ibge: '4202008' },
+      { nome: 'Balneário Pinhal', uf: 'RS', ibge: '4301636' },
+      { nome: 'Balneário Rincão', uf: 'SC', ibge: '4220000' },
+      { nome: 'Balsas', uf: 'MA', ibge: '2101400' },
+      { nome: 'Bambuí', uf: 'MG', ibge: '3105103' },
+      { nome: 'Bananal', uf: 'SP', ibge: '3504909' },
+      { nome: 'Bandeira', uf: 'MG', ibge: '3105202' },
+      { nome: 'Bandeirante', uf: 'SC', ibge: '4202081' },
+      { nome: 'Bandeirantes', uf: 'MS', ibge: '5001508' },
+      { nome: 'Bandeirantes do Tocantins', uf: 'TO', ibge: '1703057' },
+      { nome: 'Banzaê', uf: 'BA', ibge: '2902658' },
+      { nome: 'Barão', uf: 'RS', ibge: '4301651' },
+      { nome: 'Barão de Antonina', uf: 'SP', ibge: '3505005' },
+      { nome: 'Barão de Cotegipe', uf: 'RS', ibge: '4301701' },
+      { nome: 'Barão do Monte Alto', uf: 'MG', ibge: '3105509' },
+      { nome: 'Barão do Triunfo', uf: 'RS', ibge: '4301750' },
+      { nome: 'Barcelona', uf: 'RN', ibge: '2401503' },
+      { nome: 'Barra de Santa Rosa', uf: 'PB', ibge: '2501609' },
+      { nome: 'Barra de São Francisco', uf: 'ES', ibge: '3200904' },
+      { nome: 'Barra de São Miguel', uf: 'AL', ibge: '2700607' },
+      { nome: 'Barra do Chapéu', uf: 'SP', ibge: '3505351' },
+      { nome: 'Barra do Corda', uf: 'MA', ibge: '2101608' },
+      { nome: 'Barra do Jacaré', uf: 'PR', ibge: '4102703' },
+      { nome: 'Barra do Mendes', uf: 'BA', ibge: '2903003' },
+      { nome: 'Barra do Rio Azul', uf: 'RS', ibge: '4301925' },
+      { nome: 'Barra do Rocha', uf: 'BA', ibge: '2903102' },
+      { nome: 'Barra do Turvo', uf: 'SP', ibge: '3505401' },
+      { nome: 'Barra Funda', uf: 'RS', ibge: '4301958' },
+      { nome: 'Barra Longa', uf: 'MG', ibge: '3105707' },
+      { nome: 'Barras', uf: 'PI', ibge: '2201200' },
+      { nome: 'Barrinha', uf: 'SP', ibge: '505609' },
+      { nome: 'Barro', uf: 'CE', ibge: '2302008' },
+      { nome: 'Barroso', uf: 'MG', ibge: '3105905' },
+      { nome: 'Batalha', uf: 'AL', ibge: '2700706' },
+      { nome: 'Batatais', uf: 'SP', ibge: '3505906' },
+      { nome: 'Batayporã', uf: 'MS', ibge: '5002001' },
+      { nome: 'Bela Vista da Caroba', uf: 'PR', ibge: '4102752' },
+      { nome: 'Bela Vista de Goiás', uf: 'GO', ibge: '5203302' },
+      { nome: 'Bela Vista do Piauí', uf: 'PI', ibge: '2201556' },
+      { nome: 'Belém', uf: 'AL', ibge: '2700805' },
+      { nome: 'Belém do São Francisco', uf: 'PE', ibge: '2601607' },
+      { nome: 'Belo Campo', uf: 'BA', ibge: '2903508' },
+      { nome: 'Belo Horizonte', uf: 'MG', ibge: '3106200' },
+      { nome: 'Belo Monte', uf: 'AL', ibge: '2700904' },
+      { nome: 'Belo Oriente', uf: 'MG', ibge: '3106309' },
+      { nome: 'Beneditinos', uf: 'PI', ibge: '2201606' },
+      { nome: 'Benedito Leite', uf: 'MA', ibge: '2101806' },
+      { nome: 'Benevides', uf: 'PA', ibge: '1501501' },
+      { nome: 'Benjamin Constant do Sul', uf: 'RS', ibge: '4302055' },
+      { nome: 'Bento Fernandes', uf: 'RN', ibge: '2401602' },
+      { nome: 'Bento Gonçalves', uf: 'RS', ibge: '4302105' },
+      { nome: 'Bequimão', uf: 'MA', ibge: '2101905' },
+      { nome: 'Berilo', uf: 'MG', ibge: '3106507' },
+      { nome: 'Berizal', uf: 'MG', ibge: '3106655' },
+      { nome: 'Bernardino Batista', uf: 'PB', ibge: '2502052' },
+      { nome: 'Bernardino de Campos', uf: 'SP', ibge: '3506300' },
+      { nome: 'Bertolínia', uf: 'PI', ibge: '2201705' },
+      { nome: 'Betânia', uf: 'PE', ibge: '2601805' },
+      { nome: 'Betim', uf: 'MG', ibge: '3106705' },
+      { nome: 'Birigui', uf: 'SP', ibge: '3506508' },
+      { nome: 'Biritinga', uf: 'BA', ibge: '2903607' },
+      { nome: 'Bituruna', uf: 'PR', ibge: '4102901' },
+      { nome: 'Boa Esperança do Iguaçu', uf: 'PR', ibge: '4103024' },
+      { nome: 'Boa Hora', uf: 'PI', ibge: '2201770' },
+      { nome: 'Boa Nova', uf: 'BA', ibge: '2903706' },
+      { nome: 'Boa Ventura', uf: 'PB', ibge: '2502102' },
+      { nome: 'Boa Vista', uf: 'RR', ibge: '1400100' },
+      { nome: 'Boa Vista da Aparecida', uf: 'PR', ibge: '4103057' },
+      { nome: 'Boa Vista das Missões', uf: 'RS', ibge: '4302154' },
+      { nome: 'Boa Vista do Incra', uf: 'RS', ibge: '4302238' },
+      { nome: 'Boa Vista do Sul', uf: 'RS', ibge: '4302253' },
+      { nome: 'Boca da Mata', uf: 'AL', ibge: '2701001' },
+      { nome: 'Bom Jesus da Penha', uf: 'MG', ibge: '3107604' },
+      { nome: 'Bom Jesus das Selvas', uf: 'MA', ibge: '2102036' },
+      { nome: 'Bom Jesus do Itabapoana', uf: 'RJ', ibge: '3300605' },
+      { nome: 'Bom Jesus do Tocantins', uf: 'PA', ibge: '1501576' },
+      { nome: 'Bom Jesus dos Perdões', uf: 'SP', ibge: '3507100' },
+      { nome: 'Bom Progresso', uf: 'RS', ibge: '4302378' },
+      { nome: 'Bom Sucesso', uf: 'MG', ibge: '3108008' },
+      { nome: 'Bom Sucesso', uf: 'PR', ibge: '4103206' },
+      { nome: 'Bonfim', uf: 'RR', ibge: '1400159' },
+      { nome: 'Bonfim do Piauí', uf: 'PI', ibge: '2201929' },
+      { nome: 'Bonfinópolis de Minas', uf: 'MG', ibge: '3108206' },
+      { nome: 'Bonito', uf: 'PA', ibge: '1501600' },
+      { nome: 'Bonito de Santa Fé', uf: 'PB', ibge: '2502409' },
+      { nome: 'Bonópolis', uf: 'GO', ibge: '5203575' },
+      { nome: 'Boqueirão do Piauí', uf: 'PI', ibge: '2201945' },
+      { nome: 'Boquira', uf: 'BA', ibge: '2904100' },
+      { nome: 'Boracéia', uf: 'SP', ibge: '3507308' },
+      { nome: 'Borba', uf: 'AM', ibge: '1300805' },
+      { nome: 'Borborema', uf: 'SP', ibge: '3507407' },
+      { nome: 'Borebi', uf: 'SP', ibge: '3507456' },
+      { nome: 'Botucatu', uf: 'SP', ibge: '3507506' },
+      { nome: 'Botuverá', uf: 'SC', ibge: '4202701' },
+      { nome: 'Braço do Norte', uf: 'SC', ibge: '4202800' },
+      { nome: 'Bragança', uf: 'PA', ibge: '1501709' },
+      { nome: 'Braganey', uf: 'PR', ibge: '4103354' },
+      { nome: 'Brasilândia de Minas', uf: 'MG', ibge: '3108552' },
+      { nome: 'Brasilândia do Sul', uf: 'PR', ibge: '4103370' },
+      { nome: 'Brasileira', uf: 'PI', ibge: '2201960' },
+      { nome: 'Brasília de Minas', uf: 'MG', ibge: '3108602' },
+      { nome: 'Brejão', uf: 'PE', ibge: '2602407' },
+      { nome: 'Brejetuba', uf: 'ES', ibge: '3201159' },
+      { nome: 'Brejo Grande do Araguaia', uf: 'PA', ibge: '1501758' },
+      { nome: 'Brejolândia', uf: 'BA', ibge: '2904407' },
+      { nome: 'Brochier', uf: 'RS', ibge: '4302659' },
+      { nome: 'Brotas', uf: 'SP', ibge: '3507902' },
+      { nome: 'Brumadinho', uf: 'MG', ibge: '3109006' },
+      { nome: 'Brunópolis', uf: 'SC', ibge: '4202875' },
+      { nome: 'Brusque', uf: 'SC', ibge: '4202909' },
+      { nome: 'Bujari', uf: 'AC', ibge: '1200138' },
+      { nome: 'Bujaru', uf: 'PA', ibge: '1501907' },
+      { nome: 'Buri', uf: 'SP', ibge: '3508009' },
+      { nome: 'Buriti Alegre', uf: 'GO', ibge: '5203906' },
+      { nome: 'Buritinópolis', uf: 'GO', ibge: '5203962' },
+      { nome: 'Buritirama', uf: 'BA', ibge: '2904753' },
+      { nome: 'Buritizeiro', uf: 'MG', ibge: '3109402' },
+      { nome: 'Butiá', uf: 'RS', ibge: '4302709' },
+      { nome: 'Caapiranga', uf: 'AM', ibge: '1300839' },
+      { nome: 'Caatiba', uf: 'BA', ibge: '2904803' },
+      { nome: 'Cabeceiras do Piauí', uf: 'PI', ibge: '2202059' },
+      { nome: 'Cabixi', uf: 'RO', ibge: '1100031' },
+      { nome: 'Caçador', uf: 'SC', ibge: '4203006' },
+      { nome: 'Caçapava do Sul', uf: 'RS', ibge: '4302808' },
+      { nome: 'Cacequi', uf: 'RS', ibge: '4302907' },
+      { nome: 'Cachoeira de Goiás', uf: 'GO', ibge: '5204201' },
+      { nome: 'Cachoeira de Pajeú', uf: 'MG', ibge: '3102704' },
+      { nome: 'Cachoeira do Piriá', uf: 'PA', ibge: '1501956' },
+      { nome: 'Cachoeira Dourada', uf: 'MG', ibge: '3109808' },
+      { nome: 'Cachoeira Paulista', uf: 'SP', ibge: '3508603' },
+      { nome: 'Cachoeirinha', uf: 'TO', ibge: '1703826' },
+      { nome: 'Cachoeiro de Itapemirim', uf: 'ES', ibge: '3201209' },
+      { nome: 'Cacique Doble', uf: 'RS', ibge: '4303202' },
+      { nome: 'Caculé', uf: 'BA', ibge: '2905008' },
+      { nome: 'Caetanópolis', uf: 'MG', ibge: '3109907' },
+      { nome: 'Caetés', uf: 'PE', ibge: '2603207' },
+      { nome: 'Caiana', uf: 'MG', ibge: '3110103' },
+      { nome: 'Caiapônia', uf: 'GO', ibge: '5204409' },
+      { nome: 'Caiçara do Rio do Vento', uf: 'RN', ibge: '2401909' },
+      { nome: 'Caiuá', uf: 'SP', ibge: '3509106' },
+      { nome: 'Cajazeiras', uf: 'PB', ibge: '2503704' },
+      { nome: 'Calçado', uf: 'PE', ibge: '2603306' },
+      { nome: 'Caldas', uf: 'MG', ibge: '3110301' },
+      { nome: 'Caldas Brandão', uf: 'PB', ibge: '2503803' },
+      { nome: 'Caldazinha', uf: 'GO', ibge: '5204557' },
+      { nome: 'Caldeirão Grande', uf: 'BA', ibge: '2905503' },
+      { nome: 'Camacho', uf: 'MG', ibge: '3110400' },
+      { nome: 'Camalaú', uf: 'PB', ibge: '2503902' },
+      { nome: 'Camamu', uf: 'BA', ibge: '2905800' },
+      { nome: 'Cambé', uf: 'PR', ibge: '4103701' },
+      { nome: 'Cambuci', uf: 'RJ', ibge: '3300902' },
+      { nome: 'Cambuquira', uf: 'MG', ibge: '3110707' },
+      { nome: 'Cametá', uf: 'PA', ibge: '1502103' },
+      { nome: 'Campanha', uf: 'MG', ibge: '3110905' },
+      { nome: 'Campestre de Goiás', uf: 'GO', ibge: '5204607' },
+      { nome: 'Campina da Lagoa', uf: 'PR', ibge: '4103909' },
+      { nome: 'Campina do Monte Alegre', uf: 'SP', ibge: '3509452' },
+      { nome: 'Campina do Simão', uf: 'PR', ibge: '4103958' },
+      { nome: 'Campo Alegre', uf: 'AL', ibge: '2701407' },
+      { nome: 'Campo Alegre de Goiás', uf: 'GO', ibge: '5204805' },
+      { nome: 'Campo Alegre de Lourdes', uf: 'BA', ibge: '2905909' },
+      { nome: 'Campo Belo', uf: 'MG', ibge: '3111200' },
+      { nome: 'Campo Belo do Sul', uf: 'SC', ibge: '4203402' },
+      { nome: 'Campo do Meio', uf: 'MG', ibge: '3111309' },
+      { nome: 'Campo Erê', uf: 'SC', ibge: '4203501' },
+      { nome: 'Campo Grande do Piauí', uf: 'PI', ibge: '2202133' },
+      { nome: 'Campos Altos', uf: 'MG', ibge: '3111507' },
+      { nome: 'Campos de Júlio', uf: 'MT', ibge: '5102686' },
+      { nome: 'Campos do Jordão', uf: 'SP', ibge: '3509700' },
+      { nome: 'Campos Novos', uf: 'SC', ibge: '4203600' },
+      { nome: 'Campos Sales', uf: 'CE', ibge: '2302701' },
+      { nome: 'Cana Verde', uf: 'MG', ibge: '3111903' },
+      { nome: 'Cananéia', uf: 'SP', ibge: '3509908' },
+      { nome: 'Canapi', uf: 'AL', ibge: '2701605' },
+      { nome: 'Canápolis', uf: 'BA', ibge: '2906105' },
+      { nome: 'Canarana', uf: 'MT', ibge: '5102702' },
+      { nome: 'Canarana', uf: 'BA', ibge: '2906204' },
+      { nome: 'Canas', uf: 'SP', ibge: '3509957' },
+      { nome: 'Canavieira', uf: 'PI', ibge: '2202251' },
+      { nome: 'Candeal', uf: 'BA', ibge: '2906402' },
+      { nome: 'Candeias', uf: 'MG', ibge: '3112000' },
+      { nome: 'Candeias do Jamari', uf: 'RO', ibge: '1100809' },
+      { nome: 'Cândido Sales', uf: 'BA', ibge: '2906709' },
+      { nome: 'Canela', uf: 'RS', ibge: '4304408' },
+      { nome: 'Canguaretama', uf: 'RN', ibge: '2402204' },
+      { nome: 'Canhoba', uf: 'SE', ibge: '2801108' },
+      { nome: 'Cantagalo', uf: 'MG', ibge: '3112059' },
+      { nome: 'Canto do Buriti', uf: 'PI', ibge: '2202307' },
+      { nome: 'Canudos do Vale', uf: 'RS', ibge: '4304614' },
+      { nome: 'Capanema', uf: 'PA', ibge: '1502202' },
+      { nome: 'Capão Bonito', uf: 'SP', ibge: '3510203' },
+      { nome: 'Capão Bonito do Sul', uf: 'RS', ibge: '4304622' },
+      { nome: 'Capão da Canoa', uf: 'RS', ibge: '4304630' },
+      { nome: 'Caparaó', uf: 'MG', ibge: '3112109' },
+      { nome: 'Capela do Alto', uf: 'SP', ibge: '3510302' },
+      { nome: 'Capela do Alto Alegre', uf: 'BA', ibge: '2906857' },
+      { nome: 'Capela Nova', uf: 'MG', ibge: '3112208' },
+      { nome: 'Capetinga', uf: 'MG', ibge: '3112406' },
+      { nome: 'Capinzal', uf: 'SC', ibge: '4203907' },
+      { nome: 'Capitão', uf: 'RS', ibge: '4304697' },
+      { nome: 'Capitão de Campos', uf: 'PI', ibge: '2202406' },
+      { nome: 'Capivari de Baixo', uf: 'SC', ibge: '4203956' },
+      { nome: 'Capivari do Sul', uf: 'RS', ibge: '4304671' },
+      { nome: 'Capoeiras', uf: 'PE', ibge: '2603801' },
+      { nome: 'Caraá', uf: 'RS', ibge: '4304713' },
+      { nome: 'Caracaraí', uf: 'RR', ibge: '1400209' },
+      { nome: 'Caracol', uf: 'MS', ibge: '5002803' },
+      { nome: 'Caraí', uf: 'MG', ibge: '3113008' },
+      { nome: 'Caranaíba', uf: 'MG', ibge: '3113107' },
+      { nome: 'Carandaí', uf: 'MG', ibge: '3113206' },
+      { nome: 'Carangola', uf: 'MG', ibge: '3113305' },
+      { nome: 'Caraúbas', uf: 'PB', ibge: '2504074' },
+      { nome: 'Caraúbas do Piauí', uf: 'PI', ibge: '2202539' },
+      { nome: 'Caravelas', uf: 'BA', ibge: '2906907' },
+      { nome: 'Carbonita', uf: 'MG', ibge: '3113503' },
+      { nome: 'Careaçu', uf: 'MG', ibge: '3113602' },
+      { nome: 'Careiro da Várzea', uf: 'AM', ibge: '1301159' },
+      { nome: 'Cariré', uf: 'CE', ibge: '2303105' },
+      { nome: 'Caririaçu', uf: 'CE', ibge: '2303204' },
+      { nome: 'Carlos Chagas', uf: 'MG', ibge: '3113701' },
+      { nome: 'Carlos Gomes', uf: 'RS', ibge: '4304853' },
+      { nome: 'Carmésia', uf: 'MG', ibge: '3113800' },
+      { nome: 'Carmo da Cachoeira', uf: 'MG', ibge: '3113909' },
+      { nome: 'Carmo da Mata', uf: 'MG', ibge: '3114006' },
+      { nome: 'Carmo de Minas', uf: 'MG', ibge: '3114105' },
+      { nome: 'Carmolândia', uf: 'TO', ibge: '1703883' },
+      { nome: 'Carnaíba', uf: 'PE', ibge: '2603900' },
+      { nome: 'Carnaúba dos Dantas', uf: 'RN', ibge: '2402402' },
+      { nome: 'Carnaubais', uf: 'RN', ibge: '2402501' },
+      { nome: 'Carnaubeira da Penha', uf: 'PE', ibge: '2603926' },
+      { nome: 'Carneiros', uf: 'AL', ibge: '2701803' },
+      { nome: 'Caroebe', uf: 'RR', ibge: '1400233' },
+      { nome: 'Carrancas', uf: 'MG', ibge: '3114600' },
+      { nome: 'Carutapera', uf: 'MA', ibge: '2102903' },
+      { nome: 'Casa Grande', uf: 'MG', ibge: '3114907' },
+      { nome: 'Cascalho Rico', uf: 'MG', ibge: '3115003' },
+      { nome: 'Casimiro de Abreu', uf: 'RJ', ibge: '3301306' },
+      { nome: 'Casinhas', uf: 'PE', ibge: '2604155' },
+      { nome: 'Cassilândia', uf: 'MS', ibge: '5002902' },
+      { nome: 'Castanhal', uf: 'PA', ibge: '1502400' },
+      { nome: 'Castelândia', uf: 'GO', ibge: '5205059' },
+      { nome: 'Castelo', uf: 'ES', ibge: '3201407' },
+      { nome: 'Catanduvas', uf: 'SC', ibge: '4204004' },
+      { nome: 'Catarina', uf: 'CE', ibge: '2303600' },
+      { nome: 'Catas Altas da Noruega', uf: 'MG', ibge: '3115409' },
+      { nome: 'Catiguá', uf: 'SP', ibge: '3511201' },
+      { nome: 'Catingueira', uf: 'PB', ibge: '2504207' },
+      { nome: 'Catolândia', uf: 'BA', ibge: '2907400' },
+      { nome: 'Catuji', uf: 'MG', ibge: '3115458' },
+      { nome: 'Catunda', uf: 'CE', ibge: '2303659' },
+      { nome: 'Caturaí', uf: 'GO', ibge: '5205208' },
+      { nome: 'Catuti', uf: 'MG', ibge: '3115474' },
+      { nome: 'Cavalcante', uf: 'GO', ibge: '5205307' },
+      { nome: 'Caxias', uf: 'MA', ibge: '2103000' },
+      { nome: 'Caxingó', uf: 'PI', ibge: '2202653' },
+      { nome: 'Cedral', uf: 'MA', ibge: '2103109' },
+      { nome: 'Cedral', uf: 'SP', ibge: '3511300' },
+      { nome: 'Cedro', uf: 'CE', ibge: '2303808' },
+      { nome: 'Cedro de São João', uf: 'SE', ibge: '2801603' },
+      { nome: 'Centenário', uf: 'RS', ibge: '4305116' },
+      { nome: 'Centenário do Sul', uf: 'PR', ibge: '4105102' },
+      { nome: 'Central de Minas', uf: 'MG', ibge: '3115706' },
+      { nome: 'Centralina', uf: 'MG', ibge: '3115805' },
+      { nome: 'Centro do Guilherme', uf: 'MA', ibge: '2103158' },
+      { nome: 'Ceres', uf: 'GO', ibge: '5205406' },
+      { nome: 'Cerqueira César', uf: 'SP', ibge: '3511409' },
+      { nome: 'Cerquilho', uf: 'SP', ibge: '3511508' },
+      { nome: 'Cerrito', uf: 'RS', ibge: '4305124' },
+      { nome: 'Cerro Azul', uf: 'PR', ibge: '4105201' },
+      { nome: 'Cerro Corá', uf: 'RN', ibge: '2402709' },
+      { nome: 'Cerro Grande', uf: 'RS', ibge: '4305157' },
+      { nome: 'Cerro Grande do Sul', uf: 'RS', ibge: '4305173' },
+      { nome: 'Cerro Largo', uf: 'RS', ibge: '4305207' },
+      { nome: 'Cesário Lange', uf: 'SP', ibge: '3511607' },
+      { nome: 'Chapada', uf: 'RS', ibge: '4305306' },
+      { nome: 'Chapada do Norte', uf: 'MG', ibge: '3116100' },
+      { nome: 'Chapadão do Céu', uf: 'GO', ibge: '5205471' },
+      { nome: 'Charqueada', uf: 'SP', ibge: '3511706' },
+      { nome: 'Charrua', uf: 'RS', ibge: '4305371' },
+      { nome: 'Chaval', uf: 'CE', ibge: '2303907' },
+      { nome: 'Chupinguaia', uf: 'RO', ibge: '1100924' },
+      { nome: 'Cianorte', uf: 'PR', ibge: '4105508' },
+      { nome: 'Cipó', uf: 'BA', ibge: '2907905' },
+      { nome: 'Claraval', uf: 'MG', ibge: '3116407' },
+      { nome: 'Cocal', uf: 'PI', ibge: '2202703' },
+      { nome: 'Cocal de Telha', uf: 'PI', ibge: '2202711' },
+      { nome: 'Cocal do Sul', uf: 'SC', ibge: '4204251' },
+      { nome: 'Cocalzinho de Goiás', uf: 'GO', ibge: '5205513' },
+      { nome: 'Codajás', uf: 'AM', ibge: '1301308' },
+      { nome: 'Codó', uf: 'MA', ibge: '2103307' },
+      { nome: 'Coité do Nóia', uf: 'AL', ibge: '2702009' },
+      { nome: 'Colatina', uf: 'ES', ibge: '3201506' },
+      { nome: 'Colina', uf: 'SP', ibge: '3512001' },
+      { nome: 'Colinas', uf: 'RS', ibge: '4305587' },
+      { nome: 'Colinas do Sul', uf: 'GO', ibge: '5205521' },
+      { nome: 'Colômbia', uf: 'SP', ibge: '3512100' },
+      { nome: 'Colombo', uf: 'PR', ibge: '4105805' },
+      { nome: 'Colônia Leopoldina', uf: 'AL', ibge: '2702108' },
+      { nome: 'Coluna', uf: 'MG', ibge: '3116803' },
+      { nome: 'Comendador Gomes', uf: 'MG', ibge: '3116902' },
+      { nome: 'Comodoro', uf: 'MT', ibge: '5103304' },
+      { nome: 'Conceição da Barra', uf: 'ES', ibge: '3201605' },
+      { nome: 'Conceição da Barra de Minas', uf: 'MG', ibge: '3115201' },
+      { nome: 'Conceição do Coité', uf: 'BA', ibge: '2908408' },
+      { nome: 'Conceição do Rio Verde', uf: 'MG', ibge: '3117702' },
+      { nome: 'Conceição dos Ouros', uf: 'MG', ibge: '3117801' },
+      { nome: 'Concórdia do Pará', uf: 'PA', ibge: '1502756' },
+      { nome: 'Conde', uf: 'PB', ibge: '2504603' },
+      { nome: 'Condeúba', uf: 'BA', ibge: '2908705' },
+      { nome: 'Congo', uf: 'PB', ibge: '2504702' },
+      { nome: 'Congonhal', uf: 'MG', ibge: '3117900' },
+      { nome: 'Congonhas', uf: 'MG', ibge: '3118007' },
+      { nome: 'Congonhas do Norte', uf: 'MG', ibge: '3118106' },
+      { nome: 'Conquista', uf: 'MG', ibge: '3118205' },
+      { nome: 'Constantina', uf: 'RS', ibge: '4305801' },
+      { nome: 'Contendas do Sincorá', uf: 'BA', ibge: '2908804' },
+      { nome: 'Coqueiral', uf: 'MG', ibge: '3118700' },
+      { nome: 'Coração de Maria', uf: 'BA', ibge: '2908903' },
+      { nome: 'Cordeiros', uf: 'BA', ibge: '2909000' },
+      { nome: 'Cordilheira Alta', uf: 'SC', ibge: '4204350' },
+      { nome: 'Cordislândia', uf: 'MG', ibge: '3119005' },
+      { nome: 'Cornélio Procópio', uf: 'PR', ibge: '4106407' },
+      { nome: 'Coronel Bicaco', uf: 'RS', ibge: '4305900' },
+      { nome: 'Coronel Fabriciano', uf: 'MG', ibge: '3119401' },
+      { nome: 'Coronel Freitas', uf: 'SC', ibge: '4204400' },
+      { nome: 'Coronel Murta', uf: 'MG', ibge: '3119500' },
+      { nome: 'Coronel Xavier Chaves', uf: 'MG', ibge: '3119708' },
+      { nome: 'Córrego Fundo', uf: 'MG', ibge: '3119955' },
+      { nome: 'Córrego Novo', uf: 'MG', ibge: '3120003' },
+      { nome: 'Correntes', uf: 'PE', ibge: '2604700' },
+      { nome: 'Correntina', uf: 'BA', ibge: '2909307' },
+      { nome: 'Corumbaíba', uf: 'GO', ibge: '5205901' },
+      { nome: 'Corumbataí do Sul', uf: 'PR', ibge: '4106555' },
+      { nome: 'Cosmópolis', uf: 'SP', ibge: '3512803' },
+      { nome: 'Cotiporã', uf: 'RS', ibge: '4305959' },
+      { nome: 'Couto Magalhães', uf: 'TO', ibge: '1706001' },
+      { nome: 'Coxilha', uf: 'RS', ibge: '4305975' },
+      { nome: 'Coxim', uf: 'MS', ibge: '5003306' },
+      { nome: 'Craíbas', uf: 'AL', ibge: '2702355' },
+      { nome: 'Cravolândia', uf: 'BA', ibge: '2909505' },
+      { nome: 'Criciúma', uf: 'SC', ibge: '4204608' },
+      { nome: 'Crisólita', uf: 'MG', ibge: '3120151' },
+      { nome: 'Cristais', uf: 'MG', ibge: '3120201' },
+      { nome: 'Cristais Paulista', uf: 'SP', ibge: '3513207' },
+      { nome: 'Cristino Castro', uf: 'PI', ibge: '2203107' },
+      { nome: 'Crixás', uf: 'GO', ibge: '5206404' },
+      { nome: 'Croatá', uf: 'CE', ibge: '2304236' },
+      { nome: 'Cromínia', uf: 'GO', ibge: '5206503' },
+      { nome: 'Cruzaltense', uf: 'RS', ibge: '4306130' },
+      { nome: 'Cruzeiro', uf: 'SP', ibge: '3513405' },
+      { nome: 'Cruzeiro da Fortaleza', uf: 'MG', ibge: '3120706' },
+      { nome: 'Cruzeiro do Sul', uf: 'PR', ibge: '4106704' },
+      { nome: 'Cruzeiro do Sul', uf: 'RS', ibge: '4306205' },
+      { nome: 'Cruzeta', uf: 'RN', ibge: '2403004' },
+      { nome: 'Cubati', uf: 'PB', ibge: '2505006' },
+      { nome: 'Cumari', uf: 'GO', ibge: '5206602' },
+      { nome: 'Cumaru do Norte', uf: 'PA', ibge: '1502764' },
+      { nome: 'Cunha', uf: 'SP', ibge: '3513603' },
+      { nome: 'Curaçá', uf: 'BA', ibge: '2909901' },
+      { nome: 'Curitiba', uf: 'PR', ibge: '4106902' },
+      { nome: 'Curral de Dentro', uf: 'MG', ibge: '3120870' },
+      { nome: 'Curralinho', uf: 'PA', ibge: '1502806' },
+      { nome: 'Curralinhos', uf: 'PI', ibge: '2203255' },
+      { nome: 'Curuá', uf: 'PA', ibge: '1502855' },
+      { nome: 'Curvelândia', uf: 'MT', ibge: '5103437' },
+      { nome: 'Curvelo', uf: 'MG', ibge: '3120904' },
+      { nome: 'Custódia', uf: 'PE', ibge: '2605103' },
+      { nome: 'Damianópolis', uf: 'GO', ibge: '5206701' },
+      { nome: 'Damião', uf: 'PB', ibge: '2505352' },
+      { nome: 'Damolândia', uf: 'GO', ibge: '5206800' },
+      { nome: 'Dário Meira', uf: 'BA', ibge: '2910008' },
+      { nome: 'Datas', uf: 'MG', ibge: '3121001' },
+      { nome: 'Delta', uf: 'MG', ibge: '3121258' },
+      { nome: 'Derrubadas', uf: 'RS', ibge: '4306320' },
+      { nome: 'Descalvado', uf: 'SP', ibge: '3513702' },
+      { nome: 'Descanso', uf: 'SC', ibge: '4204905' },
+      { nome: 'Descoberto', uf: 'MG', ibge: '3121308' },
+      { nome: 'Desterro', uf: 'PB', ibge: '2505402' },
+      { nome: 'Desterro de Entre Rios', uf: 'MG', ibge: '3121407' },
+      { nome: 'Diamante do Norte', uf: 'PR', ibge: '4107108' },
+      { nome: 'Diamantina', uf: 'MG', ibge: '3121605' },
+      { nome: 'Dionísio Cerqueira', uf: 'SC', ibge: '4205001' },
+      { nome: 'Diorama', uf: 'GO', ibge: '5207105' },
+      { nome: 'Divino', uf: 'MG', ibge: '3122009' },
+      { nome: 'Divino das Laranjeiras', uf: 'MG', ibge: '3122108' },
+      { nome: 'Divino de São Lourenço', uf: 'ES', ibge: '3201803' },
+      { nome: 'Divinolândia de Minas', uf: 'MG', ibge: '3122207' },
+      { nome: 'Divinópolis', uf: 'MG', ibge: '3122306' },
+      { nome: 'Divinópolis de Goiás', uf: 'GO', ibge: '5208301' },
+      { nome: 'Divinópolis do Tocantins', uf: 'TO', ibge: '1707108' },
+      { nome: 'Divisa Alegre', uf: 'MG', ibge: '3122355' },
+      { nome: 'Divisa Nova', uf: 'MG', ibge: '3122405' },
+      { nome: 'Divisópolis', uf: 'MG', ibge: '3122454' },
+      { nome: 'Dois Irmãos das Missões', uf: 'RS', ibge: '4306429' },
+      { nome: 'Dois Irmãos do Buriti', uf: 'MS', ibge: '5003488' },
+      { nome: 'Dom Aquino', uf: 'MT', ibge: '5103601' },
+      { nome: 'Dom Bosco', uf: 'MG', ibge: '3122470' },
+      { nome: 'Dom Feliciano', uf: 'RS', ibge: '4306502' },
+      { nome: 'Dom Inocêncio', uf: 'PI', ibge: '2203453' },
+      { nome: 'Dom Joaquim', uf: 'MG', ibge: '3122603' },
+      { nome: 'Dom Pedro de Alcântara', uf: 'RS', ibge: '4306551' },
+      { nome: 'Dona Euzébia', uf: 'MG', ibge: '3122900' },
+      { nome: 'Dores de Campos', uf: 'MG', ibge: '3123007' },
+      { nome: 'Dores de Guanhães', uf: 'MG', ibge: '3123106' },
+      { nome: 'Doresópolis', uf: 'MG', ibge: '3123403' },
+      { nome: 'Doutor Camargo', uf: 'PR', ibge: '4107306' },
+      { nome: 'Doutor Ricardo', uf: 'RS', ibge: '4306759' },
+      { nome: 'Doutor Ulysses', uf: 'PR', ibge: '4128633' },
+      { nome: 'Doverlândia', uf: 'GO', ibge: '5207253' },
+      { nome: 'Durandé', uf: 'MG', ibge: '3123528' },
+      { nome: 'Eldorado', uf: 'SP', ibge: '3514809' },
+      { nome: 'Eldorado do Carajás', uf: 'PA', ibge: '1502954' },
+      { nome: 'Elesbão Veloso', uf: 'PI', ibge: '2203503' },
+      { nome: 'Elias Fausto', uf: 'SP', ibge: '3514908' },
+      { nome: 'Elisiário', uf: 'SP', ibge: '3514924' },
+      { nome: 'Elói Mendes', uf: 'MG', ibge: '3123601' },
+      { nome: 'Embaúba', uf: 'SP', ibge: '3514957' },
+      { nome: 'Encantado', uf: 'RS', ibge: '4306809' },
+      { nome: 'Engenheiro Beltrão', uf: 'PR', ibge: '4107504' },
+      { nome: 'Engenheiro Navarro', uf: 'MG', ibge: '3123809' },
+      { nome: 'Engenheiro Paulo de Frontin', uf: 'RJ', ibge: '3301801' },
+      { nome: 'Engenho Velho', uf: 'RS', ibge: '4306924' },
+      { nome: 'Entre Rios', uf: 'SC', ibge: '4205175' },
+      { nome: 'Entre Rios de Minas', uf: 'MG', ibge: '3123908' },
+      { nome: 'Entre Rios do Oeste', uf: 'PR', ibge: '4107538' },
+      { nome: 'Entre Rios do Sul', uf: 'RS', ibge: '4306957' },
+      { nome: 'Erebango', uf: 'RS', ibge: '4306973' },
+      { nome: 'Erechim', uf: 'RS', ibge: '4307005' },
+      { nome: 'Ernestina', uf: 'RS', ibge: '4307054' },
+      { nome: 'Erval Grande', uf: 'RS', ibge: '4307203' },
+      { nome: 'Esperança do Sul', uf: 'RS', ibge: '4307450' },
+      { nome: 'Esperantinópolis', uf: 'MA', ibge: '2104008' },
+      { nome: 'Espírito Santo', uf: 'RN', ibge: '2403509' },
+      { nome: 'Espírito Santo do Dourado', uf: 'MG', ibge: '3124401' },
+      { nome: 'Espumoso', uf: 'RS', ibge: '4307500' },
+      { nome: 'Esteio', uf: 'RS', ibge: '4307708' },
+      { nome: 'Estrela', uf: 'RS', ibge: '4307807' },
+      { nome: 'Estrela de Alagoas', uf: 'AL', ibge: '2702553' },
+      { nome: 'Estrela do Sul', uf: 'MG', ibge: '3124807' },
+      { nome: 'Eunápolis', uf: 'BA', ibge: '2910727' },
+      { nome: 'Fama', uf: 'MG', ibge: '3125200' },
+      { nome: 'Fátima', uf: 'BA', ibge: '2910750' },
+      { nome: 'Fátima do Sul', uf: 'MS', ibge: '5003801' },
+      { nome: 'Faxinalzinho', uf: 'RS', ibge: '4308052' },
+      { nome: 'Fazenda Nova', uf: 'GO', ibge: '5207600' },
+      { nome: 'Fazenda Vilanova', uf: 'RS', ibge: '4308078' },
+      { nome: 'Feira da Mata', uf: 'BA', ibge: '2910776' },
+      { nome: 'Feira Grande', uf: 'AL', ibge: '2702603' },
+      { nome: 'Felipe Guerra', uf: 'RN', ibge: '2403707' },
+      { nome: 'Felisburgo', uf: 'MG', ibge: '3125606' },
+      { nome: 'Feliz Deserto', uf: 'AL', ibge: '2702702' },
+      { nome: 'Fênix', uf: 'PR', ibge: '4107702' },
+      { nome: 'Fernando Pedroza', uf: 'RN', ibge: '2403756' },
+      { nome: 'Fernandópolis', uf: 'SP', ibge: '3515509' },
+      { nome: 'Ferros', uf: 'MG', ibge: '3125903' },
+      { nome: 'Figueira', uf: 'PR', ibge: '4107751' },
+      { nome: 'Figueirópolis D\'Oeste', uf: 'MT', ibge: '5103809' },
+      { nome: 'Filadélfia', uf: 'TO', ibge: '1707702' },
+      { nome: 'Firmino Alves', uf: 'BA', ibge: '2910909' },
+      { nome: 'Firminópolis', uf: 'GO', ibge: '5207808' },
+      { nome: 'Flor da Serra do Sul', uf: 'PR', ibge: '4107850' },
+      { nome: 'Flor do Sertão', uf: 'SC', ibge: '4205357' },
+      { nome: 'Flores', uf: 'PE', ibge: '2605608' },
+      { nome: 'Flores de Goiás', uf: 'GO', ibge: '5207907' },
+      { nome: 'Flores do Piauí', uf: 'PI', ibge: '2203800' },
+      { nome: 'Floresta', uf: 'PE', ibge: '2605707' },
+      { nome: 'Floresta Azul', uf: 'BA', ibge: '2911006' },
+      { nome: 'Florestal', uf: 'MG', ibge: '3126000' },
+      { nome: 'Florestópolis', uf: 'PR', ibge: '4108007' },
+      { nome: 'Floriano Peixoto', uf: 'RS', ibge: '4308250' },
+      { nome: 'Florianópolis', uf: 'SC', ibge: '4205407' },
+      { nome: 'Flórida', uf: 'PR', ibge: '4108106' },
+      { nome: 'Formosa', uf: 'GO', ibge: '5208004' },
+      { nome: 'Formosa do Rio Preto', uf: 'BA', ibge: '2911105' },
+      { nome: 'Forquetinha', uf: 'RS', ibge: '4308433' },
+      { nome: 'Forquilhinha', uf: 'SC', ibge: '4205456' },
+      { nome: 'Fortuna de Minas', uf: 'MG', ibge: '3126406' },
+      { nome: 'Francisco Ayres', uf: 'PI', ibge: '2204105' },
+      { nome: 'Francisco Badaró', uf: 'MG', ibge: '3126505' },
+      { nome: 'Francisco Dantas', uf: 'RN', ibge: '2403905' },
+      { nome: 'Francisco Morato', uf: 'SP', ibge: '3516309' },
+      { nome: 'Franciscópolis', uf: 'MG', ibge: '3126752' },
+      { nome: 'Frecheirinha', uf: 'CE', ibge: '2304509' },
+      { nome: 'Frederico Westphalen', uf: 'RS', ibge: '4308508' },
+      { nome: 'Frei Gaspar', uf: 'MG', ibge: '3126802' },
+      { nome: 'Frei Inocêncio', uf: 'MG', ibge: '3126901' },
+      { nome: 'Frei Lagonegro', uf: 'MG', ibge: '3126950' },
+      { nome: 'Frei Paulo', uf: 'SE', ibge: '2802304' },
+      { nome: 'Fronteira', uf: 'MG', ibge: '3127008' },
+      { nome: 'Fronteira dos Vales', uf: 'MG', ibge: '3127057' },
+      { nome: 'Fronteiras', uf: 'PI', ibge: '2204303' },
+      { nome: 'Frutuoso Gomes', uf: 'RN', ibge: '2404002' },
+      { nome: 'Gado Bravo', uf: 'PB', ibge: '2506251' },
+      { nome: 'Galiléia', uf: 'MG', ibge: '3127305' },
+      { nome: 'Galvão', uf: 'SC', ibge: '4205605' },
+      { nome: 'Garça', uf: 'SP', ibge: '3516705' },
+      { nome: 'Garrafão do Norte', uf: 'PA', ibge: '1503077' },
+      { nome: 'Gaspar', uf: 'SC', ibge: '4205902' },
+      { nome: 'Gaurama', uf: 'RS', ibge: '4308706' },
+      { nome: 'General Carneiro', uf: 'MT', ibge: '5103908' },
+      { nome: 'Glaucilândia', uf: 'MG', ibge: '3127354' },
+      { nome: 'Glicério', uf: 'SP', ibge: '3517109' },
+      { nome: 'Glória', uf: 'BA', ibge: '2911402' },
+      { nome: 'Glória D\'Oeste', uf: 'MT', ibge: '5103957' },
+      { nome: 'Goianá', uf: 'MG', ibge: '3127388' },
+      { nome: 'Goiandira', uf: 'GO', ibge: '5208509' },
+      { nome: 'Goiás', uf: 'GO', ibge: '5208905' },
+      { nome: 'Goiatuba', uf: 'GO', ibge: '5209101' },
+      { nome: 'Goioxim', uf: 'PR', ibge: '4108650' },
+      { nome: 'Governador Celso Ramos', uf: 'SC', ibge: '4206009' },
+      { nome: 'Governador Valadares', uf: 'MG', ibge: '3127701' },
+      { nome: 'Graça Aranha', uf: 'MA', ibge: '2104701' },
+      { nome: 'Gramado dos Loureiros', uf: 'RS', ibge: '4309126' },
+      { nome: 'Grão Mogol', uf: 'MG', ibge: '3127800' },
+      { nome: 'Grão-Pará', uf: 'SC', ibge: '4206108' },
+      { nome: 'Gravatal', uf: 'SC', ibge: '4206207' },
+      { nome: 'Grupiara', uf: 'MG', ibge: '3127909' },
+      { nome: 'Guaíra', uf: 'SP', ibge: '3517406' },
+      { nome: 'Guaiúba', uf: 'CE', ibge: '2304954' },
+      { nome: 'Guajará-Mirim', uf: 'RO', ibge: '1100106' },
+      { nome: 'Guapiaçu', uf: 'SP', ibge: '3517505' },
+      { nome: 'Guapiara', uf: 'SP', ibge: '3517604' },
+      { nome: 'Guapimirim', uf: 'RJ', ibge: '3301850' },
+      { nome: 'Guaraci', uf: 'PR', ibge: '4109203' },
+      { nome: 'Guaraciaba', uf: 'SC', ibge: '4206405' },
+      { nome: 'Guaraciaba', uf: 'MG', ibge: '3128204' },
+      { nome: 'Guaraciaba do Norte', uf: 'CE', ibge: '2305001' },
+      { nome: 'Guaraí', uf: 'TO', ibge: '1709302' },
+      { nome: 'Guarantã do Norte', uf: 'MT', ibge: '5104104' },
+      { nome: 'Guarapari', uf: 'ES', ibge: '3202405' },
+      { nome: 'Guaratinguetá', uf: 'SP', ibge: '3518404' },
+      { nome: 'Guaratuba', uf: 'PR', ibge: '4109609' },
+      { nome: 'Guarda-Mor', uf: 'MG', ibge: '3128600' },
+      { nome: 'Guidoval', uf: 'MG', ibge: '3128808' },
+      { nome: 'Guimarânia', uf: 'MG', ibge: '3128907' },
+      { nome: 'Guiratinga', uf: 'MT', ibge: '5104203' },
+      { nome: 'Guiricema', uf: 'MG', ibge: '3129004' },
+      { nome: 'Gurupá', uf: 'PA', ibge: '1503101' },
+      { nome: 'Heliópolis', uf: 'BA', ibge: '2911857' },
+      { nome: 'Herval', uf: 'RS', ibge: '4307104' },
+      { nome: 'Herval d\'Oeste', uf: 'SC', ibge: '4206702' },
+      { nome: 'Herveiras', uf: 'RS', ibge: '4309571' },
+      { nome: 'Hidrolândia', uf: 'GO', ibge: '5209705' },
+      { nome: 'Humaitá', uf: 'RS', ibge: '4309704' },
+      { nome: 'Humaitá', uf: 'AM', ibge: '1301704' },
+      { nome: 'Iacanga', uf: 'SP', ibge: '3519105' },
+      { nome: 'Iacri', uf: 'SP', ibge: '3519204' },
+      { nome: 'Iati', uf: 'PE', ibge: '2606507' },
+      { nome: 'Ibaiti', uf: 'PR', ibge: '4109708' },
+      { nome: 'Ibarama', uf: 'RS', ibge: '4309753' },
+      { nome: 'Ibateguara', uf: 'AL', ibge: '2703007' },
+      { nome: 'Ibiá', uf: 'MG', ibge: '3129509' },
+      { nome: 'Ibiaçá', uf: 'RS', ibge: '4309803' },
+      { nome: 'Ibiapina', uf: 'CE', ibge: '2305308' },
+      { nome: 'Ibicaraí', uf: 'BA', ibge: '2912103' },
+      { nome: 'Ibiquera', uf: 'BA', ibge: '2912608' },
+      { nome: 'Ibiracatu', uf: 'MG', ibge: '3129657' },
+      { nome: 'Ibiraçu', uf: 'ES', ibge: '3202504' },
+      { nome: 'Ibirapuitã', uf: 'RS', ibge: '4309951' },
+      { nome: 'Ibirarema', uf: 'SP', ibge: '3519501' },
+      { nome: 'Ibirité', uf: 'MG', ibge: '3129806' },
+      { nome: 'Ibitiara', uf: 'BA', ibge: '2913002' },
+      { nome: 'Ibitinga', uf: 'SP', ibge: '3519600' },
+      { nome: 'Ibitirama', uf: 'ES', ibge: '3202553' },
+      { nome: 'Ibituruna', uf: 'MG', ibge: '3130002' },
+      { nome: 'Ibiúna', uf: 'SP', ibge: '3519709' },
+      { nome: 'Içara', uf: 'SC', ibge: '4207007' },
+      { nome: 'Icém', uf: 'SP', ibge: '3519808' },
+      { nome: 'Igarapé-Miri', uf: 'PA', ibge: '1503309' },
+      { nome: 'Iguaba Grande', uf: 'RJ', ibge: '3301876' },
+      { nome: 'Iguape', uf: 'SP', ibge: '3520301' },
+      { nome: 'Iguatama', uf: 'MG', ibge: '3130309' },
+      { nome: 'Ijaci', uf: 'MG', ibge: '3130408' },
+      { nome: 'Ilha Grande', uf: 'PI', ibge: '2204659' },
+      { nome: 'Ilicínea', uf: 'MG', ibge: '3130507' },
+      { nome: 'Ilópolis', uf: 'RS', ibge: '4310306' },
+      { nome: 'Imaruí', uf: 'SC', ibge: '4207205' },
+      { nome: 'Imbé', uf: 'RS', ibge: '4310330' },
+      { nome: 'Imbituba', uf: 'SC', ibge: '4207304' },
+      { nome: 'Imigrante', uf: 'RS', ibge: '4310363' },
+      { nome: 'Imperatriz', uf: 'MA', ibge: '2105302' },
+      { nome: 'Inconfidentes', uf: 'MG', ibge: '3130606' },
+      { nome: 'Indaiatuba', uf: 'SP', ibge: '3520509' },
+      { nome: 'Independência', uf: 'CE', ibge: '2305605' },
+      { nome: 'Indianópolis', uf: 'MG', ibge: '3130705' },
+      { nome: 'Indiaroba', uf: 'SE', ibge: '2802809' },
+      { nome: 'Indiavaí', uf: 'MT', ibge: '5104500' },
+      { nome: 'Ingaí', uf: 'MG', ibge: '3130804' },
+      { nome: 'Ingazeira', uf: 'PE', ibge: '2607109' },
+      { nome: 'Inhaúma', uf: 'MG', ibge: '3131000' },
+      { nome: 'Ipameri', uf: 'GO', ibge: '5210109' },
+      { nome: 'Ipanema', uf: 'MG', ibge: '3131208' },
+      { nome: 'Ipanguaçu', uf: 'RN', ibge: '2404705' },
+      { nome: 'Ipaporanga', uf: 'CE', ibge: '2305654' },
+      { nome: 'Ipaumirim', uf: 'CE', ibge: '2305704' },
+      { nome: 'Ipaussu', uf: 'SP', ibge: '3520905' },
+      { nome: 'Ipiaçu', uf: 'MG', ibge: '3131406' },
+      { nome: 'Ipiranga do Piauí', uf: 'PI', ibge: '2204808' },
+      { nome: 'Ipiranga do Sul', uf: 'RS', ibge: '4310462' },
+      { nome: 'Iporã do Oeste', uf: 'SC', ibge: '4207650' },
+      { nome: 'Iporanga', uf: 'SP', ibge: '3521200' },
+      { nome: 'Ipuiúna', uf: 'MG', ibge: '3131505' },
+      { nome: 'Iracema', uf: 'RR', ibge: '1400282' },
+      { nome: 'Iracema', uf: 'CE', ibge: '2306009' },
+      { nome: 'Iracemápolis', uf: 'SP', ibge: '3521408' },
+      { nome: 'Iraceminha', uf: 'SC', ibge: '4207759' },
+      { nome: 'Iraí', uf: 'RS', ibge: '4310504' },
+      { nome: 'Iraí de Minas', uf: 'MG', ibge: '3131604' },
+      { nome: 'Irajuba', uf: 'BA', ibge: '2914208' },
+      { nome: 'Iramaia', uf: 'BA', ibge: '2914307' },
+      { nome: 'Iranduba', uf: 'AM', ibge: '1301852' },
+      { nome: 'Irapuã', uf: 'SP', ibge: '3521507' },
+      { nome: 'Irapuru', uf: 'SP', ibge: '3521606' },
+      { nome: 'Iraquara', uf: 'BA', ibge: '2914406' },
+      { nome: 'Irará', uf: 'BA', ibge: '2914505' },
+      { nome: 'Iretama', uf: 'PR', ibge: '4110805' },
+      { nome: 'Isaías Coelho', uf: 'PI', ibge: '2204907' },
+      { nome: 'Israelândia', uf: 'GO', ibge: '5210307' },
+      { nome: 'Itaara', uf: 'RS', ibge: '4310538' },
+      { nome: 'Itabirito', uf: 'MG', ibge: '3131901' },
+      { nome: 'Itagimirim', uf: 'BA', ibge: '2915304' },
+      { nome: 'Itaguaru', uf: 'GO', ibge: '5210604' },
+      { nome: 'Itaguatins', uf: 'TO', ibge: '1710706' },
+      { nome: 'Itaíba', uf: 'PE', ibge: '2607505' },
+      { nome: 'Itaiópolis', uf: 'SC', ibge: '4208104' },
+      { nome: 'Itaipulândia', uf: 'PR', ibge: '4110953' },
+      { nome: 'Itajubá', uf: 'MG', ibge: '3132404' },
+      { nome: 'Itamari', uf: 'BA', ibge: '2915700' },
+      { nome: 'Itambacuri', uf: 'MG', ibge: '3132701' },
+      { nome: 'Itambaracá', uf: 'PR', ibge: '4111001' },
+      { nome: 'Itamonte', uf: 'MG', ibge: '3133006' },
+      { nome: 'Itanhaém', uf: 'SP', ibge: '3522109' },
+      { nome: 'Itanhomi', uf: 'MG', ibge: '3133204' },
+      { nome: 'Itaoca', uf: 'SP', ibge: '3522158' },
+      { nome: 'Itapajé', uf: 'CE', ibge: '2306306' },
+      { nome: 'Itaparica', uf: 'BA', ibge: '2916104' },
+      { nome: 'Itapé', uf: 'BA', ibge: '2916203' },
+      { nome: 'Itapecerica da Serra', uf: 'SP', ibge: '3522208' },
+      { nome: 'Itapema', uf: 'SC', ibge: '4208302' },
+      { nome: 'Itapetininga', uf: 'SP', ibge: '3522307' },
+      { nome: 'Itapicuru', uf: 'BA', ibge: '2916500' },
+      { nome: 'Itapiranga', uf: 'AM', ibge: '1302009' },
+      { nome: 'Itapirapuã Paulista', uf: 'SP', ibge: '3522653' },
+      { nome: 'Itápolis', uf: 'SP', ibge: '3522703' },
+      { nome: 'Itaporã do Tocantins', uf: 'TO', ibge: '1711100' },
+      { nome: 'Itapuã do Oeste', uf: 'RO', ibge: '1101104' },
+      { nome: 'Itapura', uf: 'SP', ibge: '3523008' },
+      { nome: 'Itaquara', uf: 'BA', ibge: '2916708' },
+      { nome: 'Itaqui', uf: 'RS', ibge: '4310603' },
+      { nome: 'Itarantim', uf: 'BA', ibge: '2916807' },
+      { nome: 'Itararé', uf: 'SP', ibge: '3523206' },
+      { nome: 'Itariri', uf: 'SP', ibge: '3523305' },
+      { nome: 'Itati', uf: 'RS', ibge: '4310652' },
+      { nome: 'Itatiaia', uf: 'RJ', ibge: '3302254' },
+      { nome: 'Itatiaiuçu', uf: 'MG', ibge: '3133709' },
+      { nome: 'Itatim', uf: 'BA', ibge: '2916856' },
+      { nome: 'Itatinga', uf: 'SP', ibge: '3523503' },
+      { nome: 'Itatuba', uf: 'PB', ibge: '2507200' },
+      { nome: 'Itaúba', uf: 'MT', ibge: '5104559' },
+      { nome: 'Itaverava', uf: 'MG', ibge: '3133907' },
+      { nome: 'Itinga', uf: 'MG', ibge: '3134004' },
+      { nome: 'Itirapuã', uf: 'SP', ibge: '3523701' },
+      { nome: 'Itiruçu', uf: 'BA', ibge: '2916906' },
+      { nome: 'Itororó', uf: 'BA', ibge: '2917102' },
+      { nome: 'Ituberá', uf: 'BA', ibge: '2917300' },
+      { nome: 'Ituiutaba', uf: 'MG', ibge: '3134202' },
+      { nome: 'Itumirim', uf: 'MG', ibge: '3134301' },
+      { nome: 'Itupeva', uf: 'SP', ibge: '3524006' },
+      { nome: 'Itupiranga', uf: 'PA', ibge: '1503705' },
+      { nome: 'Iturama', uf: 'MG', ibge: '3134400' },
+      { nome: 'Itutinga', uf: 'MG', ibge: '3134509' },
+      { nome: 'Iuiú', uf: 'BA', ibge: '2917334' },
+      { nome: 'Iúna', uf: 'ES', ibge: '3203007' },
+      { nome: 'Ivatuba', uf: 'PR', ibge: '4111605' },
+      { nome: 'Ivorá', uf: 'RS', ibge: '4310751' },
+      { nome: 'Jaboti', uf: 'PR', ibge: '4111704' },
+      { nome: 'Jacaré dos Homens', uf: 'AL', ibge: '2703403' },
+      { nome: 'Jacareí', uf: 'SP', ibge: '3524402' },
+      { nome: 'Jacinto', uf: 'MG', ibge: '3134707' },
+      { nome: 'Jacutinga', uf: 'RS', ibge: '4310900' },
+      { nome: 'Jaguarari', uf: 'BA', ibge: '2917706' },
+      { nome: 'Jampruca', uf: 'MG', ibge: '3135076' },
+      { nome: 'Jandaíra', uf: 'RN', ibge: '2405108' },
+      { nome: 'Janduís', uf: 'RN', ibge: '2405207' },
+      { nome: 'Janiópolis', uf: 'PR', ibge: '4112207' },
+      { nome: 'Japi', uf: 'RN', ibge: '2405405' },
+      { nome: 'Jaquirana', uf: 'RS', ibge: '4311122' },
+      { nome: 'Jaraguari', uf: 'MS', ibge: '5004908' },
+      { nome: 'Jardim de Angicos', uf: 'RN', ibge: '2405504' },
+      { nome: 'Jardim de Piranhas', uf: 'RN', ibge: '2405603' },
+      { nome: 'Jardim do Seridó', uf: 'RN', ibge: '2405702' },
+      { nome: 'Jardim Olinda', uf: 'PR', ibge: '4112603' },
+      { nome: 'Jardinópolis', uf: 'SC', ibge: '4208955' },
+      { nome: 'Jari', uf: 'RS', ibge: '4311130' },
+      { nome: 'Jataizinho', uf: 'PR', ibge: '4112702' },
+      { nome: 'Jataúba', uf: 'PE', ibge: '2608008' },
+      { nome: 'Jaú', uf: 'SP', ibge: '3525300' },
+      { nome: 'Jauru', uf: 'MT', ibge: '5105002' },
+      { nome: 'Jequiá da Praia', uf: 'AL', ibge: '2703759' },
+      { nome: 'Jequitaí', uf: 'MG', ibge: '3135605' },
+      { nome: 'Jequitibá', uf: 'MG', ibge: '3135704' },
+      { nome: 'Jequitinhonha', uf: 'MG', ibge: '3135803' },
+      { nome: 'Jeriquara', uf: 'SP', ibge: '3525409' },
+      { nome: 'Jerumenha', uf: 'PI', ibge: '2205300' },
+      { nome: 'Jesúpolis', uf: 'GO', ibge: '5212055' },
+      { nome: 'Joaçaba', uf: 'SC', ibge: '4209003' },
+      { nome: 'Joaíma', uf: 'MG', ibge: '3136009' },
+      { nome: 'Joanópolis', uf: 'SP', ibge: '3525508' },
+      { nome: 'João Pinheiro', uf: 'MG', ibge: '3136306' },
+      { nome: 'João Ramalho', uf: 'SP', ibge: '3525607' },
+      { nome: 'Joaquim Pires', uf: 'PI', ibge: '2205409' },
+      { nome: 'Joca Claudino', uf: 'PB', ibge: '2513653' },
+      { nome: 'José Raydan', uf: 'MG', ibge: '3136553' },
+      { nome: 'Josenópolis', uf: 'MG', ibge: '3136579' },
+      { nome: 'Juatuba', uf: 'MG', ibge: '3136652' },
+      { nome: 'Juazeiro do Piauí', uf: 'PI', ibge: '2205516' },
+      { nome: 'Jucati', uf: 'PE', ibge: '2608255' },
+      { nome: 'Jucuruçu', uf: 'BA', ibge: '2918456' },
+      { nome: 'Jumirim', uf: 'SP', ibge: '3525854' },
+      { nome: 'Jundiá', uf: 'RN', ibge: '2406155' },
+      { nome: 'Jundiá', uf: 'AL', ibge: '2703908' },
+      { nome: 'Jundiaí do Sul', uf: 'PR', ibge: '4112900' },
+      { nome: 'Jupiá', uf: 'SC', ibge: '4209177' },
+      { nome: 'Juquiá', uf: 'SP', ibge: '3526100' },
+      { nome: 'Juquitiba', uf: 'SP', ibge: '3526209' },
+      { nome: 'Juramento', uf: 'MG', ibge: '3136801' },
+      { nome: 'Juripiranga', uf: 'PB', ibge: '2507903' },
+      { nome: 'Juru', uf: 'PB', ibge: '2508000' },
+      { nome: 'Jussara', uf: 'BA', ibge: '2918506' },
+      { nome: 'Jussiape', uf: 'BA', ibge: '2918605' },
+      { nome: 'Ladainha', uf: 'MG', ibge: '3137007' },
+      { nome: 'Ladário', uf: 'MS', ibge: '5005202' },
+      { nome: 'Lagamar', uf: 'MG', ibge: '3137106' },
+      { nome: 'Lago da Pedra', uf: 'MA', ibge: '2105708' },
+      { nome: 'Lago dos Rodrigues', uf: 'MA', ibge: '2105948' },
+      { nome: 'Lagoa Alegre', uf: 'PI', ibge: '2205557' },
+      { nome: 'Lagoa Bonita do Sul', uf: 'RS', ibge: '4311239' },
+      { nome: 'Lagoa da Canoa', uf: 'AL', ibge: '2704104' },
+      { nome: 'Lagoa de Velhos', uf: 'RN', ibge: '2406403' },
+      { nome: 'Lagoa do Piauí', uf: 'PI', ibge: '2205581' },
+      { nome: 'Lagoa dos Patos', uf: 'MG', ibge: '3137304' },
+      { nome: 'Lagoa Dourada', uf: 'MG', ibge: '3137403' },
+      { nome: 'Lagoa Grande', uf: 'MG', ibge: '3137536' },
+      { nome: 'Lagoa Salgada', uf: 'RN', ibge: '2406601' },
+      { nome: 'Lagoa Santa', uf: 'GO', ibge: '5212253' },
+      { nome: 'Lagoinha', uf: 'SP', ibge: '3526308' },
+      { nome: 'Laguna', uf: 'SC', ibge: '4209409' },
+      { nome: 'Laguna Carapã', uf: 'MS', ibge: '5005251' },
+      { nome: 'Lajeado', uf: 'RS', ibge: '4311403' },
+      { nome: 'Lajeado do Bugre', uf: 'RS', ibge: '4311429' },
+      { nome: 'Lajedinho', uf: 'BA', ibge: '2919009' },
+      { nome: 'Lajinha', uf: 'MG', ibge: '3137700' },
+      { nome: 'Lamarão', uf: 'BA', ibge: '2919108' },
+      { nome: 'Lambari D\'Oeste', uf: 'MT', ibge: '5105234' },
+      { nome: 'Landri Sales', uf: 'PI', ibge: '2205607' },
+      { nome: 'Lapão', uf: 'BA', ibge: '2919157' },
+      { nome: 'Lassance', uf: 'MG', ibge: '3138104' },
+      { nome: 'Lauro Müller', uf: 'SC', ibge: '4209607' },
+      { nome: 'Lavínia', uf: 'SP', ibge: '3526506' },
+      { nome: 'Lavrinhas', uf: 'SP', ibge: '3526605' },
+      { nome: 'Lençóis Paulista', uf: 'SP', ibge: '3526803' },
+      { nome: 'Limoeiro de Anadia', uf: 'AL', ibge: '2704203' },
+      { nome: 'Limoeiro do Ajuru', uf: 'PA', ibge: '1504000' },
+      { nome: 'Lins', uf: 'SP', ibge: '3527108' },
+      { nome: 'Livramento', uf: 'PB', ibge: '2508505' },
+      { nome: 'Londrina', uf: 'PR', ibge: '4113700' },
+      { nome: 'Lorena', uf: 'SP', ibge: '3527207' },
+      { nome: 'Louveira', uf: 'SP', ibge: '3527306' },
+      { nome: 'Lucélia', uf: 'SP', ibge: '3527405' },
+      { nome: 'Lucianópolis', uf: 'SP', ibge: '3527504' },
+      { nome: 'Lucrécia', uf: 'RN', ibge: '2406908' },
+      { nome: 'Luís Correia', uf: 'PI', ibge: '2205706' },
+      { nome: 'Luís Eduardo Magalhães', uf: 'BA', ibge: '2919553' },
+      { nome: 'Luís Gomes', uf: 'RN', ibge: '2407005' },
+      { nome: 'Luiziana', uf: 'PR', ibge: '4113734' },
+      { nome: 'Luminárias', uf: 'MG', ibge: '3138708' },
+      { nome: 'Lupércio', uf: 'SP', ibge: '3527801' },
+      { nome: 'Luz', uf: 'MG', ibge: '3138807' },
+      { nome: 'Luzerna', uf: 'SC', ibge: '4210035' },
+      { nome: 'Macambira', uf: 'SE', ibge: '2803708' },
+      { nome: 'Macaúbas', uf: 'BA', ibge: '2919801' },
+      { nome: 'Machacalis', uf: 'MG', ibge: '3138906' },
+      { nome: 'Machado', uf: 'MG', ibge: '3139003' },
+      { nome: 'Madre de Deus', uf: 'BA', ibge: '2919926' },
+      { nome: 'Madre de Deus de Minas', uf: 'MG', ibge: '3139102' },
+      { nome: 'Mãe do Rio', uf: 'PA', ibge: '1504059' },
+      { nome: 'Maetinga', uf: 'BA', ibge: '2919959' },
+      { nome: 'Magalhães Barata', uf: 'PA', ibge: '1504109' },
+      { nome: 'Magda', uf: 'SP', ibge: '3528304' },
+      { nome: 'Mairinque', uf: 'SP', ibge: '3528403' },
+      { nome: 'Major Sales', uf: 'RN', ibge: '2407252' },
+      { nome: 'Malhada de Pedras', uf: 'BA', ibge: '2920304' },
+      { nome: 'Mamonas', uf: 'MG', ibge: '3139250' },
+      { nome: 'Manaus', uf: 'AM', ibge: '1302603' },
+      { nome: 'Mâncio Lima', uf: 'AC', ibge: '1200336' },
+      { nome: 'Mandaguari', uf: 'PR', ibge: '4114203' },
+      { nome: 'Manfrinópolis', uf: 'PR', ibge: '4114351' },
+      { nome: 'Manga', uf: 'MG', ibge: '3139300' },
+      { nome: 'Mangueirinha', uf: 'PR', ibge: '4114401' },
+      { nome: 'Manhumirim', uf: 'MG', ibge: '3139508' },
+      { nome: 'Manicoré', uf: 'AM', ibge: '1302702' },
+      { nome: 'Manoel Emídio', uf: 'PI', ibge: '2205904' },
+      { nome: 'Maquiné', uf: 'RS', ibge: '4311775' },
+      { nome: 'Maracaí', uf: 'SP', ibge: '3528809' },
+      { nome: 'Maracajá', uf: 'SC', ibge: '4210407' },
+      { nome: 'Maranhãozinho', uf: 'MA', ibge: '2106375' },
+      { nome: 'Marapoama', uf: 'SP', ibge: '3528858' },
+      { nome: 'Marau', uf: 'RS', ibge: '4311809' },
+      { nome: 'Maravilha', uf: 'AL', ibge: '2704609' },
+      { nome: 'Maravilha', uf: 'SC', ibge: '4210506' },
+      { nome: 'Maravilhas', uf: 'MG', ibge: '3139706' },
+      { nome: 'Marcelino Ramos', uf: 'RS', ibge: '4311908' },
+      { nome: 'Marcelino Vieira', uf: 'RN', ibge: '2407302' },
+      { nome: 'Marcos Parente', uf: 'PI', ibge: '2206001' },
+      { nome: 'Mariana', uf: 'MG', ibge: '3140001' },
+      { nome: 'Mariana Pimentel', uf: 'RS', ibge: '4311981' },
+      { nome: 'Mariápolis', uf: 'SP', ibge: '3528908' },
+      { nome: 'Maricá', uf: 'RJ', ibge: '3302700' },
+      { nome: 'Marilândia do Sul', uf: 'PR', ibge: '4114906' },
+      { nome: 'Marilena', uf: 'PR', ibge: '4115002' },
+      { nome: 'Mariluz', uf: 'PR', ibge: '4115101' },
+      { nome: 'Marinópolis', uf: 'SP', ibge: '3529104' },
+      { nome: 'Marituba', uf: 'PA', ibge: '1504422' },
+      { nome: 'Marmeleiro', uf: 'PR', ibge: '4115408' },
+      { nome: 'Marques de Souza', uf: 'RS', ibge: '4312054' },
+      { nome: 'Marquinho', uf: 'PR', ibge: '4115457' },
+      { nome: 'Martinópole', uf: 'CE', ibge: '2307908' },
+      { nome: 'Martins', uf: 'RN', ibge: '2407401' },
+      { nome: 'Martins Soares', uf: 'MG', ibge: '3140530' },
+      { nome: 'Marzagão', uf: 'GO', ibge: '5212907' },
+      { nome: 'Mascote', uf: 'BA', ibge: '2920908' },
+      { nome: 'Massaranduba', uf: 'PB', ibge: '2509206' },
+      { nome: 'Mathias Lobato', uf: 'MG', ibge: '3171501' },
+      { nome: 'Matias Cardoso', uf: 'MG', ibge: '3140852' },
+      { nome: 'Matinhos', uf: 'PR', ibge: '4115705' },
+      { nome: 'Mato Castelhano', uf: 'RS', ibge: '4312138' },
+      { nome: 'Mato Rico', uf: 'PR', ibge: '4115739' },
+      { nome: 'Mato Verde', uf: 'MG', ibge: '3141009' },
+      { nome: 'Matrinchã', uf: 'GO', ibge: '5212956' },
+      { nome: 'Matutina', uf: 'MG', ibge: '3141207' },
+      { nome: 'Maurilândia', uf: 'GO', ibge: '5213004' },
+      { nome: 'Maurilândia do Tocantins', uf: 'TO', ibge: '1712801' },
+      { nome: 'Maximiliano de Almeida', uf: 'RS', ibge: '4312203' },
+      { nome: 'Meleiro', uf: 'SC', ibge: '4210803' },
+      { nome: 'Mendes', uf: 'RJ', ibge: '3302809' },
+      { nome: 'Mercedes', uf: 'PR', ibge: '4115853' },
+      { nome: 'Meridiano', uf: 'SP', ibge: '3529609' },
+      { nome: 'Meruoca', uf: 'CE', ibge: '2308203' },
+      { nome: 'Miguel Alves', uf: 'PI', ibge: '2206209' },
+      { nome: 'Milhã', uf: 'CE', ibge: '2308351' },
+      { nome: 'Minador do Negrão', uf: 'AL', ibge: '2705309' },
+      { nome: 'Mira Estrela', uf: 'SP', ibge: '3530003' },
+      { nome: 'Miracatu', uf: 'SP', ibge: '3529906' },
+      { nome: 'Miracema do Tocantins', uf: 'TO', ibge: '1713205' },
+      { nome: 'Miraguaí', uf: 'RS', ibge: '4312302' },
+      { nome: 'Miraíma', uf: 'CE', ibge: '2308377' },
+      { nome: 'Miranda do Norte', uf: 'MA', ibge: '2106755' },
+      { nome: 'Mirangaba', uf: 'BA', ibge: '2921401' },
+      { nome: 'Mirante', uf: 'BA', ibge: '2921450' },
+      { nome: 'Mirante da Serra', uf: 'RO', ibge: '1101302' },
+      { nome: 'Mirante do Paranapanema', uf: 'SP', ibge: '3530201' },
+      { nome: 'Mirassol d\'Oeste', uf: 'MT', ibge: '5105622' },
+      { nome: 'Mocajuba', uf: 'PA', ibge: '1504604' },
+      { nome: 'Mogeiro', uf: 'PB', ibge: '2509404' },
+      { nome: 'Mogi Guaçu', uf: 'SP', ibge: '3530706' },
+      { nome: 'Moju', uf: 'PA', ibge: '1504703' },
+      { nome: 'Mojuí dos Campos', uf: 'PA', ibge: '1504752' },
+      { nome: 'Mombuca', uf: 'SP', ibge: '3530904' },
+      { nome: 'Mondaí', uf: 'SC', ibge: '4211009' },
+      { nome: 'Monjolos', uf: 'MG', ibge: '3142502' },
+      { nome: 'Montadas', uf: 'PB', ibge: '2509503' },
+      { nome: 'Montalvânia', uf: 'MG', ibge: '3142700' },
+      { nome: 'Montanhas', uf: 'RN', ibge: '2407708' },
+      { nome: 'Monte Alegre', uf: 'PA', ibge: '1504802' },
+      { nome: 'Monte Alegre de Minas', uf: 'MG', ibge: '3142809' },
+      { nome: 'Monte Azul', uf: 'MG', ibge: '3142908' },
+      { nome: 'Monte Belo', uf: 'MG', ibge: '3143005' },
+      { nome: 'Monte Carmelo', uf: 'MG', ibge: '3143104' },
+      { nome: 'Monte Castelo', uf: 'SP', ibge: '3531605' },
+      { nome: 'Monte Castelo', uf: 'SC', ibge: '4211108' },
+      { nome: 'Monte Mor', uf: 'SP', ibge: '3531803' },
+      { nome: 'Monteirópolis', uf: 'AL', ibge: '2705408' },
+      { nome: 'Montenegro', uf: 'RS', ibge: '4312401' },
+      { nome: 'Montes Altos', uf: 'MA', ibge: '2107001' },
+      { nome: 'Montes Claros', uf: 'MG', ibge: '3143302' },
+      { nome: 'Montezuma', uf: 'MG', ibge: '3143450' },
+      { nome: 'Morada Nova de Minas', uf: 'MG', ibge: '3143500' },
+      { nome: 'Moraújo', uf: 'CE', ibge: '2308807' },
+      { nome: 'Moreira Sales', uf: 'PR', ibge: '4116109' },
+      { nome: 'Mormaço', uf: 'RS', ibge: '4312427' },
+      { nome: 'Morrinhos do Sul', uf: 'RS', ibge: '4312443' },
+      { nome: 'Morro da Garça', uf: 'MG', ibge: '3143609' },
+      { nome: 'Morro do Chapéu do Piauí', uf: 'PI', ibge: '2206670' },
+      { nome: 'Mostardas', uf: 'RS', ibge: '4312500' },
+      { nome: 'Muaná', uf: 'PA', ibge: '1504901' },
+      { nome: 'Mucambo', uf: 'CE', ibge: '2309003' },
+      { nome: 'Mucugê', uf: 'BA', ibge: '2921906' },
+      { nome: 'Muitos Capões', uf: 'RS', ibge: '4312617' },
+      { nome: 'Mulungu', uf: 'CE', ibge: '2309102' },
+      { nome: 'Munhoz de Melo', uf: 'PR', ibge: '4116307' },
+      { nome: 'Muniz Ferreira', uf: 'BA', ibge: '2922201' },
+      { nome: 'Muquém de São Francisco', uf: 'BA', ibge: '2922250' },
+      { nome: 'Muriaé', uf: 'MG', ibge: '3143906' },
+      { nome: 'Murici', uf: 'AL', ibge: '2705507' },
+      { nome: 'Murici dos Portelas', uf: 'PI', ibge: '2206696' },
+      { nome: 'Muricilândia', uf: 'TO', ibge: '1713957' },
+      { nome: 'Murutinga do Sul', uf: 'SP', ibge: '3532108' },
+      { nome: 'Mutum', uf: 'MG', ibge: '3144003' },
+      { nome: 'Mutunópolis', uf: 'GO', ibge: '5214101' },
+      { nome: 'Muzambinho', uf: 'MG', ibge: '3144102' },
+      { nome: 'Nacip Raydan', uf: 'MG', ibge: '3144201' },
+      { nome: 'Não-Me-Toque', uf: 'RS', ibge: '4312658' },
+      { nome: 'Nazaré', uf: 'TO', ibge: '1714302' },
+      { nome: 'Nazaré do Piauí', uf: 'PI', ibge: '2206704' },
+      { nome: 'Nazareno', uf: 'MG', ibge: '3144508' },
+      { nome: 'Nazário', uf: 'GO', ibge: '5214408' },
+      { nome: 'Nerópolis', uf: 'GO', ibge: '5214507' },
+      { nome: 'Nhandeara', uf: 'SP', ibge: '3532603' },
+      { nome: 'Nilópolis', uf: 'RJ', ibge: '3303203' },
+      { nome: 'Ninheira', uf: 'MG', ibge: '3144656' },
+      { nome: 'Nioaque', uf: 'MS', ibge: '5005806' },
+      { nome: 'Niterói', uf: 'RJ', ibge: '3303302' },
+      { nome: 'Nonoai', uf: 'RS', ibge: '4312708' },
+      { nome: 'Nordestina', uf: 'BA', ibge: '2922656' },
+      { nome: 'Normandia', uf: 'RR', ibge: '1400407' },
+      { nome: 'Nossa Senhora de Nazaré', uf: 'PI', ibge: '2206753' },
+      { nome: 'Nossa Senhora do Livramento', uf: 'MT', ibge: '5106109' },
+      { nome: 'Nossa Senhora dos Remédios', uf: 'PI', ibge: '2206803' },
+      { nome: 'Nova Aurora', uf: 'GO', ibge: '5214804' },
+      { nome: 'Nova Bassano', uf: 'RS', ibge: '4312906' },
+      { nome: 'Nova Belém', uf: 'MG', ibge: '3144672' },
+      { nome: 'Nova Boa Vista', uf: 'RS', ibge: '4312955' },
+      { nome: 'Nova Bréscia', uf: 'RS', ibge: '4313003' },
+      { nome: 'Nova Candelária', uf: 'RS', ibge: '4313011' },
+      { nome: 'Nova Cantu', uf: 'PR', ibge: '4116802' },
+      { nome: 'Nova Esperança do Piriá', uf: 'PA', ibge: '1504950' },
+      { nome: 'Nova Europa', uf: 'SP', ibge: '3532900' },
+      { nome: 'Nova Friburgo', uf: 'RJ', ibge: '3303401' },
+      { nome: 'Nova Guataporanga', uf: 'SP', ibge: '3533106' },
+      { nome: 'Nova Iguaçu de Goiás', uf: 'GO', ibge: '5214879' },
+      { nome: 'Nova Independência', uf: 'SP', ibge: '3533205' },
+      { nome: 'Nova Itaberaba', uf: 'SC', ibge: '4211454' },
+      { nome: 'Nova Lima', uf: 'MG', ibge: '3144805' },
+      { nome: 'Nova Módica', uf: 'MG', ibge: '3144904' },
+      { nome: 'Nova Odessa', uf: 'SP', ibge: '3533403' },
+      { nome: 'Nova Olímpia', uf: 'PR', ibge: '4117206' },
+      { nome: 'Nova Petrópolis', uf: 'RS', ibge: '4313201' },
+      { nome: 'Nova Porteirinha', uf: 'MG', ibge: '3145059' },
+      { nome: 'Nova Prata', uf: 'RS', ibge: '4313300' },
+      { nome: 'Nova Prata do Iguaçu', uf: 'PR', ibge: '4117255' },
+      { nome: 'Nova Roma', uf: 'GO', ibge: '5214903' },
+      { nome: 'Nova Santa Helena', uf: 'MT', ibge: '5106190' },
+      { nome: 'Nova Tebas', uf: 'PR', ibge: '4117271' },
+      { nome: 'Nova Timboteua', uf: 'PA', ibge: '1505007' },
+      { nome: 'Nova Ubiratã', uf: 'MT', ibge: '5106240' },
+      { nome: 'Nova União', uf: 'RO', ibge: '1101435' },
+      { nome: 'Nova Veneza', uf: 'SC', ibge: '4211603' },
+      { nome: 'Nova Xavantina', uf: 'MT', ibge: '5106257' },
+      { nome: 'Novais', uf: 'SP', ibge: '3533254' },
+      { nome: 'Novo Barreiro', uf: 'RS', ibge: '4313490' },
+      { nome: 'Novo Horizonte', uf: 'BA', ibge: '2923035' },
+      { nome: 'Novo Horizonte', uf: 'SP', ibge: '3533502' },
+      { nome: 'Novo Horizonte do Oeste', uf: 'RO', ibge: '1100502' },
+      { nome: 'Novo Jardim', uf: 'TO', ibge: '1715259' },
+      { nome: 'Novo Lino', uf: 'AL', ibge: '2705606' },
+      { nome: 'Novo Oriente', uf: 'CE', ibge: '2309409' },
+      { nome: 'Novo Oriente de Minas', uf: 'MG', ibge: '3145356' },
+      { nome: 'Novo Repartimento', uf: 'PA', ibge: '1505064' },
+      { nome: 'Novo Tiradentes', uf: 'RS', ibge: '4313441' },
+      { nome: 'Novo Triunfo', uf: 'BA', ibge: '2923050' },
+      { nome: 'Novorizonte', uf: 'MG', ibge: '3145372' },
+      { nome: 'Óbidos', uf: 'PA', ibge: '1505106' },
+      { nome: 'Oeiras do Pará', uf: 'PA', ibge: '1505205' },
+      { nome: 'Óleo', uf: 'SP', ibge: '3533809' },
+      { nome: 'Olho d\'Água do Casado', uf: 'AL', ibge: '2705804' },
+      { nome: 'Olivedos', uf: 'PB', ibge: '2510501' },
+      { nome: 'Oliveira', uf: 'MG', ibge: '3145604' },
+      { nome: 'Olivença', uf: 'AL', ibge: '2706000' },
+      { nome: 'Oratórios', uf: 'MG', ibge: '3145851' },
+      { nome: 'Orleans', uf: 'SC', ibge: '4211702' },
+      { nome: 'Orós', uf: 'CE', ibge: '2309508' },
+      { nome: 'Ouro Branco', uf: 'AL', ibge: '2706109' },
+      { nome: 'Ouro Preto', uf: 'MG', ibge: '3146107' },
+      { nome: 'Ourolândia', uf: 'BA', ibge: '2923357' },
+      { nome: 'Ouvidor', uf: 'GO', ibge: '5215504' },
+      { nome: 'Pacaembu', uf: 'SP', ibge: '3534906' },
+      { nome: 'Pacaraima', uf: 'RR', ibge: '1400456' },
+      { nome: 'Pacatuba', uf: 'SE', ibge: '2804904' },
+      { nome: 'Paço do Lumiar', uf: 'MA', ibge: '2107506' },
+      { nome: 'Padre Bernardo', uf: 'GO', ibge: '5215603' },
+      { nome: 'Padre Marcos', uf: 'PI', ibge: '2207207' },
+      { nome: 'Padre Paraíso', uf: 'MG', ibge: '3146305' },
+      { nome: 'Pai Pedro', uf: 'MG', ibge: '3146552' },
+      { nome: 'Paiçandu', uf: 'PR', ibge: '4117503' },
+      { nome: 'Palestina', uf: 'AL', ibge: '2706208' },
+      { nome: 'Palestina do Pará', uf: 'PA', ibge: '1505494' },
+      { nome: 'Palma Sola', uf: 'SC', ibge: '4212007' },
+      { nome: 'Palmares Paulista', uf: 'SP', ibge: '3535101' },
+      { nome: 'Palmeirante', uf: 'TO', ibge: '1715705' },
+      { nome: 'Palmeirópolis', uf: 'TO', ibge: '1715754' },
+      { nome: 'Palminópolis', uf: 'GO', ibge: '5215900' },
+      { nome: 'Palmitos', uf: 'SC', ibge: '4212106' },
+      { nome: 'Palmópolis', uf: 'MG', ibge: '3146750' },
+      { nome: 'Palotina', uf: 'PR', ibge: '4117909' },
+      { nome: 'Panorama', uf: 'SP', ibge: '3535408' },
+      { nome: 'Papagaios', uf: 'MG', ibge: '3146909' },
+      { nome: 'Paracatu', uf: 'MG', ibge: '3147006' },
+      { nome: 'Paragominas', uf: 'PA', ibge: '1505502' },
+      { nome: 'Paraguaçu', uf: 'MG', ibge: '3147204' },
+      { nome: 'Paraguaçu Paulista', uf: 'SP', ibge: '3535507' },
+      { nome: 'Paraibano', uf: 'MA', ibge: '2107704' },
+      { nome: 'Paraíso do Sul', uf: 'RS', ibge: '4314027' },
+      { nome: 'Paranapoema', uf: 'PR', ibge: '4118303' },
+      { nome: 'Paranatama', uf: 'PE', ibge: '2610301' },
+      { nome: 'Paranatinga', uf: 'MT', ibge: '5106307' },
+      { nome: 'Paraopeba', uf: 'MG', ibge: '3147402' },
+      { nome: 'Parari', uf: 'PB', ibge: '2510659' },
+      { nome: 'Parauapebas', uf: 'PA', ibge: '1505536' },
+      { nome: 'Paraúna', uf: 'GO', ibge: '5216403' },
+      { nome: 'Parecis', uf: 'RO', ibge: '1101450' },
+      { nome: 'Parelhas', uf: 'RN', ibge: '2408904' },
+      { nome: 'Pariconha', uf: 'AL', ibge: '2706422' },
+      { nome: 'Pariquera-Açu', uf: 'SP', ibge: '3536208' },
+      { nome: 'Parnaíba', uf: 'PI', ibge: '2207702' },
+      { nome: 'Parobé', uf: 'RS', ibge: '4314050' },
+      { nome: 'Passa Quatro', uf: 'MG', ibge: '3147600' },
+      { nome: 'Passa Tempo', uf: 'MG', ibge: '3147709' },
+      { nome: 'Passagem', uf: 'RN', ibge: '2409209' },
+      { nome: 'Passagem Franca', uf: 'MA', ibge: '2107902' },
+      { nome: 'Passagem Franca do Piauí', uf: 'PI', ibge: '2207751' },
+      { nome: 'Passo de Torres', uf: 'SC', ibge: '4212254' },
+      { nome: 'Passo do Sobrado', uf: 'RS', ibge: '4314076' },
+      { nome: 'Passo Fundo', uf: 'RS', ibge: '4314100' },
+      { nome: 'Patos de Minas', uf: 'MG', ibge: '3148004' },
+      { nome: 'Paty do Alferes', uf: 'RJ', ibge: '3303856' },
+      { nome: 'Paulicéia', uf: 'SP', ibge: '3536406' },
+      { nome: 'Paulistânia', uf: 'SP', ibge: '3536570' },
+      { nome: 'Paulistas', uf: 'MG', ibge: '3148400' },
+      { nome: 'Paulo Bento', uf: 'RS', ibge: '4314134' },
+      { nome: 'Paulo Jacinto', uf: 'AL', ibge: '2706604' },
+      { nome: 'Pavão', uf: 'MG', ibge: '3148509' },
+      { nome: 'Pavussu', uf: 'PI', ibge: '2207850' },
+      { nome: 'Peabiru', uf: 'PR', ibge: '4118808' },
+      { nome: 'Peçanha', uf: 'MG', ibge: '3148608' },
+      { nome: 'Pederneiras', uf: 'SP', ibge: '3536703' },
+      { nome: 'Pedra Branca', uf: 'PB', ibge: '2511004' },
+      { nome: 'Pedra do Indaiá', uf: 'MG', ibge: '3148905' },
+      { nome: 'Pedra Grande', uf: 'RN', ibge: '2409506' },
+      { nome: 'Pedra Lavrada', uf: 'PB', ibge: '2511103' },
+      { nome: 'Pedra Preta', uf: 'RN', ibge: '2409605' },
+      { nome: 'Pedranópolis', uf: 'SP', ibge: '3536901' },
+      { nome: 'Pedras de Maria da Cruz', uf: 'MG', ibge: '3149150' },
+      { nome: 'Pedregulho', uf: 'SP', ibge: '3537008' },
+      { nome: 'Pedrinópolis', uf: 'MG', ibge: '3149200' },
+      { nome: 'Pedro Afonso', uf: 'TO', ibge: '1716505' },
+      { nome: 'Pedro Alexandre', uf: 'BA', ibge: '2924207' },
+      { nome: 'Pedro Avelino', uf: 'RN', ibge: '2409704' },
+      { nome: 'Pedro de Toledo', uf: 'SP', ibge: '3537206' },
+      { nome: 'Pedro Laurentino', uf: 'PI', ibge: '2207934' },
+      { nome: 'Pedro Velho', uf: 'RN', ibge: '2409803' },
+      { nome: 'Peixe-Boi', uf: 'PA', ibge: '1505601' },
+      { nome: 'Penápolis', uf: 'SP', ibge: '3537305' },
+      { nome: 'Pentecoste', uf: 'CE', ibge: '2310704' },
+      { nome: 'Perdigão', uf: 'MG', ibge: '3149705' },
+      { nome: 'Pereiras', uf: 'SP', ibge: '3537503' },
+      { nome: 'Pereiro', uf: 'CE', ibge: '2310803' },
+      { nome: 'Peruíbe', uf: 'SP', ibge: '3537602' },
+      { nome: 'Pescador', uf: 'MG', ibge: '3150000' },
+      { nome: 'Pescaria Brava', uf: 'SC', ibge: '4212650' },
+      { nome: 'Petrolândia', uf: 'PE', ibge: '2611002' },
+      { nome: 'Petrolina de Goiás', uf: 'GO', ibge: '5216809' },
+      { nome: 'Petrópolis', uf: 'RJ', ibge: '3303906' },
+      { nome: 'Piçarra', uf: 'PA', ibge: '1505635' },
+      { nome: 'Picuí', uf: 'PB', ibge: '2511400' },
+      { nome: 'Piedade do Rio Grande', uf: 'MG', ibge: '3150307' },
+      { nome: 'Piedade dos Gerais', uf: 'MG', ibge: '3150406' },
+      { nome: 'Pilão Arcado', uf: 'BA', ibge: '2924405' },
+      { nome: 'Pimenta', uf: 'MG', ibge: '3150505' },
+      { nome: 'Pindaí', uf: 'BA', ibge: '2924504' },
+      { nome: 'Pindamonhangaba', uf: 'SP', ibge: '3538006' },
+      { nome: 'Pindoba', uf: 'AL', ibge: '2707008' },
+      { nome: 'Pinhal da Serra', uf: 'RS', ibge: '4314464' },
+      { nome: 'Pinhal de São Bento', uf: 'PR', ibge: '4119251' },
+      { nome: 'Pinhal Grande', uf: 'RS', ibge: '4314472' },
+      { nome: 'Pinhão', uf: 'SE', ibge: '2805208' },
+      { nome: 'Pinheirinho do Vale', uf: 'RS', ibge: '4314498' },
+      { nome: 'Pinheiros', uf: 'ES', ibge: '3204104' },
+      { nome: 'Pintópolis', uf: 'MG', ibge: '3150570' },
+      { nome: 'Pio IX', uf: 'PI', ibge: '2208205' },
+      { nome: 'Piquet Carneiro', uf: 'CE', ibge: '2310902' },
+      { nome: 'Piracema', uf: 'MG', ibge: '3150604' },
+      { nome: 'Piracicaba', uf: 'SP', ibge: '3538709' },
+      { nome: 'Piraí do Sul', uf: 'PR', ibge: '4119400' },
+      { nome: 'Pirapora', uf: 'MG', ibge: '3151206' },
+      { nome: 'Pirapozinho', uf: 'SP', ibge: '3539202' },
+      { nome: 'Pirassununga', uf: 'SP', ibge: '3539301' },
+      { nome: 'Piraúba', uf: 'MG', ibge: '3151305' },
+      { nome: 'Pires Ferreira', uf: 'CE', ibge: '2310951' },
+      { nome: 'Piripiri', uf: 'PI', ibge: '2208403' },
+      { nome: 'Pitangueiras', uf: 'PR', ibge: '4119657' },
+      { nome: 'Pitangueiras', uf: 'SP', ibge: '3539509' },
+      { nome: 'Piumhi', uf: 'MG', ibge: '3151503' },
+      { nome: 'Plácido de Castro', uf: 'AC', ibge: '1200385' },
+      { nome: 'Planaltina', uf: 'GO', ibge: '5217609' },
+      { nome: 'Planaltina do Paraná', uf: 'PR', ibge: '4119707' },
+      { nome: 'Pocinhos', uf: 'PB', ibge: '2512002' },
+      { nome: 'Poço das Antas', uf: 'RS', ibge: '4314753' },
+      { nome: 'Poço das Trincheiras', uf: 'AL', ibge: '2707206' },
+      { nome: 'Poço Redondo', uf: 'SE', ibge: '2805406' },
+      { nome: 'Pocrane', uf: 'MG', ibge: '3151909' },
+      { nome: 'Pojuca', uf: 'BA', ibge: '2925204' },
+      { nome: 'Pompéia', uf: 'SP', ibge: '3540002' },
+      { nome: 'Pompéu', uf: 'MG', ibge: '3152006' },
+      { nome: 'Ponta de Pedras', uf: 'PA', ibge: '1505700' },
+      { nome: 'Pontal do Paraná', uf: 'PR', ibge: '4119954' },
+      { nome: 'Pontalinda', uf: 'SP', ibge: '3540259' },
+      { nome: 'Pontão', uf: 'RS', ibge: '4314779' },
+      { nome: 'Ponte Nova', uf: 'MG', ibge: '3152105' },
+      { nome: 'Ponte Preta', uf: 'RS', ibge: '4314787' },
+      { nome: 'Ponte Serrada', uf: 'SC', ibge: '4213401' },
+      { nome: 'Pontes Gestal', uf: 'SP', ibge: '3540309' },
+      { nome: 'Ponto Belo', uf: 'ES', ibge: '3204252' },
+      { nome: 'Poranga', uf: 'CE', ibge: '2311009' },
+      { nome: 'Portalegre', uf: 'RN', ibge: '2410207' },
+      { nome: 'Porteirão', uf: 'GO', ibge: '5218052' },
+      { nome: 'Portel', uf: 'PA', ibge: '1505809' },
+      { nome: 'Portelândia', uf: 'GO', ibge: '5218102' },
+      { nome: 'Porto', uf: 'PI', ibge: '2208502' },
+      { nome: 'Porto Alegre', uf: 'RS', ibge: '4314902' },
+      { nome: 'Porto Calvo', uf: 'AL', ibge: '2707305' },
+      { nome: 'Porto da Folha', uf: 'SE', ibge: '2805604' },
+      { nome: 'Porto Estrela', uf: 'MT', ibge: '5106851' },
+      { nome: 'Porto Lucena', uf: 'RS', ibge: '4315008' },
+      { nome: 'Porto Real', uf: 'RJ', ibge: '3304110' },
+      { nome: 'Poté', uf: 'MG', ibge: '3152402' },
+      { nome: 'Potim', uf: 'SP', ibge: '3540754' },
+      { nome: 'Potiraguá', uf: 'BA', ibge: '2925402' },
+      { nome: 'Potiretama', uf: 'CE', ibge: '2311231' },
+      { nome: 'Pouso Alto', uf: 'MG', ibge: '3152600' },
+      { nome: 'Pouso Novo', uf: 'RS', ibge: '4315131' },
+      { nome: 'Poxoréu', uf: 'MT', ibge: '5107008' },
+      { nome: 'Pracinha', uf: 'SP', ibge: '3540853' },
+      { nome: 'Prados', uf: 'MG', ibge: '3152709' },
+      { nome: 'Prainha', uf: 'PA', ibge: '1506005' },
+      { nome: 'Prata', uf: 'PB', ibge: '2512200' },
+      { nome: 'Pratinha', uf: 'MG', ibge: '3153004' },
+      { nome: 'Presidente Alves', uf: 'SP', ibge: '3541109' },
+      { nome: 'Presidente Figueiredo', uf: 'AM', ibge: '1303536' },
+      { nome: 'Presidente Kennedy', uf: 'ES', ibge: '3204302' },
+      { nome: 'Presidente Kennedy', uf: 'TO', ibge: '1718402' },
+      { nome: 'Presidente Lucena', uf: 'RS', ibge: '4315149' },
+      { nome: 'Presidente Olegário', uf: 'MG', ibge: '3153400' },
+      { nome: 'Presidente Tancredo Neves', uf: 'BA', ibge: '2925758' },
+      { nome: 'Presidente Venceslau', uf: 'SP', ibge: '3541505' },
+      { nome: 'Primavera de Rondônia', uf: 'RO', ibge: '1101476' },
+      { nome: 'Princesa', uf: 'SC', ibge: '4214151' },
+      { nome: 'Progresso', uf: 'RS', ibge: '4315156' },
+      { nome: 'Puxinanã', uf: 'PB', ibge: '2512408' },
+      { nome: 'Quadra', uf: 'SP', ibge: '3541653' },
+      { nome: 'Quatiguá', uf: 'PR', ibge: '4120705' },
+      { nome: 'Quatro Irmãos', uf: 'RS', ibge: '4315313' },
+      { nome: 'Quebrangulo', uf: 'AL', ibge: '2707602' },
+      { nome: 'Queluz', uf: 'SP', ibge: '3541901' },
+      { nome: 'Queluzito', uf: 'MG', ibge: '3153806' },
+      { nome: 'Quilombo', uf: 'SC', ibge: '4214201' },
+      { nome: 'Quinta do Sol', uf: 'PR', ibge: '4121109' },
+      { nome: 'Quixaba', uf: 'PE', ibge: '2611533' },
+      { nome: 'Rafael Fernandes', uf: 'RN', ibge: '2410504' },
+      { nome: 'Rafard', uf: 'SP', ibge: '3542107' },
+      { nome: 'Raposa', uf: 'MA', ibge: '2109452' },
+      { nome: 'Recife', uf: 'PE', ibge: '2611606' },
+      { nome: 'Recursolândia', uf: 'TO', ibge: '1718501' },
+      { nome: 'Redenção', uf: 'PA', ibge: '1506138' },
+      { nome: 'Redenção da Serra', uf: 'SP', ibge: '3542305' },
+      { nome: 'Relvado', uf: 'RS', ibge: '4315453' },
+      { nome: 'Remígio', uf: 'PB', ibge: '2512705' },
+      { nome: 'Resende', uf: 'RJ', ibge: '3304201' },
+      { nome: 'Resende Costa', uf: 'MG', ibge: '3154200' },
+      { nome: 'Reserva do Cabaçal', uf: 'MT', ibge: '5107156' },
+      { nome: 'Reserva do Iguaçu', uf: 'PR', ibge: '4121752' },
+      { nome: 'Resplendor', uf: 'MG', ibge: '3154309' },
+      { nome: 'Ressaquinha', uf: 'MG', ibge: '3154408' },
+      { nome: 'Restinga', uf: 'SP', ibge: '3542701' },
+      { nome: 'Retirolândia', uf: 'BA', ibge: '2926103' },
+      { nome: 'Riachão das Neves', uf: 'BA', ibge: '2926202' },
+      { nome: 'Riachão do Dantas', uf: 'SE', ibge: '2805802' },
+      { nome: 'Riacho de Santana', uf: 'BA', ibge: '2926400' },
+      { nome: 'Riacho de Santo Antônio', uf: 'PB', ibge: '2512788' },
+      { nome: 'Riachuelo', uf: 'RN', ibge: '2410900' },
+      { nome: 'Ribeirão Branco', uf: 'SP', ibge: '3543006' },
+      { nome: 'Ribeirão das Neves', uf: 'MG', ibge: '3154606' },
+      { nome: 'Ribeirão do Largo', uf: 'BA', ibge: '2926657' },
+      { nome: 'Ribeirão Vermelho', uf: 'MG', ibge: '3154705' },
+      { nome: 'Rifaina', uf: 'SP', ibge: '3543600' },
+      { nome: 'Rinópolis', uf: 'SP', ibge: '3543808' },
+      { nome: 'Rio Acima', uf: 'MG', ibge: '3154804' },
+      { nome: 'Rio Branco', uf: 'MT', ibge: '5107206' },
+      { nome: 'Rio Branco', uf: 'AC', ibge: '1200401' },
+      { nome: 'Rio Branco do Ivaí', uf: 'PR', ibge: '4122172' },
+      { nome: 'Rio Casca', uf: 'MG', ibge: '3154903' },
+      { nome: 'Rio das Flores', uf: 'RJ', ibge: '3304508' },
+      { nome: 'Rio de Janeiro', uf: 'RJ', ibge: '3304557' },
+      { nome: 'Rio do Prado', uf: 'MG', ibge: '3155108' },
+      { nome: 'Rio dos Índios', uf: 'RS', ibge: '4315552' },
+      { nome: 'Rio Formoso', uf: 'PE', ibge: '2611903' },
+      { nome: 'Rio Largo', uf: 'AL', ibge: '2707701' },
+      { nome: 'Rio Negro', uf: 'MS', ibge: '5007307' },
+      { nome: 'Rio Preto da Eva', uf: 'AM', ibge: '1303569' },
+      { nome: 'Rio Quente', uf: 'GO', ibge: '5218789' },
+      { nome: 'Rio Rufino', uf: 'SC', ibge: '4215059' },
+      { nome: 'Rio Vermelho', uf: 'MG', ibge: '3156007' },
+      { nome: 'Ritápolis', uf: 'MG', ibge: '3156106' },
+      { nome: 'Riversul', uf: 'SP', ibge: '3543501' },
+      { nome: 'Rochedo', uf: 'MS', ibge: '5007505' },
+      { nome: 'Rodeio Bonito', uf: 'RS', ibge: '4315909' },
+      { nome: 'Rodeiro', uf: 'MG', ibge: '3156304' },
+      { nome: 'Rodolfo Fernandes', uf: 'RN', ibge: '2411007' },
+      { nome: 'Romaria', uf: 'MG', ibge: '3156403' },
+      { nome: 'Romelândia', uf: 'SC', ibge: '4215208' },
+      { nome: 'Ronda Alta', uf: 'RS', ibge: '4316105' },
+      { nome: 'Rondinha', uf: 'RS', ibge: '4316204' },
+      { nome: 'Rondon do Pará', uf: 'PA', ibge: '1506187' },
+      { nome: 'Rosário do Catete', uf: 'SE', ibge: '2806107' },
+      { nome: 'Rosário do Ivaí', uf: 'PR', ibge: '4122651' },
+      { nome: 'Roseira', uf: 'SP', ibge: '3544301' },
+      { nome: 'Rubiácea', uf: 'SP', ibge: '3544400' },
+      { nome: 'Rubiataba', uf: 'GO', ibge: '5218904' },
+      { nome: 'Rubim', uf: 'MG', ibge: '3156601' },
+      { nome: 'Rubinéia', uf: 'SP', ibge: '3544509' },
+      { nome: 'Rurópolis', uf: 'PA', ibge: '1506195' },
+      { nome: 'Sabará', uf: 'MG', ibge: '3156700' },
+      { nome: 'Sabinópolis', uf: 'MG', ibge: '3156809' },
+      { nome: 'Sagres', uf: 'SP', ibge: '3544707' },
+      { nome: 'Sairé', uf: 'PE', ibge: '2612000' },
+      { nome: 'Saldanha Marinho', uf: 'RS', ibge: '4316436' },
+      { nome: 'Sales', uf: 'SP', ibge: '3544806' },
+      { nome: 'Salinas', uf: 'MG', ibge: '3157005' },
+      { nome: 'Salinópolis', uf: 'PA', ibge: '1506203' },
+      { nome: 'Salitre', uf: 'CE', ibge: '2311959' },
+      { nome: 'Salmourão', uf: 'SP', ibge: '3545100' },
+      { nome: 'Saltinho', uf: 'SP', ibge: '3545159' },
+      { nome: 'Salto', uf: 'SP', ibge: '3545209' },
+      { nome: 'Salto da Divisa', uf: 'MG', ibge: '3157104' },
+      { nome: 'Salto do Céu', uf: 'MT', ibge: '5107750' },
+      { nome: 'Salto do Jacuí', uf: 'RS', ibge: '4316451' },
+      { nome: 'Salto Grande', uf: 'SP', ibge: '3545407' },
+      { nome: 'Salto Veloso', uf: 'SC', ibge: '4215406' },
+      { nome: 'Salvaterra', uf: 'PA', ibge: '1506302' },
+      { nome: 'Sambaíba', uf: 'MA', ibge: '2109700' },
+      { nome: 'Sangão', uf: 'SC', ibge: '4215455' },
+      { nome: 'Santa Bárbara de Goiás', uf: 'GO', ibge: '5219100' },
+      { nome: 'Santa Bárbara do Monte Verde', uf: 'MG', ibge: '3157278' },
+      { nome: 'Santa Bárbara do Tugúrio', uf: 'MG', ibge: '3157302' },
+      { nome: 'Santa Brígida', uf: 'BA', ibge: '2927606' },
+      { nome: 'Santa Clara do Sul', uf: 'RS', ibge: '4316758' },
+      { nome: 'Santa Cruz Cabrália', uf: 'BA', ibge: '2927705' },
+      { nome: 'Santa Cruz de Minas', uf: 'MG', ibge: '3157336' },
+      { nome: 'Santa Cruz de Monte Castelo', uf: 'PR', ibge: '4123303' },
+      { nome: 'Santa Cruz do Piauí', uf: 'PI', ibge: '2209104' },
+      { nome: 'Santa Cruz do Sul', uf: 'RS', ibge: '4316808' },
+      { nome: 'Santa Efigênia de Minas', uf: 'MG', ibge: '3157500' },
+      { nome: 'Santa Ernestina', uf: 'SP', ibge: '3546504' },
+      { nome: 'Santa Fé de Minas', uf: 'MG', ibge: '3157609' },
+      { nome: 'Santa Filomena', uf: 'PI', ibge: '2209203' },
+      { nome: 'Santa Helena de Minas', uf: 'MG', ibge: '3157658' },
+      { nome: 'Santa Inês', uf: 'BA', ibge: '2927903' },
+      { nome: 'Santa Inês', uf: 'PR', ibge: '4123600' },
+      { nome: 'Santa Isabel', uf: 'GO', ibge: '5219357' },
+      { nome: 'Santa Isabel', uf: 'SP', ibge: '3546801' },
+      { nome: 'Santa Isabel do Ivaí', uf: 'PR', ibge: '4123709' },
+      { nome: 'Santa Izabel do Pará', uf: 'PA', ibge: '1506500' },
+      { nome: 'Santa Leopoldina', uf: 'ES', ibge: '3204500' },
+      { nome: 'Santa Luzia', uf: 'MG', ibge: '3157807' },
+      { nome: 'Santa Luzia', uf: 'PB', ibge: '2513406' },
+      { nome: 'Santa Luzia', uf: 'BA', ibge: '2928059' },
+      { nome: 'Santa Luzia do Pará', uf: 'PA', ibge: '1506559' },
+      { nome: 'Santa Margarida', uf: 'MG', ibge: '3157906' },
+      { nome: 'Santa Margarida do Sul', uf: 'RS', ibge: '4316972' },
+      { nome: 'Santa Maria da Serra', uf: 'SP', ibge: '3547007' },
+      { nome: 'Santa Maria das Barreiras', uf: 'PA', ibge: '1506583' },
+      { nome: 'Santa Maria do Cambucá', uf: 'PE', ibge: '2612703' },
+      { nome: 'Santa Maria do Pará', uf: 'PA', ibge: '1506609' },
+      { nome: 'Santa Maria do Salto', uf: 'MG', ibge: '3158102' },
+      { nome: 'Santa Maria do Tocantins', uf: 'TO', ibge: '1718881' },
+      { nome: 'Santa Mercedes', uf: 'SP', ibge: '3547106' },
+      { nome: 'Santa Mônica', uf: 'PR', ibge: '4123956' },
+      { nome: 'Santa Quitéria', uf: 'CE', ibge: '2312205' },
+      { nome: 'Santa Rita de Cássia', uf: 'BA', ibge: '2928406' },
+      { nome: 'Santa Rita de Ibitipoca', uf: 'MG', ibge: '3159407' },
+      { nome: 'Santa Rita do Araguaia', uf: 'GO', ibge: '5219407' },
+      { nome: 'Santa Rita do Novo Destino', uf: 'GO', ibge: '5219456' },
+      { nome: 'Santa Rita do Sapucaí', uf: 'MG', ibge: '3159605' },
+      { nome: 'Santa Rita do Tocantins', uf: 'TO', ibge: '1718899' },
+      { nome: 'Santa Rosa da Serra', uf: 'MG', ibge: '3159704' },
+      { nome: 'Santa Rosa de Goiás', uf: 'GO', ibge: '5219506' },
+      { nome: 'Santa Rosa de Viterbo', uf: 'SP', ibge: '3547601' },
+      { nome: 'Santa Rosa do Purus', uf: 'AC', ibge: '1200435' },
+      { nome: 'Santa Teresinha', uf: 'BA', ibge: '2928505' },
+      { nome: 'Santa Tereza de Goiás', uf: 'GO', ibge: '5219605' },
+      { nome: 'Santa Terezinha', uf: 'MT', ibge: '5107776' },
+      { nome: 'Santa Terezinha', uf: 'PE', ibge: '2612802' },
+      { nome: 'Santa Terezinha de Goiás', uf: 'GO', ibge: '5219704' },
+      { nome: 'Santa Terezinha do Progresso', uf: 'SC', ibge: '4215687' },
+      { nome: 'Santa Terezinha do Tocantins', uf: 'TO', ibge: '1720002' },
+      { nome: 'Santana de Cataguases', uf: 'MG', ibge: '3158409' },
+      { nome: 'Santana de Pirapama', uf: 'MG', ibge: '3158508' },
+      { nome: 'Santana do Araguaia', uf: 'PA', ibge: '1506708' },
+      { nome: 'Santana do Itararé', uf: 'PR', ibge: '4124004' },
+      { nome: 'Santana do Jacaré', uf: 'MG', ibge: '3158805' },
+      { nome: 'Sant\'Ana do Livramento', uf: 'RS', ibge: '4317103' },
+      { nome: 'Santana do Manhuaçu', uf: 'MG', ibge: '3158904' },
+      { nome: 'Santana do São Francisco', uf: 'SE', ibge: '2806404' },
+      { nome: 'Santana do Seridó', uf: 'RN', ibge: '2411429' },
+      { nome: 'Santana dos Montes', uf: 'MG', ibge: '3159100' },
+      { nome: 'Santanópolis', uf: 'BA', ibge: '2928307' },
+      { nome: 'Santarém', uf: 'PA', ibge: '1506807' },
+      { nome: 'Santarém Novo', uf: 'PA', ibge: '1506906' },
+      { nome: 'Santiago do Sul', uf: 'SC', ibge: '4215695' },
+      { nome: 'Santo Amaro das Brotas', uf: 'SE', ibge: '2806602' },
+      { nome: 'Santo Antônio da Alegria', uf: 'SP', ibge: '3547908' },
+      { nome: 'Santo Antônio da Barra', uf: 'GO', ibge: '5219712' },
+      { nome: 'Santo Antônio da Patrulha', uf: 'RS', ibge: '4317608' },
+      { nome: 'Santo Antônio de Pádua', uf: 'RJ', ibge: '3304706' },
+      { nome: 'Santo Antônio do Aracanguá', uf: 'SP', ibge: '3548054' },
+      { nome: 'Santo Antônio do Caiuá', uf: 'PR', ibge: '4124202' },
+      { nome: 'Santo Antônio do Jacinto', uf: 'MG', ibge: '3160306' },
+      { nome: 'Santo Antônio do Paraíso', uf: 'PR', ibge: '4124301' },
+      { nome: 'Santo Antônio do Pinhal', uf: 'SP', ibge: '3548203' },
+      { nome: 'Santo Antônio do Planalto', uf: 'RS', ibge: '4317756' },
+      { nome: 'Santo Antônio do Retiro', uf: 'MG', ibge: '3160454' },
+      { nome: 'Santo Antônio do Rio Abaixo', uf: 'MG', ibge: '3160504' },
+      { nome: 'Santo Antônio do Tauá', uf: 'PA', ibge: '1507003' },
+      { nome: 'Santo Antônio dos Milagres', uf: 'PI', ibge: '2209450' },
+      { nome: 'Santo Inácio do Piauí', uf: 'PI', ibge: '2209500' },
+      { nome: 'Santópolis do Aguapeí', uf: 'SP', ibge: '3548401' },
+      { nome: 'São Benedito', uf: 'CE', ibge: '2312304' },
+      { nome: 'São Benedito do Rio Preto', uf: 'MA', ibge: '2110401' },
+      { nome: 'São Benedito do Sul', uf: 'PE', ibge: '2612901' },
+      { nome: 'São Bento', uf: 'MA', ibge: '2110500' },
+      { nome: 'São Bento Abade', uf: 'MG', ibge: '3160801' },
+      { nome: 'São Bento do Norte', uf: 'RN', ibge: '2411601' },
+      { nome: 'São Brás', uf: 'AL', ibge: '2708204' },
+      { nome: 'São Caetano de Odivelas', uf: 'PA', ibge: '1507102' },
+      { nome: 'São Carlos', uf: 'SP', ibge: '3548906' },
+      { nome: 'São Desidério', uf: 'BA', ibge: '2928901' },
+      { nome: 'São Domingos', uf: 'SE', ibge: '2806800' },
+      { nome: 'São Domingos do Capim', uf: 'PA', ibge: '1507201' },
+      { nome: 'São Félix de Minas', uf: 'MG', ibge: '3161056' },
+      { nome: 'São Félix do Coribe', uf: 'BA', ibge: '2929057' },
+      { nome: 'São Félix do Tocantins', uf: 'TO', ibge: '1720150' },
+      { nome: 'São Félix do Xingu', uf: 'PA', ibge: '1507300' },
+      { nome: 'São Fernando', uf: 'RN', ibge: '2411809' },
+      { nome: 'São Francisco', uf: 'SP', ibge: '3549003' },
+      { nome: 'São Francisco', uf: 'SE', ibge: '2806909' },
+      { nome: 'São Francisco de Assis do Piauí', uf: 'PI', ibge: '2209658' },
+      { nome: 'São Francisco de Goiás', uf: 'GO', ibge: '5219902' },
+      { nome: 'São Francisco de Itabapoana', uf: 'RJ', ibge: '3304755' },
+      { nome: 'São Francisco de Paula', uf: 'MG', ibge: '3161205' },
+      { nome: 'São Francisco de Paula', uf: 'RS', ibge: '4318200' },
+      { nome: 'São Francisco do Brejão', uf: 'MA', ibge: '2110856' },
+      { nome: 'São Francisco do Glória', uf: 'MG', ibge: '3161403' },
+      { nome: 'São Francisco do Oeste', uf: 'RN', ibge: '2411908' },
+      { nome: 'São Francisco do Pará', uf: 'PA', ibge: '1507409' },
+      { nome: 'São Gabriel', uf: 'BA', ibge: '2929255' },
+      { nome: 'São Geraldo', uf: 'MG', ibge: '3161502' },
+      { nome: 'São Geraldo da Piedade', uf: 'MG', ibge: '3161601' },
+      { nome: 'São Gonçalo do Abaeté', uf: 'MG', ibge: '3161700' },
+      { nome: 'São Gonçalo do Piauí', uf: 'PI', ibge: '2209807' },
+      { nome: 'São Gonçalo do Rio Preto', uf: 'MG', ibge: '3125507' },
+      { nome: 'São Gonçalo do Sapucaí', uf: 'MG', ibge: '3162005' },
+      { nome: 'São Gotardo', uf: 'MG', ibge: '3162104' },
+      { nome: 'São João da Baliza', uf: 'RR', ibge: '1400506' },
+      { nome: 'São João da Boa Vista', uf: 'SP', ibge: '3549102' },
+      { nome: 'São João da Fronteira', uf: 'PI', ibge: '2209872' },
+      { nome: 'São João da Lagoa', uf: 'MG', ibge: '3162252' },
+      { nome: 'São João da Ponte', uf: 'MG', ibge: '3162401' },
+      { nome: 'São João da Serra', uf: 'PI', ibge: '2209906' },
+      { nome: 'São João da Varjota', uf: 'PI', ibge: '2209955' },
+      { nome: 'São João das Missões', uf: 'MG', ibge: '3162450' },
+      { nome: 'São João de Meriti', uf: 'RJ', ibge: '3305109' },
+      { nome: 'São João de Pirabas', uf: 'PA', ibge: '1507474' },
+      { nome: 'São João del Rei', uf: 'MG', ibge: '3162500' },
+      { nome: 'São João do Cariri', uf: 'PB', ibge: '2514008' },
+      { nome: 'São João do Manhuaçu', uf: 'MG', ibge: '3162559' },
+      { nome: 'São João do Oeste', uf: 'SC', ibge: '4216255' },
+      { nome: 'São João do Pacuí', uf: 'MG', ibge: '3162658' },
+      { nome: 'São João do Soter', uf: 'MA', ibge: '2111078' },
+      { nome: 'São João do Tigre', uf: 'PB', ibge: '2514107' },
+      { nome: 'São João Nepomuceno', uf: 'MG', ibge: '3162906' },
+      { nome: 'São Joaquim de Bicas', uf: 'MG', ibge: '3162922' },
+      { nome: 'São Joaquim do Monte', uf: 'PE', ibge: '2613305' },
+      { nome: 'São Jorge do Patrocínio', uf: 'PR', ibge: '4125357' },
+      { nome: 'São José da Bela Vista', uf: 'SP', ibge: '3549508' },
+      { nome: 'São José da Laje', uf: 'AL', ibge: '2708303' },
+      { nome: 'São José da Varginha', uf: 'MG', ibge: '3163102' },
+      { nome: 'São José das Missões', uf: 'RS', ibge: '4318457' },
+      { nome: 'São José de Piranhas', uf: 'PB', ibge: '2514503' },
+      { nome: 'São José de Ribamar', uf: 'MA', ibge: '2111201' },
+      { nome: 'São José do Barreiro', uf: 'SP', ibge: '3549607' },
+      { nome: 'São José do Bonfim', uf: 'PB', ibge: '2514602' },
+      { nome: 'São José do Brejo do Cruz', uf: 'PB', ibge: '2514651' },
+      { nome: 'São José do Calçado', uf: 'ES', ibge: '3204807' },
+      { nome: 'São José do Campestre', uf: 'RN', ibge: '2412302' },
+      { nome: 'São José do Divino', uf: 'MG', ibge: '3163300' },
+      { nome: 'São José do Divino', uf: 'PI', ibge: '2210052' },
+      { nome: 'São José do Hortêncio', uf: 'RS', ibge: '4318481' },
+      { nome: 'São José do Jacuri', uf: 'MG', ibge: '3163508' },
+      { nome: 'São José do Seridó', uf: 'RN', ibge: '2412401' },
+      { nome: 'São José do Vale do Rio Preto', uf: 'RJ', ibge: '3305158' },
+      { nome: 'São José dos Cordeiros', uf: 'PB', ibge: '2514800' },
+      { nome: 'São José dos Pinhais', uf: 'PR', ibge: '4125506' },
+      { nome: 'São José dos Ramos', uf: 'PB', ibge: '2514453' },
+      { nome: 'São Julião', uf: 'PI', ibge: '2210300' },
+      { nome: 'São Leopoldo', uf: 'RS', ibge: '4318705' },
+      { nome: 'São Lourenço da Serra', uf: 'SP', ibge: '3549953' },
+      { nome: 'São Lourenço do Oeste', uf: 'SC', ibge: '4216909' },
+      { nome: 'São Luís', uf: 'MA', ibge: '2111300' },
+      { nome: 'São Luis do Piauí', uf: 'PI', ibge: '2210375' },
+      { nome: 'São Luiz', uf: 'RR', ibge: '1400605' },
+      { nome: 'São Luíz do Norte', uf: 'GO', ibge: '5220157' },
+      { nome: 'São Luiz do Paraitinga', uf: 'SP', ibge: '3550001' },
+      { nome: 'São Manuel', uf: 'SP', ibge: '3550100' },
+      { nome: 'São Martinho', uf: 'SC', ibge: '4217105' },
+      { nome: 'São Mateus do Maranhão', uf: 'MA', ibge: '2111508' },
+      { nome: 'São Miguel de Taipu', uf: 'PB', ibge: '2515005' },
+      { nome: 'São Miguel do Araguaia', uf: 'GO', ibge: '5220207' },
+      { nome: 'São Miguel do Fidalgo', uf: 'PI', ibge: '2210391' },
+      { nome: 'São Miguel do Guaporé', uf: 'RO', ibge: '1100320' },
+      { nome: 'São Miguel do Oeste', uf: 'SC', ibge: '4217204' },
+      { nome: 'São Patrício', uf: 'GO', ibge: '5220280' },
+      { nome: 'São Paulo de Olivença', uf: 'AM', ibge: '1303908' },
+      { nome: 'São Paulo do Potengi', uf: 'RN', ibge: '2412609' },
+      { nome: 'São Pedro da Cipa', uf: 'MT', ibge: '5107404' },
+      { nome: 'São Pedro da União', uf: 'MG', ibge: '3163904' },
+      { nome: 'São Pedro das Missões', uf: 'RS', ibge: '4319364' },
+      { nome: 'São Pedro de Alcântara', uf: 'SC', ibge: '4217253' },
+      { nome: 'São Pedro do Iguaçu', uf: 'PR', ibge: '4125753' },
+      { nome: 'São Pedro do Paraná', uf: 'PR', ibge: '4125902' },
+      { nome: 'São Pedro dos Ferros', uf: 'MG', ibge: '3164001' },
+      { nome: 'São Rafael', uf: 'RN', ibge: '2412807' },
+      { nome: 'São Romão', uf: 'MG', ibge: '3164209' },
+      { nome: 'São Roque de Minas', uf: 'MG', ibge: '3164308' },
+      { nome: 'São Sebastião da Boa Vista', uf: 'PA', ibge: '1507706' },
+      { nome: 'São Sebastião de Lagoa de Roça', uf: 'PB', ibge: '2515104' },
+      { nome: 'São Sebastião do Alto', uf: 'RJ', ibge: '3305307' },
+      { nome: 'São Sebastião do Maranhão', uf: 'MG', ibge: '3164506' },
+      { nome: 'São Sebastião do Oeste', uf: 'MG', ibge: '3164605' },
+      { nome: 'São Sebastião do Paraíso', uf: 'MG', ibge: '3164704' },
+      { nome: 'São Sebastião do Passé', uf: 'BA', ibge: '2929503' },
+      { nome: 'São Simão', uf: 'SP', ibge: '3550902' },
+      { nome: 'São Tiago', uf: 'MG', ibge: '3165008' },
+      { nome: 'São Tomás de Aquino', uf: 'MG', ibge: '3165107' },
+      { nome: 'São Tomé', uf: 'RN', ibge: '2412906' },
+      { nome: 'São Tomé das Letras', uf: 'MG', ibge: '3165206' },
+      { nome: 'São Valentim', uf: 'RS', ibge: '4319703' },
+      { nome: 'São Valério', uf: 'TO', ibge: '1720499' },
+      { nome: 'São Vicente de Minas', uf: 'MG', ibge: '3165305' },
+      { nome: 'Sapopema', uf: 'PR', ibge: '4126207' },
+      { nome: 'Sapucaia', uf: 'PA', ibge: '1507755' },
+      { nome: 'Sarandi', uf: 'RS', ibge: '4320107' },
+      { nome: 'Sarapuí', uf: 'SP', ibge: '3551108' },
+      { nome: 'Sardoá', uf: 'MG', ibge: '3165503' },
+      { nome: 'Sarzedo', uf: 'MG', ibge: '3165537' },
+      { nome: 'Sebastianópolis do Sul', uf: 'SP', ibge: '3551306' },
+      { nome: 'Sebastião Leal', uf: 'PI', ibge: '2210631' },
+      { nome: 'Seberi', uf: 'RS', ibge: '4320206' },
+      { nome: 'Sede Nova', uf: 'RS', ibge: '4320230' },
+      { nome: 'Selbach', uf: 'RS', ibge: '4320305' },
+      { nome: 'Senador Amaral', uf: 'MG', ibge: '3165578' },
+      { nome: 'Senador Elói de Souza', uf: 'RN', ibge: '2413102' },
+      { nome: 'Senador José Porfírio', uf: 'PA', ibge: '1507805' },
+      { nome: 'Senador La Rocque', uf: 'MA', ibge: '2111763' },
+      { nome: 'Senador Modestino Gonçalves', uf: 'MG', ibge: '3165909' },
+      { nome: 'Serafina Corrêa', uf: 'RS', ibge: '4320404' },
+      { nome: 'Serra', uf: 'ES', ibge: '3205002' },
+      { nome: 'Serra Branca', uf: 'PB', ibge: '2515500' },
+      { nome: 'Serra da Raiz', uf: 'PB', ibge: '2515609' },
+      { nome: 'Serra da Saudade', uf: 'MG', ibge: '3166600' },
+      { nome: 'Serra do Ramalho', uf: 'BA', ibge: '2930154' },
+      { nome: 'Serra do Salitre', uf: 'MG', ibge: '3166808' },
+      { nome: 'Serra dos Aimorés', uf: 'MG', ibge: '3166709' },
+      { nome: 'Serra Nova Dourada', uf: 'MT', ibge: '5107883' },
+      { nome: 'Serranópolis', uf: 'GO', ibge: '5220504' },
+      { nome: 'Serranópolis de Minas', uf: 'MG', ibge: '3166956' },
+      { nome: 'Serranópolis do Iguaçu', uf: 'PR', ibge: '4126355' },
+      { nome: 'Serrinha', uf: 'RN', ibge: '2413508' },
+      { nome: 'Serrolândia', uf: 'BA', ibge: '2930600' },
+      { nome: 'Sertãozinho', uf: 'SP', ibge: '3551702' },
+      { nome: 'Sete Barras', uf: 'SP', ibge: '3551801' },
+      { nome: 'Sete de Setembro', uf: 'RS', ibge: '4320578' },
+      { nome: 'Sete Lagoas', uf: 'MG', ibge: '3167202' },
+      { nome: 'Setubinha', uf: 'MG', ibge: '3165552' },
+      { nome: 'Severiano Melo', uf: 'RN', ibge: '2413607' },
+      { nome: 'Siderópolis', uf: 'SC', ibge: '4217600' },
+      { nome: 'Sigefredo Pacheco', uf: 'PI', ibge: '2210656' },
+      { nome: 'Silvanópolis', uf: 'TO', ibge: '1720655' },
+      { nome: 'Silveiras', uf: 'SP', ibge: '3552007' },
+      { nome: 'Silves', uf: 'AM', ibge: '1304005' },
+      { nome: 'Simonésia', uf: 'MG', ibge: '3167608' },
+      { nome: 'Sinimbu', uf: 'RS', ibge: '4320677' },
+      { nome: 'Siqueira Campos', uf: 'PR', ibge: '4126603' },
+      { nome: 'Sirinhaém', uf: 'PE', ibge: '2614204' },
+      { nome: 'Siriri', uf: 'SE', ibge: '2807204' },
+      { nome: 'Sítio d\'Abadia', uf: 'GO', ibge: '5220702' },
+      { nome: 'Sítio do Mato', uf: 'BA', ibge: '2930758' },
+      { nome: 'Sítio Novo', uf: 'RN', ibge: '2413706' },
+      { nome: 'Sobradinho', uf: 'BA', ibge: '2930774' },
+      { nome: 'Socorro', uf: 'SP', ibge: '3552106' },
+      { nome: 'Soledade', uf: 'RS', ibge: '4320800' },
+      { nome: 'Sonora', uf: 'MS', ibge: '5007935' },
+      { nome: 'Sossêgo', uf: 'PB', ibge: '2516151' },
+      { nome: 'Soure', uf: 'PA', ibge: '1507904' },
+      { nome: 'Souto Soares', uf: 'BA', ibge: '2930808' },
+      { nome: 'Sucupira do Riachão', uf: 'MA', ibge: '2111953' },
+      { nome: 'Sul Brasil', uf: 'SC', ibge: '4217758' },
+      { nome: 'Tabira', uf: 'PE', ibge: '2614600' },
+      { nome: 'Tabocas do Brejo Velho', uf: 'BA', ibge: '2930907' },
+      { nome: 'Taboleiro Grande', uf: 'RN', ibge: '2413805' },
+      { nome: 'Tacaimbó', uf: 'PE', ibge: '2614709' },
+      { nome: 'Tacuru', uf: 'MS', ibge: '5007950' },
+      { nome: 'Taguaí', uf: 'SP', ibge: '3553005' },
+      { nome: 'Taguatinga', uf: 'TO', ibge: '1720903' },
+      { nome: 'Taipas do Tocantins', uf: 'TO', ibge: '1720937' },
+      { nome: 'Tambaú', uf: 'SP', ibge: '3553302' },
+      { nome: 'Tanhaçu', uf: 'BA', ibge: '2931004' },
+      { nome: 'Tanque d\'Arca', uf: 'AL', ibge: '2709004' },
+      { nome: 'Tanque do Piauí', uf: 'PI', ibge: '2210979' },
+      { nome: 'Taperoá', uf: 'PB', ibge: '2516508' },
+      { nome: 'Tapiraí', uf: 'SP', ibge: '3553500' },
+      { nome: 'Tapiramutá', uf: 'BA', ibge: '2931301' },
+      { nome: 'Taquara', uf: 'RS', ibge: '4321204' },
+      { nome: 'Taquaraçu de Minas', uf: 'MG', ibge: '3168309' },
+      { nome: 'Taquaral de Goiás', uf: 'GO', ibge: '5221007' },
+      { nome: 'Taquarana', uf: 'AL', ibge: '2709103' },
+      { nome: 'Taquari', uf: 'RS', ibge: '4321303' },
+      { nome: 'Taquaritinga', uf: 'SP', ibge: '3553708' },
+      { nome: 'Taquarituba', uf: 'SP', ibge: '3553807' },
+      { nome: 'Taquarivaí', uf: 'SP', ibge: '3553856' },
+      { nome: 'Tarumã', uf: 'SP', ibge: '3553955' },
+      { nome: 'Tasso Fragoso', uf: 'MA', ibge: '2112001' },
+      { nome: 'Tatuí', uf: 'SP', ibge: '3554003' },
+      { nome: 'Tavares', uf: 'PB', ibge: '2516607' },
+      { nome: 'Teixeira', uf: 'PB', ibge: '2516706' },
+      { nome: 'Teixeirópolis', uf: 'RO', ibge: '1101559' },
+      { nome: 'Tejupá', uf: 'SP', ibge: '3554201' },
+      { nome: 'Tenente Laurentino Cruz', uf: 'RN', ibge: '2414159' },
+      { nome: 'Tenório', uf: 'PB', ibge: '2516755' },
+      { nome: 'Teodoro Sampaio', uf: 'BA', ibge: '2931400' },
+      { nome: 'Teófilo Otoni', uf: 'MG', ibge: '3168606' },
+      { nome: 'Teotônio Vilela', uf: 'AL', ibge: '2709152' },
+      { nome: 'Terenos', uf: 'MS', ibge: '5008008' },
+      { nome: 'Terezinha', uf: 'PE', ibge: '2615102' },
+      { nome: 'Terezópolis de Goiás', uf: 'GO', ibge: '5221197' },
+      { nome: 'Terra Alta', uf: 'PA', ibge: '1507961' },
+      { nome: 'Terra Roxa', uf: 'PR', ibge: '4127403' },
+      { nome: 'Terra Santa', uf: 'PA', ibge: '1507979' },
+      { nome: 'Tesouro', uf: 'MT', ibge: '5108105' },
+      { nome: 'Tibau do Sul', uf: 'RN', ibge: '2414209' },
+      { nome: 'Timóteo', uf: 'MG', ibge: '3168705' },
+      { nome: 'Tiradentes', uf: 'MG', ibge: '3168804' },
+      { nome: 'Tiros', uf: 'MG', ibge: '3168903' },
+      { nome: 'Tocantinópolis', uf: 'TO', ibge: '1721208' },
+      { nome: 'Tocantins', uf: 'MG', ibge: '3169000' },
+      { nome: 'Toropi', uf: 'RS', ibge: '4321493' },
+      { nome: 'Torre de Pedra', uf: 'SP', ibge: '3554656' },
+      { nome: 'Torrinha', uf: 'SP', ibge: '3554706' },
+      { nome: 'Tracuateua', uf: 'PA', ibge: '1508035' },
+      { nome: 'Tracunhaém', uf: 'PE', ibge: '2615508' },
+      { nome: 'Trairão', uf: 'PA', ibge: '1508050' },
+      { nome: 'Tramandaí', uf: 'RS', ibge: '4321600' },
+      { nome: 'Travesseiro', uf: 'RS', ibge: '4321626' },
+      { nome: 'Três Arroios', uf: 'RS', ibge: '4321634' },
+      { nome: 'Três Forquilhas', uf: 'RS', ibge: '4321832' },
+      { nome: 'Três Marias', uf: 'MG', ibge: '3169356' },
+      { nome: 'Três Ranchos', uf: 'GO', ibge: '5221304' },
+      { nome: 'Treze de Maio', uf: 'SC', ibge: '4218400' },
+      { nome: 'Trindade do Sul', uf: 'RS', ibge: '4321956' },
+      { nome: 'Triunfo Potiguar', uf: 'RN', ibge: '2414456' },
+      { nome: 'Trombas', uf: 'GO', ibge: '5221452' },
+      { nome: 'Tubarão', uf: 'SC', ibge: '4218707' },
+      { nome: 'Tucumã', uf: 'PA', ibge: '1508084' },
+      { nome: 'Tucuruí', uf: 'PA', ibge: '1508100' },
+      { nome: 'Tumiritinga', uf: 'MG', ibge: '3169505' },
+      { nome: 'Tunas do Paraná', uf: 'PR', ibge: '4127882' },
+      { nome: 'Tupaciguara', uf: 'MG', ibge: '3169604' },
+      { nome: 'Tupanciretã', uf: 'RS', ibge: '4322202' },
+      { nome: 'Tuparetama', uf: 'PE', ibge: '2615904' },
+      { nome: 'Tupiratins', uf: 'TO', ibge: '1721307' },
+      { nome: 'Turiaçu', uf: 'MA', ibge: '2112407' },
+      { nome: 'Turilândia', uf: 'MA', ibge: '2112456' },
+      { nome: 'Turvânia', uf: 'GO', ibge: '5221502' },
+      { nome: 'Turvelândia', uf: 'GO', ibge: '5221551' },
+      { nome: 'Turvo', uf: 'SC', ibge: '4218806' },
+      { nome: 'Tutóia', uf: 'MA', ibge: '2112506' },
+      { nome: 'Ubaí', uf: 'MG', ibge: '3170008' },
+      { nome: 'Ubaitaba', uf: 'BA', ibge: '2932200' },
+      { nome: 'Ubarana', uf: 'SP', ibge: '3555356' },
+      { nome: 'Ubatuba', uf: 'SP', ibge: '3555406' },
+      { nome: 'Uberlândia', uf: 'MG', ibge: '3170206' },
+      { nome: 'Uchoa', uf: 'SP', ibge: '3555604' },
+      { nome: 'Uiramutã', uf: 'RR', ibge: '1400704' },
+      { nome: 'Ulianópolis', uf: 'PA', ibge: '1508126' },
+      { nome: 'Umburatiba', uf: 'MG', ibge: '3170305' },
+      { nome: 'Umbuzeiro', uf: 'PB', ibge: '2517001' },
+      { nome: 'Umirim', uf: 'CE', ibge: '2313757' },
+      { nome: 'Unaí', uf: 'MG', ibge: '3170404' },
+      { nome: 'União da Vitória', uf: 'PR', ibge: '4128203' },
+      { nome: 'União de Minas', uf: 'MG', ibge: '3170438' },
+      { nome: 'União dos Palmares', uf: 'AL', ibge: '2709301' },
+      { nome: 'Unistalda', uf: 'RS', ibge: '4322376' },
+      { nome: 'Upanema', uf: 'RN', ibge: '2414605' },
+      { nome: 'Urandi', uf: 'BA', ibge: '2932606' },
+      { nome: 'Uruaçu', uf: 'GO', ibge: '5221601' },
+      { nome: 'Uruana', uf: 'GO', ibge: '5221700' },
+      { nome: 'Uruará', uf: 'PA', ibge: '1508159' },
+      { nome: 'Urubici', uf: 'SC', ibge: '4218905' },
+      { nome: 'Urucânia', uf: 'MG', ibge: '3170503' },
+      { nome: 'Urucuia', uf: 'MG', ibge: '3170529' },
+      { nome: 'Urutaí', uf: 'GO', ibge: '5221809' },
+      { nome: 'Utinga', uf: 'BA', ibge: '2932804' },
+      { nome: 'Vale de São Domingos', uf: 'MT', ibge: '5108352' },
+      { nome: 'Vale Verde', uf: 'RS', ibge: '4322525' },
+      { nome: 'Valença', uf: 'RJ', ibge: '3306107' },
+      { nome: 'Valparaíso de Goiás', uf: 'GO', ibge: '5221858' },
+      { nome: 'Vargem', uf: 'SP', ibge: '3556354' },
+      { nome: 'Vargem', uf: 'SC', ibge: '4219150' },
+      { nome: 'Vargem Alegre', uf: 'MG', ibge: '3170578' },
+      { nome: 'Vargem Alta', uf: 'ES', ibge: '3205036' },
+      { nome: 'Vargem Bonita', uf: 'SC', ibge: '4219176' },
+      { nome: 'Vargem Bonita', uf: 'MG', ibge: '3170602' },
+      { nome: 'vargem Grande', uf: 'MA', ibge: '2112704' },
+      { nome: 'Várzea', uf: 'RN', ibge: '2414704' },
+      { nome: 'Várzea Branca', uf: 'PI', ibge: '2211357' },
+      { nome: 'Várzea da Roça', uf: 'BA', ibge: '2933059' },
+      { nome: 'Várzea Grande', uf: 'MT', ibge: '5108402' },
+      { nome: 'Vazante', uf: 'MG', ibge: '3171006' },
+      { nome: 'Venâncio Aires', uf: 'RS', ibge: '4322608' },
+      { nome: 'Veranópolis', uf: 'RS', ibge: '4322806' },
+      { nome: 'Verdelândia', uf: 'MG', ibge: '3171030' },
+      { nome: 'Vereda', uf: 'BA', ibge: '2933257' },
+      { nome: 'Veredinha', uf: 'MG', ibge: '3171071' },
+      { nome: 'Vermelho Novo', uf: 'MG', ibge: '3171154' },
+      { nome: 'Vespasiano', uf: 'MG', ibge: '3171204' },
+      { nome: 'Vespasiano Correa', uf: 'RS', ibge: '4322855' },
+      { nome: 'Viadutos', uf: 'RS', ibge: '4322905' },
+      { nome: 'Vicente Dutra', uf: 'RS', ibge: '4323101' },
+      { nome: 'Vicentinópolis', uf: 'GO', ibge: '5222054' },
+      { nome: 'Viçosa', uf: 'MG', ibge: '3171303' },
+      { nome: 'Viçosa do Ceará', uf: 'CE', ibge: '2314102' },
+      { nome: 'Victor Graeff', uf: 'RS', ibge: '4323200' },
+      { nome: 'Vigia', uf: 'PA', ibge: '1508209' },
+      { nome: 'Vila Nova dos Martírios', uf: 'MA', ibge: '2112852' },
+      { nome: 'Vila Propício', uf: 'GO', ibge: '5222302' },
+      { nome: 'Virginópolis', uf: 'MG', ibge: '3171808' },
+      { nome: 'Visconde do Rio Branco', uf: 'MG', ibge: '3172004' },
+      { nome: 'Viseu', uf: 'PA', ibge: '1508308' },
+      { nome: 'Vista Alegre do Alto', uf: 'SP', ibge: '3556909' },
+      { nome: 'Vitória', uf: 'ES', ibge: '3205309' },
+      { nome: 'Vitória do Jari', uf: 'AP', ibge: '1600808' },
+      { nome: 'Vitória do Xingu', uf: 'PA', ibge: '1508357' },
+      { nome: 'Vitorino', uf: 'PR', ibge: '4128708' },
+      { nome: 'Votorantim', uf: 'SP', ibge: '3557006' },
+      { nome: 'Votuporanga', uf: 'SP', ibge: '3557105' },
+      { nome: 'Wagner', uf: 'BA', ibge: '2933406' },
+      { nome: 'Wall Ferraz', uf: 'PI', ibge: '2211704' },
+      { nome: 'Wanderlândia', uf: 'TO', ibge: '1722081' },
+      { nome: 'Wenceslau Braz', uf: 'PR', ibge: '4128500' },
+      { nome: 'Wenceslau Braz', uf: 'MG', ibge: '3172202' },
+      { nome: 'Wenceslau Guimarães', uf: 'BA', ibge: '2933505' },
+      { nome: 'Xambioá', uf: 'TO', ibge: '1722107' },
+      { nome: 'Xangri-lá', uf: 'RS', ibge: '4323804' },
+      { nome: 'Xanxerê', uf: 'SC', ibge: '4219507' },
+      { nome: 'Xapuri', uf: 'AC', ibge: '1200708' },
+      { nome: 'Xaxim', uf: 'SC', ibge: '4219705' },
+      { nome: 'Xinguara', uf: 'PA', ibge: '1508407' },
+      { nome: 'Zé Doca', uf: 'MA', ibge: '2114007' }
     ]
   }
 };
+

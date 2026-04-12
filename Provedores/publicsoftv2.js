@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'publicsoftv2',
   nome: 'PublicSoftV2',
   empresa: 'PublicSoftV2',
@@ -24,11 +24,11 @@ var provedorDetalhe = {
     usaCodigoServicoMunicipal: false,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\n\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\nExemplo válido: 01.03',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
@@ -57,14 +57,15 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'publicsoftv2': [
-      { nome: 'Araruna', uf: 'PB', ibge: '2501005' }
-,      { nome: 'Conceição', uf: 'PB', ibge: '2504405' }
-,      { nome: 'Itaporanga', uf: 'PB', ibge: '2507002' }
-,      { nome: 'Itapororoca', uf: 'PB', ibge: '2507101' }
-,      { nome: 'Monteiro', uf: 'PB', ibge: '2509701' }
-,      { nome: 'Piancó', uf: 'PB', ibge: '2511301' }
-,      { nome: 'Sapé', uf: 'PB', ibge: '2515302' }
-,      { nome: 'Sobrado', uf: 'PB', ibge: '2515971' }
+      { nome: 'Araruna', uf: 'PB', ibge: '2501005' },
+      { nome: 'Conceição', uf: 'PB', ibge: '2504405' },
+      { nome: 'Itaporanga', uf: 'PB', ibge: '2507002' },
+      { nome: 'Itapororoca', uf: 'PB', ibge: '2507101' },
+      { nome: 'Monteiro', uf: 'PB', ibge: '2509701' },
+      { nome: 'Piancó', uf: 'PB', ibge: '2511301' },
+      { nome: 'Sapé', uf: 'PB', ibge: '2515302' },
+      { nome: 'Sobrado', uf: 'PB', ibge: '2515971' }
     ]
   }
 };
+

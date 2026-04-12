@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'santa-cruz-do-rio-pardo-sp',
   nome: 'Santa Cruz do Rio Pardo',
   uf: 'SP',
@@ -19,3 +19,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'govbrv2',
   nome: 'GOVBRv2',
   empresa: 'GOVBRv2',
@@ -21,11 +21,11 @@ var provedorDetalhe = {
     valorCancelamentoNFe: 30,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\n\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 0801 ou 0108',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 0801 ou 0108',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 5 dígitos (formatado com ponto).\n\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\nExemplos válidos: 12.11 ou 08.02',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplos válidos: 12.11 ou 08.02',
     suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
@@ -58,22 +58,23 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'govbrv2': [
-      { nome: 'Areal', uf: 'RJ', ibge: '3300225' }
-,      { nome: 'Arvorezinha', uf: 'RS', ibge: '4301404' }
-,      { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' }
-,      { nome: 'Cândido Godói', uf: 'RS', ibge: '4304309' }
-,      { nome: 'Entre-Ijuís', uf: 'RS', ibge: '4306932' }
-,      { nome: 'Faxinal do Soturno', uf: 'RS', ibge: '4308003' }
-,      { nome: 'Formosa do Oeste', uf: 'PR', ibge: '4108205' }
-,      { nome: 'Garruchos', uf: 'RS', ibge: '4308656' }
-,      { nome: 'Guapirama', uf: 'PR', ibge: '4109005' }
-,      { nome: 'Jaguarão', uf: 'RS', ibge: '4311007' }
-,      { nome: 'Machadinho', uf: 'RS', ibge: '4311700' }
-,      { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' }
-,      { nome: 'Pérola', uf: 'PR', ibge: '4118907' }
-,      { nome: 'Quissamã', uf: 'RJ', ibge: '3304151' }
-,      { nome: 'São Pedro do Ivaí', uf: 'PR', ibge: '4125803' }
-,      { nome: 'Tapes', uf: 'RS', ibge: '4321105' }
+      { nome: 'Areal', uf: 'RJ', ibge: '3300225' },
+      { nome: 'Arvorezinha', uf: 'RS', ibge: '4301404' },
+      { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' },
+      { nome: 'Cândido Godói', uf: 'RS', ibge: '4304309' },
+      { nome: 'Entre-Ijuís', uf: 'RS', ibge: '4306932' },
+      { nome: 'Faxinal do Soturno', uf: 'RS', ibge: '4308003' },
+      { nome: 'Formosa do Oeste', uf: 'PR', ibge: '4108205' },
+      { nome: 'Garruchos', uf: 'RS', ibge: '4308656' },
+      { nome: 'Guapirama', uf: 'PR', ibge: '4109005' },
+      { nome: 'Jaguarão', uf: 'RS', ibge: '4311007' },
+      { nome: 'Machadinho', uf: 'RS', ibge: '4311700' },
+      { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' },
+      { nome: 'Pérola', uf: 'PR', ibge: '4118907' },
+      { nome: 'Quissamã', uf: 'RJ', ibge: '3304151' },
+      { nome: 'São Pedro do Ivaí', uf: 'PR', ibge: '4125803' },
+      { nome: 'Tapes', uf: 'RS', ibge: '4321105' }
     ]
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'ponto-novo-ba',
   nome: 'Ponto Novo',
   uf: 'BA',
@@ -19,3 +19,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'nobres-mt',
   nome: 'Nobres',
   uf: 'MT',
@@ -45,7 +45,7 @@ var cidadeDetalhe = {
     usaNBS: true,
     usaItemListaServico: true,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\n\nExemplo válido: 11356',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplos: 17.14.01 e 4.12.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpItemListaServico: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Ele possui geralmente 4 ou 5 dígitos com formatação. Exemplo válido: 4.03 ou 14.03',
@@ -57,8 +57,8 @@ var cidadeDetalhe = {
     enviaEmailCliente: true,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      UsaCodigoVerificacao: true,
-      urlVerificacao: 'https://blue.rondonopolis.mt.gov.br/portal/rondonopolis/#/autenticidade'
+      urlVerificacao: 'https://blue.rondonopolis.mt.gov.br/portal/rondonopolis/#/autenticidade',
+      UsaCodigoVerificacao: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -82,3 +82,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

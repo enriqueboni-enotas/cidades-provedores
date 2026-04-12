@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'perola-d-oeste-pr',
   nome: 'Pérola d\'Oeste',
   uf: 'PR',
@@ -26,7 +26,7 @@ var cidadeDetalhe = {
     usaRegimeEspecialTributacao: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \nEm algumas cidades esse código é conhecido como código de tributação e deve conter de 4 a 5 dígitos com ponto.\n\nExemplos: 1.05, 10.09',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação e deve conter de 4 a 5 dígitos com ponto.\r\n\r\nExemplos: 1.05, 10.09',
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -48,3 +48,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

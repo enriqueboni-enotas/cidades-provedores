@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-goncalo-dos-campos-ba',
   nome: 'São Gonçalo dos Campos',
   uf: 'BA',
@@ -45,3 +45,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

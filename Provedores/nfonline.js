@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'nfonline',
   nome: 'NFOnline',
   empresa: 'NFOnline',
@@ -16,7 +16,7 @@ var provedorDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \n\nExemplos válidos: 041201 e 170101',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nExemplos válidos: 041201 e 170101',
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: false,
@@ -43,12 +43,13 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'nfonline': [
-      { nome: 'Atalaia', uf: 'AL', ibge: '2700409' }
-,      { nome: 'Cajueiro', uf: 'AL', ibge: '2701308' }
-,      { nome: 'Coruripe', uf: 'AL', ibge: '2702306' }
-,      { nome: 'São Bento', uf: 'PB', ibge: '2513901' }
-,      { nome: 'São Miguel dos Campos', uf: 'AL', ibge: '2708600' }
-,      { nome: 'São Miguel dos Milagres', uf: 'AL', ibge: '2708709' }
+      { nome: 'Atalaia', uf: 'AL', ibge: '2700409' },
+      { nome: 'Cajueiro', uf: 'AL', ibge: '2701308' },
+      { nome: 'Coruripe', uf: 'AL', ibge: '2702306' },
+      { nome: 'São Bento', uf: 'PB', ibge: '2513901' },
+      { nome: 'São Miguel dos Campos', uf: 'AL', ibge: '2708600' },
+      { nome: 'São Miguel dos Milagres', uf: 'AL', ibge: '2708709' }
     ]
   }
 };
+

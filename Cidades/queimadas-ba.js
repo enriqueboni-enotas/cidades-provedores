@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'queimadas-ba',
   nome: 'Queimadas',
   uf: 'BA',
@@ -45,3 +45,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

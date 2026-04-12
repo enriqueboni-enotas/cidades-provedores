@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'guararema-sp',
   nome: 'Guararema',
   uf: 'SP',
@@ -21,3 +21,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

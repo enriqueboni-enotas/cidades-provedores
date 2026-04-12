@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'nova-esperanca-pr',
   nome: 'Nova Esperança',
   uf: 'PR',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

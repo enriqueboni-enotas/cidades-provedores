@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'fortaleza-ce',
   nome: 'Fortaleza',
   uf: 'CE',
@@ -24,10 +24,10 @@ var cidadeDetalhe = {
     usaCNAE: false,
     numeroNotasPorLote: 5,
     autenticidadeNota: {
+      urlVerificacao: 'https://iss.fortaleza.ce.gov.br/grpfor/pagesPublic/validarNota.seam',
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaNumeroNota: true,
-      urlVerificacao: 'https://iss.fortaleza.ce.gov.br/grpfor/pagesPublic/validarNota.seam'
+      UsaNumeroNota: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -48,3 +48,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

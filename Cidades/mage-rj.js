@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'mage-rj',
   nome: 'Magé',
   uf: 'RJ',
@@ -45,3 +45,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'corguinho-ms',
   nome: 'Corguinho',
   uf: 'MS',
@@ -41,9 +41,9 @@ var cidadeDetalhe = {
     usaCNAE: false,
     usaItemListaServico: true,
     usaNaturezaOperacao: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código do CNAE. \n\nEle possui geralmente 7 dígitos (somente números).\nExemplo válido: 4930201',
+    helpCodigoServicoMunicipal: 'Informe aqui o código do CNAE. \r\n\r\nEle possui geralmente 7 dígitos (somente números).\r\nExemplo válido: 4930201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -62,3 +62,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'mutuipe-ba',
   nome: 'Mutuípe',
   uf: 'BA',
@@ -19,3 +19,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

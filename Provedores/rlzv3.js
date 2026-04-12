@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'rlzv3',
   nome: 'RLZv3',
   empresa: 'RLZv3',
@@ -30,7 +30,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -59,14 +59,15 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'rlzv3': [
-      { nome: 'Barretos', uf: 'SP', ibge: '3505500' }
-,      { nome: 'Catanduva', uf: 'SP', ibge: '3511102' }
-,      { nome: 'Cáceres', uf: 'MT', ibge: '5102504' }
-,      { nome: 'Ilha Solteira', uf: 'SP', ibge: '3520442' }
-,      { nome: 'Jales', uf: 'SP', ibge: '3524808' }
-,      { nome: 'Pereira Barreto', uf: 'SP', ibge: '3537404' }
-,      { nome: 'Primavera do Leste', uf: 'MT', ibge: '5107040' }
-,      { nome: 'Valentim Gentil', uf: 'SP', ibge: '3556107' }
+      { nome: 'Barretos', uf: 'SP', ibge: '3505500' },
+      { nome: 'Cáceres', uf: 'MT', ibge: '5102504' },
+      { nome: 'Catanduva', uf: 'SP', ibge: '3511102' },
+      { nome: 'Ilha Solteira', uf: 'SP', ibge: '3520442' },
+      { nome: 'Jales', uf: 'SP', ibge: '3524808' },
+      { nome: 'Pereira Barreto', uf: 'SP', ibge: '3537404' },
+      { nome: 'Primavera do Leste', uf: 'MT', ibge: '5107040' },
+      { nome: 'Valentim Gentil', uf: 'SP', ibge: '3556107' }
     ]
   }
 };
+

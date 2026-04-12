@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'publica',
   nome: 'Publica',
   empresa: 'Publica',
@@ -17,7 +17,7 @@ var provedorDetalhe = {
     usaRegimeEspecialTributacao: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \nEm algumas cidades esse código é conhecido como código de tributação e deve conter de 4 a 5 dígitos com ponto.\n\nExemplos: 1.05, 10.09',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação e deve conter de 4 a 5 dígitos com ponto.\r\n\r\nExemplos: 1.05, 10.09',
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -40,12 +40,13 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'publica': [
-      { nome: 'Abelardo Luz', uf: 'SC', ibge: '4200101' }
-,      { nome: 'Agronômica', uf: 'SC', ibge: '4200309' }
-,      { nome: 'Irani', uf: 'SC', ibge: '4207809' }
-,      { nome: 'Itajaí', uf: 'SC', ibge: '4208203' }
-,      { nome: 'Mafra', uf: 'SC', ibge: '4210100' }
-,      { nome: 'Pérola d\'Oeste', uf: 'PR', ibge: '4119004' }
+      { nome: 'Abelardo Luz', uf: 'SC', ibge: '4200101' },
+      { nome: 'Agronômica', uf: 'SC', ibge: '4200309' },
+      { nome: 'Irani', uf: 'SC', ibge: '4207809' },
+      { nome: 'Itajaí', uf: 'SC', ibge: '4208203' },
+      { nome: 'Mafra', uf: 'SC', ibge: '4210100' },
+      { nome: 'Pérola d\'Oeste', uf: 'PR', ibge: '4119004' }
     ]
   }
 };
+

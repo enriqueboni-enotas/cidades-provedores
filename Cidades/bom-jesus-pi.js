@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'bom-jesus-pi',
   nome: 'Bom Jesus',
   uf: 'PI',
@@ -19,3 +19,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

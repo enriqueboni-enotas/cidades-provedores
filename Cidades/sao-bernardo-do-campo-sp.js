@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-bernardo-do-campo-sp',
   nome: 'São Bernardo do Campo',
   uf: 'SP',
@@ -25,3 +25,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

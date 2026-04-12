@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'flores-da-cunha-rs',
   nome: 'Flores da Cunha',
   uf: 'RS',
@@ -54,3 +54,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

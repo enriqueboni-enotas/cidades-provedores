@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'monte-negro-ro',
   nome: 'Monte Negro',
   uf: 'RO',
@@ -25,7 +25,7 @@ var cidadeDetalhe = {
       certificadoDigital: null,
       usuario: null,
       senha: null,
-      token: 'Chave de acesso ao serviço de integração da prefeitura.\n                    \nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal de Nota Fiscal da prefeitura com seu usuário e senha, entre no menu \'Ferramentas/Importação de Notas fiscais/Informações Adicionais para Integração\', basta copiar e colar o valor da chave de validação neste campo.',
+      token: 'Chave de acesso ao serviço de integração da prefeitura.\r\n                    \r\nPara obter a Chave de Acesso é necessário que a empresa acesse o Portal de Nota Fiscal da prefeitura com seu usuário e senha, entre no menu \'Ferramentas/Importação de Notas fiscais/Informações Adicionais para Integração\', basta copiar e colar o valor da chave de validação neste campo.',
       fraseSecreta: null
     },
     campoLoginProvedor: 1,
@@ -37,8 +37,8 @@ var cidadeDetalhe = {
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\n\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal.\nExemplo válido: 74',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal.\r\nExemplo válido: 74',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
@@ -55,3 +55,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

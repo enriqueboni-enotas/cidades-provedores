@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'registro-sp',
   nome: 'Registro',
   uf: 'SP',
@@ -21,3 +21,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

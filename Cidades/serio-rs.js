@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'serio-rs',
   nome: 'Sério',
   uf: 'RS',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

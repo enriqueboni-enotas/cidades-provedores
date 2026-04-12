@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'hortolandia-sp',
   nome: 'Hortolândia',
   uf: 'SP',
@@ -24,3 +24,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

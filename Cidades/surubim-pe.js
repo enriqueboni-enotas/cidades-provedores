@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'surubim-pe',
   nome: 'Surubim',
   uf: 'PE',
@@ -30,8 +30,8 @@ var cidadeDetalhe = {
     usaCodigoServicoMunicipal: false,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \nEm algumas cidades esse código é conhecido como código de tributação.\nEsse código é semelhante ao CNAE porém formatado com 9 dígitos.\n\nExemplo válido: 631190000',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\n\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\nExemplo válido: 01.03',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação.\r\nEsse código é semelhante ao CNAE porém formatado com 9 dígitos.\r\n\r\nExemplo válido: 631190000',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
@@ -55,3 +55,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

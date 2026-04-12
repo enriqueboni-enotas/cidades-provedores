@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-pedro-do-sul-rs',
   nome: 'São Pedro do Sul',
   uf: 'RS',
@@ -44,16 +44,16 @@ var cidadeDetalhe = {
     usaDescricaoServico: true,
     usaCNAE: false,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui 4 dígitos (somente números).\nExemplo válido: 0108',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 4 dígitos (somente números).\r\nExemplo válido: 0108',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     enviaEmailCliente: false,
     autenticidadeNota: {
+      urlVerificacao: 'https://nota-eletronica.betha.cloud/#/autenticando-nota',
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaNumeroNota: true,
-      urlVerificacao: 'https://nota-eletronica.betha.cloud/#/autenticando-nota'
+      UsaNumeroNota: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -76,3 +76,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

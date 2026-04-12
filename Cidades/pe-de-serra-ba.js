@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'pe-de-serra-ba',
   nome: 'Pé de Serra',
   uf: 'BA',
@@ -45,3 +45,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

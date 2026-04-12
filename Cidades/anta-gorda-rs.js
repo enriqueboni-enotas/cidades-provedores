@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'anta-gorda-rs',
   nome: 'Anta Gorda',
   uf: 'RS',
@@ -54,3 +54,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'cajueiro-da-praia-pi',
   nome: 'Cajueiro da Praia',
   uf: 'PI',
@@ -46,3 +46,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

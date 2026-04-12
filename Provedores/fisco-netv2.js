@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'fisco-netv2',
   nome: 'Fisco.NetV2',
   empresa: 'Fisco.NetV2',
@@ -39,17 +39,18 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'fisco-netv2': [
-      { nome: 'Cachoeira', uf: 'BA', ibge: '2904902' }
-,      { nome: 'Cajueiro da Praia', uf: 'PI', ibge: '2202083' }
-,      { nome: 'Capim Grosso', uf: 'BA', ibge: '2906873' }
-,      { nome: 'Casa Nova', uf: 'BA', ibge: '2907202' }
-,      { nome: 'Itanhém', uf: 'BA', ibge: '2916005' }
-,      { nome: 'Itiúba', uf: 'BA', ibge: '2917003' }
-,      { nome: 'Paulo Afonso', uf: 'BA', ibge: '2924009' }
-,      { nome: 'Rafael Jambeiro', uf: 'BA', ibge: '2925956' }
-,      { nome: 'Tucano', uf: 'BA', ibge: '2931905' }
-,      { nome: 'Ubaíra', uf: 'BA', ibge: '2932101' }
-,      { nome: 'Várzea do Poço', uf: 'BA', ibge: '2933109' }
+      { nome: 'Cachoeira', uf: 'BA', ibge: '2904902' },
+      { nome: 'Cajueiro da Praia', uf: 'PI', ibge: '2202083' },
+      { nome: 'Capim Grosso', uf: 'BA', ibge: '2906873' },
+      { nome: 'Casa Nova', uf: 'BA', ibge: '2907202' },
+      { nome: 'Itanhém', uf: 'BA', ibge: '2916005' },
+      { nome: 'Itiúba', uf: 'BA', ibge: '2917003' },
+      { nome: 'Paulo Afonso', uf: 'BA', ibge: '2924009' },
+      { nome: 'Rafael Jambeiro', uf: 'BA', ibge: '2925956' },
+      { nome: 'Tucano', uf: 'BA', ibge: '2931905' },
+      { nome: 'Ubaíra', uf: 'BA', ibge: '2932101' },
+      { nome: 'Várzea do Poço', uf: 'BA', ibge: '2933109' }
     ]
   }
 };
+

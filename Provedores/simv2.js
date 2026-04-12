@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'simv2',
   nome: 'SIMv2',
   empresa: 'SIMv2',
@@ -30,7 +30,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
@@ -60,12 +60,13 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'simv2': [
-      { nome: 'Campos Borges', uf: 'RS', ibge: '4304101' }
-,      { nome: 'Fortaleza dos Valos', uf: 'RS', ibge: '4308458' }
-,      { nome: 'Ibirubá', uf: 'RS', ibge: '4310009' }
-,      { nome: 'Sagrada Família', uf: 'RS', ibge: '4316428' }
-,      { nome: 'São Vicente do Sul', uf: 'RS', ibge: '4319802' }
-,      { nome: 'Tio Hugo', uf: 'RS', ibge: '4321469' }
+      { nome: 'Campos Borges', uf: 'RS', ibge: '4304101' },
+      { nome: 'Fortaleza dos Valos', uf: 'RS', ibge: '4308458' },
+      { nome: 'Ibirubá', uf: 'RS', ibge: '4310009' },
+      { nome: 'Sagrada Família', uf: 'RS', ibge: '4316428' },
+      { nome: 'São Vicente do Sul', uf: 'RS', ibge: '4319802' },
+      { nome: 'Tio Hugo', uf: 'RS', ibge: '4321469' }
     ]
   }
 };
+

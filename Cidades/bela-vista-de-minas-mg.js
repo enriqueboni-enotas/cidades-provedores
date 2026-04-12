@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'bela-vista-de-minas-mg',
   nome: 'Bela Vista de Minas',
   uf: 'MG',
@@ -33,9 +33,9 @@ var cidadeDetalhe = {
     valorCancelamentoNFe: 10,
     usaCNAE: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 a 5 dígitos (com formatação) que identifica o serviço prestado na nota fiscal.\n\nExemplos válidos: 8.01 ou 14.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 a 5 dígitos (com formatação) que identifica o serviço prestado na nota fiscal.\r\n\r\nExemplos válidos: 8.01 ou 14.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     suportaEmissaoNFeSemCliente: true,
@@ -64,3 +64,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

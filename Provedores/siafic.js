@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'siafic',
   nome: 'Siafic',
   empresa: 'Siafic',
@@ -29,8 +29,8 @@ var provedorDetalhe = {
     usaDescricaoServico: true,
     usaCNAE: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\n\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 2 mais dígitos sem formatação.\nExemplo válido: 53, 3201',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 2 mais dígitos sem formatação.\r\nExemplo válido: 53, 3201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     suportaEmissaoNFeSemCliente: true,
@@ -51,19 +51,20 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'siafic': [
-      { nome: 'Itabaianinha', uf: 'SE', ibge: '2803005' }
-,      { nome: 'Matriz de Camaragibe', uf: 'AL', ibge: '2705101' }
-,      { nome: 'Neópolis', uf: 'SE', ibge: '2804409' }
-,      { nome: 'Nossa Senhora das Dores', uf: 'SE', ibge: '2804607' }
-,      { nome: 'Nossa Senhora de Lourdes', uf: 'SE', ibge: '2804706' }
-,      { nome: 'Poço Verde', uf: 'SE', ibge: '2805505' }
-,      { nome: 'Pão de Açúcar', uf: 'AL', ibge: '2706406' }
-,      { nome: 'Salgado', uf: 'SE', ibge: '2806206' }
-,      { nome: 'Santa Luzia do Itanhy', uf: 'SE', ibge: '2806305' }
-,      { nome: 'Santo Amaro', uf: 'BA', ibge: '2928604' }
-,      { nome: 'Simão Dias', uf: 'SE', ibge: '2807105' }
-,      { nome: 'São Luis do Quitunde', uf: 'AL', ibge: '2708501' }
-,      { nome: 'Xique-Xique', uf: 'BA', ibge: '2933604' }
+      { nome: 'Itabaianinha', uf: 'SE', ibge: '2803005' },
+      { nome: 'Matriz de Camaragibe', uf: 'AL', ibge: '2705101' },
+      { nome: 'Neópolis', uf: 'SE', ibge: '2804409' },
+      { nome: 'Nossa Senhora das Dores', uf: 'SE', ibge: '2804607' },
+      { nome: 'Nossa Senhora de Lourdes', uf: 'SE', ibge: '2804706' },
+      { nome: 'Pão de Açúcar', uf: 'AL', ibge: '2706406' },
+      { nome: 'Poço Verde', uf: 'SE', ibge: '2805505' },
+      { nome: 'Salgado', uf: 'SE', ibge: '2806206' },
+      { nome: 'Santa Luzia do Itanhy', uf: 'SE', ibge: '2806305' },
+      { nome: 'Santo Amaro', uf: 'BA', ibge: '2928604' },
+      { nome: 'São Luis do Quitunde', uf: 'AL', ibge: '2708501' },
+      { nome: 'Simão Dias', uf: 'SE', ibge: '2807105' },
+      { nome: 'Xique-Xique', uf: 'BA', ibge: '2933604' }
     ]
   }
 };
+

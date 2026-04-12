@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'prodata',
   nome: 'ProData',
   empresa: 'ProData',
@@ -48,14 +48,15 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'prodata': [
-      { nome: 'Carmo do Rio Verde', uf: 'GO', ibge: '5205000' }
-,      { nome: 'Catalão', uf: 'GO', ibge: '5205109' }
-,      { nome: 'Cidade Ocidental', uf: 'GO', ibge: '5205497' }
-,      { nome: 'Goianésia', uf: 'GO', ibge: '5208608' }
-,      { nome: 'Luziânia', uf: 'GO', ibge: '5212501' }
-,      { nome: 'Morrinhos', uf: 'GO', ibge: '5213806' }
-,      { nome: 'Niquelândia', uf: 'GO', ibge: '5214606' }
-,      { nome: 'Pirenópolis', uf: 'GO', ibge: '5217302' }
+      { nome: 'Carmo do Rio Verde', uf: 'GO', ibge: '5205000' },
+      { nome: 'Catalão', uf: 'GO', ibge: '5205109' },
+      { nome: 'Cidade Ocidental', uf: 'GO', ibge: '5205497' },
+      { nome: 'Goianésia', uf: 'GO', ibge: '5208608' },
+      { nome: 'Luziânia', uf: 'GO', ibge: '5212501' },
+      { nome: 'Morrinhos', uf: 'GO', ibge: '5213806' },
+      { nome: 'Niquelândia', uf: 'GO', ibge: '5214606' },
+      { nome: 'Pirenópolis', uf: 'GO', ibge: '5217302' }
     ]
   }
 };
+

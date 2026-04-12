@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'volta-redonda-rj',
   nome: 'Volta Redonda',
   uf: 'RJ',
@@ -20,3 +20,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

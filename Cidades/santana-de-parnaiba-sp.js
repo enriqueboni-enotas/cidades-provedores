@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'santana-de-parnaiba-sp',
   nome: 'Santana de Parnaíba',
   uf: 'SP',
@@ -19,3 +19,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

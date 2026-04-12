@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'xique-xique-ba',
   nome: 'Xique-Xique',
   uf: 'BA',
@@ -45,8 +45,8 @@ var cidadeDetalhe = {
     usaDescricaoServico: true,
     usaCNAE: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\n\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 2 mais dígitos sem formatação.\nExemplo válido: 53, 3201',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 2 mais dígitos sem formatação.\r\nExemplo válido: 53, 3201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     suportaEmissaoNFeSemCliente: true,
@@ -66,3 +66,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

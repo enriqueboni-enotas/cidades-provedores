@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'pirenopolis-go',
   nome: 'Pirenópolis',
   uf: 'GO',
@@ -56,3 +56,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

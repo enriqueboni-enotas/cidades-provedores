@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'cabo-frio-rj',
   nome: 'Cabo Frio',
   uf: 'RJ',
@@ -45,3 +45,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

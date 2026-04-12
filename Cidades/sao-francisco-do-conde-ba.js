@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'sao-francisco-do-conde-ba',
   nome: 'São Francisco do Conde',
   uf: 'BA',
@@ -21,3 +21,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

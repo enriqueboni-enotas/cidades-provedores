@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'jacarau-pb',
   nome: 'Jacaraú',
   uf: 'PB',
@@ -26,9 +26,9 @@ var cidadeDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\n\nExemplos válidos: 4301000010 ou 131436001',
+    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\r\n\r\nExemplos válidos: 4301000010 ou 131436001',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 a 5 dígitos (com formatação) que identifica o serviço prestado na nota fiscal.\n\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 8.01 ou 14.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 a 5 dígitos (com formatação) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 8.01 ou 14.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
     suportaEmissaoNFeSemCliente: true,
@@ -55,3 +55,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

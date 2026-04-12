@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'abasev2',
   nome: 'AbaseV2',
   empresa: 'AbaseV2',
@@ -30,7 +30,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\n\nExemplos válidos: 4301000010 ou 131436001',
+    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\r\n\r\nExemplos válidos: 4301000010 ou 131436001',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -58,18 +58,19 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'abasev2': [
-      { nome: 'Boa Vista do Buricá', uf: 'RS', ibge: '4302204' }
-,      { nome: 'Caibaté', uf: 'RS', ibge: '4303301' }
-,      { nome: 'Giruá', uf: 'RS', ibge: '4309001' }
-,      { nome: 'Rolante', uf: 'RS', ibge: '4316006' }
-,      { nome: 'Roque Gonzales', uf: 'RS', ibge: '4316303' }
-,      { nome: 'Santo Antônio das Missões', uf: 'RS', ibge: '4317707' }
-,      { nome: 'Santo Cristo', uf: 'RS', ibge: '4317905' }
-,      { nome: 'Santo Ângelo', uf: 'RS', ibge: '4317509' }
-,      { nome: 'São Luiz Gonzaga', uf: 'RS', ibge: '4318903' }
-,      { nome: 'São Martinho', uf: 'RS', ibge: '4319109' }
-,      { nome: 'Três de Maio', uf: 'RS', ibge: '4321808' }
-,      { nome: 'Tuparendi', uf: 'RS', ibge: '4322301' }
+      { nome: 'Boa Vista do Buricá', uf: 'RS', ibge: '4302204' },
+      { nome: 'Caibaté', uf: 'RS', ibge: '4303301' },
+      { nome: 'Giruá', uf: 'RS', ibge: '4309001' },
+      { nome: 'Rolante', uf: 'RS', ibge: '4316006' },
+      { nome: 'Roque Gonzales', uf: 'RS', ibge: '4316303' },
+      { nome: 'Santo Ângelo', uf: 'RS', ibge: '4317509' },
+      { nome: 'Santo Antônio das Missões', uf: 'RS', ibge: '4317707' },
+      { nome: 'Santo Cristo', uf: 'RS', ibge: '4317905' },
+      { nome: 'São Luiz Gonzaga', uf: 'RS', ibge: '4318903' },
+      { nome: 'São Martinho', uf: 'RS', ibge: '4319109' },
+      { nome: 'Três de Maio', uf: 'RS', ibge: '4321808' },
+      { nome: 'Tuparendi', uf: 'RS', ibge: '4322301' }
     ]
   }
 };
+

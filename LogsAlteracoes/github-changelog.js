@@ -1,156 +1,131 @@
 var changelogData = [
   {
+    tag: '12/04/2026',
+    titulo: 'Domingo — 12 de Abril',
+    data: '12/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '11/04/2026',
+    titulo: 'Sábado — 11 de Abril',
+    data: '11/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
+      },
+    ],
+  },
+  {
     tag: '10/04/2026',
     titulo: 'Sexta-feira — 10 de Abril',
     data: '10/04/2026',
     itens: [
       {
-        icon: '🆕',
-        destaque: 'UsaNBS para Hotmart no provedor FgMaiss',
-        texto:
-          'Adiciona lógica no método ObterCaracteristicasCore do provedor FgMaiss para determinar dinamicamente se a empresa Hotmart deve enviar o campo NBS. Antes essa configuração era fixa, agora é calculada com base nas características da empresa.',
-      },
-      {
-        icon: '🧮',
-        destaque: 'Zera pTotTribFed para Franca/SP e Mogi das Cruzes/SP',
-        texto:
-          'Estende a zeragem do percentual de tributos federais (pTotTribFed) para Franca/SP e Mogi das Cruzes/SP. Quando a nota não possui tributos federais discriminados individualmente, o percentual total é zerado para evitar rejeição pela prefeitura, que não aceita o campo preenchido sem os valores detalhados.',
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
       },
     ],
   },
   {
     tag: '09/04/2026',
-    titulo: 'Quarta-feira — 09 de Abril',
+    titulo: 'Quinta-feira — 09 de Abril',
     data: '09/04/2026',
     itens: [
       {
-        icon: '🌐',
-        destaque: 'Ajuste exportação portal nacional + cancelamento GissOnline',
-        texto:
-          'Duas mudanças importantes: (1) No portal nacional, a nota agora só é considerada exportação se o serviço foi prestado fora do país (código IBGE 9999999), corrigindo cenários onde notas domésticas eram marcadas incorretamente como exportação. (2) No provedor GissOnline, foi removido o bloqueio automático de cancelamento — o sistema agora permite que o usuário tente cancelar, já que muitas cidades mudam as regras de cancelamento com frequência.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Melhorias na consulta de NFS-e em Barueri/SP',
-        texto:
-          'Pacote de melhorias no provedor Barueri: logs detalhados para rastreamento do processo de consulta, resolução automática de captcha usando AntiCaptcha (substituindo o método anterior), PDF da nota agora é salvo e marcado como gerado ao consultar por RPS, e o campo txtNumeroCTS foi ajustado para 10 dígitos. Também foi expandido o reconhecimento de mensagens de erro para identificar RPS já informado.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Tomador exterior no eTransparência',
-        texto:
-          'Adiciona verificação se o tomador é estrangeiro para pular a atribuição de endereço brasileiro. Quando o tomador é do exterior, o sistema não tenta preencher campos de endereço nacional que causavam erro. Também define TipoLogLocPre como "Rua" após popular os campos de endereço.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Melhoria no endereço reg20 do eTransparência',
-        texto:
-          'Melhora a lógica de preenchimento do endereço no registro reg20: agora prefere o endereço do tomador quando disponível, com fallback automático para o endereço da empresa caso o tomador não tenha endereço cadastrado. Isso evita erros de emissão quando o tomador não possui endereço completo.',
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum PR mergeado neste dia.',
       },
     ],
   },
   {
     tag: '08/04/2026',
-    titulo: 'Terça-feira — 08 de Abril',
+    titulo: 'Quarta-feira — 08 de Abril',
     data: '08/04/2026',
     itens: [
       {
-        icon: '🧮',
-        destaque: 'Validação base zero PIS/COFINS',
-        texto:
-          'Adiciona validação que lança ValidationException quando a BaseCalculoPisCofins é zero mas existem valores de PIS/COFINS a serem enviados. Antes, essa situação travava a fila de emissão silenciosamente. Agora a nota é rejeitada com mensagem clara, permitindo que o cliente corrija os dados.',
-      },
-      {
         icon: '🌐',
-        destaque: 'ISSQN exterior e PDF para eTransparência',
+        destaque: 'Consulta NFS-e por RPS com AntiCaptcha — Barueri/SP',
         texto:
-          'Tratamento completo de notas de serviço prestado no exterior (código IBGE 9999999) no provedor eTransparência: preenche campos específicos no relatório PDF com valores zerados e textos para exterior, e zera a alíquota ISS para empresa específica quando o tomador é estrangeiro. Inclui novo teste de geração de PDF para Ipatinga/MG.',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Bloqueio de atualização de API key por subscription',
-        texto:
-          'Novo filtro BlockSubscriptionApiKeyUpdateFilter que impede a atualização de API key para subscriptions específicas. Isso protege contra alterações acidentais ou maliciosas de chaves de API em contas críticas. Configurado tanto em HML quanto em PRD.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Múltiplas atualizações municipais e correções',
-        texto:
-          'Pacote de correções: retry no cancelamento para garantir consistência entre API e prefeitura, MunicípioIncidência configurado como município do prestador para Conta Azul, correção no envio de alíquota em prestação fora do município com ISS não retido, remoção de formatação do CEP do local de prestação, atualização de links de homologação de Contagem/MG e endpoint de Jardim/MS.',
-      },
-      {
-        icon: '🆕',
-        destaque: 'Consulta NFS-e por RPS com AntiCaptcha (Barueri)',
-        texto:
-          'Nova operação ConsultarNFeRpsV3 que implementa consulta de NFS-e por RPS via web scraping no site da prefeitura de Barueri. Inclui resolução automática de captcha usando AntiCaptcha, novo comando ConsultarLoteNFeWSCommandV3 para orquestração, e suporte a consulta por RPS na interface do provedor.',
+          'PR #676 implementou a consulta de NFS-e por RPS via web scraping para Barueri/SP, com resolução automática de captcha usando AntiCaptcha. Foram criados a operação ConsultarNFeRpsV3 e o comando ConsultarLoteNFeWSCommandV3 para orquestrar o scraping. O CaptchaSolverFactory agora suporta criação de solvers AntiCaptcha e DeathByCaptcha. O modelo ConsultaNFe recebeu o campo CnpjPrestador. Impacto: empresas de Barueri/SP agora podem consultar notas por RPS de forma automatizada, sem intervenção manual para resolver captchas.',
       },
     ],
   },
   {
     tag: '07/04/2026',
-    titulo: 'Segunda-feira — 07 de Abril',
+    titulo: 'Terça-feira — 07 de Abril',
     data: '07/04/2026',
     itens: [
       {
-        icon: '🆕',
-        destaque: 'Novo provedor GIFv2 no layout nacional',
-        texto:
-          'Implementação completa do novo provedor GIFv2 para emissão de NFS-e no layout nacional. Inclui todas as operações: Recepcionar lote, Consultar lote, Cancelar NF-e e Gerar PDF. Também inclui testes unitários, fake provider para testes, e registro no bootstrap de provedores.',
-      },
-      {
         icon: '🔧',
-        destaque: 'Normaliza série RPS na consulta de lote',
+        destaque: 'Normalização de série RPS na consulta de lote NFS-e',
         texto:
-          'Cria helper NormalizarSerie que trata "-" como string vazia e aplica trim na série RPS. Isso resolve problemas de comparação onde a série vinha com espaços ou traço, causando falha na localização da nota na consulta por lote.',
+          'PR #675 adicionou o helper NormalizarSerie que trata "-" como string vazia e aplica trim na série RPS. A normalização é aplicada ao ler e comparar valores de SerieRPS, garantindo matching consistente e evitando falhas de consulta por diferenças de formatação.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'Novo provedor GIFv2 para NFS-e',
+        texto:
+          'PR #674 (Notagateway sync) introduziu o provedor GIFv2 completo com operações de Recepcionar, Consultar, Cancelar e Gerar PDF, além de testes unitários. Também corrigiu o nome da propriedade cClassTrib no ModerPublicaServico, melhorou o tratamento de CST para PIS/COFINS no XML do portal nacional, adicionou validação de código NBS nos dados de serviço, e atualizou configurações municipais.',
       },
       {
         icon: '🏙️',
-        destaque: 'Varginha/MG — remove RPS sequencial',
+        destaque: 'Correção de RPS sequencial em Varginha/MG',
         texto:
-          'Remove a obrigatoriedade de numeração sequencial de RPS para Varginha/MG no provedor BethaV3. Quando ocorrem erros de processamento, o número do RPS é resetado para 0 e a série para null, evitando que notas negadas consumam números de RPS desnecessariamente.',
+          'PR #673 removeu a exigência de numeração sequencial de RPS para Varginha/MG no BethaV3. Em caso de erros de processamento, o número RPS é resetado para 0 e a série para null, evitando que notas negadas travem a sequência de numeração.',
       },
       {
-        icon: '🧮',
-        destaque: 'Ajustes em cClassTrib, CST PIS/COFINS e validação NBS',
+        icon: '🌐',
+        destaque: 'Tratamento de tomador estrangeiro no IPM',
         texto:
-          'Três correções importantes: (1) Corrige nome da propriedade cClasssTrib para cClassTrib no provedor ModernizacaoPublica. (2) Ajusta envio do CST de PIS/COFINS para usar o valor informado pelo prestador ao invés de calcular automaticamente. (3) Adiciona validação do codigoNBS para não travar a fila quando o código é inválido ou vazio.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Migrações de municípios para novos provedores',
-        texto:
-          'Cinco municípios atualizados: Arroio do Meio/RS migrado para NfseNacionalV2, Itaituba/PA para CoplanV2, Serra do Mel/RN para TinusV2, URLs de Embu das Artes/SP atualizadas, e Cotia/SP configurada para enviar código de obra no código 704. Também remove Pejuçara/RS da flag SempreEnviaAliquotaIssEmpresasSimplesNacional.',
+          'PRs #671 e #672 adicionaram o campo PaisPrestacaoServico ao modelo ItemNfse do IPM e atualizaram a lógica de emissão para incluir o país de prestação de serviço quando o tomador é estrangeiro. Também corrigiram um erro de sintaxe no RecepcionarLoteNFe do IPM.',
       },
     ],
   },
   {
     tag: '06/04/2026',
-    titulo: 'Domingo — 06 de Abril',
+    titulo: 'Segunda-feira — 06 de Abril',
     data: '06/04/2026',
     itens: [
       {
         icon: '🌐',
-        destaque: 'NFS-e com prestação no exterior (eTransparência)',
+        destaque: 'Suporte a moeda estrangeira no NFS-e Nacional',
         texto:
-          'Implementação completa do tratamento de notas fiscais de serviço prestado no exterior no provedor eTransparência. Quando o código IBGE é 9999999, preenche campos específicos nos registros reg20 e reg40 com dados do endereço do tomador estrangeiro, zera valores de ISS e adiciona informações complementares sobre país, cidade, estado e CEP. Inclui lógica para forçar o código IBGE para exterior quando o tomador é estrangeiro.',
+          'Série de PRs (#663, #665, #666, #667) que implementam o envio do valor do serviço em moeda estrangeira (vServMoeda) para notas de comércio exterior no padrão NFS-e Nacional. O campo valorServicoMoedaEstrangeira agora é extraído dos metadados da nota e enviado corretamente no XML. Refatorações sucessivas corrigiram a lógica de extração (de IDictionary para JSON list) e garantiram o uso de InvariantCulture na conversão de valores decimais. Impacto: empresas que emitem notas para tomadores estrangeiros em municípios que usam o portal nacional agora terão o valor em moeda estrangeira preenchido automaticamente.',
       },
       {
-        icon: '💰',
-        destaque: 'Moeda estrangeira no vServMoeda',
+        icon: '🔧',
+        destaque:
+          'Proxy estático para Franco da Rocha/SP e imunidade tributária',
         texto:
-          'Permite enviar o valor do serviço em moeda estrangeira (vServMoeda) quando presente nos metadados da nota. Antes o campo era sempre preenchido com o valor em reais. Agora, se a nota tem informações de comércio exterior com valor em moeda estrangeira, esse valor é usado. Inclui refatoração da extração do valorServicoMoedaEstrangeira para usar IDictionary ao invés de IEnumerable.',
+          'PR #664 (Notagateway sync) adicionou proxy estático ao provedor SIGISSv5 de Franco da Rocha/SP para melhorar a estabilidade de comunicação com o webservice da prefeitura. Também incluiu um novo GUID no mapeamento de TipoImunidadePorEmpresa (tipo "3") nos provedores NfseNacionalV2, permitindo que uma empresa específica emita notas com imunidade tributária corretamente.',
       },
       {
-        icon: '🧮',
-        destaque: 'Ajustes IBS/CBS, impostos retidos e novos campos',
+        icon: '🏙️',
+        destaque: 'NFS-e com prestação de serviço no exterior — eTransparência',
         texto:
-          'Pacote de ajustes tributários: fallback de IBS/CBS para deduzir apenas para optantes do Simples Nacional, ajustes nos envios de impostos retidos na tag CSLL e apuração própria, novo modelo de envio de Obras para o provedor SIGISSv5, e implementação do campo CNO (Cadastro Nacional de Obras) para o provedor IPM. Também adiciona empresas não optantes de Uberaba/MG para não enviarem alíquota.',
+          'PR #669 adicionou regras para identificar e processar notas fiscais de serviço prestado no exterior (código IBGE "9999999") no provedor eTransparência. Preenche campos específicos nos registros reg20 e reg40 com dados do endereço do tomador, zera valores de ISS e adiciona informações complementares sobre país, cidade, estado e CEP. Inclui lógica para forçar o código IBGE para exterior quando o tomador for estrangeiro.',
+      },
+      {
+        icon: '👤',
+        destaque: 'Novo usuário no backoffice',
+        texto:
+          'PR #668 adicionou um novo usuário à lista de permissões especiais do backoffice (UsuariosComPermissaoEspecialBackoffice) nos ambientes HML e PRD.',
       },
     ],
   },
   {
     tag: '05/04/2026',
-    titulo: 'Sábado — 05 de Abril',
+    titulo: 'Domingo — 05 de Abril',
     data: '05/04/2026',
     itens: [
       {
@@ -162,7 +137,7 @@ var changelogData = [
   },
   {
     tag: '04/04/2026',
-    titulo: 'Sexta-feira — 04 de Abril',
+    titulo: 'Sábado — 04 de Abril',
     data: '04/04/2026',
     itens: [
       {
@@ -174,7 +149,7 @@ var changelogData = [
   },
   {
     tag: '03/04/2026',
-    titulo: 'Quinta-feira — 03 de Abril',
+    titulo: 'Sexta-feira — 03 de Abril',
     data: '03/04/2026',
     itens: [
       {
@@ -186,119 +161,68 @@ var changelogData = [
   },
   {
     tag: '02/04/2026',
-    titulo: 'Quarta-feira — 02 de Abril',
+    titulo: 'Quinta-feira — 02 de Abril',
     data: '02/04/2026',
     itens: [
       {
+        icon: '🌐',
+        destaque:
+          'Ajuste de situação tributária para tomador exterior em Cachoeirinha/RS',
+        texto:
+          'PR #661 corrigiu a situação tributária (código 14) para notas com tomador do exterior no provedor IPM de Cachoeirinha/RS. A cidade foi adicionada à lista de municípios que definem CidadePrestacaoServico e NaturezaOperacao específicos para clientes estrangeiros, evitando rejeições pela prefeitura.',
+      },
+      {
         icon: '🧾',
-        destaque: 'Script de cancelamento de notas com status inconsistente',
+        destaque: 'Script de cancelamento de notas inconsistentes',
         texto:
-          'Liquibase SQL para disparar cancelamento em lote de notas que estavam com status inconsistente no banco de dados — notas que foram autorizadas na SEFAZ mas ficaram com status diferente no sistema. O script executa o procedimento de cancelamento para cada nota afetada.',
+          'PR #662 adicionou um script SQL (liquibase) para disparar o cancelamento em lote de notas com status inconsistente. São mais de 1.100 notas que estavam em situação irregular e precisavam ser canceladas junto às prefeituras.',
       },
       {
         icon: '🏙️',
-        destaque: 'Cachoeirinha/RS — situação tributária para tomador exterior',
+        destaque:
+          'Sync: Conchas/SP no GOVBRv3, Anitápolis/SC e Pão de Açúcar/AL',
         texto:
-          'Ajusta a situação tributária para código 14 quando o tomador é do exterior em Cachoeirinha/RS no provedor IPM. Também aplica a mesma regra na versão V2 do provedor. Sem essa correção, notas para tomadores estrangeiros eram rejeitadas pela prefeitura.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Atualizações municipais e limpeza de WebHook',
-        texto:
-          'Remove o parâmetro tipoNf dos comandos de WebHook (ConsultaRequisicoesWebHookPeriodo e ReenviarWebHookPeriodo), simplificando a interface. Atualiza configurações de Anitápolis/SC e Pão de Açúcar/AL. Ajusta serialização no TxtBuilder para truncar textos e números corretamente. Adiciona Conchas/SP ao GOVBRv3.',
+          'PR #660 (Notagateway sync) trouxe diversas mudanças: adição de Conchas/SP às listas de configuração do GOVBRv3, atualização de configurações municipais de Anitápolis/SC e Pão de Açúcar/AL, remoção do parâmetro tipoNf dos comandos de WebHook, ajuste na serialização do TxtBuilder com truncamento, e correção na série RPS (truncada para 4 caracteres). Também adicionou tratamento de evento para cartão Asaas e condição para assinatura UnoSolucoes no NfseNacionalV2.',
       },
     ],
   },
   {
     tag: '01/04/2026',
-    titulo: 'Terça-feira — 01 de Abril',
+    titulo: 'Quarta-feira — 01 de Abril',
     data: '01/04/2026',
     itens: [
       {
         icon: '🏙️',
-        destaque: 'Paranapanema/SP migra de GOVBRv3 para GOVBRv2',
+        destaque: 'Paranapanema/SP migrado de GOVBRv3 para GOVBRv2',
         texto:
-          'O município de Paranapanema/SP teve seu provedor atualizado de GOVBRv3 para GOVBRv2 com link de produção atualizado. A seção de emissão sem certificado foi removida e foram adicionadas informações do provedor (metadados e propriedades). A URL de recepção de lote em produção foi atualizada.',
+          'PR #659 atualizou o provedor de Paranapanema/SP de GOVBRv3 para GOVBRv2 com URL de produção atualizada. A mudança inclui adição de informacoesProvedor com metadados e propriedadesProvedor, e remoção da seção emissaoSemCertificado. Isso corrige problemas de emissão que estavam ocorrendo com a versão v3 neste município.',
       },
       {
-        icon: '🆕',
-        destaque: 'Cravinhos/SP — novo web service FgMaiss',
+        icon: '🔧',
+        destaque:
+          'Sync: Cravinhos/SP no FgMaiss, alíquota ISS no GOVBRv3, validação de endereço exterior',
         texto:
-          'Implementação completa do web service para Cravinhos/SP no provedor FgMaiss. Inclui referências WSDL para consulta, envio e cancelamento de NFS-e, classe CravinhosProvedorNFeWS com métodos para todas as operações, e configuração de endpoints no app.config. O provedor FgMaiss agora cria automaticamente o WS de Cravinhos quando o município é detectado.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Nova coleção SempreEnviaAliquotaIssEmpresasSimplesNacional',
-        texto:
-          'Cria nova coleção no provedor GOVBRv3 que lista municípios onde empresas do Simples Nacional devem sempre enviar a alíquota ISS. Também ajusta a lógica de pAliq no RecepcionarLote para considerar essa nova regra, e resolve natureza de operação para subscription específica no NfseNacionalV2.',
+          'PR #658 (Notagateway sync) implementou o provedor FgMaiss para Cravinhos/SP com web services de envio, consulta e cancelamento. Adicionou a coleção SempreEnviaAliquotaIssEmpresasSimplesNacional no GOVBRv3 para garantir envio correto de alíquota ISS para empresas do Simples Nacional. Também incluiu resolução de natureza de operação para assinatura específica no NfseNacionalV2, truncamento de SerieRps para 4 caracteres, e atualização de dados de teste.',
       },
     ],
   },
   {
     tag: '31/03/2026',
-    titulo: 'Segunda-feira — 31 de Março',
+    titulo: 'Terça-feira — 31 de Março',
     data: '31/03/2026',
     itens: [
       {
-        icon: '🌐',
-        destaque: 'Suporte IBS/CBS em Barueri layout 4.2',
+        icon: '🆕',
+        destaque: 'Paranapanema/SP adicionado ao GOVBRv3',
         texto:
-          'Implementa suporte à emissão com IBS/CBS no layout 4.2 de Barueri. Inclui busca condicional de XML do portal nacional quando a nota tem dados de IBS/CBS, null-check em DTOs para evitar NullReferenceException, e seleção dinâmica da versão do layout baseada na presença de IBS/CBS. Remove lógica de desconto hardcoded para empresa específica em Juiz de Fora.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Nova regra de alíquota ISS no GOVBRv3',
-        texto:
-          'Adiciona regra de alíquota ISS para municípios específicos no provedor GOVBRv3. Santa Terezinha de Itaipu/PR foi adicionada à lista de municípios sem suporte a cancelamento. Também corrige casing do XML para NIF (CpfCnpj), adiciona lógica de resolução de código de serviço municipal no EeL, e extrai chave de acesso do XML no SIGISSv5.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Paranapanema/SP adicionada ao GOVBRv3',
-        texto:
-          'Configuração inicial do município de Paranapanema/SP no provedor GOVBRv3 com URLs de homologação e produção. Essa configuração foi posteriormente alterada para GOVBRv2 no dia 01/04.',
+          'PR #654 adicionou a configuração inicial de Paranapanema/SP no ConfiguracoesMunicipios.xml com provedor GOVBRv3, incluindo URLs de homologação e produção. Este município passou a ser suportado pelo gateway para emissão de NFS-e.',
       },
       {
         icon: '🔧',
-        destaque: 'Atualização Newtonsoft.Json e melhorias de validação',
+        destaque:
+          'Sync: IBS/CBS em Barueri, validação de endereço, NIF exterior, cancelamento SIGISSv5',
         texto:
-          'Atualiza dependência Newtonsoft.Json para versão 13.0.3. Melhora tratamento de endereço exterior com novas propriedades e validações. Adiciona ExigibilidadeSuspensaNFeServico e NumeroGerenciado ao modelo de dados. Melhora tratamento de FaultException no RecepcionarLoteNFe do WebISS.',
-      },
-    ],
-  },
-  {
-    tag: '30/03/2026',
-    titulo: 'Domingo — 30 de Março',
-    data: '30/03/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Limeira/SP — CTN e CTM no IIBrasil',
-        texto:
-          'Adiciona Limeira/SP às listas UsaCodigoTributacaoMunicipio e UsaCodigoTributacaoNacional no provedor IIBrasil. Isso permite que empresas de Limeira enviem tanto o código de tributação municipal quanto o nacional nas notas. Simplifica a lógica de UsaConsultaRpsWebservice removendo redundância.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Remove CEP para tomadores do exterior',
-        texto:
-          'A prefeitura estava rejeitando notas quando o CEP era enviado para tomadores estrangeiros no provedor eTransparência. O CEP agora é setado como null quando o tomador é do exterior, e foram adicionados comentários de região para facilitar manutenção do código Hotmart.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Varginha/MG — RPS sequencial no BethaV3',
-        texto:
-          'Adiciona requisito de numeração sequencial de RPS para Varginha/MG no provedor BethaV3. Essa configuração foi necessária porque a prefeitura exige que os números de RPS sejam sequenciais. Nota: essa configuração foi posteriormente removida no dia 07/04 após identificar que causava problemas com notas negadas.',
-      },
-    ],
-  },
-  {
-    tag: '29/03/2026',
-    titulo: 'Sábado — 29 de Março',
-    data: '29/03/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum PR mergeado neste dia.',
+          'PRs #655, #656 e #657 (Notagateway sync) trouxeram um grande volume de mudanças: suporte a emissão IBS/CBS no layout 4.2 de Barueri/SP com busca condicional de XML no portal nacional, correção de casing da propriedade ComExt no GovDigital para tomador exterior, adição de Santa Terezinha de Itaipu/PR à lista de não-cancelamento do GOVBRv3, refatoração do cálculo de ISS no GOVBRv3, extração de chave de acesso no SIGISSv5, resolução de código de serviço municipal no EeL, simplificação da lógica de WS client no SIGISSv1, formatação de dados IBSCBS no EGoverneISS, atualização de Newtonsoft.Json para 13.0.3, validação de campos de endereço no NfseNacionalV2, tratamento de endereço estrangeiro no TinusV2, melhoria de error handling com FaultException, e expansão de configurações municipais.',
       },
     ],
   },

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'ilheus-ba',
   nome: 'Ilhéus',
   uf: 'BA',
@@ -34,11 +34,11 @@ var cidadeDetalhe = {
     usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números). Campo com 13 posições, formatado com zeros a esquerda, sendo as 3 última correspondentes a sequência (normalmente 01) e dígito (normalmente 1).\n\nExemplos válidos: 0010035828011',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números). Campo com 13 posições, formatado com zeros a esquerda, sendo as 3 última correspondentes a sequência (normalmente 01) e dígito (normalmente 1).\r\n\r\nExemplos válidos: 0010035828011',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \n \n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\n Exemplos válidos: 17.02 ou 08.02',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
@@ -64,3 +64,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

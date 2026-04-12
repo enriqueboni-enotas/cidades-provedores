@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'itapira-sp',
   nome: 'Itapira',
   uf: 'SP',
@@ -23,3 +23,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

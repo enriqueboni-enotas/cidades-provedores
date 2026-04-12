@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'parai-rs',
   nome: 'Paraí',
   uf: 'RS',
@@ -41,7 +41,7 @@ var cidadeDetalhe = {
     usaCNAE: false,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplos: 060401 e 170101',
     suportaEmissaoNFeSemCliente: true,
@@ -69,3 +69,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'cristiano-otoni-mg',
   nome: 'Cristiano Otoni',
   uf: 'MG',
@@ -42,3 +42,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

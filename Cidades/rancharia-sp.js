@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'rancharia-sp',
   nome: 'Rancharia',
   uf: 'SP',
@@ -42,3 +42,4 @@ var cidadeDetalhe = {
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0
   }
 };
+

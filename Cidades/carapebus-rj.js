@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'carapebus-rj',
   nome: 'Carapebus',
   uf: 'RJ',
@@ -42,3 +42,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

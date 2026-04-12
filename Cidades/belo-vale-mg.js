@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'belo-vale-mg',
   nome: 'Belo Vale',
   uf: 'MG',
@@ -42,3 +42,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

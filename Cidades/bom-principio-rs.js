@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'bom-principio-rs',
   nome: 'Bom Princípio',
   uf: 'RS',
@@ -58,3 +58,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

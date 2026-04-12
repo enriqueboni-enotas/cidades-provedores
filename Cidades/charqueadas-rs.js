@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'charqueadas-rs',
   nome: 'Charqueadas',
   uf: 'RS',
@@ -21,3 +21,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

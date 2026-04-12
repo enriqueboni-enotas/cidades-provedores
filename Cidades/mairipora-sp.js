@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'mairipora-sp',
   nome: 'Mairiporã',
   uf: 'SP',
@@ -38,9 +38,9 @@ var cidadeDetalhe = {
     usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 8 dígitos formatado com um ponto.\nExemplo válido: 08.02.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 8 dígitos formatado com um ponto.\r\nExemplo válido: 08.02.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
     suportaEmissaoNFeSemCliente: true,
@@ -51,14 +51,14 @@ var cidadeDetalhe = {
     enviaEmailCliente: true,
     numeroRpsDeveSerSequencial: true,
     autenticidadeNota: {
+      urlVerificacao: 'https://nfe.etransparencia.com.br/sp.taboaodaserra/nfe/principal.aspx',
       UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
       UsaCpfCnpjTomador: false,
       UsaInscricaoMunicipalPrestador: false,
       UsaNumeroNota: true,
-      UsaValorNota: false,
-      urlVerificacao: 'https://nfe.etransparencia.com.br/sp.taboaodaserra/nfe/principal.aspx'
+      UsaValorNota: false
     },
     regimesEspecialTributacao: [
       { codigo: '1', nome: 'Tributado' },
@@ -70,3 +70,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

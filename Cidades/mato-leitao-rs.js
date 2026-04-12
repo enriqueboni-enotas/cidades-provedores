@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'mato-leitao-rs',
   nome: 'Mato Leitão',
   uf: 'RS',
@@ -57,3 +57,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

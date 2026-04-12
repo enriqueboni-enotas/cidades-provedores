@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'bethav3',
   nome: 'BethaV3',
   empresa: 'BethaV3',
@@ -8,7 +8,7 @@ var provedorDetalhe = {
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
     { key: 'Total Municipios', val: '111' },
-    { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'RS', 'MS', 'AC', 'SP', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
+    { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'MS', 'RS', 'AC', 'SP', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -30,7 +30,7 @@ var provedorDetalhe = {
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\n\nExemplo válido: 14.05.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
@@ -59,117 +59,118 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'bethav3': [
-      { nome: 'Acrelândia', uf: 'AC', ibge: '1200013' }
-,      { nome: 'Aguaí', uf: 'SP', ibge: '3500303' }
-,      { nome: 'Agudos do Sul', uf: 'PR', ibge: '4100301' }
-,      { nome: 'Alfenas', uf: 'MG', ibge: '3101607' }
-,      { nome: 'Almirante Tamandaré', uf: 'PR', ibge: '4100400' }
-,      { nome: 'Alterosa', uf: 'MG', ibge: '3102001' }
-,      { nome: 'Ametista do Sul', uf: 'RS', ibge: '4300646' }
-,      { nome: 'Angelina', uf: 'SC', ibge: '4200903' }
-,      { nome: 'Antônio Carlos', uf: 'SC', ibge: '4201208' }
-,      { nome: 'Arroio do Tigre', uf: 'RS', ibge: '4301206' }
-,      { nome: 'Arvoredo', uf: 'SC', ibge: '4201653' }
-,      { nome: 'Atalanta', uf: 'SC', ibge: '4201802' }
-,      { nome: 'Balneário Gaivota', uf: 'SC', ibge: '4202073' }
-,      { nome: 'Bandeira do Sul', uf: 'MG', ibge: '3105301' }
-,      { nome: 'Bandeirantes', uf: 'PR', ibge: '4102406' }
-,      { nome: 'Barracão', uf: 'PR', ibge: '4102604' }
-,      { nome: 'Bela Vista do Toldo', uf: 'SC', ibge: '4202131' }
-,      { nome: 'Boa Esperança', uf: 'MG', ibge: '3107109' }
-,      { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' }
-,      { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' }
-,      { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' }
-,      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' }
-,      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' }
-,      { nome: 'Botelhos', uf: 'MG', ibge: '3108404' }
-,      { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' }
-,      { nome: 'Caarapó', uf: 'MS', ibge: '5002407' }
-,      { nome: 'Cachoeiras de Macacu', uf: 'RJ', ibge: '3300803' }
-,      { nome: 'Campo Alegre', uf: 'SC', ibge: '4203303' }
-,      { nome: 'Campo Magro', uf: 'PR', ibge: '4104253' }
-,      { nome: 'Campos Gerais', uf: 'MG', ibge: '3111606' }
-,      { nome: 'Candiota', uf: 'RS', ibge: '4304358' }
-,      { nome: 'Canelinha', uf: 'SC', ibge: '4203709' }
-,      { nome: 'Capitão Leônidas Marques', uf: 'PR', ibge: '4104600' }
-,      { nome: 'Capão do Leão', uf: 'RS', ibge: '4304663' }
-,      { nome: 'Celso Ramos', uf: 'SC', ibge: '4204152' }
-,      { nome: 'Cláudio', uf: 'MG', ibge: '3116605' }
-,      { nome: 'Congonhinhas', uf: 'PR', ibge: '4106001' }
-,      { nome: 'Conselheiro Lafaiete', uf: 'MG', ibge: '3118304' }
-,      { nome: 'Coronel Martins', uf: 'SC', ibge: '4204459' }
-,      { nome: 'Correia Pinto', uf: 'SC', ibge: '4204558' }
-,      { nome: 'Corumbataí', uf: 'SP', ibge: '3512704' }
-,      { nome: 'Cruzeiro do Sul', uf: 'AC', ibge: '1200203' }
-,      { nome: 'Cunhataí', uf: 'SC', ibge: '4204756' }
-,      { nome: 'Curitibanos', uf: 'SC', ibge: '4204806' }
-,      { nome: 'Cássia dos Coqueiros', uf: 'SP', ibge: '3510906' }
-,      { nome: 'Deodápolis', uf: 'MS', ibge: '5003454' }
-,      { nome: 'Dilermando de Aguiar', uf: 'RS', ibge: '4306379' }
-,      { nome: 'Dourados', uf: 'MS', ibge: '5003702' }
-,      { nome: 'Epitaciolândia', uf: 'AC', ibge: '1200252' }
-,      { nome: 'Ermo', uf: 'SC', ibge: '4205191' }
-,      { nome: 'Faxinal dos Guedes', uf: 'SC', ibge: '4205308' }
-,      { nome: 'Fazenda Rio Grande', uf: 'PR', ibge: '4107652' }
-,      { nome: 'Frei Rogério', uf: 'SC', ibge: '4205555' }
-,      { nome: 'General Carneiro', uf: 'PR', ibge: '4108502' }
-,      { nome: 'Ilhota', uf: 'SC', ibge: '4207106' }
-,      { nome: 'Itagi', uf: 'BA', ibge: '2915106' }
-,      { nome: 'Itaguara', uf: 'MG', ibge: '3132206' }
-,      { nome: 'Jaborá', uf: 'SC', ibge: '4208609' }
-,      { nome: 'Jaraguá do Sul', uf: 'SC', ibge: '4208906' }
-,      { nome: 'Lages', uf: 'SC', ibge: '4209300' }
-,      { nome: 'Lagoa Santa', uf: 'MG', ibge: '3137601' }
-,      { nome: 'Lagoa da Prata', uf: 'MG', ibge: '3137205' }
-,      { nome: 'Lucas do Rio Verde', uf: 'MT', ibge: '5105259' }
-,      { nome: 'Major Gercino', uf: 'SC', ibge: '4210209' }
-,      { nome: 'Manacapuru', uf: 'AM', ibge: '1302504' }
-,      { nome: 'Mandaguaçu', uf: 'PR', ibge: '4114104' }
-,      { nome: 'Mantena', uf: 'MG', ibge: '3139607' }
-,      { nome: 'Maracaju', uf: 'MS', ibge: '5005400' }
-,      { nome: 'Monte Carlo', uf: 'SC', ibge: '4211058' }
-,      { nome: 'Morro Grande', uf: 'SC', ibge: '4211256' }
-,      { nome: 'Mundo Novo', uf: 'MS', ibge: '5005681' }
-,      { nome: 'Nepomuceno', uf: 'MG', ibge: '3144607' }
-,      { nome: 'Nova Andradina', uf: 'MS', ibge: '5006200' }
-,      { nome: 'Nova Trento', uf: 'SC', ibge: '4211504' }
-,      { nome: 'Orlândia', uf: 'SP', ibge: '3534302' }
-,      { nome: 'Ortigueira', uf: 'PR', ibge: '4117305' }
-,      { nome: 'Otacílio Costa', uf: 'SC', ibge: '4211751' }
-,      { nome: 'Ouro Branco', uf: 'MG', ibge: '3145901' }
-,      { nome: 'Palmas', uf: 'PR', ibge: '4117602' }
-,      { nome: 'Paulo Frontin', uf: 'PR', ibge: '4118709' }
-,      { nome: 'Paulo Lopes', uf: 'SC', ibge: '4212304' }
-,      { nome: 'Pedras Grandes', uf: 'SC', ibge: '4212403' }
-,      { nome: 'Petrolândia', uf: 'SC', ibge: '4212700' }
-,      { nome: 'Pinheiral', uf: 'RJ', ibge: '3303955' }
-,      { nome: 'Porto União', uf: 'SC', ibge: '4213609' }
-,      { nome: 'Pouso Redondo', uf: 'SC', ibge: '4213708' }
-,      { nome: 'Rancho Queimado', uf: 'SC', ibge: '4214300' }
-,      { nome: 'Rio Brilhante', uf: 'MS', ibge: '5007208' }
-,      { nome: 'Rio Verde de Mato Grosso', uf: 'MS', ibge: '5007406' }
-,      { nome: 'Sabáudia', uf: 'PR', ibge: '4122701' }
-,      { nome: 'Sacramento', uf: 'MG', ibge: '3156908' }
-,      { nome: 'Santa Cecília', uf: 'SC', ibge: '4215505' }
-,      { nome: 'Santa Fé do Sul', uf: 'SP', ibge: '3546603' }
-,      { nome: 'Santa Terezinha', uf: 'SC', ibge: '4215679' }
-,      { nome: 'Santana da Vargem', uf: 'MG', ibge: '3158300' }
-,      { nome: 'Santo Amaro da Imperatriz', uf: 'SC', ibge: '4215703' }
-,      { nome: 'Sapezal', uf: 'MT', ibge: '5107875' }
-,      { nome: 'Schroeder', uf: 'SC', ibge: '4217402' }
-,      { nome: 'Sertão Santana', uf: 'RS', ibge: '4320552' }
-,      { nome: 'Sombrio', uf: 'SC', ibge: '4217709' }
-,      { nome: 'São Jerônimo da Serra', uf: 'PR', ibge: '4124707' }
-,      { nome: 'São Joaquim', uf: 'SC', ibge: '4216503' }
-,      { nome: 'São João Batista', uf: 'SC', ibge: '4216305' }
-,      { nome: 'São Ludgero', uf: 'SC', ibge: '4217006' }
-,      { nome: 'Tarauacá', uf: 'AC', ibge: '1200609' }
-,      { nome: 'Torres', uf: 'RS', ibge: '4321501' }
-,      { nome: 'Três Passos', uf: 'RS', ibge: '4321907' }
-,      { nome: 'Urussanga', uf: 'SC', ibge: '4219002' }
-,      { nome: 'Varginha', uf: 'MG', ibge: '3170701' }
-,      { nome: 'Vila Rica', uf: 'MT', ibge: '5108600' }
-,      { nome: 'Águas Mornas', uf: 'SC', ibge: '4200606' }
+      { nome: 'Acrelândia', uf: 'AC', ibge: '1200013' },
+      { nome: 'Aguaí', uf: 'SP', ibge: '3500303' },
+      { nome: 'Águas Mornas', uf: 'SC', ibge: '4200606' },
+      { nome: 'Agudos do Sul', uf: 'PR', ibge: '4100301' },
+      { nome: 'Alfenas', uf: 'MG', ibge: '3101607' },
+      { nome: 'Almirante Tamandaré', uf: 'PR', ibge: '4100400' },
+      { nome: 'Alterosa', uf: 'MG', ibge: '3102001' },
+      { nome: 'Ametista do Sul', uf: 'RS', ibge: '4300646' },
+      { nome: 'Angelina', uf: 'SC', ibge: '4200903' },
+      { nome: 'Antônio Carlos', uf: 'SC', ibge: '4201208' },
+      { nome: 'Arroio do Tigre', uf: 'RS', ibge: '4301206' },
+      { nome: 'Arvoredo', uf: 'SC', ibge: '4201653' },
+      { nome: 'Atalanta', uf: 'SC', ibge: '4201802' },
+      { nome: 'Balneário Gaivota', uf: 'SC', ibge: '4202073' },
+      { nome: 'Bandeira do Sul', uf: 'MG', ibge: '3105301' },
+      { nome: 'Bandeirantes', uf: 'PR', ibge: '4102406' },
+      { nome: 'Barracão', uf: 'PR', ibge: '4102604' },
+      { nome: 'Bela Vista do Toldo', uf: 'SC', ibge: '4202131' },
+      { nome: 'Boa Esperança', uf: 'MG', ibge: '3107109' },
+      { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
+      { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
+      { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
+      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
+      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
+      { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
+      { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
+      { nome: 'Caarapó', uf: 'MS', ibge: '5002407' },
+      { nome: 'Cachoeiras de Macacu', uf: 'RJ', ibge: '3300803' },
+      { nome: 'Campo Alegre', uf: 'SC', ibge: '4203303' },
+      { nome: 'Campo Magro', uf: 'PR', ibge: '4104253' },
+      { nome: 'Campos Gerais', uf: 'MG', ibge: '3111606' },
+      { nome: 'Candiota', uf: 'RS', ibge: '4304358' },
+      { nome: 'Canelinha', uf: 'SC', ibge: '4203709' },
+      { nome: 'Capão do Leão', uf: 'RS', ibge: '4304663' },
+      { nome: 'Capitão Leônidas Marques', uf: 'PR', ibge: '4104600' },
+      { nome: 'Cássia dos Coqueiros', uf: 'SP', ibge: '3510906' },
+      { nome: 'Celso Ramos', uf: 'SC', ibge: '4204152' },
+      { nome: 'Cláudio', uf: 'MG', ibge: '3116605' },
+      { nome: 'Congonhinhas', uf: 'PR', ibge: '4106001' },
+      { nome: 'Conselheiro Lafaiete', uf: 'MG', ibge: '3118304' },
+      { nome: 'Coronel Martins', uf: 'SC', ibge: '4204459' },
+      { nome: 'Correia Pinto', uf: 'SC', ibge: '4204558' },
+      { nome: 'Corumbataí', uf: 'SP', ibge: '3512704' },
+      { nome: 'Cruzeiro do Sul', uf: 'AC', ibge: '1200203' },
+      { nome: 'Cunhataí', uf: 'SC', ibge: '4204756' },
+      { nome: 'Curitibanos', uf: 'SC', ibge: '4204806' },
+      { nome: 'Deodápolis', uf: 'MS', ibge: '5003454' },
+      { nome: 'Dilermando de Aguiar', uf: 'RS', ibge: '4306379' },
+      { nome: 'Dourados', uf: 'MS', ibge: '5003702' },
+      { nome: 'Epitaciolândia', uf: 'AC', ibge: '1200252' },
+      { nome: 'Ermo', uf: 'SC', ibge: '4205191' },
+      { nome: 'Faxinal dos Guedes', uf: 'SC', ibge: '4205308' },
+      { nome: 'Fazenda Rio Grande', uf: 'PR', ibge: '4107652' },
+      { nome: 'Frei Rogério', uf: 'SC', ibge: '4205555' },
+      { nome: 'General Carneiro', uf: 'PR', ibge: '4108502' },
+      { nome: 'Ilhota', uf: 'SC', ibge: '4207106' },
+      { nome: 'Itagi', uf: 'BA', ibge: '2915106' },
+      { nome: 'Itaguara', uf: 'MG', ibge: '3132206' },
+      { nome: 'Jaborá', uf: 'SC', ibge: '4208609' },
+      { nome: 'Jaraguá do Sul', uf: 'SC', ibge: '4208906' },
+      { nome: 'Lages', uf: 'SC', ibge: '4209300' },
+      { nome: 'Lagoa da Prata', uf: 'MG', ibge: '3137205' },
+      { nome: 'Lagoa Santa', uf: 'MG', ibge: '3137601' },
+      { nome: 'Lucas do Rio Verde', uf: 'MT', ibge: '5105259' },
+      { nome: 'Major Gercino', uf: 'SC', ibge: '4210209' },
+      { nome: 'Manacapuru', uf: 'AM', ibge: '1302504' },
+      { nome: 'Mandaguaçu', uf: 'PR', ibge: '4114104' },
+      { nome: 'Mantena', uf: 'MG', ibge: '3139607' },
+      { nome: 'Maracaju', uf: 'MS', ibge: '5005400' },
+      { nome: 'Monte Carlo', uf: 'SC', ibge: '4211058' },
+      { nome: 'Morro Grande', uf: 'SC', ibge: '4211256' },
+      { nome: 'Mundo Novo', uf: 'MS', ibge: '5005681' },
+      { nome: 'Nepomuceno', uf: 'MG', ibge: '3144607' },
+      { nome: 'Nova Andradina', uf: 'MS', ibge: '5006200' },
+      { nome: 'Nova Trento', uf: 'SC', ibge: '4211504' },
+      { nome: 'Orlândia', uf: 'SP', ibge: '3534302' },
+      { nome: 'Ortigueira', uf: 'PR', ibge: '4117305' },
+      { nome: 'Otacílio Costa', uf: 'SC', ibge: '4211751' },
+      { nome: 'Ouro Branco', uf: 'MG', ibge: '3145901' },
+      { nome: 'Palmas', uf: 'PR', ibge: '4117602' },
+      { nome: 'Paulo Frontin', uf: 'PR', ibge: '4118709' },
+      { nome: 'Paulo Lopes', uf: 'SC', ibge: '4212304' },
+      { nome: 'Pedras Grandes', uf: 'SC', ibge: '4212403' },
+      { nome: 'Petrolândia', uf: 'SC', ibge: '4212700' },
+      { nome: 'Pinheiral', uf: 'RJ', ibge: '3303955' },
+      { nome: 'Porto União', uf: 'SC', ibge: '4213609' },
+      { nome: 'Pouso Redondo', uf: 'SC', ibge: '4213708' },
+      { nome: 'Rancho Queimado', uf: 'SC', ibge: '4214300' },
+      { nome: 'Rio Brilhante', uf: 'MS', ibge: '5007208' },
+      { nome: 'Rio Verde de Mato Grosso', uf: 'MS', ibge: '5007406' },
+      { nome: 'Sabáudia', uf: 'PR', ibge: '4122701' },
+      { nome: 'Sacramento', uf: 'MG', ibge: '3156908' },
+      { nome: 'Santa Cecília', uf: 'SC', ibge: '4215505' },
+      { nome: 'Santa Fé do Sul', uf: 'SP', ibge: '3546603' },
+      { nome: 'Santa Terezinha', uf: 'SC', ibge: '4215679' },
+      { nome: 'Santana da Vargem', uf: 'MG', ibge: '3158300' },
+      { nome: 'Santo Amaro da Imperatriz', uf: 'SC', ibge: '4215703' },
+      { nome: 'São Jerônimo da Serra', uf: 'PR', ibge: '4124707' },
+      { nome: 'São João Batista', uf: 'SC', ibge: '4216305' },
+      { nome: 'São Joaquim', uf: 'SC', ibge: '4216503' },
+      { nome: 'São Ludgero', uf: 'SC', ibge: '4217006' },
+      { nome: 'Sapezal', uf: 'MT', ibge: '5107875' },
+      { nome: 'Schroeder', uf: 'SC', ibge: '4217402' },
+      { nome: 'Sertão Santana', uf: 'RS', ibge: '4320552' },
+      { nome: 'Sombrio', uf: 'SC', ibge: '4217709' },
+      { nome: 'Tarauacá', uf: 'AC', ibge: '1200609' },
+      { nome: 'Torres', uf: 'RS', ibge: '4321501' },
+      { nome: 'Três Passos', uf: 'RS', ibge: '4321907' },
+      { nome: 'Urussanga', uf: 'SC', ibge: '4219002' },
+      { nome: 'Varginha', uf: 'MG', ibge: '3170701' },
+      { nome: 'Vila Rica', uf: 'MT', ibge: '5108600' }
     ]
   }
 };
+

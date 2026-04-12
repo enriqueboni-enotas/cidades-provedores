@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'dsf',
   nome: 'DSF',
   empresa: 'DSF',
@@ -26,9 +26,9 @@ var provedorDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\nEle possui geralmente 9 dígitos (somente números).\nExemplo válido: 631940000',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 9 dígitos (somente números).\r\nExemplo válido: 631940000',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     enviaEmailCliente: false,
     autenticidadeNota: {
@@ -61,8 +61,9 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'dsf': [
-      { nome: 'Campo Grande', uf: 'MS', ibge: '5002704' }
-,      { nome: 'Nova Iguaçu', uf: 'RJ', ibge: '3303500' }
+      { nome: 'Campo Grande', uf: 'MS', ibge: '5002704' },
+      { nome: 'Nova Iguaçu', uf: 'RJ', ibge: '3303500' }
     ]
   }
 };
+

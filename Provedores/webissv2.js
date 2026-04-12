@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'webissv2',
   nome: 'WebISSv2',
   empresa: 'WebISSv2',
@@ -22,26 +22,26 @@ var provedorDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\n\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\nExemplos válidos: 105, 1.05, 01.05 ou 0105',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 105, 1.05, 01.05 ou 0105',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\n \n Você precisa preencher o item da lista de serviço mantendo a formatação.\n Exemplos válidos:  105, 1.05, 01.05 ou 0105',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos:  105, 1.05, 01.05 ou 0105',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
+      urlVerificacao: 'https://caldasnovasgo.webiss.com.br/externo/nfse/validar',
       UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
       UsaCpfCnpjTomador: false,
       UsaInscricaoMunicipalPrestador: false,
       UsaNumeroNota: true,
-      UsaValorNota: false,
-      urlVerificacao: 'https://caldasnovasgo.webiss.com.br/externo/nfse/validar'
+      UsaValorNota: false
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -64,76 +64,77 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'webissv2': [
-      { nome: 'Alagoinhas', uf: 'BA', ibge: '2900702' }
-,      { nome: 'Alta Floresta D\'Oeste', uf: 'RO', ibge: '1100015' }
-,      { nome: 'Aquidabã', uf: 'SE', ibge: '2800209' }
-,      { nome: 'Aracaju', uf: 'SE', ibge: '2800308' }
-,      { nome: 'Araguatins', uf: 'TO', ibge: '1702208' }
-,      { nome: 'Araguaína', uf: 'TO', ibge: '1702109' }
-,      { nome: 'Arcos', uf: 'MG', ibge: '3104205' }
-,      { nome: 'Bagé', uf: 'RS', ibge: '4301602' }
-,      { nome: 'Barbacena', uf: 'MG', ibge: '3105608' }
-,      { nome: 'Barra do Piraí', uf: 'RJ', ibge: '3300308' }
-,      { nome: 'Barra dos Coqueiros', uf: 'SE', ibge: '2800605' }
-,      { nome: 'Bayeux', uf: 'PB', ibge: '2501807' }
-,      { nome: 'Brumado', uf: 'BA', ibge: '2904605' }
-,      { nome: 'Cacoal', uf: 'RO', ibge: '1100049' }
-,      { nome: 'Caldas Novas', uf: 'GO', ibge: '5204508' }
-,      { nome: 'Campestre', uf: 'MG', ibge: '3111002' }
-,      { nome: 'Campina Grande', uf: 'PB', ibge: '2504009' }
-,      { nome: 'Candeias', uf: 'BA', ibge: '2906501' }
-,      { nome: 'Canindé de São Francisco', uf: 'SE', ibge: '2801207' }
-,      { nome: 'Catu', uf: 'BA', ibge: '2907509' }
-,      { nome: 'Cruz das Almas', uf: 'BA', ibge: '2909802' }
-,      { nome: 'Cássia', uf: 'MG', ibge: '3115102' }
-,      { nome: 'Dianópolis', uf: 'TO', ibge: '1707009' }
-,      { nome: 'Entre Rios', uf: 'BA', ibge: '2910503' }
-,      { nome: 'Estância', uf: 'SE', ibge: '2802106' }
-,      { nome: 'Extrema', uf: 'MG', ibge: '3125101' }
-,      { nome: 'Feira de Santana', uf: 'BA', ibge: '2910800' }
-,      { nome: 'Formiga', uf: 'MG', ibge: '3126109' }
-,      { nome: 'Foz do Iguaçu', uf: 'PR', ibge: '4108304' }
-,      { nome: 'Guanambi', uf: 'BA', ibge: '2911709' }
-,      { nome: 'Gurupi', uf: 'TO', ibge: '1709500' }
-,      { nome: 'Itabaiana', uf: 'SE', ibge: '2802908' }
-,      { nome: 'Itabuna', uf: 'BA', ibge: '2914802' }
-,      { nome: 'Itacaré', uf: 'BA', ibge: '2914901' }
-,      { nome: 'Itapetinga', uf: 'BA', ibge: '2916401' }
-,      { nome: 'Japaratuba', uf: 'SE', ibge: '2803302' }
-,      { nome: 'Jaíba', uf: 'MG', ibge: '3135050' }
-,      { nome: 'Juazeiro', uf: 'BA', ibge: '2918407' }
-,      { nome: 'Lagarto', uf: 'SE', ibge: '2803500' }
-,      { nome: 'Maraú', uf: 'BA', ibge: '2920700' }
-,      { nome: 'Medeiros', uf: 'MG', ibge: '3141306' }
-,      { nome: 'Miguel Pereira', uf: 'RJ', ibge: '3302908' }
-,      { nome: 'Nossa Senhora do Socorro', uf: 'SE', ibge: '2804805' }
-,      { nome: 'Pains', uf: 'MG', ibge: '3146503' }
-,      { nome: 'Palmas', uf: 'TO', ibge: '1721000' }
-,      { nome: 'Paraíso do Tocantins', uf: 'TO', ibge: '1716109' }
-,      { nome: 'Passos', uf: 'MG', ibge: '3147907' }
-,      { nome: 'Patos', uf: 'PB', ibge: '2510808' }
-,      { nome: 'Perdões', uf: 'MG', ibge: '3149903' }
-,      { nome: 'Pitangui', uf: 'MG', ibge: '3151404' }
-,      { nome: 'Porteirinha', uf: 'MG', ibge: '3152204' }
-,      { nome: 'Porto Nacional', uf: 'TO', ibge: '1718204' }
-,      { nome: 'Porto Seguro', uf: 'BA', ibge: '2925303' }
-,      { nome: 'Propriá', uf: 'SE', ibge: '2805703' }
-,      { nome: 'Queimados', uf: 'RJ', ibge: '3304144' }
-,      { nome: 'Rio Bonito', uf: 'RJ', ibge: '3304300' }
-,      { nome: 'Rolim de Moura', uf: 'RO', ibge: '1100288' }
-,      { nome: 'Sanclerlândia', uf: 'GO', ibge: '5219001' }
-,      { nome: 'Santa Bárbara', uf: 'MG', ibge: '3157203' }
-,      { nome: 'Santa Maria Madalena', uf: 'RJ', ibge: '3304607' }
-,      { nome: 'Santana do Paraíso', uf: 'MG', ibge: '3158953' }
-,      { nome: 'Santo Antônio de Jesus', uf: 'BA', ibge: '2928703' }
-,      { nome: 'Senhor do Bonfim', uf: 'BA', ibge: '2930105' }
-,      { nome: 'São Cristóvão', uf: 'SE', ibge: '2806701' }
-,      { nome: 'São Gonçalo do Pará', uf: 'MG', ibge: '3161809' }
-,      { nome: 'São Lourenço', uf: 'MG', ibge: '3163706' }
-,      { nome: 'Tobias Barreto', uf: 'SE', ibge: '2807402' }
-,      { nome: 'Uberaba', uf: 'MG', ibge: '3170107' }
-,      { nome: 'Urupá', uf: 'RO', ibge: '1101708' }
-,      { nome: 'Vilhena', uf: 'RO', ibge: '1100304' }
+      { nome: 'Alagoinhas', uf: 'BA', ibge: '2900702' },
+      { nome: 'Alta Floresta D\'Oeste', uf: 'RO', ibge: '1100015' },
+      { nome: 'Aquidabã', uf: 'SE', ibge: '2800209' },
+      { nome: 'Aracaju', uf: 'SE', ibge: '2800308' },
+      { nome: 'Araguaína', uf: 'TO', ibge: '1702109' },
+      { nome: 'Araguatins', uf: 'TO', ibge: '1702208' },
+      { nome: 'Arcos', uf: 'MG', ibge: '3104205' },
+      { nome: 'Bagé', uf: 'RS', ibge: '4301602' },
+      { nome: 'Barbacena', uf: 'MG', ibge: '3105608' },
+      { nome: 'Barra do Piraí', uf: 'RJ', ibge: '3300308' },
+      { nome: 'Barra dos Coqueiros', uf: 'SE', ibge: '2800605' },
+      { nome: 'Bayeux', uf: 'PB', ibge: '2501807' },
+      { nome: 'Brumado', uf: 'BA', ibge: '2904605' },
+      { nome: 'Cacoal', uf: 'RO', ibge: '1100049' },
+      { nome: 'Caldas Novas', uf: 'GO', ibge: '5204508' },
+      { nome: 'Campestre', uf: 'MG', ibge: '3111002' },
+      { nome: 'Campina Grande', uf: 'PB', ibge: '2504009' },
+      { nome: 'Candeias', uf: 'BA', ibge: '2906501' },
+      { nome: 'Canindé de São Francisco', uf: 'SE', ibge: '2801207' },
+      { nome: 'Cássia', uf: 'MG', ibge: '3115102' },
+      { nome: 'Catu', uf: 'BA', ibge: '2907509' },
+      { nome: 'Cruz das Almas', uf: 'BA', ibge: '2909802' },
+      { nome: 'Dianópolis', uf: 'TO', ibge: '1707009' },
+      { nome: 'Entre Rios', uf: 'BA', ibge: '2910503' },
+      { nome: 'Estância', uf: 'SE', ibge: '2802106' },
+      { nome: 'Extrema', uf: 'MG', ibge: '3125101' },
+      { nome: 'Feira de Santana', uf: 'BA', ibge: '2910800' },
+      { nome: 'Formiga', uf: 'MG', ibge: '3126109' },
+      { nome: 'Foz do Iguaçu', uf: 'PR', ibge: '4108304' },
+      { nome: 'Guanambi', uf: 'BA', ibge: '2911709' },
+      { nome: 'Gurupi', uf: 'TO', ibge: '1709500' },
+      { nome: 'Itabaiana', uf: 'SE', ibge: '2802908' },
+      { nome: 'Itabuna', uf: 'BA', ibge: '2914802' },
+      { nome: 'Itacaré', uf: 'BA', ibge: '2914901' },
+      { nome: 'Itapetinga', uf: 'BA', ibge: '2916401' },
+      { nome: 'Jaíba', uf: 'MG', ibge: '3135050' },
+      { nome: 'Japaratuba', uf: 'SE', ibge: '2803302' },
+      { nome: 'Juazeiro', uf: 'BA', ibge: '2918407' },
+      { nome: 'Lagarto', uf: 'SE', ibge: '2803500' },
+      { nome: 'Maraú', uf: 'BA', ibge: '2920700' },
+      { nome: 'Medeiros', uf: 'MG', ibge: '3141306' },
+      { nome: 'Miguel Pereira', uf: 'RJ', ibge: '3302908' },
+      { nome: 'Nossa Senhora do Socorro', uf: 'SE', ibge: '2804805' },
+      { nome: 'Pains', uf: 'MG', ibge: '3146503' },
+      { nome: 'Palmas', uf: 'TO', ibge: '1721000' },
+      { nome: 'Paraíso do Tocantins', uf: 'TO', ibge: '1716109' },
+      { nome: 'Passos', uf: 'MG', ibge: '3147907' },
+      { nome: 'Patos', uf: 'PB', ibge: '2510808' },
+      { nome: 'Perdões', uf: 'MG', ibge: '3149903' },
+      { nome: 'Pitangui', uf: 'MG', ibge: '3151404' },
+      { nome: 'Porteirinha', uf: 'MG', ibge: '3152204' },
+      { nome: 'Porto Nacional', uf: 'TO', ibge: '1718204' },
+      { nome: 'Porto Seguro', uf: 'BA', ibge: '2925303' },
+      { nome: 'Propriá', uf: 'SE', ibge: '2805703' },
+      { nome: 'Queimados', uf: 'RJ', ibge: '3304144' },
+      { nome: 'Rio Bonito', uf: 'RJ', ibge: '3304300' },
+      { nome: 'Rolim de Moura', uf: 'RO', ibge: '1100288' },
+      { nome: 'Sanclerlândia', uf: 'GO', ibge: '5219001' },
+      { nome: 'Santa Bárbara', uf: 'MG', ibge: '3157203' },
+      { nome: 'Santa Maria Madalena', uf: 'RJ', ibge: '3304607' },
+      { nome: 'Santana do Paraíso', uf: 'MG', ibge: '3158953' },
+      { nome: 'Santo Antônio de Jesus', uf: 'BA', ibge: '2928703' },
+      { nome: 'São Cristóvão', uf: 'SE', ibge: '2806701' },
+      { nome: 'São Gonçalo do Pará', uf: 'MG', ibge: '3161809' },
+      { nome: 'São Lourenço', uf: 'MG', ibge: '3163706' },
+      { nome: 'Senhor do Bonfim', uf: 'BA', ibge: '2930105' },
+      { nome: 'Tobias Barreto', uf: 'SE', ibge: '2807402' },
+      { nome: 'Uberaba', uf: 'MG', ibge: '3170107' },
+      { nome: 'Urupá', uf: 'RO', ibge: '1101708' },
+      { nome: 'Vilhena', uf: 'RO', ibge: '1100304' }
     ]
   }
 };
+

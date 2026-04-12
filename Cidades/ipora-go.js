@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'ipora-go',
   nome: 'Iporá',
   uf: 'GO',
@@ -30,14 +30,14 @@ var cidadeDetalhe = {
     usaItemListaServico: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
+      urlVerificacao: 'https://trindade.centi.com.br/notafiscal/verificar',
       UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
       UsaCpfCnpjTomador: false,
       UsaInscricaoMunicipalPrestador: false,
       UsaNumeroNota: true,
-      UsaValorNota: false,
-      urlVerificacao: 'https://trindade.centi.com.br/notafiscal/verificar'
+      UsaValorNota: false
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -59,3 +59,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

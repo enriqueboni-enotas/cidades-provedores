@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'rio-grande-rs',
   nome: 'Rio Grande',
   uf: 'RS',
@@ -23,3 +23,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

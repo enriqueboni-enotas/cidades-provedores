@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'macaubal-sp',
   nome: 'Macaubal',
   uf: 'SP',
@@ -42,3 +42,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

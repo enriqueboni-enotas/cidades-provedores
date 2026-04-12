@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'ipigua-sp',
   nome: 'Ipiguá',
   uf: 'SP',
@@ -41,3 +41,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

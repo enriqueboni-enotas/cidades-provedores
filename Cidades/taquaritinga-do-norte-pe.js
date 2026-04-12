@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'taquaritinga-do-norte-pe',
   nome: 'Taquaritinga do Norte',
   uf: 'PE',
@@ -38,9 +38,9 @@ var cidadeDetalhe = {
     usaCNAE: false,
     usaItemListaServico: false,
     usaNaturezaOperacao: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\n\nExemplo válido: 204589',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n\n– O código de serviço é localizado no portal da prefreitura, exemplos válidos: 1323 e 1325',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– O código de serviço é localizado no portal da prefreitura, exemplos válidos: 1323 e 1325',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -50,3 +50,4 @@ var cidadeDetalhe = {
     enviaEmailCliente: false
   }
 };
+

@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'matozinhos-mg',
   nome: 'Matozinhos',
   uf: 'MG',
@@ -20,3 +20,4 @@ var cidadeDetalhe = {
     }
   }
 };
+

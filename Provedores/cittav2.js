@@ -1,4 +1,4 @@
-var provedorDetalhe = {
+﻿var provedorDetalhe = {
   id: 'cittav2',
   nome: 'CittaV2',
   empresa: 'CittaV2',
@@ -28,7 +28,7 @@ var provedorDetalhe = {
     usaCNAE: false,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\n\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplos: 060401 e 170101',
     suportaEmissaoNFeSemCliente: true,
@@ -57,10 +57,11 @@ var provedorDetalhe = {
   },
   municipiosLista: {
     'cittav2': [
-      { nome: 'Casca', uf: 'RS', ibge: '4304903' }
-,      { nome: 'David Canabarro', uf: 'RS', ibge: '4306304' }
-,      { nome: 'Nova Araçá', uf: 'RS', ibge: '4312807' }
-,      { nome: 'Paraí', uf: 'RS', ibge: '4314001' }
+      { nome: 'Casca', uf: 'RS', ibge: '4304903' },
+      { nome: 'David Canabarro', uf: 'RS', ibge: '4306304' },
+      { nome: 'Nova Araçá', uf: 'RS', ibge: '4312807' },
+      { nome: 'Paraí', uf: 'RS', ibge: '4314001' }
     ]
   }
 };
+

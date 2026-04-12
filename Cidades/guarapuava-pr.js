@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'guarapuava-pr',
   nome: 'Guarapuava',
   uf: 'PR',
@@ -13,11 +13,11 @@ var cidadeDetalhe = {
     infoAdicional: 'Propriedades de configuração:\n					ValidaCpfCnpjTomador => Valida cpfCnpj do Tomador\n					IpmV2 => Usa Versão V2 do IPM\n					EnviaCodigoAtividade => Envia Código da Atividade\n					EnviarAliquota4CasasDecimais => Envia formatado em 4 casas decimais\n					NaoUsaUnidadeServico => seta campo unidade servico para vazio\n					NaoSuportaCancelarNFe => quando prefeitura não aceita cancelamento',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://guarapuava.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao'
+        recepcaoLote: 'System.Xml.XmlElement'
       },
       producao: {
-        recepcaoLote: 'https://guarapuava.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao',
-        consultaRps: 'https://nfse-guarapuava.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=padrao',
+        recepcaoLote: 'System.Xml.XmlElement',
+        consultaRps: 'System.Xml.XmlElement',
         downloadPDF: 'C:\tools\Html2Pdf\bin\wkhtmltopdf.exe'
       }
     }
@@ -38,8 +38,8 @@ var cidadeDetalhe = {
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaNBS: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\n\nExemplo válido: 11356083',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 1 a 10 dígitos (somente números).\r\n\r\nExemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n                                                                    Ele possui geralmente 3 a 9 dígitos (somente números).\r\n                                                                    Exemplo válido: 802, 1412, 75001001, 711110000',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
@@ -76,3 +76,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

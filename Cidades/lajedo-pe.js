@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'lajedo-pe',
   nome: 'Lajedo',
   uf: 'PE',
@@ -25,8 +25,8 @@ var cidadeDetalhe = {
     assinaturaDigital: 2,
     suportaCancelamentoNFe: true,
     usaCodigoServicoMunicipal: true,
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \nEm algumas cidades esse código é conhecido como código de tributação.',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\n \n Você precisa preencher o item da lista de serviço mantendo a formatação.\n Exemplos válidos: 17.02 ou 08.02',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação.',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
     enviaEmailCliente: true,
     numeroRpsDeveSerSequencial: false,
@@ -50,3 +50,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+

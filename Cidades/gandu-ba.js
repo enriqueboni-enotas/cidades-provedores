@@ -1,4 +1,4 @@
-var cidadeDetalhe = {
+﻿var cidadeDetalhe = {
   id: 'gandu-ba',
   nome: 'Gandu',
   uf: 'BA',
@@ -36,7 +36,7 @@ var cidadeDetalhe = {
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter até 9 dígitos somente números. Exemplo: 17450.',
-    helpCodigoServicoMunicipal: 'O Código do Serviço Municipal (Atividade) deve conter até no máximo 10 dígitos. \nNormalmente encontrado no portal da prefeitura.',
+    helpCodigoServicoMunicipal: 'O Código do Serviço Municipal (Atividade) deve conter até no máximo 10 dígitos. \r\nNormalmente encontrado no portal da prefeitura.',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
@@ -51,3 +51,4 @@ var cidadeDetalhe = {
     ]
   }
 };
+
