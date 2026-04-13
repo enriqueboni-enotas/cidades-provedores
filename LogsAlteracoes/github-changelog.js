@@ -1,5 +1,24 @@
 var changelogData = [
   {
+    tag: '13/04/2026',
+    titulo: 'Segunda-feira — 13 de Abril',
+    data: '13/04/2026',
+    itens: [
+      {
+        icon: '🌐',
+        destaque: 'Cidade de prestação via metadados para exterior',
+        texto:
+          'Novo método ResolverLocalPrestacaoServicoFixada no ProvedorNFeServicoBase que permite configurar o código e nome da cidade de prestação de serviço via ExtendedProperties da empresa. Isso resolve cenários de emissão para o exterior onde a cidade de prestação precisa ser fixada como 9999999 (Exterior) com base nos metadados da empresa, sem depender de regras hardcoded.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Limpeza de mensagens de erro no FgMaiss',
+        texto:
+          'Implementa o método LimparMensagemErro que remove tags HTML, caracteres especiais e formatação desnecessária das mensagens de erro retornadas pelas prefeituras no provedor FgMaiss. Aplicado nas operações de Cancelar, Recepcionar e RecepcionarV2, melhorando a legibilidade das mensagens exibidas ao usuário.',
+      },
+    ],
+  },
+  {
     tag: '12/04/2026',
     titulo: 'Domingo — 12 de Abril',
     data: '12/04/2026',
@@ -255,37 +274,6 @@ var changelogData = [
         destaque: 'Nova coleção SempreEnviaAliquotaIssEmpresasSimplesNacional',
         texto:
           'Cria nova coleção no provedor GOVBRv3 que lista municípios onde empresas do Simples Nacional devem sempre enviar a alíquota ISS. Também ajusta a lógica de pAliq no RecepcionarLote para considerar essa nova regra, e resolve natureza de operação para subscription específica no NfseNacionalV2.',
-      },
-    ],
-  },
-  {
-    tag: '31/03/2026',
-    titulo: 'Segunda-feira — 31 de Março',
-    data: '31/03/2026',
-    itens: [
-      {
-        icon: '🌐',
-        destaque: 'Suporte IBS/CBS em Barueri layout 4.2',
-        texto:
-          'Implementa suporte à emissão com IBS/CBS no layout 4.2 de Barueri. Inclui busca condicional de XML do portal nacional quando a nota tem dados de IBS/CBS, null-check em DTOs para evitar NullReferenceException, e seleção dinâmica da versão do layout baseada na presença de IBS/CBS. Remove lógica de desconto hardcoded para empresa específica em Juiz de Fora.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Nova regra de alíquota ISS no GOVBRv3',
-        texto:
-          'Adiciona regra de alíquota ISS para municípios específicos no provedor GOVBRv3. Santa Terezinha de Itaipu/PR foi adicionada à lista de municípios sem suporte a cancelamento. Também corrige casing do XML para NIF (CpfCnpj), adiciona lógica de resolução de código de serviço municipal no EeL, e extrai chave de acesso do XML no SIGISSv5.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Paranapanema/SP adicionada ao GOVBRv3',
-        texto:
-          'Configuração inicial do município de Paranapanema/SP no provedor GOVBRv3 com URLs de homologação e produção. Essa configuração foi posteriormente alterada para GOVBRv2 no dia 01/04.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualização Newtonsoft.Json e melhorias de validação',
-        texto:
-          'Atualiza dependência Newtonsoft.Json para versão 13.0.3. Melhora tratamento de endereço exterior com novas propriedades e validações. Adiciona ExigibilidadeSuspensaNFeServico e NumeroGerenciado ao modelo de dados. Melhora tratamento de FaultException no RecepcionarLoteNFe do WebISS.',
       },
     ],
   },
