@@ -18,7 +18,8 @@ var changelogData = [
       },
       {
         icon: '🆕',
-        destaque: 'São João Batista do Glória/MG — consulta por RPS no MemoryV2',
+        destaque:
+          'São João Batista do Glória/MG — consulta por RPS no MemoryV2',
         texto:
           'O município de São João Batista do Glória/MG foi migrado recentemente para o provedor MemoryV2, mas faltava a operação de consulta individual de nota por número de RPS. Essa operação é essencial para sincronização de notas — quando o sistema precisa verificar se uma nota específica foi processada pela prefeitura. Agora o provedor MemoryV2 suporta essa consulta, resolvendo problemas de notas que ficavam "em emissão" sem retorno.',
       },
@@ -27,7 +28,6 @@ var changelogData = [
         destaque: 'WebFiscoTecnologia — novo web service para FgMaiss',
         texto:
           'Adiciona integração com o web service WebFiscoTecnologia no provedor FgMaiss — esse é um novo sistema de prefeitura que está sendo adotado por alguns municípios. Inclui referências WSDL para envio, consulta e cancelamento de NFS-e, além de novos testes de emissão. Também atualiza configurações de teste para Aracaju/SE com novos endpoints e credenciais.',
-      },
       },
     ],
   },
@@ -74,7 +74,8 @@ var changelogData = [
       },
       {
         icon: '🧮',
-        destaque: 'São Paulo/SP — percentual aproximado de tributos do novo grupo',
+        destaque:
+          'São Paulo/SP — percentual aproximado de tributos do novo grupo',
         texto:
           'Ajuste específico para São Paulo/SP para pegar o percentual aproximado de tributos do novo grupo de informações tributárias. Essa mudança acompanha as novas exigências do portal nacional para o município de São Paulo.',
       },
@@ -110,7 +111,8 @@ var changelogData = [
       },
       {
         icon: '🌐',
-        destaque: 'Adrianópolis/PR, Tangará/SC e Serrania/MG aderem ao portal nacional',
+        destaque:
+          'Adrianópolis/PR, Tangará/SC e Serrania/MG aderem ao portal nacional',
         texto:
           'Três municípios deixaram de usar provedor próprio e passaram a emitir pelo layout nacional de NFS-e. Isso simplifica a emissão para empresas dessas cidades — não precisa mais de integração específica com a prefeitura.',
       },
