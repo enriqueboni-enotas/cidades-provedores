@@ -29,24 +29,24 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 
 ## Etapa 3: Atualizar o Changelog GitHub (últimos 12 dias)
 
-1. Use o GitHub CLI (`gh`) para buscar PRs mergeados no repositório `enotas-org/app-gw` dos últimos 12 dias:
+1. Use os commits da branch `dev` do app-gw local para gerar o changelog. Para cada dia dos últimos 12, liste os commits:
 
    ```bash
-   gh pr list --repo enotas-org/app-gw --state merged --limit 100 --json number,title,mergedAt,author,body
+   git -C "c:\Git-Repositories\app-gw" log origin/dev --after="YYYY-MM-DD" --before="YYYY-MM-DD+1" --oneline --no-merges --format="%h|%s|%an"
    ```
 
-2. Filtre apenas os PRs com `mergedAt` nos últimos 12 dias a partir da data atual.
+   IMPORTANTE: A fonte de dados é a branch `dev` do app-gw, NÃO os PRs do GitHub. Os PRs "Notagateway sync" e "Conflito" contêm múltiplos commits dentro — ao usar a branch dev diretamente, cada commit individual aparece separadamente com sua descrição real.
 
-3. Agrupe os PRs por dia (usando a data de merge, convertida para o fuso horário de Brasília UTC-3).
+2. Agrupe os commits por dia (usando a data do commit, convertida para o fuso horário de Brasília UTC-3).
 
-4. Para cada dia, analise os títulos e bodies dos PRs para gerar itens de changelog no formato existente. Cada item deve ter:
+3. Para cada dia, analise os títulos dos commits para gerar itens de changelog. Commits que começam com "Merged PR XXXX:" vieram do notagateway-sync — use o título do PR e busque o body via `gh pr view XXXX --repo enotas-org/app-gw --json body` para entender o contexto completo. Cada item deve ter:
    - `icon`: um emoji relevante (🏙️ para cidades, 🔧 para correções, 🆕 para novos provedores, 📊 para alíquotas/impostos, 🔗 para URLs, 🌐 para exterior, etc.)
    - `destaque`: título curto e descritivo em português
-   - `texto`: descrição detalhada em português explicando o que mudou, quais cidades/provedores são afetados
+   - `texto`: descrição detalhada e contextualizada em português explicando o que mudou, por que mudou e qual o impacto (estilo do aguardando-deploy-changelog — o N2/CX precisa entender sem conhecer o código)
 
-5. Dias sem PRs devem ter um item com icon '📭', destaque 'Sem alterações' e texto 'Nenhum PR mergeado neste dia.'
+4. Dias sem commits devem ter um item com icon '📭', destaque 'Sem alterações' e texto 'Nenhum commit na dev neste dia.'
 
-6. Reescreva o arquivo `LogsAlteracoes/github-changelog.js` com o array `changelogData` contendo os últimos 12 dias, do mais recente para o mais antigo. O formato é:
+5. Reescreva o arquivo `LogsAlteracoes/github-changelog.js` com o array `changelogData` contendo os últimos 12 dias, do mais recente para o mais antigo. O formato é:
 
    ```javascript
    var changelogData = [
@@ -65,8 +65,8 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
    ];
    ```
 
-7. Os dias da semana em português: Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado.
-8. Os meses em português: Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.
+6. Os dias da semana em português: Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado.
+7. Os meses em português: Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.
 
 ## Etapa 4: Atualizar o Jira Changelog — Tickets CE resolvidos (últimos 12 dias)
 
@@ -290,7 +290,10 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
 - O repositório do app-gw é `c:\Git-Repositories\app-gw` (org: enotas-org/app-gw)
 - Sempre use a branch `dev` do app-gw para pegar os dados mais recentes
 - O changelog deve cobrir SEMPRE os últimos 12 dias a partir da data atual
-- PRs com título "Notagateway sync" ou "Conflito" são merges de sincronização — analise o body deles para extrair as mudanças reais
+- A branch `dev` é produção. O `notagateway-sync` é a branch intermediária onde as mudanças são preparadas antes de ir pra dev.
+- "Últimas Atualizações" (github-changelog) = o que JÁ está na dev (rodando em PRD)
+- "Aguardando Deploy" = o que está no notagateway-sync mas AINDA NÃO na dev
+- Commits que começam com "Merged PR XXXX:" vieram do notagateway-sync — são a principal fonte de alterações do sistema. Sempre buscar o body do PR para entender o contexto.
 - PRs que são apenas scripts SQL (liquibase) ou mudanças de teste podem ser ignorados ou resumidos brevemente
 - Foque nas mudanças que afetam provedores, cidades, emissão de notas, cancelamento, e configurações municipais
 - Escreva tudo em português brasileiro
