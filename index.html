@@ -2803,6 +2803,9 @@
       }
 
       function renderAguardandoDeploy(data) {
+        if (!data || !data.length) {
+          return '<div class="pr-card" style="text-align:center;padding:32px"><div style="font-size:14px;color:var(--muted)">Nenhum commit aguardando deploy — notagateway-sync está sincronizado com dev</div></div>';
+        }
         var totalCommits = data.reduce(function (s, d) { return s + d.itens.length }, 0);
         var h = '<div class="section-title" style="margin-top:0"><span class="num">🚀</span> notagateway-sync → dev (' + totalCommits + ' commits pendentes)</div>';
         h += '<div class="pr-list">';
