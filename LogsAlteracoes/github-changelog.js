@@ -8,26 +8,26 @@ var changelogData = [
         icon: '🌐',
         destaque: 'Cidade de prestação via metadados para exterior',
         texto:
-          'Novo método ResolverLocalPrestacaoServicoFixada no ProvedorNFeServicoBase que permite configurar o código e nome da cidade de prestação de serviço via ExtendedProperties da empresa. Isso resolve cenários de emissão para o exterior onde a cidade de prestação precisa ser fixada como 9999999 (Exterior) com base nos metadados da empresa, sem depender de regras hardcoded.',
+          'Novo método que permite configurar a cidade de prestação de serviço diretamente nos metadados (ExtendedProperties) da empresa — antes essa configuração era feita via regras hardcoded no código. Com essa mudança, quando uma empresa precisa emitir notas com prestação no exterior (código IBGE 9999999), basta configurar nos metadados da empresa sem precisar de deploy. Isso dá mais autonomia ao suporte para resolver casos de emissão exterior sem depender da engenharia.',
       },
       {
         icon: '🔧',
         destaque: 'Limpeza de mensagens de erro no FgMaiss',
         texto:
-          'Implementa o método LimparMensagemErro que remove tags HTML, caracteres especiais e formatação desnecessária das mensagens de erro retornadas pelas prefeituras no provedor FgMaiss. Aplicado nas operações de Cancelar, Recepcionar e RecepcionarV2, melhorando a legibilidade das mensagens exibidas ao usuário.',
+          'As mensagens de erro retornadas pelas prefeituras que usam o provedor FgMaiss vinham com tags HTML, caracteres especiais e formatação que dificultavam a leitura no painel do cliente. Foi criado o método LimparMensagemErro que sanitiza essas mensagens antes de exibir. Aplicado em todas as operações do provedor (Cancelar, Recepcionar e RecepcionarV2), melhorando significativamente a experiência do usuário ao visualizar erros de emissão.',
       },
       {
         icon: '🆕',
-        destaque:
-          'São João Batista do Glória/MG — consulta por RPS no MemoryV2',
+        destaque: 'São João Batista do Glória/MG — consulta por RPS no MemoryV2',
         texto:
-          'Adiciona web service reference para São João Batista do Glória/MG no provedor MemoryV2. Implementa a operação ConsultarNfePorRps que permite consultar notas individuais por número de RPS. Também adiciona novos métodos no ProvedorNFeWS para suportar a consulta de NFS-e.',
+          'O município de São João Batista do Glória/MG foi migrado recentemente para o provedor MemoryV2, mas faltava a operação de consulta individual de nota por número de RPS. Essa operação é essencial para sincronização de notas — quando o sistema precisa verificar se uma nota específica foi processada pela prefeitura. Agora o provedor MemoryV2 suporta essa consulta, resolvendo problemas de notas que ficavam "em emissão" sem retorno.',
       },
       {
         icon: '🆕',
-        destaque: 'WebFiscoTecnologia — novo web service reference',
+        destaque: 'WebFiscoTecnologia — novo web service para FgMaiss',
         texto:
-          'Adiciona referências de web service para o provedor WebFiscoTecnologia no FgMaiss. Atualiza namespaces e endpoints dos contratos de serviço. Inclui novos testes de emissão padrão V1 e atualização de configurações de teste para Aracaju/SE.',
+          'Adiciona integração com o web service WebFiscoTecnologia no provedor FgMaiss — esse é um novo sistema de prefeitura que está sendo adotado por alguns municípios. Inclui referências WSDL para envio, consulta e cancelamento de NFS-e, além de novos testes de emissão. Também atualiza configurações de teste para Aracaju/SE com novos endpoints e credenciais.',
+      },
       },
     ],
   },
