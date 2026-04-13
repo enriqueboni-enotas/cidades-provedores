@@ -64,13 +64,67 @@ var changelogData = [
         icon: '🆕',
         destaque: 'UsaNBS para Hotmart no provedor FgMaiss',
         texto:
-          'Adiciona lógica no método ObterCaracteristicasCore do provedor FgMaiss para determinar dinamicamente se a empresa Hotmart deve enviar o campo NBS. Antes essa configuração era fixa, agora é calculada com base nas características da empresa.',
+          'O provedor FgMaiss agora determina dinamicamente se a empresa Hotmart deve enviar o campo NBS (Nomenclatura Brasileira de Serviços). Antes essa configuração era fixa no código. Agora é calculada com base nas características da empresa no método ObterCaracteristicasCore, dando mais flexibilidade para ativar/desativar o envio de NBS por empresa.',
       },
       {
         icon: '🧮',
         destaque: 'Zera pTotTribFed para Franca/SP e Mogi das Cruzes/SP',
         texto:
-          'Estende a zeragem do percentual de tributos federais (pTotTribFed) para Franca/SP e Mogi das Cruzes/SP. Quando a nota não possui tributos federais discriminados individualmente, o percentual total é zerado para evitar rejeição pela prefeitura, que não aceita o campo preenchido sem os valores detalhados.',
+          'Franca/SP e Mogi das Cruzes/SP estavam rejeitando notas porque o percentual de tributos federais (pTotTribFed) era enviado sem os valores individuais discriminados. Agora, quando a nota não possui tributos federais detalhados, o percentual total é zerado automaticamente para esses municípios, evitando a rejeição.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'São Paulo/SP — percentual aproximado de tributos do novo grupo',
+        texto:
+          'Ajuste específico para São Paulo/SP para pegar o percentual aproximado de tributos do novo grupo de informações tributárias. Essa mudança acompanha as novas exigências do portal nacional para o município de São Paulo.',
+      },
+      {
+        icon: '🗑️',
+        destaque: 'Remoção de código desnecessário',
+        texto:
+          'Limpeza de trechos de código que não eram mais utilizados no fluxo de emissão — reduz complexidade e facilita manutenção futura do provedor.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Correção na extração do número da nota fiscal',
+        texto:
+          'O método de extração do número da nota fiscal estava retornando número incorreto em cenários de consulta por lote, causando divergência entre o número real da nota e o exibido no sistema. Corrigido para não retornar número errado.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'Ativa UsaNovoFormatoPisCofins e consulta por RPS',
+        texto:
+          'O provedor passa a enviar PIS/COFINS no novo formato exigido pelo portal nacional. Também foi criada a operação de consulta individual de nota por RPS, que antes não existia para esse provedor — essencial para sincronização de notas.',
+      },
+      {
+        icon: '🛡️',
+        destaque: 'Mensagem tratada ao tentar cancelar nota já processada',
+        texto:
+          'Antes o sistema retornava um erro genérico quando o cancelamento não era possível. Agora retorna uma mensagem clara explicando o motivo da rejeição, evitando confusão no suporte e no cliente.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'São João Batista do Glória/MG → MemoryV2',
+        texto:
+          'O município trocou de sistema de NFS-e. As URLs, namespace e configurações foram atualizadas para o novo provedor MemoryV2. Empresas desse município passam a emitir pelo novo sistema.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Adrianópolis/PR, Tangará/SC e Serrania/MG aderem ao portal nacional',
+        texto:
+          'Três municípios deixaram de usar provedor próprio e passaram a emitir pelo layout nacional de NFS-e. Isso simplifica a emissão para empresas dessas cidades — não precisa mais de integração específica com a prefeitura.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Socorro/SP → BethaV3 + múltiplas atualizações municipais',
+        texto:
+          'Socorro/SP migrou de provedor com URLs e configurações atualizadas. Também: desabilita emissão em lote para empresa com problemas de duplicidade, adiciona envio de NBS para empresa específica, campo AutenticidadeNota no fluxo de emissão, incidência no município do prestador para empresa específica, e remoção de municípios da flag de alíquota ISS Simples Nacional.',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Ajusta geração da DACE para contingência (DanfeMS)',
+        texto:
+          'Em cenários de indisponibilidade da SEFAZ, o sistema gera um Documento Auxiliar de Contingência Eletrônico (DACE). O layout desse documento estava com problemas de formatação que impediam a impressão correta. Corrigido para gerar o DACE corretamente nesses cenários.',
       },
     ],
   },
