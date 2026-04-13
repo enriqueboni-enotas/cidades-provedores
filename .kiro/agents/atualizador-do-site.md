@@ -302,3 +302,5 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
 - Os textos do `github-changelog.js` e `aguardando-deploy-changelog.js` devem ser detalhados e contextualizados — explicar o que mudou, por que mudou e qual o impacto. Não usar descrições genéricas.
 - A semana do compilado semanal vai de domingo a sábado.
 - O `aguardando-deploy-changelog.js` compara `notagateway-sync` vs `dev` (não vs main).
+- NUNCA cortar, omitir ou agrupar commits arbitrariamente no changelog. TODOS os commits de cada dia devem gerar itens no changelog. Se um dia tem 19 commits, o changelog desse dia deve ter no mínimo 15+ itens (agrupando apenas commits muito similares, como 3 cidades aderindo ao mesmo provedor). Antes de escrever o arquivo, conte os commits do dia e conte os itens gerados — se a diferença for grande, refaça. O usuário depende dessa completude para acompanhar o que entrou em produção.
+- Ao processar commits de um dia, primeiro liste TODOS os commits com `git log`, depois processe cada um individualmente. Não confie na memória — use a lista completa como checklist.
