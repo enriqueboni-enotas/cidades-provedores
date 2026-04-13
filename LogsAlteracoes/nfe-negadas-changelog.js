@@ -1,5 +1,62 @@
 var nfeNegadasData = [
   {
+    tag: '13/04/2026',
+    titulo: 'Segunda-feira — 13 de Abril',
+    data: '13/04/2026',
+    itens: [
+      {
+        icon: '🌐',
+        destaque: 'País deve ser informado',
+        texto: '3.491 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.323 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.042 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Código NBS inválido ou não informado',
+        texto: '768 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação informado é inválido',
+        texto: '677 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
+        texto: '271 notas',
+      },
+      {
+        icon: '📅',
+        destaque: 'Rejeição 228 — Data de emissão muito atrasada',
+        texto: '271 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ inválido do cliente',
+        texto: '265 notas',
+      },
+      {
+        icon: '🚫',
+        destaque: 'Bloqueio temporário por excesso de requisições',
+        texto: '257 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
+        texto: '234 notas',
+      },
+    ],
+  },
+  {
     tag: '12/04/2026',
     titulo: 'Domingo — 12 de Abril',
     data: '12/04/2026',
@@ -7,48 +64,52 @@ var nfeNegadasData = [
       {
         icon: '💰',
         destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.216 notas',
+        texto: '1.253 notas',
       },
       {
         icon: '⏸️',
-        destaque: 'Emissão automática interrompida (app desativado)',
-        texto: '1.046 notas',
+        destaque: 'App desativado — emissão automática interrompida',
+        texto: '1.061 notas',
       },
       {
         icon: '🔒',
         destaque: 'Certificado digital vencido',
-        texto: '857 notas',
+        texto: '929 notas',
       },
-      { icon: '🌍', destaque: 'País deve ser informado', texto: '613 notas' },
       {
-        icon: '🏢',
+        icon: '🌐',
+        destaque: 'País deve ser informado',
+        texto: '669 notas',
+      },
+      {
+        icon: '👤',
         destaque: 'CNPJ não encontrado na base de dados',
-        texto: '362 notas',
+        texto: '378 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
+        texto: '287 notas',
       },
       {
         icon: '🔐',
         destaque: 'Bloqueio temporário pelo Suporte eNotas',
-        texto: '249 notas',
+        texto: '264 notas',
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório',
-        texto: '232 notas',
+        destaque: 'Campo codigoNBS deve ser informado',
+        texto: '247 notas',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Falha Schema XML — endereço exterior (xEstProvReg)',
+        texto: '237 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série RPS deve conter apenas números (1 a 49.999)',
-        texto: '223 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série DPS fora da faixa definida (80000 a 89999)',
-        texto: '215 notas',
-      },
-      {
-        icon: '🏗️',
-        destaque: 'Informações do imóvel obrigatórias para operação informada',
-        texto: '185 notas',
+        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
+        texto: '230 notas',
       },
     ],
   },
@@ -67,24 +128,28 @@ var nfeNegadasData = [
         destaque: 'Certificado digital vencido',
         texto: '840 notas',
       },
-      { icon: '🌍', destaque: 'País deve ser informado', texto: '685 notas' },
+      {
+        icon: '🌐',
+        destaque: 'País deve ser informado',
+        texto: '685 notas',
+      },
       {
         icon: '⏸️',
-        destaque: 'Emissão automática interrompida (app desativado)',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '411 notas',
       },
       {
         icon: '📮',
-        destaque: 'CEP do tomador não pertence ao município',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
         texto: '295 notas',
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório',
+        destaque: 'Campo codigoNBS deve ser informado',
         texto: '262 notas',
       },
       {
-        icon: '🏢',
+        icon: '👤',
         destaque: 'CNPJ não encontrado na base de dados',
         texto: '245 notas',
       },
@@ -94,13 +159,13 @@ var nfeNegadasData = [
         texto: '230 notas',
       },
       {
-        icon: '🏢',
+        icon: '📝',
         destaque: 'Cadastro da empresa incompleto',
         texto: '223 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série RPS deve conter apenas números (1 a 49.999)',
+        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
         texto: '223 notas',
       },
     ],
@@ -111,62 +176,54 @@ var nfeNegadasData = [
     data: '10/04/2026',
     itens: [
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
-        texto: '5.571 notas',
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
+        texto: '5.610 notas',
       },
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
-        texto: '1.322 notas',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.402 notas',
       },
       {
-        icon: '👤',
-        destaque:
-          'Já existe outro tipo de documento fiscal (NFS-e) emitida com esse mesmo id',
+        icon: '🔁',
+        destaque: 'NFS-e duplicada — já existe documento com mesmo ID',
         texto: '1.037 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
-        texto: '941 notas',
+        destaque: 'Certificado digital vencido',
+        texto: '1.020 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
-        texto: '744 notas',
+        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        texto: '766 notas',
       },
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
         texto: '709 notas',
       },
       {
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
+        texto: '616 notas',
+      },
+      {
         icon: '📋',
-        destaque: 'O campo codigoNBS deve ser informado.',
-        texto: '475 notas',
+        destaque: 'Campo codigoNBS deve ser informado',
+        texto: '507 notas',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Situação Simples Nacional incompatível com cadastro',
+        texto: '374 notas',
       },
       {
         icon: '❌',
-        destaque:
-          'No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada na DPS não es...',
-        texto: '371 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Erro ao criar rascunho da nota fiscal. \nCorreção: ---',
-        texto: '357 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do...',
-        texto: '339 notas',
+        destaque: 'Erro ao criar rascunho da nota fiscal',
+        texto: '369 notas',
       },
     ],
   },
@@ -177,62 +234,54 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
+        destaque: 'Cidade do IBGE não encontrada',
         texto: '4.020 notas',
       },
       {
         icon: '🧮',
-        destaque:
-          'Erro não identificado: Não é possível informar o Percentual do Tributo Federal se não for informado o valor individua...',
+        destaque: 'Percentual tributo federal sem valor individualizado',
         texto: '2.013 notas',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'IM do prestador não deve ser informado, pois não existem informações complementares registradas no CNC NFS-e do munic...',
+        icon: '📋',
+        destaque: 'IM do prestador sem informações no CNC NFS-e',
         texto: '1.951 notas',
       },
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.518 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.308 notas',
       },
       {
         icon: '🔢',
-        destaque:
-          'Erro com número sequencial (RPS: 2654 - RPS Esperada: 2660) \nCorreção: Verifique se a sequência não está falha',
+        destaque: 'Erro com número sequencial de RPS',
         texto: '896 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
+        destaque: 'CPF ou CNPJ do tomador deve ser informado',
         texto: '682 notas',
       },
       {
         icon: '🌐',
         destaque:
-          'Erro não identificado: 817 - Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior [n...',
+          'Rejeição 817 — Unidade tributável incompatível com NCM (exterior)',
         texto: '578 notas',
       },
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
-        texto: '543 notas',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '546 notas',
       },
       {
-        icon: '🧮',
-        destaque: 'A situação tributária do IPI informada é ínválida.',
-        texto: '473 notas',
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
+        texto: '474 notas',
       },
     ],
   },
@@ -243,62 +292,52 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.689 notas',
       },
       {
-        icon: '👤',
-        destaque:
-          'Já existe outro tipo de documento fiscal (NFS-e) emitida com esse mesmo id',
+        icon: '🔁',
+        destaque: 'NFS-e duplicada — já existe documento com mesmo ID',
         texto: '1.425 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.414 notas',
       },
       {
-        icon: '🧾',
-        destaque:
-          'O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).',
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido (deve ter 10–11 dígitos)',
         texto: '833 notas',
       },
       {
-        icon: '🧾',
-        destaque:
-          'Os dados obrigatórios da empresa ainda não foram preenchidos corretamente.',
+        icon: '📝',
+        destaque: 'Dados obrigatórios da empresa não preenchidos',
         texto: '629 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida p...',
+        icon: '🏠',
+        destaque: 'Endereço do tomador obrigatório para indicador de operação',
         texto: '465 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '457 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '422 notas',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do...',
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
         texto: '371 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '354 notas',
       },
     ],
@@ -310,61 +349,52 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.778 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
+        destaque: 'CPF ou CNPJ do tomador deve ser informado',
         texto: '1.766 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.368 notas',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do...',
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
         texto: '935 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '912 notas',
       },
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou a Cidade e UF corretame...',
+        destaque: 'Cidade do IBGE não encontrada',
         texto: '762 notas',
       },
       {
-        icon: '🧮',
+        icon: '🧾',
         destaque: 'Código de tributação informado é inválido',
         texto: '480 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '394 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.',
+        destaque: 'CPF/CNPJ inválido do cliente',
         texto: '357 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '339 notas',
       },
     ],
@@ -376,61 +406,53 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '❌',
-        destaque:
-          'Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e',
+        destaque: 'Rejeição 781 — Emissor não habilitado para NF-e/NFC-e',
         texto: '1.862 notas',
       },
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.622 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.490 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '1.069 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Erro não identificado: 228 - Rejeicao: Data de Emissao muito atrasada',
+        icon: '📅',
+        destaque: 'Rejeição 228 — Data de emissão muito atrasada',
         texto: '776 notas',
       },
       {
-        icon: '🧾',
-        destaque: 'Erro não identificado: Error1159 Nota fiscal já foi emitida',
+        icon: '🔁',
+        destaque: 'Nota fiscal já foi emitida (duplicidade)',
         texto: '757 notas',
       },
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
         texto: '664 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Erro não identificado: 930 - Rejeição: CST com benefício fiscal e não informado o código de benefício fiscal [nItem: 1]',
-        texto: '492 notas',
-      },
-      {
-        icon: '🔢',
-        destaque:
-          'O artigo 10 do Decreto 47.350 de 06 de junho de 2006 determina que sua empresa somente poderá converter RPS em NF-e a...',
-        texto: '426 notas',
       },
       {
         icon: '🧮',
         destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+          'Rejeição 930 — CST com benefício fiscal sem código informado',
+        texto: '492 notas',
+      },
+      {
+        icon: '📅',
+        destaque: 'RPS fora do prazo de conversão (Decreto 47.350)',
+        texto: '426 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '422 notas',
       },
     ],
@@ -442,61 +464,52 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.705 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.192 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '454 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
+        destaque: 'CPF ou CNPJ do tomador deve ser informado',
         texto: '305 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '287 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '247 notas',
       },
       {
         icon: '📋',
-        destaque: 'O campo codigoNBS deve ser informado.',
+        destaque: 'Campo codigoNBS deve ser informado',
         texto: '231 notas',
       },
       {
-        icon: '💰',
-        destaque:
-          'Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar...',
+        icon: '🔐',
+        destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '182 notas',
       },
       {
         icon: '🔢',
-        destaque:
-          'A série transcrita manualmente para a DPS deve ser um número dentro da faixa definida para este fim, que é de 80000 a...',
+        destaque: 'Série da DPS fora da faixa permitida (80000–89999)',
         texto: '176 notas',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'Falha Schema Xml \n The element "endExt" in namespace "http://www.sped.fazenda.gov.br/nfse" has invalid child element...',
+        icon: '🌐',
+        destaque: 'Falha Schema XML — endereço exterior (xEstProvReg)',
         texto: '164 notas',
       },
     ],
@@ -508,61 +521,52 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.755 notas',
       },
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.340 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '451 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '383 notas',
       },
       {
         icon: '📋',
-        destaque: 'O campo codigoNBS deve ser informado.',
+        destaque: 'Campo codigoNBS deve ser informado',
         texto: '287 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '248 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
+        destaque: 'CPF ou CNPJ do tomador deve ser informado',
         texto: '222 notas',
       },
       {
         icon: '🌐',
-        destaque:
-          'Erro não identificado: 720 - Na operacao com Exterior deve ser informada tag idEstrangeiro',
+        destaque: 'Rejeição 720 — Operação com exterior sem idEstrangeiro',
         texto: '194 notas',
       },
       {
-        icon: '💰',
-        destaque:
-          'Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar...',
+        icon: '🔐',
+        destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '181 notas',
       },
       {
         icon: '🧮',
-        destaque:
-          'Erro não identificado: Não é possível informar o Percentual do Tributo Federal se não for informado o valor individua...',
+        destaque: 'Percentual tributo federal sem valor individualizado',
         texto: '175 notas',
       },
     ],
@@ -574,60 +578,52 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '1.541 notas',
       },
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.234 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '640 notas',
       },
       {
         icon: '📮',
-        destaque: 'CEP do Tomador informado inválido.',
+        destaque: 'CEP do tomador informado inválido',
         texto: '533 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '506 notas',
       },
       {
-        icon: '🧮',
-        destaque:
-          'Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão ...',
+        icon: '🌐',
+        destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
+        texto: '381 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'App desativado — emissão automática interrompida',
         texto: '373 notas',
       },
       {
-        icon: '🧾',
-        destaque:
-          'Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.',
-        texto: '371 notas',
-      },
-      {
         icon: '📋',
-        destaque: 'O campo codigoNBS deve ser informado.',
+        destaque: 'Campo codigoNBS deve ser informado',
         texto: '309 notas',
       },
       {
-        icon: '👤',
-        destaque:
-          'RPS já informado.(Numero RPS: 16814) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o ...',
+        icon: '🔢',
+        destaque: 'RPS duplicado — já existe RPS com mesmo número/série',
         texto: '305 notas',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do...',
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
         texto: '279 notas',
       },
     ],
@@ -639,192 +635,53 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
+        destaque: 'Certificado digital vencido',
         texto: '2.062 notas',
       },
       {
         icon: '❌',
-        destaque:
-          'Erro não identificado: 203 - Rejeição: Emissor não habilitado para emissão da NF-e',
+        destaque: 'Rejeição 203 — Emissor não habilitado para NF-e',
         texto: '1.613 notas',
       },
       {
         icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
+        destaque: 'Bloqueio por falta de pagamento',
         texto: '1.610 notas',
       },
       {
         icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
         texto: '1.536 notas',
       },
       {
         icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
+        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
         texto: '1.164 notas',
       },
       {
         icon: '🔢',
-        destaque:
-          'A série transcrita manualmente para a DPS deve ser um número dentro da faixa definida para este fim, que é de 80000 a...',
+        destaque: 'Série da DPS fora da faixa permitida (80000–89999)',
         texto: '843 notas',
       },
       {
-        icon: '👤',
-        destaque:
-          'RPS já informado.(Numero RPS: 3736) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o m...',
+        icon: '🔢',
+        destaque: 'RPS duplicado — já existe RPS com mesmo número/série',
         texto: '800 notas',
       },
       {
         icon: '🔢',
-        destaque:
-          'A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.',
+        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
         texto: '633 notas',
       },
       {
         icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
+        destaque: 'CNPJ não encontrado na base de dados',
         texto: '629 notas',
       },
       {
         icon: '📮',
-        destaque: 'CEP do Tomador informado inválido.',
+        destaque: 'CEP do tomador informado inválido',
         texto: '608 notas',
-      },
-    ],
-  },
-  {
-    tag: '01/04/2026',
-    titulo: 'Quarta-feira — 01 de Abril',
-    data: '01/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
-        texto: '1.888 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'O campo codigoNBS deve ser informado.',
-        texto: '1.667 notas',
-      },
-      {
-        icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
-        texto: '1.579 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
-        texto: '1.513 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Necessário informar códigoNBS',
-        texto: '1.345 notas',
-      },
-      {
-        icon: '📋',
-        destaque:
-          'Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional',
-        texto: '1.178 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Erro não catalogado',
-        texto: '965 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do...',
-        texto: '772 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do Tomador informado inválido.',
-        texto: '686 notas',
-      },
-      {
-        icon: '👤',
-        destaque:
-          'CNPJ não encontrado na base de dados \nCorreção: Confira o numero do CNPJ informado. Caso esteja correto, o prestador...',
-        texto: '676 notas',
-      },
-    ],
-  },
-  {
-    tag: '31/03/2026',
-    titulo: 'Terça-feira — 31 de Março',
-    data: '31/03/2026',
-    itens: [
-      {
-        icon: '👤',
-        destaque:
-          'Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.',
-        texto: '6.309 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Erro não identificado: 203 - Rejeição: Emissor não habilitado para emissão da NF-e',
-        texto: '5.698 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Erro não identificado: 387 - Rejeição: Código de Enquadramento Legal do IPI inválido [nItem:1]',
-        texto: '4.675 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \nVerifique se informou ...',
-        texto: '3.439 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de a...',
-        texto: '2.501 notas',
-      },
-      {
-        icon: '💰',
-        destaque:
-          'Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeir...',
-        texto: '2.271 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Erro não identificado: Ocorreu um erro inesperado ao tentar realizar a emissao da nota.',
-        texto: '2.211 notas',
-      },
-      {
-        icon: '🔒',
-        destaque:
-          'Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não t...',
-        texto: '1.698 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN ...',
-        texto: '1.160 notas',
-      },
-      {
-        icon: '👤',
-        destaque:
-          'RPS já informado.(Numero RPS: 44442) \nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o ...',
-        texto: '1.157 notas',
       },
     ],
   },

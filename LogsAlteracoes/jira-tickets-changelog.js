@@ -1,5 +1,63 @@
 var jiraChangelogData = [
   {
+    tag: '13/04/2026',
+    titulo: 'Segunda-feira — 13 de Abril',
+    data: '13/04/2026',
+    itens: [
+      {
+        icon: '🖥️',
+        destaque: 'Instabilidade no painel e ajuste de SMU',
+        texto: '1 card (CE-25514)',
+      },
+      {
+        icon: '🐛',
+        destaque: 'Bug em notas de eventos',
+        texto: '1 card (CE-25447)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas',
+        texto: '1 card (CE-25221)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'NF-e sem informações complementares no XML',
+        texto: '1 card (CE-25195)',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Ajuste nome do município do tomador no XML — Caxias do Sul/RS',
+        texto: '1 card (CE-25112)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Fixar município de prestação para exterior (9999999)',
+        texto: '1 card (CE-25106)',
+      },
+      {
+        icon: '💰',
+        destaque: 'Vendas Pagar.me 2.0',
+        texto: '1 card (CE-25015)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas',
+        texto: '1 card (CE-24229)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Notas fiscais sendo emitidas incorretamente',
+        texto: '1 card (CE-23131)',
+      },
+      {
+        icon: '⚙️',
+        destaque: 'Criação de metadados em provedor',
+        texto: '1 card (CE-22718)',
+      },
+    ],
+  },
+  {
     tag: '12/04/2026',
     titulo: 'Domingo — 12 de Abril',
     data: '12/04/2026',
@@ -19,7 +77,8 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        texto:
+          'Nenhum ticket novo resolvido neste dia (apenas duplicatas de dias anteriores).',
       },
     ],
   },
@@ -61,9 +120,19 @@ var jiraChangelogData = [
         texto: '1 card (CE-25512)',
       },
       {
+        icon: '🤖',
+        destaque: 'Autofix — localizar numerações e retornar NF negada',
+        texto: '2 cards (CE-25471, CE-25441)',
+      },
+      {
         icon: '❌',
         destaque: 'Erro na emissão de notas',
         texto: '1 card (CE-25417)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Falha ao preencher dados municipais em Curitiba/PR',
+        texto: '1 card (CE-25406)',
       },
       {
         icon: '🔍',
@@ -79,6 +148,17 @@ var jiraChangelogData = [
         icon: '❌',
         destaque: 'Erro emissão produto físico Hotmart',
         texto: '1 card (CE-25291)',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Mudança de local de prestação para exterior — Taboão da Serra/SP',
+        texto: '1 card (CE-25185)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Notas em emissão com erro na prefeitura Nova Serrana/MG',
+        texto: '1 card (CE-24462)',
       },
       {
         icon: '🔄',
@@ -101,34 +181,6 @@ var jiraChangelogData = [
     tag: '08/04/2026',
     titulo: 'Quarta-feira — 08 de Abril',
     data: '08/04/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — localizar numerações e retornar NF negada',
-        texto: '2 cards (CE-25471, CE-25441)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Falha ao preencher dados municipais em Curitiba/PR',
-        texto: '1 card (CE-25406)',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Mudança de local de prestação para exterior — Taboão da Serra/SP',
-        texto: '1 card (CE-25185)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Notas em emissão com erro na prefeitura Nova Serrana/MG',
-        texto: '1 card (CE-24462)',
-      },
-    ],
-  },
-  {
-    tag: '07/04/2026',
-    titulo: 'Terça-feira — 07 de Abril',
-    data: '07/04/2026',
     itens: [
       {
         icon: '📋',
@@ -195,10 +247,17 @@ var jiraChangelogData = [
         destaque: 'Validação de erro de duplicidade — IJUPREV',
         texto: '1 card (CE-24303)',
       },
+    ],
+  },
+  {
+    tag: '07/04/2026',
+    titulo: 'Terça-feira — 07 de Abril',
+    data: '07/04/2026',
+    itens: [
       {
-        icon: '❌',
-        destaque: 'Notas fiscais sendo emitidas incorretamente',
-        texto: '1 card (CE-23131)',
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
@@ -210,7 +269,7 @@ var jiraChangelogData = [
       {
         icon: '💰',
         destaque: 'Vendas Pagar.me 2.0',
-        texto: '2 cards (CE-25015, CE-24985)',
+        texto: '1 card (CE-24985)',
       },
     ],
   },
@@ -290,70 +349,6 @@ var jiraChangelogData = [
         icon: '💰',
         destaque: 'Cobranças indevidas de excedentes e refaturamento',
         texto: '1 card (CE-24546)',
-      },
-    ],
-  },
-  {
-    tag: '01/04/2026',
-    titulo: 'Quarta-feira — 01 de Abril',
-    data: '01/04/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — retornar NF negada e sincronizar status',
-        texto: '2 cards (CE-25214, CE-25200)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Emissões afiliado Hotmart',
-        texto: '1 card (CE-25082)',
-      },
-      {
-        icon: '🧾',
-        destaque: 'IBS/CBS e Indicador de Operação não enviados no XML',
-        texto: '1 card (CE-25080)',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Alteração no link do Web Service / API',
-        texto: '1 card (CE-24738)',
-      },
-    ],
-  },
-  {
-    tag: '31/03/2026',
-    titulo: 'Terça-feira — 31 de Março',
-    data: '31/03/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — sincronizar status embed/GW',
-        texto: '3 cards (CE-25184, CE-25169, CE-25166)',
-      },
-      {
-        icon: '🐛',
-        destaque: 'Possível bug na integração com a Eduzz',
-        texto: '1 card (CE-25049)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de notas',
-        texto: '2 cards (CE-25028, CE-25019)',
-      },
-      {
-        icon: '📢',
-        destaque: 'Reclame Aqui — atendimento',
-        texto: '1 card (CE-24806)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronização notas GW ↔ Embed',
-        texto: '1 card (CE-24447)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Cobrança indevida de notas excedentes',
-        texto: '1 card (CE-24314)',
       },
     ],
   },
