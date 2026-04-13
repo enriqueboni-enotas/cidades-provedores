@@ -16,6 +16,19 @@ var changelogData = [
         texto:
           'Implementa o método LimparMensagemErro que remove tags HTML, caracteres especiais e formatação desnecessária das mensagens de erro retornadas pelas prefeituras no provedor FgMaiss. Aplicado nas operações de Cancelar, Recepcionar e RecepcionarV2, melhorando a legibilidade das mensagens exibidas ao usuário.',
       },
+      {
+        icon: '🆕',
+        destaque:
+          'São João Batista do Glória/MG — consulta por RPS no MemoryV2',
+        texto:
+          'Adiciona web service reference para São João Batista do Glória/MG no provedor MemoryV2. Implementa a operação ConsultarNfePorRps que permite consultar notas individuais por número de RPS. Também adiciona novos métodos no ProvedorNFeWS para suportar a consulta de NFS-e.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'WebFiscoTecnologia — novo web service reference',
+        texto:
+          'Adiciona referências de web service para o provedor WebFiscoTecnologia no FgMaiss. Atualiza namespaces e endpoints dos contratos de serviço. Inclui novos testes de emissão padrão V1 e atualização de configurações de teste para Aracaju/SE.',
+      },
     ],
   },
   {
