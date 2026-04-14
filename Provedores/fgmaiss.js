@@ -3,11 +3,11 @@
   nome: 'FgMaiss',
   empresa: 'FgMaiss',
   stats: {
-    municipios: 10
+    municipios: 12
   },
   visaoGeral: [
     { key: 'Nome', val: 'FgMaiss' },
-    { key: 'Total Municipios', val: '10' },
+    { key: 'Total Municipios', val: '12' },
     { key: 'Estados Atendidos', val: ['SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -27,6 +27,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
@@ -43,13 +44,15 @@
   municipiosLista: {
     'fgmaiss': [
       { nome: 'Areiópolis', uf: 'SP', ibge: '3503604' },
-      { nome: 'Avanhandava', uf: 'SP', ibge: '3504404' },
       { nome: 'Barra Bonita', uf: 'SP', ibge: '3505302' },
       { nome: 'Buritama', uf: 'SP', ibge: '3508108' },
       { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' },
+      { nome: 'Guariba', uf: 'SP', ibge: '3518602' },
       { nome: 'Igaraçu do Tietê', uf: 'SP', ibge: '3520004' },
+      { nome: 'Ituverava', uf: 'SP', ibge: '3524105' },
       { nome: 'Luís Antônio', uf: 'SP', ibge: '3527603' },
       { nome: 'Porangaba', uf: 'SP', ibge: '3540507' },
+      { nome: 'Serrana', uf: 'SP', ibge: '3551504' },
       { nome: 'Tanabi', uf: 'SP', ibge: '3553401' },
       { nome: 'Três Rios', uf: 'RJ', ibge: '3306008' }
     ]

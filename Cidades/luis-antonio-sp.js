@@ -13,11 +13,12 @@
     infoAdicional: 'Codigonoprovedor Deve ser configurado como o CNPJ da prefeitura',
     urls: {
       homologacao: {
+        recepcaoLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'
       },
       producao: {
-        recepcaoLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfeenvia.php',
-        consultaLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfeconsultaxml.php',
-        cancelamentoNFe: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfecancela.php'
+        recepcaoLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfeenviapn.php',
+        consultaLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfeconsultaxmlpn.php',
+        cancelamentoNFe: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfecancelapn.php'
       }
     }
   },
@@ -38,6 +39,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',

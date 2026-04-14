@@ -3,12 +3,12 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 111
+    municipios: 112
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '111' },
-    { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'MS', 'RS', 'AC', 'SP', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '112' },
+    { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -163,6 +163,7 @@
       { nome: 'Sapezal', uf: 'MT', ibge: '5107875' },
       { nome: 'Schroeder', uf: 'SC', ibge: '4217402' },
       { nome: 'Sertão Santana', uf: 'RS', ibge: '4320552' },
+      { nome: 'Socorro', uf: 'SP', ibge: '3552106' },
       { nome: 'Sombrio', uf: 'SC', ibge: '4217709' },
       { nome: 'Tarauacá', uf: 'AC', ibge: '1200609' },
       { nome: 'Torres', uf: 'RS', ibge: '4321501' },

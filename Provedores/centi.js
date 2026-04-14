@@ -3,11 +3,11 @@
   nome: 'Centi',
   empresa: 'Centi',
   stats: {
-    municipios: 32
+    municipios: 35
   },
   visaoGeral: [
     { key: 'Nome', val: 'Centi' },
-    { key: 'Total Municipios', val: '32' },
+    { key: 'Total Municipios', val: '35' },
     { key: 'Estados Atendidos', val: ['GO', 'BA', 'MT'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -54,6 +54,7 @@
       { nome: 'Campo Limpo de Goiás', uf: 'GO', ibge: '5204854' },
       { nome: 'Cristalina', uf: 'GO', ibge: '5206206' },
       { nome: 'Edéia', uf: 'GO', ibge: '5207402' },
+      { nome: 'Guapó', uf: 'GO', ibge: '5209200' },
       { nome: 'Guarani de Goiás', uf: 'GO', ibge: '5209408' },
       { nome: 'Iaciara', uf: 'GO', ibge: '5209903' },
       { nome: 'Iporá', uf: 'GO', ibge: '5210208' },
@@ -65,7 +66,9 @@
       { nome: 'Monte Alegre de Goiás', uf: 'GO', ibge: '5213509' },
       { nome: 'Mozarlândia', uf: 'GO', ibge: '5214002' },
       { nome: 'Mucuri', uf: 'BA', ibge: '2922003' },
+      { nome: 'Mundo Novo', uf: 'GO', ibge: '5214051' },
       { nome: 'Nova Crixás', uf: 'GO', ibge: '5214838' },
+      { nome: 'Panamá', uf: 'GO', ibge: '5216007' },
       { nome: 'Perolândia', uf: 'GO', ibge: '5216452' },
       { nome: 'Piracanjuba', uf: 'GO', ibge: '5217104' },
       { nome: 'Piranhas', uf: 'GO', ibge: '5217203' },

@@ -5,18 +5,18 @@
   ibge: '3552106',
   constante: 'CodigoIBGE.SocorroSP',
   provedorAtual: {
-    nome: 'NfseNacionalV2',
-    namespace: 'http://www.sped.fazenda.gov.br/nfse',
+    nome: 'BethaV3',
+    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
@@ -53,11 +53,9 @@
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
-    suportaEmissaoParalela: true,
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
-    numeroLotesParalelos: 5,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

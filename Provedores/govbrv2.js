@@ -3,11 +3,11 @@
   nome: 'GOVBRv2',
   empresa: 'GOVBRv2',
   stats: {
-    municipios: 16
+    municipios: 15
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv2' },
-    { key: 'Total Municipios', val: '16' },
+    { key: 'Total Municipios', val: '15' },
     { key: 'Estados Atendidos', val: ['RS', 'PR', 'RJ', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -72,8 +72,7 @@
       { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' },
       { nome: 'Pérola', uf: 'PR', ibge: '4118907' },
       { nome: 'Quissamã', uf: 'RJ', ibge: '3304151' },
-      { nome: 'São Pedro do Ivaí', uf: 'PR', ibge: '4125803' },
-      { nome: 'Tapes', uf: 'RS', ibge: '4321105' }
+      { nome: 'São Pedro do Ivaí', uf: 'PR', ibge: '4125803' }
     ]
   }
 };

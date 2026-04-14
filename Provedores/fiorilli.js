@@ -3,11 +3,11 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 215
+    municipios: 216
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '215' },
+    { key: 'Total Municipios', val: '216' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'PE', 'MA', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'PB', 'AL', 'RS', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -66,6 +66,7 @@
       { nome: 'Ariranha', uf: 'SP', ibge: '3503703' },
       { nome: 'Assis', uf: 'SP', ibge: '3504008' },
       { nome: 'Auriflama', uf: 'SP', ibge: '3504206' },
+      { nome: 'Avanhandava', uf: 'SP', ibge: '3504404' },
       { nome: 'Avaré', uf: 'SP', ibge: '3504503' },
       { nome: 'Bálsamo', uf: 'SP', ibge: '3504800' },
       { nome: 'Barbosa', uf: 'SP', ibge: '3505104' },
@@ -78,8 +79,8 @@
       { nome: 'Brasilândia', uf: 'MS', ibge: '5002308' },
       { nome: 'Braúna', uf: 'SP', ibge: '3507704' },
       { nome: 'Brodowski', uf: 'SP', ibge: '3507803' },
-      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Buritis', uf: 'RO', ibge: '1100452' },
+      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Cachoeira de Minas', uf: 'MG', ibge: '3109709' },
       { nome: 'Cafelândia', uf: 'SP', ibge: '3508801' },
       { nome: 'Cajobi', uf: 'SP', ibge: '3509304' },

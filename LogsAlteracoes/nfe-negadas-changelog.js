@@ -1,58 +1,103 @@
 var nfeNegadasData = [
   {
-    tag: '13/04/2026',
-    titulo: 'Segunda-feira — 13 de Abril',
-    data: '13/04/2026',
+    tag: '14/04/2026',
+    titulo: 'Terça-feira — 14 de Abril',
+    data: '14/04/2026',
     itens: [
       {
-        icon: '🌐',
-        destaque: 'País deve ser informado',
-        texto: '3.491 notas',
+        icon: '🔢',
+        destaque: 'RPS fora do prazo de conversão (Decreto 47.350)',
+        texto: '3.079 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série da DPS fora da faixa do tipo de emissor',
+        texto: '1.812 notas',
       },
       {
         icon: '💰',
         destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.323 notas',
+        texto: '1.581 notas',
       },
       {
         icon: '🔒',
         destaque: 'Certificado digital vencido',
-        texto: '1.042 notas',
+        texto: '1.160 notas',
       },
       {
-        icon: '📋',
-        destaque: 'Código NBS inválido ou não informado',
-        texto: '768 notas',
+        icon: '🏙️',
+        destaque: 'Cidade do cliente não encontrada no IBGE',
+        texto: '868 notas',
+      },
+      { icon: '🌐', destaque: 'País deve ser informado', texto: '664 notas' },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '582 notas',
       },
       {
         icon: '🧾',
-        destaque: 'Código de tributação informado é inválido',
-        texto: '677 notas',
+        destaque: 'Código de tributação inválido',
+        texto: '530 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo 1-49999',
+        texto: '504 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'NFS-e duplicada (mesmo ID)',
+        texto: '446 notas',
+      },
+    ],
+  },
+  {
+    tag: '13/04/2026',
+    titulo: 'Segunda-feira — 13 de Abril',
+    data: '13/04/2026',
+    itens: [
+      { icon: '🌐', destaque: 'País deve ser informado', texto: '3.647 notas' },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.487 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.206 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação inválido',
+        texto: '806 notas',
+      },
+      { icon: '📋', destaque: 'Código NBS inválido', texto: '788 notas' },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador inválido ou não pertence ao município',
+        texto: '450 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
+        texto: '336 notas',
       },
       {
         icon: '⏸️',
         destaque: 'App desativado — emissão automática interrompida',
-        texto: '271 notas',
-      },
-      {
-        icon: '📅',
-        destaque: 'Rejeição 228 — Data de emissão muito atrasada',
-        texto: '271 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ inválido do cliente',
-        texto: '265 notas',
-      },
-      {
-        icon: '🚫',
-        destaque: 'Bloqueio temporário por excesso de requisições',
-        texto: '257 notas',
+        texto: '295 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
-        texto: '234 notas',
+        destaque: 'Data de emissão muito atrasada (rejeição 228)',
+        texto: '271 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório não informado',
+        texto: '264 notas',
       },
     ],
   },
@@ -76,10 +121,11 @@ var nfeNegadasData = [
         destaque: 'Certificado digital vencido',
         texto: '929 notas',
       },
+      { icon: '🌐', destaque: 'País deve ser informado', texto: '669 notas' },
       {
         icon: '🌐',
-        destaque: 'País deve ser informado',
-        texto: '669 notas',
+        destaque: 'Falha Schema XML — endereço exterior (xEstProvReg)',
+        texto: '409 notas',
       },
       {
         icon: '👤',
@@ -89,26 +135,21 @@ var nfeNegadasData = [
       {
         icon: '📮',
         destaque: 'CEP do tomador inválido ou não pertence ao município',
-        texto: '287 notas',
+        texto: '289 notas',
       },
       {
-        icon: '🔐',
+        icon: '🔒',
         destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '264 notas',
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '247 notas',
       },
       {
-        icon: '🌐',
-        destaque: 'Falha Schema XML — endereço exterior (xEstProvReg)',
-        texto: '237 notas',
-      },
-      {
         icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
+        destaque: 'Série do RPS fora do intervalo 1-49999',
         texto: '230 notas',
       },
     ],
@@ -128,11 +169,7 @@ var nfeNegadasData = [
         destaque: 'Certificado digital vencido',
         texto: '840 notas',
       },
-      {
-        icon: '🌐',
-        destaque: 'País deve ser informado',
-        texto: '685 notas',
-      },
+      { icon: '🌐', destaque: 'País deve ser informado', texto: '685 notas' },
       {
         icon: '⏸️',
         destaque: 'App desativado — emissão automática interrompida',
@@ -145,7 +182,7 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '262 notas',
       },
       {
@@ -154,18 +191,18 @@ var nfeNegadasData = [
         texto: '245 notas',
       },
       {
-        icon: '🔐',
+        icon: '🔒',
         destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '230 notas',
       },
       {
-        icon: '📝',
-        destaque: 'Cadastro da empresa incompleto',
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo 1-49999',
         texto: '223 notas',
       },
       {
-        icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
+        icon: '👤',
+        destaque: 'Cadastro da empresa incompleto',
         texto: '223 notas',
       },
     ],
@@ -186,8 +223,8 @@ var nfeNegadasData = [
         texto: '1.402 notas',
       },
       {
-        icon: '🔁',
-        destaque: 'NFS-e duplicada — já existe documento com mesmo ID',
+        icon: '🔢',
+        destaque: 'NFS-e duplicada (mesmo ID)',
         texto: '1.037 notas',
       },
       {
@@ -197,12 +234,12 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        destaque: 'CPF ou CNPJ do tomador obrigatório',
         texto: '766 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        destaque: 'Cidade do cliente não encontrada no IBGE',
         texto: '709 notas',
       },
       {
@@ -212,16 +249,16 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '507 notas',
       },
       {
-        icon: '🧮',
+        icon: '🧾',
         destaque: 'Situação Simples Nacional incompatível com cadastro',
         texto: '374 notas',
       },
       {
-        icon: '❌',
+        icon: '🔧',
         destaque: 'Erro ao criar rascunho da nota fiscal',
         texto: '369 notas',
       },
@@ -234,7 +271,7 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada',
+        destaque: 'Cidade não encontrada no cadastro IBGE',
         texto: '4.020 notas',
       },
       {
@@ -243,8 +280,8 @@ var nfeNegadasData = [
         texto: '2.013 notas',
       },
       {
-        icon: '📋',
-        destaque: 'IM do prestador sem informações no CNC NFS-e',
+        icon: '👤',
+        destaque: 'IM do prestador não deve ser informada (CNC NFS-e)',
         texto: '1.951 notas',
       },
       {
@@ -264,18 +301,17 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        destaque: 'CPF ou CNPJ do tomador obrigatório',
         texto: '682 notas',
       },
       {
         icon: '🌐',
-        destaque:
-          'Rejeição 817 — Unidade tributável incompatível com NCM (exterior)',
+        destaque: 'Unidade tributável incompatível com NCM (comércio exterior)',
         texto: '578 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        destaque: 'Cidade do cliente não encontrada no IBGE',
         texto: '546 notas',
       },
       {
@@ -296,8 +332,8 @@ var nfeNegadasData = [
         texto: '1.689 notas',
       },
       {
-        icon: '🔁',
-        destaque: 'NFS-e duplicada — já existe documento com mesmo ID',
+        icon: '🔢',
+        destaque: 'NFS-e duplicada (mesmo ID)',
         texto: '1.425 notas',
       },
       {
@@ -306,18 +342,19 @@ var nfeNegadasData = [
         texto: '1.414 notas',
       },
       {
-        icon: '📞',
-        destaque: 'Telefone do cliente inválido (deve ter 10–11 dígitos)',
+        icon: '👤',
+        destaque: 'Telefone do cliente inválido (10-11 dígitos)',
         texto: '833 notas',
       },
       {
-        icon: '📝',
+        icon: '👤',
         destaque: 'Dados obrigatórios da empresa não preenchidos',
         texto: '629 notas',
       },
       {
-        icon: '🏠',
-        destaque: 'Endereço do tomador obrigatório para indicador de operação',
+        icon: '📮',
+        destaque:
+          'Endereço do tomador obrigatório para incidência no domicílio',
         texto: '465 notas',
       },
       {
@@ -327,7 +364,7 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '422 notas',
       },
       {
@@ -354,7 +391,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        destaque: 'CPF ou CNPJ do tomador obrigatório',
         texto: '1.766 notas',
       },
       {
@@ -369,17 +406,17 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '912 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada',
+        destaque: 'Cidade não encontrada no cadastro IBGE',
         texto: '762 notas',
       },
       {
         icon: '🧾',
-        destaque: 'Código de tributação informado é inválido',
+        destaque: 'Código de tributação inválido',
         texto: '480 notas',
       },
       {
@@ -389,7 +426,7 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CPF/CNPJ inválido do cliente',
+        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
         texto: '357 notas',
       },
       {
@@ -406,7 +443,7 @@ var nfeNegadasData = [
     itens: [
       {
         icon: '❌',
-        destaque: 'Rejeição 781 — Emissor não habilitado para NF-e/NFC-e',
+        destaque: 'Emissor não habilitado para emissão (rejeição 781)',
         texto: '1.862 notas',
       },
       {
@@ -421,32 +458,32 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '1.069 notas',
       },
       {
-        icon: '📅',
-        destaque: 'Rejeição 228 — Data de emissão muito atrasada',
+        icon: '🔢',
+        destaque: 'Data de emissão muito atrasada (rejeição 228)',
         texto: '776 notas',
       },
       {
-        icon: '🔁',
-        destaque: 'Nota fiscal já foi emitida (duplicidade)',
+        icon: '🔢',
+        destaque: 'Nota fiscal já emitida (Error1159)',
         texto: '757 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        destaque: 'Cidade do cliente não encontrada no IBGE',
         texto: '664 notas',
       },
       {
-        icon: '🧮',
+        icon: '🧾',
         destaque:
-          'Rejeição 930 — CST com benefício fiscal sem código informado',
+          'CST com benefício fiscal sem código informado (rejeição 930)',
         texto: '492 notas',
       },
       {
-        icon: '📅',
+        icon: '🔢',
         destaque: 'RPS fora do prazo de conversão (Decreto 47.350)',
         texto: '426 notas',
       },
@@ -474,12 +511,12 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '454 notas',
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        destaque: 'CPF ou CNPJ do tomador obrigatório',
         texto: '305 notas',
       },
       {
@@ -494,17 +531,17 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '231 notas',
       },
       {
-        icon: '🔐',
+        icon: '🔒',
         destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '182 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série da DPS fora da faixa permitida (80000–89999)',
+        destaque: 'Série da DPS fora da faixa (8000-8999)',
         texto: '176 notas',
       },
       {
@@ -531,7 +568,7 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '451 notas',
       },
       {
@@ -541,7 +578,7 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '287 notas',
       },
       {
@@ -551,16 +588,16 @@ var nfeNegadasData = [
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador deve ser informado',
+        destaque: 'CPF ou CNPJ do tomador obrigatório',
         texto: '222 notas',
       },
       {
         icon: '🌐',
-        destaque: 'Rejeição 720 — Operação com exterior sem idEstrangeiro',
+        destaque: 'Tag idEstrangeiro obrigatória em operação com exterior',
         texto: '194 notas',
       },
       {
-        icon: '🔐',
+        icon: '🔒',
         destaque: 'Bloqueio temporário pelo Suporte eNotas',
         texto: '181 notas',
       },
@@ -588,21 +625,17 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '640 notas',
       },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador informado inválido',
-        texto: '533 notas',
-      },
+      { icon: '📮', destaque: 'CEP do tomador inválido', texto: '533 notas' },
       {
         icon: '👤',
         destaque: 'CNPJ não encontrado na base de dados',
         texto: '506 notas',
       },
       {
-        icon: '🌐',
+        icon: '🔧',
         destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
         texto: '381 notas',
       },
@@ -613,17 +646,17 @@ var nfeNegadasData = [
       },
       {
         icon: '📋',
-        destaque: 'Campo codigoNBS deve ser informado',
+        destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '309 notas',
       },
       {
         icon: '🔢',
-        destaque: 'RPS duplicado — já existe RPS com mesmo número/série',
+        destaque: 'RPS já informado (duplicidade)',
         texto: '305 notas',
       },
       {
         icon: '📮',
-        destaque: 'CEP do tomador inválido ou não pertence ao município',
+        destaque: 'CEP do tomador não pertence ao município',
         texto: '279 notas',
       },
     ],
@@ -640,7 +673,7 @@ var nfeNegadasData = [
       },
       {
         icon: '❌',
-        destaque: 'Rejeição 203 — Emissor não habilitado para NF-e',
+        destaque: 'Emissor não habilitado para emissão (rejeição 203)',
         texto: '1.613 notas',
       },
       {
@@ -650,27 +683,27 @@ var nfeNegadasData = [
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        destaque: 'Cidade do cliente não encontrada no IBGE',
         texto: '1.536 notas',
       },
       {
         icon: '📋',
-        destaque: 'Lista de serviço sem desdobramento nacional (00383)',
+        destaque: 'Lista de serviço sem desdobramento nacional',
         texto: '1.164 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série da DPS fora da faixa permitida (80000–89999)',
+        destaque: 'Série da DPS fora da faixa (8000-8999)',
         texto: '843 notas',
       },
       {
         icon: '🔢',
-        destaque: 'RPS duplicado — já existe RPS com mesmo número/série',
+        destaque: 'RPS já informado (duplicidade)',
         texto: '800 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo permitido (1–49.999)',
+        destaque: 'Série do RPS fora do intervalo 1-49999',
         texto: '633 notas',
       },
       {
@@ -678,11 +711,7 @@ var nfeNegadasData = [
         destaque: 'CNPJ não encontrado na base de dados',
         texto: '629 notas',
       },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador informado inválido',
-        texto: '608 notas',
-      },
+      { icon: '📮', destaque: 'CEP do tomador inválido', texto: '608 notas' },
     ],
   },
 ];

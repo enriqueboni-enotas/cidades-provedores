@@ -5,41 +5,53 @@
   ibge: '2926608',
   constante: 'CodigoIBGE.RibeiraDoPombalBA',
   provedorAtual: {
-    nome: 'SIAM',
-    namespace: 'https://ws.imap.org.br/siam/nfse.xsd',
-    codigoNoProvedor: null,
+    nome: 'WebISSv2',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    codigoNoProvedor: 'EnviaAliquotaISSQNDevidoOutroMunicipioOuOptanteSimplesERetencaoISSQN',
     robo: false,
     webService: true,
-    versaoAbrasf: '1',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://homologacao.imap.org.br/siam/nfse.svc'
+        recepcaoLote: 'https://homologacao.webiss.com.br/ws/nfse.asmx'
       },
       producao: {
-        recepcaoLote: 'https://ws.imap.org.br/siam/nfse.svc'
+        recepcaoLote: 'https://ribeiradopombalba.webiss.com.br/ws/nfse.asmx'
       }
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 1,
-    assinaturaDigital: 2,
-    suportaCancelamentoNFe: true,
+    helpTipoAutenticacao: {
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      usuario: null,
+      senha: null,
+      token: null,
+      fraseSecreta: null
+    },
     valorCancelamentoNFe: 60,
-    usaCodigoServicoMunicipal: false,
+    usaCodigoServicoMunicipal: true,
     usaCNAE: true,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 105, 1.05, 01.05 ou 0105',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
-    suportaEmissaoNFeSemCliente: false,
-    suportaEmissaoNFeClienteSemCpf: false,
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos:  105, 1.05, 01.05 ou 0105',
+    suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 60,
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    autenticidadeNota: {
+      urlVerificacao: 'https://caldasnovasgo.webiss.com.br/externo/nfse/validar',
+      UsaChaveAcesso: false,
+      UsaCnpjPrestador: true,
+      UsaCodigoVerificacao: true,
+      UsaCpfCnpjTomador: false,
+      UsaInscricaoMunicipalPrestador: false,
+      UsaNumeroNota: true,
+      UsaValorNota: false
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

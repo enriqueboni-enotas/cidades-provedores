@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 129
+    municipios: 124
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '129' },
+    { key: 'Total Municipios', val: '124' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'SP', 'BA', 'AM', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -58,7 +58,6 @@
   },
   municipiosLista: {
     'bethav2': [
-      { nome: 'Adrianópolis', uf: 'PR', ibge: '4100202' },
       { nome: 'Água Doce', uf: 'SC', ibge: '4200408' },
       { nome: 'Águas de Chapecó', uf: 'SC', ibge: '4200507' },
       { nome: 'Alto Garças', uf: 'MT', ibge: '5100409' },
@@ -85,7 +84,6 @@
       { nome: 'Guatapará', uf: 'SP', ibge: '3518859' },
       { nome: 'Honório Serpa', uf: 'PR', ibge: '4109658' },
       { nome: 'Ibiam', uf: 'SC', ibge: '4206751' },
-      { nome: 'Ibicaré', uf: 'SC', ibge: '4206801' },
       { nome: 'Igaratinga', uf: 'MG', ibge: '3130200' },
       { nome: 'Igrapiúna', uf: 'BA', ibge: '2913457' },
       { nome: 'Imbuia', uf: 'SC', ibge: '4207403' },
@@ -125,7 +123,6 @@
       { nome: 'Novo Xingu', uf: 'RS', ibge: '4313466' },
       { nome: 'Ourizona', uf: 'PR', ibge: '4117404' },
       { nome: 'Paial', uf: 'SC', ibge: '4211876' },
-      { nome: 'Papanduva', uf: 'SC', ibge: '4212205' },
       { nome: 'Paranacity', uf: 'PR', ibge: '4118105' },
       { nome: 'Passos Maia', uf: 'SC', ibge: '4212270' },
       { nome: 'Paula Freitas', uf: 'PR', ibge: '4118600' },
@@ -167,11 +164,9 @@
       { nome: 'Sena Madureira', uf: 'AC', ibge: '1200500' },
       { nome: 'Senador Guiomard', uf: 'AC', ibge: '1200450' },
       { nome: 'Serra Alta', uf: 'SC', ibge: '4217550' },
-      { nome: 'Serrania', uf: 'MG', ibge: '3166907' },
       { nome: 'Sertaneja', uf: 'PR', ibge: '4126405' },
       { nome: 'Tabatinga', uf: 'AM', ibge: '1304062' },
       { nome: 'Tamarana', uf: 'PR', ibge: '4126678' },
-      { nome: 'Tangará', uf: 'SC', ibge: '4217907' },
       { nome: 'Taquaral', uf: 'SP', ibge: '3553658' },
       { nome: 'Taquaruçu do Sul', uf: 'RS', ibge: '4321329' },
       { nome: 'Taquarussu', uf: 'MS', ibge: '5007976' },

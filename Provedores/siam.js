@@ -3,11 +3,11 @@
   nome: 'SIAM',
   empresa: 'SIAM',
   stats: {
-    municipios: 3
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'SIAM' },
-    { key: 'Total Municipios', val: '3' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -52,8 +52,7 @@
   municipiosLista: {
     'siam': [
       { nome: 'Itabela', uf: 'BA', ibge: '2914653' },
-      { nome: 'Remanso', uf: 'BA', ibge: '2926004' },
-      { nome: 'Ribeira do Pombal', uf: 'BA', ibge: '2926608' }
+      { nome: 'Remanso', uf: 'BA', ibge: '2926004' }
     ]
   }
 };

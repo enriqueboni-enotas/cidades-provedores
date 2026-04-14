@@ -3,11 +3,11 @@
   nome: 'WebISSv2',
   empresa: 'WebISSv2',
   stats: {
-    municipios: 70
+    municipios: 71
   },
   visaoGeral: [
     { key: 'Nome', val: 'WebISSv2' },
-    { key: 'Total Municipios', val: '70' },
+    { key: 'Total Municipios', val: '71' },
     { key: 'Estados Atendidos', val: ['MG', 'BA', 'SE', 'TO', 'RO', 'RJ', 'PB', 'GO', 'RS', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -119,6 +119,7 @@
       { nome: 'Porto Seguro', uf: 'BA', ibge: '2925303' },
       { nome: 'Propriá', uf: 'SE', ibge: '2805703' },
       { nome: 'Queimados', uf: 'RJ', ibge: '3304144' },
+      { nome: 'Ribeira do Pombal', uf: 'BA', ibge: '2926608' },
       { nome: 'Rio Bonito', uf: 'RJ', ibge: '3304300' },
       { nome: 'Rolim de Moura', uf: 'RO', ibge: '1100288' },
       { nome: 'Sanclerlândia', uf: 'GO', ibge: '5219001' },
