@@ -42,7 +42,26 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 3. Para cada dia, analise os títulos dos commits para gerar itens de changelog. Commits que começam com "Merged PR XXXX:" vieram do notagateway-sync — use o título do PR e busque o body via `gh pr view XXXX --repo enotas-org/app-gw --json body` para entender o contexto completo. Cada item deve ter:
    - `icon`: um emoji relevante (🏙️ para cidades, 🔧 para correções, 🆕 para novos provedores, 📊 para alíquotas/impostos, 🔗 para URLs, 🌐 para exterior, etc.)
    - `destaque`: título curto e descritivo em português
-   - `texto`: descrição detalhada e contextualizada em português explicando o que mudou, por que mudou e qual o impacto (estilo do aguardando-deploy-changelog — o N2/CX precisa entender sem conhecer o código)
+   - `texto`: descrição RICA, DETALHADA e CONTEXTUALIZADA em português explicando o que mudou, por que mudou e qual o impacto. O N2/CX precisa entender sem conhecer o código. SEMPRE busque o body do PR (`gh pr view XXXX --repo enotas-org/app-gw --json body`) para ter contexto suficiente — não gere textos genéricos baseados apenas no título do commit.
+
+   EXEMPLO DE QUALIDADE ESPERADA (referência obrigatória):
+
+   ```
+   destaque: 'Limpeza de mensagens de erro no FgMaiss'
+   texto: 'As mensagens de erro retornadas pelas prefeituras que usam o provedor FgMaiss vinham com tags HTML, caracteres especiais e formatação que dificultavam a leitura no painel do cliente. Foi criado o método LimparMensagemErro que sanitiza essas mensagens antes de exibir. Aplicado em todas as operações do provedor (Cancelar, Recepcionar e RecepcionarV2), melhorando significativamente a experiência do usuário ao visualizar erros de emissão.'
+   ```
+
+   ```
+   destaque: 'São João Batista do Glória/MG — consulta por RPS no MemoryV2'
+   texto: 'O município de São João Batista do Glória/MG foi migrado recentemente para o provedor MemoryV2, mas faltava a operação de consulta individual de nota por número de RPS. Essa operação é essencial para sincronização de notas — quando o sistema precisa verificar se uma nota específica foi processada pela prefeitura. Agora o provedor MemoryV2 suporta essa consulta, resolvendo problemas de notas que ficavam "em emissão" sem retorno.'
+   ```
+
+   REGRAS DE QUALIDADE DO TEXTO:
+   - Mínimo 2 frases por item. Textos de 1 frase são PROIBIDOS.
+   - Explicar o PROBLEMA que existia antes (contexto), a MUDANÇA feita, e o IMPACTO/benefício.
+   - Mencionar nomes de provedores, cidades/UF, métodos e campos quando relevante.
+   - Evitar textos genéricos como "Ajustado o processamento para..." ou "Realizados ajustes gerais...". Se o texto ficou genérico, busque mais contexto no body do PR.
+   - Textos como "Commit de teste para validação de integração no ambiente." são inaceitáveis — ou descreva o que foi testado com contexto, ou agrupe com outro item relacionado.
 
 4. Dias sem commits devem ter um item com icon '📭', destaque 'Sem alterações' e texto 'Nenhum commit na dev neste dia.'
 
