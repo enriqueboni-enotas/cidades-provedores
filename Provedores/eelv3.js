@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 74
+    municipios: 73
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '74' },
+    { key: 'Total Municipios', val: '73' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -89,7 +89,6 @@
       { nome: 'Iconha', uf: 'ES', ibge: '3202603' },
       { nome: 'Ipiaú', uf: 'BA', ibge: '2913903' },
       { nome: 'Itabirinha', uf: 'MG', ibge: '3131802' },
-      { nome: 'Itamaraju', uf: 'BA', ibge: '2915601' },
       { nome: 'Itaocara', uf: 'RJ', ibge: '3302106' },
       { nome: 'Itapemirim', uf: 'ES', ibge: '3202801' },
       { nome: 'Jaboticatubas', uf: 'MG', ibge: '3134608' },

@@ -3,11 +3,11 @@
   nome: 'ArrecadaNet',
   empresa: 'ArrecadaNet',
   stats: {
-    municipios: 49
+    municipios: 50
   },
   visaoGeral: [
     { key: 'Nome', val: 'ArrecadaNet' },
-    { key: 'Total Municipios', val: '49' },
+    { key: 'Total Municipios', val: '50' },
     { key: 'Estados Atendidos', val: ['GO', 'TO', 'MS', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -79,6 +79,7 @@
       { nome: 'Mambaí', uf: 'GO', ibge: '5212709' },
       { nome: 'Mara Rosa', uf: 'GO', ibge: '5212808' },
       { nome: 'Mateiros', uf: 'TO', ibge: '1712702' },
+      { nome: 'Miracema do Tocantins', uf: 'TO', ibge: '1713205' },
       { nome: 'Miranorte', uf: 'TO', ibge: '1713304' },
       { nome: 'Montes Claros de Goiás', uf: 'GO', ibge: '5213707' },
       { nome: 'Nova Veneza', uf: 'GO', ibge: '5215009' },

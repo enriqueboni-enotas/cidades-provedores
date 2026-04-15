@@ -1,15 +1,23 @@
-﻿var provedorDetalhe = {
-  id: 'aspect',
-  nome: 'Aspect',
-  empresa: 'Aspect',
-  stats: {
-    municipios: 5
+﻿var cidadeDetalhe = {
+  id: 'jacunda-pa',
+  nome: 'Jacundá',
+  uf: 'PA',
+  ibge: '1503804',
+  constante: 'CodigoIBGE.JacundaPA',
+  provedorAtual: {
+    nome: 'Aspect',
+    namespace: null,
+    codigoNoProvedor: null,
+    robo: false,
+    webService: true,
+    urls: {
+      homologacao: {
+      },
+      producao: {
+        recepcaoLote: 'http://tributario.aspec.com.br/portal.pa.jacunda/ws/nfse/emitir'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'Aspect' },
-    { key: 'Total Municipios', val: '5' },
-    { key: 'Estados Atendidos', val: ['CE', 'PA'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
     assinaturaDigital: 0,
@@ -39,15 +47,6 @@
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false
-  },
-  municipiosLista: {
-    'aspect': [
-      { nome: 'Capistrano', uf: 'CE', ibge: '2302909' },
-      { nome: 'Jacundá', uf: 'PA', ibge: '1503804' },
-      { nome: 'Jaguaribara', uf: 'CE', ibge: '2306801' },
-      { nome: 'Morrinhos', uf: 'CE', ibge: '2308906' },
-      { nome: 'Ocara', uf: 'CE', ibge: '2309458' }
-    ]
   }
 };
 

@@ -3,11 +3,11 @@
   nome: 'WebISSv2',
   empresa: 'WebISSv2',
   stats: {
-    municipios: 71
+    municipios: 72
   },
   visaoGeral: [
     { key: 'Nome', val: 'WebISSv2' },
-    { key: 'Total Municipios', val: '71' },
+    { key: 'Total Municipios', val: '72' },
     { key: 'Estados Atendidos', val: ['MG', 'BA', 'SE', 'TO', 'RO', 'RJ', 'PB', 'GO', 'RS', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -98,6 +98,7 @@
       { nome: 'Itabaiana', uf: 'SE', ibge: '2802908' },
       { nome: 'Itabuna', uf: 'BA', ibge: '2914802' },
       { nome: 'Itacaré', uf: 'BA', ibge: '2914901' },
+      { nome: 'Itamaraju', uf: 'BA', ibge: '2915601' },
       { nome: 'Itapetinga', uf: 'BA', ibge: '2916401' },
       { nome: 'Jaíba', uf: 'MG', ibge: '3135050' },
       { nome: 'Japaratuba', uf: 'SE', ibge: '2803302' },

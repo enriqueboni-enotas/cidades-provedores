@@ -3,11 +3,11 @@
   nome: 'Centi',
   empresa: 'Centi',
   stats: {
-    municipios: 35
+    municipios: 36
   },
   visaoGeral: [
     { key: 'Nome', val: 'Centi' },
-    { key: 'Total Municipios', val: '35' },
+    { key: 'Total Municipios', val: '36' },
     { key: 'Estados Atendidos', val: ['GO', 'BA', 'MT'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -48,6 +48,7 @@
   },
   municipiosLista: {
     'centi': [
+      { nome: 'Brazabrantes', uf: 'GO', ibge: '5203609' },
       { nome: 'Cachoeira Alta', uf: 'GO', ibge: '5204102' },
       { nome: 'Caçu', uf: 'GO', ibge: '5204300' },
       { nome: 'Caetité', uf: 'BA', ibge: '2905206' },

@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 77
+    municipios: 79
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '77' },
+    { key: 'Total Municipios', val: '79' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -65,6 +65,7 @@
       { nome: 'Álvares Machado', uf: 'SP', ibge: '3501301' },
       { nome: 'Araruama', uf: 'RJ', ibge: '3300209' },
       { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
+      { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
       { nome: 'Boituva', uf: 'SP', ibge: '3507001' },
       { nome: 'Cachoeira do Sul', uf: 'RS', ibge: '4303004' },
       { nome: 'Caeté', uf: 'MG', ibge: '3110004' },
@@ -78,6 +79,7 @@
       { nome: 'Dom Pedrito', uf: 'RS', ibge: '4306601' },
       { nome: 'Eldorado do Sul', uf: 'RS', ibge: '4306767' },
       { nome: 'Encruzilhada do Sul', uf: 'RS', ibge: '4306908' },
+      { nome: 'Euclides da Cunha Paulista', uf: 'SP', ibge: '3515350' },
       { nome: 'Feliz', uf: 'RS', ibge: '4308102' },
       { nome: 'Getúlio Vargas', uf: 'RS', ibge: '4308904' },
       { nome: 'Guaporé', uf: 'RS', ibge: '4309407' },

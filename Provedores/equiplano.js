@@ -3,11 +3,11 @@
   nome: 'Equiplano',
   empresa: 'Equiplano',
   stats: {
-    municipios: 27
+    municipios: 28
   },
   visaoGeral: [
     { key: 'Nome', val: 'Equiplano' },
-    { key: 'Total Municipios', val: '27' },
+    { key: 'Total Municipios', val: '28' },
     { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -67,6 +67,7 @@
       { nome: 'Pranchita', uf: 'PR', ibge: '4120358' },
       { nome: 'Prudentópolis', uf: 'PR', ibge: '4120606' },
       { nome: 'Quedas do Iguaçu', uf: 'PR', ibge: '4120903' },
+      { nome: 'Quitandinha', uf: 'PR', ibge: '4121208' },
       { nome: 'Realeza', uf: 'PR', ibge: '4121406' },
       { nome: 'Reserva', uf: 'PR', ibge: '4121703' },
       { nome: 'Rondon', uf: 'PR', ibge: '4122602' },

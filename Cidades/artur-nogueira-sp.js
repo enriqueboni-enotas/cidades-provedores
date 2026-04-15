@@ -52,6 +52,11 @@
     suportaCancelamentoNFeClienteSemCpf: true,
     enviaEmailCliente: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    autenticidadeNota: {
+      urlVerificacao: 'https://nfse.cotia.sp.gov.br/ords/cotia/f?p=907:71',
+      UsaCodigoVerificacao: true,
+      UsaInscricaoMunicipalPrestador: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -1,15 +1,25 @@
-﻿var provedorDetalhe = {
-  id: 'tributusv2',
-  nome: 'TributusV2',
-  empresa: 'TributusV2',
-  stats: {
-    municipios: 17
+﻿var cidadeDetalhe = {
+  id: 'lagoa-nova-rn',
+  nome: 'Lagoa Nova',
+  uf: 'RN',
+  ibge: '2406502',
+  constante: 'CodigoIBGE.LagoaNovaRN',
+  provedorAtual: {
+    nome: 'TributusV2',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    codigoNoProvedor: null,
+    robo: false,
+    webService: true,
+    versaoAbrasf: '2.04',
+    infoAdicional: 'Verificar certificado e token, olhar no manual do webservice como o token é gerado',
+    urls: {
+      homologacao: {
+      },
+      producao: {
+        recepcaoLote: 'https://www.tributosmunicipais.com.br/nfse/api/?tokenAuth={0}'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'TributusV2' },
-    { key: 'Total Municipios', val: '17' },
-    { key: 'Estados Atendidos', val: ['PE', 'AL', 'RN'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
     assinaturaDigital: 2,
@@ -37,27 +47,6 @@
       { codigo: '5', nome: 'Imunidade' },
       { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
       { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
-    ]
-  },
-  municipiosLista: {
-    'tributusv2': [
-      { nome: 'Bom Conselho', uf: 'PE', ibge: '2602100' },
-      { nome: 'Buíque', uf: 'PE', ibge: '2602803' },
-      { nome: 'Capela', uf: 'AL', ibge: '2701704' },
-      { nome: 'Escada', uf: 'PE', ibge: '2605202' },
-      { nome: 'Lagoa Nova', uf: 'RN', ibge: '2406502' },
-      { nome: 'Lajedo', uf: 'PE', ibge: '2608800' },
-      { nome: 'Limoeiro', uf: 'PE', ibge: '2608909' },
-      { nome: 'Maragogi', uf: 'AL', ibge: '2704500' },
-      { nome: 'Nossa Senhora da Glória', uf: 'PE', ibge: '2804508' },
-      { nome: 'Ouricuri', uf: 'PE', ibge: '2609907' },
-      { nome: 'Pau dos Ferros', uf: 'RN', ibge: '2409407' },
-      { nome: 'Paudalho', uf: 'PE', ibge: '2610608' },
-      { nome: 'Pombos', uf: 'PE', ibge: '2611309' },
-      { nome: 'Quipapá', uf: 'PE', ibge: '2611507' },
-      { nome: 'Ribeirão', uf: 'PE', ibge: '2611804' },
-      { nome: 'Timbaúba', uf: 'PE', ibge: '2615300' },
-      { nome: 'Viçosa', uf: 'AL', ibge: '2709400' }
     ]
   }
 };
