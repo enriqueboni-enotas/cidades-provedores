@@ -17,9 +17,34 @@ var jiraChangelogData = [
     data: '16/04/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        icon: '🤖',
+        destaque: '[Autofix] Retornar NF-e como negada',
+        texto: '1 card (CE-25779)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Plano Start — erro ao gerar XML de envio',
+        texto: '1 card (CE-25736)',
+      },
+      {
+        icon: '💰',
+        destaque: 'Faturamento de excedentes indevido',
+        texto: '2 cards (CE-25700, CE-25657)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de NFS-e',
+        texto: '1 card (CE-25421)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Município de prestação como exterior',
+        texto: '1 card (CE-25219)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Envio do campo CSRT — SEFAZ PR',
+        texto: '1 card (CE-25137)',
       },
     ],
   },
