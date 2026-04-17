@@ -4,7 +4,74 @@ description: 'Atualiza os arquivos de configuração de provedores e cidades a p
 tools: ['shell', 'read', 'write', 'web']
 ---
 
-Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 9 etapas em sequência:
+Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 10 etapas em sequência:
+
+## Etapa 0: Verificar conexões e tokens (OBRIGATÓRIA — executar ANTES de tudo)
+
+Antes de iniciar qualquer etapa, verifique TODAS as conexões necessárias. Se alguma falhar, avise o usuário imediatamente e NÃO prossiga com as etapas que dependem dela.
+
+1. **GitHub CLI** — Verificar autenticação:
+
+   ```bash
+   gh auth status
+   ```
+
+   Deve mostrar "Logged in to github.com". Se falhar, avisar o usuário para rodar `gh auth login`.
+
+2. **Atlassian CLI (acli)** — Verificar conexão com o Jira:
+
+   ```bash
+   acli jira workitem search --jql "project = CE AND key = CE-1" --fields "key" --json
+   ```
+
+   Se retornar HTTP 401/403 ou erro de autenticação, avisar o usuário para rodar `acli jira auth login --web`. Etapas afetadas: 4, 6, 8.
+
+3. **Astrobox** — Verificar token:
+
+   ```powershell
+   $token = (Get-Content "$env:USERPROFILE\.env" | Where-Object { $_ -match '^ASTROBOX_TOKEN=' }) -replace '^ASTROBOX_TOKEN=',''
+   $body = (@{sql="SELECT 1"; dataSourceId="4491e172-f9f6-496c-a2fc-747638d5f080"; parameters=@{_gmt="-03:00"}; limit=1} | ConvertTo-Json -Compress)
+   Invoke-WebRequest -UseBasicParsing -Uri 'https://api-astrobox.hotmart.com/v1/executor/reactive/real-time' -Method POST -Headers @{"Authorization"="Bearer $token";"Content-Type"="application/x-ndjson";"Accept"="application/x-ndjson";"Origin"="https://astrobox.hotmart.com";"x-client-name"="astrobox"} -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
+   ```
+
+   Se retornar HTTP 401/403, ativar a skill `hotmart-oauth` para renovar o token. Etapa afetada: 5.
+
+4. **Git (app-gw)** — Verificar acesso ao repositório:
+
+   ```bash
+   git -C "c:\Git-Repositories\app-gw" fetch --dry-run origin dev
+   ```
+
+   Se falhar, avisar o usuário. Etapas afetadas: 1, 3, 7.
+
+5. **Git (CidadesProvedores)** — Verificar acesso ao repositório do site:
+   ```bash
+   git fetch --dry-run origin main
+   ```
+   Se falhar, avisar o usuário. Etapa afetada: 9.
+
+Ao final da verificação, exiba um resumo:
+
+```
+✅ GitHub CLI: OK
+✅ Atlassian CLI (Jira): OK
+✅ Astrobox: OK
+✅ Git app-gw: OK
+✅ Git CidadesProvedores: OK
+```
+
+Ou, se algum falhar:
+
+```
+✅ GitHub CLI: OK
+❌ Atlassian CLI (Jira): Token expirado — rode `acli jira auth login --web`
+✅ Astrobox: OK
+✅ Git app-gw: OK
+✅ Git CidadesProvedores: OK
+⚠️ Etapas 4, 6 e 8 serão puladas. Deseja continuar com as demais?
+```
+
+Se TODAS as conexões estiverem OK, prossiga automaticamente. Se alguma falhar, informe quais etapas serão afetadas e pergunte ao usuário se deseja continuar com as etapas que funcionam.
 
 ## Etapa 1: Garantir que o app-gw local está atualizado (branch dev)
 
@@ -28,6 +95,22 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 2. Execute o comando: `powershell -ExecutionPolicy Bypass -File gerar.ps1` no diretório do workspace.
 
 ## Etapa 3: Atualizar o Changelog GitHub (últimos 12 dias)
+
+### Modo incremental (padrão)
+
+Antes de processar todos os 12 dias, leia o arquivo `LogsAlteracoes/github-changelog.js` existente e extraia as datas (`tag`) dos dias já presentes. Compare com os 12 dias esperados:
+
+- **Dias novos** (não existem no arquivo atual): processar normalmente — buscar commits e gerar itens.
+- **Dia de hoje**: SEMPRE reprocessar, pois podem ter entrado novos commits ao longo do dia.
+- **Dia de ontem**: SEMPRE reprocessar, pois commits podem ter sido registrados em horário UTC que cai no dia anterior em Brasília.
+- **Dias antigos já presentes**: REUTILIZAR os itens do arquivo existente sem reprocessar.
+- **Dias que saíram da janela de 12 dias**: remover do array final.
+
+Isso economiza tempo e chamadas ao GitHub, especialmente nos dias com muitos commits que exigem busca de body de PR.
+
+Se o arquivo não existir ou estiver vazio, processar todos os 12 dias normalmente (modo completo).
+
+### Fonte de dados
 
 1. Use os commits da branch `dev` do app-gw local para gerar o changelog. Para cada dia dos últimos 12, liste os commits:
 
@@ -127,6 +210,22 @@ O script `gerar.ps1` lê arquivos locais do app-gw (XML de municípios e C# dos 
 5. IMPORTANTE: O `DURING` do Jira pode retornar cards que já apareceram em dias anteriores. Cada card deve ser contado apenas no primeiro dia em que aparece (o dia mais recente). Mantenha um set de keys já vistas para deduplicar.
 
 ## Etapa 5: Atualizar NF-e Negadas — Top motivos por dia (últimos 12 dias)
+
+### Modo incremental (padrão)
+
+Antes de processar todos os 12 dias, leia o arquivo `LogsAlteracoes/nfe-negadas-changelog.js` existente e extraia as datas (`tag`) dos dias já presentes. Compare com os 12 dias esperados:
+
+- **Dias novos** (não existem no arquivo atual): processar normalmente — executar query no Astrobox.
+- **Dia de hoje**: SEMPRE reprocessar, pois notas continuam sendo negadas ao longo do dia.
+- **Dia de ontem**: SEMPRE reprocessar, pois pode haver atraso no processamento de dados no Athena.
+- **Dias antigos já presentes (2+ dias atrás)**: REUTILIZAR os itens do arquivo existente sem reprocessar.
+- **Dias que saíram da janela de 12 dias**: remover do array final.
+
+O mesmo se aplica aos arquivos de detalhe em `LogsAlteracoes/nfe-negadas-detalhe/`: só gerar JSONs para os dias que precisam ser (re)processados. Manter os JSONs existentes dos dias reutilizados. Remover JSONs de dias que saíram da janela.
+
+Se o arquivo não existir ou estiver vazio, processar todos os 12 dias normalmente (modo completo).
+
+### Queries
 
 1. Para cada dia dos últimos 12, execute a seguinte query no Astrobox (datasource `dh-athena`, ID `4491e172-f9f6-496c-a2fc-747638d5f080`) via API REST ou script `astrobox-query.py`:
 

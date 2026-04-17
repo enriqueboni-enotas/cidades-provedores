@@ -1,5 +1,17 @@
 var jiraChangelogData = [
   {
+    tag: '17/04/2026',
+    titulo: 'Sexta-feira — 17 de Abril',
+    data: '17/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
     tag: '16/04/2026',
     titulo: 'Quinta-feira — 16 de Abril',
     data: '16/04/2026',
@@ -367,18 +379,6 @@ var jiraChangelogData = [
     tag: '05/04/2026',
     titulo: 'Domingo — 05 de Abril',
     data: '05/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '04/04/2026',
-    titulo: 'Sábado — 04 de Abril',
-    data: '04/04/2026',
     itens: [
       {
         icon: '📭',
