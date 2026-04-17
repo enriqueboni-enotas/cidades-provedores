@@ -3,12 +3,12 @@
   nome: 'WebISSv2',
   empresa: 'WebISSv2',
   stats: {
-    municipios: 72
+    municipios: 73
   },
   visaoGeral: [
     { key: 'Nome', val: 'WebISSv2' },
-    { key: 'Total Municipios', val: '72' },
-    { key: 'Estados Atendidos', val: ['MG', 'BA', 'SE', 'TO', 'RO', 'RJ', 'PB', 'GO', 'RS', 'PR'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '73' },
+    { key: 'Estados Atendidos', val: ['BA', 'MG', 'SE', 'TO', 'RO', 'RJ', 'PB', 'GO', 'RS', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -133,6 +133,7 @@
       { nome: 'São Lourenço', uf: 'MG', ibge: '3163706' },
       { nome: 'Senhor do Bonfim', uf: 'BA', ibge: '2930105' },
       { nome: 'Tobias Barreto', uf: 'SE', ibge: '2807402' },
+      { nome: 'Tucano', uf: 'BA', ibge: '2931905' },
       { nome: 'Uberaba', uf: 'MG', ibge: '3170107' },
       { nome: 'Urupá', uf: 'RO', ibge: '1101708' },
       { nome: 'Vilhena', uf: 'RO', ibge: '1100304' }

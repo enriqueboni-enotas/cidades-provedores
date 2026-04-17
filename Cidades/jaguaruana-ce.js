@@ -14,7 +14,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'https://www.xtronline.com.br/ce/jaguaruana/webservice.php'
+        recepcaoLote: 'http://www.xtronline.com.br/samadmin/webservice.php'
       }
     },
     emissaoSemCertificado: {

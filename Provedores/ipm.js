@@ -3,11 +3,11 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 111
+    municipios: 113
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '111' },
+    { key: 'Total Municipios', val: '113' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -107,6 +107,7 @@
       { nome: 'Ibirama', uf: 'SC', ibge: '4206900' },
       { nome: 'Igrejinha', uf: 'RS', ibge: '4310108' },
       { nome: 'Indaial', uf: 'SC', ibge: '4207502' },
+      { nome: 'Itá', uf: 'SC', ibge: '4208005' },
       { nome: 'Itapoá', uf: 'SC', ibge: '4208450' },
       { nome: 'Ituporanga', uf: 'SC', ibge: '4208500' },
       { nome: 'Jaboticaba', uf: 'RS', ibge: '4310850' },
@@ -136,6 +137,7 @@
       { nome: 'Paranavaí', uf: 'PR', ibge: '4118402' },
       { nome: 'Penha', uf: 'SC', ibge: '4212502' },
       { nome: 'Pinhais', uf: 'PR', ibge: '4119152' },
+      { nome: 'Pinhal', uf: 'RS', ibge: '4314456' },
       { nome: 'Pinhalzinho', uf: 'SC', ibge: '4212908' },
       { nome: 'Pomerode', uf: 'SC', ibge: '4213203' },
       { nome: 'Porto Belo', uf: 'SC', ibge: '4213500' },

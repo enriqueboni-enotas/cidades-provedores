@@ -14,7 +14,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'https://www.pmat.com.br/wsnf/ServicosNF.asmx'
+        recepcaoLote: 'http://www.xtronline.com.br/samadmin/webservice.php'
       }
     }
   },

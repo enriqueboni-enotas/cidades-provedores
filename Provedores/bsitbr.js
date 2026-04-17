@@ -3,11 +3,11 @@
   nome: 'BSITBR',
   empresa: 'BSITBR',
   stats: {
-    municipios: 7
+    municipios: 8
   },
   visaoGeral: [
     { key: 'Nome', val: 'BSITBR' },
-    { key: 'Total Municipios', val: '7' },
+    { key: 'Total Municipios', val: '8' },
     { key: 'Estados Atendidos', val: ['GO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -63,7 +63,8 @@
       { nome: 'Inhumas', uf: 'GO', ibge: '5210000' },
       { nome: 'Jataí', uf: 'GO', ibge: '5211909' },
       { nome: 'Joviânia', uf: 'GO', ibge: '5212105' },
-      { nome: 'Orizona', uf: 'GO', ibge: '5215306' }
+      { nome: 'Orizona', uf: 'GO', ibge: '5215306' },
+      { nome: 'Pirenópolis', uf: 'GO', ibge: '5217302' }
     ]
   }
 };

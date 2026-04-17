@@ -3,11 +3,11 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 216
+    municipios: 219
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '216' },
+    { key: 'Total Municipios', val: '219' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'PE', 'MA', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'PB', 'AL', 'RS', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -95,6 +95,7 @@
       { nome: 'Carolina', uf: 'MA', ibge: '2102804' },
       { nome: 'Castilho', uf: 'SP', ibge: '3511003' },
       { nome: 'Cerejeiras', uf: 'RO', ibge: '1100056' },
+      { nome: 'Cerqueira César', uf: 'SP', ibge: '3511409' },
       { nome: 'Chapadão do Sul', uf: 'MS', ibge: '5002951' },
       { nome: 'Coelho Neto', uf: 'MA', ibge: '2103406' },
       { nome: 'Colniza', uf: 'MT', ibge: '5103254' },
@@ -183,6 +184,7 @@
       { nome: 'Oriente', uf: 'SP', ibge: '3534104' },
       { nome: 'Orindiúva', uf: 'SP', ibge: '3534203' },
       { nome: 'Orocó', uf: 'PE', ibge: '2609808' },
+      { nome: 'Oscar Bressane', uf: 'SP', ibge: '3534500' },
       { nome: 'Ourilândia do Norte', uf: 'PA', ibge: '1505437' },
       { nome: 'Ouro Fino', uf: 'MG', ibge: '3146008' },
       { nome: 'Ouro Preto do Oeste', uf: 'RO', ibge: '1100155' },
@@ -235,6 +237,7 @@
       { nome: 'Santo Anastácio', uf: 'SP', ibge: '3547700' },
       { nome: 'Santo Antônio de Posse', uf: 'SP', ibge: '3548005' },
       { nome: 'Santos Dumont', uf: 'MG', ibge: '3160702' },
+      { nome: 'São Bento do Sapucaí', uf: 'SP', ibge: '3548609' },
       { nome: 'São Fidélis', uf: 'RJ', ibge: '3304805' },
       { nome: 'São Gabriel do Oeste', uf: 'MS', ibge: '5007695' },
       { nome: 'São João da Barra', uf: 'RJ', ibge: '3305000' },

@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 79
+    municipios: 80
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '79' },
+    { key: 'Total Municipios', val: '80' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -124,6 +124,7 @@
       { nome: 'Santa Vitória do Palmar', uf: 'RS', ibge: '4317301' },
       { nome: 'São Gabriel', uf: 'RS', ibge: '4318309' },
       { nome: 'São Gonçalo do Rio Abaixo', uf: 'MG', ibge: '3161908' },
+      { nome: 'São José do Norte', uf: 'RS', ibge: '4318507' },
       { nome: 'São Lourenço do Sul', uf: 'RS', ibge: '4318804' },
       { nome: 'São Pedro', uf: 'SP', ibge: '3550407' },
       { nome: 'São Roque', uf: 'SP', ibge: '3550605' },

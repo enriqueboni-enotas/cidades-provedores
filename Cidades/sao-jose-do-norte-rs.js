@@ -1,22 +1,24 @@
 ﻿var cidadeDetalhe = {
-  id: 'ibiam-sc',
-  nome: 'Ibiam',
-  uf: 'SC',
-  ibge: '4206751',
-  constante: 'CodigoIBGE.IbiamSC',
+  id: 'sao-jose-do-norte-rs',
+  nome: 'São José do Norte',
+  uf: 'RS',
+  ibge: '4318507',
+  constante: 'CodigoIBGE.SaoJoseDoNorteRS',
   provedorAtual: {
-    nome: 'BethaV3',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
+    nome: 'GOVBRv3',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
+        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
+        recepcaoLote: 'https://webapp1-saojosedonorte.cidade360.cloud/nfse.API/NotaNacional',
+        consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
@@ -41,13 +43,14 @@
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
-    usaCNAE: false,
+    usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,

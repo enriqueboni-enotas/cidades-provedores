@@ -3,12 +3,12 @@
   nome: 'Betha',
   empresa: 'Betha',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'Betha' },
-    { key: 'Total Municipios', val: '2' },
-    { key: 'Estados Atendidos', val: ['PR', 'RS'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -61,7 +61,6 @@
   },
   municipiosLista: {
     'betha': [
-      { nome: 'Jaguariaíva', uf: 'PR', ibge: '4112009' },
       { nome: 'São Pedro do Sul', uf: 'RS', ibge: '4319406' }
     ]
   }

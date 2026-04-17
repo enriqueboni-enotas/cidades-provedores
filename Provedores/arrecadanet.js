@@ -3,11 +3,11 @@
   nome: 'ArrecadaNet',
   empresa: 'ArrecadaNet',
   stats: {
-    municipios: 50
+    municipios: 51
   },
   visaoGeral: [
     { key: 'Nome', val: 'ArrecadaNet' },
-    { key: 'Total Municipios', val: '50' },
+    { key: 'Total Municipios', val: '51' },
     { key: 'Estados Atendidos', val: ['GO', 'TO', 'MS', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -72,6 +72,7 @@
       { nome: 'Formoso', uf: 'GO', ibge: '5208103' },
       { nome: 'Gameleira de Goiás', uf: 'GO', ibge: '5208152' },
       { nome: 'Goianápolis', uf: 'GO', ibge: '5208400' },
+      { nome: 'Itapaci', uf: 'GO', ibge: '5210901' },
       { nome: 'Itauçu', uf: 'GO', ibge: '5211404' },
       { nome: 'Jandaia', uf: 'GO', ibge: '5211701' },
       { nome: 'Jaraguá', uf: 'GO', ibge: '5211800' },

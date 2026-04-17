@@ -1,9 +1,9 @@
 ﻿var cidadeDetalhe = {
-  id: 'cerqueira-cesar-sp',
-  nome: 'Cerqueira César',
+  id: 'sao-bento-do-sapucai-sp',
+  nome: 'São Bento do Sapucaí',
   uf: 'SP',
-  ibge: '3511409',
-  constante: 'CodigoIBGE.CerqueiraCesarSP',
+  ibge: '3548609',
+  constante: 'CodigoIBGE.SaoBentoDoSapucaiSP',
   provedorAtual: {
     nome: 'Fiorilli',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
@@ -17,7 +17,7 @@
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://45.162.155.24:5651//IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://saobento.amendolaeamendola.com.br:8453/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

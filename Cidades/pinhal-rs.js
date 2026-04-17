@@ -1,9 +1,9 @@
 ﻿var cidadeDetalhe = {
-  id: 'ita-sc',
-  nome: 'Itá',
-  uf: 'SC',
-  ibge: '4208005',
-  constante: 'CodigoIBGE.ItaSC',
+  id: 'pinhal-rs',
+  nome: 'Pinhal',
+  uf: 'RS',
+  ibge: '4314456',
+  constante: 'CodigoIBGE.PinhalRS',
   provedorAtual: {
     nome: 'IPM',
     namespace: null,
@@ -15,7 +15,9 @@
         recepcaoLote: 'System.Xml.XmlElement'
       },
       producao: {
-        recepcaoLote: 'System.Xml.XmlElement'
+        recepcaoLote: 'System.Xml.XmlElement',
+        consultaRps: 'System.Xml.XmlElement',
+        downloadPDF: 'C:\tools\Html2Pdf\bin\wkhtmltopdf.exe'
       }
     }
   },

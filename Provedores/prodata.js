@@ -3,11 +3,11 @@
   nome: 'ProData',
   empresa: 'ProData',
   stats: {
-    municipios: 8
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'ProData' },
-    { key: 'Total Municipios', val: '8' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['GO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -54,8 +54,7 @@
       { nome: 'Goianésia', uf: 'GO', ibge: '5208608' },
       { nome: 'Luziânia', uf: 'GO', ibge: '5212501' },
       { nome: 'Morrinhos', uf: 'GO', ibge: '5213806' },
-      { nome: 'Niquelândia', uf: 'GO', ibge: '5214606' },
-      { nome: 'Pirenópolis', uf: 'GO', ibge: '5217302' }
+      { nome: 'Niquelândia', uf: 'GO', ibge: '5214606' }
     ]
   }
 };

@@ -1,23 +1,23 @@
 ﻿var cidadeDetalhe = {
-  id: 'cerqueira-cesar-sp',
-  nome: 'Cerqueira César',
+  id: 'oscar-bressane-sp',
+  nome: 'Oscar Bressane',
   uf: 'SP',
-  ibge: '3511409',
-  constante: 'CodigoIBGE.CerqueiraCesarSP',
+  ibge: '3534500',
+  constante: 'CodigoIBGE.OscarBressaneSP',
   provedorAtual: {
     nome: 'Fiorilli',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'NaoUsaAssinatura',
     robo: false,
     webService: true,
     versaoAbrasf: '2.02',
-    infoAdicional: 'Validar as propriedades para configurar o provedor no xml\n					NaoSuportaCancelamento - Cidade não suporta cancelamento via websevice	EnviaValorIssZerado - Envia ValorIss zerado nas emissões\n					NaoEnviaValorIss - Não envia ValorIss nas emissões\n					NaoUsaAssinatura - Não assina o XML\n					FracionarAliquotaNoXml - Fraciona a aliquota\n					Formatar4CasasDecimaisAliquotaNoXml - Envia Aliquota com 4 casas decimais\n					UsaCodigoServicoMunicipal - Prefeitura usa codigo de serviço municipal\n					NaoUsarItemListaServico - Prefeitura não usa item da lista de serviços\n					UsaCNAE - Prefeitura usa Cnae\n					UsaExigibilidadeIssUm - Exigibilidade sempre igual a 1\n					UsaImpressaoPdfPorLink - Usa o PDF padrão da prefeitura gerado pelo link\n					UsaCidadePrestacaoParaCancelamento - Usa cidade de prestação para realizar o cancelamento\n					NaoSuportaEmissaoSemTomador - Não suporta emissão sem cliente',
+    infoAdicional: 'Validar as propriedades para configurar o provedor no xml\n          NaoSuportaCancelamento - Cidade não suporta cancelamento via websevice	EnviaValorIssZerado - Envia ValorIss zerado nas emissões\n          NaoEnviaValorIss - Não envia ValorIss nas emissões\n          NaoUsaAssinatura - Não assina o XML\n          FracionarAliquotaNoXml - Fraciona a aliquota\n          Formatar4CasasDecimaisAliquotaNoXml - Envia Aliquota com 4 casas decimais\n          UsaCodigoServicoMunicipal - Prefeitura usa codigo de serviço municipal\n          NaoUsarItemListaServico - Prefeitura não usa item da lista de serviços\n          UsaCNAE - Prefeitura usa Cnae\n          UsaExigibilidadeIssUm - Exigibilidade sempre igual a 1\n          UsaImpressaoPdfPorLink - Usa o PDF padrão da prefeitura gerado pelo link\n          UsaCidadePrestacaoParaCancelamento - Usa cidade de prestação para realizar o cancelamento\n          NaoSuportaEmissaoSemTomador - Não suporta emissão sem cliente',
     urls: {
       homologacao: {
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://45.162.155.24:5651//IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'http://oscarbressane.dcfiorilli.com.br:8081/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

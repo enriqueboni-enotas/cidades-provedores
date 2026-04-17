@@ -1,15 +1,24 @@
-﻿var provedorDetalhe = {
-  id: 'fisco-netv2',
-  nome: 'Fisco.NetV2',
-  empresa: 'Fisco.NetV2',
-  stats: {
-    municipios: 12
+﻿var cidadeDetalhe = {
+  id: 'sao-felipe-ba',
+  nome: 'São Felipe',
+  uf: 'BA',
+  ibge: '2929107',
+  constante: 'CodigoIBGE.SaoFelipeBA',
+  provedorAtual: {
+    nome: 'Fisco.NetV2',
+    namespace: null,
+    codigoNoProvedor: 'NaoSuportaCancelamento',
+    robo: false,
+    webService: true,
+    urls: {
+      homologacao: {
+        recepcaoLote: 'https://fisco.net.br/wsnfseabrasf/ServicosNFSEAbrasfHomologacao.asmx'
+      },
+      producao: {
+        recepcaoLote: 'https://sefaz.fisco.net.br/webserviceabrasf/ServicosNFSEAbrasf.asmx'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'Fisco.NetV2' },
-    { key: 'Total Municipios', val: '12' },
-    { key: 'Estados Atendidos', val: ['BA', 'PI'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
@@ -35,22 +44,6 @@
       { codigo: '5', nome: 'Imunidade' },
       { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
       { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
-    ]
-  },
-  municipiosLista: {
-    'fisco-netv2': [
-      { nome: 'Cachoeira', uf: 'BA', ibge: '2904902' },
-      { nome: 'Cajueiro da Praia', uf: 'PI', ibge: '2202083' },
-      { nome: 'Canudos', uf: 'BA', ibge: '2906824' },
-      { nome: 'Capim Grosso', uf: 'BA', ibge: '2906873' },
-      { nome: 'Casa Nova', uf: 'BA', ibge: '2907202' },
-      { nome: 'Itanhém', uf: 'BA', ibge: '2916005' },
-      { nome: 'Itiúba', uf: 'BA', ibge: '2917003' },
-      { nome: 'Paulo Afonso', uf: 'BA', ibge: '2924009' },
-      { nome: 'Rafael Jambeiro', uf: 'BA', ibge: '2925956' },
-      { nome: 'São Felipe', uf: 'BA', ibge: '2929107' },
-      { nome: 'Ubaíra', uf: 'BA', ibge: '2932101' },
-      { nome: 'Várzea do Poço', uf: 'BA', ibge: '2933109' }
     ]
   }
 };

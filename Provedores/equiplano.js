@@ -3,11 +3,11 @@
   nome: 'Equiplano',
   empresa: 'Equiplano',
   stats: {
-    municipios: 28
+    municipios: 29
   },
   visaoGeral: [
     { key: 'Nome', val: 'Equiplano' },
-    { key: 'Total Municipios', val: '28' },
+    { key: 'Total Municipios', val: '29' },
     { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -60,6 +60,7 @@
       { nome: 'Imbituva', uf: 'PR', ibge: '4110102' },
       { nome: 'Itaperuçu', uf: 'PR', ibge: '4111258' },
       { nome: 'Laranjeiras do Sul', uf: 'PR', ibge: '4113304' },
+      { nome: 'Lupionópolis', uf: 'PR', ibge: '4113809' },
       { nome: 'Missal', uf: 'PR', ibge: '4116059' },
       { nome: 'Nova Laranjeiras', uf: 'PR', ibge: '4117057' },
       { nome: 'Piên', uf: 'PR', ibge: '4119103' },

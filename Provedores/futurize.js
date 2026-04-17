@@ -3,11 +3,11 @@
   nome: 'Futurize',
   empresa: 'Futurize',
   stats: {
-    municipios: 29
+    municipios: 30
   },
   visaoGeral: [
     { key: 'Nome', val: 'Futurize' },
-    { key: 'Total Municipios', val: '29' },
+    { key: 'Total Municipios', val: '30' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -66,6 +66,7 @@
       { nome: 'Ervália', uf: 'MG', ibge: '3124005' },
       { nome: 'Eugenópolis', uf: 'MG', ibge: '3124906' },
       { nome: 'Guarani', uf: 'MG', ibge: '3128402' },
+      { nome: 'Ibitiúra de Minas', uf: 'MG', ibge: '3129905' },
       { nome: 'Itaipé', uf: 'MG', ibge: '3132305' },
       { nome: 'Lima Duarte', uf: 'MG', ibge: '3138609' },
       { nome: 'Maria da Fé', uf: 'MG', ibge: '3139904' },

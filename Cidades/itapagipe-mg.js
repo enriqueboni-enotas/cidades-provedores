@@ -1,15 +1,27 @@
-﻿var provedorDetalhe = {
-  id: 'fgmaiss',
-  nome: 'FgMaiss',
-  empresa: 'FgMaiss',
-  stats: {
-    municipios: 13
+﻿var cidadeDetalhe = {
+  id: 'itapagipe-mg',
+  nome: 'Itapagipe',
+  uf: 'MG',
+  ibge: '3133402',
+  constante: 'CodigoIBGE.ItapagipeMG',
+  provedorAtual: {
+    nome: 'FgMaiss',
+    namespace: null,
+    codigoNoProvedor: '21226840000147',
+    robo: false,
+    webService: true,
+    infoAdicional: 'Codigonoprovedor Deve ser configurado como o CNPJ da prefeitura',
+    urls: {
+      homologacao: {
+        recepcaoLote: 'https://www.fgmaiss.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'
+      },
+      producao: {
+        recepcaoLote: 'https://www.fgmaiss.com.br/issqn/wservice/wsnfeenviapn.php',
+        consultaLote: 'https://www.fgmaiss.com.br/issqn/wservice/wsnfeconsultaxmlpn.php',
+        cancelamentoNFe: 'https://www.fgmaiss.com.br/issqn/wservice/wsnfecancelapn.php'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'FgMaiss' },
-    { key: 'Total Municipios', val: '13' },
-    { key: 'Estados Atendidos', val: ['SP', 'RJ', 'MG'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
     assinaturaDigital: 0,
@@ -40,23 +52,6 @@
     suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0
-  },
-  municipiosLista: {
-    'fgmaiss': [
-      { nome: 'Areiópolis', uf: 'SP', ibge: '3503604' },
-      { nome: 'Barra Bonita', uf: 'SP', ibge: '3505302' },
-      { nome: 'Buritama', uf: 'SP', ibge: '3508108' },
-      { nome: 'Cravinhos', uf: 'SP', ibge: '3513108' },
-      { nome: 'Guariba', uf: 'SP', ibge: '3518602' },
-      { nome: 'Igaraçu do Tietê', uf: 'SP', ibge: '3520004' },
-      { nome: 'Itapagipe', uf: 'MG', ibge: '3133402' },
-      { nome: 'Ituverava', uf: 'SP', ibge: '3524105' },
-      { nome: 'Luís Antônio', uf: 'SP', ibge: '3527603' },
-      { nome: 'Porangaba', uf: 'SP', ibge: '3540507' },
-      { nome: 'Serrana', uf: 'SP', ibge: '3551504' },
-      { nome: 'Tanabi', uf: 'SP', ibge: '3553401' },
-      { nome: 'Três Rios', uf: 'RJ', ibge: '3306008' }
-    ]
   }
 };
 
