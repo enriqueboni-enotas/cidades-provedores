@@ -29,11 +29,7 @@ var emAndamentoData = {
           key: 'CE-25596',
           destaque: 'Alterar painel para SMU — Araraquara/SP',
         },
-        {
-          key: 'CE-25591',
-          destaque: 'Campo CNAE não disponível no cadastro',
-        },
-        { key: 'CE-25559', destaque: 'Correção de notas' },
+        { key: 'CE-25591', destaque: 'Campo CNAE não disponível no cadastro' },
         { key: 'CE-25525', destaque: 'Destaque código BC ISSQN' },
         {
           key: 'CE-25494',
@@ -43,19 +39,10 @@ var emAndamentoData = {
           key: 'CE-25488',
           destaque: 'Atualização de CTN removendo benefício municipal',
         },
-        {
-          key: 'CE-25446',
-          destaque: 'Alteração de layout da nota fiscal 2.0',
-        },
+        { key: 'CE-25446', destaque: 'Alteração de layout da nota fiscal 2.0' },
         { key: 'CE-25383', destaque: 'Campo código interno do contribuinte' },
-        {
-          key: 'CE-25263',
-          destaque: 'Emissão exterior portal nacional',
-        },
-        {
-          key: 'CE-25222',
-          destaque: 'Integração com a Shopify (atualização)',
-        },
+        { key: 'CE-25263', destaque: 'Emissão exterior portal nacional' },
+        { key: 'CE-25222', destaque: 'Integração com a Shopify (atualização)' },
         { key: 'CE-24806', destaque: 'Reclame Aqui — reclamação de cliente' },
         { key: 'CE-24175', destaque: 'Pesquisa de vendas' },
       ],
@@ -74,36 +61,19 @@ var emAndamentoData = {
       status: 'Reopened',
       icon: '🔄',
       itens: [
-        {
-          key: 'CE-23131',
-          destaque: 'Notas fiscais emitidas incorretamente',
-        },
+        { key: 'CE-23131', destaque: 'Notas fiscais emitidas incorretamente' },
       ],
     },
     {
       status: 'Open',
       icon: '📋',
       itens: [
-        {
-          key: 'CE-25807',
-          destaque: 'Faturamento excedentes indevido',
-        },
-        {
-          key: 'CE-25775',
-          destaque: 'Análise de vendas canceladas',
-        },
-        {
-          key: 'CE-25768',
-          destaque: 'Falha na integração — Kobana',
-        },
-        {
-          key: 'CE-25760',
-          destaque: 'Parametrização para emissão',
-        },
-        {
-          key: 'CE-25683',
-          destaque: 'Faturamento indevido de excedentes',
-        },
+        { key: 'CE-25807', destaque: 'Faturamento excedentes indevido' },
+        { key: 'CE-25775', destaque: 'Análise de vendas canceladas' },
+        { key: 'CE-25768', destaque: 'Falha na integração — Kobana' },
+        { key: 'CE-25760', destaque: 'Parametrização para emissão' },
+        { key: 'CE-25683', destaque: 'Faturamento indevido de excedentes' },
+        { key: 'CE-25621', destaque: 'Análise de coprodução' },
         { key: 'CE-25566', destaque: 'Integração com Woocommerce' },
         {
           key: 'CE-25563',
@@ -122,19 +92,13 @@ var emAndamentoData = {
           key: 'CE-25254',
           destaque: 'Erro emissão tomador exterior — Pato Branco/PR',
         },
-        {
-          key: 'CE-25229',
-          destaque: 'Atualização layout XML — Cotia/SP',
-        },
+        { key: 'CE-25229', destaque: 'Atualização layout XML — Cotia/SP' },
         { key: 'CE-25218', destaque: 'Atualização de município' },
         {
           key: 'CE-25193',
           destaque: 'Regime de apuração tributária do Simples Nacional',
         },
-        {
-          key: 'CE-25163',
-          destaque: 'Melhoria: campo IE para pessoa física',
-        },
+        { key: 'CE-25163', destaque: 'Melhoria: campo IE para pessoa física' },
       ],
     },
   ],
@@ -149,8 +113,8 @@ var emAndamentoData = {
         nome: 'GW',
         cor: '#F04E23',
         descricao: 'Gateway NFS-e/NF-e com prefeituras',
-        total: 18,
-        pct: '45,0',
+        total: 17,
+        pct: '42,5',
         assuntos: [
           {
             assunto: 'Emissão exterior / Tomador estrangeiro',
@@ -177,10 +141,10 @@ var emAndamentoData = {
             keys: 'CE-25776,CE-23131',
           },
           {
-            assunto: 'Erro de emissão / Rejeição / Correção',
-            qtd: 2,
-            pct: '5,0',
-            keys: 'CE-25559,CE-25769',
+            assunto: 'Erro de emissão / Certificado digital',
+            qtd: 1,
+            pct: '2,5',
+            keys: 'CE-25769',
           },
         ],
       },
@@ -272,8 +236,8 @@ var emAndamentoData = {
         nome: 'Outros',
         cor: '#C8C5BC',
         descricao: 'Melhorias, integrações, outros',
-        total: 4,
-        pct: '10,0',
+        total: 5,
+        pct: '12,5',
         assuntos: [
           {
             assunto: 'Integrações (Shopify, Woocommerce, Kobana)',
@@ -286,6 +250,12 @@ var emAndamentoData = {
             qtd: 1,
             pct: '2,5',
             keys: 'CE-24806',
+          },
+          {
+            assunto: 'Análise de coprodução',
+            qtd: 1,
+            pct: '2,5',
+            keys: 'CE-25621',
           },
         ],
       },

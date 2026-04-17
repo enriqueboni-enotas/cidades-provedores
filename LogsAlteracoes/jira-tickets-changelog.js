@@ -5,18 +5,6 @@ var jiraChangelogData = [
     data: '17/04/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '16/04/2026',
-    titulo: 'Quinta-feira — 16 de Abril',
-    data: '16/04/2026',
-    itens: [
-      {
         icon: '🤖',
         destaque: '[Autofix] Retornar NF-e como negada',
         texto: '1 card (CE-25779)',
@@ -37,14 +25,37 @@ var jiraChangelogData = [
         texto: '1 card (CE-25421)',
       },
       {
+        icon: '�',
+        destaque: 'Painel para SMU',
+        texto: '1 card (CE-25231)',
+      },
+      {
         icon: '🌐',
         destaque: 'Município de prestação como exterior',
         texto: '1 card (CE-25219)',
       },
       {
         icon: '🔧',
+        destaque: 'Vendas não são importadas',
+        texto: '1 card (CE-25212)',
+      },
+      {
+        icon: '🔧',
         destaque: 'Envio do campo CSRT — SEFAZ PR',
         texto: '1 card (CE-25137)',
+      },
+    ],
+  },
+  {
+    tag: '16/04/2026',
+    titulo: 'Quinta-feira — 16 de Abril',
+    data: '16/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos já contabilizados em 17/04).',
       },
     ],
   },
@@ -64,7 +75,7 @@ var jiraChangelogData = [
         texto: '1 card (CE-25514)',
       },
       {
-        icon: '🔧',
+        icon: '�',
         destaque: 'Ajuste de layout em Itaperuna/RJ',
         texto: '1 card (CE-25509)',
       },
@@ -74,14 +85,19 @@ var jiraChangelogData = [
         texto: '1 card (CE-25508)',
       },
       {
-        icon: '💰',
+        icon: '�',
         destaque: 'Faturamento de excedentes indevido',
-        texto: '4 cards (CE-25450, CE-25350, CE-25348, CE-25336, CE-25323)',
+        texto: '5 cards (CE-25450, CE-25350, CE-25348, CE-25336, CE-25323)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Bug notas de eventos',
+        texto: '1 card (CE-25447)',
       },
       {
         icon: '🔄',
         destaque: 'Sincronização de notas',
-        texto: '1 card (CE-25221)',
+        texto: '2 cards (CE-25221, CE-24229)',
       },
       {
         icon: '🔧',
@@ -100,7 +116,7 @@ var jiraChangelogData = [
         texto: '1 card (CE-25106)',
       },
       {
-        icon: '🔧',
+        icon: '�',
         destaque: 'Vendas Pagar.me 2.0',
         texto: '1 card (CE-25015)',
       },
@@ -110,12 +126,7 @@ var jiraChangelogData = [
         texto: '1 card (CE-24387)',
       },
       {
-        icon: '🔄',
-        destaque: 'Sincronizar notas',
-        texto: '1 card (CE-24229)',
-      },
-      {
-        icon: '📊',
+        icon: '�',
         destaque: 'Descrição código de tributação',
         texto: '1 card (CE-23878)',
       },
@@ -137,14 +148,10 @@ var jiraChangelogData = [
     data: '14/04/2026',
     itens: [
       {
-        icon: '🔧',
-        destaque: 'Vendas não são importadas',
-        texto: '1 card (CE-25212)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Bug notas de eventos',
-        texto: '1 card (CE-25447)',
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos já contabilizados em dias posteriores).',
       },
     ],
   },
@@ -168,7 +175,8 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos já contabilizados em dias posteriores).',
       },
     ],
   },
