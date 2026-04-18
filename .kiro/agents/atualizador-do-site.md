@@ -68,10 +68,9 @@ Ou, se algum falhar:
 ✅ Astrobox: OK
 ✅ Git app-gw: OK
 ✅ Git CidadesProvedores: OK
-⚠️ Etapas 4, 6 e 8 serão puladas. Deseja continuar com as demais?
 ```
 
-Se TODAS as conexões estiverem OK, prossiga automaticamente. Se alguma falhar, informe quais etapas serão afetadas e pergunte ao usuário se deseja continuar com as etapas que funcionam.
+Se TODAS as conexões estiverem OK, prossiga automaticamente. Se QUALQUER conexão falhar, PARE IMEDIATAMENTE — NÃO execute nenhuma etapa. Informe quais conexões falharam, o comando para corrigir cada uma, e peça ao usuário para resolver antes de rodar novamente.
 
 ## Etapa 1: Garantir que o app-gw local está atualizado (branch dev)
 

@@ -1,174 +1,50 @@
 ﻿var changelogData = [
   {
+    tag: '17/04/2026',
+    titulo: 'Sexta-feira — 17 de Abril',
+    data: '17/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '16/04/2026',
     titulo: 'Quinta-feira — 16 de Abril',
     data: '16/04/2026',
     itens: [
       {
         icon: '🏙️',
-        destaque: 'Envio de IBS e CBS nas notas de Cotia/SP',
+        destaque: 'Morro Reuter/RS e código interno do contribuinte no GOVBRv3',
         texto:
-          'O município de Cotia/SP passou a exigir os campos de IBS (Imposto sobre Bens e Serviços) e CBS (Contribuição sobre Bens e Serviços) na emissão de NFS-e, em conformidade com a reforma tributária. Foi implementado o envio desses novos campos no layout FSBU/Sustain, garantindo que as notas emitidas em Cotia atendam às novas exigências fiscais sem rejeição pela prefeitura.',
+          'O município de Morro Reuter/RS foi adicionado ao conjunto de códigos IBGE suportados pelo provedor GOVBRv3, permitindo a emissão de NFS-e na cidade. Além disso, o PR incluiu a implementação de fallback SHA1 para assinatura digital em modo debug e a alteração do parâmetro padrão "embutido" para true nas APIs de teste (EmpresaApi, NotaApi, ApiBase), facilitando os testes de integração com certificados digitais.',
       },
       {
         icon: '🔧',
-        destaque: 'Correção no workflow de produção',
+        destaque: 'Atualização de referências das GitHub Actions no workflow de produção',
         texto:
-          'O workflow de CI/CD de produção estava configurado com o label self-hosted no runs-on, o que impedia a execução correta dos pipelines em ambientes cloud. A label foi removida para que o build e deploy voltem a funcionar normalmente no GitHub Actions.',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Emissão para exterior em São Pedro da Aldeia/RJ — ModernizacaoPublica',
-        texto:
-          'O município de São Pedro da Aldeia/RJ, que usa o provedor ModernizacaoPublica, apresentava erro ao emitir NFS-e para tomadores do exterior. O problema estava na comparação do código IBGE durante a exportação e na falta de tratamento específico para natureza de operação 4 (exportação). Foram aplicadas três correções: ajuste na comparação do código IBGE, correção da emissão para exterior no provedor, e tratamento de NFe para tomador nacional com natureza 4.',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'SIMv2 — omissão de campos para NFS-e de exportação com tomador exterior',
-        texto:
-          'No provedor SIMv2, ao emitir NFS-e de exportação para tomador do exterior, os campos do grupo de valores e local de incidência estavam sendo enviados desnecessariamente, causando rejeição em algumas prefeituras. Agora esses campos são omitidos automaticamente quando a nota é de exportação com tomador estrangeiro.',
+          'O workflow de CI/CD de produção (.github/workflows/production.yaml) estava apontando todas as referências de GitHub Actions para a branch @master. As referências foram atualizadas para @TICKET-153208 (clone, build, cleanup e deploy), garantindo que o pipeline de produção utilize as versões das actions compatíveis com as mudanças em andamento.',
       },
       {
         icon: '🏙️',
-        destaque: 'Ativação de Itapagipe/MG no provedor FgMais',
+        destaque: 'Ativação de Dumont/SP no provedor Fiorilli',
         texto:
-          'O município de Itapagipe/MG foi ativado para emissão de NFS-e pelo provedor FgMais. A prefeitura aderiu ao sistema eletrônico de notas fiscais e agora os contribuintes da cidade podem emitir notas pelo eNotas Gateway.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Itapaci/GO no provedor Arrecadanet',
-        texto:
-          'O município de Itapaci/GO foi ativado para emissão de NFS-e pelo provedor Arrecadanet. A configuração inclui URLs de produção e homologação, permitindo que empresas da cidade emitam notas fiscais de serviço eletronicamente.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de São Felipe/BA no provedor Fisco.NetV2',
-        texto:
-          'O município de São Felipe/BA foi ativado para emissão de NFS-e pelo provedor Fisco.NetV2. A prefeitura migrou para o sistema eletrônico e agora aceita emissão via integração com o eNotas.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Pinhal/RS para o provedor IPM',
-        texto:
-          'O município de Pinhal/RS foi ativado para emissão de NFS-e pelo provedor IPM. As URLs e configurações foram cadastradas para permitir a integração com a prefeitura.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Ibitiúra de Minas/MG para o provedor Futurize',
-        texto:
-          'O município de Ibitiúra de Minas/MG foi ativado para emissão de NFS-e pelo provedor Futurize. A prefeitura passou a aceitar notas fiscais eletrônicas e a integração foi configurada no gateway.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Pirenópolis/GO migrado para BSITBR',
-        texto:
-          'O município de Pirenópolis/GO teve seu provedor atualizado para BSITBR. A prefeitura trocou de sistema de NFS-e e as URLs, namespace e configurações foram atualizadas para o novo provedor, garantindo continuidade na emissão de notas.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Atualização de provedor: BethaV2 para BethaV3',
-        texto:
-          'Um município que utilizava o provedor BethaV2 foi migrado para a versão BethaV3. A nova versão traz melhorias no layout de comunicação com a prefeitura e suporte a novos campos exigidos pela reforma tributária.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cerqueira César/SP migrado para Fiorilli',
-        texto:
-          'O município de Cerqueira César/SP teve seu provedor atualizado para Fiorilli. A prefeitura mudou de sistema de NFS-e e as configurações foram ajustadas para garantir a emissão correta pelo novo provedor.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de São Bento do Sapucaí/SP no provedor Fiorilli',
-        texto:
-          'O município de São Bento do Sapucaí/SP foi ativado para emissão de NFS-e pelo provedor Fiorilli. A prefeitura aderiu ao sistema eletrônico e a integração foi configurada no gateway.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Itá/SC migrado para IPM',
-        texto:
-          'O município de Itá/SC teve seu provedor atualizado para IPM. A prefeitura trocou de sistema e as URLs e configurações foram atualizadas para o novo provedor.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Tucano/BA migrado para WebISSv2',
-        texto:
-          'O município de Tucano/BA teve seu provedor atualizado para WebISSv2. A migração garante compatibilidade com o novo sistema da prefeitura e continuidade na emissão de notas.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de São Miguel do Guamá/PA no provedor Aspect',
-        texto:
-          'O município de São Miguel do Guamá/PA foi ativado para emissão de NFS-e pelo provedor Aspect. A prefeitura passou a aceitar notas fiscais eletrônicas via integração com o eNotas Gateway.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Canudos/BA no provedor Fisco.NetV2',
-        texto:
-          'O município de Canudos/BA foi ativado para emissão de NFS-e pelo provedor Fisco.NetV2. A configuração permite que empresas da cidade emitam notas fiscais de serviço eletronicamente.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Lupionópolis/PR no provedor Equiplano',
-        texto:
-          'O município de Lupionópolis/PR foi ativado para emissão de NFS-e pelo provedor Equiplano. A prefeitura aderiu ao sistema eletrônico e a integração foi configurada.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Configuração UsaAbrasf203 para Jaguarão/RS',
-        texto:
-          'O município de Jaguarão/RS foi configurado para utilizar o padrão ABRASF 2.03. Essa configuração é necessária quando a prefeitura exige o layout mais recente do padrão nacional de NFS-e, garantindo compatibilidade na comunicação.',
+          'O município de Dumont/SP (código IBGE 3514601) foi ativado para emissão de NFS-e pelo provedor Fiorilli. A prefeitura foi incluída como exceção na lógica do Fiorilli para não utilizar ItemListaServico, e o ConfiguracoesMunicipios.xml foi atualizado com a tag NaoUsaAssinatura. Essas configurações específicas são necessárias porque Dumont/SP exige um comportamento diferente do padrão do provedor.',
       },
       {
         icon: '📊',
-        destaque:
-          'Remoção de Macuco/RJ da flag SempreEnviaAliquotaIssEmpresasSimplesNacional',
+        destaque: 'Araraquara/SP — CNAE ativado para emissão',
         texto:
-          'O município de Macuco/RJ foi removido da lista de cidades que sempre enviam alíquota de ISS para empresas do Simples Nacional. Essa flag forçava o envio da alíquota mesmo quando não era necessário, causando rejeições em algumas situações. Com a remoção, o comportamento padrão do provedor é utilizado.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Oscar Bressane/SP no provedor Fiorilli',
-        texto:
-          'O município de Oscar Bressane/SP foi ativado para emissão de NFS-e pelo provedor Fiorilli. A prefeitura aderiu ao sistema eletrônico de notas fiscais.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de São José do Norte/RS no provedor GOVBRv3',
-        texto:
-          'O município de São José do Norte/RS foi ativado para emissão de NFS-e pelo provedor GOVBRv3. A prefeitura passou a aceitar notas fiscais eletrônicas e a integração foi configurada no gateway.',
+          'O município de Araraquara/SP teve a flag de CNAE alterada para true. Algumas prefeituras exigem que o código CNAE (Classificação Nacional de Atividades Econômicas) seja enviado na emissão de NFS-e ao invés do código de serviço padrão. Sem essa configuração, as notas eram rejeitadas por falta do CNAE obrigatório.',
       },
       {
         icon: '🔧',
-        destaque: 'Remoção da validação RemoveAccent para todo o provedor',
+        destaque: 'Novas propriedades EhProvedorPortalNacional e AnexosSimplesNacional',
         texto:
-          'A validação RemoveAccent, que removia acentos de campos antes do envio, estava sendo aplicada de forma global a um provedor inteiro. Isso causava problemas em cidades onde os acentos eram necessários. A validação foi removida para que o comportamento seja controlado individualmente por município.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Remoção do CEP na reg.20 para tomador do exterior',
-        texto:
-          'Ao emitir NFS-e para tomador do exterior, o campo CEP na reg.20 estava sendo preenchido com valor inválido, causando rejeição pela prefeitura. Agora o CEP é removido automaticamente quando o tomador é estrangeiro, evitando o erro de validação.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Atualização de links e campos da reforma tributária no provedor',
-        texto:
-          'Foram atualizados os links de comunicação, URLs de integração e adicionados novos campos relacionados à reforma tributária em um provedor. As mudanças garantem compatibilidade com as novas exigências fiscais e mantêm a comunicação funcionando corretamente.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Caíro/RN adaptado para usar CNAE',
-        texto:
-          'O município de Caíro/RN foi adaptado para utilizar o código CNAE na emissão de NFS-e. Algumas prefeituras exigem o CNAE ao invés do código de serviço padrão, e essa adaptação garante que as notas sejam aceitas sem rejeição.',
-      },
-      {
-        icon: '🆕',
-        destaque: 'NomeProvedor adicionado às características do provedor',
-        texto:
-          'Foi adicionado o campo NomeProvedor às características extraídas dos provedores. Essa informação é utilizada pelo site CidadesProvedores para exibir o nome legível do provedor nas páginas de detalhe, melhorando a experiência de consulta.',
+          'Foram adicionadas duas novas propriedades às características dos provedores: EhProvedorPortalNacional (indica se o provedor opera via Portal Nacional de NFS-e) e AnexosSimplesNacional (define os anexos do Simples Nacional aplicáveis). A propriedade NomeProvedor foi removida da base. Os provedores FgMaiss, PrimaxOnline e eTransparencia foram configurados com os anexos do Simples Nacional específicos. Essas mudanças melhoram a precisão das informações tributárias por provedor.',
       },
     ],
   },
@@ -1077,29 +953,5 @@
           'Foi adicionada uma validação que verifica se os metadados já existem antes de tentar inseri-los. Isso evita erros de duplicidade e garante a integridade dos dados no banco.',
       },
     ],
-  },
-  {
-    tag: '05/04/2026',
-    titulo: 'Domingo — 05 de Abril',
-    data: '05/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '04/04/2026',
-    titulo: 'Sábado — 04 de Abril',
-    data: '04/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
+  }
 ];
