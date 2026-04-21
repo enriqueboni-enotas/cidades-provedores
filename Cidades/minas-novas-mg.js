@@ -11,7 +11,7 @@
     robo: false,
     webService: true,
     versaoAbrasf: '2.01',
-    infoAdicional: 'UsaCustomBinding => usa binding customizado com utf-8 txt/xml\n          NaoSuportaEmissaoTomadorSemCpf => não suporta emissão tomador sem cpf\n          NaoSuportaEmissaoSemTomador => não suporta emissão tomador\n          UsaCnae => usa cnae\n          UsaItemListaServico => usa item lista serviço\n          UsaSinteseNotaFiscal => usa ws Novo sintese padrão',
+    infoAdicional: 'UsaCustomBinding => usa binding customizado com utf-8 txt/xml\n					NaoSuportaEmissaoTomadorSemCpf => não suporta emissão tomador sem cpf\n					NaoSuportaEmissaoSemTomador => não suporta emissão tomador\n					UsaCnae => usa cnae\n					UsaItemListaServico => usa item lista serviço\n					UsaSinteseNotaFiscal => usa ws Novo sintese padrão',
     urls: {
       homologacao: {
         recepcaoLote: 'http://homologacao.sintesetecnologia.com.br/nfsews/NfseWS'

@@ -1,5 +1,57 @@
 var jiraChangelogData = [
   {
+    tag: '20/04/2026',
+    titulo: 'Segunda-feira — 20 de Abril',
+    data: '20/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '19/04/2026',
+    titulo: 'Domingo — 19 de Abril',
+    data: '19/04/2026',
+    itens: [
+      {
+        icon: '❌',
+        destaque: 'Falha no envio do endereço padrão na emissão',
+        texto: '1 card (CE-25839)',
+      },
+      {
+        icon: '🤖',
+        destaque: 'Autofix — inutilização de NF',
+        texto: '1 card (CE-25822)',
+      },
+      {
+        icon: '💰',
+        destaque: 'Faturamento de excedentes indevido',
+        texto: '2 cards (CE-25807, CE-25750)',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Emissão para tomador exterior — Rio das Ostras/RJ e Portal Nacional',
+        texto: '2 cards (CE-25551, CE-25263)',
+      },
+    ],
+  },
+  {
+    tag: '18/04/2026',
+    titulo: 'Sábado — 18 de Abril',
+    data: '18/04/2026',
+    itens: [
+      {
+        icon: '🆕',
+        destaque: 'Melhoria — campo para preenchimento de IE para PF',
+        texto: '1 card (CE-25163)',
+      },
+    ],
+  },
+  {
     tag: '17/04/2026',
     titulo: 'Sexta-feira — 17 de Abril',
     data: '17/04/2026',
@@ -255,109 +307,6 @@ var jiraChangelogData = [
         icon: '🌐',
         destaque: 'Emissões estrangeiras — Vila Velha/ES',
         texto: '1 card (CE-24174)',
-      },
-    ],
-  },
-  {
-    tag: '08/04/2026',
-    titulo: 'Quarta-feira — 08 de Abril',
-    data: '08/04/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — localizar numerações e retornar NF negada',
-        texto: '2 cards (CE-25471, CE-25441)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Falha ao preencher dados municipais — Curitiba/PR',
-        texto: '1 card (CE-25406)',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Mudança de local de prestação para exterior — Taboão da Serra/SP',
-        texto: '1 card (CE-25185)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Notas em emissão com erro na prefeitura — Nova Serrana/MG',
-        texto: '1 card (CE-24462)',
-      },
-    ],
-  },
-  {
-    tag: '07/04/2026',
-    titulo: 'Terça-feira — 07 de Abril',
-    data: '07/04/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — sincronizar status embed e emissor',
-        texto: '2 cards (CE-25390, CE-25376)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Configuração de produto',
-        texto: '1 card (CE-25400)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'PDF com informação de "Acesso Negado"',
-        texto: '1 card (CE-25373)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Divergência de datas de competência no painel de vendas',
-        texto: '1 card (CE-25240)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Vendas negadas no Embed não sincronizam com emissor',
-        texto: '1 card (CE-25194)',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Erros de emissão — erro inesperado e falha no provisionamento',
-        texto: '2 cards (CE-25087, CE-25042)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Rejeição em Sapiranga/RS',
-        texto: '1 card (CE-24990)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Erro na emissão para tomador estrangeiro — Cachoeirinha/RS',
-        texto: '1 card (CE-24786)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Falha ao emitir NFS-e',
-        texto: '1 card (CE-24780)',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Cancelamento manual de nota',
-        texto: '1 card (CE-24745)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Validação de erro de duplicidade — IJUPREV',
-        texto: '1 card (CE-24303)',
-      },
-    ],
-  },
-  {
-    tag: '06/04/2026',
-    titulo: 'Segunda-feira — 06 de Abril',
-    data: '06/04/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque: 'Vendas Pagar.me 2.0 — importação',
-        texto: '1 card (CE-24985)',
       },
     ],
   },

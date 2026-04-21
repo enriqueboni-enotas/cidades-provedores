@@ -5,70 +5,48 @@
   ibge: '1502707',
   constante: 'CodigoIBGE.ConceicaoDoAraguaiaPA',
   provedorAtual: {
-    nome: 'IssIntel',
-    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    nome: 'Aspect',
+    namespace: null,
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://conceicaodoaraguaia-pa.treino-issintegra.com.br/webservices/abrasf/api'
       },
       producao: {
-        recepcaoLote: 'https://conceicaodoaraguaia-pa.issintegra.com.br/webservices/abrasf/api'
+        recepcaoLote: 'http://pa.conceicaodoaraguaia.tributario.aspec.com.br/ws/nfse/emitir'
       }
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 3,
+    assinaturaDigital: 0,
     helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      certificadoDigital: null,
       usuario: null,
       senha: null,
-      token: null,
+      token: 'Sua prefeitura exige utilização de token para autenticação',
       fraseSecreta: null
     },
-    suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 60,
+    suportaCancelamentoNFe: false,
+    valorCancelamentoNFe: 30,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: false,
     usaCodigoServicoMunicipal: true,
-    usaCNAE: true,
-    usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n            Esse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\n            Exemplos válidos: 30.01.01 ou 04.07.01',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n                \\r\\n \\r\\n Você precisa preencher o item da lista de serviço mantendo a formatação.\\r\\n Exemplos válidos: 17.02 ou 8.02',
-    suportaEmissaoNFeSemCliente: true,
+    usaDescricaoServico: false,
+    usaCNAE: false,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: false,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– Exemplo: 17.06',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
+    suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
-    suportaEmissaoNFeClienteSemEndereco: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    autenticidadeNota: {
-      urlVerificacao: 'https://governadorvaladares-mg.issintegra.com.br/autenticacao_de_documentos',
-      UsaChaveAcesso: false,
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: false,
-      UsaNumeroNota: true,
-      UsaValorNota: false
-    },
-    regimesEspecialTributacao: [
-      { codigo: '0', nome: ' - ' },
-      { codigo: '1', nome: 'Microempresa Municipal' },
-      { codigo: '2', nome: 'Estimativa' },
-      { codigo: '3', nome: 'Sociedade de Profissionais' },
-      { codigo: '4', nome: 'Cooperativa' },
-      { codigo: '5', nome: 'MEI - Simples Nacional' },
-      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
-    ],
-    naturezasOperacao: [
-      { codigo: '1', nome: 'Tributação no municipio' },
-      { codigo: '2', nome: 'Tributação fora do municipio' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Imune' },
-      { codigo: '5', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '6', nome: 'Exigilidade suspensa por procedimento administrativo' }
-    ]
+    enviaEmailCliente: false
   }
 };
 

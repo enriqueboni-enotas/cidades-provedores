@@ -14,7 +14,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://goianira.bsit-br.com.br/integracao/services/nfseWS'
+        recepcaoLote: 'https://goianira.sigep.com.br/integracao/services/nfseWS'
       }
     }
   },

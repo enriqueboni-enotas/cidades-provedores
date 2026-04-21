@@ -3,11 +3,11 @@
   nome: 'Fisco.NetV2',
   empresa: 'Fisco.NetV2',
   stats: {
-    municipios: 12
+    municipios: 13
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fisco.NetV2' },
-    { key: 'Total Municipios', val: '12' },
+    { key: 'Total Municipios', val: '13' },
     { key: 'Estados Atendidos', val: ['BA', 'PI'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -46,6 +46,7 @@
       { nome: 'Casa Nova', uf: 'BA', ibge: '2907202' },
       { nome: 'Itanhém', uf: 'BA', ibge: '2916005' },
       { nome: 'Itiúba', uf: 'BA', ibge: '2917003' },
+      { nome: 'Livramento de Nossa Senhora', uf: 'BA', ibge: '2919504' },
       { nome: 'Paulo Afonso', uf: 'BA', ibge: '2924009' },
       { nome: 'Rafael Jambeiro', uf: 'BA', ibge: '2925956' },
       { nome: 'São Felipe', uf: 'BA', ibge: '2929107' },

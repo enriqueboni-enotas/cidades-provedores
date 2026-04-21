@@ -12,7 +12,7 @@
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://servicos.mogidascruzes.sp.gov.br/tbwhomologacao/services/NotaFiscalNacional',
+        recepcaoLote: 'https://servicos-dev.mogidascruzes.sp.gov.br/tbw/services/NotaFiscalNacional',
         consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },

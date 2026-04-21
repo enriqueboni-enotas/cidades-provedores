@@ -3,11 +3,11 @@
   nome: 'D2ti',
   empresa: 'D2ti',
   stats: {
-    municipios: 3
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'D2ti' },
-    { key: 'Total Municipios', val: '3' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['MA', 'PA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -58,7 +58,6 @@
   },
   municipiosLista: {
     'd2ti': [
-      { nome: 'Presidente Dutra', uf: 'MA', ibge: '2109106' },
       { nome: 'Santo Antônio dos Lopes', uf: 'MA', ibge: '2110302' },
       { nome: 'Tomé-Açu', uf: 'PA', ibge: '1508001' }
     ]

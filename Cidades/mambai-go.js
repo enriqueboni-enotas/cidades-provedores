@@ -5,51 +5,77 @@
   ibge: '5212709',
   constante: 'CodigoIBGE.MambaiGO',
   provedorAtual: {
-    nome: 'ArrecadaNet',
-    namespace: 'http://megasoftarrecadanet.com.br/xsd/nfse_v01.xsd',
+    nome: 'NfseNacionalV2',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     urls: {
       homologacao: {
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://mambai.megasoftarrecadanet.com.br/mambai/ws/nfseSOAP'
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 2,
-    assinaturaDigital: 0,
+    tipoAutenticacao: 1,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
-      certificadoDigital: null,
-      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
-      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      usuario: null,
+      senha: null,
       token: null,
       fraseSecreta: null
     },
-    campoLoginProvedor: 0,
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 45,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
-    usaRegimeEspecialTributacao: false,
+    usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
+    usaDescricaoServico: false,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 9 dígitos sem formatação.\r\nExemplo válido: 100506213',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
-    enviaEmailCliente: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
+    regimesEspecialTributacao: [
+      { codigo: '0', nome: ' - ' },
+      { codigo: '1', nome: 'Microempresa Municipal' },
+      { codigo: '2', nome: 'Estimativa' },
+      { codigo: '3', nome: 'Sociedade de Profissionais' },
+      { codigo: '4', nome: 'Cooperativa' },
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+    ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Tributação no municipio' },
-      { codigo: '2', nome: 'Tributação fora do municipio' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

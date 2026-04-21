@@ -12,7 +12,7 @@
     webService: true,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://tributacao.vilavelha.es.gov.br/tbwhomologacao/services/NotaFiscalNacional',
+        recepcaoLote: 'http://tributacao.vilavelha.es.gov.br:8080/tbwhomologacao/services/NotaFiscalNacional',
         consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },

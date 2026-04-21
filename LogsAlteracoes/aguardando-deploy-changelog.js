@@ -1,119 +1,133 @@
 var aguardandoDeployData = [
   {
-    tag: '17/04/2026',
-    titulo: 'Sexta-feira — 17 de Abril',
+    tag: '20/04/2026',
+    titulo: 'Segunda-feira — 20 de Abril',
     itens: [
       {
-        icon: '🏙️',
-        texto:
-          'Atualização na forma de envio do município do tomador — o sistema passou a enviar o município do tomador de forma diferente para evitar rejeições em prefeituras que exigem um formato específico no campo de cidade do destinatário.',
-        pr: 8956,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '📊',
-        texto:
-          'Garantia do envio da situação tributária PIS/COFINS para todas as emissões — antes, a situação tributária de PIS e COFINS só era enviada em cenários específicos. Agora o campo é enviado em todas as emissões, evitando rejeições em prefeituras que exigem essa informação obrigatoriamente.',
-        pr: 8954,
-        autor: 'Thiago Souza',
-      },
-      {
         icon: '🔧',
         texto:
-          'Novas dimensões nos eventos de emissão de NF-e — foram adicionadas novas dimensões (métricas e atributos) aos eventos de emissão de NF-e, permitindo melhor rastreabilidade e análise de dados sobre o processo de emissão.',
-        pr: 8901,
-        autor: 'Gabriel Mesquita Moreira',
-      },
-      {
-        icon: '📊',
-        texto:
-          'Cálculo do valor líquido com base nos impostos retidos e descontos — o valor líquido da nota agora é calculado considerando corretamente os impostos retidos e descontos aplicados, além da base de cálculo. Isso corrige divergências entre o valor exibido e o valor real recebido pelo prestador.',
-        pr: 8938,
-        autor: 'Thiago Souza',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Configuração de CST (Código de Situação Tributária) por empresa — agora é possível configurar o CST de forma específica por empresa, ao invés de usar apenas o padrão do provedor. Isso resolve casos onde empresas do mesmo município precisam de CSTs diferentes.',
-        pr: 8926,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Ativação de Livramento de Nossa Senhora/BA para o provedor Fisco.NetV2 — o município aderiu ao sistema eletrônico de NFS-e e a integração foi configurada no gateway.',
-        pr: 8942,
-        autor: 'Henrique Cassio',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Mambaí/GO aderiu ao Portal Nacional de NFS-e — o município migrou para o Portal Nacional e as configurações foram atualizadas para que a emissão passe pelo novo sistema.',
-        pr: 8941,
+          'Empresa LOFT adicionada à lista de subscriptions que sempre enviam o campo NBS (Nomenclatura Brasileira de Serviços) no Portal Nacional. Sem essa configuração, o campo cNBS não era preenchido no XML, causando rejeição em municípios que exigem o código NBS obrigatoriamente.',
+        pr: 8977,
         autor: 'Davidson Souza',
       },
       {
-        icon: '🔗',
+        icon: '🏙️',
         texto:
-          'Atualização do link de integração de Goianira/GO — a prefeitura alterou a URL do webservice de NFS-e e o gateway foi atualizado para apontar para o novo endereço, restaurando a comunicação.',
-        pr: 8940,
-        autor: 'Thiago Souza',
+          'São Paulo/SP — ajuste no tratamento de erros de login no webservice da prefeitura. Antes, qualquer falha de autenticação era tratada da mesma forma. Agora o sistema diferencia falha de autenticação real de instabilidade do serviço municipal (HTTP 500), retornando a mensagem de erro correta no XML e evitando que notas fiquem presas por erro de interpretação.',
+        pr: 8947,
+        autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Ativação de Augustinópolis/TO para o provedor Fiorilli — o município passou a aceitar NFS-e eletrônica pelo provedor Fiorilli e a integração foi configurada.',
-        pr: 8935,
-        autor: 'Alex Ramos Fernandes',
+          'Correção do envio do campo MunicipioIncidencia para empresa com serviço 16.01.01 no provedor GovDigital. O erro E1317 ocorria porque o município de incidência estava sendo calculado incorretamente. Agora, para esse serviço específico, o município de incidência é sobrescrito com o município de prestação informado na nota.',
+        pr: 8957,
+        autor: 'Henrique Cassio',
       },
       {
-        icon: '🔗',
+        icon: '🏙️',
         texto:
-          'Atualização da URL de importação de arquivo — a URL utilizada para importação de arquivos foi atualizada para o novo endereço, garantindo que o processo de importação continue funcionando.',
-        pr: 8934,
+          'Amambai/MS — configuração do município de incidência para o serviço 160101: o local de incidência agora é o mesmo da prestação. Também foram removidas condicionais legadas de municípios (Catanduva/SP, Santa Rita do Sapucaí/MG, Dracena/SP, Maraú/RS, Itaituba/PA) que não fazem mais parte do grupo Fiorilli, simplificando o código.',
+        pr: 8961,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Ativação de Mossâmedes/GO para o provedor ArrecadaNet — o município aderiu ao sistema eletrônico de NFS-e e a integração foi configurada no gateway.',
-        pr: 8933,
+          'Osasco/SP — implementação de novos campos de local de prestação no provedor EGovernISS. O provedor tem uma regra que, ao informar qualquer tag de local de prestação, torna todas as outras obrigatórias. Foi adicionada validação para o cenário em que a prestação não ocorre nem no tomador nem no prestador, evitando erros de schema XML.',
+        pr: 8903,
+        autor: 'Felippe Salvo de Mendonça',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'SpeedGov — adição de AutenticidadeNota: o sistema agora gera automaticamente a URL de verificação da nota derivando o nome do município (sem acentos, minúsculas, sem espaços) e configurando os parâmetros de validação (InscricaoMunicipalPrestador, NumeroNota, CodigoVerificacao). Permite que o cliente verifique a autenticidade da nota diretamente no portal da prefeitura.',
+        pr: 8966,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '📊',
+        texto:
+          'IPM — correção do tipo de retenção de PIS/COFINS para ficar alinhado com o ADN. A lógica agora considera a presença do CSLL além do PIS/COFINS para determinar o TipoRetencaoPisCofins, corrigindo divergências no cálculo de impostos retidos.',
+        pr: 8975,
+        autor: 'Thiago Souza',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Adição de empresa à lista idsNovoRespTecnico no provedor RecepcionarLoteNFeV4. Empresas nessa lista têm as informações de Responsável Técnico preenchidas automaticamente no XML da NF-e (CNPJ, contato, email e telefone), conforme exigência da SEFAZ.',
+        pr: 8973,
+        autor: 'Davidson Souza',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Configuração de município de incidência para empresa específica: quando a empresa deseja que o município de incidência seja o mesmo do local de prestação informado na nota, o sistema agora respeita essa configuração e também envia o percentual de alíquota e ISS corretamente.',
+        pr: 8971,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'GOVBRv3 — configuração de AutenticidadeNota com URL pública de consulta (https://www.nfse.gov.br/consultapublica). Permite que o cliente verifique a autenticidade de notas emitidas via Portal Nacional diretamente no portal do governo federal.',
+        pr: 8969,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🆕',
+        texto:
+          'TinusV2 — novo provedor implementado com configuração de AutenticidadeNota. A classe TinusV2ProvedorNFe foi criada com suporte a emissão, consulta e cancelamento de notas, e URL de verificação pública configurada (https://www.nfse.gov.br/consultapublica).',
+        pr: 8968,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'São Paulo/SP — configuração de AutenticidadeNota com URL de verificação do portal da prefeitura (https://nfe.prefeitura.sp.gov.br/publico/verificacao.aspx). Permite que o cliente valide a autenticidade da nota diretamente no portal municipal.',
+        pr: 8967,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Salvador/BA — configuração de AutenticidadeNota com URL de verificação do portal da prefeitura (https://nfse.salvador.ba.gov.br/site/publico/verificacao.aspx) e uso do CNPJ do prestador habilitado. Permite verificação de autenticidade das notas emitidas em Salvador.',
+        pr: 8964,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '📊',
+        texto:
+          'eTransparência — adição do envio da base de cálculo (TributoBaseCalc) nos impostos federais (PIS/COFINS e CSLL). Antes, a base de cálculo não era enviada, causando divergências no cálculo de tributos. Agora usa a base customizada da nota com fallback para o valor total.',
+        pr: 8960,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Hidrolina/GO ativado para emissão de NFS-e pelo provedor ArrecadaNet. A prefeitura aderiu ao sistema eletrônico e a configuração foi adicionada ao ConfiguracoesMunicipios.xml.',
+        pr: 8952,
         autor: 'Henrique Cassio',
       },
       {
-        icon: '🌐',
+        icon: '🔗',
         texto:
-          'Correção na UF do tomador para exportação — ao emitir NFS-e para tomador do exterior, o campo SiglaUFTom na reg.20 agora é sempre preenchido com "EX", evitando erro específico de validação em prefeituras que rejeitavam a nota quando a UF não era "EX".',
-        pr: 8931,
+          'Morungaba/SP e Jaciara/MT — atualização das URLs do provedor Fiorilli. As prefeituras atualizaram seus endpoints de webservice e as URLs foram corrigidas para garantir continuidade na emissão de NFS-e.',
+        pr: 8951,
         autor: 'Felippe Salvo de Mendonça',
       },
       {
-        icon: '🏙️',
+        icon: '🔧',
         texto:
-          'Presidente Dutra/MA aderiu ao Portal Nacional de NFS-e — o município migrou para o Portal Nacional e as configurações foram atualizadas.',
-        pr: 8930,
-        autor: 'Felippe Salvo de Mendonça',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          "Ativação de São Jorge d'Oeste/PR para o provedor Equiplano — o município passou a aceitar NFS-e eletrônica e a integração foi configurada.",
-        pr: 8929,
-        autor: 'Alex Ramos Fernandes',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Ativação de Ouroverde de Goiás/GO para o provedor ArrecadaNet — o município aderiu ao sistema eletrônico de NFS-e e a integração foi configurada.',
-        pr: 8928,
-        autor: 'Alex Ramos Fernandes',
+          'Guararapes/SP — remoção da flag NaoUsaAssinatura. A prefeitura passou a exigir assinatura digital nas notas, e a flag que desabilitava esse comportamento foi removida para restaurar o envio correto.',
+        pr: 8950,
+        autor: 'Vitor Fernandes',
       },
       {
         icon: '🔄',
         texto:
-          'Conceição do Araguaia/PA migrado para o provedor Aspect — a prefeitura trocou de sistema de NFS-e e as URLs e configurações foram atualizadas para o novo provedor, garantindo continuidade na emissão.',
-        pr: 8912,
-        autor: 'Vitor Fernandes',
+          'Major Vieira/SC migrado para o provedor BethaV3. A prefeitura atualizou seu sistema de NFS-e para a versão mais recente do Betha, e as configurações foram atualizadas no ConfiguracoesMunicipios.xml para garantir compatibilidade.',
+        pr: 8948,
+        autor: 'Felippe Salvo de Mendonça',
       },
     ],
   },

@@ -3,11 +3,11 @@
   nome: 'Aspect',
   empresa: 'Aspect',
   stats: {
-    municipios: 6
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'Aspect' },
-    { key: 'Total Municipios', val: '6' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['CE', 'PA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -43,6 +43,7 @@
   municipiosLista: {
     'aspect': [
       { nome: 'Capistrano', uf: 'CE', ibge: '2302909' },
+      { nome: 'Conceição do Araguaia', uf: 'PA', ibge: '1502707' },
       { nome: 'Jacundá', uf: 'PA', ibge: '1503804' },
       { nome: 'Jaguaribara', uf: 'CE', ibge: '2306801' },
       { nome: 'Morrinhos', uf: 'CE', ibge: '2308906' },

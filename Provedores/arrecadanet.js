@@ -3,11 +3,11 @@
   nome: 'ArrecadaNet',
   empresa: 'ArrecadaNet',
   stats: {
-    municipios: 51
+    municipios: 52
   },
   visaoGeral: [
     { key: 'Nome', val: 'ArrecadaNet' },
-    { key: 'Total Municipios', val: '51' },
+    { key: 'Total Municipios', val: '52' },
     { key: 'Estados Atendidos', val: ['GO', 'TO', 'MS', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -77,14 +77,15 @@
       { nome: 'Jandaia', uf: 'GO', ibge: '5211701' },
       { nome: 'Jaraguá', uf: 'GO', ibge: '5211800' },
       { nome: 'Jussara', uf: 'GO', ibge: '5212204' },
-      { nome: 'Mambaí', uf: 'GO', ibge: '5212709' },
       { nome: 'Mara Rosa', uf: 'GO', ibge: '5212808' },
       { nome: 'Mateiros', uf: 'TO', ibge: '1712702' },
       { nome: 'Miracema do Tocantins', uf: 'TO', ibge: '1713205' },
       { nome: 'Miranorte', uf: 'TO', ibge: '1713304' },
       { nome: 'Montes Claros de Goiás', uf: 'GO', ibge: '5213707' },
+      { nome: 'Mossâmedes', uf: 'GO', ibge: '5213905' },
       { nome: 'Nova Veneza', uf: 'GO', ibge: '5215009' },
       { nome: 'Novo Gama', uf: 'GO', ibge: '5215231' },
+      { nome: 'Ouro Verde de Goiás', uf: 'GO', ibge: '5215405' },
       { nome: 'Palmeiras de Goiás', uf: 'GO', ibge: '5215702' },
       { nome: 'Peixe', uf: 'TO', ibge: '1716604' },
       { nome: 'Pontalina', uf: 'GO', ibge: '5217708' },

@@ -3,11 +3,11 @@
   nome: 'Equiplano',
   empresa: 'Equiplano',
   stats: {
-    municipios: 29
+    municipios: 30
   },
   visaoGeral: [
     { key: 'Nome', val: 'Equiplano' },
-    { key: 'Total Municipios', val: '29' },
+    { key: 'Total Municipios', val: '30' },
     { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -74,6 +74,7 @@
       { nome: 'Rondon', uf: 'PR', ibge: '4122602' },
       { nome: 'Santa Amélia', uf: 'PR', ibge: '4123105' },
       { nome: 'São João', uf: 'PR', ibge: '4124806' },
+      { nome: 'São Jorge d\'Oeste', uf: 'PR', ibge: '4125209' },
       { nome: 'São Tomé', uf: 'PR', ibge: '4126108' },
       { nome: 'Terra Rica', uf: 'PR', ibge: '4127304' },
       { nome: 'Tijucas do Sul', uf: 'PR', ibge: '4127601' },
