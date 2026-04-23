@@ -47,6 +47,11 @@
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
     numeroNotasPorLote: 5,
+    autenticidadeNota: {
+      UsaCodigoVerificacao: true,
+      UsaInscricaoMunicipalPrestador: true,
+      UsaNumeroNota: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -3,11 +3,11 @@
   nome: 'Sintese',
   empresa: 'Sintese',
   stats: {
-    municipios: 29
+    municipios: 30
   },
   visaoGeral: [
     { key: 'Nome', val: 'Sintese' },
-    { key: 'Total Municipios', val: '29' },
+    { key: 'Total Municipios', val: '30' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -50,6 +50,7 @@
   },
   municipiosLista: {
     'sintese': [
+      { nome: 'Augusto de Lima', uf: 'MG', ibge: '3104809' },
       { nome: 'Bocaiúva', uf: 'MG', ibge: '3107307' },
       { nome: 'Capelinha', uf: 'MG', ibge: '3112307' },
       { nome: 'Capim Branco', uf: 'MG', ibge: '3112505' },

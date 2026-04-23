@@ -59,6 +59,10 @@
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -3,11 +3,11 @@
   nome: 'GOVBRv2',
   empresa: 'GOVBRv2',
   stats: {
-    municipios: 15
+    municipios: 16
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv2' },
-    { key: 'Total Municipios', val: '15' },
+    { key: 'Total Municipios', val: '16' },
     { key: 'Estados Atendidos', val: ['RS', 'PR', 'RJ', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -69,6 +69,7 @@
       { nome: 'Guapirama', uf: 'PR', ibge: '4109005' },
       { nome: 'Jaguarão', uf: 'RS', ibge: '4311007' },
       { nome: 'Machadinho', uf: 'RS', ibge: '4311700' },
+      { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' },
       { nome: 'Paranapanema', uf: 'SP', ibge: '3535804' },
       { nome: 'Pérola', uf: 'PR', ibge: '4118907' },
       { nome: 'Quissamã', uf: 'RJ', ibge: '3304151' },

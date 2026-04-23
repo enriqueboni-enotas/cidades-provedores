@@ -3,12 +3,12 @@
   nome: 'DSF',
   empresa: 'DSF',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'DSF' },
-    { key: 'Total Municipios', val: '2' },
-    { key: 'Estados Atendidos', val: ['MS', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -61,7 +61,6 @@
   },
   municipiosLista: {
     'dsf': [
-      { nome: 'Campo Grande', uf: 'MS', ibge: '5002704' },
       { nome: 'Nova Iguaçu', uf: 'RJ', ibge: '3303500' }
     ]
   }

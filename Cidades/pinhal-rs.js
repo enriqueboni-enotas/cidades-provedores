@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'IPM',
     namespace: null,
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'EnviaCodigoAtividade;UsaItemListaServico',
     robo: false,
     webService: true,
     urls: {

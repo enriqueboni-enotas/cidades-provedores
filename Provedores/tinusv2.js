@@ -20,6 +20,10 @@
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é  possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
     numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -5,35 +5,63 @@
   ibge: '4315800',
   constante: 'CodigoIBGE.RocaSalesRS',
   provedorAtual: {
-    nome: 'Tecnos',
-    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    nome: 'NfseNacionalV2',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
-    versaoAbrasf: '2.04',
-    infoAdicional: 'NaoGerarNumeroLote => quando setado irá passar o id igual passado no json',
     urls: {
       homologacao: {
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'http://rocasales.nfse-tecnos.com.br:9091/EnvioLoteRPSSincrono.asmx',
-        consultaLote: 'http://rocasales.nfse-tecnos.com.br:9097/ConsultaLoteRPS.asmx',
-        consultaRps: 'http://rocasales.nfse-tecnos.com.br:9095/ConsultaNFSePorRPS.asmx',
-        cancelamentoNFe: 'http://rocasales.nfse-tecnos.com.br:9098/CancelamentoNFSe.asmx'
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 0,
+    tipoAutenticacao: 1,
     assinaturaDigital: 2,
-    usaCodigoServicoMunicipal: false,
+    helpTipoAutenticacao: {
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      usuario: null,
+      senha: null,
+      token: null,
+      fraseSecreta: null
+    },
+    suportaCancelamentoNFe: true,
+    valorCancelamentoNFe: 30,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: true,
+    usaCodigoServicoMunicipal: true,
+    usaDescricaoServico: false,
+    usaCNAE: false,
     usaNBS: true,
-    usaItemListaServico: true,
-    helpCodigoServicoMunicipal: 'Informe um código de tributação nacional válido sem formatação. Ex.: \\',
-    numeroRpsDeveSerSequencial: true,
-    numeroLoteDeveSerSequencial: true,
-    suportaConsultaSequencialRps: false,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    suportaEmissaoNFeSemCliente: true,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -44,13 +72,10 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Exigível' },
-      { codigo: '2', nome: 'Não incidência' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Exportação' },
-      { codigo: '5', nome: 'Imunidade' },
-      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

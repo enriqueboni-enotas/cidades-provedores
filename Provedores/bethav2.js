@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 105
+    municipios: 104
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '105' },
+    { key: 'Total Municipios', val: '104' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'MS', 'AC', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -93,7 +93,6 @@
       { nome: 'Lindóia do Sul', uf: 'SC', ibge: '4209854' },
       { nome: 'Lobato', uf: 'PR', ibge: '4113601' },
       { nome: 'Macieira', uf: 'SC', ibge: '4210050' },
-      { nome: 'Major Vieira', uf: 'SC', ibge: '4210308' },
       { nome: 'Mallet', uf: 'PR', ibge: '4113908' },
       { nome: 'Mampituba', uf: 'RS', ibge: '4311734' },
       { nome: 'Mandirituba', uf: 'PR', ibge: '4114302' },

@@ -3,11 +3,11 @@
   nome: 'GOVBR',
   empresa: 'GOVBR',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBR' },
-    { key: 'Total Municipios', val: '2' },
+    { key: 'Total Municipios', val: '1' },
     { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -49,7 +49,6 @@
   },
   municipiosLista: {
     'govbr': [
-      { nome: 'Assis Chateaubriand', uf: 'PR', ibge: '4102000' },
       { nome: 'Cidade Gaúcha', uf: 'PR', ibge: '4105607' }
     ]
   }

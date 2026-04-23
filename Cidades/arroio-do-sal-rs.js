@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'GOVBRv3',
     namespace: 'http://www.sped.fazenda.gov.br/nfse',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaAbrasf203;REGRAPADRAOALIQUOTAABRASFV204',
     robo: false,
     webService: true,
     urls: {
@@ -17,7 +17,7 @@
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://webapp1-arroiodosal.cidade360.cloud/nfse.API/NotaNacional',
+        recepcaoLote: 'https://webapp1-arroiodosal.cidade360.cloud//NFSe.Api/NotaNacional',
         consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
@@ -59,6 +59,10 @@
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

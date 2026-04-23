@@ -3,12 +3,12 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 220
+    municipios: 219
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '220' },
-    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'PB', 'TO', 'RS', 'AL', 'BA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '219' },
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'TO', 'PB', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -265,7 +265,6 @@
       { nome: 'Uruçuí', uf: 'PI', ibge: '2211209' },
       { nome: 'Urupês', uf: 'SP', ibge: '3556008' },
       { nome: 'Valença do Piauí', uf: 'PI', ibge: '2211308' },
-      { nome: 'Vera Cruz', uf: 'BA', ibge: '2933208' },
       { nome: 'Verdejante', uf: 'PE', ibge: '2616100' },
       { nome: 'Zacarias', uf: 'SP', ibge: '3557154' }
     ]

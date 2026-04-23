@@ -1,5 +1,44 @@
 var jiraChangelogData = [
   {
+    tag: '22/04/2026',
+    titulo: 'Quarta-feira — 22 de Abril',
+    data: '22/04/2026',
+    itens: [
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de nota',
+        texto: '1 card (CE-25776)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro na emissão das notas — Dumont/SP',
+        texto: '1 card (CE-25662)',
+      },
+      {
+        icon: '📊',
+        destaque: 'Destaque código BC ISSQN',
+        texto: '1 card (CE-25525)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Campo código interno do contribuinte',
+        texto: '1 card (CE-25383)',
+      },
+    ],
+  },
+  {
+    tag: '21/04/2026',
+    titulo: 'Terça-feira — 21 de Abril',
+    data: '21/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
     tag: '20/04/2026',
     titulo: 'Segunda-feira — 20 de Abril',
     data: '20/04/2026',
@@ -253,60 +292,6 @@ var jiraChangelogData = [
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
         texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '10/04/2026',
-    titulo: 'Sexta-feira — 10 de Abril',
-    data: '10/04/2026',
-    itens: [
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de notas — Barueri/SP e outros',
-        texto: '3 cards (CE-25475, CE-25416, CE-24297)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Fatura de notas excedentes indevida',
-        texto: '1 card (CE-25294)',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Ajuste de XML — Franca/SP',
-        texto: '1 card (CE-25261)',
-      },
-    ],
-  },
-  {
-    tag: '09/04/2026',
-    titulo: 'Quinta-feira — 09 de Abril',
-    data: '09/04/2026',
-    itens: [
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de notas — Barueri/SP',
-        texto: '5 cards (CE-24378, CE-24312, CE-24266, CE-24250, CE-24119)',
-      },
-      {
-        icon: '🤖',
-        destaque: 'Autofix — inutilização de NF',
-        texto: '1 card (CE-25512)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erros de emissão (timeout e XML)',
-        texto: '3 cards (CE-25417, CE-25319, CE-25291)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Erro ao pesquisar vendas no emissor',
-        texto: '1 card (CE-25398)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Emissões estrangeiras — Vila Velha/ES',
-        texto: '1 card (CE-24174)',
       },
     ],
   },

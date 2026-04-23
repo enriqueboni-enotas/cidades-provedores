@@ -1,33 +1,44 @@
-﻿var provedorDetalhe = {
-  id: 'dsfv2',
-  nome: 'DSFv2',
-  empresa: 'DSFv2',
-  stats: {
-    municipios: 6
+﻿var cidadeDetalhe = {
+  id: 'augusto-de-lima-mg',
+  nome: 'Augusto de Lima',
+  uf: 'MG',
+  ibge: '3104809',
+  constante: 'CodigoIBGE.AugustoDeLimaMG',
+  provedorAtual: {
+    nome: 'Sintese',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    codigoNoProvedor: 'UsaSinteseNotaFiscal',
+    robo: false,
+    webService: true,
+    versaoAbrasf: '2.01',
+    infoAdicional: 'UsaCustomBinding => usa binding customizado com utf-8 txt/xml\n					NaoSuportaEmissaoTomadorSemCpf => não suporta emissão tomador sem cpf\n					NaoSuportaEmissaoSemTomador => não suporta emissão tomador\n					UsaCnae => usa cnae\n					UsaItemListaServico => usa item lista serviço\n					UsaSinteseNotaFiscal => usa ws Novo sintese padrão',
+    urls: {
+      homologacao: {
+        recepcaoLote: 'http://homologacao.sintesetecnologia.com.br/nfsews/NfseWS'
+      },
+      producao: {
+        recepcaoLote: 'https://augustodelima.sintesenotafiscal.com.br/nfsews/NfseWS'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'DSFv2' },
-    { key: 'Total Municipios', val: '6' },
-    { key: 'Estados Atendidos', val: ['SP', 'PA', 'MS', 'PI', 'PB'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
+    suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 60,
     usaCodigoServicoMunicipal: true,
-    usaCNAE: false,
-    usaItemListaServico: true,
+    usaDescricaoServico: false,
+    usaNBS: true,
     helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 692060100 ou 863050300',
+    helpCodigoServicoMunicipal: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 6 dígitos sem formatação.\r\n\r\nExemplos: 040101, 170900',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
-    suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
+    numeroRpsDeveSerSequencial: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -46,16 +57,6 @@
       { codigo: '5', nome: 'Imunidade' },
       { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
       { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
-    ]
-  },
-  municipiosLista: {
-    'dsfv2': [
-      { nome: 'Belém', uf: 'PA', ibge: '1501402' },
-      { nome: 'Campinas', uf: 'SP', ibge: '3509502' },
-      { nome: 'Campo Grande', uf: 'MS', ibge: '5002704' },
-      { nome: 'João Pessoa', uf: 'PB', ibge: '2507507' },
-      { nome: 'Sorocaba', uf: 'SP', ibge: '3552205' },
-      { nome: 'Teresina', uf: 'PI', ibge: '2211001' }
     ]
   }
 };

@@ -1,5 +1,120 @@
 var nfeNegadasData = [
   {
+    tag: '22/04/2026',
+    titulo: 'Quarta-feira — 22 de Abril',
+    data: '22/04/2026',
+    itens: [
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '2.154 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.667 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série da DPS fora da faixa do tipo de emissor',
+        texto: '1.627 notas',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'CNPJ não encontrado na base — prestador não inscrito no município',
+        texto: '1.026 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '611 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Número do RPS inválido — fora da sequência do prestador',
+        texto: '565 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório não informado',
+        texto: '337 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
+        texto: '335 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ do tomador incorreto',
+        texto: '328 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '302 notas',
+      },
+    ],
+  },
+  {
+    tag: '21/04/2026',
+    titulo: 'Terça-feira — 21 de Abril',
+    data: '21/04/2026',
+    itens: [
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.642 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.549 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado — número duplicado',
+        texto: '373 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação inválido',
+        texto: '355 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '308 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '303 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
+        texto: '277 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório não informado',
+        texto: '223 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'IE do destinatário não informada (rejeição 232)',
+        texto: '187 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Correção não identificada (campo vazio)',
+        texto: '171 notas',
+      },
+    ],
+  },
+  {
     tag: '20/04/2026',
     titulo: 'Segunda-feira — 20 de Abril',
     data: '20/04/2026',
@@ -573,124 +688,6 @@ var nfeNegadasData = [
         icon: '🔧',
         destaque: 'Cadastro de empresa incompleto — emissão bloqueada',
         texto: '223 notas',
-      },
-    ],
-  },
-  {
-    tag: '10/04/2026',
-    titulo: 'Sexta-feira — 10 de Abril',
-    data: '10/04/2026',
-    itens: [
-      {
-        icon: '⏸️',
-        destaque: 'Emissão automática interrompida — app desativado',
-        texto: '5.610 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.402 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.038 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Documento fiscal (NFS-e) já emitido com mesmo ID',
-        texto: '1.037 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador não informado',
-        texto: '766 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '709 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '616 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '507 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Opção do Simples Nacional divergente do cadastro no mês de competência',
-        texto: '374 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro ao criar rascunho da nota fiscal',
-        texto: '369 notas',
-      },
-    ],
-  },
-  {
-    tag: '09/04/2026',
-    titulo: 'Quinta-feira — 09 de Abril',
-    data: '09/04/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE (API)',
-        texto: '4.020 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Percentual do tributo federal sem valor individualizado dos tributos',
-        texto: '2.013 notas',
-      },
-      {
-        icon: '🔢',
-        destaque:
-          'IM do prestador não deve ser informada — município sem dados no CNC NFS-e',
-        texto: '1.951 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.518 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.347 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Erro com número sequencial de RPS — sequência falha',
-        texto: '896 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador não informado',
-        texto: '682 notas',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Unidade tributável incompatível com NCM em comércio exterior (rejeição 817)',
-        texto: '578 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '546 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '474 notas',
       },
     ],
   },

@@ -3,11 +3,11 @@
   nome: 'Tecnos',
   empresa: 'Tecnos',
   stats: {
-    municipios: 29
+    municipios: 28
   },
   visaoGeral: [
     { key: 'Nome', val: 'Tecnos' },
-    { key: 'Total Municipios', val: '29' },
+    { key: 'Total Municipios', val: '28' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -56,7 +56,6 @@
       { nome: 'Nova Hartz', uf: 'RS', ibge: '4313060' },
       { nome: 'Pareci Novo', uf: 'RS', ibge: '4314035' },
       { nome: 'Portão', uf: 'RS', ibge: '4314803' },
-      { nome: 'Roca Sales', uf: 'RS', ibge: '4315800' },
       { nome: 'Salvador do Sul', uf: 'RS', ibge: '4316501' },
       { nome: 'Santa Maria do Herval', uf: 'RS', ibge: '4316956' },
       { nome: 'São José do Sul', uf: 'RS', ibge: '4318614' },

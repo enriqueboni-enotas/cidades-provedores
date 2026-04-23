@@ -17,7 +17,7 @@
         recepcaoLote: 'http://201.28.69.146:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://intranet.jaciara.mt.gov.br:5661/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://intranet.jaciara.mt.gov.br:5661/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

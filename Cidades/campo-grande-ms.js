@@ -5,67 +5,56 @@
   ibge: '5002704',
   constante: 'CodigoIBGE.CampoGrandeMS',
   provedorAtual: {
-    nome: 'DSF',
-    namespace: 'http://localhost:8080/WsNFe2/lote',
-    codigoNoProvedor: 'NaoUsaSuportaEmissaoNFeClienteSemCpf;NaoSuportaEmissaoNFeSemCliente;NumeroRpsDeveSerSequencial',
+    nome: 'DSFv2',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    codigoNoProvedor: null,
     robo: false,
     webService: true,
-    infoAdicional: 'propriedades do provedor:\n					UsaAutenticidadeNota = salva link de verificação na nota\n					NaoUsaSuportaEmissaoNFeClienteSemCpf => não suporta emissão cliente sem cpf\n					NaoSuportaEmissaoNFeSemCliente => não suporta emissão sem cliente\n					NaoSuportaEmissaoNFeClienteSemEndereco => não suporta cliente sem endereço\n					NumeroRpsDeveSerSequencial => envia numero rps seguenial\n					UsaUmaNotaPorLote => envia apenas uma nota por lote\n					UsaItemListaServico => envia item lista serviço no xml\n					NaoSuportaConsultaSequencialRps => não suporta consulta seguencial por rps\n					NaoSuportaCancelamentoNFe => não suporta cancelamento\n					NaoSuportaCancelamentoNFeClienteSemCpf => não suporta cancelamento cliente sem cpf\n					NaoSuportaCancelamentoNFeSemCliente => não suporta cancelamento sem cliente',
     urls: {
       homologacao: {
+        recepcaoLote: 'https://nfselote-r.campogrande.ms.gov.br/notafiscal-abrasfv203-ws/NotaFiscalSoap'
       },
       producao: {
-        recepcaoLote: 'https://issdigital.pmcg.ms.gov.br/WsNFe2/LoteRps.jws'
+        recepcaoLote: 'https://nfselote.campogrande.ms.gov.br/notafiscal-abrasfv203-ws/NotaFiscalSoap'
       }
     }
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
-    helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: null,
-      senha: null,
-      token: null,
-      fraseSecreta: null
-    },
-    valorCancelamentoNFe: 30,
-    usaAEDF: false,
-    usaRegimeEspecialTributacao: true,
+    valorCancelamentoNFe: 60,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
     usaCNAE: false,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 9 dígitos (somente números).\r\nExemplo válido: 631940000',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    enviaEmailCliente: false,
-    autenticidadeNota: {
-      UsaChaveAcesso: false,
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: true,
-      UsaNumeroNota: true,
-      UsaValorNota: false
-    },
+    usaItemListaServico: true,
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 692060100 ou 863050300',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 a 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
+    suportaEmissaoNFeSemCliente: true,
+    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: false,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
-      { codigo: 'C', nome: 'C - Isenta de ISS' },
-      { codigo: 'E', nome: 'E - Não incidência no Munícipio' },
-      { codigo: 'F', nome: 'F - Imune' },
-      { codigo: 'K', nome: 'K - Exigibilidade Suspensa por decisão Judicial ou processo administrativo' },
-      { codigo: 'N', nome: 'N - Não tributável' },
-      { codigo: 'T', nome: 'T - Tributável' },
-      { codigo: 'G', nome: 'G - Tributável Fixo' },
-      { codigo: 'H', nome: 'H - Tributável S.N.' },
-      { codigo: 'M', nome: 'M - Micro Empreendedor Individual (MEI)' }
+      { codigo: '0', nome: ' - ' },
+      { codigo: '1', nome: 'Microempresa Municipal' },
+      { codigo: '2', nome: 'Estimativa' },
+      { codigo: '3', nome: 'Sociedade de Profissionais' },
+      { codigo: '4', nome: 'Cooperativa' },
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: 'A', nome: 'Sem Dedução' },
-      { codigo: 'B', nome: 'Com Dedução/Materiais' },
-      { codigo: 'C', nome: 'Isenta/Imune de ISSQN' },
-      { codigo: 'D', nome: 'Devolução / Simples Remessa' },
-      { codigo: 'J', nome: 'Intermediação' }
+      { codigo: '1', nome: 'Exigível' },
+      { codigo: '2', nome: 'Não incidência' },
+      { codigo: '3', nome: 'Isenção' },
+      { codigo: '4', nome: 'Exportação' },
+      { codigo: '5', nome: 'Imunidade' },
+      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
+      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
     ]
   }
 };

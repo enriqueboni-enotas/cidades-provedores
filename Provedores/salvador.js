@@ -42,6 +42,12 @@
     suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
     numeroNotasPorLote: 10,
+    autenticidadeNota: {
+      urlVerificacao: 'https://nfse.salvador.ba.gov.br/site/publico/verificacao.aspx',
+      UsaCnpjPrestador: true,
+      UsaCodigoVerificacao: true,
+      UsaNumeroNota: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

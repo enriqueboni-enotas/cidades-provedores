@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'GOVBRv2',
     namespace: null,
-    codigoNoProvedor: 'UsaAbrasf203;RegraPadraoAliquotaAbrasfv204',
+    codigoNoProvedor: 'CancelaCodigoCE37',
     robo: false,
     webService: true,
     infoAdicional: 'Metadados cadastro empresa: naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior\n					Metadados da nota: servicoIncideNoMunicipioPrestador, NumeroProcesso, regimeEspecialTributacao',
@@ -15,7 +15,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://webapp1-paranapanema.cidade360.cloud/NFSe.Portal.Integracao/Services.svc'
+        recepcaoLote: 'http://paranapanema.govbr.cloud/NFSe.Portal.Integracao/Services.svc'
       }
     }
   },

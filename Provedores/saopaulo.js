@@ -40,6 +40,12 @@
     enviaEmailCliente: true,
     numeroNotasPorLote: 30,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    autenticidadeNota: {
+      urlVerificacao: 'https://nfe.prefeitura.sp.gov.br/publico/verificacao.aspx',
+      UsaCnpjPrestador: true,
+      UsaCodigoVerificacao: true,
+      UsaNumeroNota: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: 'Normal' },
       { codigo: '1', nome: 'Isenta' },

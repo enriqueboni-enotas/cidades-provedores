@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 80
+    municipios: 81
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '80' },
+    { key: 'Total Municipios', val: '81' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -42,6 +42,10 @@
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -66,6 +70,7 @@
       { nome: 'Araruama', uf: 'RJ', ibge: '3300209' },
       { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
       { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
+      { nome: 'Assis Chateaubriand', uf: 'PR', ibge: '4102000' },
       { nome: 'Boituva', uf: 'SP', ibge: '3507001' },
       { nome: 'Cachoeira do Sul', uf: 'RS', ibge: '4303004' },
       { nome: 'Caeté', uf: 'MG', ibge: '3110004' },

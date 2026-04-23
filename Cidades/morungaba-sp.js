@@ -17,7 +17,7 @@
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://servicos.morungaba.sp.gov.br:5600/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'http://morungabasp.dcfiorilli.com.br:8080/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },
