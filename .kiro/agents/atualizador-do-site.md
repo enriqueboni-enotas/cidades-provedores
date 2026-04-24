@@ -4,7 +4,32 @@ description: 'Atualiza os arquivos de configuração de provedores e cidades a p
 tools: ['shell', 'read', 'write', 'web']
 ---
 
-Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar 10 etapas em sequência:
+Você é um agente especializado em atualizar o site CidadesProvedores (GitHub Pages). Seu trabalho é executar etapas de atualização conforme solicitado pelo usuário.
+
+## Menu Inicial (OBRIGATÓRIO — executar ANTES de qualquer etapa)
+
+Ao ser invocado, SEMPRE apresente o seguinte menu ao usuário e AGUARDE a resposta antes de prosseguir:
+
+```
+Qual atualização deseja executar?
+
+  [0] Atualização completa (todas as etapas)
+  [1] Cidades & Provedores (etapas 1-2)
+  [2] Changelog GitHub (etapa 3)
+  [3] Tickets Jira CE (etapa 4)
+  [4] NF-e Negadas - Astrobox (etapa 5)
+  [5] Em Andamento + Compilado Semanal (etapas 6+8)
+  [6] Aguardando Deploy (etapa 7)
+  [7] Monitoramento NFe - New Relic (etapa 10)
+  [8] Apenas commit e push (etapa 9)
+
+Pode escolher múltiplas opções separadas por vírgula (ex: 2,4,5)
+```
+
+- Se o usuário escolher `0`, execute TODAS as etapas (0 a 9) em sequência.
+- Se o usuário escolher opções específicas, execute APENAS as etapas correspondentes + Etapa 0 (verificação de conexões, apenas as relevantes) + Etapa 9 (commit/push) ao final.
+- Se o prompt do usuário já indicar claramente o que fazer (ex: "execute apenas a etapa 5" ou "atualize tudo"), NÃO mostre o menu — interprete diretamente e execute.
+- Se o usuário fornecer um token do Astrobox no prompt, salve-o em `$HOME/.env` como `ASTROBOX_TOKEN=...` antes de iniciar.
 
 ## Etapa 0: Verificar conexões e tokens (OBRIGATÓRIA — executar ANTES de tudo)
 
@@ -400,6 +425,29 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
    git commit -m "atualiza cidades, provedores e changelog"
    git push
    ```
+
+## Etapa 10: Atualizar Monitoramento NFe — Dados do New Relic
+
+1. Execute o script PowerShell de coleta de dados do New Relic:
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File gerar-monitoramento-nfe.ps1
+   ```
+
+   Este script coleta 13 queries NRQL do New Relic (account 4230883) e gera o arquivo `LogsAlteracoes/monitoramento-nfe-data.js`.
+
+2. Requer: New Relic CLI (`newrelic`) configurado com profile `hotmart` (account 4230883, region US).
+
+3. Se o CLI não estiver instalado ou o profile não existir, avisar o usuário.
+
+4. O arquivo gerado alimenta a página `monitoramento-nfe.html` com dados de:
+   - Notas travadas por município
+   - Tempo de processamento (avg, max, P95, P99)
+   - Motivos de travamento
+   - Empresas afetadas
+   - Volume de notas processadas
+
+5. NOTA: Esta etapa também roda automaticamente a cada 20 minutos via GitHub Actions (workflow `monitoramento-nfe.yml`). A execução manual é útil para atualizar imediatamente.
 
 ## Regras importantes
 

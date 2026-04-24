@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 131
+    municipios: 132
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '131' },
+    { key: 'Total Municipios', val: '132' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,8 +82,8 @@
       { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
       { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
       { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
-      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
+      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
       { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
       { nome: 'Caarapó', uf: 'MS', ibge: '5002407' },
@@ -123,6 +123,7 @@
       { nome: 'Honório Serpa', uf: 'PR', ibge: '4109658' },
       { nome: 'Ibiam', uf: 'SC', ibge: '4206751' },
       { nome: 'Ilhota', uf: 'SC', ibge: '4207106' },
+      { nome: 'Imbuia', uf: 'SC', ibge: '4207403' },
       { nome: 'Itagi', uf: 'BA', ibge: '2915106' },
       { nome: 'Itaguara', uf: 'MG', ibge: '3132206' },
       { nome: 'Itiquira', uf: 'MT', ibge: '5104609' },

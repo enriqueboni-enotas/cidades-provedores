@@ -1,13 +1,92 @@
 ﻿var changelogData = [
   {
+    tag: '24/04/2026',
+    titulo: 'Sexta-feira — 24 de Abril',
+    data: '24/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '23/04/2026',
     titulo: 'Quinta-feira — 23 de Abril',
     data: '23/04/2026',
     itens: [
       {
-        icon: '�',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
+        icon: '📊',
+        destaque: 'SpeedGov — envio do tipo de retenção PIS/COFINS/CSLL conforme Portal Nacional',
+        texto:
+          'O provedor SpeedGov não enviava corretamente o tipo de retenção de PIS, COFINS e CSLL conforme as regras do Portal Nacional de NFS-e. Foi implementado o método RetornarTpRetPisCofinsCsll que deduz o código de retenção a partir dos dados da nota e do serviço. Além disso, o método CriarValoresServico foi refatorado para suportar PisCofinsApuracaoPropria — preenchendo tipo de retenção, CST, base de cálculo, alíquota e valores de PIS e COFINS de forma independente (evitando zerar indevidamente o tributo oposto em retenções parciais). Também foi criado o método CalcularValorLiquidoNfse para recomputar o valor líquido considerando todas as retenções, e DeduzirAliquotaPeloValor foi fortalecido com proteção contra divisão por zero.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Mogi Mirim/SP — padronização do nome na busca de municípios',
+        texto:
+          'A busca de municípios no RecepcionarLoteNFeV2 não encontrava Mogi Mirim/SP porque o nome era enviado sem hífen ("Mogi Mirim"), enquanto o cadastro oficial usa "Mogi-Mirim". Foi adicionada uma normalização que converte automaticamente o nome antes da consulta, seguindo o mesmo padrão já existente para Santa Bárbara d\'Oeste e Sant\'Ana do Livramento. Isso resolve erros de "município não encontrado" na emissão de notas com tomador de Mogi Mirim.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Ubatã/BA ativado no provedor Saatri',
+        texto:
+          'O município de Ubatã/BA foi ativado para emissão de NFS-e pelo provedor Saatri. A prefeitura aderiu ao sistema eletrônico de notas fiscais e a integração foi configurada no gateway para permitir emissão, cancelamento e consulta de notas.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'DANFSE Padrão Nacional — descrição do serviço ampliada para 11 linhas',
+        texto:
+          'O relatório DANFSE (Documento Auxiliar da NFS-e) no padrão nacional estava limitado a 7 linhas na descrição do serviço, o que truncava textos mais longos. O método DrawServicoPrestado foi ajustado para aceitar até 11 linhas, aumentando tanto o limite de quebra de texto (WrapTextByWidth) quanto o número de linhas processadas no loop de desenho. Isso resolve casos em que a descrição completa do serviço não cabia no PDF gerado.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'PublicaV1 — dados de obra preenchidos com endereço do tomador para serviço 07.02',
+        texto:
+          'No provedor PublicaV1, quando o serviço municipal é 07.02 (construção civil) e os dados de construção civil não são informados na nota, o sistema agora preenche automaticamente os dados da obra com as informações do tomador de serviço. Isso evita rejeições em prefeituras que exigem dados de obra para esse código de serviço, usando o endereço completo do tomador, tipo de identificação "1" e código de país "1058" (Brasil).',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Rio Grande/RS — cancelamento de NFS-e corrigido no SIGISSv1',
+        texto:
+          'O cancelamento de NFS-e em Rio Grande/RS pelo provedor SIGISSv1 não funcionava porque a operação não estava implementada (lançava NotImplementedException). Foi criada a classe CancelarNFeRioGrande com lógica específica: credenciais (CCM, CNPJ, senha) são incluídas no pedido, o XML usa o DefaultNamespace do município, e a raiz do request foi renomeada de "CancelarNotaRequest" para "CancelarNota". O tratamento de erros foi melhorado para agregar todas as mensagens de erro da resposta e detectar notas já canceladas. O roteamento no SIGISSv1ProvedorNFe agora direciona Rio Grande/RS para essa operação específica.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'ISSIntel — suporte a emissão para o exterior',
+        texto:
+          'O provedor ISSIntel não suportava emissão de notas para tomadores do exterior, retornando o erro E0591. Foram adicionadas as propriedades CodigoPais e CodigoPaisLocalPrestacao ao modelo ISSIntelServico, e criado o método assíncrono ResolverCodigoPais que detecta automaticamente quando o serviço é prestado no exterior (código IBGE 9999999). O método busca o código do país via IPaisesService, priorizando PaisPrestacaoServico quando fornecido e usando o país do tomador como fallback. Três códigos de erro distintos (GW911, GW912, GW913) foram implementados para cenários de falha na resolução.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Massapê/CE migrado para o provedor SpeedGov',
+        texto:
+          'O município de Massapê/CE teve seu provedor alterado para SpeedGov. A prefeitura migrou de sistema de NFS-e e as configurações foram atualizadas no gateway para garantir continuidade na emissão de notas fiscais eletrônicas.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Fortaleza/CE — cálculo específico de PIS/COFINS/CSLL para empresas na allowlist',
+        texto:
+          'Foi implementado um cálculo específico de tributos sobre serviços (PIS/COFINS/CSLL) para empresas de Fortaleza/CE que estão em uma allowlist. O novo método CriarValoresServicoFortaleza monta os valores a partir de campos de ISS e tributos federais, recalcula PIS e COFINS quando há PisCofinsApuracaoPropria (deduzindo alíquotas faltantes via DeduzirAliquotaPeloValor), e ajusta o CSLL com base no código de retenção derivado de TipoRetencaoPisCofins. Tipos de retenção inválidos geram ValidationException para evitar envio incorreto.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'NFS-e Nacional — retorno do RPS para emissão robô',
+        texto:
+          'O envio de série e número do RPS (Recibo de Prestação de Serviço) havia sido desabilitado temporariamente no provedor NFS-e Nacional por um erro no portal. Com a correção do portal, o envio foi restaurado: InformarSerieNumeroDPS volta a ser "true", e os campos SerieDPS e NumeroDPS são populados com os valores reais da nota. No método MontaInfDPS, os campos serie e nDPS que estavam sendo enviados como null agora recebem os valores corretos. Isso restaura o fluxo de emissão automatizada (robô) que dependia dessas informações.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'EGoverneISS — endereço do tomador replicado como local de prestação',
+        texto:
+          'Para uma empresa específica do provedor EGoverneISS, foi implementada a funcionalidade de replicar o endereço do tomador nos campos de local da prestação do serviço. A propriedade UsarEnderecoTomadorComoLocalPrestacao controla quais empresas usam esse comportamento. Quando ativado, o método ResolverEnderecoPrestacao marca servicoPrestadoNoTomador como true e copia CidadePrestacaoServico e EstadoPrestacaoServico a partir do endereço do tomador, com normalização de valores vazios.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Correção na lista de AnexosSimplesNacional — conversão para array',
+        texto:
+          'A propriedade AnexosSimplesNacional, que define os anexos do Simples Nacional aplicáveis a cada provedor, estava sendo retornada como lista ao invés de array na extensão ProvedorExtensions.cs. Isso causava incompatibilidade com a estrutura de dados esperada pelo front-end e pela API, que tratam o campo como array JSON. A correção converte a lista para array com .ToArray(), garantindo que os dados dos anexos sejam serializados corretamente. Esse commit veio do PR #727 (sustain) junto com ajuste de SMU.',
       },
     ],
   },
@@ -534,18 +613,5 @@
           'As mensagens de erro retornadas pelas prefeituras que usam o provedor FgMaiss vinham com tags HTML, caracteres especiais e formatação que dificultavam a leitura no painel do cliente. Foi criado o método LimparMensagemErro que sanitiza essas mensagens antes de exibir. Aplicado em todas as operações do provedor, melhorando significativamente a experiência do usuário ao visualizar erros de emissão.',
       },
     ],
-  },
-  {
-    tag: '12/04/2026',
-    titulo: 'Domingo — 12 de Abril',
-    data: '12/04/2026',
-    itens: [
-      {
-        icon: '📊',
-        destaque: 'Tributos aproximados em São Paulo/SP no novo layout JSON',
-        texto:
-          'O município de São Paulo/SP passou a utilizar um novo layout JSON para emissão de NFS-e. Foi ajustado o envio dos tributos aproximados (Lei da Transparência) para funcionar corretamente nesse novo formato. Sem o ajuste, os valores de tributos aproximados não apareciam na nota, descumprindo a obrigação legal de informar ao consumidor.',
-      },
-    ],
-  },
+  }
 ];

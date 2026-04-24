@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 104
+    municipios: 103
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '104' },
+    { key: 'Total Municipios', val: '103' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'MS', 'AC', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -77,7 +77,6 @@
       { nome: 'Guaranésia', uf: 'MG', ibge: '3128303' },
       { nome: 'Igaratinga', uf: 'MG', ibge: '3130200' },
       { nome: 'Igrapiúna', uf: 'BA', ibge: '2913457' },
-      { nome: 'Imbuia', uf: 'SC', ibge: '4207403' },
       { nome: 'Iomerê', uf: 'SC', ibge: '4207577' },
       { nome: 'Ipê', uf: 'RS', ibge: '4310439' },
       { nome: 'Ipira', uf: 'SC', ibge: '4207601' },

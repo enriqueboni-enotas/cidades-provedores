@@ -3,11 +3,11 @@
   nome: 'SpeedGov',
   empresa: 'SpeedGov',
   stats: {
-    municipios: 45
+    municipios: 46
   },
   visaoGeral: [
     { key: 'Nome', val: 'SpeedGov' },
-    { key: 'Total Municipios', val: '45' },
+    { key: 'Total Municipios', val: '46' },
     { key: 'Estados Atendidos', val: ['CE', 'PE', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -87,6 +87,7 @@
       { nome: 'Limoeiro do Norte', uf: 'CE', ibge: '2307601' },
       { nome: 'Maracanaú', uf: 'CE', ibge: '2307650' },
       { nome: 'Maranguape', uf: 'CE', ibge: '2307700' },
+      { nome: 'Massapê', uf: 'CE', ibge: '2308005' },
       { nome: 'Morada Nova', uf: 'CE', ibge: '2308708' },
       { nome: 'Nova Russas', uf: 'CE', ibge: '2309300' },
       { nome: 'Pacajus', uf: 'CE', ibge: '2309607' },

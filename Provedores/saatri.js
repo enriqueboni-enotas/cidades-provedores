@@ -3,11 +3,11 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 36
+    municipios: 38
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '36' },
+    { key: 'Total Municipios', val: '38' },
     { key: 'Estados Atendidos', val: ['BA', 'RR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -83,12 +83,14 @@
       { nome: 'Mata de São João', uf: 'BA', ibge: '2921005' },
       { nome: 'Mucajaí', uf: 'RR', ibge: '1400308' },
       { nome: 'Nova Viçosa', uf: 'BA', ibge: '2923001' },
+      { nome: 'Paratinga', uf: 'BA', ibge: '2923704' },
       { nome: 'Paripiranga', uf: 'BA', ibge: '2923803' },
       { nome: 'Rorainópolis', uf: 'RR', ibge: '1400472' },
       { nome: 'Santa Bárbara', uf: 'BA', ibge: '2927507' },
       { nome: 'Santana', uf: 'BA', ibge: '2928208' },
       { nome: 'Serra Dourada', uf: 'BA', ibge: '2930303' },
-      { nome: 'Teolândia', uf: 'BA', ibge: '2931608' }
+      { nome: 'Teolândia', uf: 'BA', ibge: '2931608' },
+      { nome: 'Ubatã', uf: 'BA', ibge: '2932309' }
     ]
   }
 };

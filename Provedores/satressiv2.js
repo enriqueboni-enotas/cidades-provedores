@@ -3,11 +3,11 @@
   nome: 'SatreSsIV2',
   empresa: 'SatreSsIV2',
   stats: {
-    municipios: 4
+    municipios: 3
   },
   visaoGeral: [
     { key: 'Nome', val: 'SatreSsIV2' },
-    { key: 'Total Municipios', val: '4' },
+    { key: 'Total Municipios', val: '3' },
     { key: 'Estados Atendidos', val: ['CE'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,7 +61,6 @@
     'satressiv2': [
       { nome: 'Itaitinga', uf: 'CE', ibge: '2306256' },
       { nome: 'Lavras da Mangabeira', uf: 'CE', ibge: '2307502' },
-      { nome: 'Massapê', uf: 'CE', ibge: '2308005' },
       { nome: 'Varjota', uf: 'CE', ibge: '2313955' }
     ]
   }
