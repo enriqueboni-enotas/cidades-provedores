@@ -1,176 +1,42 @@
 ﻿var changelogData = [
   {
+    tag: '23/04/2026',
+    titulo: 'Quinta-feira — 23 de Abril',
+    data: '23/04/2026',
+    itens: [
+      {
+        icon: '�',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '22/04/2026',
     titulo: 'Quarta-feira — 22 de Abril',
     data: '22/04/2026',
     itens: [
       {
-        icon: '🔄',
-        destaque: 'Campo Grande/MS migrado para o provedor DSFv2',
-        texto:
-          'O município de Campo Grande/MS foi migrado para o provedor DSFv2. A prefeitura atualizou seu sistema de NFS-e e as configurações de URL, namespace e operações foram ajustadas para o novo provedor, garantindo continuidade na emissão de notas fiscais de serviço.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Assis Chateaubriand/PR migrado para GOVBRv3',
-        texto:
-          'O município de Assis Chateaubriand/PR teve seu provedor atualizado para GOVBRv3. A prefeitura migrou para a versão mais recente do sistema GOVBR e as configurações foram atualizadas para garantir compatibilidade com o novo webservice.',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Roca Sales/RS migrado para NfseNacionalV2',
-        texto:
-          'O município de Roca Sales/RS teve seu provedor alterado para NfseNacionalV2, aderindo ao Portal Nacional de NFS-e. As configurações foram atualizadas para que a emissão passe a ser feita pelo portal nacional.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Vera Cruz/BA aderiu ao Portal Nacional de NFS-e',
-        texto:
-          'O município de Vera Cruz/BA passou a utilizar o Portal Nacional de NFS-e. As configurações foram atualizadas no gateway para direcionar a emissão pelo portal nacional ao invés do provedor anterior.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Boqueirão do Leão/RS aderiu ao Portal Nacional de NFS-e',
-        texto:
-          'O município de Boqueirão do Leão/RS aderiu ao Portal Nacional de NFS-e. As configurações foram atualizadas para que a emissão passe a ser feita pelo portal nacional.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Augusto de Lima/MG ativado no provedor Síntese',
-        texto:
-          'O município de Augusto de Lima/MG foi ativado para emissão de NFS-e pelo provedor Síntese. A prefeitura aderiu ao sistema eletrônico de notas fiscais e a integração foi configurada no gateway.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Triunfo/RS — cIntContrib e NaoUsaPedRegEventoCancelamento',
-        texto:
-          'O município de Triunfo/RS recebeu duas configurações: foi adicionado à lista de municípios que enviam o campo cIntContrib (código de integração do contribuinte, exigido pela prefeitura para identificar o prestador) e também à lista NaoUsaPedRegEventoCancelamento, que controla o formato do pedido de cancelamento enviado ao webservice.',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Pinhal/RS — flags EnviaCodigoAtividade e UsaItemListaServico',
-        texto:
-          'O município de Pinhal/RS recebeu as flags EnviaCodigoAtividade e UsaItemListaServico. Essas configurações são necessárias porque a prefeitura exige o código de atividade econômica e o item da lista de serviços no XML da nota, sem os quais a emissão é rejeitada.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Patos/PB — ativada propriedade NaoSuportaCancelamento',
-        texto:
-          'A propriedade NaoSuportaCancelamento foi ativada para o município de Patos/PB. A prefeitura não disponibiliza webservice de cancelamento de NFS-e, e sem essa flag o sistema tentava cancelar via API e retornava erro. Com a configuração, o sistema informa corretamente que o cancelamento deve ser feito diretamente no portal da prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'São Gonçalo/RJ — nova lista de Natureza de Operação',
-        texto:
-          'Foi adicionada uma nova lista de Natureza de Operação específica para o município de São Gonçalo/RJ. A prefeitura exige valores específicos nesse campo que diferem do padrão ABRASF, e sem a lista correta as notas eram rejeitadas por valor inválido.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Tecnos — suporte a campos de comércio exterior',
-        texto:
-          'O provedor Tecnos recebeu implementação dos campos relacionados ao comércio exterior (TecnosComercioExterior). Isso permite emitir NFS-e para tomadores estrangeiros via Tecnos, preenchendo corretamente os campos de país, moeda e demais informações exigidas para operações internacionais.',
-      },
-      {
         icon: '�',
-        destaque: 'RLZv3 — ativado UsaNovoFormatoPisCofins',
+        destaque: 'Correção na lista de AnexosSimplesNacional — conversão para array',
         texto:
-          'A propriedade UsaNovoFormatoPisCofins foi ativada para o provedor RLZv3, habilitando o novo formato de envio de PIS e COFINS exigido pela reforma tributária. Sem essa flag, os valores eram enviados no formato antigo, causando rejeição em prefeituras que já adotaram o novo layout.',
+          'A propriedade AnexosSimplesNacional, que define os anexos do Simples Nacional aplicáveis a cada provedor, estava sendo retornada como lista ao invés de array na extensão ProvedorExtensions.cs. Isso causava incompatibilidade com a estrutura de dados esperada pelo front-end e pela API, que tratam o campo como array JSON. A correção converte a lista para array com .ToArray(), garantindo que os dados dos anexos sejam serializados corretamente.',
       },
       {
         icon: '📊',
-        destaque:
-          'Verificação de existência de valores PIS/COFINS/CSLL antes de atribuir taxas',
+        destaque: 'Portal Nacional — Benefício Municipal anulado quando tribISSQN não é Tributável',
         texto:
-          'Foi adicionada uma verificação que confere se existem valores de PIS, COFINS e CSLL antes de atribuir as taxas correspondentes no XML. Sem essa verificação, o sistema atribuía taxas zeradas ou inválidas quando esses impostos não eram informados, causando rejeições em algumas prefeituras.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Envio de CST do PIS/COFINS e indicação de retenção dos impostos',
-        texto:
-          'Foi implementado o envio do CST (Código de Situação Tributária) do PIS e COFINS junto com a indicação de retenção dos impostos no XML. Algumas prefeituras passaram a exigir esses campos para conformidade com a reforma tributária, e sua ausência causava rejeição na emissão.',
-      },
-      {
-        icon: '📋',
-        destaque: 'Portal Nacional — subscription CUORE para envio de NBS',
-        texto:
-          'A subscription da empresa CUORE foi adicionada à lista de envio de código NBS no Portal Nacional de NFS-e. Empresas nessa lista têm o campo codigoNBS preenchido automaticamente na emissão, evitando rejeições por campo obrigatório não informado.',
-      },
-      {
-        icon: '�',
-        destaque:
-          'Portal Nacional — subscription para envio de NBS em Belo Horizonte',
-        texto:
-          'Foi adicionada uma subscription específica para envio do código NBS em Belo Horizonte/MG via Portal Nacional. A prefeitura de BH exige o campo NBS para determinadas categorias de serviço, e a configuração garante que o campo seja enviado corretamente para as empresas afetadas.',
+          'O Portal Nacional de NFS-e retornava o erro E0533 quando o campo Benefício Municipal (BM) era informado em notas com tribISSQN diferente de 1 (Tributável). A regra do Portal Nacional exige que o BM seja nulo para notas isentas, imunes ou com suspensão judicial. A correção foi aplicada nos dois formatadores de XML (FormatarXmlLoteNFeBase e FormatarXmlLoteNFeV2Base), adicionando validação no método ObterCodigoBeneficioMunicipalMetadados para retornar null quando tribISSQN != 1, evitando rejeições em notas não tributáveis.',
       },
       {
         icon: '🔧',
-        destaque:
-          'WebISSv2 — serviço 0713 na regra de incidência interna de Feira de Santana/BA',
+        destaque: 'Atualização de pontuação na descrição do provedor FgMaiss',
         texto:
-          'O código de serviço 0713 foi adicionado à regra de incidência interna do município de Feira de Santana/BA no provedor WebISSv2. Essa regra define quais serviços têm incidência no município do prestador ao invés do tomador, impactando diretamente o local de recolhimento do ISS.',
-      },
-      {
-        icon: '�',
-        destaque: 'Ajuste no cancelamento de Três Barras do Paraná/PR',
-        texto:
-          'O processo de cancelamento de NFS-e em Três Barras do Paraná/PR apresentava problemas de compatibilidade com o webservice da prefeitura. O ajuste corrige o formato da requisição de cancelamento para atender ao que a prefeitura espera, resolvendo erros que impediam o cancelamento de notas.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Tratamento no cancelamento do provedor (serviço sem certificado)',
-        texto:
-          'Foi adicionado tratamento específico no cancelamento para provedores que operam sem certificado digital. Sem o tratamento, o cancelamento falhava com erro genérico quando o provedor não exigia certificado. O ajuste garante que o fluxo de cancelamento funcione corretamente nesses casos.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Atualização da URL de consulta de lote para emissão sem certificado',
-        texto:
-          'A URL utilizada para consulta de lote no fluxo de emissão sem certificado digital foi atualizada. A URL anterior estava desatualizada e causava falhas na consulta do status do lote, impedindo a sincronização de notas emitidas por esse fluxo.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Tratamento para serviço 03.01 no provedor',
-        texto:
-          'Foi adicionado tratamento específico para o código de serviço 03.01 em um provedor. Esse código de serviço tem comportamento diferenciado em algumas prefeituras e sem o tratamento adequado as notas eram rejeitadas ou processadas incorretamente.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualização para pegar XML do innerXML',
-        texto:
-          'A lógica de extração do XML de resposta de um provedor foi ajustada para usar o innerXML ao invés do XML completo. Alguns provedores encapsulam o XML da nota dentro de outro XML de envelope, e sem esse ajuste o parsing falhava ou retornava dados incorretos.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Configuração de empresa em idsNovoRespTecnico',
-        texto:
-          'Uma empresa específica foi adicionada à lista idsNovoRespTecnico, que controla quais empresas utilizam o novo formato de Responsável Técnico no XML. Essa configuração é necessária para conformidade com as exigências do Portal Nacional de NFS-e para determinadas empresas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Arredondamento ABNT substituído por Math.Round',
-        texto:
-          'O método de arredondamento ABNT (que usa a regra do "arredondamento bancário" — arredonda para o par mais próximo em caso de .5) foi substituído pelo Math.Round padrão. Algumas prefeituras rejeitavam notas quando os valores calculados com arredondamento ABNT divergiam dos valores esperados pelo sistema da prefeitura.',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Morro Reuter/RS adicionado à lista NaoUsaPedRegEventoCancelamento',
-        texto:
-          'O município de Morro Reuter/RS foi adicionado à lista NaoUsaPedRegEventoCancelamento. Essa configuração ajusta o formato do pedido de cancelamento enviado ao webservice da prefeitura, necessário porque Morro Reuter/RS não aceita o formato padrão de pedido de registro de evento de cancelamento.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Fix pontual no provedor',
-        texto:
-          'Correção pontual aplicada por cleber.carmo. Ajuste de baixo impacto em comportamento específico do provedor.',
+          'A descrição de ajuda (help text) das características do provedor FgMaiss foi ajustada com correção de pontuação — adição de ponto final na frase. Embora seja uma mudança cosmética, garante consistência na documentação exibida nas telas de configuração do provedor.',
       },
     ],
   },
-  {
+{
     tag: '21/04/2026',
     titulo: 'Terça-feira — 21 de Abril',
     data: '21/04/2026',
@@ -679,18 +545,6 @@
         destaque: 'Tributos aproximados em São Paulo/SP no novo layout JSON',
         texto:
           'O município de São Paulo/SP passou a utilizar um novo layout JSON para emissão de NFS-e. Foi ajustado o envio dos tributos aproximados (Lei da Transparência) para funcionar corretamente nesse novo formato. Sem o ajuste, os valores de tributos aproximados não apareciam na nota, descumprindo a obrigação legal de informar ao consumidor.',
-      },
-    ],
-  },
-  {
-    tag: '11/04/2026',
-    titulo: 'Sábado — 11 de Abril',
-    data: '11/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
