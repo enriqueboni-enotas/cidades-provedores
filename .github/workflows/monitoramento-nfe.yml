@@ -2,8 +2,8 @@ name: Atualizar Monitoramento NFe
 
 on:
   schedule:
-    - cron: '*/20 * * * *'  # A cada 20 minutos
-  workflow_dispatch:         # Permite execução manual
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,28 +11,33 @@ permissions:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    env:
+      NR_ACCOUNT: "4230883"
     steps:
       - uses: actions/checkout@v4
 
       - name: Instalar New Relic CLI
         run: |
-          curl -s https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash
-          sudo mv /usr/local/bin/newrelic /usr/local/bin/newrelic 2>/dev/null || true
+          curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash
+          newrelic version
 
       - name: Configurar profile
         env:
           NEW_RELIC_API_KEY: ${{ secrets.NEW_RELIC_API_KEY }}
         run: |
-          newrelic profile add --profile hotmart --apiKey "$NEW_RELIC_API_KEY" --accountId 4230883 --region US -y
+          newrelic profile add \
+            --profile hotmart \
+            --apiKey "$NEW_RELIC_API_KEY" \
+            --accountId $NR_ACCOUNT \
+            --region US -y
           newrelic profile default --profile hotmart
 
       - name: Coletar dados do New Relic
         run: |
-          ACCOUNT=4230883
-          OUT="LogsAlteracoes/monitoramento-nfe-data.js"
-
           nrql() {
-            newrelic nrql query --query "$1" --accountId $ACCOUNT 2>/dev/null | sed -n '/^\[/,/^\]/p'
+            local result
+            result=$(newrelic nrql query --query "$1" --accountId "$NR_ACCOUNT" 2>/dev/null)
+            echo "$result" | sed -n '/^\[/,/^\]/p'
           }
 
           echo "[1/13] Travadas por municipio..."
@@ -75,8 +80,9 @@ jobs:
           Q13=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET empresa.razao_social SINCE 30 minutes ago LIMIT 15")
 
           TS=$(TZ='America/Sao_Paulo' date '+%d/%m/%Y %H:%M')
+          OUT="LogsAlteracoes/monitoramento-nfe-data.js"
 
-          cat > "$OUT" << JSEOF
+          cat > "$OUT" <<EOF
 // Gerado automaticamente pelo workflow monitoramento-nfe.yml em $TS (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
@@ -95,7 +101,7 @@ var monitoramentoNfeData = {
   municipioStatus: $Q12,
   topEmpresasTravadas: $Q13
 };
-JSEOF
+EOF
 
           echo "Arquivo gerado: $OUT ($TS)"
 
