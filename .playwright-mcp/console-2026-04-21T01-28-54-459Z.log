@@ -1,5 +1,0 @@
-[    2908ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://astrobox.hotmart.com/:0
-[    3992ms] [INFO] [CAS-JS][onFocus] hidden @ https://astrobox.hotmart.com/ceacc3465cd8300db348.chunk.js:494
-[    4383ms] [ERROR] dataGtmElement not found. Please inform dataGtmElement or use direct google tag manager @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.20.4:0
-[    4725ms] [LOG] Tracking event api htm sent Response @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.20.4:0
-[    4867ms] [LOG] Device Fingerprint: 2378292233095 @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.20.4:0
