@@ -557,6 +557,11 @@
       display: block
     }
 
+    /* Volumetria grids */
+    .vol-grid-6{grid-template-columns:repeat(6,1fr)}
+    .vol-grid-3{grid-template-columns:repeat(3,1fr)}
+    .vol-grid-2{grid-template-columns:repeat(2,1fr)}
+
     /* Responsive — Tablet */
     @media(max-width:900px) {
       .grid {
@@ -630,6 +635,8 @@
         padding: 10px 14px;
         font-size: 12px
       }
+
+      .vol-grid-6{grid-template-columns:repeat(3,1fr)}
     }
 
     /* Responsive — Mobile */
@@ -759,6 +766,9 @@
       .ts-bar {
         font-size: 11px
       }
+
+      .vol-grid-6{grid-template-columns:repeat(2,1fr)}
+      .vol-grid-3{grid-template-columns:1fr}
     }
 
     /* Modal */
@@ -1116,7 +1126,7 @@
     var taxaCor = parseFloat(taxaFalha) > 5 ? 'var(--danger)' : parseFloat(taxaFalha) > 2 ? 'var(--warn)' : 'var(--success)';
 
     h += '<div class="card panel full"><h2 class="panel-title">Volumetria NFe <span class="badge-count">\u00faltima hora</span></h2>';
-    h += '<div class="stats-row" style="grid-template-columns:repeat(6,1fr)">';
+    h += '<div class="stats-row vol-grid-6">';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + fmtNum(volEmitidas) + '</div><div class="stat-label">Emitidas</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(volFalhas) + '</div><div class="stat-label">Falhas</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--muted)">' + fmtNum(volCanceladas) + '</div><div class="stat-label">Canceladas</div></div>';
@@ -1134,7 +1144,7 @@
     var pendCor = filaPendentes > 100 ? 'var(--danger)' : filaPendentes > 10 ? 'var(--warn)' : 'var(--success)';
 
     h += '<div class="card panel"><h2 class="panel-title">Fila de Opera\u00e7\u00f5es</h2>';
-    h += '<div class="stats-row" style="grid-template-columns:1fr 1fr">';
+    h += '<div class="stats-row vol-grid-2">';
     h += '<div class="card stat-card"><div class="stat-val" style="color:' + pendCor + '">' + fmtNum(filaPendentes) + '</div><div class="stat-label">Pendentes</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--accent)">' + fmtNum(filaRodando) + '</div><div class="stat-label">Rodando</div></div>';
     h += '</div></div>';
@@ -1146,7 +1156,7 @@
     var whDead = wh.dead_letter || 0;
 
     h += '<div class="card panel"><h2 class="panel-title">Webhooks <span class="badge-count">\u00faltima hora</span></h2>';
-    h += '<div class="stats-row" style="grid-template-columns:1fr 1fr 1fr">';
+    h += '<div class="stats-row vol-grid-3">';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + fmtNum(whOk) + '</div><div class="stat-label">Sucesso</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(whFalhas) + '</div><div class="stat-label">Falhas</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(whDead) + '</div><div class="stat-label">Dead Letter</div></div>';
