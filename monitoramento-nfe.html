@@ -135,6 +135,32 @@
       color: var(--accent)
     }
 
+    .nav-link-home {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+      white-space: nowrap
+    }
+
+    .nav-link-home:hover {
+      color: var(--accent)
+    }
+
+    .enotas-wrap {
+      display: flex;
+      align-items: center;
+      text-decoration: none
+    }
+
+    .show-mobile {
+      display: none
+    }
+
+    .hide-mobile {
+      display: inline
+    }
+
     .theme-toggle {
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -521,7 +547,7 @@
       display: block
     }
 
-    /* Responsive */
+    /* Responsive — Tablet */
     @media(max-width:900px) {
       .grid {
         grid-template-columns: 1fr
@@ -537,11 +563,11 @@
       }
 
       .topbar-left {
-        gap: 8px
+        gap: 6px
       }
 
       .topbar h1 {
-        font-size: 13px
+        font-size: 12px
       }
 
       .hotmart-logo {
@@ -561,15 +587,105 @@
       }
 
       .stats-row {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(4, 1fr)
+      }
+
+      .stat-val {
+        font-size: 22px
+      }
+
+      .stat-label {
+        font-size: 10px
+      }
+
+      .stat-sub {
+        font-size: 10px
+      }
+
+      .tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch
+      }
+
+      .tab-btn {
+        white-space: nowrap;
+        padding: 10px 14px;
+        font-size: 12px
       }
     }
 
-    @media(max-width:480px) {
+    /* Responsive — Mobile */
+    @media(max-width:600px) {
+      .topbar {
+        padding: 0 12px;
+        height: 48px
+      }
+
+      .topbar-left {
+        gap: 4px;
+        overflow: hidden;
+        min-width: 0
+      }
+
+      .topbar h1 {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+      }
+
+      .nav-link-home,
+      .enotas-wrap {
+        display: none !important
+      }
+
+      .show-mobile {
+        display: inline
+      }
+
+      .hide-mobile {
+        display: none
+      }
+
+      .hotmart-logo {
+        height: 18px
+      }
 
       .enotas-logo,
-      .topbar-divider:first-of-type {
+      .topbar-divider:nth-of-type(1),
+      .topbar-divider:nth-of-type(2),
+      .topbar-divider:nth-of-type(3) {
         display: none
+      }
+
+      .container {
+        padding: 12px
+      }
+
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px
+      }
+
+      .stat-card {
+        padding: 14px 8px
+      }
+
+      .stat-val {
+        font-size: 20px
+      }
+
+      .stat-label,
+      .stat-sub {
+        font-size: 9px
+      }
+
+      .panel {
+        padding: 16px
+      }
+
+      .panel-title {
+        font-size: 13px
       }
 
       .hbar-label {
@@ -577,8 +693,83 @@
         font-size: 11px
       }
 
+      .hbar-val {
+        width: 55px;
+        font-size: 11px
+      }
+
+      .hbar-track {
+        height: 14px
+      }
+
+      .grid {
+        gap: 12px
+      }
+
+      .tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap
+      }
+
+      .tab-btn {
+        padding: 8px 10px;
+        font-size: 11px;
+        flex-shrink: 0;
+        white-space: nowrap
+      }
+
+      .table-wrap {
+        font-size: 12px
+      }
+
+      thead th {
+        padding: 8px 10px;
+        font-size: 10px
+      }
+
+      tbody td {
+        padding: 6px 10px;
+        font-size: 12px
+      }
+
+      .filter-input {
+        font-size: 12px;
+        padding: 6px 10px
+      }
+
+      .ts-bar {
+        font-size: 11px
+      }
+    }
+
+    /* Responsive — Small mobile */
+    @media(max-width:380px) {
       .stats-row {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
+        gap: 6px
+      }
+
+      .stat-val {
+        font-size: 18px
+      }
+
+      .topbar h1 {
+        font-size: 10px
+      }
+
+      .nav-link {
+        font-size: 10px
+      }
+
+      .hbar-label {
+        width: 65px;
+        font-size: 10px
+      }
+
+      .hbar-val {
+        width: 45px;
+        font-size: 10px
       }
     }
   </style>
@@ -591,12 +782,13 @@
       <a href="index.html" style="display:flex;align-items:center;text-decoration:none"><img src="hotmart-logo.svg"
           alt="Hotmart" class="hotmart-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="index.html" style="display:flex;align-items:center;text-decoration:none"><img src="enotas-logo.png"
-          alt="eNotas" class="enotas-logo"></a>
+      <a href="index.html" class="enotas-wrap"><img src="enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="index.html" class="nav-link" style="white-space:nowrap">Cidades & Provedores</a>
+      <a href="index.html" class="nav-link-home">Cidades &
+        Provedores</a>
       <span class="topbar-divider"></span>
-      <h1>Monitoramento de Filas NFe</h1>
+      <h1><span class="hide-mobile">Monitoramento de Filas NFe</span><span class="show-mobile">Monitoramento NFe</span>
+      </h1>
     </div>
     <div class="topbar-right">
       <button class="theme-toggle" id="themeToggle" title="Alternar tema"
