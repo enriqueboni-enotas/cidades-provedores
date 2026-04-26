@@ -293,6 +293,16 @@
       grid-column: 1/-1
     }
 
+    .donut-grid {
+      grid-template-columns: 280px 1fr;
+      gap: 24px
+    }
+
+    .emp-mun-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px
+    }
+
     /* Horizontal bars */
     .bar-chart {
       display: flex;
@@ -555,6 +565,14 @@
 
       .full {
         grid-column: auto
+      }
+
+      .donut-grid {
+        grid-template-columns: 1fr
+      }
+
+      .emp-mun-grid {
+        grid-template-columns: 1fr
       }
 
       .topbar {
@@ -1111,7 +1129,7 @@
 
     /* Top empresas com mais notas travadas (donut-style list) */
     h += '<div class="card panel full"><h2 class="panel-title">Empresas com mais notas travadas <span class="badge-count">\u00faltimos 30 min</span></h2>';
-    h += '<div class="grid" style="grid-template-columns:280px 1fr;gap:24px">';
+    h += '<div class="grid donut-grid">';
 
     /* Donut chart via CSS */
     var empData = D.topEmpresasTravadas || [];
@@ -1153,7 +1171,7 @@
 
     /* Empresas afetadas por município */
     h += '<div class="card panel full"><h2 class="panel-title">Empresas afetadas por munic\u00edpio <span class="badge-count">Top 30</span></h2>';
-    h += '<div class="grid" style="grid-template-columns:1fr 1fr;gap:20px">';
+    h += '<div class="grid emp-mun-grid">';
 
     /* Bar chart */
     h += '<div><div class="bar-chart">';
