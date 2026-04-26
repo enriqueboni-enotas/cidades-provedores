@@ -936,8 +936,16 @@
     }
 
     /* Compute totals */
-    var totalTravadas = 0;
-    D.travadasPorMunicipio.forEach(function (r) { totalTravadas += r['latest.nfe.stuck_in_intermediate_status.count'] || 0 });
+    /* Separar pendentes (0,1,3,12) vs negadas (6) */
+    var totalPendentes = 0, totalNegadas = 0;
+    (D.travadasPorStatusMunicipio || []).forEach(function (r) {
+      var f = r.facet || [];
+      var st = String(f[0]);
+      var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
+      if (st === '6') totalNegadas += v;
+      else totalPendentes += v;
+    });
+    var totalGeral = totalPendentes + totalNegadas;
     var pioresMaxVal = D.tempoMaxProcessamento.length ? D.tempoMaxProcessamento[0]['max.nfe.processing_time.minutes'] : 0;
     var sg = D.statsGlobais[0] || {};
     var globalAvg = sg['average.nfe.processing_time.minutes'] || 0;
@@ -945,14 +953,16 @@
     var globalP = sg['percentile.nfe.processing_time.minutes'] || {};
     var totalEmp = D.totalEmpresas[0] ? D.totalEmpresas[0]['uniqueCount.empresa.razao_social'] : 0;
     var totalMun = D.totalMunicipios[0] ? D.totalMunicipios[0]['uniqueCount.nfe.municipio_servico'] : 0;
+    var totalMunPendentes = D.totalMunicipiosPendentes && D.totalMunicipiosPendentes[0] ? D.totalMunicipiosPendentes[0]['uniqueCount.nfe.municipio_servico'] : D.travadasPorMunicipio.length;
 
     var h = '';
     h += '<div class="ts-bar">Dados coletados em ' + esc(D.geradoEm) + ' (Bras\u00edlia) \u00b7 Fonte: New Relic \u00b7 <span id="countdown" style="color:var(--accent)"></span></div>';
 
     /* ── STATS ROW ── */
     h += '<div class="stats-row">';
-    h += '<div class="card stat-card"><div class="stat-val">' + fmtNum(totalTravadas) + '</div><div class="stat-label">Notas Travadas</div><div class="stat-sub">\u00faltimas 24h</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val">' + D.travadasPorMunicipio.length + '</div><div class="stat-label">Munic. c/ Travadas</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtNum(totalPendentes) + '</div><div class="stat-label">Em Processamento</div><div class="stat-sub">status 0, 1, 3, 12</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(totalNegadas) + '</div><div class="stat-label">Negadas s/ A\u00e7\u00e3o</div><div class="stat-sub">status 6</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val">' + totalMunPendentes + '</div><div class="stat-label">Munic. Afetados</div></div>';
     h += '<div class="card stat-card"><div class="stat-val">' + totalMun + '</div><div class="stat-label">Munic. Ativos</div><div class="stat-sub">\u00faltima hora</div></div>';
     h += '<div class="card stat-card"><div class="stat-val">' + fmtNum(totalEmp) + '</div><div class="stat-label">Empresas Afetadas</div><div class="stat-sub">\u00faltimas 24h</div></div>';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + globalMax + ' min</div><div class="stat-label">Pior Tempo</div></div>';
@@ -985,7 +995,7 @@
     var statusEntries = Object.keys(statusAgg).map(function (k) { return { code: k, count: statusAgg[k] } });
     statusEntries.sort(function (a, b) { return b.count - a.count });
     var mxStatus = statusEntries.length ? statusEntries[0].count : 1;
-    h += '<div class="card panel full"><h2 class="panel-title">Notas travadas por status</h2><div class="bar-chart">';
+    h += '<div class="card panel full"><h2 class="panel-title">Notas pendentes por status</h2><div class="bar-chart">';
     statusEntries.forEach(function (e) {
       var p = Math.max(e.count / mxStatus * 100, 2);
       var cls = e.code === '6' ? 'danger' : e.code === '3' ? 'warn' : 'muted';
@@ -996,7 +1006,7 @@
     h += '</div></div>';
 
     /* Travadas por município */
-    h += '<div class="card panel"><h2 class="panel-title">Notas travadas por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
+    h += '<div class="card panel"><h2 class="panel-title">Notas pendentes por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
     var mx1 = D.travadasPorMunicipio.length ? D.travadasPorMunicipio[0]['latest.nfe.stuck_in_intermediate_status.count'] : 1;
     D.travadasPorMunicipio.slice(0, 20).forEach(function (r) {
       var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0, p = Math.max(v / mx1 * 100, 2);
@@ -1149,7 +1159,7 @@
     h += '<div class="grid">';
 
     /* Travadas por motivo */
-    h += '<div class="card panel full"><h2 class="panel-title">Notas travadas por motivo <span class="badge-count">' + D.travadasPorMotivo.length + ' motivos</span></h2>';
+    h += '<div class="card panel full"><h2 class="panel-title">Notas pendentes por motivo <span class="badge-count">' + D.travadasPorMotivo.length + ' motivos</span></h2>';
     h += '<input type="text" class="filter-input" id="motivoFilter" placeholder="Filtrar motivos...">';
     h += '<div class="table-wrap"><table id="motivoTable"><thead><tr>';
     h += '<th style="width:60%">Motivo</th><th style="text-align:right;width:100px">Quantidade</th><th style="width:120px">Propor\u00e7\u00e3o</th>';
@@ -1168,7 +1178,7 @@
     h += '</tbody></table></div></div>';
 
     /* Cruzamento município × status */
-    h += '<div class="card panel full"><h2 class="panel-title">Travadas por munic\u00edpio e status <span class="badge-count">Top 30</span></h2>';
+    h += '<div class="card panel full"><h2 class="panel-title">Pendentes por munic\u00edpio e status <span class="badge-count">Top 30</span></h2>';
     h += '<div class="table-wrap"><table><thead><tr><th>Munic\u00edpio</th><th>Status</th><th style="text-align:right">Quantidade</th></tr></thead><tbody>';
     D.municipioStatus.forEach(function (r) {
       var f = r.facet || [];
@@ -1185,7 +1195,7 @@
     h += '<div class="grid">';
 
     /* Top empresas com mais notas travadas (donut-style list) */
-    h += '<div class="card panel full"><h2 class="panel-title">Empresas com mais notas travadas <span class="badge-count">\u00faltimos 30 min</span></h2>';
+    h += '<div class="card panel full"><h2 class="panel-title">Empresas com mais notas pendentes <span class="badge-count">\u00faltimos 30 min</span></h2>';
     h += '<div class="grid donut-grid">';
 
     /* Donut chart via CSS */

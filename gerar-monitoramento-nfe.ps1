@@ -35,7 +35,7 @@ function Invoke-Nrql {
 
 Write-Host "=== Gerando dados de monitoramento NFe ===" -ForegroundColor Cyan
 $step = 0
-$total = 19
+$total = 20
 
 # 1. Notas travadas por município
 $step++; Write-Host "[$step/$total] Notas travadas por municipio..."
@@ -125,6 +125,10 @@ if (-not $st12 -or $st12 -eq '') { $st12 = '[]' }
 $travadasStatusEmpresa = '{"6":' + $st6 + ',"3":' + $st3 + ',"1":' + $st1 + ',"0":' + $st0 + ',"12":' + $st12 + '}'
 
 # Gerar timestamp BR
+# 20. Total real de municípios com notas pendentes
+$step++; Write-Host "[$step/$total] Total municipios com pendentes..."
+$totalMunicipiosPendentes = Invoke-Nrql "SELECT uniqueCount(nfe.municipio_servico) FROM Metric WHERE metricName = 'nfe.stuck_in_intermediate_status.count' SINCE 1 day ago"
+
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
 
 $content = @"
@@ -150,7 +154,8 @@ var monitoramentoNfeData = {
   volumetriaHora: $volumetriaHora,
   filaOperacoes: $filaOperacoes,
   webhooks: $webhooks,
-  travadasStatusEmpresa: $travadasStatusEmpresa
+  travadasStatusEmpresa: $travadasStatusEmpresa,
+  totalMunicipiosPendentes: $totalMunicipiosPendentes
 };
 "@
 
