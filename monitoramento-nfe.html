@@ -500,6 +500,56 @@
       border-radius: 3px
     }
 
+    /* Info tooltip (ⓘ) */
+    .info-tip {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid var(--muted);
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 700;
+      cursor: help;
+      margin-left: 4px;
+      vertical-align: middle;
+      line-height: 1;
+      flex-shrink: 0
+    }
+
+    .info-tip:hover {
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    .info-tip .info-bubble {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text);
+      white-space: normal;
+      width: 220px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      z-index: 50;
+      text-align: left;
+      line-height: 1.5
+    }
+
+    .info-tip:hover .info-bubble {
+      display: block
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
@@ -984,29 +1034,30 @@
     h += '<div class="ts-bar">Dados coletados em ' + esc(D.geradoEm) + ' (Bras\u00edlia) \u00b7 Fonte: New Relic \u00b7 <span id="countdown" style="color:var(--accent)"></span></div>';
 
     /* ── STATS ROW ── */
+    function infoTip(text) { return '<span class="info-tip">i<span class="info-bubble">' + text + '</span></span>' }
     h += '<div class="stats-row">';
-    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtNum(totalPendentes) + '</div><div class="stat-label">Em Processamento</div><div class="stat-sub">status 0, 1, 3, 12</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(totalNegadas) + '</div><div class="stat-label">Negadas s/ A\u00e7\u00e3o</div><div class="stat-sub">status 6</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val">' + totalMunPendentes + '</div><div class="stat-label">Munic. Afetados</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val">' + totalMun + '</div><div class="stat-label">Munic. Ativos</div><div class="stat-sub">\u00faltima hora</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val">' + fmtNum(totalEmp) + '</div><div class="stat-label">Empresas Afetadas</div><div class="stat-sub">\u00faltimas 24h</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + globalMax + ' min</div><div class="stat-label">Pior Tempo</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtMin(globalAvg) + ' min</div><div class="stat-label">Tempo M\u00e9dio</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val">' + fmtMin(globalP['95']) + ' min</div><div class="stat-label">P95</div></div>';
-    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtMin(globalP['99']) + ' min</div><div class="stat-label">P99</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtNum(totalPendentes) + '</div><div class="stat-label">Em Processamento' + infoTip('Notas em status intermedi\u00e1rio: Criada n\u00e3o enviada (0), Criada (1), Enviada (3), Intermedi\u00e1rio (12). S\u00e3o notas que ainda n\u00e3o chegaram ao status final.') + '</div><div class="stat-sub">\u00faltimas 24h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(totalNegadas) + '</div><div class="stat-label">Negadas s/ A\u00e7\u00e3o' + infoTip('Notas com status 6 (Negada) que permanecem sem a\u00e7\u00e3o corretiva. A prefeitura rejeitou a nota e ela precisa ser corrigida e reenviada.') + '</div><div class="stat-sub">\u00faltimas 24h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val">' + totalMunPendentes + '</div><div class="stat-label">Munic. Afetados' + infoTip('Quantidade de munic\u00edpios que possuem pelo menos uma nota em status intermedi\u00e1rio ou negada nas \u00faltimas 24h.') + '</div><div class="stat-sub">\u00faltimas 24h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val">' + totalMun + '</div><div class="stat-label">Munic. Ativos' + infoTip('Munic\u00edpios que processaram pelo menos uma nota na \u00faltima hora.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val">' + fmtNum(totalEmp) + '</div><div class="stat-label">Empresas Afetadas' + infoTip('Empresas distintas que possuem notas em status intermedi\u00e1rio ou negada nas \u00faltimas 24h.') + '</div><div class="stat-sub">\u00faltimas 24h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + globalMax + ' min</div><div class="stat-label">Pior Tempo' + infoTip('Maior tempo de processamento de uma nota na \u00faltima hora. Mede o tempo entre a cria\u00e7\u00e3o e o status final.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtMin(globalAvg) + ' min</div><div class="stat-label">Tempo M\u00e9dio' + infoTip('Tempo m\u00e9dio de processamento de todas as notas na \u00faltima hora.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val">' + fmtMin(globalP['95']) + ' min</div><div class="stat-label">P95' + infoTip('Percentil 95: 95% das notas foram processadas em at\u00e9 este tempo na \u00faltima hora.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtMin(globalP['99']) + ' min</div><div class="stat-label">P99' + infoTip('Percentil 99: 99% das notas foram processadas em at\u00e9 este tempo na \u00faltima hora. Valores altos indicam outliers.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
     h += '</div>';
 
     /* ── TABS ── */
     h += '<div class="tabs" id="mainTabs">';
-    h += '<button class="tab-btn active" data-tab="visao-geral">Vis\u00e3o Geral</button>';
+    h += '<button class="tab-btn active" data-tab="volumetria">Volumetria</button>';
+    h += '<button class="tab-btn" data-tab="visao-geral">Vis\u00e3o Geral</button>';
     h += '<button class="tab-btn" data-tab="performance">Performance</button>';
-    h += '<button class="tab-btn" data-tab="volumetria">Volumetria</button>';
     h += '<button class="tab-btn" data-tab="erros">Erros & Motivos</button>';
     h += '<button class="tab-btn" data-tab="empresas">Empresas</button>';
     h += '</div>';
 
-    /* ══════════ TAB 1: VISÃO GERAL ══════════ */
-    h += '<div class="tab-panel active" id="tab-visao-geral">';
+    /* ══════════ TAB: VISÃO GERAL ══════════ */
+    h += '<div class="tab-panel" id="tab-visao-geral">';
     h += '<div class="grid">';
 
     /* Breakdown por status (full width) */
@@ -1020,7 +1071,7 @@
     var statusEntries = Object.keys(statusAgg).map(function (k) { return { code: k, count: statusAgg[k] } });
     statusEntries.sort(function (a, b) { return b.count - a.count });
     var mxStatus = statusEntries.length ? statusEntries[0].count : 1;
-    h += '<div class="card panel full"><h2 class="panel-title">Notas pendentes por status</h2><div class="bar-chart">';
+    h += '<div class="card panel full"><h2 class="panel-title">Notas em status intermedi\u00e1rio por status' + infoTip('Notas que ainda n\u00e3o chegaram ao status final (Autorizada ou Negada). Inclui notas criadas, enviadas e em processamento nas \u00faltimas 24h.') + '</h2><div class="bar-chart">';
     statusEntries.forEach(function (e) {
       var p = Math.max(e.count / mxStatus * 100, 2);
       var cls = e.code === '6' ? 'danger' : e.code === '3' ? 'warn' : 'muted';
@@ -1031,7 +1082,7 @@
     h += '</div></div>';
 
     /* Travadas por município */
-    h += '<div class="card panel"><h2 class="panel-title">Notas pendentes por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
+    h += '<div class="card panel"><h2 class="panel-title">Notas em status intermedi\u00e1rio por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
     var mx1 = D.travadasPorMunicipio.length ? D.travadasPorMunicipio[0]['latest.nfe.stuck_in_intermediate_status.count'] : 1;
     D.travadasPorMunicipio.slice(0, 20).forEach(function (r) {
       var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0, p = Math.max(v / mx1 * 100, 2);
@@ -1126,7 +1177,7 @@
     h += '</div>'; /* close tab */
 
     /* ══════════ TAB: VOLUMETRIA ══════════ */
-    h += '<div class="tab-panel" id="tab-volumetria">';
+    h += '<div class="tab-panel active" id="tab-volumetria">';
     h += '<div class="grid">';
 
     /* Painel 1: Volumetria NFe (full width) */
@@ -1192,7 +1243,7 @@
     h += '<div class="grid">';
 
     /* Travadas por motivo */
-    h += '<div class="card panel full"><h2 class="panel-title">Notas pendentes por motivo <span class="badge-count">' + D.travadasPorMotivo.length + ' motivos</span></h2>';
+    h += '<div class="card panel full"><h2 class="panel-title">Notas em status intermedi\u00e1rio por motivo <span class="badge-count">' + D.travadasPorMotivo.length + ' motivos</span></h2>';
     h += '<input type="text" class="filter-input" id="motivoFilter" placeholder="Filtrar motivos...">';
     h += '<div class="table-wrap"><table id="motivoTable"><thead><tr>';
     h += '<th style="width:60%">Motivo</th><th style="text-align:right;width:100px">Quantidade</th><th style="width:120px">Propor\u00e7\u00e3o</th>';
@@ -1228,7 +1279,7 @@
     h += '<div class="grid">';
 
     /* Top empresas com mais notas travadas (donut-style list) */
-    h += '<div class="card panel full"><h2 class="panel-title">Empresas com mais notas pendentes <span class="badge-count">\u00faltimos 30 min</span></h2>';
+    h += '<div class="card panel full"><h2 class="panel-title">Empresas com mais notas em status intermedi\u00e1rio' + infoTip('Top 15 empresas com mais notas paradas em status intermedi\u00e1rio nos \u00faltimos 30 minutos.') + ' <span class="badge-count">\u00faltimos 30 min</span></h2>';
     h += '<div class="grid donut-grid">';
 
     /* Donut chart via CSS */
@@ -1269,32 +1320,15 @@
     h += '</tbody></table></div></div>';
     h += '</div></div>'; /* close inner grid + card */
 
-    /* Empresas afetadas por município */
-    h += '<div class="card panel full"><h2 class="panel-title">Empresas afetadas por munic\u00edpio <span class="badge-count">Top 30</span></h2>';
-    h += '<div class="grid emp-mun-grid">';
-
-    /* Bar chart */
-    h += '<div><div class="bar-chart">';
-    var mxE = D.empresasMunicipio.length ? D.empresasMunicipio[0]['uniqueCount.empresa.razao_social'] : 1;
-    D.empresasMunicipio.forEach(function (r) {
-      if (!r['nfe.municipio_servico']) return;
-      var v = r['uniqueCount.empresa.razao_social'] || 0, p = Math.max(v / mxE * 100, 2);
-      h += '<div class="hbar-row"><span class="hbar-label" title="' + esc(r['nfe.municipio_servico']) + '">' + esc(r['nfe.municipio_servico']) + '</span>';
-      h += '<div class="hbar-track"><div class="hbar-fill accent" style="width:' + p + '%"></div></div>';
-      h += '<span class="hbar-val">' + v + '</span></div>';
-    });
-    h += '</div></div>';
-
-    /* Table */
-    h += '<div><div class="table-wrap"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Empresas</th></tr></thead><tbody>';
+    /* Empresas distintas por município */
+    h += '<div class="card panel full"><h2 class="panel-title">Empresas distintas por munic\u00edpio' + infoTip('Quantidade de empresas diferentes que tiveram notas em status intermedi\u00e1rio nas \u00faltimas 24h, agrupadas pelo munic\u00edpio de servi\u00e7o.') + ' <span class="badge-count">Top 30 \u00b7 \u00faltimas 24h</span></h2>';
+    h += '<div class="table-wrap"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Empresas</th></tr></thead><tbody>';
     D.empresasMunicipio.forEach(function (r) {
       if (!r['nfe.municipio_servico']) return;
       h += '<tr><td>' + esc(r['nfe.municipio_servico']) + '</td>';
       h += '<td style="text-align:right;font-weight:600;color:var(--accent)">' + r['uniqueCount.empresa.razao_social'] + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
-
-    h += '</div></div>'; /* close grid + card */
 
     h += '</div></div>'; /* close grid + tab */
 
