@@ -1352,9 +1352,10 @@
       var labels = [], emitidas = [], falhas = [];
       ts.forEach(function (r) {
         var t = r.beginTimeSeconds || r.endTimeSeconds || 0;
-        var d = new Date(t * 1000);
-        var hh = d.getUTCHours() - 3; if (hh < 0) hh += 24;
-        labels.push((hh < 10 ? '0' : '') + hh + ':00');
+        var brDate = new Date((t - 3 * 3600) * 1000);
+        var hh = brDate.getUTCHours();
+        var mm = brDate.getUTCMinutes();
+        labels.push((hh < 10 ? '0' : '') + hh + ':' + (mm < 10 ? '0' : '') + mm);
         emitidas.push(r.emitidas || 0);
         falhas.push(r.falhas || 0);
       });
