@@ -558,9 +558,17 @@
     }
 
     /* Volumetria grids */
-    .vol-grid-6{grid-template-columns:repeat(6,1fr)}
-    .vol-grid-3{grid-template-columns:repeat(3,1fr)}
-    .vol-grid-2{grid-template-columns:repeat(2,1fr)}
+    .vol-grid-6 {
+      grid-template-columns: repeat(6, 1fr)
+    }
+
+    .vol-grid-3 {
+      grid-template-columns: repeat(3, 1fr)
+    }
+
+    .vol-grid-2 {
+      grid-template-columns: repeat(2, 1fr)
+    }
 
     /* Responsive — Tablet */
     @media(max-width:900px) {
@@ -636,7 +644,9 @@
         font-size: 12px
       }
 
-      .vol-grid-6{grid-template-columns:repeat(3,1fr)}
+      .vol-grid-6 {
+        grid-template-columns: repeat(3, 1fr)
+      }
     }
 
     /* Responsive — Mobile */
@@ -767,8 +777,13 @@
         font-size: 11px
       }
 
-      .vol-grid-6{grid-template-columns:repeat(2,1fr)}
-      .vol-grid-3{grid-template-columns:1fr}
+      .vol-grid-6 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .vol-grid-3 {
+        grid-template-columns: 1fr
+      }
     }
 
     /* Modal */
@@ -1137,6 +1152,11 @@
     h += '<div style="text-align:center;margin-top:4px;font-size:14px;font-weight:600">Taxa de falha: <span style="color:' + taxaCor + '">' + taxaFalha + '%</span></div>';
     h += '</div>';
 
+    /* Gráfico de linha: Emitidas e Falhas por hora (últimas 24h) */
+    h += '<div class="card panel full"><h2 class="panel-title">Emitidas e Falhas por hora <span class="badge-count">\u00faltimas 24h</span></h2>';
+    h += '<canvas id="chartEmitidas" style="width:100%;height:260px"></canvas>';
+    h += '</div>';
+
     /* Painel 2: Fila de Operações (half width) */
     var fila = (D.filaOperacoes && D.filaOperacoes[0]) || {};
     var filaPendentes = fila.pendentes || 0;
@@ -1276,6 +1296,126 @@
     h += '</div></div>'; /* close grid + tab */
 
     document.getElementById('app-root').innerHTML = h;
+
+    /* ── Gráfico de linha: Emitidas e Falhas por hora ── */
+    (function () {
+      var canvas = document.getElementById('chartEmitidas');
+      if (!canvas) return;
+      var ts = D.volumetriaTimeseries || [];
+      if (!ts.length) { canvas.parentNode.style.display = 'none'; return; }
+
+      var dpr = window.devicePixelRatio || 1;
+      var rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      var ctx = canvas.getContext('2d');
+      ctx.scale(dpr, dpr);
+      var W = rect.width, H = rect.height;
+
+      var labels = [], emitidas = [], falhas = [];
+      ts.forEach(function (r) {
+        var t = r.beginTimeSeconds || r.endTimeSeconds || 0;
+        var d = new Date(t * 1000);
+        var hh = d.getUTCHours() - 3; if (hh < 0) hh += 24;
+        labels.push((hh < 10 ? '0' : '') + hh + ':00');
+        emitidas.push(r.emitidas || 0);
+        falhas.push(r.falhas || 0);
+      });
+
+      var maxVal = Math.max.apply(null, emitidas.concat(falhas));
+      if (maxVal === 0) maxVal = 1;
+      // Arredondar pra cima pra ficar bonito
+      var step = Math.pow(10, Math.floor(Math.log10(maxVal || 1)));
+      maxVal = Math.ceil(maxVal / step) * step;
+
+      var padL = 56, padR = 16, padT = 16, padB = 36;
+      var gW = W - padL - padR, gH = H - padT - padB;
+
+      var cs = getComputedStyle(document.documentElement);
+      var colMuted = cs.getPropertyValue('--muted').trim() || '#8A8A8A';
+      var colBorder = cs.getPropertyValue('--border').trim() || '#333';
+      var colSuccess = '#009d43';
+      var colDanger = '#d6342c';
+
+      // Grid horizontal
+      ctx.strokeStyle = colBorder;
+      ctx.lineWidth = 0.5;
+      ctx.font = '11px Nunito Sans, sans-serif';
+      ctx.fillStyle = colMuted;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      var gridLines = 5;
+      for (var g = 0; g <= gridLines; g++) {
+        var yy = padT + gH - (g / gridLines) * gH;
+        var val = Math.round((g / gridLines) * maxVal);
+        ctx.beginPath(); ctx.moveTo(padL, yy); ctx.lineTo(padL + gW, yy); ctx.stroke();
+        ctx.fillText(fmtNum(val), padL - 8, yy);
+      }
+
+      // Labels do eixo X
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      var n = labels.length;
+      var labelStep = n <= 12 ? 1 : n <= 24 ? 2 : 3;
+      for (var i = 0; i < n; i++) {
+        if (i % labelStep !== 0 && i !== n - 1) continue;
+        var xx = padL + (i / (n - 1)) * gW;
+        ctx.fillText(labels[i], xx, padT + gH + 8);
+      }
+
+      function drawLine(data, color) {
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2;
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+        for (var i = 0; i < data.length; i++) {
+          var x = padL + (i / (data.length - 1)) * gW;
+          var y = padT + gH - (data[i] / maxVal) * gH;
+          if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        // Dots
+        for (var i = 0; i < data.length; i++) {
+          var x = padL + (i / (data.length - 1)) * gW;
+          var y = padT + gH - (data[i] / maxVal) * gH;
+          ctx.beginPath(); ctx.arc(x, y, 3, 0, Math.PI * 2); ctx.fillStyle = color; ctx.fill();
+        }
+      }
+
+      drawLine(emitidas, colSuccess);
+      drawLine(falhas, colDanger);
+
+      // Legenda
+      ctx.font = '12px Nunito Sans, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      var legX = padL + 8, legY = padT + 6;
+      ctx.fillStyle = colSuccess; ctx.fillRect(legX, legY - 4, 14, 8); ctx.fillStyle = colMuted; ctx.fillText('Emitidas', legX + 20, legY);
+      legX += 90;
+      ctx.fillStyle = colDanger; ctx.fillRect(legX, legY - 4, 14, 8); ctx.fillStyle = colMuted; ctx.fillText('Falhas', legX + 20, legY);
+
+      // Tooltip on hover
+      var tooltip = document.createElement('div');
+      tooltip.style.cssText = 'position:absolute;display:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:12px;color:var(--text);pointer-events:none;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,0.15)';
+      canvas.parentNode.style.position = 'relative';
+      canvas.parentNode.appendChild(tooltip);
+
+      canvas.addEventListener('mousemove', function (e) {
+        var r = canvas.getBoundingClientRect();
+        var mx = e.clientX - r.left;
+        var idx = Math.round(((mx - padL) / gW) * (n - 1));
+        if (idx < 0 || idx >= n) { tooltip.style.display = 'none'; return; }
+        tooltip.innerHTML = '<div style="font-weight:600;margin-bottom:4px">' + labels[idx] + '</div>' +
+          '<div style="color:' + colSuccess + '">Emitidas: ' + fmtNum(emitidas[idx]) + '</div>' +
+          '<div style="color:' + colDanger + '">Falhas: ' + fmtNum(falhas[idx]) + '</div>';
+        tooltip.style.display = 'block';
+        var tx = mx + 12;
+        if (tx + 150 > W) tx = mx - 150;
+        tooltip.style.left = tx + 'px';
+        tooltip.style.top = (e.clientY - r.top - 40) + 'px';
+      });
+      canvas.addEventListener('mouseleave', function () { tooltip.style.display = 'none'; });
+    })();
 
     /* ── Modal de empresas por motivo ── */
     var modalHtml = '<div class="modal-overlay" id="motivoModal">';
