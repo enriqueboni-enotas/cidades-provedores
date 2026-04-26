@@ -1190,12 +1190,16 @@
     modalHtml += '</div></div>';
     document.body.insertAdjacentHTML('beforeend', modalHtml);
 
+    function normMotivo(s) {
+      return String(s || '').replace(/\r?\n/g, ' ').replace(/\s{2,}/g, ' ').trim().toLowerCase().substring(0, 60);
+    }
+
     function openMotivoModal(motivo) {
+      var needle = normMotivo(motivo);
       var data = (D.travadasMotivoEmpresa || []).filter(function (r) {
         var f = r.facet || [];
-        var m = String(f[0] || '');
-        // match parcial: o motivo da tabela pode estar truncado
-        return m.indexOf(motivo) >= 0 || motivo.indexOf(m) >= 0 || m.toLowerCase().indexOf(motivo.substring(0, 40).toLowerCase()) >= 0;
+        var hay = normMotivo(f[0]);
+        return hay === needle || hay.indexOf(needle) >= 0 || needle.indexOf(hay) >= 0;
       });
       data.sort(function (a, b) {
         return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
