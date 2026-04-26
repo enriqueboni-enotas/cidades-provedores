@@ -1320,11 +1320,9 @@
 
     /* ── Status drill-down (reutiliza motivoModal) ── */
     function openStatusModal(statusCode) {
-      var data = (D.travadasStatusEmpresa || []).filter(function (r) {
-        var f = r.facet || [];
-        return String(f[0]) === String(statusCode);
-      });
-      data.sort(function (a, b) {
+      var statusData = D.travadasStatusEmpresa || {};
+      var data = statusData[String(statusCode)] || [];
+      data = data.slice().sort(function (a, b) {
         return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
       });
       document.getElementById('motivoModalTitle').textContent = 'Empresas — ' + statusLabel(statusCode);
@@ -1334,9 +1332,9 @@
       } else {
         body += '<div class="table-wrap"><table><thead><tr><th>Empresa</th><th style="text-align:right">Quantidade</th></tr></thead><tbody>';
         data.forEach(function (r) {
-          var f = r.facet || [];
+          var empresa = r['empresa.razao_social'] || r.facet || '';
           var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
-          body += '<tr><td style="font-size:12px">' + esc(f[1]) + '</td>';
+          body += '<tr><td style="font-size:12px">' + esc(empresa) + '</td>';
           body += '<td style="text-align:right;font-weight:600;color:var(--accent)">' + fmtNum(v) + '</td></tr>';
         });
         body += '</tbody></table></div>';

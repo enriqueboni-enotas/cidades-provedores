@@ -65,7 +65,16 @@ echo "[18/19] Webhooks..."
 Q18=$(nrql "SELECT sum(eNotasEmissor_ReceivedWebHook_Success_Count) AS 'ok', sum(eNotasEmissor_ReceivedWebHook_Failed_Count) AS 'falhas', sum(eNotasEmissor_ReceivedWebHook_DeadLetter_Count) AS 'dead_letter' FROM Metric SINCE 1 hour ago")
 
 echo "[19/19] Travadas por status e empresa..."
-Q19=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, empresa.razao_social SINCE 1 day ago LIMIT 100")
+Q19_6=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 6 FACET empresa.razao_social SINCE 1 day ago LIMIT 50")
+Q19_3=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 3 FACET empresa.razao_social SINCE 1 day ago LIMIT 50")
+Q19_1=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 1 FACET empresa.razao_social SINCE 1 day ago LIMIT 50")
+Q19_0=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 0 FACET empresa.razao_social SINCE 1 day ago LIMIT 50")
+Q19_12=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 12 FACET empresa.razao_social SINCE 1 day ago LIMIT 50")
+[ -z "$Q19_6" ] && Q19_6="[]"
+[ -z "$Q19_3" ] && Q19_3="[]"
+[ -z "$Q19_1" ] && Q19_1="[]"
+[ -z "$Q19_0" ] && Q19_0="[]"
+[ -z "$Q19_12" ] && Q19_12="[]"
 
 TS=$(TZ='America/Sao_Paulo' date '+%d/%m/%Y %H:%M')
 
@@ -92,7 +101,7 @@ TS=$(TZ='America/Sao_Paulo' date '+%d/%m/%Y %H:%M')
   echo "  volumetriaHora: $Q16,"
   echo "  filaOperacoes: $Q17,"
   echo "  webhooks: $Q18,"
-  echo "  travadasStatusEmpresa: $Q19"
+  echo "  travadasStatusEmpresa: {\"6\":$Q19_6,\"3\":$Q19_3,\"1\":$Q19_1,\"0\":$Q19_0,\"12\":$Q19_12}"
   echo "};"
 } > "$OUT"
 

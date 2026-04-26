@@ -109,9 +109,20 @@ $filaOperacoes = Invoke-Nrql "SELECT latest(operation_queue.pending_operation.co
 $step++; Write-Host "[$step/$total] Webhooks..."
 $webhooks = Invoke-Nrql "SELECT sum(eNotasEmissor_ReceivedWebHook_Success_Count) AS 'ok', sum(eNotasEmissor_ReceivedWebHook_Failed_Count) AS 'falhas', sum(eNotasEmissor_ReceivedWebHook_DeadLetter_Count) AS 'dead_letter' FROM Metric SINCE 1 hour ago"
 
-# 19. Drill-down status + empresa (para modal)
+# 19. Drill-down status + empresa (para modal) — queries separadas por status
 $step++; Write-Host "[$step/$total] Travadas por status e empresa..."
-$travadasStatusEmpresa = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, empresa.razao_social SINCE 1 day ago LIMIT 100"
+$st6 = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 6 FACET empresa.razao_social SINCE 1 day ago LIMIT 50"
+$st3 = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 3 FACET empresa.razao_social SINCE 1 day ago LIMIT 50"
+$st1 = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 1 FACET empresa.razao_social SINCE 1 day ago LIMIT 50"
+$st0 = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 0 FACET empresa.razao_social SINCE 1 day ago LIMIT 50"
+$st12 = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric WHERE nfe.status = 12 FACET empresa.razao_social SINCE 1 day ago LIMIT 50"
+# Fallback para arrays vazios
+if (-not $st6 -or $st6 -eq '') { $st6 = '[]' }
+if (-not $st3 -or $st3 -eq '') { $st3 = '[]' }
+if (-not $st1 -or $st1 -eq '') { $st1 = '[]' }
+if (-not $st0 -or $st0 -eq '') { $st0 = '[]' }
+if (-not $st12 -or $st12 -eq '') { $st12 = '[]' }
+$travadasStatusEmpresa = '{"6":' + $st6 + ',"3":' + $st3 + ',"1":' + $st1 + ',"0":' + $st0 + ',"12":' + $st12 + '}'
 
 # Gerar timestamp BR
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
