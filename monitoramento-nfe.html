@@ -1153,9 +1153,12 @@
     h += '</div>';
 
     /* Gráfico de linha: Emitidas e Falhas por hora (últimas 24h) */
-    h += '<div class="card panel full"><h2 class="panel-title">Emitidas e Falhas por hora <span class="badge-count">\u00faltimas 24h</span></h2>';
-    h += '<canvas id="chartEmitidas" style="width:100%;height:260px"></canvas>';
-    h += '</div>';
+    var hasTimeseries = D.volumetriaTimeseries && D.volumetriaTimeseries.length;
+    if (hasTimeseries) {
+      h += '<div class="card panel full"><h2 class="panel-title">Emitidas e Falhas por hora <span class="badge-count">\u00faltimas 24h</span></h2>';
+      h += '<canvas id="chartEmitidas" style="width:100%;height:260px"></canvas>';
+      h += '</div>';
+    }
 
     /* Painel 2: Fila de Operações (half width) */
     var fila = (D.filaOperacoes && D.filaOperacoes[0]) || {};
