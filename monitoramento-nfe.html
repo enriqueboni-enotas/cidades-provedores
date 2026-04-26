@@ -834,14 +834,16 @@
       overflow-y: auto
     }
 
-    .motivo-qty-link {
+    .motivo-qty-link,
+    .status-qty-link {
       cursor: pointer;
       text-decoration: underline;
       text-decoration-style: dotted;
       text-underline-offset: 3px
     }
 
-    .motivo-qty-link:hover {
+    .motivo-qty-link:hover,
+    .status-qty-link:hover {
       color: var(--danger)
     }
 
@@ -963,6 +965,7 @@
     h += '<div class="tabs" id="mainTabs">';
     h += '<button class="tab-btn active" data-tab="visao-geral">Vis\u00e3o Geral</button>';
     h += '<button class="tab-btn" data-tab="performance">Performance</button>';
+    h += '<button class="tab-btn" data-tab="volumetria">Volumetria</button>';
     h += '<button class="tab-btn" data-tab="erros">Erros & Motivos</button>';
     h += '<button class="tab-btn" data-tab="empresas">Empresas</button>';
     h += '</div>';
@@ -988,7 +991,7 @@
       var cls = e.code === '6' ? 'danger' : e.code === '3' ? 'warn' : 'muted';
       h += '<div class="hbar-row"><span class="hbar-label">' + statusLabel(e.code) + '</span>';
       h += '<div class="hbar-track"><div class="hbar-fill ' + cls + '" style="width:' + p + '%"></div></div>';
-      h += '<span class="hbar-val">' + fmtNum(e.count) + '</span></div>';
+      h += '<span class="hbar-val"><span class="status-qty-link" data-status="' + e.code + '">' + fmtNum(e.count) + '</span></span></div>';
     });
     h += '</div></div>';
 
@@ -1086,6 +1089,60 @@
     h += '</tbody></table></div></div>';
 
     h += '</div>'; /* close tab */
+
+    /* ══════════ TAB: VOLUMETRIA ══════════ */
+    h += '<div class="tab-panel" id="tab-volumetria">';
+    h += '<div class="grid">';
+
+    /* Painel 1: Volumetria NFe (full width) */
+    var vol = (D.volumetriaHora && D.volumetriaHora[0]) || {};
+    var volEmitidas = vol.emitidas || 0;
+    var volFalhas = vol.falhas || 0;
+    var volCanceladas = vol.canceladas || 0;
+    var volEmEmissao = vol.em_emissao || 0;
+    var volDevolucoes = vol.devolucoes || 0;
+    var volEmail = vol.email || 0;
+    var taxaFalha = (volEmitidas + volFalhas) > 0 ? (volFalhas / (volEmitidas + volFalhas) * 100).toFixed(2) : '0.00';
+    var taxaCor = parseFloat(taxaFalha) > 5 ? 'var(--danger)' : parseFloat(taxaFalha) > 2 ? 'var(--warn)' : 'var(--success)';
+
+    h += '<div class="card panel full"><h2 class="panel-title">Volumetria NFe <span class="badge-count">\u00faltima hora</span></h2>';
+    h += '<div class="stats-row" style="grid-template-columns:repeat(6,1fr)">';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + fmtNum(volEmitidas) + '</div><div class="stat-label">Emitidas</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(volFalhas) + '</div><div class="stat-label">Falhas</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--muted)">' + fmtNum(volCanceladas) + '</div><div class="stat-label">Canceladas</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtNum(volEmEmissao) + '</div><div class="stat-label">Em Emiss\u00e3o</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--muted)">' + fmtNum(volDevolucoes) + '</div><div class="stat-label">Devolu\u00e7\u00f5es</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--muted)">' + fmtNum(volEmail) + '</div><div class="stat-label">Enviadas por Email</div></div>';
+    h += '</div>';
+    h += '<div style="text-align:center;margin-top:4px;font-size:14px;font-weight:600">Taxa de falha: <span style="color:' + taxaCor + '">' + taxaFalha + '%</span></div>';
+    h += '</div>';
+
+    /* Painel 2: Fila de Operações (half width) */
+    var fila = (D.filaOperacoes && D.filaOperacoes[0]) || {};
+    var filaPendentes = fila.pendentes || 0;
+    var filaRodando = fila.rodando || 0;
+    var pendCor = filaPendentes > 100 ? 'var(--danger)' : filaPendentes > 10 ? 'var(--warn)' : 'var(--success)';
+
+    h += '<div class="card panel"><h2 class="panel-title">Fila de Opera\u00e7\u00f5es</h2>';
+    h += '<div class="stats-row" style="grid-template-columns:1fr 1fr">';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:' + pendCor + '">' + fmtNum(filaPendentes) + '</div><div class="stat-label">Pendentes</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--accent)">' + fmtNum(filaRodando) + '</div><div class="stat-label">Rodando</div></div>';
+    h += '</div></div>';
+
+    /* Painel 3: Webhooks (half width) */
+    var wh = (D.webhooks && D.webhooks[0]) || {};
+    var whOk = wh.ok || 0;
+    var whFalhas = wh.falhas || 0;
+    var whDead = wh.dead_letter || 0;
+
+    h += '<div class="card panel"><h2 class="panel-title">Webhooks <span class="badge-count">\u00faltima hora</span></h2>';
+    h += '<div class="stats-row" style="grid-template-columns:1fr 1fr 1fr">';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + fmtNum(whOk) + '</div><div class="stat-label">Sucesso</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(whFalhas) + '</div><div class="stat-label">Falhas</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtNum(whDead) + '</div><div class="stat-label">Dead Letter</div></div>';
+    h += '</div></div>';
+
+    h += '</div></div>'; /* close grid + tab */
 
     /* ══════════ TAB 3: ERROS & MOTIVOS ══════════ */
     h += '<div class="tab-panel" id="tab-erros">';
@@ -1259,6 +1316,40 @@
       if (!link) return;
       var motivo = link.getAttribute('data-motivo');
       if (motivo) openMotivoModal(motivo);
+    });
+
+    /* ── Status drill-down (reutiliza motivoModal) ── */
+    function openStatusModal(statusCode) {
+      var data = (D.travadasStatusEmpresa || []).filter(function (r) {
+        var f = r.facet || [];
+        return String(f[0]) === String(statusCode);
+      });
+      data.sort(function (a, b) {
+        return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
+      });
+      document.getElementById('motivoModalTitle').textContent = 'Empresas — ' + statusLabel(statusCode);
+      var body = '';
+      if (data.length === 0) {
+        body = '<p style="color:var(--muted);font-size:13px">Nenhuma empresa encontrada para este status.</p>';
+      } else {
+        body += '<div class="table-wrap"><table><thead><tr><th>Empresa</th><th style="text-align:right">Quantidade</th></tr></thead><tbody>';
+        data.forEach(function (r) {
+          var f = r.facet || [];
+          var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
+          body += '<tr><td style="font-size:12px">' + esc(f[1]) + '</td>';
+          body += '<td style="text-align:right;font-weight:600;color:var(--accent)">' + fmtNum(v) + '</td></tr>';
+        });
+        body += '</tbody></table></div>';
+      }
+      document.getElementById('motivoModalBody').innerHTML = body;
+      document.getElementById('motivoModal').classList.add('on');
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('.status-qty-link');
+      if (!link) return;
+      var status = link.getAttribute('data-status');
+      if (status) openStatusModal(status);
     });
 
     /* ── Tab switching ── */

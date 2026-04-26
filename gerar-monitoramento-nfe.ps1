@@ -35,7 +35,7 @@ function Invoke-Nrql {
 
 Write-Host "=== Gerando dados de monitoramento NFe ===" -ForegroundColor Cyan
 $step = 0
-$total = 15
+$total = 19
 
 # 1. Notas travadas por município
 $step++; Write-Host "[$step/$total] Notas travadas por municipio..."
@@ -97,6 +97,22 @@ $travadasPorStatusMunicipio = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermedia
 $step++; Write-Host "[$step/$total] Travadas por motivo e empresa..."
 $travadasMotivoEmpresa = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.motivo_status, empresa.razao_social SINCE 1 day ago LIMIT 100"
 
+# 16. Volumetria NFe (última hora)
+$step++; Write-Host "[$step/$total] Volumetria NFe..."
+$volumetriaHora = Invoke-Nrql "SELECT sum(eNotasEmissor_NFeEmitida) AS 'emitidas', sum(eNotasEmissor_NFeFalhaAoEmitir) AS 'falhas', sum(eNotasEmissor_NFeCancelada) AS 'canceladas', sum(eNotasEmissor_NFeEmEmissao) AS 'em_emissao', sum(eNotasEmissor_NFeDevolucaoCriada) AS 'devolucoes', sum(eNotasEmissor_NFeEnviadaPorEmail) AS 'email' FROM Metric SINCE 1 hour ago"
+
+# 17. Fila de operações
+$step++; Write-Host "[$step/$total] Fila de operacoes..."
+$filaOperacoes = Invoke-Nrql "SELECT latest(operation_queue.pending_operation.count) AS 'pendentes', latest(operation_queue.running_operation.count) AS 'rodando' FROM Metric SINCE 10 minutes ago"
+
+# 18. Webhooks
+$step++; Write-Host "[$step/$total] Webhooks..."
+$webhooks = Invoke-Nrql "SELECT sum(eNotasEmissor_ReceivedWebHook_Success_Count) AS 'ok', sum(eNotasEmissor_ReceivedWebHook_Failed_Count) AS 'falhas', sum(eNotasEmissor_ReceivedWebHook_DeadLetter_Count) AS 'dead_letter' FROM Metric SINCE 1 hour ago"
+
+# 19. Drill-down status + empresa (para modal)
+$step++; Write-Host "[$step/$total] Travadas por status e empresa..."
+$travadasStatusEmpresa = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, empresa.razao_social SINCE 1 day ago LIMIT 100"
+
 # Gerar timestamp BR
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
 
@@ -119,7 +135,11 @@ var monitoramentoNfeData = {
   municipioStatus: $municipioStatus,
   topEmpresasTravadas: $topEmpresasTravadas,
   travadasPorStatusMunicipio: $travadasPorStatusMunicipio,
-  travadasMotivoEmpresa: $travadasMotivoEmpresa
+  travadasMotivoEmpresa: $travadasMotivoEmpresa,
+  volumetriaHora: $volumetriaHora,
+  filaOperacoes: $filaOperacoes,
+  webhooks: $webhooks,
+  travadasStatusEmpresa: $travadasStatusEmpresa
 };
 "@
 
