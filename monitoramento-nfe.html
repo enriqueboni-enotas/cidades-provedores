@@ -743,6 +743,90 @@
       }
     }
 
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 24px
+    }
+
+    .modal-overlay.on {
+      display: flex
+    }
+
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px
+    }
+
+    .modal-header h3 {
+      font-size: 16px;
+      color: var(--heading);
+      font-weight: 600;
+      line-height: 1.4
+    }
+
+    .modal-close {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background .2s, color .2s
+    }
+
+    .modal-close:hover {
+      background: var(--danger);
+      color: var(--heading)
+    }
+
+    .modal-body {
+      padding: 20px 24px;
+      overflow-y: auto
+    }
+
+    .motivo-qty-link {
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 3px
+    }
+
+    .motivo-qty-link:hover {
+      color: var(--danger)
+    }
+
     /* Responsive — Small mobile */
     @media(max-width:380px) {
       .stats-row {
@@ -819,7 +903,7 @@
     function fmtMin(v) { return v == null ? '\u2014' : Number(v).toFixed(1) }
     function fmtNum(v) { return v == null ? '\u2014' : Number(v).toLocaleString('pt-BR') }
     function truncMotivo(s, m) { if (!s) return '\u2014'; s = s.replace(/\r?\n/g, ' ').replace(/\s{2,}/g, ' ').trim(); return s.length <= (m || 80) ? s : s.substring(0, m || 80) + '...' }
-    function statusLabel(c) { var m = { '1': 'Criada', '2': 'Enviando', '3': 'Enviada', '4': 'Processando', '5': 'Autorizada', '6': 'Negada', '7': 'Cancelada', '13': 'Aguardando Retorno', '14': 'Em Processamento' }; return m[c] || ('Status ' + c) }
+    function statusLabel(c) { var m = { '0': 'Criada (n\u00e3o enviou)', '1': 'Criada', '2': 'Enviando', '3': 'Enviada', '4': 'Processando', '5': 'Autorizada', '6': 'Negada', '7': 'Cancelada', '12': 'Intermedi\u00e1rio', '13': 'Aguardando Retorno', '14': 'Em Processamento' }; return m[c] || ('Status ' + c) }
     function severityDot(min) {
       if (min >= 30) return '<span class="dot dot-danger"></span>';
       if (min >= 10) return '<span class="dot dot-warn"></span>';
@@ -868,6 +952,27 @@
     /* ══════════ TAB 1: VISÃO GERAL ══════════ */
     h += '<div class="tab-panel active" id="tab-visao-geral">';
     h += '<div class="grid">';
+
+    /* Breakdown por status (full width) */
+    var statusAgg = {};
+    (D.travadasPorStatusMunicipio || []).forEach(function (r) {
+      var f = r.facet || [];
+      var st = String(f[0]);
+      var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
+      statusAgg[st] = (statusAgg[st] || 0) + v;
+    });
+    var statusEntries = Object.keys(statusAgg).map(function (k) { return { code: k, count: statusAgg[k] } });
+    statusEntries.sort(function (a, b) { return b.count - a.count });
+    var mxStatus = statusEntries.length ? statusEntries[0].count : 1;
+    h += '<div class="card panel full"><h2 class="panel-title">Notas travadas por status</h2><div class="bar-chart">';
+    statusEntries.forEach(function (e) {
+      var p = Math.max(e.count / mxStatus * 100, 2);
+      var cls = e.code === '6' ? 'danger' : e.code === '3' ? 'warn' : 'muted';
+      h += '<div class="hbar-row"><span class="hbar-label">' + statusLabel(e.code) + '</span>';
+      h += '<div class="hbar-track"><div class="hbar-fill ' + cls + '" style="width:' + p + '%"></div></div>';
+      h += '<span class="hbar-val">' + fmtNum(e.count) + '</span></div>';
+    });
+    h += '</div></div>';
 
     /* Travadas por município */
     h += '<div class="card panel"><h2 class="panel-title">Notas travadas por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
@@ -978,8 +1083,10 @@
     D.travadasPorMotivo.forEach(function (r) {
       var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
       var p = Math.max(v / maxMotivo * 100, 1);
+      var motivoRaw = r['nfe.motivo_status'] || '';
+      var motivoAttr = esc(motivoRaw).replace(/"/g, '&quot;');
       h += '<tr><td style="font-size:12px;line-height:1.4;max-width:500px;word-break:break-word">' + esc(truncMotivo(r['nfe.motivo_status'], 180)) + '</td>';
-      h += '<td style="text-align:right;font-weight:600;color:var(--accent)">' + fmtNum(v) + '</td>';
+      h += '<td style="text-align:right;font-weight:600;color:var(--accent)"><span class="motivo-qty-link" data-motivo="' + motivoAttr + '">' + fmtNum(v) + '</span></td>';
       h += '<td><div class="pbar"><div class="pbar-track"><div class="pbar-fill accent" style="width:' + p + '%"></div></div></div></td>';
       h += '</tr>';
     });
@@ -1074,6 +1181,63 @@
     h += '</div></div>'; /* close grid + tab */
 
     document.getElementById('app-root').innerHTML = h;
+
+    /* ── Modal de empresas por motivo ── */
+    var modalHtml = '<div class="modal-overlay" id="motivoModal">';
+    modalHtml += '<div class="modal-box">';
+    modalHtml += '<div class="modal-header"><h3 id="motivoModalTitle">Empresas</h3><button class="modal-close" id="motivoModalClose">\u00D7</button></div>';
+    modalHtml += '<div class="modal-body" id="motivoModalBody"></div>';
+    modalHtml += '</div></div>';
+    document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+    function openMotivoModal(motivo) {
+      var data = (D.travadasMotivoEmpresa || []).filter(function (r) {
+        var f = r.facet || [];
+        var m = String(f[0] || '');
+        // match parcial: o motivo da tabela pode estar truncado
+        return m.indexOf(motivo) >= 0 || motivo.indexOf(m) >= 0 || m.toLowerCase().indexOf(motivo.substring(0, 40).toLowerCase()) >= 0;
+      });
+      data.sort(function (a, b) {
+        return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
+      });
+      var title = truncMotivo(motivo, 120);
+      document.getElementById('motivoModalTitle').textContent = 'Empresas — ' + title;
+      var body = '';
+      if (data.length === 0) {
+        body = '<p style="color:var(--muted);font-size:13px">Nenhuma empresa encontrada para este motivo.</p>';
+      } else {
+        body += '<div class="table-wrap"><table><thead><tr><th>Empresa</th><th style="text-align:right">Quantidade</th></tr></thead><tbody>';
+        data.forEach(function (r) {
+          var f = r.facet || [];
+          var v = r['latest.nfe.stuck_in_intermediate_status.count'] || 0;
+          body += '<tr><td style="font-size:12px">' + esc(f[1]) + '</td>';
+          body += '<td style="text-align:right;font-weight:600;color:var(--accent)">' + fmtNum(v) + '</td></tr>';
+        });
+        body += '</tbody></table></div>';
+      }
+      document.getElementById('motivoModalBody').innerHTML = body;
+      document.getElementById('motivoModal').classList.add('on');
+    }
+
+    document.getElementById('motivoModalClose').addEventListener('click', function () {
+      document.getElementById('motivoModal').classList.remove('on');
+    });
+    document.getElementById('motivoModal').addEventListener('click', function (e) {
+      if (e.target === this) this.classList.remove('on');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        var m = document.getElementById('motivoModal');
+        if (m) m.classList.remove('on');
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('.motivo-qty-link');
+      if (!link) return;
+      var motivo = link.getAttribute('data-motivo');
+      if (motivo) openMotivoModal(motivo);
+    });
 
     /* ── Tab switching ── */
     document.querySelectorAll('.tab-btn').forEach(function (btn) {

@@ -35,7 +35,7 @@ function Invoke-Nrql {
 
 Write-Host "=== Gerando dados de monitoramento NFe ===" -ForegroundColor Cyan
 $step = 0
-$total = 13
+$total = 15
 
 # 1. Notas travadas por município
 $step++; Write-Host "[$step/$total] Notas travadas por municipio..."
@@ -89,6 +89,14 @@ $municipioStatus = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.c
 $step++; Write-Host "[$step/$total] Top empresas com notas travadas..."
 $topEmpresasTravadas = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET empresa.razao_social SINCE 30 minutes ago LIMIT 15"
 
+# 14. Breakdown por status (total de notas por status)
+$step++; Write-Host "[$step/$total] Travadas por status e municipio..."
+$travadasPorStatusMunicipio = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, nfe.municipio_servico SINCE 1 day ago LIMIT 200"
+
+# 15. Drill-down motivo + empresa (para modal)
+$step++; Write-Host "[$step/$total] Travadas por motivo e empresa..."
+$travadasMotivoEmpresa = Invoke-Nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.motivo_status, empresa.razao_social SINCE 1 day ago LIMIT 100"
+
 # Gerar timestamp BR
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
 
@@ -109,7 +117,9 @@ var monitoramentoNfeData = {
   totalMunicipios: $totalMunicipios,
   volumeMunicipio: $volumeMunicipio,
   municipioStatus: $municipioStatus,
-  topEmpresasTravadas: $topEmpresasTravadas
+  topEmpresasTravadas: $topEmpresasTravadas,
+  travadasPorStatusMunicipio: $travadasPorStatusMunicipio,
+  travadasMotivoEmpresa: $travadasMotivoEmpresa
 };
 "@
 
