@@ -50,7 +50,7 @@ echo "[13/21] Top empresas travadas..."
 Q13=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET empresa.razao_social SINCE 30 minutes ago LIMIT 15")
 
 echo "[14/21] Travadas por status e municipio..."
-Q14=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, nfe.municipio_servico SINCE 1 day ago LIMIT 200")
+Q14=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.status, nfe.municipio_servico SINCE 1 day ago LIMIT MAX")
 
 echo "[15/21] Travadas por motivo e empresa..."
 Q15=$(nrql "SELECT latest(nfe.stuck_in_intermediate_status.count) FROM Metric FACET nfe.motivo_status, empresa.razao_social SINCE 1 day ago LIMIT 100")
