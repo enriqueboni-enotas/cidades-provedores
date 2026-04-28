@@ -1,9 +1,9 @@
 ﻿var cidadeDetalhe = {
-  id: 'sao-miguel-do-guama-pa',
-  nome: 'São Miguel do Guamá',
+  id: 'floresta-do-araguaia-pa',
+  nome: 'Floresta do Araguaia',
   uf: 'PA',
-  ibge: '1507607',
-  constante: 'CodigoIBGE.SaoMiguelDoGuamaPA',
+  ibge: '1503044',
+  constante: 'CodigoIBGE.FlorestaDoAraguaiaPA',
   provedorAtual: {
     nome: 'Aspect',
     namespace: null,
@@ -14,7 +14,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://pa.saomigueldoguama.tributario.aspec.com.br/prefeitura/ws/nfse'
+        recepcaoLote: 'http://pa.florestadoaraguaia.tributario.aspec.com.br/prefeitura/ws/nfse'
       }
     }
   },

@@ -1,9 +1,9 @@
 ﻿var cidadeDetalhe = {
-  id: 'sao-miguel-do-guama-pa',
-  nome: 'São Miguel do Guamá',
+  id: 'baiao-pa',
+  nome: 'Baião',
   uf: 'PA',
-  ibge: '1507607',
-  constante: 'CodigoIBGE.SaoMiguelDoGuamaPA',
+  ibge: '1501204',
+  constante: 'CodigoIBGE.BaiaoPA',
   provedorAtual: {
     nome: 'Aspect',
     namespace: null,
@@ -14,7 +14,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://pa.saomigueldoguama.tributario.aspec.com.br/prefeitura/ws/nfse'
+        recepcaoLote: 'http://pa.baiao.tributario.aspec.com.br/prefeitura/ws/nfse'
       }
     }
   },

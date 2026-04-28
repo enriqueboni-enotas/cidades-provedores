@@ -3,12 +3,12 @@
   nome: 'Aspect',
   empresa: 'Aspect',
   stats: {
-    municipios: 7
+    municipios: 9
   },
   visaoGeral: [
     { key: 'Nome', val: 'Aspect' },
-    { key: 'Total Municipios', val: '7' },
-    { key: 'Estados Atendidos', val: ['CE', 'PA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '9' },
+    { key: 'Estados Atendidos', val: ['PA', 'CE'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
@@ -21,29 +21,34 @@
       fraseSecreta: null
     },
     suportaCancelamentoNFe: false,
-    valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: false,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: false,
-    usaNaturezaOperacao: false,
+    usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– Exemplo: 17.06',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– Exemplos: 200101 e 030402',
     suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    enviaEmailCliente: false
+    naturezasOperacao: [
+      { codigo: '1', nome: 'Tributavel' },
+      { codigo: '2', nome: 'Não incidência' },
+      { codigo: '3', nome: 'Isenção' },
+      { codigo: '4', nome: 'Imunidade' }
+    ]
   },
   municipiosLista: {
     'aspect': [
+      { nome: 'Baião', uf: 'PA', ibge: '1501204' },
       { nome: 'Capistrano', uf: 'CE', ibge: '2302909' },
       { nome: 'Conceição do Araguaia', uf: 'PA', ibge: '1502707' },
+      { nome: 'Floresta do Araguaia', uf: 'PA', ibge: '1503044' },
       { nome: 'Jacundá', uf: 'PA', ibge: '1503804' },
       { nome: 'Jaguaribara', uf: 'CE', ibge: '2306801' },
       { nome: 'Morrinhos', uf: 'CE', ibge: '2308906' },

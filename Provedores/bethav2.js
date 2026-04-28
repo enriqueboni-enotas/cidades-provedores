@@ -3,12 +3,12 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 103
+    municipios: 102
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '103' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'MS', 'AC', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '102' },
+    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -101,7 +101,6 @@
       { nome: 'Nova Aurora', uf: 'PR', ibge: '4116703' },
       { nome: 'Nova Fátima', uf: 'PR', ibge: '4117008' },
       { nome: 'Novo Horizonte', uf: 'SC', ibge: '4211652' },
-      { nome: 'Novo Horizonte do Sul', uf: 'MS', ibge: '5006259' },
       { nome: 'Novo Xingu', uf: 'RS', ibge: '4313466' },
       { nome: 'Ourizona', uf: 'PR', ibge: '4117404' },
       { nome: 'Paial', uf: 'SC', ibge: '4211876' },

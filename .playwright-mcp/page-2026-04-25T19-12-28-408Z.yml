@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Hotmart" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Hotmart" [ref=e5]
+      - link "eNotas" [ref=e7] [cursor=pointer]:
+        - /url: index.html
+        - img "eNotas" [ref=e8]
+      - link "Cidades & Provedores" [ref=e10] [cursor=pointer]:
+        - /url: index.html
+      - heading "Monitoramento de Filas NFe" [level=1] [ref=e12]
+    - button "Alternar tema claro/escuro" [ref=e14] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]: "Dados coletados em 24/04/2026 20:58 (Brasília) · Fonte: New Relic · Próxima atualização em 5:31"
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]: "3.095"
+        - generic [ref=e20]: Notas Travadas
+        - generic [ref=e21]: últimas 24h
+      - generic [ref=e22]:
+        - generic [ref=e23]: "50"
+        - generic [ref=e24]: Munic. c/ Travadas
+      - generic [ref=e25]:
+        - generic [ref=e26]: "213"
+        - generic [ref=e27]: Munic. Ativos
+        - generic [ref=e28]: última hora
+      - generic [ref=e29]:
+        - generic [ref=e30]: "1.328"
+        - generic [ref=e31]: Empresas Afetadas
+        - generic [ref=e32]: últimas 24h
+      - generic [ref=e33]:
+        - generic [ref=e34]: 45 min
+        - generic [ref=e35]: Pior Tempo
+      - generic [ref=e36]:
+        - generic [ref=e37]: 1.3 min
+        - generic [ref=e38]: Tempo Médio
+      - generic [ref=e39]:
+        - generic [ref=e40]: 5.1 min
+        - generic [ref=e41]: P95
+      - generic [ref=e42]:
+        - generic [ref=e43]: 23.3 min
+        - generic [ref=e44]: P99
+    - generic [ref=e45]:
+      - button "Visão Geral" [ref=e46] [cursor=pointer]
+      - button "Performance" [ref=e47] [cursor=pointer]
+      - button "Erros & Motivos" [ref=e48] [cursor=pointer]
+      - button "Empresas" [ref=e49] [cursor=pointer]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Notas travadas por município Top 20" [level=2] [ref=e53]:
+          - text: Notas travadas por município
+          - generic [ref=e54]: Top 20
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic "Vinhedo" [ref=e57]
+            - generic [ref=e60]: "511"
+          - generic [ref=e61]:
+            - generic "Praia Grande" [ref=e62]
+            - generic [ref=e65]: "281"
+          - generic [ref=e66]:
+            - generic "Paranavaí" [ref=e67]
+            - generic [ref=e70]: "249"
+          - generic [ref=e71]:
+            - generic "Ribeirão Preto" [ref=e72]
+            - generic [ref=e75]: "139"
+          - generic [ref=e76]:
+            - generic "Nova Serrana" [ref=e77]
+            - generic [ref=e80]: "121"
+          - generic [ref=e81]:
+            - generic "Foz do Iguaçu" [ref=e82]
+            - generic [ref=e85]: "94"
+          - generic [ref=e86]:
+            - generic "Nanuque" [ref=e87]
+            - generic [ref=e90]: "94"
+          - generic [ref=e91]:
+            - generic "Cabo de Santo Agostinho" [ref=e92]
+            - generic [ref=e95]: "94"
+          - generic [ref=e96]:
+            - generic "Cascavel" [ref=e97]
+            - generic [ref=e100]: "94"
+          - generic [ref=e101]:
+            - generic "São Gonçalo" [ref=e102]
+            - generic [ref=e105]: "91"
+          - generic [ref=e106]:
+            - generic "Cravinhos" [ref=e107]
+            - generic [ref=e110]: "74"
+          - generic [ref=e111]:
+            - generic "Lavras" [ref=e112]
+            - generic [ref=e115]: "71"
+          - generic [ref=e116]:
+            - generic "Espinosa" [ref=e117]
+            - generic [ref=e120]: "63"
+          - generic [ref=e121]:
+            - generic "Cachoeiro de Itapemirim" [ref=e122]
+            - generic [ref=e125]: "62"
+          - generic [ref=e126]:
+            - generic "Pontes e Lacerda" [ref=e127]
+            - generic [ref=e130]: "56"
+          - generic [ref=e131]:
+            - generic "Pelotas" [ref=e132]
+            - generic [ref=e135]: "55"
+          - generic [ref=e136]:
+            - generic "São João de Meriti" [ref=e137]
+            - generic [ref=e140]: "50"
+          - generic [ref=e141]:
+            - generic "Maracanaú" [ref=e142]
+            - generic [ref=e145]: "48"
+          - generic [ref=e146]:
+            - generic "Itajaí" [ref=e147]
+            - generic [ref=e150]: "45"
+          - generic [ref=e151]:
+            - generic "Cabo Frio" [ref=e152]
+            - generic [ref=e155]: "44"
+      - generic [ref=e156]:
+        - heading "Volume de notas processadas última hora" [level=2] [ref=e157]:
+          - text: Volume de notas processadas
+          - generic [ref=e158]: última hora
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - generic "Aparecida de Goiânia" [ref=e161]
+            - generic [ref=e164]: "143"
+          - generic [ref=e165]:
+            - generic "Teresina" [ref=e166]
+            - generic [ref=e169]: "120"
+          - generic [ref=e170]:
+            - generic "Engenheiro Coelho" [ref=e171]
+            - generic [ref=e174]: "120"
+          - generic [ref=e175]:
+            - generic "Taboão da Serra" [ref=e176]
+            - generic [ref=e179]: "120"
+          - generic [ref=e180]:
+            - generic "São Bernardo do Campo" [ref=e181]
+            - generic [ref=e184]: "120"
+          - generic [ref=e185]:
+            - generic "Belo Horizonte" [ref=e186]
+            - generic [ref=e189]: "120"
+          - generic [ref=e190]:
+            - generic "Araucária" [ref=e191]
+            - generic [ref=e194]: "120"
+          - generic [ref=e195]:
+            - generic "Pelotas" [ref=e196]
+            - generic [ref=e199]: "120"
+          - generic [ref=e200]:
+            - generic "Maringá" [ref=e201]
+            - generic [ref=e204]: "120"
+          - generic [ref=e205]:
+            - generic "Boituva" [ref=e206]
+            - generic [ref=e209]: "120"
+          - generic [ref=e210]:
+            - generic "Nova Lima" [ref=e211]
+            - generic [ref=e214]: "120"
+          - generic [ref=e215]:
+            - generic "Londrina" [ref=e216]
+            - generic [ref=e219]: "120"
+          - generic [ref=e220]:
+            - generic "Duque de Caxias" [ref=e221]
+            - generic [ref=e224]: "120"
+          - generic [ref=e225]:
+            - generic "Barueri" [ref=e226]
+            - generic [ref=e229]: "120"
+          - generic [ref=e230]:
+            - generic "Rio de Janeiro" [ref=e231]
+            - generic [ref=e234]: "120"
+          - generic [ref=e235]:
+            - generic "Botucatu" [ref=e236]
+            - generic [ref=e239]: "120"
+          - generic [ref=e240]:
+            - generic "Itu" [ref=e241]
+            - generic [ref=e244]: "120"
+          - generic [ref=e245]:
+            - generic "Santa Maria" [ref=e246]
+            - generic [ref=e249]: "120"
+          - generic [ref=e250]:
+            - generic "Curitiba" [ref=e251]
+            - generic [ref=e254]: "120"
+      - generic [ref=e255]:
+        - heading "Tempo máximo de processamento piores casos" [level=2] [ref=e256]:
+          - text: Tempo máximo de processamento
+          - generic [ref=e257]: piores casos
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - generic "Nova Lima" [ref=e260]
+            - generic [ref=e263]: 45.0 min
+          - generic [ref=e264]:
+            - generic "Eusébio" [ref=e265]
+            - generic [ref=e268]: 38.0 min
+          - generic [ref=e269]:
+            - generic "Salvador" [ref=e270]
+            - generic [ref=e273]: 35.0 min
+          - generic [ref=e274]:
+            - generic "Rio Grande" [ref=e275]
+            - generic [ref=e278]: 27.0 min
+          - generic [ref=e279]:
+            - generic "Belém" [ref=e280]
+            - generic [ref=e283]: 22.0 min
+          - generic [ref=e284]:
+            - generic "Maranguape" [ref=e285]
+            - generic [ref=e288]: 20.0 min
+          - generic [ref=e289]:
+            - generic "Caraguatatuba" [ref=e290]
+            - generic [ref=e293]: 16.0 min
+          - generic [ref=e294]:
+            - generic "Campo Grande" [ref=e295]
+            - generic [ref=e298]: 14.0 min
+          - generic [ref=e299]:
+            - generic "São Paulo" [ref=e300]
+            - generic [ref=e303]: 10.0 min
+          - generic [ref=e304]:
+            - generic "Duque de Caxias" [ref=e305]
+            - generic [ref=e308]: 9.0 min
+      - generic [ref=e309]:
+        - heading "Tempo médio por status final" [level=2] [ref=e310]
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - generic [ref=e313]: Negada
+            - generic [ref=e316]: 1.5 min
+          - generic [ref=e317]:
+            - generic [ref=e318]: Autorizada
+            - generic [ref=e321]: 1.2 min
+          - generic [ref=e322]:
+            - generic [ref=e323]: Em Processamento
+            - generic [ref=e326]: 0.5 min
+      - generic [ref=e327]:
+        - heading "Tempo por transição de status" [level=2] [ref=e328]
+        - table [ref=e330]:
+          - rowgroup [ref=e331]:
+            - row "Status Status Anterior Média Máximo P95" [ref=e332]:
+              - columnheader "Status" [ref=e333] [cursor=pointer]
+              - columnheader "Status Anterior" [ref=e334] [cursor=pointer]
+              - columnheader "Média" [ref=e335] [cursor=pointer]
+              - columnheader "Máximo" [ref=e336] [cursor=pointer]
+              - columnheader "P95" [ref=e337] [cursor=pointer]
+          - rowgroup [ref=e338]:
+            - row "Negada Enviada 1.5 min 27.0 min 8.1 min" [ref=e339]:
+              - cell "Negada" [ref=e340]: Negada
+              - cell "Enviada" [ref=e342]
+              - cell "1.5 min" [ref=e343]
+              - cell "27.0 min" [ref=e344]
+              - cell "8.1 min" [ref=e345]
+            - row "Autorizada Processando 1.2 min 45.0 min 2.0 min" [ref=e346]:
+              - cell "Autorizada" [ref=e347]: Autorizada
+              - cell "Processando" [ref=e349]
+              - cell "1.2 min" [ref=e350]
+              - cell "45.0 min" [ref=e351]
+              - cell "2.0 min" [ref=e352]
+            - row "Em Processamento Aguardando Retorno 0.5 min 1.0 min 1.0 min" [ref=e353]:
+              - cell "Em Processamento" [ref=e354]: Em Processamento
+              - cell "Aguardando Retorno" [ref=e356]
+              - cell "0.5 min" [ref=e357]
+              - cell "1.0 min" [ref=e358]
+              - cell "1.0 min" [ref=e359]
+  - generic [ref=e360]: Hotmart — Monitoramento de Filas NFe · Dados do New Relic · 2026

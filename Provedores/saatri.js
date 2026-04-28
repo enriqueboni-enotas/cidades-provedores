@@ -3,11 +3,11 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 38
+    municipios: 39
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '38' },
+    { key: 'Total Municipios', val: '39' },
     { key: 'Estados Atendidos', val: ['BA', 'RR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -55,6 +55,7 @@
     'saatri': [
       { nome: 'Alto Alegre', uf: 'RR', ibge: '1400050' },
       { nome: 'Barra', uf: 'BA', ibge: '2902708' },
+      { nome: 'Barra da Estiva', uf: 'BA', ibge: '2902807' },
       { nome: 'Bom Jesus da Lapa', uf: 'BA', ibge: '2903904' },
       { nome: 'Brejões', uf: 'BA', ibge: '2904308' },
       { nome: 'Caem', uf: 'BA', ibge: '2905107' },

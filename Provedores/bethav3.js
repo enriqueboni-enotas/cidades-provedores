@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 132
+    municipios: 133
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '132' },
+    { key: 'Total Municipios', val: '133' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,8 +82,8 @@
       { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
       { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
       { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
-      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
       { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
+      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
       { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
       { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
       { nome: 'Caarapó', uf: 'MS', ibge: '5002407' },
@@ -151,6 +151,7 @@
       { nome: 'Nepomuceno', uf: 'MG', ibge: '3144607' },
       { nome: 'Nova Andradina', uf: 'MS', ibge: '5006200' },
       { nome: 'Nova Trento', uf: 'SC', ibge: '4211504' },
+      { nome: 'Novo Horizonte do Sul', uf: 'MS', ibge: '5006259' },
       { nome: 'Orlândia', uf: 'SP', ibge: '3534302' },
       { nome: 'Ortigueira', uf: 'PR', ibge: '4117305' },
       { nome: 'Otacílio Costa', uf: 'SC', ibge: '4211751' },

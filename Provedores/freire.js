@@ -3,11 +3,11 @@
   nome: 'Freire',
   empresa: 'Freire',
   stats: {
-    municipios: 8
+    municipios: 9
   },
   visaoGeral: [
     { key: 'Nome', val: 'Freire' },
-    { key: 'Total Municipios', val: '8' },
+    { key: 'Total Municipios', val: '9' },
     { key: 'Estados Atendidos', val: ['BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -38,6 +38,7 @@
   municipiosLista: {
     'freire': [
       { nome: 'Botuporã', uf: 'BA', ibge: '2904209' },
+      { nome: 'Macaúbas', uf: 'BA', ibge: '2919801' },
       { nome: 'Maracás', uf: 'BA', ibge: '2920502' },
       { nome: 'Morro do Chapéu', uf: 'BA', ibge: '2921708' },
       { nome: 'Muritiba', uf: 'BA', ibge: '2922300' },

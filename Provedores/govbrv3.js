@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 81
+    municipios: 82
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '81' },
+    { key: 'Total Municipios', val: '82' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -113,6 +113,7 @@
       { nome: 'Pato Branco', uf: 'PR', ibge: '4118501' },
       { nome: 'Pedro Osório', uf: 'RS', ibge: '4314209' },
       { nome: 'Pejuçara', uf: 'RS', ibge: '4314308' },
+      { nome: 'Pérola', uf: 'PR', ibge: '4118907' },
       { nome: 'Picada Café', uf: 'RS', ibge: '4314423' },
       { nome: 'Pindorama', uf: 'SP', ibge: '3538105' },
       { nome: 'Piratini', uf: 'RS', ibge: '4314605' },
