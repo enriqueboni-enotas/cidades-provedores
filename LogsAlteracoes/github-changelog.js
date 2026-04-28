@@ -24,13 +24,15 @@
       },
       {
         icon: '🆕',
-        destaque: 'Aspect — integração completa com consulta de informações de serviço',
+        destaque:
+          'Aspect — integração completa com consulta de informações de serviço',
         texto:
           'O provedor Aspect recebeu uma atualização significativa na integração. Foi criado o comando ConsultarInformacoesServicoCommand que faz múltiplas requisições encadeadas ao webservice (serviço → NBS → INDOP → classificação tributária) para obter dados completos antes da emissão. O modelo Nfse foi expandido com campos de NBS, naturezaOperacao, retenção, classificação tributária e subitens de serviço. O RecepcionarLoteNFe agora valida CPF/CNPJ do tomador, normaliza o CodigoServicoMunicipal para 6 dígitos, e consulta o serviço antes de montar o payload.',
       },
       {
         icon: '🏙️',
-        destaque: 'Macaúbas/BA — correção do provedor de NfseNacionalV2 para Freire',
+        destaque:
+          'Macaúbas/BA — correção do provedor de NfseNacionalV2 para Freire',
         texto:
           'O município de Macaúbas/BA estava configurado com o provedor NfseNacionalV2 genérico, mas o WebService oficial da prefeitura é o Freire. A configuração foi corrigida no ConfiguracoesMunicipios.xml para apontar para o provedor correto, garantindo que as notas sejam emitidas no sistema que a prefeitura realmente utiliza.',
       },
@@ -42,19 +44,22 @@
       },
       {
         icon: '📊',
-        destaque: 'NotaControl — validação obrigatória do regime especial de tributação',
+        destaque:
+          'NotaControl — validação obrigatória do regime especial de tributação',
         texto:
           'O provedor NotaControl (ABRASF v2) passou a exigir que o campo RegimeEspecialTributacao esteja preenchido com um valor numérico válido. Antes, a validação só verificava se o valor era não-numérico quando presente. Agora, se o campo estiver vazio ou nulo, o sistema também lança ValidationException (erro GW001), forçando o preenchimento correto antes do envio.',
       },
       {
         icon: '🏙️',
-        destaque: 'Santo Antônio de Posse/SP — cancelamento configurado no Fiorilli',
+        destaque:
+          'Santo Antônio de Posse/SP — cancelamento configurado no Fiorilli',
         texto:
           'O município de Santo Antônio de Posse/SP não suportava cancelamento de NFS-e pelo gateway. A operação de cancelamento foi configurada no provedor Fiorilli, permitindo que empresas da cidade cancelem notas fiscais eletrônicas diretamente pelo sistema sem precisar acessar o portal da prefeitura.',
       },
       {
         icon: '🔧',
-        destaque: 'Fortaleza/CE — endereço do tomador replicado como endereço do evento para Conta Azul',
+        destaque:
+          'Fortaleza/CE — endereço do tomador replicado como endereço do evento para Conta Azul',
         texto:
           'Na integração com Fortaleza/CE, o método CriarDadosEvento foi alterado para receber o parâmetro Empresa e verificar se a subscription está na lista UsaEndTomadorParaEvento. Quando a empresa (Conta Azul) está nessa lista e não há endereço do evento informado, o sistema utiliza automaticamente o endereço do tomador. Além disso, o cálculo de PIS/COFINS/CSLL foi migrado para o helper centralizado NFeServicoCalculosHelper.',
       },
@@ -72,7 +77,8 @@
       },
       {
         icon: '🔧',
-        destaque: 'Marília/SP — remoção de duplicata incorreta no cadastro de municípios',
+        destaque:
+          'Marília/SP — remoção de duplicata incorreta no cadastro de municípios',
         texto:
           'O município de Marília/SP estava duplicado no arquivo de códigos de municípios (codigoMunicipios.csv) do provedor NfseNacionalV2. A entrada duplicada causava ambiguidade na resolução do código IBGE durante a emissão, podendo direcionar a nota para o endpoint errado. A duplicata foi removida e a referência no Municipios.cs foi ajustada.',
       },
@@ -84,7 +90,8 @@
       },
       {
         icon: '🔧',
-        destaque: 'NfseNacionalV2 — preservação da natureza de operação para Conta Azul',
+        destaque:
+          'NfseNacionalV2 — preservação da natureza de operação para Conta Azul',
         texto:
           'A lógica de reatribuição da natureza de operação no provedor NfseNacionalV2 estava sobrescrevendo o valor informado pela Conta Azul em notas de Belo Horizonte, Porto Alegre e Curitiba. A subscription do Conta Azul foi adicionada à lista de exclusões que bypassa essa reatribuição, preservando a natureza de operação original informada pelo integrador.',
       },
@@ -96,13 +103,15 @@
       },
       {
         icon: '📊',
-        destaque: 'São Paulo/SP — exceção para empresa optante do Simples enviar IBS/CBS',
+        destaque:
+          'São Paulo/SP — exceção para empresa optante do Simples enviar IBS/CBS',
         texto:
           'Foi adicionada uma regra específica no RecepcionarLoteNFeProxy de São Paulo que permite a uma empresa identificada por GUID enviar IBS/CBS mesmo sendo optante do Simples Nacional. A variável naoParticipantePiloto2026 é sobrescrita para false, permitindo que o fluxo utilize o layout v2 com os campos de IBS/CBS.',
       },
       {
         icon: '📊',
-        destaque: 'GovDigital — implementação da tag TpOper (Tipo de Operação IBS/CBS)',
+        destaque:
+          'GovDigital — implementação da tag TpOper (Tipo de Operação IBS/CBS)',
         texto:
           'O provedor GovDigital não enviava a tag TpOper (Tipo de Operação) no XML, campo exigido pelo Portal Nacional para classificar a operação quanto ao IBS/CBS. Foi adicionada a propriedade TpOper do tipo TipoOperacaoIbsCbs ao modelo GovDigitalDadosServico, e o RecepcionarLoteNFeV2 foi ajustado para preencher esse campo.',
       },
@@ -120,7 +129,8 @@
       },
       {
         icon: '📊',
-        destaque: 'NfseNacionalV2 — validação do campo IndOp com regex de 6 dígitos',
+        destaque:
+          'NfseNacionalV2 — validação do campo IndOp com regex de 6 dígitos',
         texto:
           'O campo CodigoIndicadorOperacao (IndOp) no XML do NfseNacionalV2 não era validado antes do envio, causando falhas de schema quando o valor era nulo, vazio ou com formato inválido. Foi adicionada uma validação regex que exige exatamente 6 dígitos numéricos (^[0-9]{6}$). Valores inválidos agora geram ValidationException com código GW98745, evitando rejeições por erro de schema.',
       },
@@ -140,7 +150,7 @@
   },
   {
     tag: '24/04/2026',
-    titulo: 'Sexta-feira — 24 de Abril',
+    titulo: 'Quinta-feira — 24 de Abril',
     data: '24/04/2026',
     itens: [
       {
@@ -157,7 +167,8 @@
     itens: [
       {
         icon: '📊',
-        destaque: 'SpeedGov — envio do tipo de retenção PIS/COFINS/CSLL conforme Portal Nacional',
+        destaque:
+          'SpeedGov — envio do tipo de retenção PIS/COFINS/CSLL conforme Portal Nacional',
         texto:
           'O provedor SpeedGov não enviava corretamente o tipo de retenção de PIS, COFINS e CSLL conforme as regras do Portal Nacional de NFS-e. Foi implementado o método RetornarTpRetPisCofinsCsll que deduz o código de retenção a partir dos dados da nota e do serviço. Além disso, o método CriarValoresServico foi refatorado para suportar PisCofinsApuracaoPropria — preenchendo tipo de retenção, CST, base de cálculo, alíquota e valores de PIS e COFINS de forma independente (evitando zerar indevidamente o tributo oposto em retenções parciais). Também foi criado o método CalcularValorLiquidoNfse para recomputar o valor líquido considerando todas as retenções, e DeduzirAliquotaPeloValor foi fortalecido com proteção contra divisão por zero.',
       },
@@ -175,13 +186,15 @@
       },
       {
         icon: '🔧',
-        destaque: 'DANFSE Padrão Nacional — descrição do serviço ampliada para 11 linhas',
+        destaque:
+          'DANFSE Padrão Nacional — descrição do serviço ampliada para 11 linhas',
         texto:
           'O relatório DANFSE (Documento Auxiliar da NFS-e) no padrão nacional estava limitado a 7 linhas na descrição do serviço, o que truncava textos mais longos. O método DrawServicoPrestado foi ajustado para aceitar até 11 linhas, aumentando tanto o limite de quebra de texto (WrapTextByWidth) quanto o número de linhas processadas no loop de desenho. Isso resolve casos em que a descrição completa do serviço não cabia no PDF gerado.',
       },
       {
         icon: '🔧',
-        destaque: 'PublicaV1 — dados de obra preenchidos com endereço do tomador para serviço 07.02',
+        destaque:
+          'PublicaV1 — dados de obra preenchidos com endereço do tomador para serviço 07.02',
         texto:
           'No provedor PublicaV1, quando o serviço municipal é 07.02 (construção civil) e os dados de construção civil não são informados na nota, o sistema agora preenche automaticamente os dados da obra com as informações do tomador de serviço. Isso evita rejeições em prefeituras que exigem dados de obra para esse código de serviço, usando o endereço completo do tomador, tipo de identificação "1" e código de país "1058" (Brasil).',
       },
@@ -205,7 +218,8 @@
       },
       {
         icon: '📊',
-        destaque: 'Fortaleza/CE — cálculo específico de PIS/COFINS/CSLL para empresas na allowlist',
+        destaque:
+          'Fortaleza/CE — cálculo específico de PIS/COFINS/CSLL para empresas na allowlist',
         texto:
           'Foi implementado um cálculo específico de tributos sobre serviços (PIS/COFINS/CSLL) para empresas de Fortaleza/CE que estão em uma allowlist. O novo método CriarValoresServicoFortaleza monta os valores a partir de campos de ISS e tributos federais, recalcula PIS e COFINS quando há PisCofinsApuracaoPropria (deduzindo alíquotas faltantes via DeduzirAliquotaPeloValor), e ajusta o CSLL com base no código de retenção derivado de TipoRetencaoPisCofins. Tipos de retenção inválidos geram ValidationException para evitar envio incorreto.',
       },
@@ -217,13 +231,15 @@
       },
       {
         icon: '🔧',
-        destaque: 'EGoverneISS — endereço do tomador replicado como local de prestação',
+        destaque:
+          'EGoverneISS — endereço do tomador replicado como local de prestação',
         texto:
           'Para uma empresa específica do provedor EGoverneISS, foi implementada a funcionalidade de replicar o endereço do tomador nos campos de local da prestação do serviço. A propriedade UsarEnderecoTomadorComoLocalPrestacao controla quais empresas usam esse comportamento. Quando ativado, o método ResolverEnderecoPrestacao marca servicoPrestadoNoTomador como true e copia CidadePrestacaoServico e EstadoPrestacaoServico a partir do endereço do tomador, com normalização de valores vazios.',
       },
       {
         icon: '🔧',
-        destaque: 'Correção na lista de AnexosSimplesNacional — conversão para array',
+        destaque:
+          'Correção na lista de AnexosSimplesNacional — conversão para array',
         texto:
           'A propriedade AnexosSimplesNacional, que define os anexos do Simples Nacional aplicáveis a cada provedor, estava sendo retornada como lista ao invés de array na extensão ProvedorExtensions.cs. Isso causava incompatibilidade com a estrutura de dados esperada pelo front-end e pela API, que tratam o campo como array JSON. A correção converte a lista para array com .ToArray(), garantindo que os dados dos anexos sejam serializados corretamente. Esse commit veio do PR #727 (sustain) junto com ajuste de SMU.',
       },
@@ -236,13 +252,15 @@
     itens: [
       {
         icon: '�',
-        destaque: 'Correção na lista de AnexosSimplesNacional — conversão para array',
+        destaque:
+          'Correção na lista de AnexosSimplesNacional — conversão para array',
         texto:
           'A propriedade AnexosSimplesNacional, que define os anexos do Simples Nacional aplicáveis a cada provedor, estava sendo retornada como lista ao invés de array na extensão ProvedorExtensions.cs. Isso causava incompatibilidade com a estrutura de dados esperada pelo front-end e pela API, que tratam o campo como array JSON. A correção converte a lista para array com .ToArray(), garantindo que os dados dos anexos sejam serializados corretamente.',
       },
       {
         icon: '📊',
-        destaque: 'Portal Nacional — Benefício Municipal anulado quando tribISSQN não é Tributável',
+        destaque:
+          'Portal Nacional — Benefício Municipal anulado quando tribISSQN não é Tributável',
         texto:
           'O Portal Nacional de NFS-e retornava o erro E0533 quando o campo Benefício Municipal (BM) era informado em notas com tribISSQN diferente de 1 (Tributável). A regra do Portal Nacional exige que o BM seja nulo para notas isentas, imunes ou com suspensão judicial. A correção foi aplicada nos dois formatadores de XML (FormatarXmlLoteNFeBase e FormatarXmlLoteNFeV2Base), adicionando validação no método ObterCodigoBeneficioMunicipalMetadados para retornar null quando tribISSQN != 1, evitando rejeições em notas não tributáveis.',
       },
@@ -254,7 +272,7 @@
       },
     ],
   },
-{
+  {
     tag: '21/04/2026',
     titulo: 'Terça-feira — 21 de Abril',
     data: '21/04/2026',
@@ -470,5 +488,5 @@
           'Foram adicionadas duas novas propriedades às características dos provedores: EhProvedorPortalNacional (indica se o provedor opera via Portal Nacional de NFS-e) e AnexosSimplesNacional (define os anexos do Simples Nacional aplicáveis). A propriedade NomeProvedor foi removida da base. Os provedores FgMaiss, PrimaxOnline e eTransparencia foram configurados com os anexos do Simples Nacional específicos. Essas mudanças melhoram a precisão das informações tributárias por provedor.',
       },
     ],
-  }
+  },
 ];
