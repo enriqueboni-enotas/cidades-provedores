@@ -8,58 +8,58 @@ var nfeNegadasData = [
         icon: '❌',
         destaque:
           'Falha no Schema XML — NullReferenceException na validação de CPF/CNPJ',
-        texto: '14.844 notas',
+        texto: '14.967 notas',
       },
       {
         icon: '🔒',
         destaque: 'Certificado digital vencido',
-        texto: '1.147 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '800 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '776 notas',
-      },
-      {
-        icon: '�',
-        destaque: 'Problemas ao processar arquivo — erro interno do provedor',
-        texto: '708 notas',
+        texto: '1.190 notas',
       },
       {
         icon: '🏙️',
         destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '597 notas',
+        texto: '1.007 notas',
       },
       {
-        icon: '�',
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '962 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '803 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Problemas ao processar arquivo — erro interno do provedor',
+        texto: '708 notas',
+      },
+      {
+        icon: '🔒',
         destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
-        texto: '539 notas',
+        texto: '545 notas',
       },
       {
         icon: '📋',
         destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '524 notas',
+        texto: '527 notas',
       },
       {
         icon: '🏙️',
         destaque: 'Cidade não encontrada no cadastro IBGE (chamada API)',
-        texto: '467 notas',
+        texto: '491 notas',
       },
       {
         icon: '📮',
-        destaque: 'CEP do destinatário obrigatório não informado',
-        texto: '366 notas',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '385 notas',
       },
     ],
   },
   {
     tag: '27/04/2026',
-    titulo: 'Segunda-feira — 27 de Abril',
+    titulo: 'Domingo — 27 de Abril',
     data: '27/04/2026',
     itens: [
       {
@@ -89,7 +89,7 @@ var nfeNegadasData = [
         texto: '1.547 notas',
       },
       {
-        icon: '�',
+        icon: '💰',
         destaque: 'Bloqueio por falta de pagamento',
         texto: '989 notas',
       },
@@ -118,7 +118,7 @@ var nfeNegadasData = [
   },
   {
     tag: '26/04/2026',
-    titulo: 'Domingo — 26 de Abril',
+    titulo: 'Sábado — 26 de Abril',
     data: '26/04/2026',
     itens: [
       {
@@ -176,7 +176,7 @@ var nfeNegadasData = [
   },
   {
     tag: '25/04/2026',
-    titulo: 'Sábado — 25 de Abril',
+    titulo: 'Sexta-feira — 25 de Abril',
     data: '25/04/2026',
     itens: [
       {
@@ -234,7 +234,7 @@ var nfeNegadasData = [
   },
   {
     tag: '24/04/2026',
-    titulo: 'Sexta-feira — 24 de Abril',
+    titulo: 'Quinta-feira — 24 de Abril',
     data: '24/04/2026',
     itens: [
       {
@@ -293,7 +293,7 @@ var nfeNegadasData = [
   },
   {
     tag: '23/04/2026',
-    titulo: 'Quinta-feira — 23 de Abril',
+    titulo: 'Quarta-feira — 23 de Abril',
     data: '23/04/2026',
     itens: [
       {
@@ -353,7 +353,7 @@ var nfeNegadasData = [
   },
   {
     tag: '22/04/2026',
-    titulo: 'Quarta-feira — 22 de Abril',
+    titulo: 'Terça-feira — 22 de Abril',
     data: '22/04/2026',
     itens: [
       {
@@ -411,7 +411,7 @@ var nfeNegadasData = [
   },
   {
     tag: '21/04/2026',
-    titulo: 'Terça-feira — 21 de Abril',
+    titulo: 'Segunda-feira — 21 de Abril',
     data: '21/04/2026',
     itens: [
       {
@@ -468,7 +468,7 @@ var nfeNegadasData = [
   },
   {
     tag: '20/04/2026',
-    titulo: 'Segunda-feira — 20 de Abril',
+    titulo: 'Domingo — 20 de Abril',
     data: '20/04/2026',
     itens: [
       {
@@ -526,7 +526,7 @@ var nfeNegadasData = [
   },
   {
     tag: '19/04/2026',
-    titulo: 'Domingo — 19 de Abril',
+    titulo: 'Sábado — 19 de Abril',
     data: '19/04/2026',
     itens: [
       {
@@ -584,7 +584,7 @@ var nfeNegadasData = [
   },
   {
     tag: '18/04/2026',
-    titulo: 'Sábado — 18 de Abril',
+    titulo: 'Sexta-feira — 18 de Abril',
     data: '18/04/2026',
     itens: [
       {
@@ -642,7 +642,7 @@ var nfeNegadasData = [
   },
   {
     tag: '17/04/2026',
-    titulo: 'Sexta-feira — 17 de Abril',
+    titulo: 'Quinta-feira — 17 de Abril',
     data: '17/04/2026',
     itens: [
       {

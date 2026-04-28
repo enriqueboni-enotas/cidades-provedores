@@ -3,11 +3,11 @@
   nome: 'CECOM',
   empresa: 'CECOM',
   stats: {
-    municipios: 3
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'CECOM' },
-    { key: 'Total Municipios', val: '3' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['SP', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -49,7 +49,6 @@
   municipiosLista: {
     'cecom': [
       { nome: 'Monte Negro', uf: 'RO', ibge: '1101401' },
-      { nome: 'Paraibuna', uf: 'SP', ibge: '3535606' },
       { nome: 'Ribeirão Grande', uf: 'SP', ibge: '3543253' }
     ]
   }

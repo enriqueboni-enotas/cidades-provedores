@@ -1,5 +1,17 @@
 var jiraChangelogData = [
   {
+    tag: '28/04/2026',
+    titulo: 'Terça-feira — 28 de Abril',
+    data: '28/04/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada e inutilização',
+        texto: '2 cards (CE-26114, CE-26070)',
+      },
+    ],
+  },
+  {
     tag: '27/04/2026',
     titulo: 'Domingo — 27 de Abril',
     data: '27/04/2026',
@@ -35,13 +47,18 @@ var jiraChangelogData = [
         texto: '1 card (CE-25283)',
       },
       {
+        icon: '📋',
+        destaque: 'Atualização de layout XML em Cotia/SP',
+        texto: '1 card (CE-25229)',
+      },
+      {
         icon: '🏙️',
         destaque: 'Atualização de município',
         texto: '1 card (CE-25218)',
       },
       {
-        icon: '📢',
-        destaque: 'Reclame Aqui — atendimento de reclamação',
+        icon: '❌',
+        destaque: 'Reclame Aqui — reclamação de cliente',
         texto: '1 card (CE-24806)',
       },
     ],
@@ -54,8 +71,7 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto:
-          'Todos os tickets deste dia já foram contabilizados em 27/04 (deduplicação DURING).',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
@@ -73,39 +89,44 @@ var jiraChangelogData = [
   },
   {
     tag: '24/04/2026',
-    titulo: 'Sexta-feira — 24 de Abril',
+    titulo: 'Quinta-feira — 24 de Abril',
     data: '24/04/2026',
     itens: [
       {
         icon: '🤖',
-        destaque: '[Autofix] Retornar NF negada / Localizar numerações',
-        texto: '5 cards (CE-26034, CE-26018, CE-25968, CE-25967, CE-25841)',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '2 cards (CE-26034, CE-26018)',
       },
       {
-        icon: '🔧',
-        destaque: 'Configuração infAdFisco em Pinhais/PR',
+        icon: '🤖',
+        destaque: 'Autofix — localizar numerações',
+        texto: '3 cards (CE-25968, CE-25967, CE-25821)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Configuração de infAdFisco em Pinhais/PR',
         texto: '1 card (CE-25951)',
       },
       {
         icon: '🤖',
-        destaque: '[Autofix] Localizar numerações — summary padrão',
-        texto: '1 card (CE-25821)',
+        destaque: 'Autofix — localizar numerações (outro cliente)',
+        texto: '1 card (CE-25841)',
       },
     ],
   },
   {
     tag: '23/04/2026',
-    titulo: 'Quinta-feira — 23 de Abril',
+    titulo: 'Quarta-feira — 23 de Abril',
     data: '23/04/2026',
     itens: [
       {
         icon: '🤖',
-        destaque: '[Autofix] Retornar NF negada',
+        destaque: 'Autofix — retornar NF negada',
         texto: '1 card (CE-25996)',
       },
       {
         icon: '🔒',
-        destaque: 'Bug com certificado digital',
+        destaque: 'Bug de certificado digital',
         texto: '1 card (CE-25769)',
       },
       {
@@ -137,7 +158,7 @@ var jiraChangelogData = [
   },
   {
     tag: '22/04/2026',
-    titulo: 'Quarta-feira — 22 de Abril',
+    titulo: 'Terça-feira — 22 de Abril',
     data: '22/04/2026',
     itens: [
       {
@@ -154,30 +175,29 @@ var jiraChangelogData = [
   },
   {
     tag: '21/04/2026',
-    titulo: 'Terça-feira — 21 de Abril',
+    titulo: 'Segunda-feira — 21 de Abril',
     data: '21/04/2026',
     itens: [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket novo resolvido neste dia (todos já contabilizados em dias posteriores).',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
   {
     tag: '20/04/2026',
-    titulo: 'Segunda-feira — 20 de Abril',
+    titulo: 'Domingo — 20 de Abril',
     data: '20/04/2026',
     itens: [
       {
-        icon: '🔧',
+        icon: '📋',
         destaque: 'Falha no envio do endereço padrão',
         texto: '1 card (CE-25839)',
       },
       {
-        icon: '🧾',
-        destaque: '[Autofix] Inutilização de NF',
+        icon: '🤖',
+        destaque: 'Autofix — inutilização de NF',
         texto: '1 card (CE-25822)',
       },
       {
@@ -196,11 +216,6 @@ var jiraChangelogData = [
         texto: '1 card (CE-25263)',
       },
       {
-        icon: '🔧',
-        destaque: 'Campo para preenchimento de IE para PF (melhoria)',
-        texto: '1 card (CE-25163)',
-      },
-      {
         icon: '❌',
         destaque: 'Notas fiscais sendo emitidas incorretamente',
         texto: '1 card (CE-23131)',
@@ -209,33 +224,31 @@ var jiraChangelogData = [
   },
   {
     tag: '19/04/2026',
-    titulo: 'Domingo — 19 de Abril',
+    titulo: 'Sábado — 19 de Abril',
     data: '19/04/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket novo resolvido neste dia (todos já contabilizados em dias posteriores).',
+        icon: '🆕',
+        destaque: 'Melhoria — campo para preenchimento de IE para PF',
+        texto: '1 card (CE-25163)',
       },
     ],
   },
   {
     tag: '18/04/2026',
-    titulo: 'Sábado — 18 de Abril',
+    titulo: 'Sexta-feira — 18 de Abril',
     data: '18/04/2026',
     itens: [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket novo resolvido neste dia (todos já contabilizados em dias posteriores).',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
   {
     tag: '17/04/2026',
-    titulo: 'Sexta-feira — 17 de Abril',
+    titulo: 'Quinta-feira — 17 de Abril',
     data: '17/04/2026',
     itens: [
       {
@@ -245,12 +258,12 @@ var jiraChangelogData = [
       },
       {
         icon: '🔧',
-        destaque: 'Habilitação do campo CNAE na empresa',
+        destaque: 'Habilitar campo CNAE na empresa',
         texto: '2 cards (CE-25634, CE-25591)',
       },
       {
         icon: '🏙️',
-        destaque: 'Alteração de painel para SMU em Araraquara/SP',
+        destaque: 'Alteração para SMU em Araraquara/SP',
         texto: '1 card (CE-25596)',
       },
       {
@@ -259,56 +272,9 @@ var jiraChangelogData = [
         texto: '1 card (CE-25494)',
       },
       {
-        icon: '🔧',
+        icon: '📋',
         destaque: 'Alteração de layout da nota fiscal 2.0',
         texto: '1 card (CE-25446)',
-      },
-    ],
-  },
-  {
-    tag: '16/04/2026',
-    titulo: 'Quinta-feira — 16 de Abril',
-    data: '16/04/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: '[Autofix] Retornar NF negada — summary padrão',
-        texto: '1 card (CE-25779)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro ao gerar XML de envio (Plano Start)',
-        texto: '1 card (CE-25736)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Faturamento de excedentes indevido',
-        texto: '2 cards (CE-25700, CE-25657)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de NFS-e',
-        texto: '1 card (CE-25421)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Alteração de painel para SMU',
-        texto: '1 card (CE-25231)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Município de prestação como exterior',
-        texto: '1 card (CE-25219)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Vendas não são importadas',
-        texto: '1 card (CE-25212)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Envio do campo CSRT SEFAZ PR',
-        texto: '1 card (CE-25137)',
       },
     ],
   },

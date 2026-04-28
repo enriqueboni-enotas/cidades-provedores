@@ -2349,7 +2349,7 @@
   { id: 'parai-rs', nome: 'Paraí', uf: 'RS', ibge: '4314001', provedor: 'CittaV2', webService: true },
   { id: 'paraiba-do-sul-rj', nome: 'Paraíba do Sul', uf: 'RJ', ibge: '3303708', provedor: 'GOVBRv3', webService: true },
   { id: 'paraibano-ma', nome: 'Paraibano', uf: 'MA', ibge: '2107704', provedor: 'NfseNacionalV2', webService: true },
-  { id: 'paraibuna-sp', nome: 'Paraibuna', uf: 'SP', ibge: '3535606', provedor: 'CECOM', webService: true },
+  { id: 'paraibuna-sp', nome: 'Paraibuna', uf: 'SP', ibge: '3535606', provedor: 'NfseNacionalV2', webService: true },
   { id: 'paraiso-sc', nome: 'Paraíso', uf: 'SC', ibge: '4212239', provedor: 'IPM', webService: true },
   { id: 'paraiso-do-sul-rs', nome: 'Paraíso do Sul', uf: 'RS', ibge: '4314027', provedor: 'NfseNacionalV2', webService: true },
   { id: 'paraiso-do-tocantins-to', nome: 'Paraíso do Tocantins', uf: 'TO', ibge: '1716109', provedor: 'WebISSv2', webService: true },

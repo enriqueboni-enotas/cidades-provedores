@@ -1,21 +1,36 @@
 ﻿var changelogData = [
   {
+    tag: '28/04/2026',
+    titulo: 'Terça-feira — 28 de Abril',
+    data: '28/04/2026',
+    itens: [
+      {
+        icon: '🌐',
+        destaque:
+          'GIFv2 — correção de rejeições para tomador exterior em Caxias do Sul/RS',
+        texto:
+          'O provedor GIFv2 (usado por Caxias do Sul/RS) rejeitava notas com tomador do exterior porque os campos de comércio exterior (mdPrestacao, vincPrest, mecAFComexP, mecAFComexT, movTempBens) e os dados do tomador estrangeiro (cNaoNIF, endereço exterior) não eram preenchidos com os valores padrão exigidos pelo webservice. Foram implementados os métodos FormatarDadosServico, FormatarDadosTomador e FormatarEnderecoTomador que detectam automaticamente quando o tomador é do exterior e preenchem os campos com valores "desconhecido/não informado" (código 0 ou "NI"). Também foi corrigido o campo cNaoNIF para usar "0" (Não informado na nota de origem) e o CEP exterior para "NI" quando vazio ou "00000000".',
+      },
+    ],
+  },
+  {
     tag: '27/04/2026',
     titulo: 'Domingo — 27 de Abril',
     data: '27/04/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
+        icon: '🏙️',
+        destaque: 'Paraibuna/SP — adesão ao Portal Nacional de NFS-e',
+        texto:
+          'O município de Paraibuna/SP aderiu ao Portal Nacional de NFS-e e foi configurado no gateway. A prefeitura migrou do sistema anterior para o Portal Nacional, e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml. Os testes de integração (Monte Negro/RO) também foram ajustados para refletir o novo cenário.',
       },
-    ],
-  },
-  {
-    tag: '26/04/2026',
-    titulo: 'Sábado — 26 de Abril',
-    data: '26/04/2026',
-    itens: [
+      {
+        icon: '🔧',
+        destaque:
+          'EGoverneISS — ajuste de 4 horas na data de competência para consulta de nota',
+        texto:
+          'A consulta de nota fiscal no provedor EGoverneISS falhava em encontrar notas emitidas próximo à virada do dia porque a DataInicial da busca usava exatamente a data de competência. O webservice do EGoverneISS trabalha com fuso horário diferente, e notas emitidas no final do dia podiam ficar com timestamp do dia seguinte no sistema da prefeitura. A correção subtrai 4 horas da data de competência na consulta (DataCompetencia.AddHours(-4)), ampliando a janela de busca e garantindo que a nota seja encontrada mesmo com diferença de fuso.',
+      },
       {
         icon: '🔧',
         destaque: 'EGoverneISS — busca do XML completo da nota fiscal',
@@ -137,6 +152,18 @@
     ],
   },
   {
+    tag: '26/04/2026',
+    titulo: 'Sábado — 26 de Abril',
+    data: '26/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '25/04/2026',
     titulo: 'Sexta-feira — 25 de Abril',
     data: '25/04/2026',
@@ -162,7 +189,7 @@
   },
   {
     tag: '23/04/2026',
-    titulo: 'Quinta-feira — 23 de Abril',
+    titulo: 'Quarta-feira — 23 de Abril',
     data: '23/04/2026',
     itens: [
       {
@@ -247,11 +274,11 @@
   },
   {
     tag: '22/04/2026',
-    titulo: 'Quarta-feira — 22 de Abril',
+    titulo: 'Terça-feira — 22 de Abril',
     data: '22/04/2026',
     itens: [
       {
-        icon: '�',
+        icon: '🔧',
         destaque:
           'Correção na lista de AnexosSimplesNacional — conversão para array',
         texto:
@@ -274,7 +301,7 @@
   },
   {
     tag: '21/04/2026',
-    titulo: 'Terça-feira — 21 de Abril',
+    titulo: 'Segunda-feira — 21 de Abril',
     data: '21/04/2026',
     itens: [
       {
@@ -286,7 +313,7 @@
   },
   {
     tag: '20/04/2026',
-    titulo: 'Segunda-feira — 20 de Abril',
+    titulo: 'Domingo — 20 de Abril',
     data: '20/04/2026',
     itens: [
       {
@@ -406,7 +433,7 @@
   },
   {
     tag: '19/04/2026',
-    titulo: 'Domingo — 19 de Abril',
+    titulo: 'Sábado — 19 de Abril',
     data: '19/04/2026',
     itens: [
       {
@@ -420,7 +447,7 @@
   },
   {
     tag: '18/04/2026',
-    titulo: 'Sábado — 18 de Abril',
+    titulo: 'Sexta-feira — 18 de Abril',
     data: '18/04/2026',
     itens: [
       {
@@ -440,52 +467,13 @@
   },
   {
     tag: '17/04/2026',
-    titulo: 'Sexta-feira — 17 de Abril',
+    titulo: 'Quinta-feira — 17 de Abril',
     data: '17/04/2026',
     itens: [
       {
         icon: '📭',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '16/04/2026',
-    titulo: 'Quinta-feira — 16 de Abril',
-    data: '16/04/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Morro Reuter/RS e código interno do contribuinte no GOVBRv3',
-        texto:
-          'O município de Morro Reuter/RS foi adicionado ao conjunto de códigos IBGE suportados pelo provedor GOVBRv3, permitindo a emissão de NFS-e na cidade. Além disso, o PR incluiu a implementação de fallback SHA1 para assinatura digital em modo debug e a alteração do parâmetro padrão "embutido" para true nas APIs de teste (EmpresaApi, NotaApi, ApiBase), facilitando os testes de integração com certificados digitais.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Atualização de referências das GitHub Actions no workflow de produção',
-        texto:
-          'O workflow de CI/CD de produção (.github/workflows/production.yaml) estava apontando todas as referências de GitHub Actions para a branch @master. As referências foram atualizadas para @TICKET-153208 (clone, build, cleanup e deploy), garantindo que o pipeline de produção utilize as versões das actions compatíveis com as mudanças em andamento.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativação de Dumont/SP no provedor Fiorilli',
-        texto:
-          'O município de Dumont/SP (código IBGE 3514601) foi ativado para emissão de NFS-e pelo provedor Fiorilli. A prefeitura foi incluída como exceção na lógica do Fiorilli para não utilizar ItemListaServico, e o ConfiguracoesMunicipios.xml foi atualizado com a tag NaoUsaAssinatura. Essas configurações específicas são necessárias porque Dumont/SP exige um comportamento diferente do padrão do provedor.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Araraquara/SP — CNAE ativado para emissão',
-        texto:
-          'O município de Araraquara/SP teve a flag de CNAE alterada para true. Algumas prefeituras exigem que o código CNAE (Classificação Nacional de Atividades Econômicas) seja enviado na emissão de NFS-e ao invés do código de serviço padrão. Sem essa configuração, as notas eram rejeitadas por falta do CNAE obrigatório.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Novas propriedades EhProvedorPortalNacional e AnexosSimplesNacional',
-        texto:
-          'Foram adicionadas duas novas propriedades às características dos provedores: EhProvedorPortalNacional (indica se o provedor opera via Portal Nacional de NFS-e) e AnexosSimplesNacional (define os anexos do Simples Nacional aplicáveis). A propriedade NomeProvedor foi removida da base. Os provedores FgMaiss, PrimaxOnline e eTransparencia foram configurados com os anexos do Simples Nacional específicos. Essas mudanças melhoram a precisão das informações tributárias por provedor.',
       },
     ],
   },
