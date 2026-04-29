@@ -2181,6 +2181,7 @@
       h += ovItem('Provedor Atual', '<span class="badge-ws">⚡ ' + c.provedorAtual.nome + '</span>');
       h += ovItem('WebService', c.provedorAtual.webService ? '<span style="color:var(--accent2)">✓ Sim</span>' : '<span style="color:var(--danger)">✗ Não</span>');
       h += ovItem('Robô', c.provedorAtual.robo ? '<span style="color:var(--warn)">⚠ Sim</span>' : '<span class="badge-robot">✗ Não</span>');
+      h += ovItem('Envia Série RPS', c.provedorAtual.naoEnviaSerieRPS ? '<span style="color:var(--danger)">✗ Não</span>' : '<span style="color:var(--accent2)">✓ Sim</span>');
       if (c.provedorAtual.versaoAbrasf) h += ovItem('Versão ABRASF', c.provedorAtual.versaoAbrasf);
       if (c.provedorAtual.namespace) h += ovItem('Namespace', '<code>' + c.provedorAtual.namespace + '</code>');
       h += ovItem('codigoNoProvedor', c.provedorAtual.codigoNoProvedor ? '<code>' + c.provedorAtual.codigoNoProvedor + '</code>' : '<span style="color:var(--muted)">(vazio)</span>');
@@ -2232,6 +2233,9 @@
           { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
           { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
           { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
+          { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial Obrigatório' },
+          { key: 'numeroDoRpsSeraNumeroDaNota', label: 'Nº RPS = Nº da Nota' },
+          { key: 'suportaConsultaSequencialRps', label: 'Consulta Sequencial RPS' },
         ];
         h += '<div class="features-grid" style="margin-top:16px">';
         flags.forEach(function (f) {
@@ -2560,9 +2564,10 @@
           { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
           { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
           { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
-          { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
-          { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
-          { key: 'enviaEmailCliente', label: 'Envia Email ao Cliente' },
+          { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial' },
+          { key: 'numeroDoRpsSeraNumeroDaNota', label: 'Nº RPS = Nº da Nota' },
+          { key: 'numeroLoteDeveSerSequencial', label: 'Lote Sequencial' },
+          { key: 'suportaConsultaSequencialRps', label: 'Consulta Sequencial RPS' },
           { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial' },
           { key: 'numeroLoteDeveSerSequencial', label: 'Lote Sequencial' },
           { key: 'suportaConsultaSequencialRps', label: 'Consulta Sequencial RPS' },
