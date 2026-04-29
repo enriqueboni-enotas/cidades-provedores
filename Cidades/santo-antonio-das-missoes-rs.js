@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://demoiss.abase.com.br/api-nacional'

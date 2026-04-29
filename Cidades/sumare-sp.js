@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoClienteSemEndereco',
     robo: false,
     webService: false,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'ExtendedProperties issRetido = define incidência do imposto, valores válidos: "S, N, I, D, F"',
     urls: {
       homologacao: {

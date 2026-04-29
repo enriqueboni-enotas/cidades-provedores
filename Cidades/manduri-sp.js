@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: '5 é o codigo da cidade na prefeitura encontra no manual, normalmente pelo tópico CÓDIGOS DE CIDADES',
     urls: {
       homologacao: {

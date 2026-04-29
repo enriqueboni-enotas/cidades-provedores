@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://farroupilha-homol.infisc.com.br/portal/Servicos'

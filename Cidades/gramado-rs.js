@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaBethaV2;UsaIPMv2WSv2',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'System.Xml.XmlElement'

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoConsultaSituacaoLote',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '1.0',
     infoAdicional: 'Provedor deve ser adicionada referência e configurado se não irá retornar exception cidade não implementada\n\n					UsaPadrao   criado um padrão para não adicionar referência',
     urls: {

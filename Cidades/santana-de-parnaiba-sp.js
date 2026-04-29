@@ -10,6 +10,7 @@
     codigoNoProvedor: '3;UsaArredondamentoAbntNbr5891',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'EnviaAliquotaQuatroCasasDecimais',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://marilia.sigiss.com.br/testemarilia/ws/sigiss_ws.php'

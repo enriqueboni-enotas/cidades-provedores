@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoPossuiTomadorExterior',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'o usuário do provedor é o cnpj da empresa não é o mesmo login do portal',
     urls: {
       homologacao: {

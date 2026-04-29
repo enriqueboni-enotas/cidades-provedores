@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoUtilizaResponsavelRetencao; NaoSuportaEmissaoNfeClienteSemEndereco; NaoSuportaEmissaoSemCliente',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

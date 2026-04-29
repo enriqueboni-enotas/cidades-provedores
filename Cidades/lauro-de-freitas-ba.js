@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://lftributos.metropolisweb.com.br:9090/webservicenfsehomologa/nfse/services'

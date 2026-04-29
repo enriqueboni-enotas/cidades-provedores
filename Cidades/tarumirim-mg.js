@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Algumas prefeituras podem estar como Ágilis Tecnologia no portal para ativação de prefeitura deve ser importado a refeferência',
     urls: {
       homologacao: {

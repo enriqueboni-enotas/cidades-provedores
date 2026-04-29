@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamento',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://fisco.net.br/wsnfseabrasf/ServicosNFSEAbrasfHomologacao.asmx'

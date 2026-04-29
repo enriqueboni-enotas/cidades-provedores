@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaCnae',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
     urls: {
       homologacao: {

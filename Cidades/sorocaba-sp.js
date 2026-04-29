@@ -10,6 +10,7 @@
     codigoNoProvedor: 'MunicipioIncidenciaInterno; NaoSuportaCancelamentoNFSeAcimaMilReais',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

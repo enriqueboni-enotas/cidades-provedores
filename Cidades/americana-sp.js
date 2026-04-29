@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaProxy',
     robo: false,
     webService: false,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://americanahomologacao.nfe.com.br/nfse/wsnacional2/nfse.asmx'

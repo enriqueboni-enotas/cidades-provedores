@@ -10,6 +10,7 @@
     codigoNoProvedor: 'EnviaValorIssNull',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.03',
     infoAdicional: 'Propriedades do Provedor\n					EnviaValorIssNull -> Não envia a tag ValorIss nas emissões com e sem iss retido\n					FormataCodigoPaisTomador -> Formata código do país com 3 dígitos',
     urls: {

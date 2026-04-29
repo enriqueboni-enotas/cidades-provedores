@@ -10,6 +10,7 @@
     codigoNoProvedor: '517; NaoSuportaCancelamento',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://notabelford.modernizacaopublica.com.br:8054/homologacao/webservices/NFEServices.jws'

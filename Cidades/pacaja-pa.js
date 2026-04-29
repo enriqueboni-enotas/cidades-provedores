@@ -10,6 +10,7 @@
     codigoNoProvedor: '11',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Validar as propriedades para configurar o provedor no xml (CodigoMunicipio) Verificar no portal da prefeitura o código utilizado para adicionar no codigoNoProvedor para realizar o donwload do PDF por link',
     urls: {
       homologacao: {

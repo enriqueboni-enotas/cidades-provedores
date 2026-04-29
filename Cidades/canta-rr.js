@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamento',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Verificar as propriedades no provedor: NaoSuportaCancelamento, NaoSuportaEmissaoNFeSemCliente, NaoSuportaEmissaoNFeClienteSemCpf, NaoSuportaEmissaoNFeClienteSemEndereco',
     urls: {
       homologacao: {

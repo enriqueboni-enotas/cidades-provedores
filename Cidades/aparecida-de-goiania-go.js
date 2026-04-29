@@ -10,6 +10,7 @@
     codigoNoProvedor: 'CancelaEmHomologacao; REGRAPADRAOALIQUOTAABRASFV204',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.issnetonline.com.br/homologaabrasf/webservicenfse204/nfse.asmx'

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoUsaCodigoServicoMunicipal',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://saojosedoalegremg.futurize-nfse.com.br/webservice/homo'

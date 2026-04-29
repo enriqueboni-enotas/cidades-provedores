@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoUtilizaCnae',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
     infoAdicional: 'Validar as propriedades paraconfigurar o provedor no xml (ExigibilidadeISS1, NaoUtilizaCnae)',
     urls: {

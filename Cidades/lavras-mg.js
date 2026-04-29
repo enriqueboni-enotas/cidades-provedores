@@ -10,6 +10,7 @@
     codigoNoProvedor: '1376',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://ws.homolog.nfe-cidades.com.br/ws/lavr'

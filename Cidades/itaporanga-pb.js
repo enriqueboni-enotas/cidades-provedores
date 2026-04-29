@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
     infoAdicional: 'Usuário e senha devem ser preenchidos com as informações de "Token de Acesso" e "Senha NFS-e" respectivamente que são retirados nos Dados Cadastrais do prestador no portal.',
     urls: {

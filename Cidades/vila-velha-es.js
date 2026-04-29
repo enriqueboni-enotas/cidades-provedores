@@ -10,6 +10,7 @@
     codigoNoProvedor: '3, UsaConsultaPorRps',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://tributacao.vilavelha.es.gov.br:8080/tbwhomologacao/services/NotaFiscalNacional',

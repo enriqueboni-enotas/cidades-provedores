@@ -10,6 +10,7 @@
     codigoNoProvedor: '79',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Colocar o código do provedor correto no xml',
     urls: {
       homologacao: {

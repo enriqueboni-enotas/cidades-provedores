@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'ExtendedProperties(Empresa):\n					emissaoWSPortalNacional = define q será executado pelo ws quando houver certificado.\n					regimeApuracaoTributosSN = define regime usado pela empresa para emissão da nota\n					"valorPercentualTributosFederal": {\n					"PercentualTotalFederal": define valor padrao para pecentual federal,\n					"PercentualTotalEstadual": define valor padrao para percentual estadual,\n					"PercentualTotalMunicipal": define valor padrao para percentual municipal\n					}',
     urls: {
       homologacao: {

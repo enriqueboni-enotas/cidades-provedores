@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaUsuarioESenhaAutenticacao',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'UsaUsuarioSenhaAutenticacao -> Usado para instaciar o ws que usa usuario e senha para autenticação',
     urls: {
       homologacao: {

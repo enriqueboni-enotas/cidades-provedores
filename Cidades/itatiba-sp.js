@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaProxy;NaoEnviaValorIssRetido',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'UsaProxy - Para prefeituras que é necessario para comunicação\n					UsaAbrasf204 - Para prefeituras que usam a versão Abrasf 2.04\n					NaoEnviaValorIssRetido - Não envia a tag ValorIssRetido',
     urls: {
       homologacao: {

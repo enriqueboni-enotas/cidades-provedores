@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaProxy',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
     urls: {
       homologacao: {

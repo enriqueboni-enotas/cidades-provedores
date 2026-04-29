@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'GIAPv2 - Algumas prefeituras podem estar com a URL sendo presconinformatica',
     urls: {
       homologacao: {

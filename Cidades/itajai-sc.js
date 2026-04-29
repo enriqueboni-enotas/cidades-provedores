@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaProxy; UsaPdfPrefeitura; NaoEnviaOutrasRetencoesZerada, UsaCodigoNBS',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://nfse-teste.publica.inf.br/itajai_nfse_integracao/Services'

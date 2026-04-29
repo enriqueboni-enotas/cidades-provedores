@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://portal.sertao.rs.gov.br:8184/NfseService_Homolog/NfseService_Homolog'

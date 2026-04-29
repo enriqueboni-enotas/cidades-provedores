@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://isshomo.sefin.fortaleza.ce.gov.br/grpfor-iss/ServiceGinfesImplService'

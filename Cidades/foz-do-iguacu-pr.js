@@ -10,6 +10,7 @@
     codigoNoProvedor: 'EnviaAliquotaISSQNDevidoOutroMunicipioOuOptanteSimplesERetencaoISSQN',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://homologacao.gestaoiss.com.br/ws/nfse.asmx'

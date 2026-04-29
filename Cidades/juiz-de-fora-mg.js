@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: true,
     webService: false,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://nfse.homologacao.pjf.mg.gov.br:4432/WebService.asmx'

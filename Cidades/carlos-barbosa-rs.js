@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaVersaoApi',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'UsaVersaoApi => usa versão api\n					EmiteUmaNotaPorLote => emite apeenas uma nota por lote\n					NaoEnviaSerieRPS => não envia a série do RPS\n					AceitaTomadorSemEndereco => aceita tomador sem endereço',
     urls: {
       homologacao: {

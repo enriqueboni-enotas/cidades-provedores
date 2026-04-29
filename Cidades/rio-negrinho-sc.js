@@ -10,6 +10,7 @@
     codigoNoProvedor: 'RequerAssinatura;NaoUsaRPS',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'System.Xml.XmlElement'

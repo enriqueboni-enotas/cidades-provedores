@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'cnaeNoveDigitos – Propriedade estendida no cadastro da empresa (campo booleano). Quando marcado como true, o CNAE será enviado com 9 dígitos (Somente CNAE cadastrado previamente).',
     urls: {
       homologacao: {

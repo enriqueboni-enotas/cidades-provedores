@@ -10,6 +10,7 @@
     codigoNoProvedor: 'B_SJOSE',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'codigoNoProvedor é o nome da prefeitura entrar em contato para pegar o nome correto',
     urls: {
       homologacao: {

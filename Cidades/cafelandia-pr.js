@@ -10,6 +10,7 @@
     codigoNoProvedor: '57',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.esnfs.com.br:9444/homologacaows/services/Enfs'

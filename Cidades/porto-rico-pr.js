@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.03',
     infoAdicional: 'Versão 2.03 do Elotech funcionando com HTPP\n\n					Propriedades do Provedor\n					EnviaValorIssNull -> Não envia a tag ValorIss nas emissões com e sem iss retido\n					FormataCodigoPaisTomador -> Formata código do país com 3 dígitos',
     urls: {

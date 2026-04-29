@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://homologacao.sudoesteinformatica.com.br:4040/nfsews/webservices/NFEServices.jws'

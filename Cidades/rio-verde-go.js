@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamentoHomologacao',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.0',
     infoAdicional: 'UsaAutenticidadeNota => usado para adicionar a url de verificação na nota',
     urls: {

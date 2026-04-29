@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaAbrasf203;REGRAPADRAOALIQUOTAABRASFV204',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',

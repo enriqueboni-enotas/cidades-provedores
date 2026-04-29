@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoUsaCertificado;UsaProxy',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://nfsehomologacao.joinville.sc.gov.br/nfse_integracao/Services'

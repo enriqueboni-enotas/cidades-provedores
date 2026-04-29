@@ -10,6 +10,7 @@
     codigoNoProvedor: '17',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'codigoNoProvedor é o código da prefeitura entrar em contato para pegar o id',
     urls: {
       homologacao: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'Formatar4CasasDecimaisAliquotaXml; NaoSuportaCancelamento; UsaArredondamentoAbntNbr5891',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://wshomologacaoabrasf1.simplissweb.com.br/nfseservice.svc'

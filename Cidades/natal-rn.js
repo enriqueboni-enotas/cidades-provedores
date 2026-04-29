@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoEnviaAliquotaeBasedeCalculo',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://wsnfsev1homologacao.natal.rn.gov.br:8443/axis2/services/NfseWSServiceV1'

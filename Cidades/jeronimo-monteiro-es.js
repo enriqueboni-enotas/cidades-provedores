@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'pdf gerado por crauler sem autenticação',
     urls: {
       homologacao: {

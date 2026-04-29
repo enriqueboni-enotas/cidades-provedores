@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoClienteSemCpf',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://homologacao.webiss.com.br/ws/nfse.asmx'

@@ -10,6 +10,7 @@
     codigoNoProvedor: '19',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Validar as propriedades para configurar o provedor no xml (CodigoMunicipio)',
     urls: {
       homologacao: {

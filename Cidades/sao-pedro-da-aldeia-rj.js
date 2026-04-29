@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamento',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://notapmspa.modernizacaopublica.com.br:8037/homologacao/webservices/NFEServices.jws'

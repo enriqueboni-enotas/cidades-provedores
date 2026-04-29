@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoClienteSemCpf; NaoSuportaEmissaoSemCliente; NaoSuportaEmissaoClienteSemEndereco',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.gp.srv.br/tributario/homologacao/anfse_ws'

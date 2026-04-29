@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamento;NaoEnviaUFTomadorExterior;NaoPermiteSubstituicaoDeNota',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://sattre.ssinformatica.net/ws/nfse.wsdl'

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'REGRAPADRAOALIQUOTAABRASFV204',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://abrasf.issnetonline.com.br/homologaabrasf/webservicenfse204/nfse.asmx'

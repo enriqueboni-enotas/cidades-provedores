@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '1.01',
     infoAdicional: 'UsaSoap11 Usa versão 1.1 do soap para envio\n					UsaCodigoServicoMunicipalNoItemListaServico  seta cógido servico municipal no itemlistaservico',
     urls: {

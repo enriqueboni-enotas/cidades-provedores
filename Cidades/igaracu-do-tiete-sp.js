@@ -10,6 +10,7 @@
     codigoNoProvedor: '44498467000189',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.webfiscotecnologia.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'

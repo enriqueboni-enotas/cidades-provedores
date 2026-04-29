@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://servicos-dev.mogidascruzes.sp.gov.br/tbw/services/NotaFiscalNacional',

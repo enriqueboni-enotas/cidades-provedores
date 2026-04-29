@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www2.tinus.com.br/csp/testecea/WSNFSE203.Service2.nfseSOAP.cls'

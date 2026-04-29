@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoPossuiTomadorExterior',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'NaoPossuiTomadorExterior => retorna menssagem que não é possivel emitir nota tomador exterior',
     urls: {
       homologacao: {

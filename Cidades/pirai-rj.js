@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: false,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://piraihomologacao.nfe.com.br/nfse/WSNacional2/nfse.asmx'

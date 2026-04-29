@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://nfselote-r.campogrande.ms.gov.br/notafiscal-abrasfv203-ws/NotaFiscalSoap'

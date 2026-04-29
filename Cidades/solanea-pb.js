@@ -10,6 +10,7 @@
     codigoNoProvedor: '201208',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'codigo no provedor e o codigo da prefeitura no portal entrar no endereço https://enfse.elmartecnologia.com.br/ e pegar o codigo do combo',
     urls: {
       homologacao: {

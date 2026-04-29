@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoSemCpfCnpj',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://homologacao.cittaweb.com.br/nfse/api/public/nacional'

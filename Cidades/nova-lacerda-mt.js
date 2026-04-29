@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaCodigoServicoMunicipal;NaoUsaAssinatura',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
     infoAdicional: 'Validar as propriedades para configurar o provedor no xml\n					NaoSuportaCancelamento - Cidade não suporta cancelamento via websevice	EnviaValorIssZerado - Envia ValorIss zerado nas emissões\n					NaoEnviaValorIss - Não envia ValorIss nas emissões\n					NaoUsaAssinatura - Não assina o XML\n					FracionarAliquotaNoXml - Fraciona a aliquota\n					Formatar4CasasDecimaisAliquotaNoXml - Envia Aliquota com 4 casas decimais\n					UsaCodigoServicoMunicipal - Prefeitura usa codigo de serviço municipal\n					NaoUsarItemListaServico - Prefeitura não usa item da lista de serviços\n					UsaCNAE - Prefeitura usa Cnae\n					UsaExigibilidadeIssUm - Exigibilidade sempre igual a 1\n					UsaImpressaoPdfPorLink - Usa o PDF padrão da prefeitura gerado pelo link\n					UsaCidadePrestacaoParaCancelamento - Usa cidade de prestação para realizar o cancelamento\n					NaoSuportaEmissaoSemTomador - Não suporta emissão sem cliente',
     urls: {

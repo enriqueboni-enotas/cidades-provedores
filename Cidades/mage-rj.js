@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaCancelamento; UsaStaticProxy',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://notabuzios.modernizacaopublica.com.br:8038/homologacao/webservices/NFEServices.jws'

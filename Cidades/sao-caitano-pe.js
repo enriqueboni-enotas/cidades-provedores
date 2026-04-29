@@ -10,6 +10,7 @@
     codigoNoProvedor: 'EmiteVersao1',
     robo: true,
     webService: false,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'verificar as propriedades no provedor: EmiteVersao1, UsaItemListaServicoProp, UsaCNAEProp',
     urls: {
       homologacao: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: true,
     webService: false,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'não ativar nesse provedor muito problematico(feito a cidade para cumprir contrato com flagron)',
     urls: {
       homologacao: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaMetodoSincrono',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://sim.digifred.net.br/tiohugo_homolog/nfse/ws/principal'

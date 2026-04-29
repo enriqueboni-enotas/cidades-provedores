@@ -10,6 +10,7 @@
     codigoNoProvedor: '44.229.813/0001-23',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.primaxonline.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'

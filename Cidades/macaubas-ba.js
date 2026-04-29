@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoPermiteCancelamento;AliquotaOptanteRetidoNaFonte',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Provedor SudoesteInformatica utiliza a mesma estrutura que o provedor Freire Algumas prefeituras possuem na URL SudoesteInformatica, mas pertencem ao provedor ModernizacaoPublica, conferir no manual da prefeitura',
     urls: {
       homologacao: {

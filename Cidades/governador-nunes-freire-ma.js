@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
     infoAdicional: 'Preferir ativar versao 2.04 pois a versao 2.01 tem q adicionar o ws de cada cidade. Essa cidade o soapction dele estava errado\n        na chamado da classe do ws PortalFacilWS204 o soapaction e o envelope soap são criados manualmente. Então dá para usar todos as versões. Só ficar atento ao soapaction\n        (verificar pelo fiddler junto com o soapui)',
     urls: {

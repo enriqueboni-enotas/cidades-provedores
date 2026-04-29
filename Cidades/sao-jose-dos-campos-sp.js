@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: true,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.03',
     infoAdicional: 'Verificar as propriedades no provedor: UsaProxy, UsaProxyPDF',
     urls: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: '44435121000131',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.samtributacao.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'

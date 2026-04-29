@@ -10,6 +10,7 @@
     codigoNoProvedor: '1',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',

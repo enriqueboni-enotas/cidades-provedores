@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://sistema.cubatao.sp.gov.br:8080/tbwhomolog/services/NotaFiscalNacional',

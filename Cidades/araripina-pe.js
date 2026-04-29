@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: true,
     webService: false,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
     urls: {
       homologacao: {

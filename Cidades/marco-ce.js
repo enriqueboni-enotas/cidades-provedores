@@ -10,6 +10,7 @@
     codigoNoProvedor: 'EmissaoSemCertificado',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

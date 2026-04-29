@@ -10,6 +10,7 @@
     codigoNoProvedor: '1354',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
     urls: {
       homologacao: {

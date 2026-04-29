@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: false,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://macaehomologacao.nfe.com.br/nfse/wsnacional2/nfse.asmx'

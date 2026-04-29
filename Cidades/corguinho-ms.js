@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Emissao em WS e consulta cancelamento e geracao de pdf Robo',
     urls: {
       homologacao: {

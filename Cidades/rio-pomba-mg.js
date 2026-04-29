@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoSemTomador',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://riopombamg.nfse-futurize.com.br/webservice/homo'

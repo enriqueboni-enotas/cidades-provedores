@@ -10,6 +10,7 @@
     codigoNoProvedor: '51',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Colocar o código do provedor correto no xml se não tiver no comentario dos provedores do equiplano pegar no portal',
     urls: {
       homologacao: {

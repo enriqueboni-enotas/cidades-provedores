@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Metadados Cadastro da Empresa\n					usaArredondarTerceiroDigitoMaiorOuIgualACinco -> Regra de arredondamento que considera o terceiro digito >= 5',
     urls: {
       homologacao: {

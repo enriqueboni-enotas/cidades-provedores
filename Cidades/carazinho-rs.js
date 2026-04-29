@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaIPMv2WSv2;NaoUtilizaCodigoServicoMunicipal',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'System.Xml.XmlElement'

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaConsultaRpsWebservice',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://limeira.iibr.com.br/api/soap/homologacao_notafiscal.php'

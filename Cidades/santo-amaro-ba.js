@@ -10,6 +10,7 @@
     codigoNoProvedor: '14222566000172',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         autenticacao: 'https://siafic-teste.3tecnos.com.br/autenticar',

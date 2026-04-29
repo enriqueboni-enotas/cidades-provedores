@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.01;2.02;2.04',
     infoAdicional: 'Preferir ativar versao 2.04 pois a versao 2.01 tem q adicionar o ws de cada cidade',
     urls: {

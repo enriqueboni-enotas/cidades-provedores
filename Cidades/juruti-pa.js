@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://juruti.siapsistemas.com.br/rpshomologa/servlet/arecepcionarloterpssincrono',

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoSemCliente; EnviaCodigoTributacaoEItemLista; NaoSuportaEmissaoClienteSemCpf',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

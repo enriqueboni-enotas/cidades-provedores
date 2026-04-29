@@ -10,6 +10,7 @@
     codigoNoProvedor: 'SuportaCancelamento',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
     infoAdicional: 'NaoGerarNumeroLote => quando setado irá passar o id igual passado no json',
     urls: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaSoap11',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Verificar as propriedades no provedor: SuportaCancelamento, NaoSuportaEmissaoSemCliente, UsaSoap11',
     urls: {
       homologacao: {

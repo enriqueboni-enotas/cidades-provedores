@@ -10,6 +10,7 @@
     codigoNoProvedor: 'AceitaTomadorSemEndereco',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://santiago-homol.infisc.com.br/portal/Servicos'

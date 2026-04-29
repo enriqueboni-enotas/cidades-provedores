@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaInformacoesComplementares',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://nfse-teste.publica.inf.br/nfse_integracao/Services'

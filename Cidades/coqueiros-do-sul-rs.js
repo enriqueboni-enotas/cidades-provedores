@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://nfse.tcheinfo.com.br/TcheNFSePortal/servlet/com.tche.nfse.anfsewebservice'

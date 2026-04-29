@@ -10,6 +10,7 @@
     codigoNoProvedor: '5',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Para ativação de novos municípios, acesse a página de NFSe da prefeitura e verifique o número final do link e insira o código correspondente \'CodigoNoProvedor\'. \n    Exemplo:http://54.145.30.74:8080/nfse/faces/inicio.xhtml?p=5\n    Neste caso o campo CodigoNoProvedor receberá o valor = 5',
     urls: {
       homologacao: {

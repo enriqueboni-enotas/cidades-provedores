@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Validar as propriedades do provedor para configurar o xml:',
     urls: {
       homologacao: {

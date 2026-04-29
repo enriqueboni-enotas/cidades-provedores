@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoSuportaEmissaoNFeSemCliente;NaoSuportaEmissaoNFeClienteSemEndereco;NaoSuportaCancelamentoNFe;NaoSuportaCancelamentoNFeClienteSemCpf;NaoSuportaCancelamentoNFeSemCliente',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'propriedades do provedor:\n					UsaAutenticidadeNota = salva link de verificação na nota\n					NaoUsaSuportaEmissaoNFeClienteSemCpf => não suporta emissão cliente sem cpf\n					NaoSuportaEmissaoNFeSemCliente => não suporta emissão sem cliente\n					NaoSuportaEmissaoNFeClienteSemEndereco => não suporta cliente sem endereço\n					NumeroRpsDeveSerSequencial => envia numero rps seguenial\n					UsaUmaNotaPorLote => envia apenas uma nota por lote\n					UsaItemListaServico => envia item lista serviço no xml\n					NaoSuportaConsultaSequencialRps => não suporta consulta seguencial por rps\n					NaoSuportaCancelamentoNFe => não suporta cancelamento\n					NaoSuportaCancelamentoNFeClienteSemCpf => não suporta cancelamento cliente sem cpf\n					NaoSuportaCancelamentoNFeSemCliente => não suporta cancelamento sem cliente',
     urls: {
       homologacao: {

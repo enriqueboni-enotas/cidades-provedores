@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Propriedades de configuração:\n					ValidaCpfCnpjTomador => Valida cpfCnpj do Tomador\n					IpmV2 => Usa Versão V2 do IPM\n					EnviaCodigoAtividade => Envia Código da Atividade\n					EnviarAliquota4CasasDecimais => Envia formatado em 4 casas decimais\n					NaoUsaUnidadeServico => seta campo unidade servico para vazio\n					NaoSuportaCancelarNFe => quando prefeitura não aceita cancelamento',
     urls: {
       homologacao: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaVersaoApi',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://saoborja-homol.infisc.com.br/services/nfse/ws/Servicos'

@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: true,
     webService: false,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://testeeiss.barueri.sp.gov.br/nfeservice/wsrps.asmx'

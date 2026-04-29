@@ -10,6 +10,7 @@
     codigoNoProvedor: 'NaoEnviaValorIssRetido;UsaDocumentoTomadorExterior',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Metadados cadastro empresa: naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior\n					Metadados da nota: servicoIncideNoMunicipioPrestador, NumeroProcesso, regimeEspecialTributacao',
     urls: {
       homologacao: {

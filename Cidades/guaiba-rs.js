@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaItemListaServico;EnviaCodigoAtividade;UsaUnidadeServico5;NaoSuportaCancelarNFe',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'System.Xml.XmlElement'

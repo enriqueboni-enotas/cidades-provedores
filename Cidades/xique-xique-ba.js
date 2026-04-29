@@ -10,6 +10,7 @@
     codigoNoProvedor: '13880257000127',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Colocar CNPJ prefeitura no código do provedor',
     urls: {
       homologacao: {

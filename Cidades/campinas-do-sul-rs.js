@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://sistema.campinasdosul.rs.gov.br:8183/NfseService_Homolog/NfseService_Homolog'

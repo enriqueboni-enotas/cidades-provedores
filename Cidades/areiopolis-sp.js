@@ -10,6 +10,7 @@
     codigoNoProvedor: '46634515000144',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'Codigonoprovedor Deve ser configurado como o CNPJ da prefeitura',
     urls: {
       homologacao: {

@@ -10,6 +10,7 @@
     codigoNoProvedor: '45157104000142',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://www.fgmaiss.com.br/issqn/wservice/wsnfe_teste_homologacaopn.php'

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'MunicipioIncidenciaInterno',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://the.dsfweb.com.br/notafiscal-abrasfv203-ws/NotaFiscalSoap'

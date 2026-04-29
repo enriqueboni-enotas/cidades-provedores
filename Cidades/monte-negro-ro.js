@@ -10,6 +10,7 @@
     codigoNoProvedor: '2',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

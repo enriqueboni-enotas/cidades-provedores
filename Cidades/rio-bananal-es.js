@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaServicoMunicipalComFormatacao;NaoUsaCnae;UsaDocumentoTomadorExterior;NaoSuportaEmissaoClienteSemEndereco;NaoSuportaEmissaoSemCliente',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

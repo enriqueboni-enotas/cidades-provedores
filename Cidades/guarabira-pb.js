@@ -10,6 +10,7 @@
     codigoNoProvedor: '201082',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },

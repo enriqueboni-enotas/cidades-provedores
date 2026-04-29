@@ -10,6 +10,7 @@
     codigoNoProvedor: 'DescontoIncondicionadoNull; MunicipioIncidenciaInterno',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://homol-rps.ima.sp.gov.br/notafiscal-abrasfv203-ws/NotaFiscalSoap?wsdl'

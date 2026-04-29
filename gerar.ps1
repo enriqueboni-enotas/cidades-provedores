@@ -499,6 +499,8 @@ foreach ($m in $sorted) {
     if ($codProv) { $js += "    codigoNoProvedor: '$($codProv.Replace("'","\'"))',`n" } else { $js += "    codigoNoProvedor: null,`n" }
     $js += "    robo: $($robo.ToString().ToLower()),`n"
     $js += "    webService: $($ws.ToString().ToLower()),`n"
+    $naoEnviaSerie = if ($codProv -and $codProv.Contains("NaoEnviaSerieRPS")) { 'true' } else { 'false' }
+    $js += "    naoEnviaSerieRPS: $naoEnviaSerie,`n"
     if ($versaoAbrasf) { $js += "    versaoAbrasf: '$versaoAbrasf',`n" }
     if ($infoAdicional) { $js += "    infoAdicional: $(JsStr $infoAdicional),`n" }
     $js += "    urls: {`n"

@@ -10,6 +10,7 @@
     codigoNoProvedor: 'ValidaCpfCnpjTomador;EnviarAliquota4CasasDecimais,ConsultaRpsPorNumeroNota,NaoUsaRPS, UsaDataFatoGerador',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'System.Xml.XmlElement'

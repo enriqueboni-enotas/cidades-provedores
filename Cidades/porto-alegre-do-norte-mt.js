@@ -10,6 +10,7 @@
     codigoNoProvedor: '03238672000128',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     infoAdicional: 'codigonoprovedor é Cnpj Município(Cidade)\n					NaoUsaCodigoCnae = não envia código do Cnae\n					NaoItemLei116 = não envia Item Lei 116\n					UsaItemLei116AtividadeEconomica = para enviar o ItemLei116AtividadeEconomica no xml\n					UsaCodigoCnaeAtividadeEconomica = para enviar o CodigoCnaeAtividadeEconomica no xml\n\n					Metadados Cadastro da empresa:\n					naturezaOperacaoPadrao\n					naturezaOperacaoPadraoExterior',
     urls: {
       homologacao: {

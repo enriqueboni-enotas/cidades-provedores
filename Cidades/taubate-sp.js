@@ -10,6 +10,7 @@
     codigoNoProvedor: 'Usa204',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
     infoAdicional: 'Usa204 = versão mais nova do abrasf migrar sempre para essa versao\n					UsaProxy = usa proxy para enviar\n					UsaV204ComReferencia = usado apenas na versão de santa luzia n ativar essa versao.\n					SuportaEmissaoSemTomador\n					Metadados cadastro empresa = naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior',
     urls: {

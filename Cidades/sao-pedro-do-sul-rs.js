@@ -10,6 +10,7 @@
     codigoNoProvedor: null,
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     versaoAbrasf: '1.01',
     infoAdicional: 'UsaBethaV2 - Usa versão do betha abrasfv2\n					UsaLinkBethaV2 - usa linkbetha abrasfv2 no cancelamento',
     urls: {

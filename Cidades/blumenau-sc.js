@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaArredondamentoAbntNbr5891',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'http://wshomologacaoabrasf.simplissweb.com.br/ws_nfse/nfseservice.svc'

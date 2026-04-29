@@ -10,6 +10,7 @@
     codigoNoProvedor: 'UsaISO88591Envio',
     robo: false,
     webService: true,
+    naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
       },
