@@ -1,13 +1,45 @@
 var jiraChangelogData = [
   {
+    tag: '29/04/2026',
+    titulo: 'Quarta-feira — 29 de Abril',
+    data: '29/04/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada (summary padrão)',
+        texto: '1 card (CE-26223)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Autofix — inutilização de NF',
+        texto: '1 card (CE-26202)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Emissão com tomador do exterior incorreto',
+        texto: '1 card (CE-26078)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Retornar como negada — venda de afiliado',
+        texto: '1 card (CE-26037)',
+      },
+    ],
+  },
+  {
     tag: '28/04/2026',
     titulo: 'Terça-feira — 28 de Abril',
     data: '28/04/2026',
     itens: [
       {
         icon: '🤖',
-        destaque: 'Autofix — retornar NF negada e inutilização',
-        texto: '2 cards (CE-26114, CE-26070)',
+        destaque: 'Autofix — retornar NF negada (summary padrão)',
+        texto: '1 card (CE-26114)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Autofix — inutilização de NF',
+        texto: '1 card (CE-26070)',
       },
     ],
   },
@@ -17,7 +49,7 @@ var jiraChangelogData = [
     data: '27/04/2026',
     itens: [
       {
-        icon: '🐛',
+        icon: '🔧',
         destaque: 'Bug na importação de vendas',
         texto: '1 card (CE-26044)',
       },
@@ -28,7 +60,7 @@ var jiraChangelogData = [
       },
       {
         icon: '🔄',
-        destaque: 'Sincronização de vendas com data de competência da nota',
+        destaque: 'Sincronização de vendas com data de competência da NF',
         texto: '1 card (CE-25878)',
       },
       {
@@ -58,7 +90,7 @@ var jiraChangelogData = [
       },
       {
         icon: '❌',
-        destaque: 'Reclame Aqui — reclamação de cliente',
+        destaque: 'Reclamação Reclame Aqui — erro de emissão',
         texto: '1 card (CE-24806)',
       },
     ],
@@ -100,7 +132,7 @@ var jiraChangelogData = [
       {
         icon: '🤖',
         destaque: 'Autofix — localizar numerações',
-        texto: '3 cards (CE-25968, CE-25967, CE-25821)',
+        texto: '3 cards (CE-25968, CE-25967, CE-25841)',
       },
       {
         icon: '📋',
@@ -109,8 +141,8 @@ var jiraChangelogData = [
       },
       {
         icon: '🤖',
-        destaque: 'Autofix — localizar numerações (outro cliente)',
-        texto: '1 card (CE-25841)',
+        destaque: 'Autofix — localizar numerações (summary padrão)',
+        texto: '1 card (CE-25821)',
       },
     ],
   },
@@ -131,28 +163,13 @@ var jiraChangelogData = [
       },
       {
         icon: '🌐',
-        destaque: 'Notas negadas — cPaisResult quando informado cPaisPrestacao',
+        destaque: 'Notas negadas — erro cPaisResult para tomador exterior',
         texto: '1 card (CE-25664)',
       },
       {
         icon: '🌐',
         destaque: 'Erro ao emitir nota para o exterior',
         texto: '1 card (CE-25663)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro na emissão de notas em Dumont/SP',
-        texto: '1 card (CE-25662)',
-      },
-      {
-        icon: '📊',
-        destaque: 'Destaque código BC ISSQN',
-        texto: '1 card (CE-25525)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Campo código interno do contribuinte',
-        texto: '1 card (CE-25383)',
       },
     ],
   },
@@ -168,8 +185,23 @@ var jiraChangelogData = [
       },
       {
         icon: '🔄',
-        destaque: 'Sincronização de nota',
+        destaque: 'Sincronização de nota fiscal',
         texto: '1 card (CE-25776)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro na emissão de notas em Dumont/SP',
+        texto: '1 card (CE-25662)',
+      },
+      {
+        icon: '📊',
+        destaque: 'Destaque do código BC ISSQN',
+        texto: '1 card (CE-25525)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo código interno do contribuinte',
+        texto: '1 card (CE-25383)',
       },
     ],
   },
@@ -181,7 +213,8 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
       },
     ],
   },
@@ -191,7 +224,7 @@ var jiraChangelogData = [
     data: '20/04/2026',
     itens: [
       {
-        icon: '📋',
+        icon: '🔧',
         destaque: 'Falha no envio do endereço padrão',
         texto: '1 card (CE-25839)',
       },
@@ -216,6 +249,11 @@ var jiraChangelogData = [
         texto: '1 card (CE-25263)',
       },
       {
+        icon: '🔧',
+        destaque: 'Melhoria — campo para preenchimento de IE para PF',
+        texto: '1 card (CE-25163)',
+      },
+      {
         icon: '❌',
         destaque: 'Notas fiscais sendo emitidas incorretamente',
         texto: '1 card (CE-23131)',
@@ -228,9 +266,10 @@ var jiraChangelogData = [
     data: '19/04/2026',
     itens: [
       {
-        icon: '🆕',
-        destaque: 'Melhoria — campo para preenchimento de IE para PF',
-        texto: '1 card (CE-25163)',
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
       },
     ],
   },
@@ -242,39 +281,8 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '17/04/2026',
-    titulo: 'Quinta-feira — 17 de Abril',
-    data: '17/04/2026',
-    itens: [
-      {
-        icon: '📊',
-        destaque: 'Envio de campos IBS e CBS na emissão em Cotia/SP',
-        texto: '1 card (CE-25728)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Habilitar campo CNAE na empresa',
-        texto: '2 cards (CE-25634, CE-25591)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Alteração para SMU em Araraquara/SP',
-        texto: '1 card (CE-25596)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Ajuste emissão tomador exterior em Ibirubá/RS',
-        texto: '1 card (CE-25494)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Alteração de layout da nota fiscal 2.0',
-        texto: '1 card (CE-25446)',
+        texto:
+          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
       },
     ],
   },

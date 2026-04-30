@@ -1,9 +1,28 @@
 ﻿var changelogData = [
   {
+    tag: '29/04/2026',
+    titulo: 'Quarta-feira — 29 de Abril',
+    data: '29/04/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '28/04/2026',
     titulo: 'Terça-feira — 28 de Abril',
     data: '28/04/2026',
     itens: [
+      {
+        icon: '📊',
+        destaque:
+          'NfseNacionalV2 — correção da natureza de operação para tomador do exterior em empresa específica',
+        texto:
+          'Uma empresa que presta serviços para tomadores do exterior estava tendo suas notas emitidas com natureza de operação "3 - Exportação de Serviço", quando o correto para o caso dela era "1 - Operação tributável". O problema ocorria porque o fluxo padrão do NfseNacionalV2 classifica automaticamente notas com tomador estrangeiro como exportação. Foi adicionada uma verificação por ID da empresa no método ResolverNaturezaOperacao que retorna a natureza tributável antes de cair no fluxo genérico de exportação, corrigindo a classificação fiscal dessas notas.',
+      },
       {
         icon: '🌐',
         destaque:
@@ -462,18 +481,6 @@
         destaque: 'Desabilitação de emissão em lote para empresas específicas',
         texto:
           'A emissão em lote foi desabilitada para um conjunto de empresas (tickets #97962, #98006, #98193) que estavam enfrentando problemas ao enviar múltiplas notas simultaneamente. Nesses casos, a emissão em lote gerava duplicidades ou erros de processamento. A desabilitação força o envio individual de cada nota, garantindo maior controle e evitando duplicatas até que a causa raiz seja resolvida.',
-      },
-    ],
-  },
-  {
-    tag: '17/04/2026',
-    titulo: 'Quinta-feira — 17 de Abril',
-    data: '17/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
