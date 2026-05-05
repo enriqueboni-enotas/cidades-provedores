@@ -19,6 +19,9 @@
       producao: {
         recepcaoLote: 'https://speedgov.com.br/wstim/Nfes'
       }
+    },
+    emissaoSemCertificado: {
+      producao: 'https://iss.speedgov.com.br/timon'
     }
   },
   configuracaoProvedor: {

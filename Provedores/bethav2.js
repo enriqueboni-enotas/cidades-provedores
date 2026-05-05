@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 100
+    municipios: 93
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '100' },
+    { key: 'Total Municipios', val: '93' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -64,8 +64,6 @@
       { nome: 'Alto Paraná', uf: 'PR', ibge: '4100608' },
       { nome: 'Arroio dos Ratos', uf: 'RS', ibge: '4301107' },
       { nome: 'Boninal', uf: 'BA', ibge: '2904001' },
-      { nome: 'Braço do Trombudo', uf: 'SC', ibge: '4202859' },
-      { nome: 'Cerro Negro', uf: 'SC', ibge: '4204178' },
       { nome: 'Chapadão do Lageado', uf: 'SC', ibge: '4204194' },
       { nome: 'Coronel Sapucaia', uf: 'MS', ibge: '5003157' },
       { nome: 'Cotriguaçu', uf: 'MT', ibge: '5103379' },
@@ -83,7 +81,6 @@
       { nome: 'Ipumirim', uf: 'SC', ibge: '4207700' },
       { nome: 'Iracema do Oeste', uf: 'PR', ibge: '4110656' },
       { nome: 'Irati', uf: 'SC', ibge: '4207858' },
-      { nome: 'Itapeva', uf: 'MG', ibge: '3133600' },
       { nome: 'Itaquiraí', uf: 'MS', ibge: '5004601' },
       { nome: 'Lajeado Grande', uf: 'SC', ibge: '4209458' },
       { nome: 'Lavras do Sul', uf: 'RS', ibge: '4311502' },
@@ -102,16 +99,13 @@
       { nome: 'Novo Horizonte', uf: 'SC', ibge: '4211652' },
       { nome: 'Novo Xingu', uf: 'RS', ibge: '4313466' },
       { nome: 'Ourizona', uf: 'PR', ibge: '4117404' },
-      { nome: 'Paranacity', uf: 'PR', ibge: '4118105' },
       { nome: 'Passos Maia', uf: 'SC', ibge: '4212270' },
       { nome: 'Paula Freitas', uf: 'PR', ibge: '4118600' },
       { nome: 'Pequi', uf: 'MG', ibge: '3149606' },
       { nome: 'Piatã', uf: 'BA', ibge: '2924306' },
       { nome: 'Pinhalão', uf: 'PR', ibge: '4119202' },
-      { nome: 'Pirajuba', uf: 'MG', ibge: '3150703' },
       { nome: 'Planalto da Serra', uf: 'MT', ibge: '5106455' },
       { nome: 'Planura', uf: 'MG', ibge: '3151602' },
-      { nome: 'Ponte Alta', uf: 'SC', ibge: '4213302' },
       { nome: 'Ponte Alta do Norte', uf: 'SC', ibge: '4213351' },
       { nome: 'Porto Murtinho', uf: 'MS', ibge: '5006903' },
       { nome: 'Porto Vitória', uf: 'PR', ibge: '4120309' },
@@ -125,7 +119,6 @@
       { nome: 'Salto do Itararé', uf: 'PR', ibge: '4122909' },
       { nome: 'Salvador das Missões', uf: 'RS', ibge: '4316477' },
       { nome: 'Santa Helena', uf: 'SC', ibge: '4215554' },
-      { nome: 'Santa Rosa de Lima', uf: 'SC', ibge: '4215604' },
       { nome: 'São Bonifácio', uf: 'SC', ibge: '4215901' },
       { nome: 'São Cristóvão do Sul', uf: 'SC', ibge: '4216057' },
       { nome: 'São Domingos', uf: 'SC', ibge: '4216107' },

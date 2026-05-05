@@ -5,50 +5,40 @@
   ibge: '3133600',
   constante: 'CodigoIBGE.ItapevaMG',
   provedorAtual: {
-    nome: 'BethaV2',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
+    nome: 'Fiorilli',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     versaoAbrasf: '2.02',
-    infoAdicional: 'cadastro empresa:\n					naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior\n\n					Propriedades do provedor: UsaBethav2Cloud: Usa metodo assincrono',
+    infoAdicional: 'Validar as propriedades para configurar o provedor no xml\n					NaoSuportaCancelamento - Cidade não suporta cancelamento via websevice	EnviaValorIssZerado - Envia ValorIss zerado nas emissões\n					NaoEnviaValorIss - Não envia ValorIss nas emissões\n					NaoUsaAssinatura - Não assina o XML\n					FracionarAliquotaNoXml - Fraciona a aliquota\n					Formatar4CasasDecimaisAliquotaNoXml - Envia Aliquota com 4 casas decimais\n					UsaCodigoServicoMunicipal - Prefeitura usa codigo de serviço municipal\n					NaoUsarItemListaServico - Prefeitura não usa item da lista de serviços\n					UsaCNAE - Prefeitura usa Cnae\n					UsaExigibilidadeIssUm - Exigibilidade sempre igual a 1\n					UsaImpressaoPdfPorLink - Usa o PDF padrão da prefeitura gerado pelo link\n					UsaCidadePrestacaoParaCancelamento - Usa cidade de prestação para realizar o cancelamento\n					NaoSuportaEmissaoSemTomador - Não suporta emissão sem cliente',
     urls: {
       homologacao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-test-ws/nfseWS'
+        recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-ws/nfseWS'
+        recepcaoLote: 'https://nfe.sgpcloud.net:9134/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 2,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: null,
-      senha: null,
+      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
+      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
       token: null,
       fraseSecreta: null
     },
-    valorCancelamentoNFe: 60,
-    usaItemListaServico: false,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 0801 ou 0108',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: false,
+    usaCodigoServicoMunicipal: true,
+    helpInscricaoMunicipal: 'Inscrição Municipal pode ou não conter formatação. Em caso de dúvidas, verifique com a prefeitura.',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\n                        Em algumas cidades esse código é conhecido como código de tributação.\r\n                        Exemplo válido: 01.03 ou 17.02',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n                    Você precisa preencher o item da lista de serviço com 6 dígitos sem formatação.Exemplos válidos: 170201 ou 110401',
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
-    autenticidadeNota: {
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaNumeroNota: true
-    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

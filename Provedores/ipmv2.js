@@ -3,11 +3,11 @@
   nome: 'IPMv2',
   empresa: 'IPMv2',
   stats: {
-    municipios: 28
+    municipios: 30
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPMv2' },
-    { key: 'Total Municipios', val: '28' },
+    { key: 'Total Municipios', val: '30' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -78,7 +78,9 @@
       { nome: 'Novo Hamburgo', uf: 'RS', ibge: '4313409' },
       { nome: 'Papanduva', uf: 'SC', ibge: '4212205' },
       { nome: 'Passa Sete', uf: 'RS', ibge: '4314068' },
+      { nome: 'Pirajuba', uf: 'MG', ibge: '3150703' },
       { nome: 'Pouso Alegre', uf: 'MG', ibge: '3152501' },
+      { nome: 'Santa Rosa de Lima', uf: 'SC', ibge: '4215604' },
       { nome: 'São João do Sul', uf: 'SC', ibge: '4216404' },
       { nome: 'São Sepé', uf: 'RS', ibge: '4319604' },
       { nome: 'Saudades', uf: 'SC', ibge: '4217303' }

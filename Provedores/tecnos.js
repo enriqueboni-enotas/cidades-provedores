@@ -3,11 +3,11 @@
   nome: 'Tecnos',
   empresa: 'Tecnos',
   stats: {
-    municipios: 28
+    municipios: 27
   },
   visaoGeral: [
     { key: 'Nome', val: 'Tecnos' },
-    { key: 'Total Municipios', val: '28' },
+    { key: 'Total Municipios', val: '27' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -64,7 +64,6 @@
       { nome: 'São Vendelino', uf: 'RS', ibge: '4319752' },
       { nome: 'Sério', uf: 'RS', ibge: '4320453' },
       { nome: 'Tabaí', uf: 'RS', ibge: '4320859' },
-      { nome: 'Tapejara', uf: 'RS', ibge: '4320909' },
       { nome: 'Terra de Areia', uf: 'RS', ibge: '4321436' },
       { nome: 'Teutônia', uf: 'RS', ibge: '4321451' },
       { nome: 'Tupandi', uf: 'RS', ibge: '4322251' },

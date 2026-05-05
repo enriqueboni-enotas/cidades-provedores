@@ -3,11 +3,11 @@
   nome: 'Publica',
   empresa: 'Publica',
   stats: {
-    municipios: 6
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'Publica' },
-    { key: 'Total Municipios', val: '6' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['SC', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -42,6 +42,7 @@
     'publica': [
       { nome: 'Abelardo Luz', uf: 'SC', ibge: '4200101' },
       { nome: 'Agronômica', uf: 'SC', ibge: '4200309' },
+      { nome: 'Cerro Negro', uf: 'SC', ibge: '4204178' },
       { nome: 'Irani', uf: 'SC', ibge: '4207809' },
       { nome: 'Itajaí', uf: 'SC', ibge: '4208203' },
       { nome: 'Mafra', uf: 'SC', ibge: '4210100' },

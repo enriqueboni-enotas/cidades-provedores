@@ -1,48 +1,48 @@
 ﻿var cidadeDetalhe = {
-  id: 'itapecuru-mirim-ma',
-  nome: 'Itapecuru Mirim',
-  uf: 'MA',
-  ibge: '2105401',
-  constante: 'CodigoIBGE.ItapecuruMirimMA',
+  id: 'sento-se-ba',
+  nome: 'Sento Sé',
+  uf: 'BA',
+  ibge: '2930204',
+  constante: 'CodigoIBGE.SentoSeBA',
   provedorAtual: {
-    nome: 'SIGISSv5',
+    nome: 'Saatri',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    versaoAbrasf: '2.04',
+    infoAdicional: 'Verificar as propriedades no provedor: NaoSuportaCancelamento, NaoSuportaEmissaoNFeSemCliente, NaoSuportaEmissaoNFeClienteSemCpf, NaoSuportaEmissaoNFeClienteSemEndereco',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://testeitapecurumirim.meumunicipio.online/abrasf/ws'
+        recepcaoLote: 'https://homologa-sentose.saatri.com.br/servicos/nfse.svc'
       },
       producao: {
-        recepcaoLote: 'https://abrasfitapecurumirim.meumunicipio.online/ws'
+        recepcaoLote: 'https://sentose.saatri.com.br/servicos/nfse.svc'
       }
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 2,
+    assinaturaDigital: 0,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: null,
-      senha: null,
+      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
+      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
       token: null,
       fraseSecreta: null
     },
-    suportaCancelamentoNFe: false,
+    valorCancelamentoNFe: 60,
     usaCNAE: true,
     usaNBS: true,
-    helpInscricaoMunicipal: 'Informe somente os números sem ponto nem formatação.\r\n\r\nExemplos válidos: 4301000010 ou 131436001',
+    usaItemListaServico: false,
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 5 dígitos (com formatação) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 08.01 ou 14.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 6 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 080100, 040301',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
-    numeroRpsDeveSerSequencial: false,
-    autenticidadeNota: {
-      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
-      UsaChaveAcesso: true
-    },
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
+    suportaCancelamentoNFeSemCliente: false,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 133
+    municipios: 135
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '133' },
+    { key: 'Total Municipios', val: '135' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,9 +82,10 @@
       { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
       { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
       { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
-      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
+      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
+      { nome: 'Braço do Trombudo', uf: 'SC', ibge: '4202859' },
       { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
       { nome: 'Caarapó', uf: 'MS', ibge: '5002407' },
       { nome: 'Cachoeiras de Macacu', uf: 'RJ', ibge: '3300803' },
@@ -163,6 +164,7 @@
       { nome: 'Petrolândia', uf: 'SC', ibge: '4212700' },
       { nome: 'Pinheiral', uf: 'RJ', ibge: '3303955' },
       { nome: 'Piratuba', uf: 'SC', ibge: '4213104' },
+      { nome: 'Ponte Alta', uf: 'SC', ibge: '4213302' },
       { nome: 'Porto União', uf: 'SC', ibge: '4213609' },
       { nome: 'Pouso Redondo', uf: 'SC', ibge: '4213708' },
       { nome: 'Rancho Queimado', uf: 'SC', ibge: '4214300' },

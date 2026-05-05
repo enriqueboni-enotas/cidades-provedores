@@ -3,11 +3,11 @@
   nome: 'GOVBRv2',
   empresa: 'GOVBRv2',
   stats: {
-    municipios: 14
+    municipios: 13
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv2' },
-    { key: 'Total Municipios', val: '14' },
+    { key: 'Total Municipios', val: '13' },
     { key: 'Estados Atendidos', val: ['RS', 'PR', 'RJ', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -60,7 +60,6 @@
     'govbrv2': [
       { nome: 'Areal', uf: 'RJ', ibge: '3300225' },
       { nome: 'Arvorezinha', uf: 'RS', ibge: '4301404' },
-      { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' },
       { nome: 'Cândido Godói', uf: 'RS', ibge: '4304309' },
       { nome: 'Entre-Ijuís', uf: 'RS', ibge: '4306932' },
       { nome: 'Formosa do Oeste', uf: 'PR', ibge: '4108205' },

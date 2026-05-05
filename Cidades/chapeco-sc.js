@@ -40,14 +40,8 @@
     helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     numeroRpsDeveSerSequencial: false,
     autenticidadeNota: {
-      urlVerificacao: 'https://pousoalegre.sigiss.com.br/pousoalegre/consulta/consulta.php',
-      UsaChaveAcesso: false,
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: true,
-      UsaNumeroNota: true,
-      UsaValorNota: true
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },

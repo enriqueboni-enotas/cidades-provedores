@@ -3,11 +3,11 @@
   nome: 'Fisco.NetV2',
   empresa: 'Fisco.NetV2',
   stats: {
-    municipios: 13
+    municipios: 14
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fisco.NetV2' },
-    { key: 'Total Municipios', val: '13' },
+    { key: 'Total Municipios', val: '14' },
     { key: 'Estados Atendidos', val: ['BA', 'PI'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -39,6 +39,7 @@
   },
   municipiosLista: {
     'fisco-netv2': [
+      { nome: 'Baixa Grande', uf: 'BA', ibge: '2902609' },
       { nome: 'Cachoeira', uf: 'BA', ibge: '2904902' },
       { nome: 'Cajueiro da Praia', uf: 'PI', ibge: '2202083' },
       { nome: 'Canudos', uf: 'BA', ibge: '2906824' },

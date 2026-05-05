@@ -3,11 +3,11 @@
   nome: 'TributusV2',
   empresa: 'TributusV2',
   stats: {
-    municipios: 17
+    municipios: 18
   },
   visaoGeral: [
     { key: 'Nome', val: 'TributusV2' },
-    { key: 'Total Municipios', val: '17' },
+    { key: 'Total Municipios', val: '18' },
     { key: 'Estados Atendidos', val: ['PE', 'AL', 'RN'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -56,6 +56,7 @@
       { nome: 'Pombos', uf: 'PE', ibge: '2611309' },
       { nome: 'Quipapá', uf: 'PE', ibge: '2611507' },
       { nome: 'Ribeirão', uf: 'PE', ibge: '2611804' },
+      { nome: 'São Joaquim do Monte', uf: 'PE', ibge: '2613305' },
       { nome: 'Timbaúba', uf: 'PE', ibge: '2615300' },
       { nome: 'Viçosa', uf: 'AL', ibge: '2709400' }
     ]

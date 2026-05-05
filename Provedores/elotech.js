@@ -3,11 +3,11 @@
   nome: 'Elotech',
   empresa: 'Elotech',
   stats: {
-    municipios: 58
+    municipios: 59
   },
   visaoGeral: [
     { key: 'Nome', val: 'Elotech' },
-    { key: 'Total Municipios', val: '58' },
+    { key: 'Total Municipios', val: '59' },
     { key: 'Estados Atendidos', val: ['PR', 'MS', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -83,6 +83,7 @@
       { nome: 'Nova Esperança', uf: 'PR', ibge: '4116901' },
       { nome: 'Nova Londrina', uf: 'PR', ibge: '4117107' },
       { nome: 'Palmeira', uf: 'PR', ibge: '4117701' },
+      { nome: 'Paranacity', uf: 'PR', ibge: '4118105' },
       { nome: 'Perobal', uf: 'PR', ibge: '4118857' },
       { nome: 'Pinhão', uf: 'PR', ibge: '4119301' },
       { nome: 'Piraquara', uf: 'PR', ibge: '4119509' },

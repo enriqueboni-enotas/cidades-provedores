@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 84
+    municipios: 85
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '84' },
+    { key: 'Total Municipios', val: '85' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -28,7 +28,6 @@
     usaDescricaoServico: false,
     usaCNAE: true,
     usaNBS: true,
-    usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
@@ -72,6 +71,7 @@
       { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
       { nome: 'Assis Chateaubriand', uf: 'PR', ibge: '4102000' },
       { nome: 'Boituva', uf: 'SP', ibge: '3507001' },
+      { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' },
       { nome: 'Cachoeira do Sul', uf: 'RS', ibge: '4303004' },
       { nome: 'Caeté', uf: 'MG', ibge: '3110004' },
       { nome: 'Canguçu', uf: 'RS', ibge: '4304507' },

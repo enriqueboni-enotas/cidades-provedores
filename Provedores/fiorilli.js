@@ -3,11 +3,11 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 219
+    municipios: 221
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '219' },
+    { key: 'Total Municipios', val: '221' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'TO', 'PB', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -80,8 +80,8 @@
       { nome: 'Brasilândia', uf: 'MS', ibge: '5002308' },
       { nome: 'Braúna', uf: 'SP', ibge: '3507704' },
       { nome: 'Brodowski', uf: 'SP', ibge: '3507803' },
-      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Buritis', uf: 'RO', ibge: '1100452' },
+      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Cachoeira de Minas', uf: 'MG', ibge: '3109709' },
       { nome: 'Cafelândia', uf: 'SP', ibge: '3508801' },
       { nome: 'Cajobi', uf: 'SP', ibge: '3509304' },
@@ -135,6 +135,7 @@
       { nome: 'Itajobi', uf: 'SP', ibge: '3521903' },
       { nome: 'Itambé', uf: 'PE', ibge: '2607653' },
       { nome: 'Itapecerica', uf: 'MG', ibge: '3133501' },
+      { nome: 'Itapeva', uf: 'MG', ibge: '3133600' },
       { nome: 'Itaporã', uf: 'MS', ibge: '5004502' },
       { nome: 'Itaporanga', uf: 'SP', ibge: '3522802' },
       { nome: 'Itapuí', uf: 'SP', ibge: '3522901' },
@@ -222,6 +223,7 @@
       { nome: 'Presidente Médici', uf: 'RO', ibge: '1100254' },
       { nome: 'Promissão', uf: 'SP', ibge: '3541604' },
       { nome: 'Quintana', uf: 'SP', ibge: '3542008' },
+      { nome: 'Resplendor', uf: 'MG', ibge: '3154309' },
       { nome: 'Ribas do Rio Pardo', uf: 'MS', ibge: '5007109' },
       { nome: 'Ribeirão Bonito', uf: 'SP', ibge: '3542909' },
       { nome: 'Ribeirãozinho', uf: 'MT', ibge: '5107198' },
