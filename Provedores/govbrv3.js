@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 82
+    municipios: 84
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '82' },
+    { key: 'Total Municipios', val: '84' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -85,6 +85,7 @@
       { nome: 'Eldorado do Sul', uf: 'RS', ibge: '4306767' },
       { nome: 'Encruzilhada do Sul', uf: 'RS', ibge: '4306908' },
       { nome: 'Euclides da Cunha Paulista', uf: 'SP', ibge: '3515350' },
+      { nome: 'Faxinal do Soturno', uf: 'RS', ibge: '4308003' },
       { nome: 'Feliz', uf: 'RS', ibge: '4308102' },
       { nome: 'Getúlio Vargas', uf: 'RS', ibge: '4308904' },
       { nome: 'Guaporé', uf: 'RS', ibge: '4309407' },
@@ -121,6 +122,7 @@
       { nome: 'Porto Feliz', uf: 'SP', ibge: '3540606' },
       { nome: 'Presidente Bernardes', uf: 'SP', ibge: '3541208' },
       { nome: 'Presidente Epitácio', uf: 'SP', ibge: '3541307' },
+      { nome: 'Quaraí', uf: 'RS', ibge: '4315305' },
       { nome: 'Regente Feijó', uf: 'SP', ibge: '3542404' },
       { nome: 'Rio Pardo', uf: 'RS', ibge: '4315701' },
       { nome: 'Rolândia', uf: 'PR', ibge: '4122404' },

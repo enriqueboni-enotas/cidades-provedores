@@ -1,11 +1,11 @@
 ﻿var cidadeDetalhe = {
-  id: 'natal-rn',
-  nome: 'Natal',
-  uf: 'RN',
-  ibge: '2408102',
-  constante: 'CodigoIBGE.NatalRN',
+  id: 'quarai-rs',
+  nome: 'Quaraí',
+  uf: 'RS',
+  ibge: '4315305',
+  constante: 'CodigoIBGE.QuaraiRS',
   provedorAtual: {
-    nome: 'NfseNacionalV2',
+    nome: 'GOVBRv3',
     namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
@@ -13,11 +13,13 @@
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        recepcaoLote: 'https://webapp1-quarai.cidade360.cloud/nfse.API/NotaNacional',
+        consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
@@ -42,23 +44,22 @@
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
-    usaCNAE: false,
+    usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
-    suportaEmissaoParalela: true,
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
-    numeroLotesParalelos: 5,
     autenticidadeNota: {
       urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
       UsaChaveAcesso: true

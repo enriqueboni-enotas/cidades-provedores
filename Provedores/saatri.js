@@ -3,12 +3,12 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 39
+    municipios: 41
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '39' },
-    { key: 'Estados Atendidos', val: ['BA', 'RR'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '41' },
+    { key: 'Estados Atendidos', val: ['BA', 'RR', 'SC'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -56,6 +56,7 @@
       { nome: 'Alto Alegre', uf: 'RR', ibge: '1400050' },
       { nome: 'Barra', uf: 'BA', ibge: '2902708' },
       { nome: 'Barra da Estiva', uf: 'BA', ibge: '2902807' },
+      { nome: 'Belmonte', uf: 'SC', ibge: '4202156' },
       { nome: 'Bom Jesus da Lapa', uf: 'BA', ibge: '2903904' },
       { nome: 'Brejões', uf: 'BA', ibge: '2904308' },
       { nome: 'Caem', uf: 'BA', ibge: '2905107' },
@@ -89,6 +90,7 @@
       { nome: 'Rorainópolis', uf: 'RR', ibge: '1400472' },
       { nome: 'Santa Bárbara', uf: 'BA', ibge: '2927507' },
       { nome: 'Santana', uf: 'BA', ibge: '2928208' },
+      { nome: 'São Sebastião do Passé', uf: 'BA', ibge: '2929503' },
       { nome: 'Serra Dourada', uf: 'BA', ibge: '2930303' },
       { nome: 'Teolândia', uf: 'BA', ibge: '2931608' },
       { nome: 'Ubatã', uf: 'BA', ibge: '2932309' }

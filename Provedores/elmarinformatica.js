@@ -3,11 +3,11 @@
   nome: 'ElmarInformatica',
   empresa: 'ElmarInformatica',
   stats: {
-    municipios: 9
+    municipios: 10
   },
   visaoGeral: [
     { key: 'Nome', val: 'ElmarInformatica' },
-    { key: 'Total Municipios', val: '9' },
+    { key: 'Total Municipios', val: '10' },
     { key: 'Estados Atendidos', val: ['PB', 'PI'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -51,6 +51,7 @@
   },
   municipiosLista: {
     'elmarinformatica': [
+      { nome: 'Alhandra', uf: 'PB', ibge: '2500601' },
       { nome: 'Esperança', uf: 'PB', ibge: '2506004' },
       { nome: 'Floriano', uf: 'PI', ibge: '2203909' },
       { nome: 'Guarabira', uf: 'PB', ibge: '2506301' },

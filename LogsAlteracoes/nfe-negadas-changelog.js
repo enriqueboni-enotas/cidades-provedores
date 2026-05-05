@@ -1,5 +1,353 @@
 var nfeNegadasData = [
   {
+    tag: '04/05/2026',
+    titulo: 'Segunda-feira — 04 de Maio',
+    data: '04/05/2026',
+    itens: [
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.806 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
+        texto: '651 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '633 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '490 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Código CNAE difere do registrado na Prefeitura',
+        texto: '473 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
+        texto: '298 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '245 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do Tomador informado inválido',
+        texto: '227 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo permitido (1 a 49.999)',
+        texto: '215 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório não informado',
+        texto: '207 notas',
+      },
+    ],
+  },
+  {
+    tag: '03/05/2026',
+    titulo: 'Domingo — 03 de Maio',
+    data: '03/05/2026',
+    itens: [
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.377 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '847 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'CFOP do produto deve conter apenas números',
+        texto: '653 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '504 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
+        texto: '407 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação informado é inválido',
+        texto: '240 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
+        texto: '236 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo permitido (1 a 49.999)',
+        texto: '228 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do destinatário obrigatório não informado',
+        texto: '200 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '177 notas',
+      },
+    ],
+  },
+  {
+    tag: '02/05/2026',
+    titulo: 'Sábado — 02 de Maio',
+    data: '02/05/2026',
+    itens: [
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.372 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '798 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '592 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'CFOP do produto deve conter apenas números',
+        texto: '468 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do destinatário obrigatório não informado',
+        texto: '406 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo permitido (1 a 49.999)',
+        texto: '288 notas',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Rejeição 388 — CST do IPI incompatível com enquadramento legal',
+        texto: '255 notas',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Serviço não permite retenção de ISS',
+        texto: '230 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão automática interrompida — app desativado',
+        texto: '229 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
+        texto: '228 notas',
+      },
+    ],
+  },
+  {
+    tag: '01/05/2026',
+    titulo: 'Quinta-feira — 01 de Maio',
+    data: '01/05/2026',
+    itens: [
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.674 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '820 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '599 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'CFOP do produto deve conter apenas números',
+        texto: '414 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Rejeição 656 — Consumo Indevido',
+        texto: '369 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do destinatário obrigatório não informado',
+        texto: '267 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
+        texto: '244 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
+        texto: '225 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Campo codigoNBS obrigatório não informado',
+        texto: '198 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão automática interrompida — app desativado',
+        texto: '195 notas',
+      },
+    ],
+  },
+  {
+    tag: '30/04/2026',
+    titulo: 'Quarta-feira — 30 de Abril',
+    data: '30/04/2026',
+    itens: [
+      {
+        icon: '🌐',
+        destaque:
+          'Tomador com cidade não identificada e sem país informado (exterior)',
+        texto: '2.548 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'XML não compatível com Schema — RazaoSocial vazia',
+        texto: '1.884 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.701 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Falha na autenticação com credenciais da prefeitura',
+        texto: '1.584 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
+        texto: '1.086 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.024 notas',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Erro ao enviar requisição (An error occurred while sending the request)',
+        texto: '1.000 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'Telefone do cliente inválido (deve ter 10-11 dígitos)',
+        texto: '980 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Rejeição 656 — Consumo Indevido',
+        texto: '851 notas',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Rejeição 781 — Emissor não habilitado para emissão NF-e/NFC-e',
+        texto: '749 notas',
+      },
+    ],
+  },
+  {
+    tag: '29/04/2026',
+    titulo: 'Terça-feira — 29 de Abril',
+    data: '29/04/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Cidade não encontrada no cadastro IBGE (chamada API)',
+        texto: '7.388 notas',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Falha no Schema XML — NullReferenceException na validação de CPF/CNPJ',
+        texto: '5.969 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série do RPS fora do intervalo permitido (1 a 49.999)',
+        texto: '2.482 notas',
+      },
+      {
+        icon: '🧮',
+        destaque: 'IBS/CBS não preenchido corretamente',
+        texto: '1.824 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
+        texto: '1.701 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.468 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação informado é inválido',
+        texto: '1.001 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '856 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
+        texto: '668 notas',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Tomador com cidade não identificada e sem país informado (exterior)',
+        texto: '648 notas',
+      },
+    ],
+  },
+  {
     tag: '28/04/2026',
     titulo: 'Terça-feira — 28 de Abril',
     data: '28/04/2026',
@@ -348,352 +696,6 @@ var nfeNegadasData = [
         icon: '📋',
         destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '299 notas',
-      },
-    ],
-  },
-  {
-    tag: '22/04/2026',
-    titulo: 'Terça-feira — 22 de Abril',
-    data: '22/04/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '2.154 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.667 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa do tipo de emissor',
-        texto: '1.627 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'CNPJ não encontrado na base — prestador não inscrito no município',
-        texto: '1.026 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '611 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Número do RPS inválido — fora da sequência do prestador',
-        texto: '565 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '337 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '335 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ do tomador incorreto',
-        texto: '328 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '302 notas',
-      },
-    ],
-  },
-  {
-    tag: '21/04/2026',
-    titulo: 'Segunda-feira — 21 de Abril',
-    data: '21/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.642 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.549 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'RPS já informado — número duplicado',
-        texto: '373 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação inválido',
-        texto: '355 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '308 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '303 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
-        texto: '277 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '223 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'IE do destinatário não informada (rejeição 232)',
-        texto: '187 notas',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Correção não identificada (campo vazio)',
-        texto: '171 notas',
-      },
-    ],
-  },
-  {
-    tag: '20/04/2026',
-    titulo: 'Domingo — 20 de Abril',
-    data: '20/04/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.811 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.620 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '921 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo permitido (1 a 49.999)',
-        texto: '857 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '629 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Rejeição: Falha no Schema XML da NF-e (natOp)',
-        texto: '317 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Simples Nacional — Anexo não informado (erro Portal Nacional)',
-        texto: '299 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação inválido',
-        texto: '276 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '276 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '271 notas',
-      },
-    ],
-  },
-  {
-    tag: '19/04/2026',
-    titulo: 'Sábado — 19 de Abril',
-    data: '19/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.526 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.505 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '339 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Falha Schema XML — elemento xEstProvReg inválido no endereço exterior',
-        texto: '339 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '335 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa do tipo de emissor',
-        texto: '317 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '251 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
-        texto: '200 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa 80000-89999',
-        texto: '190 notas',
-      },
-      {
-        icon: '📊',
-        destaque: 'Alíquota ISS do Simples Nacional divergente',
-        texto: '183 notas',
-      },
-    ],
-  },
-  {
-    tag: '18/04/2026',
-    titulo: 'Sexta-feira — 18 de Abril',
-    data: '18/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.782 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.613 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '449 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '343 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '297 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '272 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Endereço do tomador incompleto ou inválido — prefeitura não suporta',
-        texto: '238 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
-        texto: '215 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa do tipo de emissor',
-        texto: '206 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa 80000-89999',
-        texto: '191 notas',
-      },
-    ],
-  },
-  {
-    tag: '17/04/2026',
-    titulo: 'Quinta-feira — 17 de Abril',
-    data: '17/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '2.067 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.244 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '642 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '411 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação inválido',
-        texto: '405 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'Endereço do tomador obrigatório não enviado',
-        texto: '361 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Número do RPS inválido (999)',
-        texto: '293 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série da DPS fora da faixa 80000-89999',
-        texto: '272 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'CFOP inexistente — rejeição 770',
-        texto: '259 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'Série do RPS fora do intervalo 1-49999',
-        texto: '201 notas',
       },
     ],
   },

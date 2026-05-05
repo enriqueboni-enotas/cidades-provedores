@@ -1,22 +1,155 @@
 var jiraChangelogData = [
   {
+    tag: '04/05/2026',
+    titulo: 'Segunda-feira — 04 de Maio',
+    data: '04/05/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '1 card (CE-26351)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Rejeição NFS-e por caracteres especiais no tomador',
+        texto: '1 card (CE-26301)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Bug ao salvar atualização no cliente',
+        texto: '1 card (CE-26245)',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Bug no cadastro de endereço (município/UF) gerando rejeição de Schema',
+        texto: '1 card (CE-26228)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Venda não editável — validação',
+        texto: '1 card (CE-26152)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Fila travada — ajuste de layout em Faxinal do Soturno/RS',
+        texto: '1 card (CE-26013)',
+      },
+      {
+        icon: '🆕',
+        destaque: 'Disponibilizar campo CNAE — Provedor TinusV2',
+        texto: '1 card (CE-25999)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Notas para clientes exterior',
+        texto: '1 card (CE-25970)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Parametrização para emissão',
+        texto: '1 card (CE-25760)',
+      },
+    ],
+  },
+  {
+    tag: '03/05/2026',
+    titulo: 'Domingo — 03 de Maio',
+    data: '03/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto:
+          'Todos os tickets deste dia já foram contabilizados em dias mais recentes.',
+      },
+    ],
+  },
+  {
+    tag: '02/05/2026',
+    titulo: 'Sábado — 02 de Maio',
+    data: '02/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '01/05/2026',
+    titulo: 'Sexta-feira — 01 de Maio',
+    data: '01/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '30/04/2026',
+    titulo: 'Quinta-feira — 30 de Abril',
+    data: '30/04/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '1 card (CE-26303)',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Rejeição NFS-e — XML não compatível com Schema / Tag CPF/CNPJ',
+        texto: '1 card (CE-26185)',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Localizar numerações',
+        texto: '1 card (CE-26080)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Correção NFS-e tomador estrangeiro em Caxias do Sul/RS',
+        texto: '1 card (CE-26011)',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Enviar município do evento',
+        texto: '1 card (CE-25949)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'ISS Tomadores do Exterior em São Gonçalo do Pará/MG',
+        texto: '1 card (CE-25946)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Vendas não são importadas',
+        texto: '1 card (CE-25212)',
+      },
+    ],
+  },
+  {
     tag: '29/04/2026',
     titulo: 'Quarta-feira — 29 de Abril',
     data: '29/04/2026',
     itens: [
       {
         icon: '🤖',
-        destaque: 'Autofix — retornar NF negada (summary padrão)',
+        destaque: 'Autofix — retornar NF negada',
         texto: '1 card (CE-26223)',
       },
       {
-        icon: '🧾',
+        icon: '🤖',
         destaque: 'Autofix — inutilização de NF',
         texto: '1 card (CE-26202)',
       },
       {
         icon: '🌐',
-        destaque: 'Emissão com tomador do exterior incorreto',
+        destaque: 'Notas com tomador do serviço no exterior incorreto',
         texto: '1 card (CE-26078)',
       },
       {
@@ -33,11 +166,11 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '🤖',
-        destaque: 'Autofix — retornar NF negada (summary padrão)',
+        destaque: 'Autofix — retornar NF negada',
         texto: '1 card (CE-26114)',
       },
       {
-        icon: '🧾',
+        icon: '🤖',
         destaque: 'Autofix — inutilização de NF',
         texto: '1 card (CE-26070)',
       },
@@ -49,18 +182,18 @@ var jiraChangelogData = [
     data: '27/04/2026',
     itens: [
       {
-        icon: '🔧',
+        icon: '📋',
         destaque: 'Bug na importação de vendas',
         texto: '1 card (CE-26044)',
       },
       {
         icon: '🏙️',
-        destaque: 'Liberação de MEI para emissão via Portal Nacional',
+        destaque: 'Liberação de cliente MEI para emissão via Portal Nacional',
         texto: '1 card (CE-25880)',
       },
       {
         icon: '🔄',
-        destaque: 'Sincronização de vendas com data de competência da NF',
+        destaque: 'Sincronizar vendas com data de competência da nota fiscal',
         texto: '1 card (CE-25878)',
       },
       {
@@ -70,17 +203,17 @@ var jiraChangelogData = [
       },
       {
         icon: '🔧',
-        destaque: 'Instabilidade no painel e ajuste de SMU',
+        destaque: 'Instabilidade no Painel e ajuste de SMU',
         texto: '1 card (CE-25652)',
       },
       {
         icon: '🏙️',
-        destaque: 'Atualização de sistema de notas em Socorro/SP',
+        destaque: 'Atualização sistema de notas em Socorro/SP',
         texto: '1 card (CE-25283)',
       },
       {
-        icon: '📋',
-        destaque: 'Atualização de layout XML em Cotia/SP',
+        icon: '🏙️',
+        destaque: 'Atualização layout XML em Cotia/SP',
         texto: '1 card (CE-25229)',
       },
       {
@@ -89,8 +222,8 @@ var jiraChangelogData = [
         texto: '1 card (CE-25218)',
       },
       {
-        icon: '❌',
-        destaque: 'Reclamação Reclame Aqui — erro de emissão',
+        icon: '📋',
+        destaque: 'Reclame Aqui — atendimento',
         texto: '1 card (CE-24806)',
       },
     ],
@@ -103,7 +236,8 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        texto:
+          'Todos os tickets deste dia já foram contabilizados em dias mais recentes.',
       },
     ],
   },
@@ -135,8 +269,8 @@ var jiraChangelogData = [
         texto: '3 cards (CE-25968, CE-25967, CE-25841)',
       },
       {
-        icon: '📋',
-        destaque: 'Configuração de infAdFisco em Pinhais/PR',
+        icon: '🏙️',
+        destaque: 'infAdFisco em Pinhais/PR',
         texto: '1 card (CE-25951)',
       },
       {
@@ -158,131 +292,18 @@ var jiraChangelogData = [
       },
       {
         icon: '🔒',
-        destaque: 'Bug de certificado digital',
+        destaque: 'Bug certificado digital',
         texto: '1 card (CE-25769)',
       },
       {
         icon: '🌐',
-        destaque: 'Notas negadas — erro cPaisResult para tomador exterior',
+        destaque: 'Notas negadas — cPaisResult quando informado cPaisPrestacao',
         texto: '1 card (CE-25664)',
       },
       {
         icon: '🌐',
-        destaque: 'Erro ao emitir nota para o exterior',
+        destaque: 'Erro ao emitir nota para o Exterior',
         texto: '1 card (CE-25663)',
-      },
-    ],
-  },
-  {
-    tag: '22/04/2026',
-    titulo: 'Terça-feira — 22 de Abril',
-    data: '22/04/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Faturamento de excedentes indevido',
-        texto: '1 card (CE-25807)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de nota fiscal',
-        texto: '1 card (CE-25776)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro na emissão de notas em Dumont/SP',
-        texto: '1 card (CE-25662)',
-      },
-      {
-        icon: '📊',
-        destaque: 'Destaque do código BC ISSQN',
-        texto: '1 card (CE-25525)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo código interno do contribuinte',
-        texto: '1 card (CE-25383)',
-      },
-    ],
-  },
-  {
-    tag: '21/04/2026',
-    titulo: 'Segunda-feira — 21 de Abril',
-    data: '21/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
-      },
-    ],
-  },
-  {
-    tag: '20/04/2026',
-    titulo: 'Domingo — 20 de Abril',
-    data: '20/04/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque: 'Falha no envio do endereço padrão',
-        texto: '1 card (CE-25839)',
-      },
-      {
-        icon: '🤖',
-        destaque: 'Autofix — inutilização de NF',
-        texto: '1 card (CE-25822)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Faturamento indevido de excedentes',
-        texto: '1 card (CE-25750)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Emissão para tomador exterior em Rio das Ostras/RJ',
-        texto: '1 card (CE-25551)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Emissão de notas exterior via Portal Nacional',
-        texto: '1 card (CE-25263)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Melhoria — campo para preenchimento de IE para PF',
-        texto: '1 card (CE-25163)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Notas fiscais sendo emitidas incorretamente',
-        texto: '1 card (CE-23131)',
-      },
-    ],
-  },
-  {
-    tag: '19/04/2026',
-    titulo: 'Sábado — 19 de Abril',
-    data: '19/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
-      },
-    ],
-  },
-  {
-    tag: '18/04/2026',
-    titulo: 'Sexta-feira — 18 de Abril',
-    data: '18/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket resolvido neste dia (todos os cards retornados pelo DURING já foram contados em dias mais recentes).',
       },
     ],
   },

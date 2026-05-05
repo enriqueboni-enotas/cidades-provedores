@@ -3,11 +3,11 @@
   nome: 'GOVBRv2',
   empresa: 'GOVBRv2',
   stats: {
-    municipios: 15
+    municipios: 14
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv2' },
-    { key: 'Total Municipios', val: '15' },
+    { key: 'Total Municipios', val: '14' },
     { key: 'Estados Atendidos', val: ['RS', 'PR', 'RJ', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -63,7 +63,6 @@
       { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' },
       { nome: 'Cândido Godói', uf: 'RS', ibge: '4304309' },
       { nome: 'Entre-Ijuís', uf: 'RS', ibge: '4306932' },
-      { nome: 'Faxinal do Soturno', uf: 'RS', ibge: '4308003' },
       { nome: 'Formosa do Oeste', uf: 'PR', ibge: '4108205' },
       { nome: 'Garruchos', uf: 'RS', ibge: '4308656' },
       { nome: 'Guapirama', uf: 'PR', ibge: '4109005' },

@@ -3,11 +3,11 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 113
+    municipios: 115
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '113' },
+    { key: 'Total Municipios', val: '115' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -121,6 +121,7 @@
       { nome: 'Marechal Cândido Rondon', uf: 'PR', ibge: '4114609' },
       { nome: 'Maripá', uf: 'PR', ibge: '4115358' },
       { nome: 'Massaranduba', uf: 'SC', ibge: '4210605' },
+      { nome: 'Matinhos', uf: 'PR', ibge: '4115705' },
       { nome: 'Modelo', uf: 'SC', ibge: '4210902' },
       { nome: 'Morro da Fumaça', uf: 'SC', ibge: '4211207' },
       { nome: 'Nova Erechim', uf: 'SC', ibge: '4211405' },
@@ -128,6 +129,7 @@
       { nome: 'Osório', uf: 'RS', ibge: '4313508' },
       { nome: 'Ouro', uf: 'SC', ibge: '4211801' },
       { nome: 'Ouro Verde do Oeste', uf: 'PR', ibge: '4117453' },
+      { nome: 'Paial', uf: 'SC', ibge: '4211876' },
       { nome: 'Palhoça', uf: 'SC', ibge: '4211900' },
       { nome: 'Palmeira das Missões', uf: 'RS', ibge: '4313706' },
       { nome: 'Palmitinho', uf: 'RS', ibge: '4313805' },

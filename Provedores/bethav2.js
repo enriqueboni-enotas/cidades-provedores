@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 102
+    municipios: 100
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '102' },
+    { key: 'Total Municipios', val: '100' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -63,7 +63,6 @@
       { nome: 'Alto Garças', uf: 'MT', ibge: '5100409' },
       { nome: 'Alto Paraná', uf: 'PR', ibge: '4100608' },
       { nome: 'Arroio dos Ratos', uf: 'RS', ibge: '4301107' },
-      { nome: 'Belmonte', uf: 'SC', ibge: '4202156' },
       { nome: 'Boninal', uf: 'BA', ibge: '2904001' },
       { nome: 'Braço do Trombudo', uf: 'SC', ibge: '4202859' },
       { nome: 'Cerro Negro', uf: 'SC', ibge: '4204178' },
@@ -103,7 +102,6 @@
       { nome: 'Novo Horizonte', uf: 'SC', ibge: '4211652' },
       { nome: 'Novo Xingu', uf: 'RS', ibge: '4313466' },
       { nome: 'Ourizona', uf: 'PR', ibge: '4117404' },
-      { nome: 'Paial', uf: 'SC', ibge: '4211876' },
       { nome: 'Paranacity', uf: 'PR', ibge: '4118105' },
       { nome: 'Passos Maia', uf: 'SC', ibge: '4212270' },
       { nome: 'Paula Freitas', uf: 'PR', ibge: '4118600' },
