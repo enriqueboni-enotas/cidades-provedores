@@ -1,5 +1,62 @@
 var nfeNegadasData = [
   {
+    tag: '05/05/2026',
+    titulo: 'Terça-feira — 05 de Maio',
+    data: '05/05/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
+        texto: '2.516 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série da DPS não pertence à faixa do tipo de emissor',
+        texto: '1.813 notas',
+      },
+      {
+        icon: '🔒',
+        destaque: 'Certificado digital vencido',
+        texto: '1.551 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '711 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro desconhecido',
+        texto: '601 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Dados do contribuinte não constam do cadastro da prefeitura',
+        texto: '573 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'Código NBS obrigatório para comércio exterior',
+        texto: '527 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '520 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Rejeição 228 — Data de Emissão muito atrasada',
+        texto: '335 notas',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Tamanho do registro diferente da especificação do layout',
+        texto: '327 notas',
+      },
+    ],
+  },
+  {
     tag: '04/05/2026',
     titulo: 'Segunda-feira — 04 de Maio',
     data: '04/05/2026',
@@ -12,7 +69,7 @@ var nfeNegadasData = [
       {
         icon: '🔧',
         destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
-        texto: '651 notas',
+        texto: '690 notas',
       },
       {
         icon: '💰',
@@ -22,7 +79,7 @@ var nfeNegadasData = [
       {
         icon: '📮',
         destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '490 notas',
+        texto: '586 notas',
       },
       {
         icon: '🏙️',
@@ -349,7 +406,7 @@ var nfeNegadasData = [
   },
   {
     tag: '28/04/2026',
-    titulo: 'Terça-feira — 28 de Abril',
+    titulo: 'Segunda-feira — 28 de Abril',
     data: '28/04/2026',
     itens: [
       {
@@ -636,66 +693,6 @@ var nfeNegadasData = [
         icon: '📋',
         destaque: 'Campo codigoNBS obrigatório não informado',
         texto: '288 notas',
-      },
-    ],
-  },
-  {
-    tag: '23/04/2026',
-    titulo: 'Quarta-feira — 23 de Abril',
-    data: '23/04/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '6.093 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.459 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.347 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '745 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'CST com benefício fiscal sem código informado (rejeição 930)',
-        texto: '657 notas',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Percentual do tributo federal sem valor individualizado dos tributos',
-        texto: '496 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '363 notas',
-      },
-      {
-        icon: '🧾',
-        destaque:
-          'Código de tributação municipal inexistente ou não administrado pelo município',
-        texto: '363 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação informado é inválido',
-        texto: '350 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Campo codigoNBS obrigatório não informado',
-        texto: '299 notas',
       },
     ],
   },
