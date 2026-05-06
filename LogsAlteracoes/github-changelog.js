@@ -1,13 +1,66 @@
 ﻿var changelogData = [
   {
-    tag: '05/05/2026',
-    titulo: 'Terça-feira — 05 de Maio',
-    data: '05/05/2026',
+    tag: '06/05/2026',
+    titulo: 'Quarta-feira — 06 de Maio',
+    data: '06/05/2026',
     itens: [
       {
         icon: '📭',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '05/05/2026',
+    titulo: 'Segunda-feira — 05 de Maio',
+    data: '05/05/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Paranapanema/SP — migrado para provedor GOVBRv3',
+        texto:
+          'O município de Paranapanema/SP foi migrado do provedor GOVBRv2 para o GOVBRv3. A configuração antiga foi removida e substituída por novos endpoints de homologação, produção e emissão sem certificado, além do namespace padrão do GOVBRv3. A migração garante compatibilidade com a versão mais recente do webservice Cidade360 utilizado pela prefeitura.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'GOVBRv3 — empresa adicionada à regra de envio de alíquota ISSQN para Simples',
+        texto:
+          'Uma segunda empresa foi incluída na regra que permite o envio da alíquota ISSQN para optantes do Simples Nacional no provedor GOVBRv3. A condição exige que o regime especial de tributação seja "0" (sem regime especial). Sem essa inclusão, a empresa não conseguia enviar a alíquota corretamente e as notas eram rejeitadas pelo webservice da prefeitura por inconsistência nos dados tributários.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Americano do Brasil/GO — ativado no provedor Centi',
+        texto:
+          'O município de Americano do Brasil/GO foi ativado para emissão de NFS-e pelo provedor Centi. A prefeitura aderiu ao sistema eletrônico de notas fiscais e a integração foi configurada no gateway com as URLs e parâmetros necessários para emissão, cancelamento e consulta no webservice do Centi.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'SIGISSWebNew — valor padrão para campo nome_obra evitando erro na emissão',
+        texto:
+          'O provedor SIGISSWebNew rejeitava notas quando o campo nome_obra era enviado como null no cenário de fallback (quando o endereço do imóvel não está disponível e o sistema usa o endereço do tomador). Foi adicionado um valor padrão de string vazia para o campo nome_obra nesse caminho, evitando o erro de gravação da obra no webservice da prefeitura. A correção é localizada no método RecepcionarLoteNFeAPI quando IndicadorOperacaoEnviaEnderecoImovelObra está ativo.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Trindade/PE — flag NaoUsaAssinatura removida no Fiorilli',
+        texto:
+          'O município de Trindade/PE tinha a flag NaoUsaAssinatura ativada no provedor Fiorilli, o que fazia o gateway não assinar digitalmente o XML antes do envio. Essa flag foi removida, significando que agora as notas de Trindade/PE são enviadas com assinatura digital. A prefeitura passou a exigir a assinatura no XML, e sem essa correção as notas eram rejeitadas por falta de assinatura.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'GOVBRv3 — alíquota ISSQN limpa quando regime especial é diferente de zero',
+        texto:
+          'Foi implementada uma validação no provedor GOVBRv3 que limpa automaticamente o campo de alíquota (pAliq) quando o tipo de tributação ISSQN é "1" (tributável) mas o regime especial de tributação é diferente de "0". Prefeituras que usam o GOVBRv3 rejeitavam notas com alíquota informada em regimes especiais (MEI, estimativa, cooperativa, etc.) porque o campo não é aceito nesses cenários. A validação evita essas rejeições automaticamente.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'GOVBRv3 — nova empresa na validação temporária de cIntContrib',
+        texto:
+          'Uma nova empresa foi adicionada à condição que aplica a validação temporária de cIntContrib (contribuição integrada IBS/CBS) no provedor GOVBRv3. Essa regra controla quais empresas participam do piloto de envio dos campos da reforma tributária. A inclusão amplia o escopo da validação para mais um caso específico, permitindo que a empresa envie os dados de IBS/CBS corretamente no XML.',
       },
     ],
   },
@@ -413,7 +466,7 @@
         icon: '🏙️',
         destaque: 'Paraibuna/SP — adesão ao Portal Nacional de NFS-e',
         texto:
-          'O município de Paraibuna/SP aderiu ao Portal Nacional de NFS-e e foi configurado no gateway. A prefeitura migrou do sistema anterior para o Portal Nacional, e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml. Os testes de integração (Monte Negro/RO) também foram ajustados para refletir o novo cenário.',
+          'O município de Paraibuna/SP aderiu ao Portal Nacional de NFS-e e foi configurado no gateway. A prefeitura migrou do sistema anterior para o Portal Nacional, e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml com as novas URLs e layout do webservice unificado do governo federal.',
       },
       {
         icon: '🔧',
@@ -558,18 +611,6 @@
     tag: '25/04/2026',
     titulo: 'Sexta-feira — 25 de Abril',
     data: '25/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '24/04/2026',
-    titulo: 'Quinta-feira — 24 de Abril',
-    data: '24/04/2026',
     itens: [
       {
         icon: '📭',
