@@ -3,11 +3,11 @@
   nome: 'GINFESv2',
   empresa: 'GINFESv2',
   stats: {
-    municipios: 17
+    municipios: 16
   },
   visaoGeral: [
     { key: 'Nome', val: 'GINFESv2' },
-    { key: 'Total Municipios', val: '17' },
+    { key: 'Total Municipios', val: '16' },
     { key: 'Estados Atendidos', val: ['SP', 'AL', 'BA'], type: 'uf-badges' }
   ],
   municipiosLista: {
@@ -27,8 +27,7 @@
       { nome: 'Rio Claro', uf: 'SP', ibge: '3543907' },
       { nome: 'Santo André', uf: 'SP', ibge: '3547809' },
       { nome: 'São Bernardo do Campo', uf: 'SP', ibge: '3548708' },
-      { nome: 'São Francisco do Conde', uf: 'BA', ibge: '2929206' },
-      { nome: 'Suzano', uf: 'SP', ibge: '3552502' }
+      { nome: 'São Francisco do Conde', uf: 'BA', ibge: '2929206' }
     ]
   }
 };

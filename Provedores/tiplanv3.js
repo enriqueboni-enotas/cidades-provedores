@@ -1,33 +1,15 @@
-﻿var cidadeDetalhe = {
-  id: 'arroio-do-sal-rs',
-  nome: 'Arroio do Sal',
-  uf: 'RS',
-  ibge: '4301057',
-  constante: 'CodigoIBGE.ArroioDoSalRS',
-  provedorAtual: {
-    nome: 'GOVBRv3',
-    namespace: 'http://www.sped.fazenda.gov.br/nfse',
-    codigoNoProvedor: 'UsaAbrasf203;REGRAPADRAOALIQUOTAABRASFV204',
-    robo: false,
-    webService: true,
-    naoEnviaSerieRPS: false,
-    urls: {
-      homologacao: {
-        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
-        consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
-        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
-      },
-      producao: {
-        recepcaoLote: 'https://webapp1-arroiodosal.cidade360.cloud//NFSe.Api/NotaNacional',
-        consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
-      }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
-    }
+﻿var provedorDetalhe = {
+  id: 'tiplanv3',
+  nome: 'TiplanV3',
+  empresa: 'TiplanV3',
+  stats: {
+    municipios: 1
   },
+  visaoGeral: [
+    { key: 'Nome', val: 'TiplanV3' },
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['RJ'], type: 'uf-badges' }
+  ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
@@ -44,13 +26,13 @@
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
-    usaCNAE: true,
+    usaCNAE: false,
     usaNBS: true,
+    usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
-    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
@@ -59,10 +41,6 @@
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
-    autenticidadeNota: {
-      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
-      UsaChaveAcesso: true
-    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -77,6 +55,11 @@
       { codigo: '2', nome: 'Imunidade' },
       { codigo: '3', nome: 'Exportação de Serviço' },
       { codigo: '4', nome: 'Não incidência' }
+    ]
+  },
+  municipiosLista: {
+    'tiplanv3': [
+      { nome: 'Itaguaí', uf: 'RJ', ibge: '3302007' }
     ]
   }
 };

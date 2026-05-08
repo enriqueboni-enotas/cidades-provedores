@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 93
+    municipios: 92
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '93' },
+    { key: 'Total Municipios', val: '92' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -142,7 +142,6 @@
       { nome: 'Tenente Portela', uf: 'RS', ibge: '4321402' },
       { nome: 'Tigrinhos', uf: 'SC', ibge: '4217956' },
       { nome: 'Tomazina', uf: 'PR', ibge: '4127809' },
-      { nome: 'Trombudo Central', uf: 'SC', ibge: '4218608' },
       { nome: 'Tunápolis', uf: 'SC', ibge: '4218756' },
       { nome: 'Turuçu', uf: 'RS', ibge: '4322327' },
       { nome: 'União do Oeste', uf: 'SC', ibge: '4218855' },

@@ -3,11 +3,11 @@
   nome: 'ArrecadaNet',
   empresa: 'ArrecadaNet',
   stats: {
-    municipios: 52
+    municipios: 53
   },
   visaoGeral: [
     { key: 'Nome', val: 'ArrecadaNet' },
-    { key: 'Total Municipios', val: '52' },
+    { key: 'Total Municipios', val: '53' },
     { key: 'Estados Atendidos', val: ['GO', 'TO', 'MS', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -83,6 +83,7 @@
       { nome: 'Miranorte', uf: 'TO', ibge: '1713304' },
       { nome: 'Montes Claros de Goiás', uf: 'GO', ibge: '5213707' },
       { nome: 'Mossâmedes', uf: 'GO', ibge: '5213905' },
+      { nome: 'Nerópolis', uf: 'GO', ibge: '5214507' },
       { nome: 'Nova Veneza', uf: 'GO', ibge: '5215009' },
       { nome: 'Novo Gama', uf: 'GO', ibge: '5215231' },
       { nome: 'Ouro Verde de Goiás', uf: 'GO', ibge: '5215405' },

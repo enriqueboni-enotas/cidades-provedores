@@ -3,11 +3,11 @@
   nome: 'GissOnline',
   empresa: 'GissOnline',
   stats: {
-    municipios: 20
+    municipios: 21
   },
   visaoGeral: [
     { key: 'Nome', val: 'GissOnline' },
-    { key: 'Total Municipios', val: '20' },
+    { key: 'Total Municipios', val: '21' },
     { key: 'Estados Atendidos', val: ['SP', 'PE', 'RJ', 'PR', 'GO', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -74,6 +74,7 @@
       { nome: 'Santos', uf: 'SP', ibge: '3548500' },
       { nome: 'São Caetano do Sul', uf: 'SP', ibge: '3548807' },
       { nome: 'São José do Rio Preto', uf: 'SP', ibge: '3549805' },
+      { nome: 'Suzano', uf: 'SP', ibge: '3552502' },
       { nome: 'Umuarama', uf: 'PR', ibge: '4128104' }
     ]
   }

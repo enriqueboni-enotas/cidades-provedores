@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 73
+    municipios: 74
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '73' },
+    { key: 'Total Municipios', val: '74' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -86,6 +86,7 @@
       { nome: 'Guaratinga', uf: 'ES', ibge: '2911808' },
       { nome: 'Ibatiba', uf: 'ES', ibge: '3202454' },
       { nome: 'Ibicoara', uf: 'BA', ibge: '2912202' },
+      { nome: 'Ibiraci', uf: 'MG', ibge: '3129707' },
       { nome: 'Iconha', uf: 'ES', ibge: '3202603' },
       { nome: 'Ipiaú', uf: 'BA', ibge: '2913903' },
       { nome: 'Itabirinha', uf: 'MG', ibge: '3131802' },

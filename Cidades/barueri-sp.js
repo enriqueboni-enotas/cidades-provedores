@@ -39,6 +39,7 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: false,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números, ou, números e letras (sem formatação).\r\n\r\nExemplos válidos: 11356, 4AB4514',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 12 dígitos com formatação.\r\nExemplo válido: 01.01.01.220',

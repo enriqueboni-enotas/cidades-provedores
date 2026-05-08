@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 135
+    municipios: 136
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '135' },
+    { key: 'Total Municipios', val: '136' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,8 +82,8 @@
       { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
       { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
       { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
-      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
       { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
+      { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
       { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
       { nome: 'Braço do Trombudo', uf: 'SC', ibge: '4202859' },
       { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
@@ -191,6 +191,7 @@
       { nome: 'Tarauacá', uf: 'AC', ibge: '1200609' },
       { nome: 'Torres', uf: 'RS', ibge: '4321501' },
       { nome: 'Três Passos', uf: 'RS', ibge: '4321907' },
+      { nome: 'Trombudo Central', uf: 'SC', ibge: '4218608' },
       { nome: 'Urussanga', uf: 'SC', ibge: '4219002' },
       { nome: 'Varginha', uf: 'MG', ibge: '3170701' },
       { nome: 'Vila Rica', uf: 'MT', ibge: '5108600' }

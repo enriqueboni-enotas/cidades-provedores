@@ -5,19 +5,24 @@
   ibge: '3302007',
   constante: 'CodigoIBGE.ItaguaiRJ',
   provedorAtual: {
-    nome: 'TIPLANv2',
-    namespace: 'http://www.abrasf.org.br/nfse.xsd',
+    nome: 'TiplanV3',
+    namespace: null,
     codigoNoProvedor: null,
     robo: false,
-    webService: false,
+    webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
         recepcaoLote: 'https://itaguaihomologacao.nfe.com.br/nfse/wsnacional2/nfse.asmx'
       },
       producao: {
-        recepcaoLote: 'https://spe.itaguai.rj.gov.br/nfse/WSNacional2/nfse.asmx'
+        recepcaoLote: 'https://spe.itaguai.rj.gov.br/api/adn/dps',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
@@ -35,31 +40,36 @@
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
-    usaCNAE: true,
+    usaDescricaoServico: false,
+    usaCNAE: false,
     usaNBS: true,
-    emTransicaoNFSeNacional: true,
-    usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 3 a 11 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui 7 dígitos (somente números).\r\nExemplo válido: 6201500',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 5 dígitos (com formatação).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplos válidos: 01.01 ou 14.02',
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
+    suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
     regimesEspecialTributacao: [
-      { codigo: '0', nome: 'Nenhum' },
+      { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
       { codigo: '2', nome: 'Estimativa' },
       { codigo: '3', nome: 'Sociedade de Profissionais' },
       { codigo: '4', nome: 'Cooperativa' },
       { codigo: '5', nome: 'MEI - Simples Nacional' },
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+    ],
+    naturezasOperacao: [
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };
