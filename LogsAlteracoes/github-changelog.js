@@ -1,5 +1,109 @@
 ﻿var changelogData = [
   {
+    tag: '08/05/2026',
+    titulo: 'Sexta-feira — 08 de Maio',
+    data: '08/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '07/05/2026',
+    titulo: 'Quinta-feira — 07 de Maio',
+    data: '07/05/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Nerópolis/GO — migrado para provedor ArrecadaNet',
+        texto:
+          'O município de Nerópolis/GO teve seu provedor de NFS-e atualizado para o ArrecadaNet. A prefeitura migrou de sistema e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml com 16 inserções e 28 remoções, indicando uma reconfiguração completa dos endpoints e parâmetros do webservice.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'NfseNacionalV2 — novos clientes na lista de envio obrigatório de NBS para Simples',
+        texto:
+          'Dois novos GUIDs de subscriptions foram adicionados à coleção SubscriptionsSempreEnviarNBS no provedor NfseNacionalV2. Essa lista força o envio do campo NBS (Nomenclatura Brasileira de Serviços) mesmo para empresas optantes do Simples Nacional em Mogi Guaçu/SP. Sem essa configuração, o campo NBS não era incluído no XML e a prefeitura rejeitava a nota por falta de informação obrigatória.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'NfseNacionalV2 — Superlógica adicionada à whitelist de IBS/CBS para Simples',
+        texto:
+          'A subscription da Superlógica (Belo Horizonte/MG) foi adicionada à coleção SubscriptionsPermitirIBSCBSParaSimples no provedor NfseNacionalV2. Essa whitelist permite que empresas optantes do Simples Nacional enviem os campos de IBS (Imposto sobre Bens e Serviços) e CBS (Contribuição sobre Bens e Serviços) no XML da nota, atendendo à obrigatoriedade da reforma tributária para esse integrador específico.',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'SIGISSv1 — envio do modo de prestação para comércio exterior em Rio Grande/RS',
+        texto:
+          'O provedor SIGISSv1 (Rio Grande/RS) não enviava o campo dps_serv_mdprestacao quando a nota tinha tomador no exterior ou código IBGE 9999999. Foi implementada lógica condicional no método CriarRps que detecta cenários de comércio exterior e atribui automaticamente o valor correto: "4" (serviço prestado no exterior) quando não há dados de ComercioExterior, ou o valor de ModalidadePrestacaoServico quando informado. Sem esse campo, notas de exportação eram rejeitadas pela prefeitura.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Dumont/SP — flag NaoUsaAssinatura ativada no Fiorilli',
+        texto:
+          'O município de Dumont/SP recebeu a flag NaoUsaAssinatura no provedor Fiorilli. Essa configuração indica que a prefeitura não exige assinatura digital no XML da NFS-e, permitindo que o gateway envie as notas sem assinar. Sem essa flag, o envio falhava porque o webservice da prefeitura rejeitava XMLs assinados.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Ibiraci/MG — ativado no provedor Eelv3',
+        texto:
+          'O município de Ibiraci/MG foi ativado para emissão de NFS-e pelo provedor Eelv3. A prefeitura aderiu ao sistema eletrônico de notas fiscais e a integração foi configurada no gateway com as URLs, namespace e parâmetros necessários para emissão, cancelamento e consulta no webservice do Eelv3.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Trombudo Central/SC — migrado para provedor BethaV3',
+        texto:
+          'O município de Trombudo Central/SC teve seu provedor de NFS-e atualizado para o BethaV3. A prefeitura migrou de sistema e as configurações foram ajustadas no ConfiguracoesMunicipios.xml com 41 inserções e 37 remoções, indicando uma reconfiguração completa das operações de emissão, cancelamento e consulta para o novo webservice da Betha.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Ilhabela/SP — envio de alíquotas IBS e CBS implementado no IIBrasil',
+        texto:
+          'O provedor IIBrasil (Ilhabela/SP) passou a enviar as alíquotas de IBS e CBS no XML da nota fiscal. Foi criado o método CriarIIBrasilValoresServico que calcula as alíquotas considerando percentuais de redução tributária por município/UF via CalculoIbsCbsService. A lógica aplica-se apenas a empresas não optantes do Simples Nacional. Sem essa implementação, notas de Ilhabela eram rejeitadas por falta dos campos obrigatórios da reforma tributária.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'SILv4 — tratamento de IBS/CBS zerado para imunidade fiscal em Vila Velha/ES',
+        texto:
+          'O provedor SILv4 recebeu um tratamento especial para cenários de imunidade fiscal em Vila Velha/ES. Quando a natureza da operação é "2" (imunidade) e o código de serviço é "080101", os campos pIBSUF, pCBS e vCBS são zerados automaticamente. A prefeitura exige que esses campos sejam enviados com valor "0.00" em vez de omitidos, e sem esse tratamento as notas eram rejeitadas por inconsistência nos dados tributários.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'TiplanV3 — novo provedor implementado para Itaguaí/RJ',
+        texto:
+          'Foi implementado o provedor TiplanV3 completo para o município de Itaguaí/RJ. O novo provedor inclui comunicação via HTTP JSON POST com certificado X.509, operações de recepção de lote, consulta, cancelamento e geração de PDF. A implementação segue o padrão de assinatura digital e formatação de valores específicos do Tiplan. O cancelamento está temporariamente bloqueado em homologação/produção enquanto a prefeitura finaliza a homologação do endpoint.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Barueri/SP — remoção de acentos do nome do tomador e ativação de NBS',
+        texto:
+          'O provedor Barueri/SP rejeitava notas quando o nome/razão social do tomador continha caracteres acentuados (é, ã, ç, etc.). Foi adicionado RemoveAccent().ConvertToNormalizedASCIIString() no campo NomeRazaoSocial do layout V2, sanitizando o texto antes do envio. Além disso, a característica UsaNBS foi ativada no provedor para exibir o campo NBS no cadastro de empresa e produto.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'FormatarLoteRpsV2Base — remoção de acentos e caracteres especiais',
+        texto:
+          'O método de formatação de lote RPS V2 (base compartilhada entre provedores) recebeu tratamento para remover acentos e caracteres especiais dos campos de texto antes do envio. Essa correção complementa o ajuste específico de Barueri e resolve rejeições em outros provedores que utilizam o mesmo fluxo V2 quando nomes ou descrições contêm caracteres não-ASCII.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Directa — ajuste de emissão para tomador estrangeiro',
+        texto:
+          'O provedor Directa tinha uma lógica desnecessária de 7 linhas para tratamento de tomador estrangeiro que foi simplificada para apenas 1 linha. A remoção do código redundante corrige o fluxo de emissão para notas com tomador do exterior, eliminando condições que podiam causar comportamento inesperado na formatação dos dados do tomador.',
+      },
+    ],
+  },
+  {
     tag: '06/05/2026',
     titulo: 'Quarta-feira — 06 de Maio',
     data: '06/05/2026',
@@ -592,30 +696,6 @@
           'NfseNacionalV2 — validação do campo IndOp com regex de 6 dígitos',
         texto:
           'O campo CodigoIndicadorOperacao (IndOp) no XML do NfseNacionalV2 não era validado antes do envio, causando falhas de schema quando o valor era nulo, vazio ou com formato inválido. Foi adicionada uma validação regex que exige exatamente 6 dígitos numéricos (^[0-9]{6}$). Valores inválidos agora geram ValidationException com código GW98745, evitando rejeições por erro de schema.',
-      },
-    ],
-  },
-  {
-    tag: '26/04/2026',
-    titulo: 'Sábado — 26 de Abril',
-    data: '26/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '25/04/2026',
-    titulo: 'Sexta-feira — 25 de Abril',
-    data: '25/04/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
