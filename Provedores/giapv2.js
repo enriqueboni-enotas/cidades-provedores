@@ -3,11 +3,11 @@
   nome: 'GIAPv2',
   empresa: 'GIAPv2',
   stats: {
-    municipios: 7
+    municipios: 6
   },
   visaoGeral: [
     { key: 'Nome', val: 'GIAPv2' },
-    { key: 'Total Municipios', val: '7' },
+    { key: 'Total Municipios', val: '6' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -69,7 +69,6 @@
       { nome: 'Carapicuíba', uf: 'SP', ibge: '3510609' },
       { nome: 'Cotia', uf: 'SP', ibge: '3513009' },
       { nome: 'Embu das Artes', uf: 'SP', ibge: '3515004' },
-      { nome: 'Porto Ferreira', uf: 'SP', ibge: '3540705' },
       { nome: 'Vinhedo', uf: 'SP', ibge: '3556701' }
     ]
   }

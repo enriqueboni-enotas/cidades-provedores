@@ -3,11 +3,11 @@
   nome: 'eTransparencia',
   empresa: 'eTransparencia',
   stats: {
-    municipios: 13
+    municipios: 14
   },
   visaoGeral: [
     { key: 'Nome', val: 'eTransparencia' },
-    { key: 'Total Municipios', val: '13' },
+    { key: 'Total Municipios', val: '14' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -73,6 +73,7 @@
       { nome: 'Mococa', uf: 'SP', ibge: '3530508' },
       { nome: 'Piquete', uf: 'SP', ibge: '3538501' },
       { nome: 'Poá', uf: 'SP', ibge: '3539806' },
+      { nome: 'Porto Ferreira', uf: 'SP', ibge: '3540705' },
       { nome: 'Taboão da Serra', uf: 'SP', ibge: '3552809' }
     ]
   }

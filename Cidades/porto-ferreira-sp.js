@@ -5,74 +5,69 @@
   ibge: '3540705',
   constante: 'CodigoIBGE.PortoFerreiraSP',
   provedorAtual: {
-    nome: 'GIAPv2',
+    nome: 'eTransparencia',
     namespace: null,
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
+    infoAdicional: 'Metadados Cadastro da Empresa\n					usaArredondarTerceiroDigitoMaiorOuIgualACinco -> Regra de arredondamento que considera o terceiro digito >= 5',
     urls: {
       homologacao: {
+        recepcaoLote: 'https://nfehomologacao.etransparencia.com.br/sp.portoferreira/webservice/aws_nfe.aspx'
       },
       producao: {
-        autenticacao: 'https://portoferreira.presconinformatica.com.br/ords/prf/f?p=2102:101',
-        recepcaoLote: 'http://webservice.giap.com.br/WSNfsesPrf/nfseresources/ws/v2/emissao',
-        consultaRps: 'https://portoferreira.presconinformatica.com.br/ords/prf/',
-        consultaNFe: 'http://webservice.giap.com.br/WSNfsesPrf/nfseresources/ws/consulta',
-        cancelamentoNFe: 'http://webservice.giap.com.br/WSNfsesPrf/nfseresources/ws/v2/cancela'
+        recepcaoLote: 'https://nfe.etransparencia.com.br/sp.portoferreira/webservice/aws_nfe.aspx'
       }
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 5,
+    tipoAutenticacao: 2,
     helpTipoAutenticacao: {
       certificadoDigital: null,
       usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
       senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
-      token: 'Informe o token de autenticação disponível no cadastro da sua empresa no site da NFS-e na prefeitura.',
+      token: null,
       fraseSecreta: null
     },
+    suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 30,
     usaAEDF: false,
-    usaRegimeEspecialTributacao: false,
+    usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: true,
+    usaCNAE: true,
     usaNBS: true,
     usaItemListaServico: false,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 5 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 204589',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos (somente números, sem formatação)\r\nExemplo válido: 802',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 8 dígitos formatado com um ponto.\r\nExemplo válido: 08.02.01',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 4 dígitos (somente números).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplos válidos: 1211 ou 0802',
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: true,
-    enviaEmailCliente: false,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    enviaEmailCliente: true,
+    numeroRpsDeveSerSequencial: true,
     autenticidadeNota: {
-      urlVerificacao: 'https://nfse.cotia.sp.gov.br/ords/cotia/f?p=907:71',
+      urlVerificacao: 'https://nfe.etransparencia.com.br/sp.taboaodaserra/nfe/principal.aspx',
+      UsaChaveAcesso: false,
+      UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaInscricaoMunicipalPrestador: true
+      UsaCpfCnpjTomador: false,
+      UsaInscricaoMunicipalPrestador: false,
+      UsaNumeroNota: true,
+      UsaValorNota: false
     },
     regimesEspecialTributacao: [
-      { codigo: '0', nome: ' - ' },
-      { codigo: '1', nome: 'Microempresa Municipal' },
-      { codigo: '2', nome: 'Estimativa' },
-      { codigo: '3', nome: 'Sociedade de Profissionais' },
-      { codigo: '4', nome: 'Cooperativa' },
-      { codigo: '5', nome: 'MEI - Simples Nacional' },
-      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
-    ],
-    naturezasOperacao: [
-      { codigo: '1', nome: 'Tributação no municipio' },
-      { codigo: '2', nome: 'Tributação fora do municipio' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Imune' },
-      { codigo: '5', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '6', nome: 'Exigilidade suspensa por procedimento administrativo' }
+      { codigo: '1', nome: 'Tributado' },
+      { codigo: '2', nome: 'Isenção / Imunidade' },
+      { codigo: '3', nome: 'Suspensão' },
+      { codigo: '4', nome: 'Simples Nacional' },
+      { codigo: '5', nome: 'ISS Fixo' },
+      { codigo: '6', nome: 'Isenção parcial' }
     ]
   }
 };
