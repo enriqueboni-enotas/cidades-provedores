@@ -44,6 +44,7 @@
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: true,
+    numeroLoteNaoReutilizavel: true,
     numeroNotasPorLote: 5,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },

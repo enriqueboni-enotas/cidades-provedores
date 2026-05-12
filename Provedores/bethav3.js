@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 136
+    municipios: 135
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '136' },
+    { key: 'Total Municipios', val: '135' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,8 +82,8 @@
       { nome: 'Bocaina do Sul', uf: 'SC', ibge: '4202438' },
       { nome: 'Bodoquena', uf: 'MS', ibge: '5002159' },
       { nome: 'Bom Jardim da Serra', uf: 'SC', ibge: '4202503' },
-      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Bom Jesus', uf: 'SC', ibge: '4202537' },
+      { nome: 'Bom Jesus', uf: 'RS', ibge: '4302303' },
       { nome: 'Botelhos', uf: 'MG', ibge: '3108404' },
       { nome: 'Braço do Trombudo', uf: 'SC', ibge: '4202859' },
       { nome: 'Brasiléia', uf: 'AC', ibge: '1200104' },
@@ -182,7 +182,6 @@
       { nome: 'São Jerônimo da Serra', uf: 'PR', ibge: '4124707' },
       { nome: 'São João Batista', uf: 'SC', ibge: '4216305' },
       { nome: 'São Joaquim', uf: 'SC', ibge: '4216503' },
-      { nome: 'São Ludgero', uf: 'SC', ibge: '4217006' },
       { nome: 'Sapezal', uf: 'MT', ibge: '5107875' },
       { nome: 'Schroeder', uf: 'SC', ibge: '4217402' },
       { nome: 'Sertão Santana', uf: 'RS', ibge: '4320552' },

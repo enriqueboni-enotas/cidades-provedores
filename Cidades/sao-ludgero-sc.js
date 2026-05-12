@@ -5,19 +5,19 @@
   ibge: '4217006',
   constante: 'CodigoIBGE.SaoLudgeroSC',
   provedorAtual: {
-    nome: 'BethaV3',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
+    nome: 'NfseNacionalV2',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
@@ -54,9 +54,15 @@
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

@@ -13,12 +13,12 @@
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        recepcaoLote: 'https://reformatributaria.cidade360.cloud/NFSe.Api.Teste/NotaNacional',
         consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://nfseeldoradodosul.govbr.cloud/NFSe.Api/NotaNacional',
+        recepcaoLote: 'https://nfseeldoradodosul.cidade360.cloud/NFSe.Api/NotaNacional',
         consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }

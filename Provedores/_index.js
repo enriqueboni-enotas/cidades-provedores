@@ -1,7 +1,7 @@
 ﻿var provedoresIndex = [
-  { id: 'nfsenacionalv2', nome: 'NfseNacionalV2', empresa: 'NfseNacionalV2', versoes: ['NfseNacionalV2'], municipios: 1828 },
+  { id: 'nfsenacionalv2', nome: 'NfseNacionalV2', empresa: 'NfseNacionalV2', versoes: ['NfseNacionalV2'], municipios: 1829 },
   { id: 'fiorilli', nome: 'Fiorilli', empresa: 'Fiorilli', versoes: ['Fiorilli'], municipios: 221 },
-  { id: 'bethav3', nome: 'BethaV3', empresa: 'BethaV3', versoes: ['BethaV3'], municipios: 136 },
+  { id: 'bethav3', nome: 'BethaV3', empresa: 'BethaV3', versoes: ['BethaV3'], municipios: 135 },
   { id: 'ipm', nome: 'IPM', empresa: 'IPM', versoes: ['IPM'], municipios: 115 },
   { id: 'bethav2', nome: 'BethaV2', empresa: 'BethaV2', versoes: ['BethaV2'], municipios: 92 },
   { id: 'govbrv3', nome: 'GOVBRv3', empresa: 'GOVBRv3', versoes: ['GOVBRv3'], municipios: 85 },
@@ -10,7 +10,7 @@
   { id: 'elotech', nome: 'Elotech', empresa: 'Elotech', versoes: ['Elotech'], municipios: 59 },
   { id: 'arrecadanet', nome: 'ArrecadaNet', empresa: 'ArrecadaNet', versoes: ['ArrecadaNet'], municipios: 54 },
   { id: 'speedgov', nome: 'SpeedGov', empresa: 'SpeedGov', versoes: ['SpeedGov'], municipios: 46 },
-  { id: 'saatri', nome: 'Saatri', empresa: 'Saatri', versoes: ['Saatri'], municipios: 42 },
+  { id: 'saatri', nome: 'Saatri', empresa: 'Saatri', versoes: ['Saatri'], municipios: 43 },
   { id: 'centi', nome: 'Centi', empresa: 'Centi', versoes: ['Centi'], municipios: 37 },
   { id: 'tinusv2', nome: 'TinusV2', empresa: 'TinusV2', versoes: ['TinusV2'], municipios: 33 },
   { id: 'futurize', nome: 'Futurize', empresa: 'Futurize', versoes: ['Futurize'], municipios: 30 },

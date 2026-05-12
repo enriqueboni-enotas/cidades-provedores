@@ -3,11 +3,11 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 42
+    municipios: 43
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '42' },
+    { key: 'Total Municipios', val: '43' },
     { key: 'Estados Atendidos', val: ['BA', 'RR', 'SC'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -80,6 +80,7 @@
       { nome: 'Itambé', uf: 'BA', ibge: '2915809' },
       { nome: 'Jacobina', uf: 'BA', ibge: '2917508' },
       { nome: 'Jaguaquara', uf: 'BA', ibge: '2917607' },
+      { nome: 'Jeremoabo', uf: 'BA', ibge: '2918100' },
       { nome: 'Lajedo do Tabocal', uf: 'BA', ibge: '2919058' },
       { nome: 'Macururé', uf: 'BA', ibge: '2919900' },
       { nome: 'Mata de São João', uf: 'BA', ibge: '2921005' },
