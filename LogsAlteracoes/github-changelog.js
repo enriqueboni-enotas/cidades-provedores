@@ -1,5 +1,233 @@
 ﻿var changelogData = [
   {
+    tag: '15/05/2026',
+    titulo: 'Quinta-feira — 15 de Maio',
+    data: '15/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '14/05/2026',
+    titulo: 'Quarta-feira — 14 de Maio',
+    data: '14/05/2026',
+    itens: [
+      {
+        icon: '🔧',
+        destaque:
+          'GIFv2 — erro E0014 mapeado e mensagem de RPS já informado melhorada',
+        texto:
+          'O provedor GIFv2 (Caxias do Sul/RS) lançava uma exceção de comunicação quando recebia o erro E0014 da prefeitura, causando reprocessamento desnecessário de notas que já haviam sido emitidas. O erro foi mapeado como não-bloqueante (junto com E999 e RNG9999) e a mensagem "Nota fiscal já foi emitida." foi normalizada para "Rps já foi emitido." antes de ser persistida, facilitando o entendimento pelo usuário final e evitando confusão entre nota e RPS.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'NotaControl — emissão em homologação bloqueada com mensagem clara',
+        texto:
+          'As URLs de homologação do provedor NotaControl na versão de integração ABRASF foram desativadas pela prefeitura. Para evitar erros genéricos de conexão, foi implementado um bloqueio explícito que retorna ValidationException com código GW061 informando que o município desativou a homologação. O bloqueio se aplica tanto à recepção assíncrona quanto à síncrona, orientando o usuário a testar diretamente em produção.',
+      },
+      {
+        icon: '🔗',
+        destaque: 'Heliodora/MG — URL do webservice atualizada',
+        texto:
+          'A URL do webservice de Heliodora/MG foi atualizada no ConfiguracoesMunicipios.xml. A prefeitura alterou o endereço do endpoint e sem essa atualização as notas ficavam com erro de conexão ao tentar emitir, cancelar ou consultar NFS-e no município.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'ISSIntel — valores padrão para TpRetPisCofins e SituacaoTributaria',
+        texto:
+          'O provedor ISSIntel (Crateús/CE) rejeitava notas quando os campos TpRetPisCofins e SituacaoTributaria eram enviados como nulos em cenários onde PIS e COFINS não estavam informados. Foram adicionados valores padrão ("0" para tipo de retenção e "00" para situação tributária) na inicialização do objeto de valores, garantindo que o XML sempre contenha dados válidos mesmo quando os tributos não são discriminados.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Publica — refatoração do cálculo de impostos federais retidos',
+        texto:
+          'O provedor Publica (Itajaí/SC e outros) tinha uma implementação local duplicada para cálculo de PIS/COFINS/CSLL retidos que divergia do helper compartilhado. A refatoração substituiu o código duplicado pelo NfeServicoCalculoHelper.RetornarTpRetPisCofinsCsll, normalizou o CST de PIS/COFINS removendo caracteres não numéricos, e simplificou o método FormatarImpostosFederaisRetidos para usar os valores já calculados (ValorCsll, ValorPis, ValorCofins) em vez de recalcular. Isso corrige inconsistências no envio de alíquotas deduzidas e garante que o campo ValorCsll reflita corretamente o tipo de retenção configurado.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Raposos/MG — migrado para provedor BethaV3',
+        texto:
+          'O município de Raposos/MG teve seu provedor de NFS-e atualizado para o BethaV3. A prefeitura migrou de sistema e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml com 33 inserções e 29 remoções, indicando uma reconfiguração completa dos endpoints e parâmetros do webservice para o novo sistema da Betha.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'IPMv2 — empresa de Novo Hamburgo/RS na regra de incidência do prestador',
+        texto:
+          'Uma empresa de Novo Hamburgo/RS foi adicionada à lista ListaEmpresasControlamMunicipioIncidencia no provedor IPMv2. Quando uma empresa está nessa lista, o município de incidência do serviço é definido como o município do prestador (em vez do tomador). Sem essa configuração, as notas da empresa eram rejeitadas pela prefeitura por inconsistência no local de incidência do ISS, afetando o cálculo correto dos impostos municipais.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'DSFv2 — consulta por RPS com validação de discriminação do serviço',
+        texto:
+          'O provedor DSFv2 (Teresina/PI e outros) apresentava falsos positivos na consulta por RPS quando o tomador não possuía documento (CPF/CNPJ) — a prefeitura omitia o nó XML do tomador e o sistema interpretava como nota não encontrada. A correção implementa uma validação alternativa via discriminação do serviço: quando o tomador está ausente no XML mas existe na nota, o sistema compara o texto normalizado da descrição do serviço para confirmar que é a mesma nota. Também foi removida a dependência de ValidarNomeTomador, simplificando o fluxo.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'GissOnline — CST 00 forçado quando apuração própria de PIS/COFINS é zerada',
+        texto:
+          'O provedor GissOnline (Itu/SP e outros) enviava CST de PIS/COFINS incorreto quando os valores de apuração própria eram zero. A correção normaliza o campo SituacaoTributariaPisCofins removendo caracteres não numéricos, e quando tanto vPisProprio quanto vCofinsProprio são zero, força o CST para "00" e define TipoRetencaoPisCofins = 0. Isso evita rejeições pela prefeitura por inconsistência entre o CST informado e os valores tributários zerados.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'SpeedGov — empresa Pacto Soluções na regra de emissão unitária em Sobral/CE',
+        texto:
+          'A empresa Pacto Soluções foi incluída na regra de emissão unitária por lote (1 NF por lote) no provedor SpeedGov para Sobral/CE. Essa configuração limita o envio a uma nota por vez, necessária quando a prefeitura não suporta lotes com múltiplas notas ou quando há problemas de timeout no processamento. Sem essa limitação, as notas da empresa ficavam travadas na fila de emissão.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'IIBrasil — envio de alíquota IBS e CBS para empresa específica em Limeira/SP',
+        texto:
+          'O provedor IIBrasil passou a enviar as alíquotas de IBS e CBS no XML da nota fiscal para uma empresa específica em Limeira/SP. A implementação calcula as alíquotas considerando percentuais de redução tributária por município/UF. Sem esse envio, as notas da empresa eram rejeitadas pela prefeitura por falta dos campos obrigatórios da reforma tributária (IBS/CBS).',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Rio Doce/MG — migrado de BethaV2 para provedor Futurize',
+        texto:
+          'O município de Rio Doce/MG teve seu provedor de NFS-e alterado de BethaV2 para Futurize. A prefeitura migrou de sistema e as configurações foram atualizadas no ConfiguracoesMunicipios.xml com novas URLs de homologação e produção, namespace padrão do Futurize e remoção das informações do provedor antigo. A migração garante continuidade na emissão de notas fiscais eletrônicas.',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Barueri/SP — PaisPrestacaoServico preenchido com país do tomador quando exterior',
+        texto:
+          'O provedor Barueri/SP não preenchia o campo PaisPrestacaoServico quando a nota era para tomador do exterior, causando rejeição pela prefeitura. A correção implementa lógica que detecta cenários de prestação no exterior e atribui automaticamente o código do país do tomador ao campo PaisPrestacaoServico. Isso resolve erros de emissão para empresas que prestam serviços para clientes internacionais em Barueri.',
+      },
+    ],
+  },
+  {
+    tag: '13/05/2026',
+    titulo: 'Terça-feira — 13 de Maio',
+    data: '13/05/2026',
+    itens: [
+      {
+        icon: '📊',
+        destaque:
+          'GIFv2 — alíquota zerada para optantes do Simples sem ISS retido em Caxias do Sul/RS',
+        texto:
+          'O provedor GIFv2 (Caxias do Sul/RS) rejeitava notas de empresas optantes do Simples Nacional quando o ISS não era retido na fonte, porque a alíquota era enviada com valor diferente de zero. Foi implementada uma validação no método FormatarValores que força pAliq para "0" quando a empresa é optante do Simples e o ISS não é retido. A correção resolve a fila parada de emissão no município, conforme ticket #99189.',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Faxinal/PR, Tamboara/PR, Ubiratã/PR e Pitanga/PR — ativados no provedor Elotech',
+        texto:
+          'Quatro municípios do Paraná foram ativados para emissão de NFS-e pelo provedor Elotech: Faxinal, Tamboara, Ubiratã e Pitanga. As prefeituras aderiram ao sistema eletrônico de notas fiscais e as integrações foram configuradas no gateway com as URLs e parâmetros necessários para emissão, cancelamento e consulta. São 104 linhas de configuração adicionadas ao ConfiguracoesMunicipios.xml.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'NotaControl — tag Id em InfDeclaracaoPrestacaoServico preservada para ContaAzul',
+        texto:
+          'O provedor NotaControl (Brasília/DF e outros) anulava o atributo Id da tag InfDeclaracaoPrestacaoServico para todas as empresas, mas a ContaAzul precisa desse campo preenchido para sua integração funcionar corretamente. A correção condiciona a anulação: apenas empresas que NÃO são ContaAzul têm o Id removido. Para a ContaAzul (subscription específica), o Id é preservado no XML, resolvendo erros de integração que impediam a emissão de notas via esse integrador.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'São Pedro do Sul/RS — migrado para provedor IPMv2',
+        texto:
+          'O município de São Pedro do Sul/RS teve seu provedor de NFS-e atualizado para o IPMv2. A prefeitura migrou de sistema e as configurações foram ajustadas no ConfiguracoesMunicipios.xml com 16 inserções e 31 remoções, indicando uma reconfiguração completa dos endpoints e parâmetros do webservice para o novo sistema IPM versão 2.',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'IIBrasil — posição da tag CodigoTributacaoMunicipal corrigida no XML ABRASF',
+        texto:
+          'O provedor IIBrasil (Limeira/SP) rejeitava notas com erro de validação de schema XML (erro 160) quando as tags CodigoTributacaoNacional e CodigoTributacaoMunicipal estavam fora da ordem esperada dentro do nó Servico. Foi implementada lógica de reposicionamento no método FormatarXml que reordena as tags conforme a sequência exigida pelo schema: CodigoTributacaoMunicipal após CodigoNbs, e CodigoTributacaoNacional após CodigoTributacaoMunicipal ou ItemListaServico.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Responsável técnico — nova empresa adicionada à lista idsNovoRespTecnico',
+        texto:
+          'Uma empresa foi adicionada à lista idsNovoRespTecnico no processamento de NF-e V4 para corrigir o erro 974 da SEFAZ (CNPJ do responsável técnico diverge do cadastrado). Quando uma empresa está nessa lista, o XML gerado inclui as informações atualizadas do responsável técnico da Nota Gateway e o hash CSRT é recalculado. Sem essa inclusão, a SEFAZ rejeitava a nota por inconsistência no CSRT.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Uibaí/BA — ativado no provedor Saatri',
+        texto:
+          'O município de Uibaí/BA foi ativado para emissão de NFS-e pelo provedor Saatri. A prefeitura aderiu ao sistema eletrônico de notas fiscais e a integração foi configurada no gateway com as URLs e parâmetros necessários para emissão, cancelamento e consulta no webservice do Saatri.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Marília/SP — lista de sincronização especial removida do SIGISS v1',
+        texto:
+          'O provedor SIGISS v1 (Marília/SP) mantinha uma lista estática com 129 linhas de IDs de notas que recebiam tratamento especial de sincronização, dispensando a validação de data de emissão. Essa lista foi completamente removida — todas as notas agora seguem o fluxo padrão de validação. Também foi adicionado o campo ultima_nota = 1 nas requisições de consulta RTC, melhorando a precisão da sincronização.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Grajaú/MA — migrado para provedor SpeedGov',
+        texto:
+          'O município de Grajaú/MA teve seu provedor de NFS-e atualizado para o SpeedGov. A prefeitura migrou de sistema e as configurações foram ajustadas no ConfiguracoesMunicipios.xml com 67 inserções e 58 remoções, indicando uma reconfiguração completa das operações de emissão, cancelamento e consulta para o novo webservice.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'SILv4 — RPS sequencial desabilitado e emissão paralela ativada para Mogi das Cruzes/SP',
+        texto:
+          'O provedor SILv4 em Mogi das Cruzes/SP exigia RPS sequencial, o que travava a emissão quando múltiplas notas eram enviadas simultaneamente. Foi desabilitada a obrigatoriedade de RPS sequencial (NumeroRpsDeveSerSequencial = false) e ativada a emissão paralela (SuportaEmissaoParalela = true) com 1 lote paralelo. Também foram adicionadas empresas específicas (Cinemark) ao dicionário EmpresasNewLock para controle de concorrência, resolvendo problemas de fila parada.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Barueri/SP — verificação de autenticidade de nota configurada',
+        texto:
+          'O município de Barueri/SP recebeu a configuração de AutenticidadeNota no provedor. A URL de verificação aponta para o portal da prefeitura (barueri.sp.gov.br/nfe/app/login.aspx) e exige CPF/CNPJ do tomador, código de verificação e valor da nota como parâmetros. Essa configuração permite que clientes verifiquem a legitimidade das NFS-e emitidas em Barueri diretamente no site da prefeitura.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'NotaControl — tratamento de Inscrição Municipal do tomador com caracteres inválidos',
+        texto:
+          'O provedor NotaControl (Santa Maria/RS e outros) rejeitava notas quando a Inscrição Municipal do tomador continha espaços em branco ou caracteres especiais (acentos, símbolos). Foi adicionada normalização que converte a IM para ASCII, remove diacríticos e retorna null quando o resultado é vazio. Isso evita que dados inválidos cheguem ao webservice da prefeitura e causem erros de validação de schema XML.',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'DSFv2 — correção de emissão para tomador estrangeiro sem CPF',
+        texto:
+          'O provedor DSFv2 exigia que o campo CpfCnpj fosse não-nulo para tratar tomadores do exterior, mas em muitos cenários de exportação de serviço o tomador estrangeiro não possui CPF/CNPJ brasileiro. A correção remove essa condição restritiva, atribui NifTomador com valor padrão "99999999999" quando o CPF é nulo/vazio, e garante que IdentificacaoTomador seja anulado para todos os tomadores estrangeiros, permitindo a emissão correta de notas de exportação.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'NfseNacionalV2 — PDF offline e ajuste de fuso horário para Manaus/AM',
+        texto:
+          'O provedor NfseNacionalV2 em Manaus/AM apresentava dois problemas: o download do PDF falhava ao usar a integração ADN padrão, e o horário de emissão no PDF estava incorreto por diferença de fuso. A correção implementa download direto via HTTP GET com certificado cliente para Manaus (bypass da ADN) e ajusta o fuso horário do PDF subtraindo 1 hora e usando TimeZone de Cuiabá para processar a data de emissão do DPS, corrigindo a exibição para o horário local de Manaus (UTC-4).',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Métricas MunicipioHealthCheck — ajustes de nomenclatura',
+        texto:
+          'As nomenclaturas dos eventos de métricas de saúde dos municípios (MunicipioHealthCheck) foram padronizadas. Os campos dos eventos MunicipioHealthCheckRecordFailureEvent e MunicipioHealthCheckResponseTimeEvent foram renomeados para seguir a convenção de nomes do projeto. Essas métricas monitoram a disponibilidade dos webservices das prefeituras e ajudam a identificar rapidamente quando um município está fora do ar.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Barueri/SP — local de prestação de serviço fixo configurado',
+        texto:
+          'O provedor Barueri/SP recebeu a configuração de local de prestação de serviço fixo (service location override). Quando ativada, essa lógica força o município de prestação para Barueri independentemente do endereço informado na nota. A implementação inclui testes atualizados e a lógica condicional no BarueriProvedorNFe para aplicar o override apenas quando configurado.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Infraestrutura — skills Kiro adicionadas ao repositório app-gw',
+        texto:
+          'Foram adicionadas skills de desenvolvimento com Kiro ao repositório do gateway, incluindo configurações para build do AccountManagement, NFeService e DataContext, além de scripts para execução local do SQL Server com Liquibase, S3 e dos serviços principais. Essa infraestrutura facilita o onboarding de desenvolvedores e a execução do ambiente de desenvolvimento local.',
+      },
+    ],
+  },
+  {
     tag: '12/05/2026',
     titulo: 'Terça-feira — 12 de Maio',
     data: '12/05/2026',
@@ -394,86 +622,6 @@
           'Bauru/SP — percentual federal zerado quando não há tributos discriminados',
         texto:
           'O município de Bauru/SP foi adicionado à regra que zera o percentual federal no XML da NFS-e quando não há tributos federais discriminados. Esse tratamento já existia para Vila Velha/ES, Cariacica/ES e Franca/SP. Sem essa configuração, a prefeitura de Bauru rejeitava notas porque o campo de percentual federal era enviado com valor inconsistente quando os tributos individuais (PIS, COFINS, CSLL, IR, INSS) não estavam preenchidos.',
-      },
-    ],
-  },
-  {
-    tag: '03/05/2026',
-    titulo: 'Sábado — 03 de Maio',
-    data: '03/05/2026',
-    itens: [
-      {
-        icon: '🌐',
-        destaque:
-          'Sapiranga/RS — correção de emissão para tomador estrangeiro no DBSeller',
-        texto:
-          'O provedor DBSeller (usado por Sapiranga/RS) rejeitava notas com tomador do exterior porque o schema XML não aceita a tag EnderecoExterior dentro de TomadorServico (erro E160), nem UF = "EX" (enum restrita a UFs brasileiras). A correção implementa o método CriarDadosTomadorInternal que, para tomadores estrangeiros em Sapiranga, usa o endereço normal com CodigoMunicipio = 9999999 (exigido pelo provedor — erro E109), preenche NifTomador com valor padrão e garante que IdentificacaoTomador esteja presente.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Faxinal do Soturno/RS — ativação de contribuição integrada no GOVBRv3',
-        texto:
-          'O município de Faxinal do Soturno/RS foi adicionado ao HashSet UsacIntContrib no provedor GOVBRv3. Essa configuração indica que o município utiliza contribuição integrada (IBS/CBS) no formato do Portal Nacional. Sem essa flag, as notas do município não incluíam os campos de contribuição exigidos pela reforma tributária, causando rejeições.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Faxinal do Soturno/RS — migrado para provedor GOVBRv3',
-        texto:
-          'O município de Faxinal do Soturno/RS teve seu provedor de NFS-e alterado para o GOVBRv3 (padrão Cidade360). A prefeitura migrou de sistema e as configurações de emissão, cancelamento e consulta foram atualizadas no ConfiguracoesMunicipios.xml, incluindo a URL do endpoint recepcaoLote apontando para webapp1-faxinaldosoturno.cidade360.cloud.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Proxy BrightData — credenciais de acesso reatualizadas (PRD)',
-        texto:
-          'As credenciais de acesso do proxy BrightData foram reatualizadas no arquivo Environment.PRD.config. O proxy é utilizado para contornar bloqueios de IP em webservices de prefeituras que limitam acessos por geolocalização. Essa é uma atualização de rotina necessária para manter o serviço funcionando após rotação periódica de senhas.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Mossoró/RN — campo CNAE ativado no provedor TinusV2',
-        texto:
-          'O município de Mossoró/RN foi adicionado à lista de municípios que utilizam o campo CNAE (Classificação Nacional de Atividades Econômicas) no provedor TinusV2. A prefeitura de Mossoró exige que o CNAE seja informado no XML da nota fiscal. Sem essa configuração, notas de empresas do município eram rejeitadas por falta do campo obrigatório.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Salvador/BA — remoção de caracteres XML inválidos na razão social do tomador',
-        texto:
-          'O provedor de Salvador/BA (ABRASF v1) rejeitava notas quando a razão social do tomador continha caracteres especiais inválidos para XML (como caracteres de controle ou emojis). Foi adicionada a chamada RemoveInvalidXmlChars antes do Truncate no campo RazaoSocial, garantindo que apenas caracteres válidos sejam enviados no XML.',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Portal Nacional — campos de endereço com valores padrão para evitar rejeição de schema',
-        texto:
-          'Notas emitidas pelo Portal Nacional (NfseNacionalV2) estavam sendo rejeitadas quando campos de endereço do tomador ou prestador estavam vazios. A correção aplica valores padrão: "0" para número (nro), "-" para complemento (xCpl), bairro (xBairro) e logradouro (xLgr) quando não informados.',
-      },
-    ],
-  },
-  {
-    tag: '02/05/2026',
-    titulo: 'Sábado — 02 de Maio',
-    data: '02/05/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque:
-          'Proxy BrightData — atualização de senhas no ambiente de produção',
-        texto:
-          'As senhas de acesso ao proxy BrightData foram atualizadas no arquivo Environment.PRD.config. O proxy é utilizado para contornar bloqueios de IP em webservices de prefeituras que limitam acessos por geolocalização. A rotação periódica de credenciais é necessária para manter o serviço funcionando corretamente.',
-      },
-    ],
-  },
-  {
-    tag: '01/05/2026',
-    titulo: 'Quinta-feira — 01 de Maio',
-    data: '01/05/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
