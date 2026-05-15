@@ -1,17 +1,12 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 15/05/2026 12:04 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 15/05/2026 14:03 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "15/05/2026 12:04",
+  geradoEm: "15/05/2026 14:03",
   travadasPorMunicipio: [
   {
     "facet": "Itajaí",
     "latest.nfe.stuck_in_intermediate_status.count": 64,
     "nfe.municipio_servico": "Itajaí"
-  },
-  {
-    "facet": "Lauro de Freitas",
-    "latest.nfe.stuck_in_intermediate_status.count": 15,
-    "nfe.municipio_servico": "Lauro de Freitas"
   },
   {
     "facet": "Olímpia",
@@ -22,11 +17,6 @@ var monitoramentoNfeData = {
     "facet": "Jundiaí",
     "latest.nfe.stuck_in_intermediate_status.count": 3,
     "nfe.municipio_servico": "Jundiaí"
-  },
-  {
-    "facet": "São Paulo",
-    "latest.nfe.stuck_in_intermediate_status.count": 3,
-    "nfe.municipio_servico": "São Paulo"
   },
   {
     "facet": "Ilhéus",
@@ -69,29 +59,19 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Niterói"
   },
   {
-    "facet": "Campos do Jordão",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
-    "nfe.municipio_servico": "Campos do Jordão"
-  },
-  {
     "facet": "Rondonópolis",
     "latest.nfe.stuck_in_intermediate_status.count": 2,
     "nfe.municipio_servico": "Rondonópolis"
   },
   {
-    "facet": "Fortaleza",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
-    "nfe.municipio_servico": "Fortaleza"
-  },
-  {
-    "facet": "Eusébio",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
-    "nfe.municipio_servico": "Eusébio"
-  },
-  {
     "facet": "Elói Mendes",
     "latest.nfe.stuck_in_intermediate_status.count": 2,
     "nfe.municipio_servico": "Elói Mendes"
+  },
+  {
+    "facet": "São Gonçalo",
+    "latest.nfe.stuck_in_intermediate_status.count": 2,
+    "nfe.municipio_servico": "São Gonçalo"
   },
   {
     "facet": "",
@@ -209,14 +189,14 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Guaíra"
   },
   {
-    "facet": "Araucária",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
-    "nfe.municipio_servico": "Araucária"
-  },
-  {
     "facet": "Patos de Minas",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.municipio_servico": "Patos de Minas"
+  },
+  {
+    "facet": "Araucária",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Araucária"
   },
   {
     "facet": "Caxias do Sul",
@@ -252,6 +232,26 @@ var monitoramentoNfeData = {
     "facet": "Maringá",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.municipio_servico": "Maringá"
+  },
+  {
+    "facet": "Cravinhos",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Cravinhos"
+  },
+  {
+    "facet": "Saquarema",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Saquarema"
+  },
+  {
+    "facet": "Caçador",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Caçador"
+  },
+  {
+    "facet": "Nova Lima",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Nova Lima"
   }
 ],
   tempoMaxProcessamento: [
@@ -261,19 +261,9 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Pinhais"
   },
   {
-    "facet": "São Paulo",
-    "max.nfe.processing_time.minutes": 53,
-    "nfe.municipio_servico": "São Paulo"
-  },
-  {
-    "facet": "Florianópolis",
-    "max.nfe.processing_time.minutes": 52,
-    "nfe.municipio_servico": "Florianópolis"
-  },
-  {
-    "facet": "Brasília",
-    "max.nfe.processing_time.minutes": 43,
-    "nfe.municipio_servico": "Brasília"
+    "facet": "Santo André",
+    "max.nfe.processing_time.minutes": 40,
+    "nfe.municipio_servico": "Santo André"
   },
   {
     "facet": "Belo Horizonte",
@@ -281,24 +271,34 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Belo Horizonte"
   },
   {
-    "facet": "Taboão da Serra",
-    "max.nfe.processing_time.minutes": 36,
-    "nfe.municipio_servico": "Taboão da Serra"
+    "facet": "",
+    "max.nfe.processing_time.minutes": 32,
+    "nfe.municipio_servico": ""
   },
   {
-    "facet": "Socorro",
-    "max.nfe.processing_time.minutes": 27,
-    "nfe.municipio_servico": "Socorro"
+    "facet": "Piracicaba",
+    "max.nfe.processing_time.minutes": 32,
+    "nfe.municipio_servico": "Piracicaba"
   },
   {
-    "facet": "Niterói",
-    "max.nfe.processing_time.minutes": 27,
-    "nfe.municipio_servico": "Niterói"
-  },
-  {
-    "facet": "São Caetano do Sul",
+    "facet": "Brasília",
     "max.nfe.processing_time.minutes": 19,
-    "nfe.municipio_servico": "São Caetano do Sul"
+    "nfe.municipio_servico": "Brasília"
+  },
+  {
+    "facet": "Pará de Minas",
+    "max.nfe.processing_time.minutes": 19,
+    "nfe.municipio_servico": "Pará de Minas"
+  },
+  {
+    "facet": "Eusébio",
+    "max.nfe.processing_time.minutes": 19,
+    "nfe.municipio_servico": "Eusébio"
+  },
+  {
+    "facet": "Francisco Beltrão",
+    "max.nfe.processing_time.minutes": 17,
+    "nfe.municipio_servico": "Francisco Beltrão"
   },
   {
     "facet": "Porto Alegre",
@@ -308,19 +308,9 @@ var monitoramentoNfeData = {
 ],
   travadasPorMotivo: [
   {
-    "facet": "Código: GW001\r\nDescrição: O codigoServicoMunicipio infomado está inválido. Exemplos: 17.01.01 e 05.01.01",
-    "latest.nfe.stuck_in_intermediate_status.count": 8,
-    "nfe.motivo_status": "Código: GW001\r\nDescrição: O codigoServicoMunicipio infomado está inválido. Exemplos: 17.01.01 e 05.01.01"
-  },
-  {
     "facet": "O IBS/CBS nao foi preenchido corretamente",
     "latest.nfe.stuck_in_intermediate_status.count": 3,
     "nfe.motivo_status": "O IBS/CBS nao foi preenchido corretamente"
-  },
-  {
-    "facet": "Código: PNFe0009\r\nDescrição: O bairro do endereço do tomador deve conter entre 1 e 30 caracteres\r\n\r\n",
-    "latest.nfe.stuck_in_intermediate_status.count": 3,
-    "nfe.motivo_status": "Código: PNFe0009\r\nDescrição: O bairro do endereço do tomador deve conter entre 1 e 30 caracteres\r\n\r\n"
   },
   {
     "facet": "Código: E157\r\nDescrição: Usuário não tem autorização para solicitar o serviço.; Informações personalizadas: Conforme o Decreto Municipal nº 2.453/2025, a partir de 01/05/2026 as empresas enquadradas como Simples Nacional (ME-EPP) estão obrigadas a emitir suas Notas Fiscais de Serviço exclusivamente pelo portal Nacional de NFS-e.\r\nCorreção: A pessoa física ou jurídica, identificada pelo CPF ou CNPJ, não está autorizada a solicitar o serviço para o contribuinte identificado pelo CPF ou CNPJ.\r\n\r\n\r\n",
@@ -351,11 +341,6 @@ var monitoramentoNfeData = {
     "facet": "Código: 807\r\nDescrição: Erro desconhecido\r\nCorreção: \r\n\r\n",
     "latest.nfe.stuck_in_intermediate_status.count": 2,
     "nfe.motivo_status": "Código: 807\r\nDescrição: Erro desconhecido\r\nCorreção: \r\n\r\n"
-  },
-  {
-    "facet": "Código: E0084\r\nDescrição: CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.\r\n",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
-    "nfe.motivo_status": "Código: E0084\r\nDescrição: CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.\r\n"
   },
   {
     "facet": "Código: _NFe002\r\nDescrição: O Código de Serviço municipal deve ser informado para a emissão da Nota Fiscal\r\n\r\nCódigo: NFE0010\r\nDescrição: O código do serviço municipal deve ser informado\r\n\r\n",
@@ -406,23 +391,38 @@ var monitoramentoNfeData = {
     "facet": "Ocorreu um erro inesperado ao solicitar a emissão junto à prefeitura. Faça contato com o suporte.",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.motivo_status": "Ocorreu um erro inesperado ao solicitar a emissão junto à prefeitura. Faça contato com o suporte."
+  },
+  {
+    "facet": "00196 - Bairro do tomador não definido no arquivo XML..",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.motivo_status": "00196 - Bairro do tomador não definido no arquivo XML.."
+  },
+  {
+    "facet": "Código: BHISS0003\r\nDescrição: Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\n\r\nCódigo: PNFe0008\r\nDescrição: O número do endereço do tomador deve conter entre 1 e 10 caracteres\r\n\r\n",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.motivo_status": "Código: BHISS0003\r\nDescrição: Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\n\r\nCódigo: PNFe0008\r\nDescrição: O número do endereço do tomador deve conter entre 1 e 10 caracteres\r\n\r\n"
+  },
+  {
+    "facet": "Código: GW3001\r\nDescrição: A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.motivo_status": "Código: GW3001\r\nDescrição: A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999."
   }
 ],
   tempoPorStatus: [
   {
-    "average.nfe.processing_time.minutes": 13.260296540362438,
+    "average.nfe.processing_time.minutes": 7.416998671978751,
     "facet": "14",
     "nfe.status": "14"
   },
   {
-    "average.nfe.processing_time.minutes": 0.8600789437865796,
-    "facet": "5",
-    "nfe.status": "5"
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.6780276574940635,
+    "average.nfe.processing_time.minutes": 1.1345630838358756,
     "facet": "6",
     "nfe.status": "6"
+  },
+  {
+    "average.nfe.processing_time.minutes": 0.6209521507974867,
+    "facet": "5",
+    "nfe.status": "5"
   }
 ],
   tempoPorStatusDetalhe: [
@@ -432,9 +432,20 @@ var monitoramentoNfeData = {
       "13"
     ],
     "max_min": 39,
-    "media_min": 13.222408026755852,
+    "media_min": 7.416998671978751,
     "p95_min": {
       "95": 39
+    }
+  },
+  {
+    "facet": [
+      "6",
+      "3"
+    ],
+    "max_min": 40,
+    "media_min": 1.1345630838358756,
+    "p95_min": {
+      "95": 6.0625
     }
   },
   {
@@ -443,37 +454,36 @@ var monitoramentoNfeData = {
       "4"
     ],
     "max_min": 57,
-    "media_min": 0.8627152638495055,
+    "media_min": 0.6209521507974867,
     "p95_min": {
       "95": 2.03125
-    }
-  },
-  {
-    "facet": [
-      "6",
-      "3"
-    ],
-    "max_min": 52,
-    "media_min": 0.6654834587533721,
-    "p95_min": {
-      "95": 4.0625
     }
   }
 ],
   perfMunicipio: [
   {
-    "average.nfe.processing_time.minutes": 40.898305084745765,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Pinhais",
-    "max.nfe.processing_time.minutes": 57,
-    "nfe.municipio_servico": "Pinhais",
+    "average.nfe.processing_time.minutes": 19,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Pará de Minas",
+    "max.nfe.processing_time.minutes": 19,
+    "nfe.municipio_servico": "Pará de Minas",
     "percentile.nfe.processing_time.minutes": {
-      "95": 57
+      "95": 19
     }
   },
   {
-    "average.nfe.processing_time.minutes": 14.72316384180791,
-    "count.nfe.processing_time.minutes": 177,
+    "average.nfe.processing_time.minutes": 16,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Piracicaba",
+    "max.nfe.processing_time.minutes": 32,
+    "nfe.municipio_servico": "Piracicaba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 32
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 13.872222222222222,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Belo Horizonte",
     "max.nfe.processing_time.minutes": 39,
     "nfe.municipio_servico": "Belo Horizonte",
@@ -482,58 +492,58 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 14,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Dourados",
-    "max.nfe.processing_time.minutes": 14,
-    "nfe.municipio_servico": "Dourados",
+    "average.nfe.processing_time.minutes": 9.666666666666666,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Santo André",
+    "max.nfe.processing_time.minutes": 40,
+    "nfe.municipio_servico": "Santo André",
     "percentile.nfe.processing_time.minutes": {
-      "95": 14
+      "95": 40
     }
   },
   {
-    "average.nfe.processing_time.minutes": 13.559322033898304,
-    "count.nfe.processing_time.minutes": 177,
-    "facet": "São Paulo",
-    "max.nfe.processing_time.minutes": 39,
-    "nfe.municipio_servico": "São Paulo",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 39
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 7.084745762711864,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "São Caetano do Sul",
-    "max.nfe.processing_time.minutes": 19,
-    "nfe.municipio_servico": "São Caetano do Sul",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 19
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 7,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Mandaguaçu",
-    "max.nfe.processing_time.minutes": 7,
-    "nfe.municipio_servico": "Mandaguaçu",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 7
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 6.056497175141243,
-    "count.nfe.processing_time.minutes": 177,
-    "facet": "Porto Alegre",
+    "average.nfe.processing_time.minutes": 8.691666666666666,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Francisco Beltrão",
     "max.nfe.processing_time.minutes": 17,
-    "nfe.municipio_servico": "Porto Alegre",
+    "nfe.municipio_servico": "Francisco Beltrão",
     "percentile.nfe.processing_time.minutes": {
       "95": 17
     }
   },
   {
+    "average.nfe.processing_time.minutes": 7.933333333333334,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Belém",
+    "max.nfe.processing_time.minutes": 16,
+    "nfe.municipio_servico": "Belém",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 16
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 7.533333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Pinhais",
+    "max.nfe.processing_time.minutes": 57,
+    "nfe.municipio_servico": "Pinhais",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 57
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 5.766666666666667,
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "",
+    "max.nfe.processing_time.minutes": 32,
+    "nfe.municipio_servico": "",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 25.25
+    }
+  },
+  {
     "average.nfe.processing_time.minutes": 5.5,
-    "count.nfe.processing_time.minutes": 118,
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Passo Fundo",
     "max.nfe.processing_time.minutes": 7,
     "nfe.municipio_servico": "Passo Fundo",
@@ -542,18 +552,8 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 5.3474576271186445,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Belém",
-    "max.nfe.processing_time.minutes": 15,
-    "nfe.municipio_servico": "Belém",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 13.0625
-    }
-  },
-  {
     "average.nfe.processing_time.minutes": 5,
-    "count.nfe.processing_time.minutes": 34,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Barão de Cocais",
     "max.nfe.processing_time.minutes": 5,
     "nfe.municipio_servico": "Barão de Cocais",
@@ -562,48 +562,38 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 4.576271186440678,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Socorro",
-    "max.nfe.processing_time.minutes": 27,
-    "nfe.municipio_servico": "Socorro",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 27
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 4.567796610169491,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Florianópolis",
-    "max.nfe.processing_time.minutes": 52,
-    "nfe.municipio_servico": "Florianópolis",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 51.5
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 4.538461538461538,
-    "count.nfe.processing_time.minutes": 78,
-    "facet": "Içara",
-    "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Içara",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 6
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 4.11864406779661,
-    "count.nfe.processing_time.minutes": 59,
+    "average.nfe.processing_time.minutes": 4.416666666666667,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Eusébio",
-    "max.nfe.processing_time.minutes": 8,
+    "max.nfe.processing_time.minutes": 19,
     "nfe.municipio_servico": "Eusébio",
     "percentile.nfe.processing_time.minutes": {
-      "95": 8
+      "95": 19
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3.531073446327684,
-    "count.nfe.processing_time.minutes": 177,
+    "average.nfe.processing_time.minutes": 4.316666666666666,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Nova Lima",
+    "max.nfe.processing_time.minutes": 15,
+    "nfe.municipio_servico": "Nova Lima",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 15
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 4,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Santana",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Santana",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 4
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.566666666666667,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Vitória",
     "max.nfe.processing_time.minutes": 9,
     "nfe.municipio_servico": "Vitória",
@@ -612,68 +602,38 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3.4322033898305087,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Niterói",
-    "max.nfe.processing_time.minutes": 27,
-    "nfe.municipio_servico": "Niterói",
+    "average.nfe.processing_time.minutes": 3.5,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Içara",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "Içara",
     "percentile.nfe.processing_time.minutes": {
-      "95": 27
+      "95": 6
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Poços de Caldas",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Poços de Caldas",
+    "average.nfe.processing_time.minutes": 3.4833333333333334,
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "Porto Alegre",
+    "max.nfe.processing_time.minutes": 17,
+    "nfe.municipio_servico": "Porto Alegre",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
+      "95": 17
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.5,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Itajubá",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "Itajubá",
+    "average.nfe.processing_time.minutes": 3.066666666666667,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Araras",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "Araras",
     "percentile.nfe.processing_time.minutes": {
-      "95": 5
+      "95": 6
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.4915254237288136,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Mauá",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Mauá",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.4237288135593222,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Blumenau",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Blumenau",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.3823529411764706,
-    "count.nfe.processing_time.minutes": 68,
-    "facet": "São José de Ribamar",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "São José de Ribamar",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 5
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.267515923566879,
-    "count.nfe.processing_time.minutes": 157,
+    "average.nfe.processing_time.minutes": 3.0277777777777777,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Campinas",
     "max.nfe.processing_time.minutes": 9,
     "nfe.municipio_servico": "Campinas",
@@ -682,28 +642,68 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.2655367231638417,
-    "count.nfe.processing_time.minutes": 177,
-    "facet": "",
-    "max.nfe.processing_time.minutes": 9,
-    "nfe.municipio_servico": "",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 6.03125
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.1864406779661016,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Rio Grande",
+    "average.nfe.processing_time.minutes": 3,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Poços de Caldas",
     "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Rio Grande",
+    "nfe.municipio_servico": "Poços de Caldas",
     "percentile.nfe.processing_time.minutes": {
       "95": 3
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.1412429378531073,
-    "count.nfe.processing_time.minutes": 177,
+    "average.nfe.processing_time.minutes": 3,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "São José de Ribamar",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "São José de Ribamar",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.8583333333333334,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Itajubá",
+    "max.nfe.processing_time.minutes": 5,
+    "nfe.municipio_servico": "Itajubá",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 5
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.6777777777777776,
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "São Paulo",
+    "max.nfe.processing_time.minutes": 12,
+    "nfe.municipio_servico": "São Paulo",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 12
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.3333333333333335,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "João Pessoa",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "João Pessoa",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 6
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.2333333333333334,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "São Gonçalo",
+    "max.nfe.processing_time.minutes": 8,
+    "nfe.municipio_servico": "São Gonçalo",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 8
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.138888888888889,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Goiânia",
     "max.nfe.processing_time.minutes": 6,
     "nfe.municipio_servico": "Goiânia",
@@ -712,28 +712,28 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.1325301204819276,
-    "count.nfe.processing_time.minutes": 83,
-    "facet": "Itabuna",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Itabuna",
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Siqueira Campos",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Siqueira Campos",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.0677966101694913,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Brasília",
-    "max.nfe.processing_time.minutes": 43,
-    "nfe.municipio_servico": "Brasília",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1.015625
+      "95": 2
     }
   },
   {
     "average.nfe.processing_time.minutes": 2,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Lavras",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Lavras",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Sacramento",
     "max.nfe.processing_time.minutes": 2,
     "nfe.municipio_servico": "Sacramento",
@@ -743,7 +743,17 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 2,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Salgueiro",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Salgueiro",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Parnaíba",
     "max.nfe.processing_time.minutes": 2,
     "nfe.municipio_servico": "Parnaíba",
@@ -752,18 +762,28 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.8644067796610169,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Ibitinga",
-    "max.nfe.processing_time.minutes": 8,
-    "nfe.municipio_servico": "Ibitinga",
+    "average.nfe.processing_time.minutes": 1.725,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Caxias do Sul",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Caxias do Sul",
     "percentile.nfe.processing_time.minutes": {
-      "95": 8
+      "95": 3
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.8305084745762712,
-    "count.nfe.processing_time.minutes": 59,
+    "average.nfe.processing_time.minutes": 1.6916666666666667,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Taubaté",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Taubaté",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.5,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Orlândia",
     "max.nfe.processing_time.minutes": 2,
     "nfe.municipio_servico": "Orlândia",
@@ -772,68 +792,8 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.816326530612245,
-    "count.nfe.processing_time.minutes": 49,
-    "facet": "Leopoldina",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Leopoldina",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.7542372881355932,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Taubaté",
-    "max.nfe.processing_time.minutes": 4,
-    "nfe.municipio_servico": "Taubaté",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 4
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.694915254237288,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Presidente Prudente",
-    "max.nfe.processing_time.minutes": 4,
-    "nfe.municipio_servico": "Presidente Prudente",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 4
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.6440677966101696,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Bauru",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "Bauru",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 5
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.5254237288135593,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "São Gonçalo",
-    "max.nfe.processing_time.minutes": 9,
-    "nfe.municipio_servico": "São Gonçalo",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 9
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.4322033898305084,
-    "count.nfe.processing_time.minutes": 236,
-    "facet": "Taboão da Serra",
-    "max.nfe.processing_time.minutes": 36,
-    "nfe.municipio_servico": "Taboão da Serra",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1.015625
-    }
-  },
-  {
     "average.nfe.processing_time.minutes": 1.3333333333333333,
-    "count.nfe.processing_time.minutes": 177,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Botucatu",
     "max.nfe.processing_time.minutes": 3,
     "nfe.municipio_servico": "Botucatu",
@@ -842,38 +802,8 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.3333333333333333,
-    "count.nfe.processing_time.minutes": 78,
-    "facet": "Araras",
-    "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Araras",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 6
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.3305084745762712,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "São Luís",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "São Luís",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.2542372881355932,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Nova Lima",
-    "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Nova Lima",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 6
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.07909604519774,
-    "count.nfe.processing_time.minutes": 177,
+    "average.nfe.processing_time.minutes": 1.3222222222222222,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Indaiatuba",
     "max.nfe.processing_time.minutes": 3,
     "nfe.municipio_servico": "Indaiatuba",
@@ -882,18 +812,48 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.0593220338983051,
-    "count.nfe.processing_time.minutes": 118,
-    "facet": "Rio de Janeiro",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "Rio de Janeiro",
+    "average.nfe.processing_time.minutes": 1.25,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Nova Serrana",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Nova Serrana",
     "percentile.nfe.processing_time.minutes": {
-      "95": 5
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.225,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Chapecó",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Chapecó",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 4
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.0833333333333333,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "São Luís",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "São Luís",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.0416666666666667,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Brasília",
+    "max.nfe.processing_time.minutes": 19,
+    "nfe.municipio_servico": "Brasília",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1.0078125
     }
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 118,
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Caicó",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Caicó",
@@ -903,7 +863,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Lins",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Lins",
@@ -913,7 +873,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Nova Iguaçu",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Nova Iguaçu",
@@ -923,7 +883,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Tapejara",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Tapejara",
@@ -933,17 +893,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "São Vicente",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "São Vicente",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Patos de Minas",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Patos de Minas",
@@ -953,10 +903,60 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 59,
-    "facet": "Araucária",
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Cachoeirinha",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Araucária",
+    "nfe.municipio_servico": "Cachoeirinha",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Divinópolis",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Divinópolis",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Bom Jesus do Itabapoana",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Bom Jesus do Itabapoana",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 53,
+    "facet": "Boituva",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Boituva",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 38,
+    "facet": "Varginha",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Varginha",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Dourados",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Dourados",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -966,17 +966,17 @@ var monitoramentoNfeData = {
   {
     "facet": "",
     "nfe.municipio_servico": "",
-    "uniqueCount.empresa.razao_social": 572
+    "uniqueCount.empresa.razao_social": 579
   },
   {
     "facet": "São Paulo",
     "nfe.municipio_servico": "São Paulo",
-    "uniqueCount.empresa.razao_social": 125
+    "uniqueCount.empresa.razao_social": 128
   },
   {
     "facet": "Belo Horizonte",
     "nfe.municipio_servico": "Belo Horizonte",
-    "uniqueCount.empresa.razao_social": 92
+    "uniqueCount.empresa.razao_social": 93
   },
   {
     "facet": "Barueri",
@@ -986,12 +986,12 @@ var monitoramentoNfeData = {
   {
     "facet": "Rio de Janeiro",
     "nfe.municipio_servico": "Rio de Janeiro",
-    "uniqueCount.empresa.razao_social": 68
+    "uniqueCount.empresa.razao_social": 69
   },
   {
     "facet": "Brasília",
     "nfe.municipio_servico": "Brasília",
-    "uniqueCount.empresa.razao_social": 57
+    "uniqueCount.empresa.razao_social": 62
   },
   {
     "facet": "São Bernardo do Campo",
@@ -1001,7 +1001,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Curitiba",
     "nfe.municipio_servico": "Curitiba",
-    "uniqueCount.empresa.razao_social": 41
+    "uniqueCount.empresa.razao_social": 42
   },
   {
     "facet": "Florianópolis",
@@ -1011,26 +1011,26 @@ var monitoramentoNfeData = {
   {
     "facet": "Porto Alegre",
     "nfe.municipio_servico": "Porto Alegre",
-    "uniqueCount.empresa.razao_social": 33
+    "uniqueCount.empresa.razao_social": 34
   },
   {
     "facet": "Fortaleza",
     "nfe.municipio_servico": "Fortaleza",
-    "uniqueCount.empresa.razao_social": 23
+    "uniqueCount.empresa.razao_social": 24
   },
   {
     "facet": "Vila Velha",
     "nfe.municipio_servico": "Vila Velha",
-    "uniqueCount.empresa.razao_social": 18
-  },
-  {
-    "facet": "Goiânia",
-    "nfe.municipio_servico": "Goiânia",
-    "uniqueCount.empresa.razao_social": 15
+    "uniqueCount.empresa.razao_social": 19
   },
   {
     "facet": "Salvador",
     "nfe.municipio_servico": "Salvador",
+    "uniqueCount.empresa.razao_social": 16
+  },
+  {
+    "facet": "Goiânia",
+    "nfe.municipio_servico": "Goiânia",
     "uniqueCount.empresa.razao_social": 15
   },
   {
@@ -1074,6 +1074,11 @@ var monitoramentoNfeData = {
     "uniqueCount.empresa.razao_social": 9
   },
   {
+    "facet": "Blumenau",
+    "nfe.municipio_servico": "Blumenau",
+    "uniqueCount.empresa.razao_social": 9
+  },
+  {
     "facet": "Santo André",
     "nfe.municipio_servico": "Santo André",
     "uniqueCount.empresa.razao_social": 9
@@ -1107,33 +1112,28 @@ var monitoramentoNfeData = {
     "facet": "Ribeirão Preto",
     "nfe.municipio_servico": "Ribeirão Preto",
     "uniqueCount.empresa.razao_social": 8
-  },
-  {
-    "facet": "Blumenau",
-    "nfe.municipio_servico": "Blumenau",
-    "uniqueCount.empresa.razao_social": 7
   }
 ],
   statsGlobais: [
   {
-    "average.nfe.processing_time.minutes": 1.1342986425339368,
+    "average.nfe.processing_time.minutes": 0.9881996739383588,
     "max.nfe.processing_time.minutes": 57,
     "percentile.nfe.processing_time.minutes": {
       "50": 0,
       "90": 1.015625,
-      "95": 4.0625,
-      "99": 19.25
+      "95": 3.03125,
+      "99": 17.25
     }
   }
 ],
   totalEmpresas: [
   {
-    "uniqueCount.empresa.razao_social": 1570
+    "uniqueCount.empresa.razao_social": 1589
   }
 ],
   totalMunicipios: [
   {
-    "uniqueCount.nfe.municipio_servico": 285
+    "uniqueCount.nfe.municipio_servico": 320
   }
 ],
   volumeMunicipio: [
@@ -1146,6 +1146,11 @@ var monitoramentoNfeData = {
     "count.nfe.processing_time.minutes": 180,
     "facet": "",
     "nfe.municipio_servico": ""
+  },
+  {
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "São Bernardo do Campo",
+    "nfe.municipio_servico": "São Bernardo do Campo"
   },
   {
     "count.nfe.processing_time.minutes": 180,
@@ -1164,6 +1169,11 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 180,
+    "facet": "Ribeirão Preto",
+    "nfe.municipio_servico": "Ribeirão Preto"
+  },
+  {
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Indaiatuba",
     "nfe.municipio_servico": "Indaiatuba"
   },
@@ -1179,23 +1189,18 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 180,
-    "facet": "Vitória",
-    "nfe.municipio_servico": "Vitória"
-  },
-  {
-    "count.nfe.processing_time.minutes": 160,
     "facet": "Campinas",
     "nfe.municipio_servico": "Campinas"
   },
   {
-    "count.nfe.processing_time.minutes": 135,
-    "facet": "São Bernardo do Campo",
-    "nfe.municipio_servico": "São Bernardo do Campo"
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "Vitória",
+    "nfe.municipio_servico": "Vitória"
   },
   {
-    "count.nfe.processing_time.minutes": 125,
-    "facet": "Ribeirão Preto",
-    "nfe.municipio_servico": "Ribeirão Preto"
+    "count.nfe.processing_time.minutes": 153,
+    "facet": "Franca",
+    "nfe.municipio_servico": "Franca"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -1244,6 +1249,11 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Nova Serrana",
+    "nfe.municipio_servico": "Nova Serrana"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Juiz de Fora",
     "nfe.municipio_servico": "Juiz de Fora"
   },
@@ -1259,33 +1269,23 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Nova Lima",
+    "nfe.municipio_servico": "Nova Lima"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Londrina",
     "nfe.municipio_servico": "Londrina"
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Jaboatão dos Guararapes",
+    "nfe.municipio_servico": "Jaboatão dos Guararapes"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Bragança Paulista",
     "nfe.municipio_servico": "Bragança Paulista"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Barueri",
-    "nfe.municipio_servico": "Barueri"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Rio de Janeiro",
-    "nfe.municipio_servico": "Rio de Janeiro"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Campina Grande",
-    "nfe.municipio_servico": "Campina Grande"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Jaú",
-    "nfe.municipio_servico": "Jaú"
   }
 ],
   municipioStatus: [
@@ -1298,10 +1298,10 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Curitiba",
+      "São Paulo",
       "6"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 7
+    "latest.nfe.stuck_in_intermediate_status.count": 27
   },
   {
     "facet": [
@@ -1319,36 +1319,8 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "São Paulo",
-      "6"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 3
-  },
-  {
-    "facet": [
       "Araraquara",
       "6"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "Campos do Jordão",
-      "6"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "Eusébio",
-      "3"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "Fortaleza",
-      "3"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -1361,8 +1333,8 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Salvador",
-      "3"
+      "Porto Alegre",
+      "6"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -1375,7 +1347,7 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Vitória",
+      "São Gonçalo",
       "6"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -1445,13 +1417,6 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Bagé",
-      "3"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
       "Barueri",
       "3"
     ],
@@ -1461,6 +1426,13 @@ var monitoramentoNfeData = {
     "facet": [
       "Barueri",
       "6"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Bauru",
+      "3"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -1498,9 +1470,42 @@ var monitoramentoNfeData = {
       "6"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Blumenau",
+      "3"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Botucatu",
+      "3"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Botucatu",
+      "6"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Bragança Paulista",
+      "6"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],
   topEmpresasTravadas: [
+  {
+    "empresa.razao_social": "KANOE RESTAURANTE LTDA",
+    "facet": "KANOE RESTAURANTE LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 27
+  },
   {
     "empresa.razao_social": "GORILLA 18 DIGITAL MARKETING LTDA",
     "facet": "GORILLA 18 DIGITAL MARKETING LTDA",
@@ -1527,16 +1532,6 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
-    "empresa.razao_social": "FORCE FILMS LTDA",
-    "facet": "FORCE FILMS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "empresa.razao_social": "NEG CURSOS, TREINAMENTOS, MARKETING DIGITAL, CONSULTORIA E MENTORIA LTDA",
-    "facet": "NEG CURSOS, TREINAMENTOS, MARKETING DIGITAL, CONSULTORIA E MENTORIA LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
     "empresa.razao_social": "MAIS FOCO MENOS ANSIEDADE INFORMACAO EM SAUDE LTDA",
     "facet": "MAIS FOCO MENOS ANSIEDADE INFORMACAO EM SAUDE LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -1547,18 +1542,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "AGP MOTIVACAO LTDA",
-    "facet": "AGP MOTIVACAO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
     "empresa.razao_social": "MEDPERICIA EDUCACIONAL E SOLUCOES DIGITAIS LTDA",
     "facet": "MEDPERICIA EDUCACIONAL E SOLUCOES DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "AF MIDIAS LTDA",
-    "facet": "AF MIDIAS LTDA",
+    "empresa.razao_social": "CONCURSOS E VESTIBULARES SOLUCOES ESTUDANTIS LTDA",
+    "facet": "CONCURSOS E VESTIBULARES SOLUCOES ESTUDANTIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -1567,13 +1557,23 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "CAIQUE MARCONDES GARCIAS 35101638854",
-    "facet": "CAIQUE MARCONDES GARCIAS 35101638854",
+    "empresa.razao_social": "EDUCACAO E NEUROCIENCIA TREINAMENTO LTDA",
+    "facet": "EDUCACAO E NEUROCIENCIA TREINAMENTO LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "ANNA KAROLINA PIMENTEL VIDIGAL 05975377633",
-    "facet": "ANNA KAROLINA PIMENTEL VIDIGAL 05975377633",
+    "empresa.razao_social": "JANAINA CANUTO CABECO LIMA",
+    "facet": "JANAINA CANUTO CABECO LIMA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "FORCE FILMS LTDA",
+    "facet": "FORCE FILMS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "FREEDOM CURSOS E PRODUTOS DIGITAIS LTDA.",
+    "facet": "FREEDOM CURSOS E PRODUTOS DIGITAIS LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],
@@ -1588,9 +1588,9 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
-      "Lauro de Freitas"
+      "São Paulo"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 15
+    "latest.nfe.stuck_in_intermediate_status.count": 27
   },
   {
     "facet": [
@@ -1598,13 +1598,6 @@ var monitoramentoNfeData = {
       "Olímpia"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 8
-  },
-  {
-    "facet": [
-      "6",
-      "Curitiba"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 7
   },
   {
     "facet": [
@@ -1644,42 +1637,7 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
-      "São Paulo"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 3
-  },
-  {
-    "facet": [
-      "3",
-      "Eusébio"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "3",
-      "Fortaleza"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "3",
-      "Salvador"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "6",
       "Araraquara"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "6",
-      "Campos do Jordão"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -1735,6 +1693,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
+      "Porto Alegre"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "facet": [
+      "6",
       "Rondonópolis"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -1756,14 +1721,14 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
-      "Unaí"
+      "São Gonçalo"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
     "facet": [
       "6",
-      "Vitória"
+      "Unaí"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -2253,6 +2218,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "3",
+      "Eusébio"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "3",
       "Feira de Santana"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -2261,6 +2233,13 @@ var monitoramentoNfeData = {
     "facet": [
       "3",
       "Florianópolis"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "3",
+      "Fortaleza"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -2373,6 +2352,13 @@ var monitoramentoNfeData = {
     "facet": [
       "3",
       "Itu"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "3",
+      "Itupeva"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -2855,6 +2841,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "3",
+      "Salvador"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "3",
       "Santa Cruz do Sul"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -3087,6 +3080,13 @@ var monitoramentoNfeData = {
     "facet": [
       "3",
       "Teresina"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "3",
+      "Tietê"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -3380,6 +3380,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
+      "Campos do Jordão"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "6",
       "Canoas"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -3458,6 +3465,13 @@ var monitoramentoNfeData = {
     "facet": [
       "6",
       "Cuiabá"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "6",
+      "Curitiba"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -3716,6 +3730,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
+      "Lauro de Freitas"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "6",
       "Limeira"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -3947,7 +3968,7 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
-      "Porto Alegre"
+      "Porto Velho"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4129,13 +4150,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
-      "São Gonçalo"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "6",
       "São José"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -4151,6 +4165,13 @@ var monitoramentoNfeData = {
     "facet": [
       "6",
       "São José dos Campos"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "6",
+      "São José dos Pinhais"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4262,6 +4283,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "6",
+      "Vitória"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "6",
       "Vitória da Conquista"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -4275,6 +4303,20 @@ var monitoramentoNfeData = {
   }
 ],
   travadasMotivoEmpresa: [
+  {
+    "facet": [
+      "",
+      "GOSHME SOLUCOES PARA A INTERNET LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 21
+  },
+  {
+    "facet": [
+      "",
+      "GORILLA 18 DIGITAL MARKETING LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 19
+  },
   {
     "facet": [
       "",
@@ -4298,8 +4340,15 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
+      "Código: _Cert002\r\nDescrição: O certificado digital da empresa está vencido, será necessário a atualização do mesmo antes de continuar as emissões de nota fiscal.\r\n\r\n",
+      "NETPOS SERVICOS DE INFORMATICA S.A."
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 6
+  },
+  {
+    "facet": [
       "",
-      "GOSHME SOLUCOES PARA A INTERNET LTDA"
+      "TRKBIT TECNOLOGIA E INFORMACAO LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 5
   },
@@ -4320,13 +4369,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "41.875.031 ALINE REIS SERPA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 3
-  },
-  {
-    "facet": [
-      "",
       "BRANDS DECODED LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 3
@@ -4334,7 +4376,7 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "CORPO TERAPEUTA CURSOS LTDA"
+      "NEXOS EDUCACAO LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
@@ -4355,13 +4397,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "ABRANTES LIMA EMPREENDIMENTOS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
       "ACADEMIA DO JEJUM LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -4370,13 +4405,6 @@ var monitoramentoNfeData = {
     "facet": [
       "",
       "AVA BRASIL EDUCACAO E TECNOLOGIA LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
-      "BLACK BANKERS SERVICOS EDUCACIONAIS EIRELI"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -4418,14 +4446,7 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "FORCE FILMS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
-      "GPRO TREINAMENTO EM DESENVOLVIMENTO PROFISSIONAL E GERENCIAL LTDA"
+      "FAUTH CURSOS PREPARATORIOS LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -4453,14 +4474,7 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "MAIS FOCO MENOS ANSIEDADE INFORMACAO EM SAUDE LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
-      "MEDPERICIA EDUCACIONAL E SOLUCOES DIGITAIS LTDA"
+      "MARIA BOM GOURMET CONFEITARIA LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -4474,20 +4488,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "PFS DE SOUZA MARKETING DIGITAL"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
-      "R A R DOS SANTOS CURSOS"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "",
       "REGISTRO RURAL SERVICOS DE TECNOLOGIA DA INFORMACAO  LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -4495,14 +4495,14 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "SAOMIGUELITO TREINAMENTO ONLINE LTDA"
+      "RENOVATIO NEG DIGITAIS LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
     "facet": [
       "",
-      "TRKBIT TECNOLOGIA E INFORMACAO LTDA"
+      "SAOMIGUELITO TREINAMENTO ONLINE LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -4536,8 +4536,15 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Código: E0084\r\nDescrição: CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.\r\n",
-      "NEG CURSOS, TREINAMENTOS, MARKETING DIGITAL, CONSULTORIA E MENTORIA LTDA"
+      "Código: E0234\r\nDescrição: O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.\r\n",
+      "WINDSOR SOLUCOES EM SOFTWARE ONLINE LTDA."
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "facet": [
+      "Código: GW0901\r\nDescrição: O CST informado não é suportado, verifique se o mesmo foi informado corretamente.",
+      "ARKO DIGITAL LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
@@ -4593,9 +4600,23 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "Código: _Cert002\r\nDescrição: O certificado digital da empresa está vencido, será necessário a atualização do mesmo antes de continuar as emissões de nota fiscal.\r\n\r\n",
-      "MQR EDUCACAO E EDITORA LTDA"
+      "LEGENDARIOS INTERNACIONAL EVENTOS E CONGRESSO LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "facet": [
+      "",
+      "12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA."
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "",
+      "129M LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "facet": [
@@ -4615,6 +4636,13 @@ var monitoramentoNfeData = {
     "facet": [
       "",
       "360 EDITORA JURIDICA LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "",
+      "37.336.614 YASMIRRA MATTOS DE SOUZA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4691,14 +4719,14 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "ACADEMIA APOLOGETICA SANTO ATANASIO LTDA"
+      "ABRANTES LIMA EMPREENDIMENTOS LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "facet": [
       "",
-      "ACADEMIA MECANICO EXPERT LTDA"
+      "ACADEMIA APOLOGETICA SANTO ATANASIO LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4720,6 +4748,13 @@ var monitoramentoNfeData = {
     "facet": [
       "",
       "AF MIDIAS LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "",
+      "AFONSO DEGMAR RIBAS"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4818,6 +4853,13 @@ var monitoramentoNfeData = {
     "facet": [
       "",
       "ANA MARTHA CURSOS ONLINE LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "",
+      "ANTONIO CARLOS DE OLIVEIRA JUNIOR 27280431836"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -4943,6 +4985,13 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
+      "BEMP TECNOLOGIA LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "",
       "BIGH STUDIO LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -4953,52 +5002,19 @@ var monitoramentoNfeData = {
       "BLESS ME LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "BLUEBIRD PRODUTOS DIGITAIS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "BR SKILLS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "BRAVE DIGITAL"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],
   volumetriaHora: [
   {
-    "canceladas": 10,
-    "devolucoes": 3,
-    "em_emissao": 3,
+    "canceladas": 27,
+    "devolucoes": 0,
+    "em_emissao": 91,
     "email": 0,
-    "emitidas": 6883,
-    "falhas": 880
+    "emitidas": 5313,
+    "falhas": 563
   }
 ],
   volumetriaTimeseries: [
-  {
-    "beginTimeSeconds": 1778770800,
-    "emitidas": 5414,
-    "endTimeSeconds": 1778774400,
-    "falhas": 715
-  },
-  {
-    "beginTimeSeconds": 1778774400,
-    "emitidas": 3853,
-    "endTimeSeconds": 1778778000,
-    "falhas": 1304
-  },
   {
     "beginTimeSeconds": 1778778000,
     "emitidas": 4152,
@@ -5130,41 +5146,43 @@ var monitoramentoNfeData = {
     "emitidas": 7256,
     "endTimeSeconds": 1778857200,
     "falhas": 959
+  },
+  {
+    "beginTimeSeconds": 1778857200,
+    "emitidas": 6862,
+    "endTimeSeconds": 1778860800,
+    "falhas": 800
+  },
+  {
+    "beginTimeSeconds": 1778860800,
+    "emitidas": 5488,
+    "endTimeSeconds": 1778864400,
+    "falhas": 600
   }
 ],
   filaOperacoes: [
   {
     "pendentes": 0,
-    "rodando": 1
+    "rodando": 2
   }
 ],
   webhooks: [
   {
-    "dead_letter": 1,
-    "falhas": 52,
-    "ok": 70890
+    "dead_letter": 0,
+    "falhas": 2,
+    "ok": 34016
   }
 ],
   travadasStatusEmpresa: {"6":[
   {
-    "empresa.razao_social": "MQT NEGOCIOS DIGITAIS LTDA",
-    "facet": "MQT NEGOCIOS DIGITAIS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 64
-  },
-  {
-    "empresa.razao_social": "ACAMPAMENTO RECANTO DA BENCAO LTDA",
-    "facet": "ACAMPAMENTO RECANTO DA BENCAO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 15
-  },
-  {
-    "empresa.razao_social": "SOUL PROSAUDE - SISTEMA DE SAUDE E BENEFICIOS LTDA",
-    "facet": "SOUL PROSAUDE - SISTEMA DE SAUDE E BENEFICIOS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 8
-  },
-  {
     "empresa.razao_social": "DG VENTURES 1 LTDA",
     "facet": "DG VENTURES 1 LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 7
+  },
+  {
+    "empresa.razao_social": "NETPOS SERVICOS DE INFORMATICA S.A.",
+    "facet": "NETPOS SERVICOS DE INFORMATICA S.A.",
+    "latest.nfe.stuck_in_intermediate_status.count": 6
   },
   {
     "empresa.razao_social": "SOLUTUDO BRASIL FRANCHISING LTDA.",
@@ -5179,11 +5197,6 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "PITER VIOLIM DIGITAL COMPANY LTDA",
     "facet": "PITER VIOLIM DIGITAL COMPANY LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 3
-  },
-  {
-    "empresa.razao_social": "METRIK - PROJETOS DE INTERIORES E PRODUTOS LTDA.",
-    "facet": "METRIK - PROJETOS DE INTERIORES E PRODUTOS LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
@@ -5212,13 +5225,18 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "MENTALIDADE SEM LIMITE LTDA",
-    "facet": "MENTALIDADE SEM LIMITE LTDA",
+    "empresa.razao_social": "WINDSOR SOLUCOES EM SOFTWARE ONLINE LTDA.",
+    "facet": "WINDSOR SOLUCOES EM SOFTWARE ONLINE LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "MQR EDUCACAO E EDITORA LTDA",
-    "facet": "MQR EDUCACAO E EDITORA LTDA",
+    "empresa.razao_social": "AGP MOTIVACAO LTDA",
+    "facet": "AGP MOTIVACAO LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "MENTALIDADE SEM LIMITE LTDA",
+    "facet": "MENTALIDADE SEM LIMITE LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5227,18 +5245,8 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "IDIOMUS PLATAFORMA DIGITAL LTDA",
-    "facet": "IDIOMUS PLATAFORMA DIGITAL LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
     "empresa.razao_social": "GPS EDUCACAO DIGITAL LTDA",
     "facet": "GPS EDUCACAO DIGITAL LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "empresa.razao_social": "NEG CURSOS, TREINAMENTOS, MARKETING DIGITAL, CONSULTORIA E MENTORIA LTDA",
-    "facet": "NEG CURSOS, TREINAMENTOS, MARKETING DIGITAL, CONSULTORIA E MENTORIA LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5249,11 +5257,6 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "MOURA amp; BUZZETI CURSOS E TREINAMENTOS LTDA",
     "facet": "MOURA amp; BUZZETI CURSOS E TREINAMENTOS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "empresa.razao_social": "RARITA CURSOS ONLINE LTDA",
-    "facet": "RARITA CURSOS ONLINE LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5327,18 +5330,8 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "A P SERVICOS DIGITAIS LTDA",
-    "facet": "A P SERVICOS DIGITAIS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
     "empresa.razao_social": "ANA PAULA BLAZUTE ROCHA 04170013123",
     "facet": "ANA PAULA BLAZUTE ROCHA 04170013123",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "WEBENGE DIGITAL LTDA.",
-    "facet": "WEBENGE DIGITAL LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5362,18 +5355,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "RELEASES COMERCIO DE LIVROS LTDA",
-    "facet": "RELEASES COMERCIO DE LIVROS LTDA",
+    "empresa.razao_social": "FATURANDO CERTO SERVICOS DIGITAIS LTDA",
+    "facet": "FATURANDO CERTO SERVICOS DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "empresa.razao_social": "ATOMICAT LTDA",
     "facet": "ATOMICAT LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "CAMILA  LEAL KURDIAN LTDA",
-    "facet": "CAMILA  LEAL KURDIAN LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5392,15 +5380,60 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
+    "empresa.razao_social": "MOVE PRODUCAO DIGITAL LTDA",
+    "facet": "MOVE PRODUCAO DIGITAL LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
     "empresa.razao_social": "FACIL ENSINO DE IDIOMAS LTDA",
     "facet": "FACIL ENSINO DE IDIOMAS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "PIN UP ARTES LTDA",
+    "facet": "PIN UP ARTES LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "A. S. DIGITAL BOOKS LTDA",
+    "facet": "A. S. DIGITAL BOOKS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "APP MINHA CASA LTDA",
+    "facet": "APP MINHA CASA LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "CURSOS ARTESANAIS DETALHES DA CAH LTDA.",
+    "facet": "CURSOS ARTESANAIS DETALHES DA CAH LTDA.",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "BASSI SERVICOS E VENDAS LTDA",
+    "facet": "BASSI SERVICOS E VENDAS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "SER PSICOLOGO LTDA.",
+    "facet": "SER PSICOLOGO LTDA.",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "PAULO OCTAVIO VIEIRA PASSOS CONSULTORIA EM MARKETING LTDA",
+    "facet": "PAULO OCTAVIO VIEIRA PASSOS CONSULTORIA EM MARKETING LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],"3":[
   {
     "empresa.razao_social": "GOSHME SOLUCOES PARA A INTERNET LTDA",
     "facet": "GOSHME SOLUCOES PARA A INTERNET LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 5
+    "latest.nfe.stuck_in_intermediate_status.count": 21
+  },
+  {
+    "empresa.razao_social": "BRANDS DECODED LTDA",
+    "facet": "BRANDS DECODED LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
     "empresa.razao_social": "STUDIO 8 INFOMARKET E DESIGN LTDA",
@@ -5423,6 +5456,11 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
+    "empresa.razao_social": "MARIA BOM GOURMET CONFEITARIA LTDA",
+    "facet": "MARIA BOM GOURMET CONFEITARIA LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
     "empresa.razao_social": "KAIROS TREINAMENTOS E CAPACITACAO PROFISSIONAL LTDA",
     "facet": "KAIROS TREINAMENTOS E CAPACITACAO PROFISSIONAL LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -5430,6 +5468,11 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "MAIS FOCO MENOS ANSIEDADE INFORMACAO EM SAUDE LTDA",
     "facet": "MAIS FOCO MENOS ANSIEDADE INFORMACAO EM SAUDE LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "RENOVATIO NEG DIGITAIS LTDA",
+    "facet": "RENOVATIO NEG DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5473,11 +5516,6 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "NUTRINDO VIDAS ATIVIDADES DE ENSINO E NUTRICAO LTDA",
-    "facet": "NUTRINDO VIDAS ATIVIDADES DE ENSINO E NUTRICAO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
     "empresa.razao_social": "PSI ONLINE CURSO DE PSICOLOGIA LTDA",
     "facet": "PSI ONLINE CURSO DE PSICOLOGIA LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -5485,11 +5523,6 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "FORCE FILMS LTDA",
     "facet": "FORCE FILMS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "TIMSHEL CURSOS E TREINAMENTOS LTDA",
-    "facet": "TIMSHEL CURSOS E TREINAMENTOS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5628,11 +5661,6 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "OVERLENS ESCOLA DE DESIGN LTDA",
-    "facet": "OVERLENS ESCOLA DE DESIGN LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
     "empresa.razao_social": "AGENCIA PINGUIM NEGOCIOS DIGITAIS LTDA",
     "facet": "AGENCIA PINGUIM NEGOCIOS DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -5659,6 +5687,16 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 15
   },
   {
+    "empresa.razao_social": "LEGALE EDUCACIONAL S.A.",
+    "facet": "LEGALE EDUCACIONAL S.A.",
+    "latest.nfe.stuck_in_intermediate_status.count": 9
+  },
+  {
+    "empresa.razao_social": "I9 COMPANY LTDA",
+    "facet": "I9 COMPANY LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 6
+  },
+  {
     "empresa.razao_social": "Y J DIGITAL LTDA",
     "facet": "Y J DIGITAL LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 5
@@ -5669,8 +5707,18 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 4
   },
   {
+    "empresa.razao_social": "MQT NEGOCIOS DIGITAIS LTDA",
+    "facet": "MQT NEGOCIOS DIGITAIS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 4
+  },
+  {
     "empresa.razao_social": "SOBRAL EDITORA LTDA",
     "facet": "SOBRAL EDITORA LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 3
+  },
+  {
+    "empresa.razao_social": "FASBEN SAO BENTO EDUCACIONAL LTDA",
+    "facet": "FASBEN SAO BENTO EDUCACIONAL LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
@@ -5684,28 +5732,38 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
-    "empresa.razao_social": "O NOVO MERCADO ESCOLA DE MARKETING LTDA",
-    "facet": "O NOVO MERCADO ESCOLA DE MARKETING LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 3
-  },
-  {
     "empresa.razao_social": "IDIOMUS PLATAFORMA DIGITAL LTDA",
     "facet": "IDIOMUS PLATAFORMA DIGITAL LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 3
   },
   {
-    "empresa.razao_social": "FORCE FILMS LTDA",
-    "facet": "FORCE FILMS LTDA",
+    "empresa.razao_social": "EROS NEGOCIOS DIGITAIS LTDA",
+    "facet": "EROS NEGOCIOS DIGITAIS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 3
+  },
+  {
+    "empresa.razao_social": "DREAMS COLOR MARKETING LTDA",
+    "facet": "DREAMS COLOR MARKETING LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 3
+  },
+  {
+    "empresa.razao_social": "TAYNARA INFOPRODUTOS LTDA",
+    "facet": "TAYNARA INFOPRODUTOS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "MILENA BUSINESS LTDA",
-    "facet": "MILENA BUSINESS LTDA",
+    "empresa.razao_social": "LJ EMPREENDIMENTOS DIGITAIS LTDA",
+    "facet": "LJ EMPREENDIMENTOS DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
     "empresa.razao_social": "ELEVATION TREINAMENTOS LTDA. - ME",
     "facet": "ELEVATION TREINAMENTOS LTDA. - ME",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "KAIZEN PRODUTOS DIGITAIS LTDA",
+    "facet": "KAIZEN PRODUTOS DIGITAIS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5724,8 +5782,18 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "ABRANTES LIMA EMPREENDIMENTOS LTDA",
-    "facet": "ABRANTES LIMA EMPREENDIMENTOS LTDA",
+    "empresa.razao_social": "STUDIO HOMEOSTASE LTDA",
+    "facet": "STUDIO HOMEOSTASE LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "GENEBRA EDICOES DE LIVROS LTDA",
+    "facet": "GENEBRA EDICOES DE LIVROS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "PRODUTORA AMAGO LTDA.",
+    "facet": "PRODUTORA AMAGO LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5734,13 +5802,23 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
+    "empresa.razao_social": "REGISTRO RURAL SERVICOS DE TECNOLOGIA DA INFORMACAO  LTDA",
+    "facet": "REGISTRO RURAL SERVICOS DE TECNOLOGIA DA INFORMACAO  LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
     "empresa.razao_social": "AVA BRASIL EDUCACAO E TECNOLOGIA LTDA",
     "facet": "AVA BRASIL EDUCACAO E TECNOLOGIA LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "R A R DOS SANTOS CURSOS",
-    "facet": "R A R DOS SANTOS CURSOS",
+    "empresa.razao_social": "M.S DESENVOLVIMENTO E TREINAMENTOS AVANCADOS LTDA",
+    "facet": "M.S DESENVOLVIMENTO E TREINAMENTOS AVANCADOS LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "empresa.razao_social": "LET&PONTO LTDA",
+    "facet": "LET&PONTO LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5749,13 +5827,8 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
-    "empresa.razao_social": "DOMINE SEU RESTAURANTE CONSULTORIA E TREINAMENTOS LTDA",
-    "facet": "DOMINE SEU RESTAURANTE CONSULTORIA E TREINAMENTOS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "empresa.razao_social": "PFS DE SOUZA MARKETING DIGITAL",
-    "facet": "PFS DE SOUZA MARKETING DIGITAL",
+    "empresa.razao_social": "INSTITUTO BRASILEIRO DE FITOTERAPIA CLINICA LTDA",
+    "facet": "INSTITUTO BRASILEIRO DE FITOTERAPIA CLINICA LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 2
   },
   {
@@ -5774,13 +5847,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "REPSOLD MKT SERVICOS LTDA",
-    "facet": "REPSOLD MKT SERVICOS LTDA",
+    "empresa.razao_social": "STUDIO 8 INFOMARKET E DESIGN LTDA",
+    "facet": "STUDIO 8 INFOMARKET E DESIGN LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "STUDIO 8 INFOMARKET E DESIGN LTDA",
-    "facet": "STUDIO 8 INFOMARKET E DESIGN LTDA",
+    "empresa.razao_social": "REPSOLD MKT SERVICOS LTDA",
+    "facet": "REPSOLD MKT SERVICOS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5789,13 +5862,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "37.336.614 YASMIRRA MATTOS DE SOUZA",
-    "facet": "37.336.614 YASMIRRA MATTOS DE SOUZA",
+    "empresa.razao_social": "FORCE FILMS LTDA",
+    "facet": "FORCE FILMS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "ESCOLA DO INCONSCIENTE CURSOS E TREINAMENTOS LTDA",
-    "facet": "ESCOLA DO INCONSCIENTE CURSOS E TREINAMENTOS LTDA",
+    "empresa.razao_social": "37.336.614 YASMIRRA MATTOS DE SOUZA",
+    "facet": "37.336.614 YASMIRRA MATTOS DE SOUZA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5804,13 +5877,8 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "JUDAH ADONAI MAIA FAUSTINO E CIA LTDA",
-    "facet": "JUDAH ADONAI MAIA FAUSTINO E CIA LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "PROSPERUM ESTRATEGIAS DIGITAIS LTDA",
-    "facet": "PROSPERUM ESTRATEGIAS DIGITAIS LTDA",
+    "empresa.razao_social": "47.604.849 DAIANI ALBINO VELOSO",
+    "facet": "47.604.849 DAIANI ALBINO VELOSO",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5819,8 +5887,8 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "47.604.849 DAIANI ALBINO VELOSO",
-    "facet": "47.604.849 DAIANI ALBINO VELOSO",
+    "empresa.razao_social": "BR SKILLS LTDA",
+    "facet": "BR SKILLS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5829,13 +5897,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "BR SKILLS LTDA",
-    "facet": "BR SKILLS LTDA",
+    "empresa.razao_social": "61.234.737 OSVALDO VIOLIM",
+    "facet": "61.234.737 OSVALDO VIOLIM",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "61.234.737 OSVALDO VIOLIM",
-    "facet": "61.234.737 OSVALDO VIOLIM",
+    "empresa.razao_social": "AGNALDO FELIPE DA SILVA",
+    "facet": "AGNALDO FELIPE DA SILVA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -5844,64 +5912,24 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "REIMAGINE TREINAMENTOS LTDA",
-    "facet": "REIMAGINE TREINAMENTOS LTDA",
+    "empresa.razao_social": "SIMPLIFICA TREINAMENTOS LTDA",
+    "facet": "SIMPLIFICA TREINAMENTOS LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "SIMPLIFICA TREINAMENTOS LTDA",
-    "facet": "SIMPLIFICA TREINAMENTOS LTDA",
+    "empresa.razao_social": "PROGRAMA PILATES EM CASA LTDA",
+    "facet": "PROGRAMA PILATES EM CASA LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "empresa.razao_social": "VALERIA MARQUES SABINO GONCALVES DA SILVA",
     "facet": "VALERIA MARQUES SABINO GONCALVES DA SILVA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "MEMORIZA AI EDUCACAO LTDA",
-    "facet": "MEMORIZA AI EDUCACAO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "VICIO DE UMA ESTUDANTE CURSO PREPARATORIO PARA CONCURSOS LTDA",
-    "facet": "VICIO DE UMA ESTUDANTE CURSO PREPARATORIO PARA CONCURSOS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "AGENCIA GETTARE LANCAMENTOS DE CURSOS DIGITAIS LTDA",
-    "facet": "AGENCIA GETTARE LANCAMENTOS DE CURSOS DIGITAIS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "ECOTRIM COMERCIO LTDA",
-    "facet": "ECOTRIM COMERCIO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "XO RUGAS LTDA",
-    "facet": "XO RUGAS LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "SEEDY SOLUCOES TECNOLOGICAS EM EDUCACAO LTDA",
-    "facet": "SEEDY SOLUCOES TECNOLOGICAS EM EDUCACAO LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "SPEAKING WITH SPENCER LTDA",
-    "facet": "SPEAKING WITH SPENCER LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "empresa.razao_social": "CFIOS EDUTECH LTDA",
-    "facet": "CFIOS EDUTECH LTDA",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],"0":[],"12":[]},
   totalMunicipiosPendentes: [
   {
-    "uniqueCount.nfe.municipio_servico": 253
+    "uniqueCount.nfe.municipio_servico": 254
   }
 ]
 };
