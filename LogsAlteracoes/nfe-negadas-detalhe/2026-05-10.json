@@ -1,0 +1,2502 @@
+﻿[
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  326,
+        "empresa_id":  "78513559-2d29-4cef-bb61-56f130c30400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Os dados obrigatórios da empresa ainda não foram preenchidos corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  279,
+        "empresa_id":  "fc901d48-34a3-4195-9b21-d12587170b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O item da lista de serviço deve conter 5 dígitos com formatação (ex: 01.08, 10.02)\",\"acaoCorrecao\":null}",
+        "qtd":  262,
+        "empresa_id":  "2d42dcbe-82e9-4afd-91fe-b73525f10600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  250,
+        "empresa_id":  "d9cc5b54-15cd-4a49-94d3-6e74c59f0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não foi possível recuperar informações desta nf.\",\"acaoCorrecao\":null}",
+        "qtd":  219,
+        "empresa_id":  "479be0d2-08dd-d5fc-415d-95436910175d"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  195,
+        "empresa_id":  "d6daa88b-deeb-46cd-bd81-922c7d810600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.\",\"acaoCorrecao\":null}",
+        "qtd":  160,
+        "empresa_id":  "927a5dfc-9f31-4ced-9561-dda831e60600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\\n1 - The element \\\"Servico\\\" in namespace \\\"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd\\\" has incomplete content. List of possible elements expected: \\\"NBS\\\" in namespace \\\"\",\"acaoCorrecao\":null}",
+        "qtd":  145,
+        "empresa_id":  "c400670d-08dd-51f1-44cd-65f552bbc571"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Bairro do Tomador de Serviços é Obrigatório\\r\\nCorreção: Informar Bairro.\",\"acaoCorrecao\":null}",
+        "qtd":  142,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  140,
+        "empresa_id":  "9758988e-6752-466f-a087-d192cb730400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Cidade do Tomador de Serviços é Obrigatório \\r\\nCorreção: Informar Cidade.\",\"acaoCorrecao\":null}",
+        "qtd":  115,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  111,
+        "empresa_id":  "db4be487-08dd-c491-49f7-70fc67615fab"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"00000000000000000\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  108,
+        "empresa_id":  "b41dbc45-9133-4e5f-ba35-25a0a5be0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CST informado não é suportado, verifique se o mesmo foi informado corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  105,
+        "empresa_id":  "8f1ec1db-08de-48a6-4f12-695244df97a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O cadastro da empresa não possui CNAE vinculado ou o CNAE informado não corresponde ao cadastro.(Numero RPS: 1)\\r\\nCorreção: Verifique os dados do Prestador junto à Prefeitura.\",\"acaoCorrecao\":null}",
+        "qtd":  105,
+        "empresa_id":  "8f1ec1db-08de-48a6-4f12-695244df97a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  104,
+        "empresa_id":  "8ab0948b-08de-daf8-4027-5dd8b06ef54f"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar em contato pelo Whatsapp: (31) 99705-2109.\",\"acaoCorrecao\":null}",
+        "qtd":  101,
+        "empresa_id":  "4cf5df94-08dd-9b0c-4910-76865ce30a98"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Data de Emissão do RPS refere-se a competência já encerrada\\r\\nCorreção: Para prosseguir é necessário retificar o movimento através do menu \\\"Retificar Serviços Prestados\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  100,
+        "empresa_id":  "5541f88d-08dd-1b72-4e2b-929199640211"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  100,
+        "empresa_id":  "93213a69-08dd-5101-43ec-4826dfe5e898"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 21000)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  96,
+        "empresa_id":  "2cc349d4-104d-4070-8b73-2ae5731c0b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Usuário não tem autorização para solicitar o serviço.; Informações personalizadas: Conforme o Decreto Municipal nº 2.453/2025, a partir de 01/05/2026 as empresas enquadradas como Simples Nacional (ME-EPP) estão obrigadas a emitir suas Notas Fiscais de Serviço exclusivamente pelo portal Nacional de N\",\"acaoCorrecao\":null}",
+        "qtd":  95,
+        "empresa_id":  "b8d2a390-08dd-987f-440b-1203b72389b6"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  94,
+        "empresa_id":  "d7a8a20c-8c8f-4c99-8e8f-4955b4c50900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série transcrita manualmente para a DPS deve ser um número dentro da faixa definida para este fim, que é de 80000 até 89999.\",\"acaoCorrecao\":null}",
+        "qtd":  92,
+        "empresa_id":  "71967b4e-cf2d-40cd-9251-ee2b7b410700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Sistema Temporariamente indisponível.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  87,
+        "empresa_id":  "531a1d0d-dad3-409f-92c4-dfbc4fb00800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão da NFe.\",\"acaoCorrecao\":3}",
+        "qtd":  86,
+        "empresa_id":  "88ca6732-08dd-a777-40ad-e4c240a0d214"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  83,
+        "empresa_id":  "a63bc3d1-08de-3f8b-4d08-fdfad02b5ac1"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O serviço especificado na nota fiscal não permite retenção de ISS.\",\"acaoCorrecao\":2}",
+        "qtd":  81,
+        "empresa_id":  "717c98a1-05d6-4155-8c90-0f01b13a0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Preencher a tag cnae e envie novamente\",\"acaoCorrecao\":null}",
+        "qtd":  80,
+        "empresa_id":  "de97c558-08dd-edb7-4c31-38fa134f42b2"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  80,
+        "empresa_id":  "82ed5fc0-3117-49c8-8e51-d13fe3460700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Ocorreu um erro inesperado ao solicitar a emissão junto à prefeitura. Faça contato com o suporte.\",\"acaoCorrecao\":null}",
+        "qtd":  73,
+        "empresa_id":  "3f89af36-46bd-4102-b2f5-ab9869320b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  72,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  71,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro na autenticação do usuário. Usuário e senha não conferem.\\r\\nCorreção: Entre em contato com o fornecedor do serviço para mais informações\",\"acaoCorrecao\":null}",
+        "qtd":  65,
+        "empresa_id":  "1dfbd7a4-08de-bba7-47d2-d192109fafa3"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 387 - Rejeição: Código de Enquadramento Legal do IPI inválido [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  60,
+        "empresa_id":  "427e0977-def6-4dd5-9efb-caf8b7570900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  56,
+        "empresa_id":  "c842c4a6-9ba9-40bd-9a89-8136b4fc0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  54,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo item da lista de serviÃ§o informado incorretamente.\\r\\nCorreção: O campo item da lista de serviÃ§o deverÃ¡ ter tamanho mÃ¡ximo de 4 caracteres.\",\"acaoCorrecao\":null}",
+        "qtd":  51,
+        "empresa_id":  "11e18c7c-31d1-49a0-8941-91457d230b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  50,
+        "empresa_id":  "1b5131e8-abb9-403f-ba1e-f7ec6be50a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  47,
+        "empresa_id":  "57e23465-0e3e-432c-87f6-c33411ac0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  47,
+        "empresa_id":  "8363988a-08dd-8974-454b-b259f2b832ed"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  46,
+        "empresa_id":  "21609652-d807-4e0e-974c-16af05570600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informe um código NBS válido. Ex.: \\\"codigoNBS\\\": \\\"1.0905.11.00\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  46,
+        "empresa_id":  "318896a5-97c9-48db-9c4d-7b0bcd250600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  44,
+        "empresa_id":  "c415e906-0bea-477b-a208-2ba21c990400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O codigoServicoMunicipio infomado está inválido. Exemplos: 17.01.01 e 05.01.01\",\"acaoCorrecao\":null}",
+        "qtd":  43,
+        "empresa_id":  "5cb7da7e-1d42-4186-9d3c-576ff0490600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Bairro do Tomador de Serviços é Obrigatório\\r\\nCorreção: Informar Bairro.\",\"acaoCorrecao\":null}",
+        "qtd":  42,
+        "empresa_id":  "0a9bb472-f5b0-4dd6-8645-81724f2c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  42,
+        "empresa_id":  "69fc3e27-2b74-4060-a1cd-7640c06a0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  42,
+        "empresa_id":  "11b1df3e-4ddc-4afe-a68c-f96ed3af0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo cNBS (NBS) é obrigatório para emissão da NFS-e no padrão DPS\",\"acaoCorrecao\":null}",
+        "qtd":  42,
+        "empresa_id":  "12ebd788-5dd5-43b7-a2a5-690884460500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do PIS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  42,
+        "empresa_id":  "7de6b306-08de-1cce-4371-900c4b27c803"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  41,
+        "empresa_id":  "6e2b2b04-e6f1-402d-9feb-e8b6cd100a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota inválida.\\r\\nCorreção: A alíquota correta É 3,4411%.\",\"acaoCorrecao\":null}",
+        "qtd":  41,
+        "empresa_id":  "d6bcb8a6-d4a4-499a-ab38-40435d860900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  40,
+        "empresa_id":  "71626d50-6e31-4f8b-ba25-7232b3c30a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Atencao - O campo CEP do destinatario deve ser informado\",\"acaoCorrecao\":null}",
+        "qtd":  39,
+        "empresa_id":  "67bacac5-08dd-15b1-45de-2fbee0db329e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código do serviço municipal deve conter de 1 a 5 caracteres numéricos\",\"acaoCorrecao\":null}",
+        "qtd":  37,
+        "empresa_id":  "79962adb-f25c-4b45-92c0-bdbb6ced0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"4901.99.00 \\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  37,
+        "empresa_id":  "cfa5aead-08dd-f883-4ac1-f3e7731ed77e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 245 - Rejeicao: CNPJ Emitente nao cadastrado\",\"acaoCorrecao\":null}",
+        "qtd":  36,
+        "empresa_id":  "8a14c6c2-897a-41b3-8acf-b739d45c0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa não está configurada para emissão de notas fiscais de produto. Por favor, configure a emissão.\",\"acaoCorrecao\":null}",
+        "qtd":  36,
+        "empresa_id":  "318896a5-97c9-48db-9c4d-7b0bcd250600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  35,
+        "empresa_id":  "d46fff0f-cf7d-45f9-a8f8-f08e51f70500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  35,
+        "empresa_id":  "cf25c5a9-0b3f-4474-98e6-693aa80a0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  35,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  34,
+        "empresa_id":  "fdc5d03a-8373-434d-ad13-228b23b50900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 997 - Rejeicao: Emissao de Documento Fiscal monitorada. Favor abrir solicitacao em www.fazenda.mg.gov.br. Clicar em Servicos \u003e Portal da Receita \u003e Servicos \u003e Notas e Documentos Fiscais Eletronicos \u003e Liberacao da Emissao de Documentos Fiscais Eletronicos\",\"acaoCorrecao\":null}",
+        "qtd":  34,
+        "empresa_id":  "1bceb9aa-08de-f531-4e90-4fbefdb7af16"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  34,
+        "empresa_id":  "e3423c3e-471e-4964-893a-f5f0aad10900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A prefeitura não devolveu uma resposta significativa.\\r\\nCorreção: Por favor, verifique e valide os dados enviados no XML para garantir que estão corretos.\",\"acaoCorrecao\":null}",
+        "qtd":  32,
+        "empresa_id":  "bb1c32a4-88ee-4193-8cbe-a4fa35e60a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada no RPS não está de acordo com o cadastro Simples Nacional.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  32,
+        "empresa_id":  "34b7987d-08dd-1e75-4bb1-b2dc6c98d896"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente.\",\"acaoCorrecao\":null}",
+        "qtd":  31,
+        "empresa_id":  "3881d960-69d7-4959-8163-66554d7b0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissor nao habilitado para emissao da NF-e. [Notificacao:Suspenso conforme item 6.6 da NPF 63/2012.Para mais informacoes acesse o FAQ: https://atendimento.fazenda.pr.gov.br/sacsefa/portal/assuntosReferente/25 - item: Suspensao]\",\"acaoCorrecao\":null}",
+        "qtd":  31,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "8d73450a-60f3-4439-87be-172a0b2d0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema. Houve um erro na leitura do XML de envio de loteSystem.NullReferenceException: Object reference not set to an instance of an object.\\n   at NFE.DataSource.BeneficioFiscalSource.VerificarBeneficioFiscal(Int64 pCga, DateTime pDtCompetencia, Int32 pCodCTM)\\n   at NFE.Data.N\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "414a7953-08dd-8aaf-40dc-513eb077b25a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Retenção do ISS informada não é permitida, pois a nota fiscal se enquadra na Instrução Normativa IN 8/2013 na regra 4.\\r\\nCorreção: Consulte a legislação vigente para maiores informações\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema. Houve um erro na leitura do XML de envio de loteSystem.NullReferenceException: Object reference not set to an instance of an object.\\n   at NotaSalvador.IntegrationModel.EnvioLoteRPS.EnviarLoteRPS(EnviarLoteRPSRequest request) in E:\\\\Jenkins\\\\workspace\\\\1DSV\\\\FISCALIZACAO\\\\N\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "b87fda7e-d8da-4b05-ab2c-d6169b0c0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\\n1 - The \\\"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd:RazaoSocial\\\" element is invalid - The value \\\"\\\" is invalid according to its datatype \\\"http://www.abrasf.org.br/AB\",\"acaoCorrecao\":null}",
+        "qtd":  30,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Prestador Bloqueado!\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  29,
+        "empresa_id":  "898ef138-08de-cb49-44ba-e8bffdada003"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  29,
+        "empresa_id":  "ea630b82-08dd-a083-4168-2336da3ff974"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  29,
+        "empresa_id":  "29bf0869-0920-43fe-833a-e54703820800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  28,
+        "empresa_id":  "6db1c580-0343-40af-8d45-727e4b270b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 930 - Rejeicao: CST com beneficio fiscal e nao informado o codigo de beneficio fiscal [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  28,
+        "empresa_id":  "35f665f5-4df6-4988-92dc-6bf49b600600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Endereço do Tomador de Serviços é Obrigatório\\r\\nCorreção: IInformar Endereço.\",\"acaoCorrecao\":null}",
+        "qtd":  28,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  28,
+        "empresa_id":  "a81992e2-08dd-1b3d-4634-62d1b8d0ad65"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 203 - Emissor nao habilitado para emissao da NF-e [Notificacao:Suspenso conforme item 6.6 da NPF 63/2012.Para mais informacoes acesse o FAQ: https://atendimento.fazenda.pr.gov.br/sacsefa/portal/assuntosReferente/25 - item: Suspensao]\",\"acaoCorrecao\":null}",
+        "qtd":  28,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informe um código NBS válido. Ex.: \\\"codigoNBS\\\": \\\"1.0905.11.00\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  28,
+        "empresa_id":  "ebcaca86-539b-4a85-bab7-df844e8b0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissor nao habilitado para emissao da NF-e/NFC-e. CNPJ:52004624000180\",\"acaoCorrecao\":null}",
+        "qtd":  27,
+        "empresa_id":  "a7ad2158-4105-4f47-a6b3-b89f01110900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  27,
+        "empresa_id":  "ba0840e7-999b-4b3d-87ce-cabf5b0d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\",\"acaoCorrecao\":null}",
+        "qtd":  27,
+        "empresa_id":  "a71b8623-9837-4f1f-bf16-0f100a540a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  27,
+        "empresa_id":  "418b5225-b3c1-4511-8491-51ff8a2d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CFOP do produto deve conter apenas números.\",\"acaoCorrecao\":null}",
+        "qtd":  27,
+        "empresa_id":  "2b1954f0-5770-4056-a03b-26b055420300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Cidade do Tomador de Serviços é Obrigatório \\r\\nCorreção: Informar Cidade.\",\"acaoCorrecao\":null}",
+        "qtd":  27,
+        "empresa_id":  "b41dbc45-9133-4e5f-ba35-25a0a5be0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 974 - CNPJ do responsavel tecnico diverge do cadastrado\",\"acaoCorrecao\":null}",
+        "qtd":  26,
+        "empresa_id":  "62ca2497-6163-4173-90ba-9f73d51f0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  26,
+        "empresa_id":  "8929485f-c038-483d-900d-9521d9c40800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  26,
+        "empresa_id":  "fd477e9a-f7a4-4b6f-ac1c-743a4ec80a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código do serviço municipal deve conter 4 ou 5 caracteres com ponto, exemplo: 1.05.\",\"acaoCorrecao\":null}",
+        "qtd":  25,
+        "empresa_id":  "c3fa6a95-cdfa-4aa7-b3cf-7a3882fb0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  25,
+        "empresa_id":  "166fb370-2b53-4402-a172-8102d2140900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 61914)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  25,
+        "empresa_id":  "c5f0f247-c078-4274-b7cb-e9bdccba0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  25,
+        "empresa_id":  "8fc06e7f-c941-4337-83f2-649949270700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\",\"acaoCorrecao\":null}",
+        "qtd":  25,
+        "empresa_id":  "c3fa6a95-cdfa-4aa7-b3cf-7a3882fb0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  24,
+        "empresa_id":  "ed985238-87bf-4509-a4c7-302530e90a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Endereço internacional do Tomador está incompleto.\\r\\nCorreção: Informe valores para os campos obrigatórios: CEP/Código Postal, Endereço, Número, Bairro/Distrito, Municipio, UF e Código Pais do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  24,
+        "empresa_id":  "16f14da4-08de-34b9-4873-ed334fff236a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  24,
+        "empresa_id":  "4a007169-fc7d-4c20-9771-cfab39d40600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior. [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  23,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  23,
+        "empresa_id":  "f2d18f80-85af-4b63-9bd1-715e0d510200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  23,
+        "empresa_id":  "eced4f8a-f832-4ccd-bb33-2815ef3f0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.\",\"acaoCorrecao\":null}",
+        "qtd":  23,
+        "empresa_id":  "20908462-08de-9c2b-4a92-8567748cb4bb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CNPJ do responsavel tecnico diverge do cadastrado\",\"acaoCorrecao\":null}",
+        "qtd":  23,
+        "empresa_id":  "62ca2497-6163-4173-90ba-9f73d51f0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Conclua o cadastro de sua empresa antes de iniciar a emissão de nota fiscal.\",\"acaoCorrecao\":3}",
+        "qtd":  22,
+        "empresa_id":  "98fa4701-6362-4090-a027-26b5cc0f0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional\",\"acaoCorrecao\":null}",
+        "qtd":  22,
+        "empresa_id":  "65a68a66-2162-4ac9-98d6-a3928a590a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  22,
+        "empresa_id":  "5f7ff250-e090-45fe-8777-891731650a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  22,
+        "empresa_id":  "1abc6e93-33d7-4ba7-8f86-632a8c620700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  21,
+        "empresa_id":  "6e216ed6-28b8-4f77-b9d5-b5504c240200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  21,
+        "empresa_id":  "813aa921-08de-1089-4552-6f76497ebb9a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  21,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  20,
+        "empresa_id":  "1580781d-4e74-4eb6-9734-7d3b8ae80700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente na chamada a API.\",\"acaoCorrecao\":null}",
+        "qtd":  20,
+        "empresa_id":  "527f3488-08dd-c72d-4560-179fb54c0a42"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Necessário informar o campo regimeApuracaoTributosSN no metadados do cadastro de empresa\\r\\n                            Opções: \\r\\n                            1- Regime de apuração dos tributos federais e municipal pelo Simples Nacional \\r\\n                            2 - Regime de apuração dos tributos federais pelo Simples Nacional e o ISSQN pela NFS-e conforme respectiva legislação municipal do tributo \\r\\n                            3 - Regime de apuração dos tributos federais e municipal pela NFS-e conforme respectivas legilações federal e municipal de cada tributo\\r\\n\\r\\n                            \\\"metadados\\\": {\\r\\n                                \\\"regimeApuracaoTributosSN\\\": 1\\r\\n                                }\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  20,
+        "empresa_id":  "de6c46f2-08dd-3196-4b39-bbb0d3edc98c"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CEP do Tomador informado inválido.\",\"acaoCorrecao\":null}",
+        "qtd":  19,
+        "empresa_id":  "7dbcc288-bfe6-4c8c-a91a-28f605170700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  19,
+        "empresa_id":  "2639480e-dd8b-4037-bebf-4c9107a80a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"4901.99.01\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  18,
+        "empresa_id":  "20908462-08de-9c2b-4a92-8567748cb4bb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  18,
+        "empresa_id":  "21dbdf42-5ce4-42b3-ba92-86b6d6140900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código NBS inválido para o Subitem LC informado.(Numero RPS: 34544)\\r\\nCorreção: Acesse a página inicial do ISS.net e baixe a correlação NBS X Subitem LC para efetuar a correção em seu XML.\",\"acaoCorrecao\":null}",
+        "qtd":  18,
+        "empresa_id":  "bf7bee9b-5c7c-4129-bc2a-1c8ddfa90700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão com serviço eventual não permitido pelo município.\\r\\nCorreção: Informe um serviço que não seja eventual.\",\"acaoCorrecao\":null}",
+        "qtd":  18,
+        "empresa_id":  "573a2e7d-610c-4c71-89df-db9004820800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  18,
+        "empresa_id":  "e8c422ee-a187-49bc-a161-d9e5ad6a0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O RPS informado já foi convertido em NFS. Utilize o serviço esConsultarNfsePorRps antes de enviar o RPS.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  17,
+        "empresa_id":  "1c698e9b-08de-1392-4f6c-da6221d39a32"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação inexistente.\\r\\nCorreção: Consulte a legislação vigente para saber o Código de tributação que deverá ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  17,
+        "empresa_id":  "ac1c7945-80a9-4494-9b9f-1df3fd500a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  17,
+        "empresa_id":  "13d08c01-ce1a-4236-957b-07c2f0d50700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 591 - Rejeicao: Informado CSOSN para emissor que nao e do Simples Nacional (CRT diferente de 1) [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  17,
+        "empresa_id":  "26625a03-2785-4590-b3a7-b65b9bd40800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  17,
+        "empresa_id":  "7d483e98-c563-44f7-bd84-9d15b8c30600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  17,
+        "empresa_id":  "094df7d4-b6c0-40a0-9335-b8a6037e0400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  16,
+        "empresa_id":  "18b4559c-9b9f-4a5e-b338-21d601620900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 209 - Rejeição: IE do emitente inválida\",\"acaoCorrecao\":null}",
+        "qtd":  16,
+        "empresa_id":  "76573f41-f5a6-48e5-9602-5f4df7e30600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  16,
+        "empresa_id":  "6c6c0b18-1914-4897-bbd9-acb946400a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Inscrição municipal paralisada, cancelada ou desativada.\\r\\nCorreção: Prestador do serviço com inscrição municipal paralisada, cancelada ou desativada não pode utilizar NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  16,
+        "empresa_id":  "20636385-b4c7-4597-a449-ad9c7a3e0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 817 - Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem: 1]\",\"acaoCorrecao\":null}",
+        "qtd":  16,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  16,
+        "empresa_id":  "de582b78-08dd-45a5-41bc-5d1ed918d7be"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  15,
+        "empresa_id":  "91760cc2-08dd-03aa-4176-7cd513aa4eda"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação inexistente.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  15,
+        "empresa_id":  "3d50b3d7-820c-4d99-b4a2-7b057f960900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  15,
+        "empresa_id":  "1e8486bb-3b71-4302-bc5e-a68879a10800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Tipo: 1 Série: 1 Número: 4353 já informado anteriormente\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  15,
+        "empresa_id":  "9a2e3caf-cd35-44ac-aeb2-fefe3dda0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  15,
+        "empresa_id":  "f375cb3d-5b01-46be-afbf-3f694d300900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informe um código NBS válido. Ex.: \\\"codigoNBS\\\": \\\"1.0905.11.00\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  15,
+        "empresa_id":  "456021f1-f407-4c51-8e7a-8d2a28570600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  14,
+        "empresa_id":  "408201f4-08dd-dd81-440b-2de9522d31be"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  14,
+        "empresa_id":  "0cbe0981-ad23-4449-a67c-6ba00d250b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Cidade do Tomador de Serviços é Obrigatório \\r\\nCorreção: Informar Cidade.\",\"acaoCorrecao\":null}",
+        "qtd":  14,
+        "empresa_id":  "427e0977-def6-4dd5-9efb-caf8b7570900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão automática interrompida ao detectar o app desativado. Envie manualmente caso queira prosseguir com a emissão da NFe.\",\"acaoCorrecao\":3}",
+        "qtd":  14,
+        "empresa_id":  "85b2d454-08de-c8b4-4419-f2aeafe35136"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Operação não autorizada por meio eletrônico em razão de ultrapassado o prazo permitido.\",\"acaoCorrecao\":null}",
+        "qtd":  14,
+        "empresa_id":  "3372b567-08de-813f-4b75-009893a9a3e5"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Bairro do Tomador de Serviços é Obrigatório\\r\\nCorreção: Informar Bairro.\",\"acaoCorrecao\":null}",
+        "qtd":  14,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  14,
+        "empresa_id":  "b6641808-31c9-4b5e-84a8-4a4fc2a30800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CNPJ/CPF  não encontrado na base de dados. \\r\\nCorreção: Confira o número do CNPJ/CPF  informado. Caso esteja correto, o prestador do serviço não está inscrito no município.\",\"acaoCorrecao\":null}",
+        "qtd":  14,
+        "empresa_id":  "e02fa93a-d5cc-47b1-8ea0-9a0d99230800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  13,
+        "empresa_id":  "465605d0-44fa-4edb-9bbd-13e24f050900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  13,
+        "empresa_id":  "1c2c0bfd-e024-40e3-8b88-c97faf070900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente.\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "bb84eec9-1813-44cf-b5a6-ca66ac670a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "05587ec2-a126-4c84-9f0b-e3700f020800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  12,
+        "empresa_id":  "aa87212d-08dd-086f-4a63-d87409716f85"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A alíquota informada é menor do que a alíquota vigente para esta competência.\\r\\nCorreção: Informe uma alíquota igual ou superior à alíquota mínima calculada.\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "d9071e58-08dd-5eaa-419c-2b3ecb624183"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "11072dfb-08de-de36-4744-bcd33fb8874e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissor nao habilitado para emissao da NF-e. [Notificacao:Suspenso conforme item 6.6 da NPF 63/2012.Para mais informacoes acesse o FAQ: https://atendimento.fazenda.pr.gov.br/sacsefa/portal/assuntosReferente/25 - item: Suspensao]\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "68afa083-08de-4a5d-4fa8-39f3923239e8"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  12,
+        "empresa_id":  "c831d702-b878-4eab-ae7d-0c9c7b3d0b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "1c82af06-08de-b048-4c6c-5c23b22c4963"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  12,
+        "empresa_id":  "f3625a98-c947-47d1-9fb4-3bce55ae0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O XML esta incompativel com o esquematico XSD ABRASF.\\r\\nCorreção: Para prosseguir, verificar a linha e a descricao do erro a seguir: Element \\\"{http://www.abrasf.org.br/nfse.xsd}ItemListaServico\\\": [facet \\\"minLength\\\"] The value has a length of \\\"4\\\"; this underruns the allowed minimum length of \\\"5\\\".\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "99b409ef-2370-4c26-972e-2d9c96830900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "4c352161-ee74-49fb-b5b3-0cd2a7b20a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  12,
+        "empresa_id":  "13be7348-e46e-4662-95bd-6d76a5530700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente.\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "a63bc3d1-08de-3f8b-4d08-fdfad02b5ac1"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Valor da aliquota informado não condiz com a lista de serviços do município.\\r\\nCorreção: Informe o valor da aliquota correto.\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "50f7a1e5-c266-4962-809f-7a3317840700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota ISS do SN Informada (3.42) Diferente da Alíquota (3.57) da data de exercício (10/05/2026)\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "4d0e4edf-a029-4508-be5d-dac3761a0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "4767950d-e0a7-4ea8-b50f-99e39d970a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  12,
+        "empresa_id":  "d284c064-957a-4659-aae8-7c5c243c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  12,
+        "empresa_id":  "ca178b4e-08dd-cc8e-4b48-9d51c9214bd3"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "4785ca6f-08dd-7470-4521-886d7e9f54ee"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "842cc157-08de-2159-442b-bf31b36fc420"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Bairro do Tomador de Serviços é Obrigatório\\r\\nCorreção: Informar Bairro.\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "427e0977-def6-4dd5-9efb-caf8b7570900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\\n1 - The element \\\"Servico\\\" in namespace \\\"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd\\\" has incomplete content. List of possible elements expected: \\\"NBS\\\" in namespace \\\"\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "eb4ac1a0-be4a-45e3-9715-8c04d8c90a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa não está configurada para emissão de notas fiscais de produto. Por favor, configure a emissão.\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "0cbe0981-ad23-4449-a67c-6ba00d250b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Lote processado com erro\\r\\nCorreção: Consulte os erros gerados no processamento deste lote.\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "3ed61caf-f77b-4397-acae-2b7d6ce50800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  11,
+        "empresa_id":  "a39ec30a-77e7-44eb-8ca4-916f236d0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  11,
+        "empresa_id":  "586bdc65-07cd-44fe-a7f7-ed58ff5c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "1f15ee65-f26f-494c-89e8-8561a86b0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  11,
+        "empresa_id":  "c861772f-08dd-319a-4d9f-3f4f7dcc4736"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "376e381d-0796-4425-8884-7e9577320700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  11,
+        "empresa_id":  "b2a3a2f1-37e1-4f3b-bbfb-6869eaf50a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 817 - Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é possível emitir notas com data de competência superior a data atual.\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "78513559-2d29-4cef-bb61-56f130c30400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  10,
+        "empresa_id":  "092a19d2-34b2-4b5a-aa66-f7a2b3230800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "1fb4ce78-6209-4834-a1c3-eee523100900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Número do RPS inválido.(Numero RPS: 576)\\r\\nCorreção: Informe um número de RPS que corresponda à seqüência utilizada pelo prestador do serviço.\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "a37f07df-08dd-61d0-4b58-01eb3b10e972"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é permitido Tomador Não Identificado para atividade selecionada\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "7edd88e1-8d4d-4e58-a6ae-9441bbf90900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "8f9c304b-34b2-4867-9cea-f5c6317c0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "74272aa9-e1cc-4e28-baf1-f5a71e9d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "113be3c2-d81a-4358-aa9f-e5c92c410900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\\n1 - The element \\\"Servico\\\" in namespace \\\"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd\\\" has incomplete content. List of possible elements expected: \\\"NBS\\\" in namespace \\\"\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "27822654-08de-25a9-489d-0b9607bedddd"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O grupo de informações de Atividade/Evento é obrigatório quando o código de tributação nacional pertencer ao item 12 da lista de serviços.\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "e00a2267-2611-49e7-b2ba-e4b793160500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do PIS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "eac92df4-9d47-40c0-8b9b-e16317c90600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informe um código NBS válido. Ex.: \\\"codigoNBS\\\": \\\"1.0905.11.00\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  10,
+        "empresa_id":  "952f0ae5-de84-4140-b8b3-5b19ae000900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  9,
+        "empresa_id":  "0ffc3a3b-d492-4e23-b9b2-175ad54c0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação nacional informado não existe conforme a lista de serviços nacional do Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "e3e9bc29-dc1c-4ca0-8c42-a81fa35f0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "62bc8761-08de-671f-4fc8-5da8c707218f"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "c5e07196-b84e-435c-8723-d635d31d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 591 - Rejeicao: Informado CSOSN para emissor que nao e do Simples Nacional (CRT diferente de 1 ou 4)\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "414769de-08dd-6013-4164-84c1975abc4e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "cb61cb5d-2d5a-4a78-a6dc-dfcd683b0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "a8e216bf-425c-49a6-ba47-6a7a32aa0400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada na DPS não está de acordo com o cadastro Simples Nacional.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "d65a4d13-9dbd-4024-b01f-7a3cf3280a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Problemas ao processar arquivo.\\r\\nCorreção: Entre em contato com suporte ao sistema.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "3398a22d-a27c-4f2c-bdb1-b62776290400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "e4d512cc-08dd-19a4-43a9-3d77e8aef131"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 720 - Rejeicao: Na operacao com Exterior deve ser informada tag idEstrangeiro\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "3b061018-08dd-dd19-4b70-7c23cc817199"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é possível emitir notas com data de competência superior a data atual.\",\"acaoCorrecao\":null}",
+        "qtd":  9,
+        "empresa_id":  "f7586350-94a1-4340-aa6a-b5db80a00200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 225 - Rejeição: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "89d8fe1a-08de-8429-4ba5-a597bd13bafd"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação nacional informado não existe conforme a lista de serviços nacional do Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "0e22dc12-1c50-41b9-ba09-7adae1ea0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "67ab53fb-08dd-efee-450d-8dc69ef0f41b"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "70beeefe-3344-4515-83d2-6c3be6990600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não catalogado: Certificado \\\"Prefeitura Municipal\\\" não encontrado\\nSystem.Exception: Certificado \\\"Prefeitura Municipal\\\" não encontrado\\r\\n   em NotaNacional.Servicos.CertificadoService.ObterCertificado() na C:\\\\agent\\\\_work\\\\25\\\\s\\\\Phoenix\\\\NotaNacional\\\\Servicos\\\\CertificadoService.cs:linha 38\\r\\n   em Not\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "36008eea-ba85-4e2a-8bba-bea1f8830500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "fb075c43-4cd6-4067-a301-b393981c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série transcrita manualmente para a DPS deve ser um número dentro da faixa definida para este fim, que é de 80000 até 89999.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "205271f0-f98b-4f5c-a08a-745daa070a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  8,
+        "empresa_id":  "bf623c0d-01bc-408d-94b2-1dd6e2440600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  8,
+        "empresa_id":  "59a0cade-08dd-ea68-4482-f2b415cb1d85"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Foi encontrado mais de um serviço associado vigente parametrizado para o Código Municipal 8599699 e Código Federal 08.02 e Código Nacional 080201. Utilize cIntContrib para informar um código municipal específico. Serviços possíveis: Municipal: 8599699 - Federal: 08.02; Municipal: 8599699 - Federal: \",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "6a474b2e-08de-b3c2-4c2d-9000d73a7fc1"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "53a1c470-7259-459b-a868-c0e3116d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Cidade do Tomador de Serviços é Obrigatório \\r\\nCorreção: Informar Cidade.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "3e2d76ab-de75-42b4-9d0f-e87153820600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "76573f41-f5a6-48e5-9602-5f4df7e30600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  8,
+        "empresa_id":  "7349654a-c173-434c-a6a6-fdc464a90900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  8,
+        "empresa_id":  "c8d1f3b9-72f3-4db0-b392-1af407540700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  8,
+        "empresa_id":  "9eac677e-8763-4891-882f-fd2d83220a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "b629c63b-0488-4e1f-8ed0-39cf17980800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "0c24d5f6-abd1-4478-ba57-20f644f10600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "3bd6d07d-08dd-4b0f-47fa-4a8723bec80e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é permitido Tomador Não Identificado para atividade selecionada\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "3fc03add-2362-458c-941b-d1379c9a0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação do município deve corresponder ao NBS, código indicador da operação, CST e CClassTrib.\\r\\nCorreção: Preencha as tags \u003cNbs\u003e, \u003cCodigoIndicadorOperacao\u003e, \u003cCST\u003e e \u003cCodigoClassTrib\u003e que correspondem ao Código de Tributação do Município de acordo com a tabela.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "95a9c0c6-a64b-4a05-8bae-3f750a530900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "03e8cb72-d857-4d0d-a65b-e64bce7c0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "db09f731-e2cd-4e1a-b4cb-015e92d20a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 3732)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "98b7423e-49a1-4920-a66e-55e37fa90a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "88dd6c19-08de-5d95-4f56-8fb0477c40a7"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "67713429-f466-4c63-bd7e-379e93970a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Exception in endElement: cvc-complex-type.2.4.b: The content of element \\\"tomador\\\" is not complete. One of \\\"{nmUf}\\\" is expected.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "1c698e9b-08de-1392-4f6c-da6221d39a32"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "7078a1ed-13e8-4c03-b97d-a98f4f910a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  7,
+        "empresa_id":  "b9ae1230-c1b4-4f26-9333-33150ea80600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informe um código NBS válido. Ex.: \\\"codigoNBS\\\": \\\"1.0905.11.00\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "181294bc-7117-45ca-a96f-b0ffab1d0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "cc47130b-8310-4062-b8f4-1ee648f40600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "ccf9cb43-e2e9-4840-9964-cc74da3a0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "f24f5f7b-81bc-4669-a304-fad25b300900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "7692f9c4-c008-4d85-a654-d071d7f70700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "781011a6-65d0-4403-8c53-524361eb0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "9907d148-c470-409b-97aa-336214cd0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "7f4ceca3-08dd-26af-4563-f4247dc4195b"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do ICMS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "d7439f87-df02-47ba-83ab-6e0b1bd40200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "993331e2-f618-469e-935d-6486b05f0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  7,
+        "empresa_id":  "c7c37068-f00a-4c94-b38a-b18b78cb0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "7fb3d8ee-e212-48ec-ad02-79d71a1c0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 401 - Acesso Negado! Verifique se o usuário e senha da empresa estão corretos ou se possui credenciamento para emitir via WebService.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "2456215f-793b-484e-8d0d-48d59cae0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  7,
+        "empresa_id":  "886a77cd-08dd-0a8f-407d-bb441a488536"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação nacional informado não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS, conforme a lista de serviços nacional do Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  7,
+        "empresa_id":  "a5b2b04c-2e71-4bb8-83b4-e8dd56a00700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  6,
+        "empresa_id":  "e3806e3d-f962-4f69-b7dc-4416609d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro na emissão da NFS-e\\r\\n Erro interno no sistema.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "7ebb2544-7ca5-4c81-a2db-221936f10200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  6,
+        "empresa_id":  "62763d04-08dd-ba01-4239-42c068f432bc"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "26d5429b-08de-127e-4a24-139edac79072"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Falha Schema Xml\\r\\n The element \\\"endExt\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\" has invalid child element \\\"xEstProvReg\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\". List of possible elements expected: \\\"xCidade\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\".\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "ba453838-08dd-bcd7-4e55-8693e705e7a1"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "c061a087-3c05-456a-a73b-05d5ff440a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Número do RPS inválido.(Numero RPS: 601)\\r\\nCorreção: Informe um número de RPS que corresponda à seqüência utilizada pelo prestador do serviço.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "fafe62c5-08dd-997c-42e7-ec6f8f9fdcce"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Erro ao inserir Dados Pessoa: Para avançar, por favor verifique a seguinte situação:1. A série transcrita manualmente para a DPS não pertence à faixa definida para este fim (de 80000 até 89999).\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "b43d3a1f-fdda-4baa-b326-e7e617980800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "37911b99-b580-4ead-8530-5db569f30a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 61914)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "c5f0f247-c078-4274-b7cb-e9bdccba0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "8a14c6c2-897a-41b3-8acf-b739d45c0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Dedução não permitida.\\r\\nCorreção:\\r\\nValores de dedução não conferem.\\r\\nCorreção:\\r\\nValor total não corresponde a soma dos itens.\\r\\nCorreção:\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "15d93f0b-945d-4796-9af0-8e58c7d50600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Codigo NBS não informado. Informe o código NBS no seguinte formato \\\"codigoNBS\\\": \\\"114051200\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "9b722428-d9c6-4bf1-9082-43be355d0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "1bb6dbca-9edf-4096-b486-b46fd8450a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa não está configurada para emissão de notas fiscais de serviço. Por favor, configure a emissão.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "0740310c-524c-4d9b-be2c-ca9679970a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Nao foi possivel autenticar.\\r\\nCorreção: Verifique suas credenciais.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "730b3cf2-08de-2911-4641-fddb471b8228"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo cNBS (NBS) é obrigatório para emissão da NFS-e no padrão DPS\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "c9432854-754d-4a29-872f-686355a70a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  6,
+        "empresa_id":  "0a9bb472-f5b0-4dd6-8645-81724f2c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CFOP do produto deve conter apenas números.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "8536733c-b232-4d77-b9b6-264e8ca60a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informações do Tomador do serviço incompletas. Por favor, entrar em contato com a prefeitura. - CODE: 1\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "b4b93c35-08dd-1eaa-473d-4c7089980f7e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "6eabbf8d-dfd4-44b5-8560-06608abf0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "2dad73c7-1b45-4826-bc2a-47d0168a0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 817 - Rejeicao: Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "6e2b2b04-e6f1-402d-9feb-e8b6cd100a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "98eba2cf-0d0e-4d2f-81b0-d5259c280900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Falha Schema Xml\\r\\n The element \\\"endExt\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\" has invalid child element \\\"xEstProvReg\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\". List of possible elements expected: \\\"xCidade\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\".\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "de582b78-08dd-45a5-41bc-5d1ed918d7be"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Codigo NBS não informado. Informe o código NBS no seguinte formato \\\"codigoNBS\\\": \\\"114051200\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "0db0c7d1-08de-2bab-49b1-35086b9f6c3c"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série transcrita manualmente para a DPS deve ser um número dentro da faixa definida para este fim, que é de 80000 até 89999.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "88ae9f05-a54b-4a51-8ae0-17c2b7870a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Codigo de tributação nacional inválido. Informe um codigo de tributação nacional válido no seguinte formato no bloco de serviço: \\\"codigoServicoMunicipio\\\": \\\"01.01.01\\\"\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "10a44963-08de-0e9e-4bd2-2586365de8df"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente.\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "fac8905d-08dd-5f54-412a-b6b06f234e0e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Error1159 Nota fiscal já foi emitida\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "10afdebf-51a1-42e5-9bd6-84ad182e0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "7c3d16e9-f703-43fd-980e-b27fe7e80800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "1bceb9aa-08de-f531-4e90-4fbefdb7af16"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Na operacao com Exterior deve ser informada tag idEstrangeiro\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "2e7636cf-fd9b-48f4-bde1-cb3bdbaa0400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "ae37699f-cd8f-4d30-8d97-df14d7f10900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  6,
+        "empresa_id":  "05587ec2-a126-4c84-9f0b-e3700f020800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\" 49019900\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "e6a51866-d555-4bd7-b519-b525546a0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação inexistente.(Numero RPS: 1759)\\r\\nCorreção: Consulte a legislação vigente para saber o Código de tributação que deverá ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "10d93b63-08de-3319-4f29-d250706c7cbe"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "27f71ed7-66f5-4445-b030-900e416a0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota ISS do SN Informada (3.42) Diferente da Alíquota (3.57) da data de exercício (09/05/2026)\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "4d0e4edf-a029-4508-be5d-dac3761a0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "85fc0bb3-f0a9-40eb-9986-bdd40e6f0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "aeeef394-b144-4a44-a5b9-a1f313c60600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "f782021c-3623-4fcf-acd2-cc97141b0200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Inscrição Municipal não encontrada na base de dados da PMB - Inscrição informada: 5AY214\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "e82c16dc-0266-4b31-8789-0b0615c70700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "866480e6-08dd-96d4-42bc-331cb5b7c1bb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "8e4cc632-08dd-b9bf-4bc1-93706096bea5"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "6e2b2b04-e6f1-402d-9feb-e8b6cd100a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "93d41c71-08dd-102f-49c4-69dc244da4cf"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "cbeeb079-ecbe-4ecf-9ee8-b5fc1ec30700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 930 - Rejeição: CST com benefício fiscal e não informado o código de benefício fiscal\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "2fc42967-ad24-4daa-96f1-5be924590700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Dados invalidos.Informe corretamente os dados de endereco do tomador do servico!\\r\\nCorreção: Informe corretamente os dados na requisicao conforme o servico requisitado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "39df7347-08de-c4b0-4550-ca0fd2df8930"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "bfba6171-08dd-5797-4eec-5bf5f549ff59"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "483e482e-fa08-4812-9ae0-8f3d86fc0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "32cfda7a-47a8-4493-9575-c2afaf800900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "11b1df3e-4ddc-4afe-a68c-f96ed3af0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 237 - Rejeição: CPF do destinatário inválido\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: R.Social/Nome do tomador não informado!\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "9890ac08-3cb7-42e8-b99d-6a7ba1410900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "a962e49c-df18-4e6b-96a4-5112da850800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O item da lista de serviço deve conter 5 dígitos com formatação (ex: 01.08, 10.02)\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "275d183a-358a-4ceb-92b6-38ba4bbd0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota incorreta\\r\\nCorreção: Informar a alíquota correta ou verificar Regime Especial de Tributação.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "9f007756-2c4b-4089-b1b4-a0a82fa20400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 817 - Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "b42892e8-df62-4d4d-9a08-7bb1000e0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Este estado não suporta emissão de Nota Fiscal com tomador sem endereço.\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "25f45e0b-0e73-43e0-adcb-275a70c60900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação inexistente.\\r\\nCorreção: Consulte a legislação vigente para saber o Código de tributação que deverá ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "67cccdf6-08de-6057-4389-ec317ec75597"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "35f12109-d124-4649-92b1-e6d7fb1a0b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "10fcdc56-08de-c71a-4a7d-1b6be56fd00f"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informações do Tomador do serviço incompletas. Por favor, entrar em contato com a prefeitura. - CODE: 1\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "d71d7bf1-a298-4504-91d4-1691359c0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A prefeitura não devolveu uma resposta significativa.\\r\\nCorreção: Por favor, verifique e valide os dados enviados no XML para garantir que estão corretos.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "67b1f68f-d4e7-48b8-a489-ae4646e60a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  5,
+        "empresa_id":  "55b2bea5-08dd-0da1-46a3-a4240d679b97"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "f3e5f510-bf0a-45bc-8135-72d7dcc70700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "6e37e2a5-08dd-90c9-4413-d280fff32138"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do PIS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  5,
+        "empresa_id":  "20908462-08de-9c2b-4a92-8567748cb4bb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "6e55c9e2-67ba-4158-89b3-2db6c3d40a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente na chamada a API.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "4008fa68-a9be-463b-b690-b7689d8d0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "b3b514de-9507-4668-bcfb-97307e6d0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O bairro do endereço do tomador deve conter entre 1 e 30 caracteres\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "030a10d2-75d9-4502-b7b3-d9206c870800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "68fd5e76-7ba5-4c5b-885d-8b83a2e20900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "faefb28b-0804-4e1e-9179-7545b5020300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 997 - Rejeicao: Emissao de Documento Fiscal monitorada. Favor abrir solicitacao em www.fazenda.mg.gov.br. Clicar em Servicos \u003e Portal da Receita \u003e Servicos \u003e Notas e Documentos Fiscais Eletronicos \u003e Liberacao da Emissao de Documentos Fiscais Eletronicos\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "076e0170-1d5c-4179-a76b-eb9af0940900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "82333eca-0787-4936-b5dd-260b7a7d0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O Código de Serviço municipal deve ser informado para a emissão da Nota Fiscal\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "67d28c5c-6fcf-4d83-9a29-b809408f0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "f099eccb-08dd-e4e2-452b-9fefa34ecc0c"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "1fefbbd5-6dd1-425c-a3fd-bb301b5e0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "33cb83a1-1a10-4f84-9d69-059852de0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "14a25673-08de-18ce-4384-8624f8153365"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 519 - Rejeicao: CFOP de saida para NF-e de entrada\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é permitido Tomador Não Identificado para atividade selecionada\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "895e1b9f-08dd-bf14-4062-1e83c12b6e49"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "a85b7ccb-ded0-4f85-bd0e-ccf0bf120a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "7e6a512d-206d-403b-b295-7ddd4a240200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "c21e3590-8de9-44dc-ac5d-3b0cec8f0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 4150)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "4b76c6f7-dbab-4d70-8db6-4f6866eb0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "9c46d902-afa1-4c79-96b1-7cf285f30a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 527 - Operacao de Exportacao com informacao de ICMS incompativel [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Ocorreu um erro inesperado na sua solicitação, por favor tente novamente!\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "956c97c8-808b-4b57-912a-9fb013000700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "9b39e02a-128c-4008-8fb1-d00f294e0300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Element \\\"{https://nfse.cataguases.mg.gov.br/webservices/2.04/nfse_v204.xsd}Uf\\\": [facet \\\"enumeration\\\"] The value \\\"EX\\\" is not an element of the set {\\\"AC\\\", \\\"AL\\\", \\\"AM\\\", \\\"AP\\\", \\\"BA\\\", \\\"CE\\\", \\\"DF\\\", \\\"ES\\\", \\\"GO\\\",\\r\\nCorreção: Corrija o XML e tente novamente\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "309f8774-2f7a-4f32-a0f0-0a0cf9a90700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "cc43656c-9182-4123-b362-ab0f3b650500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "d595a2fb-f5a5-4fd3-a870-688d14f20600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "3bba5350-961f-41df-89af-a1a47c1c0b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar em contato pelo Whatsapp: (31) 99705-2109.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "440ebc30-b298-4f3a-8d87-0f4482da0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O bairro do endereço do cliente deve conter no máximo 50 caracteres.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "d9cc5b54-15cd-4a49-94d3-6e74c59f0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota do serviço inválida\\r\\nCorreção: Consulte o manual da NFS-e para verificar o formato e o tamanho do campo.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "1c9e63b9-81ab-4bd1-af47-fe9326e10600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "b41dbc45-9133-4e5f-ba35-25a0a5be0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "5b461ec6-08dd-6de3-4adb-ecb93ec9851d"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "45395df3-ff0c-4126-8424-7492631d0300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "83ec7d35-45e3-4bad-b119-6ba01bbc0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O Código de Serviço municipal deve ser informado para a emissão da Nota Fiscal\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "e7189b3f-08dd-e413-4ee9-dd5a53f3eff9"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 00196 - Bairro do tomador não definido no arquivo XML..\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "25f45e0b-0e73-43e0-adcb-275a70c60900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Falha Schema Xml\\r\\n The element \\\"end\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\" has invalid child element \\\"nro\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\". List of possible elements expected: \\\"xLgr\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\".\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "38b28b28-6802-435f-87b6-b365993e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "01c22b78-2a69-4968-a3f0-9d0d1d580700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Rejeicao: Falha no Schema XML da NFe (Elemento: enviNFe/NFe[4]/infNFe/dest/enderDest/cMun/)\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "7ebb2544-7ca5-4c81-a2db-221936f10200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "33f12ece-72ec-46fb-9f2c-07a5e9e30600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "82ddaa63-9e78-435d-a913-5191c6550600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 203 - Emissor nao habilitado para emissao da NF-e\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "74272aa9-e1cc-4e28-baf1-f5a71e9d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "be21927b-879c-4118-be70-1cab62140a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "95aa90ef-2aa9-41dc-b811-fcdc46390a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "49550525-a30b-400d-aa2c-974d9cb00900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A alíquota informada é menor do que a alíquota vigente para esta competência.\\r\\nCorreção: Informe uma alíquota igual ou superior à alíquota mínima calculada.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "51c806df-08dd-2362-4b31-b6737f9e1b0f"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "76508a2f-b35c-41ab-8636-211ae62c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 781 - Emissor nao habilitado para emissao da NF-e/NFC-e CNPJ:52004624000180\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "a7ad2158-4105-4f47-a6b3-b89f01110900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "6609aa0b-7d0c-4c91-a34c-0ac46b130500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"País do tomador não encontrado\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "7ebb2544-7ca5-4c81-a2db-221936f10200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "4c874d08-08de-951c-47a8-515534c082d2"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Prestador sem acesso a tomador não identificado\\r\\nCorreção: Este Prestador não tem permissão para utilizar tomador não identificado, obrigatório preencher os dados do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "2e3298e8-d0ae-4de7-a154-ba6008190800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Token não gerado ou inválido\\r\\nCorreção: Acesse o módulo NFS-e, menu Gerenciar RPS  e gere um novo Token.\",\"acaoCorrecao\":null}",
+        "qtd":  4,
+        "empresa_id":  "ff6765f5-12ce-4236-b438-5046112a0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  4,
+        "empresa_id":  "84aa3de9-4b3b-47c6-b85a-e7f359390900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "43754b14-6b0a-42a0-9140-0ae4e1b70600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "cbaa8346-78bb-4887-a677-823f1cf10900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código do serviço municipal deve conter de 1 a 11 caracteres numéricos\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "ba2f86e3-ae43-44be-9501-0c5bcf300600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 225 - Rejeicao: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "2bec829c-102b-4564-92e4-015e56db0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: L12: Erro de validação: Bloqueio 02 - Deve ser informado os dados cadastrais do endereço do tomador/cliente. Dado(s) faltante(s): Logradouro, Bairro, Número, (correção: Favor entrar em contato com a Prefeitura para maiores informações.)\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "699693bc-08de-6f9b-4573-a975b12fe9ea"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "86934476-2c33-402b-a6c0-46e96aa30a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "60305731-08de-d968-43ad-8f2e76d16ed6"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A data de competência informada na DPS não pode ser posterior à data de emissão (dhEmi) da DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "146d6feb-7ce2-4a43-b255-9ffe0b690400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "4658fa58-94fd-49fd-9374-1e4b34790600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Operacao de Exportacao com informacao de ICMS incompativel. [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "8524c60f-08de-a78e-4cb5-ea7e0e71cafb"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Erro ao inserir Dados Pessoa: A informação do(s) campo(s) CEP recuperada do cadastro CNPJ não possui compatibilidade em tamanho ou formato com a definição especificada para o Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "6730f9f9-08de-3f0e-44d7-215c4928cb54"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 1312)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "fcffd43b-08dd-7d49-4e39-fa6527dcd053"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Esta NFS-e não deverá ter o ISSQN Retido pelo tomador do serviço.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "9fb182c1-0091-4e1a-8ad6-1fc989e00900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota informada indevidamente.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "66d8ad0d-cbd9-41b5-9062-f86e3d2b0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 225 - Rejeição: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "1ef7215c-c8b8-4d3e-b920-ff37f2510700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"8523.49.90\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "03aa4c4d-821d-44b1-bea2-ee2ddf270900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "dc808569-d4d6-4cfd-9a1c-cd7c743c0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "2d7e3a73-5f25-491c-922b-0a255d2f0200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação nacional informado não existe conforme a lista de serviços nacional do Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "a7396a1d-08dd-ca27-4b10-2b93f2d26550"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "19ae8198-c88e-4ece-8c54-8088f8540600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "b4b93c35-08dd-1eaa-473d-4c7089980f7e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "a5c9ca9d-0d1f-4132-94db-ebd701a00900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "2699382c-a204-4b3b-88bd-c5a8b7f30700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "4481c0fa-08dd-95db-4aa3-65e58be0f0e4"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "eba8d7ae-5220-46bd-82a4-95f9d3250600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Este estado não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\\r\\nO número do endereço do tomador deve conter entre 1 e 10 caracteres\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "9b96e856-1802-4785-986c-874ce63d0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "477e043e-08dd-6988-4a73-5acb02f1f6ee"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: The \\\"http://www.portalfiscal.inf.br/nfe:IE\\\" element is invalid - The value \\\"91213930-15\\\" is invalid according to its datatype \\\"http://www.portalfiscal.inf.br/nfe:TIe\\\" - The Pattern constraint failed.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "f71766a7-08dd-1957-496e-2d21bf09acf1"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é possível emitir notas com data de competência superior a data atual.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "76ec647f-fdcd-4ee1-ae59-9e2f62010900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Problemas ao processar arquivo.\\r\\nCorreção: Entre em contato com suporte ao sistema.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "813aa921-08de-1089-4552-6f76497ebb9a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado:  00017 - CPF/CNPJ do tomador não é um CPF/CNPJ válido..\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "8a7a2ec6-17f3-47a8-8cb6-f09d3bec0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "b34cc853-5668-4734-a750-0e21de120a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "f69f7f39-e0aa-4ef7-8fbd-70b02d780a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "3e2d76ab-de75-42b4-9d0f-e87153820600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.\",\"acaoCorrecao\":4}",
+        "qtd":  3,
+        "empresa_id":  "1186c4c5-3b2d-4316-8a18-d65062af0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Problemas ao processar arquivo.\\r\\nCorreção: Entre em contato com suporte ao sistema.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "f24f5f7b-81bc-4669-a304-fad25b300900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do PIS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "082455d7-640b-4186-bbfb-6aa748010900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "1a3ab59e-65ff-40f2-8c48-10737e6f0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 387 - Rejeicao: Codigo de Enquadramento Legal do IPI invalido[nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "2bec829c-102b-4564-92e4-015e56db0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A prefeitura não devolveu uma resposta significativa.\\r\\nCorreção: Por favor, verifique e valide os dados enviados no XML para garantir que estão corretos.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "49fbbc41-5b87-4981-acff-c205f9110900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "4890a027-6e98-421c-b914-67a83efa0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "af216300-5d38-451b-b5ad-960a073a0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"0000000000\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "caf6746b-596b-469b-b2f3-0fdc87170500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "a74d56e3-c5b4-483b-9d8f-23e4246e0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O IBS/CBS nao foi preenchido corretamente\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "527f3488-08dd-c72d-4560-179fb54c0a42"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: The \\\"http://www.portalfiscal.inf.br/nfe:cBenef\\\" element is invalid - The value \\\"I - \\\"DOCUMENTO EMITIDO POR ME OU EPP OPTANTE PELO Simples Nacional\\\"; e II - \\\"NÃO GERA DIREITO A CRÉDITO FISCAL DE DE IPI.\\\" - DESPACHO CONFAZ N35/2016 E AÇÃO DIRETA DE INCONSTITUCIONALIDADE N 5464, QUE SUSPENDE O SIMPLES NACIONAL DO DIFAL PARA RECOLHIMENTO QUANTO O DESTINATÁRIO É CONSUMIDOR FINAL.\\\" is invalid according to its datatype \\\"String\\\" - The Pattern constraint failed.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "31edf4d1-8a8b-4c21-aa4a-814e009e0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "8512d711-a70d-4133-9c98-8ef9c7fa0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \\r\\nVerifique se informou a Cidade e UF corretamente.\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "6af1a3c0-0c95-4d01-ac27-2d59d79e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada na DPS não está de acordo com o cadastro Simples Nacional.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "66e8d68f-901d-4150-9c68-1ec3826f0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "ffd36d75-3cdf-4d45-ba24-5c3cda8a0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "20541ae9-08de-fecc-4b25-9e3f5a8bcd47"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "5d30d374-08de-10e3-4128-b44afcd9e0c2"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada na DPS não está de acordo com o cadastro Simples Nacional.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "af83e5bf-9772-41a3-a0d8-a3083a120700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Cidade do Tomador de Serviços é Obrigatório \\r\\nCorreção: Informar Cidade.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "6583aa3c-3d23-4112-a377-b17b322c0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Alíquota do serviço inválida\\r\\nCorreção: Consulte o manual da NFS-e para verificar o formato e o tamanho do campo.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "6fe4d648-08de-fc36-4aac-bf3e1069f9e8"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "16f14da4-08de-34b9-4873-ed334fff236a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "0759b254-b49d-4f92-92dc-e959a1280a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "1188b4e7-9913-4676-a686-be297c3c0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"A situação tributária do PIS informada é ínválida.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "310f47e5-08de-e5d1-4f07-437ecce3d84a"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 225 - Rejeicao: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "3a2479ae-58ed-45f7-bc1b-458c95540900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O NCM \\\"4901990\\\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "be583bd7-dd37-4f48-a22f-ef6630b20a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "be583bd7-dd37-4f48-a22f-ef6630b20a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado indevidamente\\r\\nCorreção: Esse campo não deve ser preenchido neste município.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "554dafda-60ec-4a39-91ee-7ec44df90700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "016f310f-39cf-4062-b1eb-45c7bcd70300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Rejeicao: Falha no Schema XML da NFe (Elemento: enviNFe/NFe[3]/infNFe/dest/idEstrangeiro/)\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "acfaf2e5-1426-4c3a-a88f-a70b52730900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O Código de Serviço municipal deve ser informado para a emissão da Nota Fiscal\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "7071f8ef-7008-4b64-a0a2-5ebdb3c20a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 527 - Rejeicao: Operacao de Exportacao com informacao de ICMS incompativel\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "8c171cf8-08dd-1eee-4a37-736505aff40e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "5dcb2611-08de-ccac-4d3f-f668764ff6e5"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação nacional informado não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS, conforme a lista de serviços nacional do Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "0b3dd0d3-9dd7-49f1-a015-6f3568fe0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "23eef65d-8f4f-483f-aea9-7f0ef00a0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro desconhecido\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "f3b60071-aa66-4f0f-97c8-e033da790500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O campo codigoNBS deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "d7464fcb-9e09-4309-a0e1-d73e5ca90900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Inscrição Municipal do prestador do serviço não encontrada na base de dados  do município. / Não existe registro de inscrição municipal que corresponda ao número informado.\\r\\nCorreção:\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "5e8d3eb0-08de-384a-495d-d9cc66b87626"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "d157b578-3be8-4102-8979-dbaf1b960700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "db813452-b9b1-4712-b223-24a49e4c0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Prestador sem acesso a tomador não identificado\\r\\nCorreção: Este Prestador não tem permissão para utilizar tomador não identificado, obrigatório preencher os dados do tomador.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "d93f02cd-08dd-458b-4d95-b25a5ffeb83b"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Item da lista de serviço incompatível com o código de tributação.(Numero RPS: 5759)\\r\\nCorreção: Consulte o Manual da NFS-e para verificar a correlação entre o código de tributação e o item da lista de serviço..\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "792a5e8c-4f40-4251-8bab-f7c3b92e0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"No mês de competência da NFS-e, a opção de situação perante o Simples Nacional, do prestador, informada na DPS não está de acordo com o cadastro Simples Nacional.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "67d72806-08dd-6051-4b94-2439eff2b0ac"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Rejeição: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "4c602545-08de-5142-4efc-26d337007558"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "645c3311-bc58-4278-a04d-989c163c0800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Usuário não tem autorização para solicitar o serviço.; Informações personalizadas: Conforme o Decreto Municipal nº 2.453/2025, a partir de 01/05/2026 as empresas enquadradas como Simples Nacional (ME-EPP) estão obrigadas a emitir suas Notas Fiscais de Serviço exclusivamente pelo portal Nacional de N\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "f2d157ed-7512-4797-8db2-67213b4a0300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Já existe um lote declarado com esta numeração.\\r\\nCorreção: Renumere o lote e faça o envio novamente.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "3398a22d-a27c-4f2c-bdb1-b62776290400"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Dedução não permitida.\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "15d93f0b-945d-4796-9af0-8e58c7d50600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Informações do Tomador do serviço incompletas. Por favor, entrar em contato com a prefeitura. - CODE: 1\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "122d8109-a093-4f92-b902-5c94300a0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "8fc90777-3f27-4d36-a45a-03412a2e0900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CPF do tomador não encontrado no cadastro CPF.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "88dd6c19-08de-5d95-4f56-8fb0477c40a7"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\\n1 - The element \\\"Servico\\\" in namespace \\\"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd\\\" has incomplete content. List of possible elements expected: \\\"NBS\\\" in namespace \\\"\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "18b43727-08de-0eef-4e8f-797f88ff8070"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Falha Schema Xml\\r\\n The element \\\"end\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\" has invalid child element \\\"nro\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\". List of possible elements expected: \\\"xLgr\\\" in namespace \\\"http://www.sped.fazenda.gov.br/nfse\\\".\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "e4036f5b-89f8-42dd-adac-7865b9950300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"CEP do Tomador informado inválido.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "527f3488-08dd-c72d-4560-179fb54c0a42"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 817 - Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior [nItem:1]\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "89d8fe1a-08de-8429-4ba5-a597bd13bafd"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  3,
+        "empresa_id":  "5cc03352-08dd-c35c-4fc2-6566ebdba151"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "a197bfa5-93ef-4f38-b23c-9d6f18730800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Não é permitido Tomador Não Identificado para atividade selecionada\\r\\nCorreção:\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "ab55421a-795a-45a9-a11c-dc70f0dd0700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Codigo NBS não informado. Informe o código NBS no seguinte formato \\\"codigoNBS\\\": \\\"114051200\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "9b6a496c-ec69-490a-a80e-ecdb213e0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "2e1a5c6a-a450-41fb-aa55-ade56d3e0300"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "91516682-6146-4043-91e9-96107fa40800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  3,
+        "empresa_id":  "9bb58a87-afa1-4fb2-9066-4127636c0600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Código de tributação informado é inválido\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "c6514cf1-08dd-4366-4bc6-e2a37ae46f46"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Prefeitura de Chapecó/SC não suporta emissão com tomador do exterior via webservice.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "379bca92-fec1-4617-ae5b-4300460d0500"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: The \\\"http://www.portalfiscal.inf.br/nfe:UF\\\" element is invalid - The value \\\"mg\\\" is invalid according to its datatype \\\"http://www.portalfiscal.inf.br/nfe:TUf\\\" - The Enumeration constraint failed.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Campo Código NBS inexistente ou incorreto.\\r\\nCorreção: Informe corretamente o campo referente ao Código NBS, correspondente ao Código de Tributação do Município.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "0197ff8f-e205-4049-82c9-1fd8ea370b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  2,
+        "empresa_id":  "6f3533d6-dd5d-42c9-957c-340608d70900"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "f150625f-d0d5-4f28-a9b3-dd4c69900600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "a454e7db-08dd-7aa2-47ef-c0c7116fed05"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O bairro do endereço do tomador deve conter entre 1 e 30 caracteres\\r\\n\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "3b2040d2-5f8e-4b76-957d-ecbbad280a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Rejeição: Consumo Indevido\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "72e6b212-08dd-58fe-411d-31ca8177d96b"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  2,
+        "empresa_id":  "844d04f5-dd9b-45d8-987f-b710827a0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Preencher a tag cnae e envie novamente.Por gentileza, conclua o cadastro de todas as alíquotas referentes à competência vigente.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "de97c558-08dd-edb7-4c31-38fa134f42b2"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "1413330d-10de-4132-b9c5-980462220700"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: The \\\"http://www.portalfiscal.inf.br/nfe:UF\\\" element is invalid - The value \\\"sc\\\" is invalid according to its datatype \\\"http://www.portalfiscal.inf.br/nfe:TUf\\\" - The Enumeration constraint failed.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Seu certificado digital está vencido. \u003ca href=\u0027https://atendimento.enotas.com.br/hc/pt-br/articles/35773480148493-Como-inserir-ou-atualizar-meu-certificado-digital-no-eNotas-Emissor\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, \u003ca href=\u0027https://bit.ly/4bCRZco\u0027 target=\u0027_blank \u0027\u003eClique aqui\u003c/a\u003e para renová-lo.\",\"acaoCorrecao\":3}",
+        "qtd":  2,
+        "empresa_id":  "14022bad-bd85-4882-a7ca-848506380b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "849d549b-04fa-49ad-b05c-a3a1f4990600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação\u003ca href=\u0027https://hotm.art/PglK9uK\u0027 class=\u0027alert-link\u0027 target=\u0027_blank\u0027\u003e clicando aqui \u003c/a\u003e\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "85d1c6a5-bda8-48b8-99f8-59b0158b0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Email inválido.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "7e8b6aeb-1480-40f6-802e-4fb92fa00600"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"RPS já informado.(Numero RPS: 4600)\\r\\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "7156d96a-08de-ff9e-42d7-aa46df098912"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro ao criar rascunho da nota fiscal.\\r\\nCorreção: ---\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "94e108a3-08de-03f7-4dc6-432a0e35cef6"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "414769de-08dd-6013-4164-84c1975abc4e"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "7ebb2544-7ca5-4c81-a2db-221936f10200"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"IE do destinatario invalida\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "74272aa9-e1cc-4e28-baf1-f5a71e9d0a00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "0e00a548-8886-440e-ace8-9fe5c22a0b00"
+    },
+    {
+        "motivo_situacao":  "{\"mensagemErro\":\"Erro não identificado: 225 - Rejeição: Falha no Schema XML do lote de NFe\",\"acaoCorrecao\":null}",
+        "qtd":  2,
+        "empresa_id":  "6217ab02-e2c2-4089-acff-82a4b9d70800"
+    }
+]
