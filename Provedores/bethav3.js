@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 135
+    municipios: 136
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '135' },
+    { key: 'Total Municipios', val: '136' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -168,6 +168,7 @@
       { nome: 'Porto União', uf: 'SC', ibge: '4213609' },
       { nome: 'Pouso Redondo', uf: 'SC', ibge: '4213708' },
       { nome: 'Rancho Queimado', uf: 'SC', ibge: '4214300' },
+      { nome: 'Raposos', uf: 'MG', ibge: '3153905' },
       { nome: 'Rio Brilhante', uf: 'MS', ibge: '5007208' },
       { nome: 'Rio Verde de Mato Grosso', uf: 'MS', ibge: '5007406' },
       { nome: 'Sabáudia', uf: 'PR', ibge: '4122701' },

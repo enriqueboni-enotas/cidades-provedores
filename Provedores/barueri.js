@@ -42,6 +42,12 @@
     numeroLoteNaoReutilizavel: true,
     numeroNotasPorLote: 1,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.barueri.sp.gov.br/nfe/app/login.aspx',
+      UsaCodigoVerificacao: true,
+      UsaCpfCnpjTomador: true,
+      UsaValorNota: true
+    },
     naturezasOperacao: [
       { codigo: '1', nome: 'Tributação no municipio' },
       { codigo: '2', nome: 'Tributação fora do municipio' },

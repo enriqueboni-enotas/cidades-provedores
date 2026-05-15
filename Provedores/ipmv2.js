@@ -3,11 +3,11 @@
   nome: 'IPMv2',
   empresa: 'IPMv2',
   stats: {
-    municipios: 30
+    municipios: 31
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPMv2' },
-    { key: 'Total Municipios', val: '30' },
+    { key: 'Total Municipios', val: '31' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -82,6 +82,7 @@
       { nome: 'Pouso Alegre', uf: 'MG', ibge: '3152501' },
       { nome: 'Santa Rosa de Lima', uf: 'SC', ibge: '4215604' },
       { nome: 'São João do Sul', uf: 'SC', ibge: '4216404' },
+      { nome: 'São Pedro do Sul', uf: 'RS', ibge: '4319406' },
       { nome: 'São Sepé', uf: 'RS', ibge: '4319604' },
       { nome: 'Saudades', uf: 'SC', ibge: '4217303' }
     ]

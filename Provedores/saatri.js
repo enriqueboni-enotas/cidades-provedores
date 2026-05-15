@@ -3,11 +3,11 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 43
+    municipios: 44
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '43' },
+    { key: 'Total Municipios', val: '44' },
     { key: 'Estados Atendidos', val: ['BA', 'RR', 'SC'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -95,7 +95,8 @@
       { nome: 'Sento Sé', uf: 'BA', ibge: '2930204' },
       { nome: 'Serra Dourada', uf: 'BA', ibge: '2930303' },
       { nome: 'Teolândia', uf: 'BA', ibge: '2931608' },
-      { nome: 'Ubatã', uf: 'BA', ibge: '2932309' }
+      { nome: 'Ubatã', uf: 'BA', ibge: '2932309' },
+      { nome: 'Uibaí', uf: 'BA', ibge: '2932408' }
     ]
   }
 };

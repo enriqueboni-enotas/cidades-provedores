@@ -3,12 +3,12 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 92
+    municipios: 90
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '92' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG', 'AC', 'MS', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '90' },
+    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MS', 'AC', 'MG', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -111,9 +111,7 @@
       { nome: 'Porto Vitória', uf: 'PR', ibge: '4120309' },
       { nome: 'Porto Walter', uf: 'AC', ibge: '1200393' },
       { nome: 'Presidente Castello Branco', uf: 'SC', ibge: '4213906' },
-      { nome: 'Raposos', uf: 'MG', ibge: '3153905' },
       { nome: 'Rio Claro', uf: 'RJ', ibge: '3304409' },
-      { nome: 'Rio Doce', uf: 'MG', ibge: '3155009' },
       { nome: 'Rodrigues Alves', uf: 'AC', ibge: '1200427' },
       { nome: 'Saltinho', uf: 'SC', ibge: '4215356' },
       { nome: 'Salto do Itararé', uf: 'PR', ibge: '4122909' },

@@ -5,20 +5,18 @@
   ibge: '3155009',
   constante: 'CodigoIBGE.RioDoceMG',
   provedorAtual: {
-    nome: 'BethaV2',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
+    nome: 'Futurize',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    versaoAbrasf: '2.02',
-    infoAdicional: 'cadastro empresa:\n					naturezaOperacaoPadrao, naturezaOperacaoPadraoExterior\n\n					Propriedades do provedor: UsaBethav2Cloud: Usa metodo assincrono',
     urls: {
       homologacao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-test-ws/nfseWS'
+        recepcaoLote: 'https://riodocemg.futurize-nfse.com.br/webservice/homo'
       },
       producao: {
-        recepcaoLote: 'http://e-gov.betha.com.br/e-nota-contribuinte-ws/nfseWS'
+        recepcaoLote: 'https://riodocemg.futurize-nfse.com.br/webservice/prod'
       }
     }
   },
@@ -30,25 +28,21 @@
       token: null,
       fraseSecreta: null
     },
+    suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 60,
-    usaItemListaServico: false,
+    usaCNAE: true,
+    usaItemListaServico: true,
     helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 0801 ou 0108',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 3 ou 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 801 ou 1401',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    suportaEmissaoNFeSemCliente: true,
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeClienteSemCpf: true,
     suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
-    autenticidadeNota: {
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaNumeroNota: true
-    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

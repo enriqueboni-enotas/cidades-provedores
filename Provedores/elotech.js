@@ -3,11 +3,11 @@
   nome: 'Elotech',
   empresa: 'Elotech',
   stats: {
-    municipios: 59
+    municipios: 63
   },
   visaoGeral: [
     { key: 'Nome', val: 'Elotech' },
-    { key: 'Total Municipios', val: '59' },
+    { key: 'Total Municipios', val: '63' },
     { key: 'Estados Atendidos', val: ['PR', 'MS', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,6 +61,7 @@
       { nome: 'Contenda', uf: 'PR', ibge: '4106209' },
       { nome: 'Cruzeiro do Oeste', uf: 'PR', ibge: '4106605' },
       { nome: 'Douradina', uf: 'PR', ibge: '4107256' },
+      { nome: 'Faxinal', uf: 'PR', ibge: '4107603' },
       { nome: 'Floresta', uf: 'PR', ibge: '4107900' },
       { nome: 'Grandes Rios', uf: 'PR', ibge: '4108700' },
       { nome: 'Ibiporã', uf: 'PR', ibge: '4109807' },
@@ -87,6 +88,7 @@
       { nome: 'Perobal', uf: 'PR', ibge: '4118857' },
       { nome: 'Pinhão', uf: 'PR', ibge: '4119301' },
       { nome: 'Piraquara', uf: 'PR', ibge: '4119509' },
+      { nome: 'Pitanga', uf: 'PR', ibge: '4119608' },
       { nome: 'Ponta Grossa', uf: 'PR', ibge: '4119905' },
       { nome: 'Porto Rico', uf: 'PR', ibge: '4120200' },
       { nome: 'Quatro Barras', uf: 'PR', ibge: '4120804' },
@@ -104,9 +106,11 @@
       { nome: 'Sarandi', uf: 'PR', ibge: '4126256' },
       { nome: 'Seringueiras', uf: 'RO', ibge: '1101500' },
       { nome: 'Sertanópolis', uf: 'PR', ibge: '4126504' },
+      { nome: 'Tamboara', uf: 'PR', ibge: '4126702' },
       { nome: 'Tapejara', uf: 'PR', ibge: '4126801' },
       { nome: 'Tapira', uf: 'PR', ibge: '4126900' },
-      { nome: 'Terra Boa', uf: 'PR', ibge: '4127205' }
+      { nome: 'Terra Boa', uf: 'PR', ibge: '4127205' },
+      { nome: 'Ubiratã', uf: 'PR', ibge: '4128005' }
     ]
   }
 };

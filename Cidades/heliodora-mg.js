@@ -17,7 +17,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://nfe.sgpcloud.net:9006/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://nfe.sgpcloud.net:9006/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

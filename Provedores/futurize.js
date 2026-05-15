@@ -3,11 +3,11 @@
   nome: 'Futurize',
   empresa: 'Futurize',
   stats: {
-    municipios: 30
+    municipios: 31
   },
   visaoGeral: [
     { key: 'Nome', val: 'Futurize' },
-    { key: 'Total Municipios', val: '30' },
+    { key: 'Total Municipios', val: '31' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -75,6 +75,7 @@
       { nome: 'Piranga', uf: 'MG', ibge: '3150802' },
       { nome: 'Porto Firme', uf: 'MG', ibge: '3152303' },
       { nome: 'Riachinho', uf: 'MG', ibge: '3154457' },
+      { nome: 'Rio Doce', uf: 'MG', ibge: '3155009' },
       { nome: 'Rio Pomba', uf: 'MG', ibge: '3155801' },
       { nome: 'Santa Rita de Jacutinga', uf: 'MG', ibge: '3159308' },
       { nome: 'São José do Alegre', uf: 'MG', ibge: '3163201' },

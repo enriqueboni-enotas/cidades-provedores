@@ -3,11 +3,11 @@
   nome: 'SpeedGov',
   empresa: 'SpeedGov',
   stats: {
-    municipios: 46
+    municipios: 47
   },
   visaoGeral: [
     { key: 'Nome', val: 'SpeedGov' },
-    { key: 'Total Municipios', val: '46' },
+    { key: 'Total Municipios', val: '47' },
     { key: 'Estados Atendidos', val: ['CE', 'PE', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -77,6 +77,7 @@
       { nome: 'Cruz', uf: 'CE', ibge: '2304251' },
       { nome: 'Eusébio', uf: 'CE', ibge: '2304285' },
       { nome: 'Fortim', uf: 'CE', ibge: '2304459' },
+      { nome: 'Grajaú', uf: 'MA', ibge: '2104800' },
       { nome: 'Horizonte', uf: 'CE', ibge: '2305233' },
       { nome: 'Iguatu', uf: 'CE', ibge: '2305506' },
       { nome: 'Ipu', uf: 'CE', ibge: '2305803' },

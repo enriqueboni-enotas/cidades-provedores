@@ -38,10 +38,12 @@
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
     enviaEmailCliente: false,
     numeroRpsDeveSerSequencial: true,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    numeroLotesParalelos: 1,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

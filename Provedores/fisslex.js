@@ -3,12 +3,12 @@
   nome: 'FissLex',
   empresa: 'FissLex',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'FissLex' },
-    { key: 'Total Municipios', val: '2' },
-    { key: 'Estados Atendidos', val: ['MT', 'MA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['MT'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -53,7 +53,6 @@
   },
   municipiosLista: {
     'fisslex': [
-      { nome: 'Grajaú', uf: 'MA', ibge: '2104800' },
       { nome: 'Nova Olímpia', uf: 'MT', ibge: '5106232' }
     ]
   }
