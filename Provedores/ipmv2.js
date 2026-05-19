@@ -3,11 +3,11 @@
   nome: 'IPMv2',
   empresa: 'IPMv2',
   stats: {
-    municipios: 31
+    municipios: 32
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPMv2' },
-    { key: 'Total Municipios', val: '31' },
+    { key: 'Total Municipios', val: '32' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -76,6 +76,7 @@
       { nome: 'Lacerdópolis', uf: 'SC', ibge: '4209201' },
       { nome: 'Navegantes', uf: 'SC', ibge: '4211306' },
       { nome: 'Novo Hamburgo', uf: 'RS', ibge: '4313409' },
+      { nome: 'Palma Sola', uf: 'SC', ibge: '4212007' },
       { nome: 'Papanduva', uf: 'SC', ibge: '4212205' },
       { nome: 'Passa Sete', uf: 'RS', ibge: '4314068' },
       { nome: 'Pirajuba', uf: 'MG', ibge: '3150703' },

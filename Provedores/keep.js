@@ -3,11 +3,11 @@
   nome: 'Keep',
   empresa: 'Keep',
   stats: {
-    municipios: 5
+    municipios: 4
   },
   visaoGeral: [
     { key: 'Nome', val: 'Keep' },
-    { key: 'Total Municipios', val: '5' },
+    { key: 'Total Municipios', val: '4' },
     { key: 'Estados Atendidos', val: ['BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -58,7 +58,6 @@
       { nome: 'Lençóis', uf: 'BA', ibge: '2919306' },
       { nome: 'Palmeiras', uf: 'BA', ibge: '2923506' },
       { nome: 'Quijingue', uf: 'BA', ibge: '2925907' },
-      { nome: 'Riachão do Jacuípe', uf: 'BA', ibge: '2926301' },
       { nome: 'Seabra', uf: 'BA', ibge: '2929909' }
     ]
   }

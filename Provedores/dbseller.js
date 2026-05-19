@@ -3,12 +3,12 @@
   nome: 'DBSeller',
   empresa: 'DBSeller',
   stats: {
-    municipios: 4
+    municipios: 3
   },
   visaoGeral: [
     { key: 'Nome', val: 'DBSeller' },
-    { key: 'Total Municipios', val: '4' },
-    { key: 'Estados Atendidos', val: ['MG', 'AL'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '3' },
+    { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -49,8 +49,7 @@
     'dbseller': [
       { nome: 'Claro dos Poções', uf: 'MG', ibge: '3116506' },
       { nome: 'Felixlândia', uf: 'MG', ibge: '3125705' },
-      { nome: 'Santa Maria do Suaçuí', uf: 'MG', ibge: '3158201' },
-      { nome: 'Santana do Ipanema', uf: 'AL', ibge: '2708006' }
+      { nome: 'Santa Maria do Suaçuí', uf: 'MG', ibge: '3158201' }
     ]
   }
 };

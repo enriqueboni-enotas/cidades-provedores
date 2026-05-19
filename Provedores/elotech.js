@@ -3,11 +3,11 @@
   nome: 'Elotech',
   empresa: 'Elotech',
   stats: {
-    municipios: 63
+    municipios: 62
   },
   visaoGeral: [
     { key: 'Nome', val: 'Elotech' },
-    { key: 'Total Municipios', val: '63' },
+    { key: 'Total Municipios', val: '62' },
     { key: 'Estados Atendidos', val: ['PR', 'MS', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -102,7 +102,6 @@
       { nome: 'São João do Ivaí', uf: 'PR', ibge: '4125001' },
       { nome: 'São Mateus do Sul', uf: 'PR', ibge: '4125605' },
       { nome: 'São Miguel do Iguaçu', uf: 'PR', ibge: '4125704' },
-      { nome: 'São Sebastião da Amoreira', uf: 'PR', ibge: '4126009' },
       { nome: 'Sarandi', uf: 'PR', ibge: '4126256' },
       { nome: 'Seringueiras', uf: 'RO', ibge: '1101500' },
       { nome: 'Sertanópolis', uf: 'PR', ibge: '4126504' },

@@ -3,11 +3,11 @@
   nome: 'EddyData',
   empresa: 'EddyData',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'EddyData' },
-    { key: 'Total Municipios', val: '2' },
+    { key: 'Total Municipios', val: '1' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -48,7 +48,6 @@
   },
   municipiosLista: {
     'eddydata': [
-      { nome: 'Caconde', uf: 'SP', ibge: '3508702' },
       { nome: 'Tapiratiba', uf: 'SP', ibge: '3553609' }
     ]
   }

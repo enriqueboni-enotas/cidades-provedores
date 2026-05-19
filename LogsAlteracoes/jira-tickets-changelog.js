@@ -1,5 +1,59 @@
 var jiraChangelogData = [
   {
+    tag: '19/05/2026',
+    titulo: 'Segunda-feira — 19 de Maio',
+    data: '19/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '18/05/2026',
+    titulo: 'Domingo — 18 de Maio',
+    data: '18/05/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '1 card (CE-26949)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Falha de carregamento da Empresa/EMBED',
+        texto: '1 card (CE-26937)',
+      },
+    ],
+  },
+  {
+    tag: '17/05/2026',
+    titulo: 'Sábado — 17 de Maio',
+    data: '17/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos (novos)',
+        texto:
+          'Todos os tickets deste dia já foram contabilizados em dias mais recentes.',
+      },
+    ],
+  },
+  {
+    tag: '16/05/2026',
+    titulo: 'Sexta-feira — 16 de Maio',
+    data: '16/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
     tag: '15/05/2026',
     titulo: 'Quinta-feira — 15 de Maio',
     data: '15/05/2026',
@@ -250,8 +304,16 @@ var jiraChangelogData = [
         destaque: 'Adequação fiscal — MVD Corp em Barueri/SP',
         texto: '1 card (CE-26488)',
       },
-      { icon: '🖼️', destaque: 'Inclusão de logo', texto: '1 card (CE-26477)' },
-      { icon: '📋', destaque: 'Inclusão de NBS', texto: '1 card (CE-26431)' },
+      {
+        icon: '🖼️',
+        destaque: 'Inclusão de logo',
+        texto: '1 card (CE-26477)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Inclusão de NBS',
+        texto: '1 card (CE-26431)',
+      },
       {
         icon: '🌐',
         destaque: 'Notas para clientes exterior',
@@ -272,161 +334,6 @@ var jiraChangelogData = [
         destaque:
           'Notas negadas por cPaisResult quando informado cPaisPrestacao',
         texto: '1 card (CE-25664)',
-      },
-    ],
-  },
-  {
-    tag: '07/05/2026',
-    titulo: 'Quarta-feira — 07 de Maio',
-    data: '07/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — inutilização de NF',
-        texto: '1 card (CE-26537)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Nota travada em emissão',
-        texto: '1 card (CE-26482)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Fatura de excedente indevida',
-        texto: '1 card (CE-26470)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Fila travada / adequação de layout em Paranapanema/SP',
-        texto: '1 card (CE-26227)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Ajuste de emissão estrangeira em Natal/RN',
-        texto: '1 card (CE-26219)',
-      },
-      {
-        icon: '📊',
-        destaque: 'Destaque imposto IBS e CBS em São Paulo/SP',
-        texto: '1 card (CE-26142)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Alteração de layout da nota fiscal 2.0 em São Paulo/SP',
-        texto: '1 card (CE-25337)',
-      },
-    ],
-  },
-  {
-    tag: '06/05/2026',
-    titulo: 'Terça-feira — 06 de Maio',
-    data: '06/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — retornar NF negada',
-        texto: '1 card (CE-26498)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro em nota de afiliado em Belo Horizonte/MG',
-        texto: '1 card (CE-26346)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronizar notas com data de competência da SEFAZ',
-        texto: '1 card (CE-26313)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Dificuldade na emissão da nota teste em Boituva/SP',
-        texto: '1 card (CE-26250)',
-      },
-      {
-        icon: '🧮',
-        destaque: 'Ajuste de XML tributos',
-        texto: '1 card (CE-26001)',
-      },
-    ],
-  },
-  {
-    tag: '05/05/2026',
-    titulo: 'Segunda-feira — 05 de Maio',
-    data: '05/05/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Faturas de excedentes indevidas',
-        texto: '2 cards (CE-26456, CE-26435)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Atualização do plano',
-        texto: '1 card (CE-26315)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Correção de XML de notas do Exterior',
-        texto: '1 card (CE-26036)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Alteração de coprodução',
-        texto: '1 card (CE-25877)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Parametrização para emissão',
-        texto: '1 card (CE-25760)',
-      },
-    ],
-  },
-  {
-    tag: '04/05/2026',
-    titulo: 'Domingo — 04 de Maio',
-    data: '04/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — retornar NF negada',
-        texto: '1 card (CE-26351)',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Rejeição NFS-e por caracteres especiais no cadastro do tomador',
-        texto: '1 card (CE-26301)',
-      },
-      {
-        icon: '🐛',
-        destaque: 'Bug ao salvar atualização no cliente',
-        texto: '1 card (CE-26245)',
-      },
-      {
-        icon: '🐛',
-        destaque:
-          'Bug no cadastro do endereço (município/UF) gerando rejeição de Schema',
-        texto: '1 card (CE-26228)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Venda não editável — validação',
-        texto: '1 card (CE-26152)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Fila travada / ajuste de layout em Faxinal do Soturno/RS',
-        texto: '1 card (CE-26013)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Disponibilizar campo de CNAE — Provedor TinusV2',
-        texto: '1 card (CE-25999)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Notas para clientes exterior',
-        texto: '1 card (CE-25970)',
       },
     ],
   },

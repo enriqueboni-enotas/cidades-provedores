@@ -5,56 +5,78 @@
   ibge: '3508702',
   constante: 'CodigoIBGE.CacondeSP',
   provedorAtual: {
-    nome: 'EddyData',
-    namespace: null,
+    nome: 'NfseNacionalV2',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'http://caconde.eddydata.com/e-nota/remot/homologacao/'
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'http://caconde.eddydata.com/e-nota/remot/producao/',
-        consultaLote: 'http://caconde.eddydata.com/e-nota/remot/get_producao/'
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 3,
-    assinaturaDigital: 0,
+    tipoAutenticacao: 1,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
-      certificadoDigital: null,
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
       usuario: null,
       senha: null,
-      token: 'Informe o token de acesso a api do sistema de emissão da prefeitura',
+      token: null,
       fraseSecreta: null
     },
-    campoLoginProvedor: 0,
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 45,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
-    usaRegimeEspecialTributacao: false,
+    usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
+    usaDescricaoServico: false,
     usaCNAE: false,
-    usaItemListaServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nCódigo deve conter de 4 a 5 dígitos.\r\nExemplo válido: (1.08, 17.09)',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o item lista serviço que identifica o serviço prestado na nota fiscal. \r\n\r\nCódigo deve conter de 4 a 5 dígitos.\r\nExemplo válido: (1.08, 17.09)',
+    usaNBS: true,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
-    enviaEmailCliente: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
+    regimesEspecialTributacao: [
+      { codigo: '0', nome: ' - ' },
+      { codigo: '1', nome: 'Microempresa Municipal' },
+      { codigo: '2', nome: 'Estimativa' },
+      { codigo: '3', nome: 'Sociedade de Profissionais' },
+      { codigo: '4', nome: 'Cooperativa' },
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
+    ],
     naturezasOperacao: [
-      { codigo: 'N', nome: 'Normal' },
-      { codigo: 'I', nome: 'Imune' },
-      { codigo: 'S', nome: 'Suspenso' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };
