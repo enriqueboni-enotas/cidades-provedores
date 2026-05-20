@@ -1,17 +1,35 @@
 var jiraChangelogData = [
   {
+    tag: '20/05/2026',
+    titulo: 'Quarta-feira — 20 de Maio',
+    data: '20/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
     tag: '19/05/2026',
     titulo: 'Segunda-feira — 19 de Maio',
     data: '19/05/2026',
     itens: [
       {
         icon: '🧾',
-        destaque: 'Regeneração de PDF',
+        destaque: 'Regeneração de PDF de NFS-e',
         texto: '1 card (CE-26880)',
       },
       {
+        icon: '❌',
+        destaque: 'Tratativa de erro padrão em Socorro/SP',
+        texto: '1 card (CE-26864)',
+      },
+      {
         icon: '📊',
-        destaque: 'Ajuste no valor aproximado de tributos para exportação',
+        destaque:
+          'Ajuste no envio do campo valor aproximado de tributos para exportação',
         texto: '1 card (CE-26331)',
       },
     ],
@@ -41,8 +59,7 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket resolvido neste dia (todos já contados em dias mais recentes).',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
@@ -74,29 +91,29 @@ var jiraChangelogData = [
         texto: '1 card (CE-26829)',
       },
       {
-        icon: '🔧',
+        icon: '🏙️',
         destaque: 'Criação de conta — falha no fluxo Start',
         texto: '1 card (CE-26796)',
       },
       {
-        icon: '🧾',
+        icon: '📋',
         destaque: 'Análise de vendas "não emitir" em Brasília/DF',
         texto: '1 card (CE-26781)',
       },
       {
-        icon: '📐',
+        icon: '📋',
         destaque: 'Ajuste de layout de NFS-e',
         texto: '1 card (CE-26656)',
       },
       {
-        icon: '🔄',
-        destaque: 'Sincronização emissor-embed',
-        texto: '1 card (CE-26342)',
+        icon: '❌',
+        destaque: 'Erro na nota de afiliado em Belo Horizonte/MG',
+        texto: '1 card (CE-26346)',
       },
       {
-        icon: '❌',
-        destaque: 'Erro em nota de afiliado em Belo Horizonte/MG',
-        texto: '1 card (CE-26346)',
+        icon: '🔄',
+        destaque: 'Sincronização emissor-status-embed',
+        texto: '1 card (CE-26342)',
       },
       {
         icon: '📊',
@@ -121,12 +138,12 @@ var jiraChangelogData = [
         texto: '1 card (CE-26806)',
       },
       {
-        icon: '🧾',
-        destaque: 'Natureza de operação — ajuste de configuração',
+        icon: '📋',
+        destaque: 'Natureza de operação — configuração incorreta',
         texto: '1 card (CE-26722)',
       },
       {
-        icon: '⚠️',
+        icon: '❌',
         destaque: 'Falha: limite de tentativas excedido',
         texto: '1 card (CE-26691)',
       },
@@ -136,12 +153,7 @@ var jiraChangelogData = [
         texto: '1 card (CE-26635)',
       },
       {
-        icon: '❌',
-        destaque: 'Falha na emissão para clientes sem endereço',
-        texto: '1 card (CE-26460)',
-      },
-      {
-        icon: '🔗',
+        icon: '🔄',
         destaque: 'Falha na importação de venda Pagar.Me',
         texto: '1 card (CE-26375)',
       },
@@ -151,8 +163,8 @@ var jiraChangelogData = [
         texto: '1 card (CE-26357)',
       },
       {
-        icon: '📐',
-        destaque: 'Ajuste de NFS-e em São Paulo/SP',
+        icon: '🏙️',
+        destaque: 'Ajuste NFS-e em São Paulo/SP',
         texto: '1 card (CE-25831)',
       },
     ],
@@ -168,19 +180,19 @@ var jiraChangelogData = [
         texto: '1 card (CE-26799)',
       },
       {
-        icon: '🤖',
+        icon: '🧾',
         destaque: 'Autofix — inutilização de NF',
         texto: '1 card (CE-26772)',
       },
       {
-        icon: '🔗',
+        icon: '🔄',
         destaque: 'Falha no fluxo de importação de vendas (Start)',
         texto: '1 card (CE-26670)',
       },
       {
-        icon: '📊',
-        destaque: 'Erro no ajuste do percentual aproximado de tributos',
-        texto: '1 card (CE-26404)',
+        icon: '❌',
+        destaque: 'Falha na emissão de NFS-e para clientes sem endereço',
+        texto: '1 card (CE-26460)',
       },
     ],
   },
@@ -190,14 +202,24 @@ var jiraChangelogData = [
     data: '12/05/2026',
     itens: [
       {
+        icon: '🤖',
+        destaque: 'Autofix — sincronizar status embed/GW',
+        texto: '1 card (CE-26721)',
+      },
+      {
         icon: '🌐',
         destaque: 'Erro emissão tomador exterior em Mata de São João/BA',
         texto: '1 card (CE-26601)',
       },
       {
-        icon: '🔗',
+        icon: '🔄',
         destaque: 'Integração Pagar.me 2.0 com duas chaves',
         texto: '1 card (CE-26493)',
+      },
+      {
+        icon: '📊',
+        destaque: 'Erro no ajuste do percentual aproximado de tributos',
+        texto: '1 card (CE-26404)',
       },
     ],
   },
@@ -207,13 +229,8 @@ var jiraChangelogData = [
     data: '11/05/2026',
     itens: [
       {
-        icon: '🤖',
-        destaque: 'Autofix — sincronizar status embed/GW',
-        texto: '1 card (CE-26721)',
-      },
-      {
         icon: '🔄',
-        destaque: 'Sincronização de nota em Marília/SP',
+        destaque: 'Sincronização em Marília/SP',
         texto: '1 card (CE-26576)',
       },
       {
@@ -233,29 +250,24 @@ var jiraChangelogData = [
         texto: '1 card (CE-26553)',
       },
       {
-        icon: '📐',
+        icon: '📋',
         destaque: 'Ajuste de layout em Limeira/SP',
-        texto: '1 card (CE-26536)',
+        texto: '2 cards (CE-26536, CE-26356)',
       },
       {
-        icon: '🧮',
+        icon: '📊',
         destaque: 'Adequação fiscal em Barueri/SP',
         texto: '1 card (CE-26513)',
       },
       {
-        icon: '📐',
+        icon: '📋',
         destaque: 'Atualização layout PDF em Cuiabá/MT',
         texto: '1 card (CE-26512)',
       },
       {
         icon: '💰',
-        destaque: 'Faturas de excedentes indevidas',
+        destaque: 'Financeiro eNotas — faturas de excedentes',
         texto: '2 cards (CE-26503, CE-26461)',
-      },
-      {
-        icon: '📐',
-        destaque: 'Adequação de layout em Limeira/SP',
-        texto: '1 card (CE-26356)',
       },
       {
         icon: '🔒',
@@ -264,8 +276,8 @@ var jiraChangelogData = [
         texto: '1 card (CE-26237)',
       },
       {
-        icon: '🔍',
-        destaque: 'Pesquisa de vendas — ajuste de funcionalidade',
+        icon: '📋',
+        destaque: 'Pesquisa de vendas',
         texto: '1 card (CE-24175)',
       },
     ],
@@ -278,8 +290,7 @@ var jiraChangelogData = [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
-        texto:
-          'Nenhum ticket resolvido neste dia (todos já contados em dias mais recentes).',
+        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
@@ -292,72 +303,6 @@ var jiraChangelogData = [
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
         texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '08/05/2026',
-    titulo: 'Quinta-feira — 08 de Maio',
-    data: '08/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque:
-          'Autofix — sincronizar status embed/GW + retornar NF negada + inutilização',
-        texto: '3 cards (CE-26630, CE-26606, CE-26605)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro desconhecido em Barueri/SP',
-        texto: '1 card (CE-26587)',
-      },
-      {
-        icon: '📐',
-        destaque:
-          'Tamanho do registro diferente da especificação do layout em Barueri/SP',
-        texto: '1 card (CE-26551)',
-      },
-      {
-        icon: '⏸️',
-        destaque: 'Fila travada em São Paulo/SP',
-        texto: '1 card (CE-26546)',
-      },
-      {
-        icon: '🧮',
-        destaque: 'Adequação fiscal em Barueri/SP',
-        texto:
-          '7 cards (CE-26540, CE-26519, CE-26517, CE-26507, CE-26502, CE-26496, CE-26488)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Financeiro / Faturamento',
-        texto: '1 card (CE-26490)',
-      },
-      {
-        icon: '🖼️',
-        destaque: 'Inclusão de logo no layout',
-        texto: '1 card (CE-26477)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Inclusão de NBS para emissão exterior',
-        texto: '1 card (CE-26431)',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Notas para clientes no exterior — ajuste de campo cPaisResult',
-        texto: '2 cards (CE-26427, CE-25664)',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Integração com WooCommerce',
-        texto: '1 card (CE-26295)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Tratamento de erro não aplicado',
-        texto: '1 card (CE-26217)',
       },
     ],
   },

@@ -1,0 +1,13 @@
+[     723ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://astrobox.hotmart.com/:0
+[    1975ms] [INFO] [CAS-JS][onFocus] hidden @ https://astrobox.hotmart.com/bc970309d1133e6a37ac.chunk.js:231
+[    2397ms] [ERROR] dataGtmElement not found. Please inform dataGtmElement or use direct google tag manager @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[    2718ms] [LOG] Tracking event api htm sent Response @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[    3030ms] [LOG] Device Fingerprint: 2378292233095 @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[   51590ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; AVISO @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.XO03rYNxHLM.es5.O/am=iW8AAACE4h8hA4D__38DAAggiA74ngVoAoQMAAAAAAAAAABYAAAAjQ/d=1/excm=_b,_tp,accountchooserview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFvpIuOCZRqt0uORBXCsq-aXoD9Fw/dti=1/m=_b,_tp:545
+[   51590ms] [LOG] %c%s font-size: 18px; O uso deste console pode permitir que invasores falsifiquem sua identidade para roubar informações por meio de um ataque chamado Self-XSS.
+Não insira nem cole códigos que você não conheça. @ https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.XO03rYNxHLM.es5.O/am=iW8AAACE4h8hA4D__38DAAggiA74ngVoAoQMAAAAAAAAAABYAAAAjQ/d=1/excm=_b,_tp,accountchooserview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFvpIuOCZRqt0uORBXCsq-aXoD9Fw/dti=1/m=_b,_tp:545
+[   63446ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://hotmart.okta.com/idp/idx/challenge/answer:0
+[  116160ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://hotmart.okta.com/login/token/redirect?stateToken=02.id._8IhCnyyMA_UO43HnCUL1TU47__ptiB1_H6JRUYQ:0
+[  126011ms] [ERROR] dataGtmElement not found. Please inform dataGtmElement or use direct google tag manager @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[  126073ms] [LOG] Device Fingerprint: 2378292233095 @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[  126442ms] [LOG] Tracking event api htm sent Response @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0

@@ -1,0 +1,21 @@
+[     397ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://astrobox.hotmart.com/:0
+[    1480ms] [INFO] [CAS-JS][onFocus] hidden @ https://astrobox.hotmart.com/bc970309d1133e6a37ac.chunk.js:231
+[    1630ms] [ERROR] dataGtmElement not found. Please inform dataGtmElement or use direct google tag manager @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[    1979ms] [LOG] Tracking event api htm sent Response @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[    2128ms] [LOG] Device Fingerprint: 2378292233095 @ https://sso.hotmart.com/themes/custom/js/custom.bundle.min.js?v=0.25.1:0
+[31330505ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/telemetry:0
+[31330545ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[31331051ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/inputs?client=browser:0
+[31331055ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[31331055ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[31331569ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/inputs?client=browser:0
+[31331574ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[31331575ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[36143341ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/telemetry:0
+[36146513ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[36147186ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/inputs?client=browser:0
+[36149557ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[36149558ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[36149559ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/inputs?client=browser:0
+[36158762ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
+[36158762ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://66e489b29fed.edge.sdk.awswaf.com/66e489b29fed/ce32c50e9b85/report:0
