@@ -22,6 +22,7 @@ Qual atualização deseja executar?
   [6] Aguardando Deploy (etapa 7)
   [7] Monitoramento NFe - New Relic (etapa 10)
   [8] Apenas commit e push (etapa 9)
+  [9] Reforma Tributária - Crawler (etapa 11)
 
 Pode escolher múltiplas opções separadas por vírgula (ex: 2,4,5)
 ```
@@ -469,3 +470,28 @@ O `index.html` já possui a lógica de modal que carrega esses JSONs via fetch q
 - O `aguardando-deploy-changelog.js` compara `notagateway-sync` vs `dev` (não vs main).
 - NUNCA cortar, omitir ou agrupar commits arbitrariamente no changelog. TODOS os commits de cada dia devem gerar itens no changelog. Se um dia tem 19 commits, o changelog desse dia deve ter no mínimo 15+ itens (agrupando apenas commits muito similares, como 3 cidades aderindo ao mesmo provedor). Antes de escrever o arquivo, conte os commits do dia e conte os itens gerados — se a diferença for grande, refaça. O usuário depende dessa completude para acompanhar o que entrou em produção.
 - Ao processar commits de um dia, primeiro liste TODOS os commits com `git log`, depois processe cada um individualmente. Não confie na memória — use a lista completa como checklist.
+
+## Etapa 11: Atualizar Reforma Tributária — Crawler de marcos regulatórios
+
+1. Acesse a página de marcos da Receita Federal:
+
+   ```
+   https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos
+   ```
+
+2. Compare o conteúdo com os marcos já presentes em `LogsAlteracoes/reforma-tributaria-data.js`.
+
+3. Se houver novos marcos (novas leis, portarias ou emendas):
+   - Busque informações detalhadas sobre cada novo marco (via web search)
+   - Gere um resumo para leigos explicando: o que é, o que muda, e qual o impacto
+   - Adicione o campo `impactoEnotas` explicando como afeta o gateway
+   - Inclua a URL oficial da legislação (planalto.gov.br para LCs/ECs, in.gov.br para portarias)
+   - Insira na posição correta (ordenado por data, mais recente primeiro)
+
+4. Atualize o campo `atualizadoEm` com a data de hoje.
+
+5. Se a página da Receita Federal indicar uma data de atualização diferente da `fonteAtualizadaEm`, atualize esse campo também.
+
+6. O arquivo `LogsAlteracoes/reforma-tributaria-data.js` alimenta a página `reforma-tributaria.html`.
+
+7. NOTA: Esta etapa também roda automaticamente uma vez ao dia via GitHub Actions (workflow `reforma-tributaria.yml`). O workflow apenas detecta mudanças e atualiza a data de verificação. A geração de resumos contextualizados requer execução manual pelo agente.
