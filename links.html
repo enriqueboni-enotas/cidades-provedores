@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links Úteis — eNotas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #141414;
+      --surface: #1E1E1E;
+      --surface2: #2A2A2A;
+      --border: #333;
+      --accent: #F04E23;
+      --text: #E0E0E0;
+      --muted: #8A8A8A;
+      --heading: #FFFFFF;
+    }
+
+    html.light {
+      --bg: #F5F5F0;
+      --surface: #FFFFFF;
+      --surface2: #F0F0EB;
+      --border: #E0DED8;
+      --accent: #F04E23;
+      --text: #32363b;
+      --muted: #707780;
+      --heading: #0D0D0D;
+    }
+
+    body {
+      font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0DED8;
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    html:not(.light) .topbar {
+      background: #1A1A1A;
+      border-bottom-color: #2E2E2E;
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hotmart-logo {
+      height: 28px;
+      width: auto;
+    }
+
+    .enotas-logo {
+      height: 22px;
+      width: auto;
+    }
+
+    html:not(.light) .hotmart-logo,
+    html:not(.light) .enotas-logo {
+      filter: brightness(0) invert(1);
+    }
+
+    .topbar-divider {
+      width: 1px;
+      height: 28px;
+      background: #E0DED8;
+    }
+
+    html:not(.light) .topbar-divider {
+      background: #444;
+    }
+
+    .topbar h1 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #32363b;
+      letter-spacing: -0.2px;
+    }
+
+    html:not(.light) .topbar h1 {
+      color: #E0E0E0;
+    }
+
+    .nav-link-home {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+
+    .nav-link-home:hover {
+      color: var(--accent);
+    }
+
+    .enotas-wrap {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .theme-toggle {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      width: 48px;
+      height: 26px;
+      cursor: pointer;
+      position: relative;
+      transition: background .3s, border-color .3s;
+      flex-shrink: 0;
+    }
+
+    html.light .theme-toggle {
+      background: #E0DED8;
+      border-color: #C8C5BC;
+    }
+
+    .theme-toggle::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: transform .3s, background .3s;
+    }
+
+    html.light .theme-toggle::after {
+      transform: translateX(22px);
+      background: #32363b;
+    }
+
+    html:not(.light) .theme-toggle {
+      background: #333;
+      border-color: #444;
+    }
+
+    html:not(.light) .theme-toggle::after {
+      background: #555;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .page-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+
+    .page-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .link-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      text-decoration: none;
+      transition: border-color .2s, transform .15s, box-shadow .2s;
+    }
+
+    .link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(240, 78, 35, 0.1);
+    }
+
+    .link-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--surface2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .link-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .link-info {
+      flex: 1;
+    }
+
+    .link-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--heading);
+      margin-bottom: 4px;
+    }
+
+    .link-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .link-url {
+      font-size: 11px;
+      color: var(--accent);
+      margin-top: 6px;
+      display: block;
+      word-break: break-all;
+      opacity: 0.7;
+    }
+
+    .category-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .category-title:first-of-type {
+      margin-top: 0;
+    }
+
+    @media(max-width:600px) {
+      .container {
+        padding: 16px;
+      }
+
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        padding: 0 12px;
+        height: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script src="auth.js"></script>
+  <div class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" style="display:flex;align-items:center;text-decoration:none"><img src="hotmart-logo.svg"
+          alt="Hotmart" class="hotmart-logo"></a>
+      <span class="topbar-divider"></span>
+      <a href="index.html" class="enotas-wrap"><img src="enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
+      <span class="topbar-divider"></span>
+      <a href="index.html" class="nav-link-home">Cidades & Provedores</a>
+      <span class="topbar-divider"></span>
+      <a href="monitoramento-nfe.html" class="nav-link-home">Monitoramento NFe</a>
+      <span class="topbar-divider"></span>
+      <h1>Links Úteis</h1>
+    </div>
+    <div class="topbar-right">
+      <button class="theme-toggle" id="themeToggle" title="Alternar tema"
+        aria-label="Alternar tema claro/escuro"></button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="page-title">Links Úteis</h2>
+    <p class="page-desc">Ferramentas e referências do dia a dia da equipe eNotas Gateway.</p>
+
+    <div class="category-title">Fiscal & Tributário</div>
+    <div class="links-grid">
+      <a href="https://portalunico.siscomex.gov.br/classif/#/sumario?perfil=publico" target="_blank" class="link-card">
+        <div class="link-icon"><svg viewBox="0 0 24 24">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+            <rect x="9" y="3" width="6" height="4" rx="1" />
+            <path d="M9 12h6M9 16h6" />
+          </svg></div>
+        <div class="link-info">
+          <div class="link-name">Classificação NCM/NBS — Siscomex</div>
+          <div class="link-desc">Portal Único de Comércio Exterior. Consulta de códigos NCM e NBS para classificação de
+            mercadorias e serviços.</div>
+          <span class="link-url">portalunico.siscomex.gov.br</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding:24px 40px;text-align:center;font-size:12px;color:var(--muted)">
+    Hotmart — Links Úteis · eNotas Gateway · 2026
+  </div>
+
+  <script>
+    (function () {
+      var s = localStorage.getItem('theme');
+      if (s === 'light') document.documentElement.classList.add('light');
+      else if (s === 'dark') document.documentElement.classList.remove('light');
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        document.documentElement.classList.toggle('light');
+        localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+
+</html>
