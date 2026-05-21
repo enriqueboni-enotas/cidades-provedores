@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monitoramento de Filas NFe — eNotas</title>
+  <title>Monitoramento de Filas NFe â€” eNotas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -500,7 +500,7 @@
       border-radius: 3px
     }
 
-    /* Info tooltip (ⓘ) */
+    /* Info tooltip (â“˜) */
     .info-tip {
       position: relative;
       display: inline-flex;
@@ -620,7 +620,7 @@
       grid-template-columns: repeat(2, 1fr)
     }
 
-    /* Responsive — Tablet */
+    /* Responsive â€” Tablet */
     @media(max-width:900px) {
       .grid {
         grid-template-columns: 1fr
@@ -699,7 +699,7 @@
       }
     }
 
-    /* Responsive — Mobile */
+    /* Responsive â€” Mobile */
     @media(max-width:600px) {
       .topbar {
         padding: 0 12px;
@@ -922,7 +922,7 @@
       color: var(--danger)
     }
 
-    /* Responsive — Small mobile */
+    /* Responsive â€” Small mobile */
     @media(max-width:380px) {
       .stats-row {
         grid-template-columns: 1fr 1fr;
@@ -955,23 +955,23 @@
 </head>
 
 <body>
-  <script src="auth.js"></script>
+  <script src="../auth.js"></script>
   <div class="topbar">
     <div class="topbar-left">
-      <a href="index.html" style="display:flex;align-items:center;text-decoration:none"><img src="hotmart-logo.svg"
+      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img src="../hotmart-logo.svg"
           alt="Hotmart" class="hotmart-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="index.html" class="enotas-wrap"><img src="enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
+      <a href="../index.html" class="enotas-wrap"><img src="../enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="index.html" class="nav-link-home">Cidades &
+      <a href="../index.html" class="nav-link-home">Cidades &
         Provedores</a>
       <span class="topbar-divider"></span>
       <h1><span class="hide-mobile">Monitoramento de Filas NFe</span><span class="show-mobile">Monitoramento NFe</span>
       </h1>
       <span class="topbar-divider"></span>
-      <a href="reforma-tributaria.html" class="nav-link-home">Reforma Tributária</a>
+      <a href="reforma-tributaria.html" class="nav-link-home">Reforma TributÃ¡ria</a>
       <span class="topbar-divider"></span>
-      <a href="links.html" class="nav-link-home">Links Úteis</a>
+      <a href="links.html" class="nav-link-home">Links Ãšteis</a>
     </div>
     <div class="topbar-right">
       <button class="theme-toggle" id="themeToggle" title="Alternar tema"
@@ -980,9 +980,9 @@
   </div>
   <div class="container" id="app-root"></div>
   <div style="padding:24px 40px;text-align:center;font-size:12px;color:var(--muted)">
-    Hotmart — Monitoramento de Filas NFe · Dados do New Relic · 2026
+    Hotmart â€” Monitoramento de Filas NFe Â· Dados do New Relic Â· 2026
   </div>
-  <script src="LogsAlteracoes/monitoramento-nfe-data.js"></script>
+  <script src="../LogsAlteracoes/monitoramento-nfe-data.js"></script>
   <script>
     'use strict';
     /* Theme */
@@ -1037,7 +1037,7 @@
     var h = '';
     h += '<div class="ts-bar">Dados coletados em ' + esc(D.geradoEm) + ' (Bras\u00edlia) \u00b7 Fonte: New Relic \u00b7 <span id="countdown" style="color:var(--accent)"></span></div>';
 
-    /* ── STATS ROW ── */
+    /* â”€â”€ STATS ROW â”€â”€ */
     function infoTip(text) { return '<span class="info-tip">i<span class="info-bubble">' + text + '</span></span>' }
     h += '<div class="stats-row">';
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--warn)">' + fmtNum(totalPendentes) + '</div><div class="stat-label">Em Processamento' + infoTip('Notas em status intermedi\u00e1rio: Criada n\u00e3o enviada (0), Criada (1), Enviada (3), Intermedi\u00e1rio (12). S\u00e3o notas que ainda n\u00e3o chegaram ao status final.') + '</div><div class="stat-sub">\u00faltimas 24h</div></div>';
@@ -1051,7 +1051,7 @@
     h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + fmtMin(globalP['99']) + ' min</div><div class="stat-label">P99' + infoTip('Percentil 99: 99% das notas foram processadas em at\u00e9 este tempo na \u00faltima hora. Valores altos indicam outliers.') + '</div><div class="stat-sub">\u00faltima hora</div></div>';
     h += '</div>';
 
-    /* ── TABS ── */
+    /* â”€â”€ TABS â”€â”€ */
     h += '<div class="tabs" id="mainTabs">';
     h += '<button class="tab-btn active" data-tab="volumetria">Volumetria</button>';
     h += '<button class="tab-btn" data-tab="performance">Performance</button>';
@@ -1060,7 +1060,7 @@
     h += '<button class="tab-btn" data-tab="empresas">Empresas</button>';
     h += '</div>';
 
-    /* ══════════ TAB: VISÃO GERAL ══════════ */
+    /* â•â•â•â•â•â•â•â•â•â• TAB: VISÃƒO GERAL â•â•â•â•â•â•â•â•â•â• */
     h += '<div class="tab-panel" id="tab-visao-geral">';
     h += '<div class="grid">';
 
@@ -1085,7 +1085,7 @@
     });
     h += '</div></div>';
 
-    /* Travadas por município */
+    /* Travadas por municÃ­pio */
     h += '<div class="card panel"><h2 class="panel-title">Notas em status intermedi\u00e1rio por munic\u00edpio <span class="badge-count">Top 20</span></h2><div class="bar-chart">';
     var mx1 = D.travadasPorMunicipio.length ? D.travadasPorMunicipio[0]['latest.nfe.stuck_in_intermediate_status.count'] : 1;
     D.travadasPorMunicipio.slice(0, 20).forEach(function (r) {
@@ -1096,7 +1096,7 @@
     });
     h += '</div></div>';
 
-    /* Volume de notas por município */
+    /* Volume de notas por municÃ­pio */
     h += '<div class="card panel"><h2 class="panel-title">Volume de notas processadas <span class="badge-count">\u00faltima hora</span></h2><div class="bar-chart">';
     var mx5 = D.volumeMunicipio.length ? D.volumeMunicipio[0]['count.nfe.processing_time.minutes'] : 1;
     D.volumeMunicipio.slice(0, 20).forEach(function (r) {
@@ -1108,7 +1108,7 @@
     });
     h += '</div></div>';
 
-    /* Tempo máximo (piores casos) */
+    /* Tempo mÃ¡ximo (piores casos) */
     h += '<div class="card panel"><h2 class="panel-title">Tempo m\u00e1ximo de processamento <span class="badge-count">piores casos</span></h2><div class="bar-chart">';
     var mx2 = D.tempoMaxProcessamento.length ? D.tempoMaxProcessamento[0]['max.nfe.processing_time.minutes'] : 1;
     D.tempoMaxProcessamento.forEach(function (r) {
@@ -1131,7 +1131,7 @@
     });
     h += '</div></div>';
 
-    /* Transição de status (full width) */
+    /* TransiÃ§Ã£o de status (full width) */
     h += '<div class="card panel full"><h2 class="panel-title">Tempo por transi\u00e7\u00e3o de status</h2>';
     h += '<div class="table-wrap"><table><thead><tr><th>Status</th><th>Status Anterior</th><th style="text-align:right">M\u00e9dia</th><th style="text-align:right">M\u00e1ximo</th><th style="text-align:right">P95</th></tr></thead><tbody>';
     D.tempoPorStatusDetalhe.forEach(function (r) {
@@ -1145,7 +1145,7 @@
 
     h += '</div></div>'; /* close grid + tab */
 
-    /* ══════════ TAB 2: PERFORMANCE ══════════ */
+    /* â•â•â•â•â•â•â•â•â•â• TAB 2: PERFORMANCE â•â•â•â•â•â•â•â•â•â• */
     h += '<div class="tab-panel" id="tab-performance">';
 
     /* Tabela completa de performance */
@@ -1180,7 +1180,7 @@
 
     h += '</div>'; /* close tab */
 
-    /* ══════════ TAB: VOLUMETRIA ══════════ */
+    /* â•â•â•â•â•â•â•â•â•â• TAB: VOLUMETRIA â•â•â•â•â•â•â•â•â•â• */
     h += '<div class="tab-panel active" id="tab-volumetria">';
     h += '<div class="grid">';
 
@@ -1207,7 +1207,7 @@
     h += '<div style="text-align:center;margin-top:4px;font-size:14px;font-weight:600">Taxa de falha: <span style="color:' + taxaCor + '">' + taxaFalha + '%</span></div>';
     h += '</div>';
 
-    /* Gráfico de linha: Emitidas e Falhas por hora (últimas 24h) */
+    /* GrÃ¡fico de linha: Emitidas e Falhas por hora (Ãºltimas 24h) */
     var hasTimeseries = D.volumetriaTimeseries && D.volumetriaTimeseries.length;
     if (hasTimeseries) {
       h += '<div class="card panel full"><h2 class="panel-title">Emitidas e Falhas por hora <span class="badge-count">\u00faltimas 24h</span></h2>';
@@ -1215,7 +1215,7 @@
       h += '</div>';
     }
 
-    /* Painel 2: Fila de Operações (half width) */
+    /* Painel 2: Fila de OperaÃ§Ãµes (half width) */
     var fila = (D.filaOperacoes && D.filaOperacoes[0]) || {};
     var filaPendentes = fila.pendentes || 0;
     var filaRodando = fila.rodando || 0;
@@ -1242,7 +1242,7 @@
 
     h += '</div></div>'; /* close grid + tab */
 
-    /* ══════════ TAB 3: ERROS & MOTIVOS ══════════ */
+    /* â•â•â•â•â•â•â•â•â•â• TAB 3: ERROS & MOTIVOS â•â•â•â•â•â•â•â•â•â• */
     h += '<div class="tab-panel" id="tab-erros">';
     h += '<div class="grid">';
 
@@ -1265,7 +1265,7 @@
     });
     h += '</tbody></table></div></div>';
 
-    /* Cruzamento município × status */
+    /* Cruzamento municÃ­pio Ã— status */
     h += '<div class="card panel full"><h2 class="panel-title">Pendentes por munic\u00edpio e status <span class="badge-count">Top 30</span></h2>';
     h += '<div class="table-wrap"><table><thead><tr><th>Munic\u00edpio</th><th>Status</th><th style="text-align:right">Quantidade</th></tr></thead><tbody>';
     D.municipioStatus.forEach(function (r) {
@@ -1278,7 +1278,7 @@
 
     h += '</div></div>'; /* close grid + tab */
 
-    /* ══════════ TAB 4: EMPRESAS ══════════ */
+    /* â•â•â•â•â•â•â•â•â•â• TAB 4: EMPRESAS â•â•â•â•â•â•â•â•â•â• */
     h += '<div class="tab-panel" id="tab-empresas">';
     h += '<div class="grid">';
 
@@ -1324,7 +1324,7 @@
     h += '</tbody></table></div></div>';
     h += '</div></div>'; /* close inner grid + card */
 
-    /* Empresas distintas por município */
+    /* Empresas distintas por municÃ­pio */
     h += '<div class="card panel full"><h2 class="panel-title">Empresas distintas por munic\u00edpio' + infoTip('Quantidade de empresas diferentes que tiveram notas em status intermedi\u00e1rio nas \u00faltimas 24h, agrupadas pelo munic\u00edpio de servi\u00e7o.') + ' <span class="badge-count">Top 30 \u00b7 \u00faltimas 24h</span></h2>';
     h += '<div class="table-wrap"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Empresas</th></tr></thead><tbody>';
     D.empresasMunicipio.forEach(function (r) {
@@ -1338,7 +1338,7 @@
 
     document.getElementById('app-root').innerHTML = h;
 
-    /* ── Gráfico de linha: Emitidas e Falhas por hora ── */
+    /* â”€â”€ GrÃ¡fico de linha: Emitidas e Falhas por hora â”€â”€ */
     (function () {
       var canvas = document.getElementById('chartEmitidas');
       if (!canvas) return;
@@ -1459,7 +1459,7 @@
       canvas.addEventListener('mouseleave', function () { tooltip.style.display = 'none'; });
     })();
 
-    /* ── Modal de empresas por motivo ── */
+    /* â”€â”€ Modal de empresas por motivo â”€â”€ */
     var modalHtml = '<div class="modal-overlay" id="motivoModal">';
     modalHtml += '<div class="modal-box">';
     modalHtml += '<div class="modal-header"><h3 id="motivoModalTitle">Empresas</h3><button class="modal-close" id="motivoModalClose">\u00D7</button></div>';
@@ -1482,7 +1482,7 @@
         return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
       });
       var title = truncMotivo(motivo, 120);
-      document.getElementById('motivoModalTitle').textContent = 'Empresas — ' + title;
+      document.getElementById('motivoModalTitle').textContent = 'Empresas â€” ' + title;
       var body = '';
       if (data.length === 0) {
         body = '<p style="color:var(--muted);font-size:13px">Nenhuma empresa encontrada para este motivo.</p>';
@@ -1520,14 +1520,14 @@
       if (motivo) openMotivoModal(motivo);
     });
 
-    /* ── Status drill-down (reutiliza motivoModal) ── */
+    /* â”€â”€ Status drill-down (reutiliza motivoModal) â”€â”€ */
     function openStatusModal(statusCode) {
       var statusData = D.travadasStatusEmpresa || {};
       var data = statusData[String(statusCode)] || [];
       data = data.slice().sort(function (a, b) {
         return (b['latest.nfe.stuck_in_intermediate_status.count'] || 0) - (a['latest.nfe.stuck_in_intermediate_status.count'] || 0);
       });
-      document.getElementById('motivoModalTitle').textContent = 'Empresas — ' + statusLabel(statusCode);
+      document.getElementById('motivoModalTitle').textContent = 'Empresas â€” ' + statusLabel(statusCode);
       var body = '';
       if (data.length === 0) {
         body = '<p style="color:var(--muted);font-size:13px">Nenhuma empresa encontrada para este status.</p>';
@@ -1552,7 +1552,7 @@
       if (status) openStatusModal(status);
     });
 
-    /* ── Tab switching ── */
+    /* â”€â”€ Tab switching â”€â”€ */
     document.querySelectorAll('.tab-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active') });
@@ -1563,7 +1563,7 @@
       });
     });
 
-    /* ── Table filtering ── */
+    /* â”€â”€ Table filtering â”€â”€ */
     function setupFilter(inputId, tableId) {
       var input = document.getElementById(inputId);
       if (!input) return;
@@ -1578,7 +1578,7 @@
     setupFilter('perfFilter', 'perfTable');
     setupFilter('motivoFilter', 'motivoTable');
 
-    /* ── Table sorting ── */
+    /* â”€â”€ Table sorting â”€â”€ */
     document.querySelectorAll('#perfTable thead th[data-col]').forEach(function (th) {
       th.addEventListener('click', function () {
         var col = parseInt(th.dataset.col);
@@ -1600,20 +1600,20 @@
 
     if (window._authLogEvent) window._authLogEvent('page_view', 'monitoramento-nfe');
 
-    /* Countdown para próxima atualização (a cada 20 min, baseado no timestamp dos dados) */
+    /* Countdown para prÃ³xima atualizaÃ§Ã£o (a cada 20 min, baseado no timestamp dos dados) */
     (function () {
       var el = document.getElementById('countdown');
       if (!el || !D.geradoEm) return;
-      // Parse "dd/MM/yyyy HH:mm" como horário de Brasília (UTC-3)
+      // Parse "dd/MM/yyyy HH:mm" como horÃ¡rio de BrasÃ­lia (UTC-3)
       var p = D.geradoEm.match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})/);
       if (!p) return;
-      var geradoUtc = Date.UTC(+p[3], +p[2] - 1, +p[1], +p[4] + 3, +p[5]); // BR→UTC
+      var geradoUtc = Date.UTC(+p[3], +p[2] - 1, +p[1], +p[4] + 3, +p[5]); // BRâ†’UTC
       var nextUpdate = geradoUtc + 20 * 60 * 1000; // +20 min
       function tick() {
         var now = Date.now();
         var diff = nextUpdate - now;
         if (diff <= 0) {
-          // Já passou, calcular próximo ciclo de 20 min
+          // JÃ¡ passou, calcular prÃ³ximo ciclo de 20 min
           var cycles = Math.ceil((now - geradoUtc) / (20 * 60 * 1000));
           nextUpdate = geradoUtc + cycles * 20 * 60 * 1000;
           diff = nextUpdate - now;
