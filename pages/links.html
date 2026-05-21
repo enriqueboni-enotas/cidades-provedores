@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links Ãšteis â€” eNotas</title>
+  <title>Links Úteis — eNotas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     *::after {
       box-sizing: border-box;
       margin: 0;
-      padding: 0;
+      padding: 0
     }
 
     :root {
@@ -25,7 +25,7 @@
       --accent: #F04E23;
       --text: #E0E0E0;
       --muted: #8A8A8A;
-      --heading: #FFFFFF;
+      --heading: #FFFFFF
     }
 
     html.light {
@@ -36,7 +36,7 @@
       --accent: #F04E23;
       --text: #32363b;
       --muted: #707780;
-      --heading: #0D0D0D;
+      --heading: #0D0D0D
     }
 
     body {
@@ -45,7 +45,7 @@
       color: var(--text);
       line-height: 1.6;
       font-size: 15px;
-      min-height: 100vh;
+      min-height: 100vh
     }
 
     .topbar {
@@ -58,54 +58,43 @@
       justify-content: space-between;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 100
     }
 
     html:not(.light) .topbar {
       background: #1A1A1A;
-      border-bottom-color: #2E2E2E;
+      border-bottom-color: #2E2E2E
     }
 
     .topbar-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 12px
     }
 
     .hotmart-logo {
       height: 28px;
-      width: auto;
+      width: auto
     }
 
     .enotas-logo {
       height: 22px;
-      width: auto;
+      width: auto
     }
 
     html:not(.light) .hotmart-logo,
     html:not(.light) .enotas-logo {
-      filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1)
     }
 
     .topbar-divider {
       width: 1px;
       height: 28px;
-      background: #E0DED8;
+      background: #E0DED8
     }
 
     html:not(.light) .topbar-divider {
-      background: #444;
-    }
-
-    .topbar h1 {
-      font-size: 15px;
-      font-weight: 600;
-      color: #32363b;
-      letter-spacing: -0.2px;
-    }
-
-    html:not(.light) .topbar h1 {
-      color: #E0E0E0;
+      background: #444
     }
 
     .nav-link-home {
@@ -113,23 +102,17 @@
       color: var(--muted);
       text-decoration: none;
       transition: color .2s;
-      white-space: nowrap;
+      white-space: nowrap
     }
 
     .nav-link-home:hover {
-      color: var(--accent);
-    }
-
-    .enotas-wrap {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
+      color: var(--accent)
     }
 
     .topbar-right {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 16px
     }
 
     .theme-toggle {
@@ -141,12 +124,12 @@
       cursor: pointer;
       position: relative;
       transition: background .3s, border-color .3s;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     html.light .theme-toggle {
       background: #E0DED8;
-      border-color: #C8C5BC;
+      border-color: #C8C5BC
     }
 
     .theme-toggle::after {
@@ -158,46 +141,46 @@
       height: 20px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.2);
-      transition: transform .3s, background .3s;
+      transition: transform .3s, background .3s
     }
 
     html.light .theme-toggle::after {
       transform: translateX(22px);
-      background: #32363b;
+      background: #32363b
     }
 
     html:not(.light) .theme-toggle {
       background: #333;
-      border-color: #444;
+      border-color: #444
     }
 
     html:not(.light) .theme-toggle::after {
-      background: #555;
+      background: #555
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px;
+      padding: 40px
     }
 
     .page-title {
       font-size: 24px;
       font-weight: 700;
       color: var(--heading);
-      margin-bottom: 8px;
+      margin-bottom: 8px
     }
 
     .page-desc {
       font-size: 14px;
       color: var(--muted);
-      margin-bottom: 32px;
+      margin-bottom: 32px
     }
 
     .links-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
+      gap: 16px
     }
 
     .link-card {
@@ -209,13 +192,13 @@
       align-items: flex-start;
       gap: 14px;
       text-decoration: none;
-      transition: border-color .2s, transform .15s, box-shadow .2s;
+      transition: border-color .2s, transform .15s, box-shadow .2s
     }
 
     .link-card:hover {
       border-color: var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(240, 78, 35, 0.1);
+      box-shadow: 0 4px 12px rgba(240, 78, 35, 0.1)
     }
 
     .link-icon {
@@ -226,7 +209,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .link-icon svg {
@@ -236,24 +219,24 @@
       fill: none;
       stroke-width: 2;
       stroke-linecap: round;
-      stroke-linejoin: round;
+      stroke-linejoin: round
     }
 
     .link-info {
-      flex: 1;
+      flex: 1
     }
 
     .link-name {
       font-size: 14px;
       font-weight: 600;
       color: var(--heading);
-      margin-bottom: 4px;
+      margin-bottom: 4px
     }
 
     .link-desc {
       font-size: 12px;
       color: var(--muted);
-      line-height: 1.5;
+      line-height: 1.5
     }
 
     .link-url {
@@ -262,7 +245,7 @@
       margin-top: 6px;
       display: block;
       word-break: break-all;
-      opacity: 0.7;
+      opacity: 0.7
     }
 
     .category-title {
@@ -270,28 +253,28 @@
       font-weight: 600;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: .06em;
       margin: 32px 0 12px;
       padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--border)
     }
 
     .category-title:first-of-type {
-      margin-top: 0;
+      margin-top: 0
     }
 
     @media(max-width:600px) {
       .container {
-        padding: 16px;
+        padding: 16px
       }
 
       .links-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
       }
 
       .topbar {
         padding: 0 12px;
-        height: 48px;
+        height: 48px
       }
     }
   </style>
@@ -301,18 +284,19 @@
   <script src="../auth.js"></script>
   <div class="topbar">
     <div class="topbar-left">
-      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img src="../assets/hotmart-logo.svg"
-          alt="Hotmart" class="hotmart-logo"></a>
+      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img
+          src="../assets/hotmart-logo.svg" alt="Hotmart" class="hotmart-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="../index.html" class="enotas-wrap"><img src="../assets/enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
+      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img
+          src="../assets/enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
       <span class="topbar-divider"></span>
       <a href="../index.html" class="nav-link-home">Cidades & Provedores</a>
       <span class="topbar-divider"></span>
       <a href="monitoramento-nfe.html" class="nav-link-home">Monitoramento NFe</a>
       <span class="topbar-divider"></span>
-      <a href="reforma-tributaria.html" class="nav-link-home">Reforma TributÃ¡ria</a>
+      <a href="reforma-tributaria.html" class="nav-link-home">Reforma Tributária</a>
       <span class="topbar-divider"></span>
-      <span style="font-size:13px;font-weight:600;color:var(--heading);white-space:nowrap">Links Ãšteis</span>
+      <span style="font-size:13px;font-weight:600;color:var(--heading);white-space:nowrap">Links Úteis</span>
     </div>
     <div class="topbar-right">
       <button class="theme-toggle" id="themeToggle" title="Alternar tema"
@@ -321,10 +305,10 @@
   </div>
 
   <div class="container">
-    <h2 class="page-title">Links Ãšteis</h2>
-    <p class="page-desc">Ferramentas e referÃªncias do dia a dia da equipe eNotas Gateway.</p>
+    <h2 class="page-title">Links Úteis</h2>
+    <p class="page-desc">Ferramentas e referências do dia a dia da equipe eNotas Gateway.</p>
 
-    <div class="category-title">Fiscal & TributÃ¡rio</div>
+    <div class="category-title">Fiscal & Tributário</div>
     <div class="links-grid">
       <a href="https://portalunico.siscomex.gov.br/classif/#/sumario?perfil=publico" target="_blank" class="link-card">
         <div class="link-icon"><svg viewBox="0 0 24 24">
@@ -333,9 +317,9 @@
             <path d="M9 12h6M9 16h6" />
           </svg></div>
         <div class="link-info">
-          <div class="link-name">ClassificaÃ§Ã£o NCM/NBS â€” Siscomex</div>
-          <div class="link-desc">Portal Ãšnico de ComÃ©rcio Exterior. Consulta de cÃ³digos NCM e NBS para classificaÃ§Ã£o de
-            mercadorias e serviÃ§os.</div>
+          <div class="link-name">Classificação NCM/NBS — Siscomex</div>
+          <div class="link-desc">Portal Único de Comércio Exterior. Consulta de códigos NCM e NBS para classificação de
+            mercadorias e serviços.</div>
           <span class="link-url">portalunico.siscomex.gov.br</span>
         </div>
       </a>
@@ -344,9 +328,9 @@
             <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
           </svg></div>
         <div class="link-info">
-          <div class="link-name">Disponibilidade SEFAZ â€” NF-e</div>
+          <div class="link-name">Disponibilidade SEFAZ — NF-e</div>
           <div class="link-desc">Status de disponibilidade dos webservices da SEFAZ para NF-e e NFC-e. Mostra quais
-            estados estÃ£o online, instÃ¡veis ou fora do ar.</div>
+            estados estão online, instáveis ou fora do ar.</div>
           <span class="link-url">nfe.fazenda.gov.br/portal/disponibilidade</span>
         </div>
       </a>
@@ -357,9 +341,9 @@
             <path d="M16 13H8M16 17H8M10 9H8" />
           </svg></div>
         <div class="link-info">
-          <div class="link-name">Portal Nacional NF-e â€” SEFAZ</div>
-          <div class="link-desc">Portal principal da Nota Fiscal EletrÃ´nica. Consulta pÃºblica de NF-e, documentaÃ§Ã£o
-            tÃ©cnica, schemas XML e notas tÃ©cnicas.</div>
+          <div class="link-name">Portal Nacional NF-e — SEFAZ</div>
+          <div class="link-desc">Portal principal da Nota Fiscal Eletrônica. Consulta pública de NF-e, documentação
+            técnica, schemas XML e notas técnicas.</div>
           <span class="link-url">nfe.fazenda.gov.br/portal</span>
         </div>
       </a>
@@ -369,9 +353,9 @@
             <path d="M21 21l-4.35-4.35" />
           </svg></div>
         <div class="link-info">
-          <div class="link-name">Portal da TransparÃªncia â€” Notas Fiscais</div>
-          <div class="link-desc">Consulta pÃºblica de notas fiscais do governo federal. Permite verificar pagamentos e
-            documentos fiscais de Ã³rgÃ£os pÃºblicos.</div>
+          <div class="link-name">Portal da Transparência — Notas Fiscais</div>
+          <div class="link-desc">Consulta pública de notas fiscais do governo federal. Permite verificar pagamentos e
+            documentos fiscais de órgãos públicos.</div>
           <span class="link-url">portaldatransparencia.gov.br</span>
         </div>
       </a>
@@ -383,9 +367,9 @@
             <path d="M2 12l10 5 10-5" />
           </svg></div>
         <div class="link-info">
-          <div class="link-name">Reforma TributÃ¡ria do Consumo â€” Receita Federal</div>
-          <div class="link-desc">PÃ¡gina oficial da Receita Federal sobre a Reforma TributÃ¡ria do Consumo (IBS/CBS).
-            DocumentaÃ§Ã£o, cronograma, legislaÃ§Ã£o e orientaÃ§Ãµes sobre a transiÃ§Ã£o.</div>
+          <div class="link-name">Reforma Tributária do Consumo — Receita Federal</div>
+          <div class="link-desc">Página oficial da Receita Federal sobre a Reforma Tributária do Consumo (IBS/CBS).
+            Documentação, cronograma, legislação e orientações sobre a transição.</div>
           <span class="link-url">gov.br/receitafederal</span>
         </div>
       </a>
@@ -393,21 +377,12 @@
   </div>
 
   <div style="padding:24px 40px;text-align:center;font-size:12px;color:var(--muted)">
-    Hotmart â€” Links Ãšteis Â· eNotas Gateway Â· 2026
+    Hotmart — Links Úteis · eNotas Gateway · 2026
   </div>
 
   <script>
-    (function () {
-      var s = localStorage.getItem('theme');
-      if (s === 'light') document.documentElement.classList.add('light');
-      else if (s === 'dark') document.documentElement.classList.remove('light');
-      document.getElementById('themeToggle').addEventListener('click', function () {
-        document.documentElement.classList.toggle('light');
-        localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
-      });
-    })();
+    (function () { var s = localStorage.getItem('theme'); if (s === 'light') document.documentElement.classList.add('light'); else if (s === 'dark') document.documentElement.classList.remove('light'); document.getElementById('themeToggle').addEventListener('click', function () { document.documentElement.classList.toggle('light'); localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark') }) })();
   </script>
 </body>
 
 </html>
-

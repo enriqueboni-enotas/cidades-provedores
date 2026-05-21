@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reforma TributÃ¡ria â€” eNotas</title>
+  <title>Reforma Tributária — eNotas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -103,17 +103,6 @@
       background: #444
     }
 
-    .topbar h1 {
-      font-size: 15px;
-      font-weight: 600;
-      color: #32363b;
-      letter-spacing: -0.2px
-    }
-
-    html:not(.light) .topbar h1 {
-      color: #E0E0E0
-    }
-
     .nav-link-home {
       font-size: 13px;
       color: var(--muted);
@@ -124,12 +113,6 @@
 
     .nav-link-home:hover {
       color: var(--accent)
-    }
-
-    .enotas-wrap {
-      display: flex;
-      align-items: center;
-      text-decoration: none
     }
 
     .topbar-right {
@@ -388,18 +371,19 @@
   <script src="../auth.js"></script>
   <div class="topbar">
     <div class="topbar-left">
-      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img src="../assets/hotmart-logo.svg"
-          alt="Hotmart" class="hotmart-logo"></a>
+      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img
+          src="../assets/hotmart-logo.svg" alt="Hotmart" class="hotmart-logo"></a>
       <span class="topbar-divider"></span>
-      <a href="../index.html" class="enotas-wrap"><img src="../assets/enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
+      <a href="../index.html" style="display:flex;align-items:center;text-decoration:none"><img
+          src="../assets/enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
       <span class="topbar-divider"></span>
       <a href="../index.html" class="nav-link-home">Cidades & Provedores</a>
       <span class="topbar-divider"></span>
       <a href="monitoramento-nfe.html" class="nav-link-home">Monitoramento NFe</a>
       <span class="topbar-divider"></span>
-      <span style="font-size:13px;font-weight:600;color:var(--heading);white-space:nowrap">Reforma TributÃ¡ria</span>
+      <span style="font-size:13px;font-weight:600;color:var(--heading);white-space:nowrap">Reforma Tributária</span>
       <span class="topbar-divider"></span>
-      <a href="links.html" class="nav-link-home">Links Ãšteis</a>
+      <a href="links.html" class="nav-link-home">Links Úteis</a>
     </div>
     <div class="topbar-right">
       <button class="theme-toggle" id="themeToggle" title="Alternar tema"
@@ -410,42 +394,25 @@
   <div class="container" id="app-root"></div>
 
   <div style="padding:24px 40px;text-align:center;font-size:12px;color:var(--muted)">
-    Hotmart â€” Reforma TributÃ¡ria do Consumo Â· Fonte: Receita Federal Â· 2026
+    Hotmart — Reforma Tributária do Consumo · Fonte: Receita Federal · 2026
   </div>
 
   <script src="../LogsAlteracoes/reforma-tributaria-data.js"></script>
   <script>
     'use strict';
-    (function () {
-      var s = localStorage.getItem('theme');
-      if (s === 'light') document.documentElement.classList.add('light');
-      else if (s === 'dark') document.documentElement.classList.remove('light');
-      document.getElementById('themeToggle').addEventListener('click', function () {
-        document.documentElement.classList.toggle('light');
-        localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
-      });
-    })();
+    (function () { var s = localStorage.getItem('theme'); if (s === 'light') document.documentElement.classList.add('light'); else if (s === 'dark') document.documentElement.classList.remove('light'); document.getElementById('themeToggle').addEventListener('click', function () { document.documentElement.classList.toggle('light'); localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark') }) })();
 
     var D = reformaTributariaData;
     var h = '';
-
-    h += '<h2 class="page-title">Reforma TributÃ¡ria do Consumo</h2>';
-    h += '<p class="page-desc">Resumo dos principais marcos regulatÃ³rios e impacto para o eNotas Gateway.</p>';
-    h += '<div class="ts-bar">Dados atualizados em ' + D.atualizadoEm + ' Â· Fonte atualizada pela Receita Federal em ' + D.fonteAtualizadaEm + '</div>';
-
-    // Resumo geral
+    h += '<h2 class="page-title">Reforma Tributária do Consumo</h2>';
+    h += '<p class="page-desc">Resumo dos principais marcos regulatórios e impacto para o eNotas Gateway.</p>';
+    h += '<div class="ts-bar">Dados atualizados em ' + D.atualizadoEm + ' · Fonte atualizada pela Receita Federal em ' + D.fonteAtualizadaEm + '</div>';
     h += '<div class="summary-card"><p>' + D.resumoGeral + '</p></div>';
-
-    // Cronograma
     h += '<div class="section-title">Cronograma</div>';
     h += '<div class="cronograma">';
-    D.cronograma.forEach(function (c) {
-      h += '<div class="crono-item"><div class="crono-ano">' + c.ano + '</div><div class="crono-desc">' + c.descricao + '</div></div>';
-    });
+    D.cronograma.forEach(function (c) { h += '<div class="crono-item"><div class="crono-ano">' + c.ano + '</div><div class="crono-desc">' + c.descricao + '</div></div>' });
     h += '</div>';
-
-    // Marcos
-    h += '<div class="section-title">Marcos RegulatÃ³rios</div>';
+    h += '<div class="section-title">Marcos Regulatórios</div>';
     h += '<div class="timeline">';
     D.marcos.forEach(function (m) {
       h += '<div class="marco-card">';
@@ -453,22 +420,16 @@
       h += '<div class="marco-data">' + m.data + '</div>';
       h += '<div class="marco-resumo">' + m.resumo + '</div>';
       h += '<div class="marco-impacto"><strong>Impacto eNotas:</strong> ' + m.impactoEnotas + '</div>';
-      if (m.url) h += '<a href="' + m.url + '" target="_blank" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--accent);text-decoration:none;font-weight:600">Ver texto completo da legislaÃ§Ã£o â†’</a>';
+      if (m.url) h += '<a href="' + m.url + '" target="_blank" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--accent);text-decoration:none;font-weight:600">Ver texto completo da legislação →</a>';
       h += '</div>';
     });
     h += '</div>';
-
-    // Impacto geral
     h += '<div class="section-title">Impacto para o eNotas Gateway</div>';
     h += '<ul class="impacto-list">';
-    D.impactoGeral.forEach(function (i) {
-      h += '<li>' + i + '</li>';
-    });
+    D.impactoGeral.forEach(function (i) { h += '<li>' + i + '</li>' });
     h += '</ul>';
-
     document.getElementById('app-root').innerHTML = h;
   </script>
 </body>
 
 </html>
-
