@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reforma Tributária — eNotas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #141414;
+      --surface: #1E1E1E;
+      --surface2: #2A2A2A;
+      --border: #333;
+      --accent: #F04E23;
+      --text: #E0E0E0;
+      --muted: #8A8A8A;
+      --heading: #FFFFFF;
+      --success: #009d43;
+      --warn: #efba0f;
+      --danger: #d6342c
+    }
+
+    html.light {
+      --bg: #F5F5F0;
+      --surface: #FFFFFF;
+      --surface2: #F0F0EB;
+      --border: #E0DED8;
+      --accent: #F04E23;
+      --text: #32363b;
+      --muted: #707780;
+      --heading: #0D0D0D;
+      --success: #009d43;
+      --warn: #efba0f;
+      --danger: #d6342c
+    }
+
+    body {
+      font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+      min-height: 100vh
+    }
+
+    .topbar {
+      background: #FFFFFF;
+      border-bottom: 1px solid #E0DED8;
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100
+    }
+
+    html:not(.light) .topbar {
+      background: #1A1A1A;
+      border-bottom-color: #2E2E2E
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .hotmart-logo {
+      height: 28px;
+      width: auto
+    }
+
+    .enotas-logo {
+      height: 22px;
+      width: auto
+    }
+
+    html:not(.light) .hotmart-logo,
+    html:not(.light) .enotas-logo {
+      filter: brightness(0) invert(1)
+    }
+
+    .topbar-divider {
+      width: 1px;
+      height: 28px;
+      background: #E0DED8
+    }
+
+    html:not(.light) .topbar-divider {
+      background: #444
+    }
+
+    .topbar h1 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #32363b;
+      letter-spacing: -0.2px
+    }
+
+    html:not(.light) .topbar h1 {
+      color: #E0E0E0
+    }
+
+    .nav-link-home {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+      white-space: nowrap
+    }
+
+    .nav-link-home:hover {
+      color: var(--accent)
+    }
+
+    .enotas-wrap {
+      display: flex;
+      align-items: center;
+      text-decoration: none
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px
+    }
+
+    .theme-toggle {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      width: 48px;
+      height: 26px;
+      cursor: pointer;
+      position: relative;
+      transition: background .3s, border-color .3s;
+      flex-shrink: 0
+    }
+
+    html.light .theme-toggle {
+      background: #E0DED8;
+      border-color: #C8C5BC
+    }
+
+    .theme-toggle::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: transform .3s, background .3s
+    }
+
+    html.light .theme-toggle::after {
+      transform: translateX(22px);
+      background: #32363b
+    }
+
+    html:not(.light) .theme-toggle {
+      background: #333;
+      border-color: #444
+    }
+
+    html:not(.light) .theme-toggle::after {
+      background: #555
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px
+    }
+
+    .page-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 4px
+    }
+
+    .page-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 32px
+    }
+
+    .ts-bar {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 24px
+    }
+
+    .summary-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px
+    }
+
+    .summary-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text)
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+
+    .marco-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .marco-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--accent)
+    }
+
+    .marco-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap
+    }
+
+    .marco-titulo {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--heading);
+      flex: 1
+    }
+
+    .marco-subtitulo {
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(240, 78, 35, 0.12);
+      border: 1px solid rgba(240, 78, 35, 0.3);
+      color: var(--accent);
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap
+    }
+
+    .marco-data {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px
+    }
+
+    .marco-resumo {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 12px
+    }
+
+    .marco-impacto {
+      font-size: 12px;
+      color: var(--accent);
+      background: rgba(240, 78, 35, 0.06);
+      border: 1px solid rgba(240, 78, 35, 0.15);
+      border-radius: 8px;
+      padding: 10px 14px;
+      line-height: 1.5
+    }
+
+    .marco-impacto strong {
+      color: var(--accent);
+      font-weight: 600
+    }
+
+    .cronograma {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 8px
+    }
+
+    .crono-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center
+    }
+
+    .crono-ano {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px
+    }
+
+    .crono-desc {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4
+    }
+
+    .impacto-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .impacto-list li {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .impacto-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0
+    }
+
+    @media(max-width:600px) {
+      .container {
+        padding: 16px
+      }
+
+      .topbar {
+        padding: 0 12px;
+        height: 48px
+      }
+
+      .cronograma {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script src="auth.js"></script>
+  <div class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" style="display:flex;align-items:center;text-decoration:none"><img src="hotmart-logo.svg"
+          alt="Hotmart" class="hotmart-logo"></a>
+      <span class="topbar-divider"></span>
+      <a href="index.html" class="enotas-wrap"><img src="enotas-logo.png" alt="eNotas" class="enotas-logo"></a>
+      <span class="topbar-divider"></span>
+      <a href="index.html" class="nav-link-home">Cidades & Provedores</a>
+      <span class="topbar-divider"></span>
+      <a href="monitoramento-nfe.html" class="nav-link-home">Monitoramento NFe</a>
+      <span class="topbar-divider"></span>
+      <a href="links.html" class="nav-link-home">Links Úteis</a>
+      <span class="topbar-divider"></span>
+      <h1>Reforma Tributária</h1>
+    </div>
+    <div class="topbar-right">
+      <button class="theme-toggle" id="themeToggle" title="Alternar tema"
+        aria-label="Alternar tema claro/escuro"></button>
+    </div>
+  </div>
+
+  <div class="container" id="app-root"></div>
+
+  <div style="padding:24px 40px;text-align:center;font-size:12px;color:var(--muted)">
+    Hotmart — Reforma Tributária do Consumo · Fonte: Receita Federal · 2026
+  </div>
+
+  <script src="LogsAlteracoes/reforma-tributaria-data.js"></script>
+  <script>
+    'use strict';
+    (function () {
+      var s = localStorage.getItem('theme');
+      if (s === 'light') document.documentElement.classList.add('light');
+      else if (s === 'dark') document.documentElement.classList.remove('light');
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        document.documentElement.classList.toggle('light');
+        localStorage.setItem('theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
+      });
+    })();
+
+    var D = reformaTributariaData;
+    var h = '';
+
+    h += '<h2 class="page-title">Reforma Tributária do Consumo</h2>';
+    h += '<p class="page-desc">Resumo dos principais marcos regulatórios e impacto para o eNotas Gateway.</p>';
+    h += '<div class="ts-bar">Dados atualizados em ' + D.atualizadoEm + ' · Fonte atualizada pela Receita Federal em ' + D.fonteAtualizadaEm + '</div>';
+
+    // Resumo geral
+    h += '<div class="summary-card"><p>' + D.resumoGeral + '</p></div>';
+
+    // Cronograma
+    h += '<div class="section-title">Cronograma</div>';
+    h += '<div class="cronograma">';
+    D.cronograma.forEach(function (c) {
+      h += '<div class="crono-item"><div class="crono-ano">' + c.ano + '</div><div class="crono-desc">' + c.descricao + '</div></div>';
+    });
+    h += '</div>';
+
+    // Marcos
+    h += '<div class="section-title">Marcos Regulatórios</div>';
+    h += '<div class="timeline">';
+    D.marcos.forEach(function (m) {
+      h += '<div class="marco-card">';
+      h += '<div class="marco-header"><div class="marco-titulo">' + m.titulo + '</div><span class="marco-subtitulo">' + m.subtitulo + '</span></div>';
+      h += '<div class="marco-data">' + m.data + '</div>';
+      h += '<div class="marco-resumo">' + m.resumo + '</div>';
+      h += '<div class="marco-impacto"><strong>Impacto eNotas:</strong> ' + m.impactoEnotas + '</div>';
+      if (m.url) h += '<a href="' + m.url + '" target="_blank" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--accent);text-decoration:none;font-weight:600">Ver texto completo da legislação →</a>';
+      h += '</div>';
+    });
+    h += '</div>';
+
+    // Impacto geral
+    h += '<div class="section-title">Impacto para o eNotas Gateway</div>';
+    h += '<ul class="impacto-list">';
+    D.impactoGeral.forEach(function (i) {
+      h += '<li>' + i + '</li>';
+    });
+    h += '</ul>';
+
+    document.getElementById('app-root').innerHTML = h;
+  </script>
+</body>
+
+</html>
