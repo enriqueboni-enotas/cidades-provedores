@@ -2238,8 +2238,8 @@
           { key: 'suportaEmissaoNFeClienteSemCpf', label: 'Emissão Cliente sem CPF' },
           { key: 'suportaEmissaoNFeClienteSemEndereco', label: 'Emissão Cliente sem Endereço' },
           { key: 'suportaCancelamentoNFe', label: 'Cancelamento' },
-          { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente' },
-          { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF' },
+          { key: 'suportaCancelamentoNFeSemCliente', label: 'Cancelamento sem Cliente', tip: 'Permite cancelar NFS-e mesmo quando a nota não tem tomador/cliente informado.' },
+          { key: 'suportaCancelamentoNFeClienteSemCpf', label: 'Cancelamento Cliente sem CPF', tip: 'Permite cancelar NFS-e quando o tomador existe mas não tem CPF/CNPJ preenchido.' },
           { key: 'suportaEmissaoParalela', label: 'Emissão Paralela' },
           { key: 'numeroRpsDeveSerSequencial', label: 'RPS Sequencial Obrigatório' },
           { key: 'numeroDoRpsSeraNumeroDaNota', label: 'Nº RPS = Nº da Nota' },
@@ -2249,7 +2249,8 @@
         flags.forEach(function (f) {
           if (cfg[f.key] === undefined || cfg[f.key] === null) return;
           var yes = cfg[f.key] === true;
-          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
+          var tipHtml = f.tip ? ' <span class="info-tip" style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;border:1px solid var(--muted);color:var(--muted);font-size:8px;font-weight:700;cursor:help;margin-left:4px;vertical-align:middle"><span class="info-bubble" style="display:none;position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:11px;font-weight:400;color:var(--text);white-space:normal;width:200px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:50;text-align:left;line-height:1.4">' + f.tip + '</span>i</span>' : '';
+          h += '<div class="feature-item"><span class="icon">' + (yes ? '✅' : '❌') + '</span><div><div class="feat-label">' + f.label + tipHtml + '</div><div class="feat-val ' + (yes ? 'feat-yes' : 'feat-no') + '">' + (yes ? 'Sim' : 'Não') + '</div></div></div>';
         });
         h += '</div>';
 
