@@ -207,9 +207,16 @@ var ACCESS_LOG_URL =
     var overlay = document.createElement('div');
     overlay.id = 'auth-overlay';
     var authUrl = buildAuthUrl();
+    var _authAssetsBase = document
+      .querySelector('script[src*="auth.js"]')
+      .src.replace(/auth\.js.*/, '');
     overlay.innerHTML =
       '<div class="auth-box">' +
-      '<div class="auth-logo"><img src="hotmart-logo.svg" alt="Hotmart" style="height:32px;width:auto"><span style="color:#E0DED8;font-size:20px;margin:0 12px">|</span><img src="enotas-logo.png" alt="eNotas" style="height:24px;width:auto"></div>' +
+      '<div class="auth-logo"><img src="' +
+      _authAssetsBase +
+      'assets/hotmart-logo.svg" alt="Hotmart" style="height:32px;width:auto"><span style="color:#E0DED8;font-size:20px;margin:0 12px">|</span><img src="' +
+      _authAssetsBase +
+      'assets/enotas-logo.png" alt="eNotas" style="height:24px;width:auto"></div>' +
       '<div class="auth-title">Cidades & Provedores</div>' +
       '<div class="auth-subtitle">Base de conhecimento do eNotas Gateway.<br>Faça login com sua conta <strong>@hotmart.com</strong> para acessar.</div>' +
       '<a class="auth-btn" href="' +
