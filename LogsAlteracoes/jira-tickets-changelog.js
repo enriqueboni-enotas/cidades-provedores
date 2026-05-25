@@ -1,13 +1,114 @@
 var jiraChangelogData = [
   {
-    tag: '20/05/2026',
-    titulo: 'Quarta-feira — 20 de Maio',
-    data: '20/05/2026',
+    tag: '25/05/2026',
+    titulo: 'Segunda-feira — 25 de Maio',
+    data: '25/05/2026',
     itens: [
       {
         icon: '📭',
         destaque: 'Sem tickets resolvidos',
         texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '24/05/2026',
+    titulo: 'Sábado — 24 de Maio',
+    data: '24/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '23/05/2026',
+    titulo: 'Sexta-feira — 23 de Maio',
+    data: '23/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '22/05/2026',
+    titulo: 'Quinta-feira — 22 de Maio',
+    data: '22/05/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '1 card (CE-27172)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Notas em emissão em Caxias do Sul/RS',
+        texto: '1 card (CE-27157)',
+      },
+    ],
+  },
+  {
+    tag: '21/05/2026',
+    titulo: 'Quarta-feira — 21 de Maio',
+    data: '21/05/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '3 cards (CE-27101, CE-27098, CE-27094)',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Nota de devolução em Luís Eduardo Magalhães/BA',
+        texto: '1 card (CE-27093)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Notas em emissão NFe em Betim/MG',
+        texto: '1 card (CE-27047)',
+      },
+      {
+        icon: '📊',
+        destaque: 'Relatório visão do contador',
+        texto: '1 card (CE-25352)',
+      },
+    ],
+  },
+  {
+    tag: '20/05/2026',
+    titulo: 'Terça-feira — 20 de Maio',
+    data: '20/05/2026',
+    itens: [
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '2 cards (CE-27064, CE-27059)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro no acesso ao eNotas',
+        texto: '1 card (CE-26976)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Fila parada SEFAZ BA',
+        texto: '1 card (CE-26970)',
+      },
+      {
+        icon: '🐛',
+        destaque:
+          'Erro intermitente na validação da data de competência (NFSe via API)',
+        texto: '1 card (CE-26143)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Emissão de notas exterior — Portal Nacional',
+        texto: '1 card (CE-25851)',
       },
     ],
   },
@@ -25,6 +126,11 @@ var jiraChangelogData = [
         icon: '❌',
         destaque: 'Tratativa de erro padrão em Socorro/SP',
         texto: '1 card (CE-26864)',
+      },
+      {
+        icon: '🤖',
+        destaque: 'Autofix — localizar numerações',
+        texto: '2 cards (CE-26650, CE-26553)',
       },
       {
         icon: '📊',
@@ -82,7 +188,7 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '🤖',
-        destaque: 'Autofix — sincronizar status embed/GW',
+        destaque: 'Autofix — sincronizar status GW/Embed',
         texto: '2 cards (CE-26879, CE-26867)',
       },
       {
@@ -91,8 +197,8 @@ var jiraChangelogData = [
         texto: '1 card (CE-26829)',
       },
       {
-        icon: '🏙️',
-        destaque: 'Criação de conta — falha no fluxo Start',
+        icon: '🔧',
+        destaque: 'Criação de conta — cliente não consegue finalizar',
         texto: '1 card (CE-26796)',
       },
       {
@@ -101,22 +207,52 @@ var jiraChangelogData = [
         texto: '1 card (CE-26781)',
       },
       {
-        icon: '📋',
-        destaque: 'Ajuste de layout de NFS-e',
-        texto: '1 card (CE-26656)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro na nota de afiliado em Belo Horizonte/MG',
-        texto: '1 card (CE-26346)',
+        icon: '🧾',
+        destaque: 'Natureza de operação — ajuste de configuração',
+        texto: '1 card (CE-26722)',
       },
       {
         icon: '🔄',
-        destaque: 'Sincronização emissor-status-embed',
+        destaque: 'Falha: limite de tentativas excedido',
+        texto: '1 card (CE-26691)',
+      },
+      {
+        icon: '🖼️',
+        destaque: 'Ajuste de layout no emissor',
+        texto: '1 card (CE-26656)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Erro emissão tomador exterior em Barueri/SP',
+        texto: '1 card (CE-26635)',
+      },
+      {
+        icon: '💳',
+        destaque: 'Falha na importação de venda Pagar.Me',
+        texto: '1 card (CE-26375)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de NF de Produto da SEFAZ',
+        texto: '1 card (CE-26357)',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro em nota de afiliado em Belo Horizonte/MG',
+        texto: '1 card (CE-26346)',
+      },
+      {
+        icon: '🤖',
+        destaque: 'Autofix — emissor sincronizar status embed',
         texto: '1 card (CE-26342)',
       },
       {
-        icon: '📊',
+        icon: '🔧',
+        destaque: 'Ajuste NFSE em São Paulo/SP',
+        texto: '1 card (CE-25831)',
+      },
+      {
+        icon: '🏛️',
         destaque: 'Atualização de CTN removendo benefício municipal',
         texto: '1 card (CE-25488)',
       },
@@ -134,175 +270,8 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '📊',
-        destaque: 'Percentual aproximado de tributos não disponível',
+        destaque: 'Campo percentual aproximado de tributos não disponível',
         texto: '1 card (CE-26806)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Natureza de operação — configuração incorreta',
-        texto: '1 card (CE-26722)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Falha: limite de tentativas excedido',
-        texto: '1 card (CE-26691)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Erro emissão tomador exterior em Barueri/SP',
-        texto: '1 card (CE-26635)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Falha na importação de venda Pagar.Me',
-        texto: '1 card (CE-26375)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Sincronização de NF de Produto da SEFAZ',
-        texto: '1 card (CE-26357)',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ajuste NFS-e em São Paulo/SP',
-        texto: '1 card (CE-25831)',
-      },
-    ],
-  },
-  {
-    tag: '13/05/2026',
-    titulo: 'Terça-feira — 13 de Maio',
-    data: '13/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — retornar NF negada',
-        texto: '1 card (CE-26799)',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Autofix — inutilização de NF',
-        texto: '1 card (CE-26772)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Falha no fluxo de importação de vendas (Start)',
-        texto: '1 card (CE-26670)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Falha na emissão de NFS-e para clientes sem endereço',
-        texto: '1 card (CE-26460)',
-      },
-    ],
-  },
-  {
-    tag: '12/05/2026',
-    titulo: 'Segunda-feira — 12 de Maio',
-    data: '12/05/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: 'Autofix — sincronizar status embed/GW',
-        texto: '1 card (CE-26721)',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Erro emissão tomador exterior em Mata de São João/BA',
-        texto: '1 card (CE-26601)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Integração Pagar.me 2.0 com duas chaves',
-        texto: '1 card (CE-26493)',
-      },
-      {
-        icon: '📊',
-        destaque: 'Erro no ajuste do percentual aproximado de tributos',
-        texto: '1 card (CE-26404)',
-      },
-    ],
-  },
-  {
-    tag: '11/05/2026',
-    titulo: 'Domingo — 11 de Maio',
-    data: '11/05/2026',
-    itens: [
-      {
-        icon: '🔄',
-        destaque: 'Sincronização em Marília/SP',
-        texto: '1 card (CE-26576)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Financeiro / Faturamento',
-        texto: '1 card (CE-26563)',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Inconsistência na natureza de operação de vendas internacionais',
-        texto: '1 card (CE-26558)',
-      },
-      {
-        icon: '🤖',
-        destaque: 'Autofix — localizar numerações',
-        texto: '1 card (CE-26553)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Ajuste de layout em Limeira/SP',
-        texto: '2 cards (CE-26536, CE-26356)',
-      },
-      {
-        icon: '📊',
-        destaque: 'Adequação fiscal em Barueri/SP',
-        texto: '1 card (CE-26513)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Atualização layout PDF em Cuiabá/MT',
-        texto: '1 card (CE-26512)',
-      },
-      {
-        icon: '💰',
-        destaque: 'Financeiro eNotas — faturas de excedentes',
-        texto: '2 cards (CE-26503, CE-26461)',
-      },
-      {
-        icon: '🔒',
-        destaque:
-          'Atualização de certificado público vencido — Provedor Elotech',
-        texto: '1 card (CE-26237)',
-      },
-      {
-        icon: '📋',
-        destaque: 'Pesquisa de vendas',
-        texto: '1 card (CE-24175)',
-      },
-    ],
-  },
-  {
-    tag: '10/05/2026',
-    titulo: 'Sábado — 10 de Maio',
-    data: '10/05/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '09/05/2026',
-    titulo: 'Sexta-feira — 09 de Maio',
-    data: '09/05/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
       },
     ],
   },
