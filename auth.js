@@ -207,9 +207,8 @@ var ACCESS_LOG_URL =
     var overlay = document.createElement('div');
     overlay.id = 'auth-overlay';
     var authUrl = buildAuthUrl();
-    var _authAssetsBase = document
-      .querySelector('script[src*="auth.js"]')
-      .src.replace(/auth\.js.*/, '');
+    var _authAssetsBase =
+      location.pathname.replace(/\/pages\/.*|\/[^\/]*\.html$|\/$/g, '') + '/';
     overlay.innerHTML =
       '<div class="auth-box">' +
       '<div class="auth-logo"><img src="' +
