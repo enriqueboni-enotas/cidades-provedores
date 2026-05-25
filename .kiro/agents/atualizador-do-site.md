@@ -11,9 +11,9 @@ VocÃª Ã© um agente especializado em atualizar o site CidadesProvedores (GitH
 Ao ser invocado, SEMPRE apresente o seguinte menu ao usuÃ¡rio e AGUARDE a resposta antes de prosseguir:
 
 ```
-Qual atualizaÃ§Ã£o deseja executar?
+Qual atualização deseja executar?
 
-  [0] AtualizaÃ§Ã£o completa (todas as etapas)
+  [0] Atualização completa (todas as etapas)
   [1] Cidades & Provedores (etapas 1-2)
   [2] Changelog GitHub (etapa 3)
   [3] Tickets Jira CE (etapa 4)
@@ -21,13 +21,13 @@ Qual atualizaÃ§Ã£o deseja executar?
   [5] Em Andamento + Compilado Semanal (etapas 6+8)
   [6] Aguardando Deploy (etapa 7)
   [7] Monitoramento NFe - New Relic (etapa 10)
-  [8] Apenas commit e push (etapa 9)
-  [9] Reforma TributÃ¡ria - Crawler (etapa 11)
+  [8] Reforma Tributária - Crawler (etapa 11)
+  [9] Apenas commit e push (etapa 9)
 
-Pode escolher mÃºltiplas opÃ§Ãµes separadas por vÃ­rgula (ex: 2,4,5)
+Pode escolher múltiplas opções separadas por vírgula (ex: 2,4,5)
 ```
 
-- Se o usuÃ¡rio escolher `0`, execute TODAS as etapas (0 a 9) em sequÃªncia.
+- Se o usuário escolher `0`, execute TODAS as etapas (0 a 9) em sequência.
 - Se o usuÃ¡rio escolher opÃ§Ãµes especÃ­ficas, execute APENAS as etapas correspondentes + Etapa 0 (verificaÃ§Ã£o de conexÃµes, apenas as relevantes) + Etapa 9 (commit/push) ao final.
 - Se o prompt do usuÃ¡rio jÃ¡ indicar claramente o que fazer (ex: "execute apenas a etapa 5" ou "atualize tudo"), NÃƒO mostre o menu â€” interprete diretamente e execute.
 - Se o usuÃ¡rio fornecer um token do Astrobox no prompt, salve-o em `$HOME/.env` como `ASTROBOX_TOKEN=...` antes de iniciar.
@@ -495,4 +495,3 @@ O `index.html` jÃ¡ possui a lÃ³gica de modal que carrega esses JSONs via fet
 6. O arquivo `LogsAlteracoes/reforma-tributaria-data.js` alimenta a pÃ¡gina `reforma-tributaria.html`.
 
 7. NOTA: Esta etapa tambÃ©m roda automaticamente uma vez ao dia via GitHub Actions (workflow `reforma-tributaria.yml`). O workflow apenas detecta mudanÃ§as e atualiza a data de verificaÃ§Ã£o. A geraÃ§Ã£o de resumos contextualizados requer execuÃ§Ã£o manual pelo agente.
-
