@@ -18,9 +18,23 @@
     itens: [
       {
         icon: '🆕',
-        destaque: 'Nova característica PermiteEvento nos provedores',
+        destaque: 'Característica PermiteEvento nos provedores',
         texto:
-          'Foi adicionada a característica PermiteEvento ao modelo de provedores do gateway. Essa flag indica se um provedor suporta operações de evento (como cancelamento por evento). A mudança permite que o sistema identifique automaticamente quais provedores aceitam esse tipo de operação, evitando tentativas de envio para provedores que não suportam.',
+          'Foi adicionada a propriedade PermiteEvento ao modelo de características dos provedores do gateway. Essa flag controla quais municípios suportam dados de evento (como cancelamento por evento) na emissão de NFS-e. O Portal Nacional e o provedor Barueri já são configurados com PermiteEvento = true por padrão. A propriedade é serializada nas extensions do provedor para uso em tempo de execução.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Fix: não sobrescrever PermiteEvento se provedor já setou true',
+        texto:
+          'Após a adição da característica PermiteEvento, foi identificado que o valor padrão do ProvedorNFeServicoBase poderia sobrescrever o valor já definido por provedores específicos. O fix garante que, se um provedor já setou PermiteEvento = true no seu construtor, o valor não seja resetado para false pela classe base. Isso evita que provedores como Barueri percam a configuração de evento ao serem instanciados.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Lógica de cancelamento de NF-e específica para Hotmart (TiplanV3)',
+        texto:
+          'Foi implementada lógica de cancelamento de NF-e específica para o provedor TiplanV3, sobrescrevendo o método FormatarPedidoRegistroEventoCancelamento para definir a versão do evento como "1.01". Também foi desabilitado o suporte a emissão sem cliente (SuportaEmissaoNFeSemCliente = false) e adicionado tratamento de erro para cenários onde o Tomador é nulo e ocorre InternalServerError, retornando resposta detalhada ao invés de exceção genérica.',
       },
     ],
   },
@@ -43,77 +57,163 @@
     itens: [
       {
         icon: '🔧',
-        destaque:
-          'Tratamento de valor default para xCidade no endereço exterior',
+        destaque: 'Tratamento de subscriptionID com MunicipioIncidenciaService',
         texto:
-          'Quando o campo xCidade do objeto endExt (endereço exterior) não era informado, o sistema gerava erro na montagem do XML. Agora é atribuído um valor default vazio, evitando falhas na emissão de notas para tomadores estrangeiros.',
-      },
-      {
-        icon: '📊',
-        destaque: '[Danfe v2] Aumento de réplicas do microserviço',
-        texto:
-          'O microserviço ms-gw-danfe-v2-service teve a quantidade de réplicas aumentada no Terraform de produção. Isso melhora a capacidade de processamento e reduz o tempo de geração de DANFEs em momentos de pico de emissão.',
+          'Adicionado tratamento para que o subscriptionID utilize o MunicipioIncidenciaService ao determinar o município de incidência do ISS. Antes, em cenários onde a subscription tinha regras específicas de incidência, o município era resolvido incorretamente, causando envio de alíquota errada para a prefeitura.',
       },
       {
         icon: '🔧',
-        destaque: 'Limite de reenvio para erro E0440 no provedor NfseNacional',
+        destaque: 'Expansão da lógica de cidades no ServicoControleLotesNFe',
         texto:
-          'Quando o provedor retornava o erro E0440 (valor do serviço divergente), o sistema reenviava indefinidamente. Agora há um limite de 2 tentativas de reenvio com redução de valor. Após esse limite, o erro é retornado ao cliente, evitando loops infinitos de reenvio que travavam notas.',
+          'A lógica de controle de lotes de NF-e foi expandida para lidar com mais cenários de cidades. O método agora considera variações de configuração municipal que antes não eram contempladas, evitando que lotes ficassem travados em municípios com configurações atípicas.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Validação de NBS para o serviço 99.01.01',
+        texto:
+          'Ajustada a validação do código NBS (Nomenclatura Brasileira de Serviços) para aceitar o código especial 99.01.01, que representa serviços não classificados. Antes, esse código era rejeitado pela validação numérica, impedindo a emissão de notas para empresas que utilizam esse código genérico.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Melhorias na exportação de notas para o exterior',
+        texto:
+          'Aprimorada a lógica de exportação de notas fiscais para tomadores do exterior, incluindo melhor cobertura de testes. O tratamento agora contempla cenários adicionais de endereçamento internacional e validação de dados do tomador estrangeiro.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Remove MunicipioIncidencia quando ISS não retido fora do município',
+        texto:
+          'Quando o ISS não é retido na fonte e a prestação ocorre fora do município do prestador, o campo MunicipioIncidencia agora é removido do XML enviado à prefeitura. Isso corrige rejeições em provedores que não aceitam esse campo quando o ISS não é retido, especialmente no EGoverneISS.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Mapeamento do erro ER004 no GIFv2 para retornar XML',
+        texto:
+          'O erro ER004 do provedor GIFv2 foi mapeado para retornar a resposta em formato XML ao invés de lançar uma exceção genérica. Isso permite que o sistema processe a mensagem de erro da prefeitura e exiba ao cliente de forma legível, em vez de mostrar um erro interno de comunicação.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Desabilita envio em lote para empresa específica',
+        texto:
+          'Uma empresa foi adicionada à lista de emissão unitária (1 nota por lote), desativando o envio em lote. Isso resolve problemas de timeout e rejeição que ocorriam quando múltiplas notas eram enviadas simultaneamente para a prefeitura dessa empresa.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'RemoveAccent no endereço do tomador',
+        texto:
+          'Adicionada remoção de acentos (RemoveAccent) no endereço do tomador antes do envio à prefeitura. Alguns provedores rejeitam caracteres acentuados nos campos de endereço, causando erro de emissão. A sanitização garante compatibilidade com esses webservices.',
+      },
+      {
+        icon: '🧮',
+        destaque:
+          'Apuração própria zerada quando prestador não informa PIS/COFINS',
+        texto:
+          'Quando o prestador não informa o bloco pisCofins na requisição, o sistema agora envia a apuração própria com valores zerados ao invés de omitir o bloco. Isso evita rejeições em prefeituras que exigem o bloco de tributos federais mesmo quando os valores são zero, especialmente no Portal Nacional.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Verificação nula em dadosTomador para evitar NullReferenceException',
+        texto:
+          'Adicionada verificação de nulidade no objeto dadosTomador antes de acessar suas propriedades. Em cenários onde a nota é emitida sem tomador (ex: autosserviço), o sistema lançava NullReferenceException ao tentar ler campos do tomador. Agora o fluxo continua normalmente sem tomador.',
+      },
+      {
+        icon: '🆕',
+        destaque: 'Campo regimeApuracaoTributosSN na API de Empresas',
+        texto:
+          'Adicionado o campo regimeApuracaoTributosSN na WebAPI de Empresas. Esse campo indica o regime de apuração de tributos para empresas do Simples Nacional, permitindo que integradores consultem e configurem corretamente o regime fiscal da empresa via API.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Emissão para exterior no provedor GovDigital',
+        texto:
+          'Ajustada a emissão de NFS-e para tomadores do exterior no provedor GovDigital. O provedor não aceitava o formato padrão de endereço internacional, causando rejeição. Agora os campos de endereço são formatados conforme esperado pelo webservice GovDigital para tomadores estrangeiros.',
       },
       {
         icon: '🏙️',
-        destaque: 'Glorinha/RS ativada no provedor GOVBRv3',
+        destaque: 'Salto Grande/SP migrado para ISSMAP',
         texto:
-          'O município de Glorinha/RS foi ativado para emissão de NFS-e através do provedor GOVBRv3. Empresas prestadoras de serviço nesse município agora podem emitir notas fiscais de serviço eletrônicas pelo gateway.',
+          'O município de Salto Grande/SP foi migrado para o provedor ISSMAP. A prefeitura trocou de sistema de NFS-e e as URLs, namespace e configurações foram atualizadas para o novo provedor. Empresas em Salto Grande agora emitem pelo ISSMAP.',
       },
       {
-        icon: '🔧',
-        destaque: 'Desativa emissão por lote para empresa específica',
+        icon: '🌐',
+        destaque: 'Atualização de emissão para tomador do exterior',
         texto:
-          'Uma empresa específica estava enfrentando problemas ao enviar notas em lote para a prefeitura. Foi configurada a regra de emissão unitária (1 nota por lote) para essa empresa, resolvendo falhas de processamento que ocorriam no envio agrupado.',
+          'Atualizada a lógica de emissão para tomadores do exterior, ajustando o formato de envio dos dados de endereço internacional. A mudança garante que campos como código do país e endereço sejam enviados no formato correto para provedores que exigem estrutura específica para tomadores estrangeiros.',
       },
       {
-        icon: '📊',
+        icon: '🌐',
         destaque:
-          'iClips adicionada à lista de subscriptions para envio de NBS no Simples',
+          'NfseNacionalV2: código postal obrigatório para tomador estrangeiro',
         texto:
-          'A subscription da iClips foi incluída na lista de exceções que permite o envio do código NBS (Nomenclatura Brasileira de Serviços) mesmo para empresas optantes do Simples Nacional. Sem essa exceção, o NBS não era enviado para empresas do Simples, causando rejeição em algumas prefeituras.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Tratamento de erro do ADN no provedor EtheriumTech',
-        texto:
-          'O provedor EtheriumTech (ADN) retornava status HTTP 204 com mensagens de erro no corpo da resposta que não eram tratadas corretamente. O XML agora é pré-processado e sanitizado antes da desserialização, e as mensagens de erro são mapeadas adequadamente para o modelo de resposta do gateway.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Respostas HTTP 422 em XML no provedor GIFv2',
-        texto:
-          'O provedor GIFv2 retornava erros com status HTTP 422 que não eram capturados corretamente, gerando exceções genéricas. Agora essas respostas são tratadas como XML estruturado, permitindo que a mensagem de erro da prefeitura seja exibida ao cliente de forma legível.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Retorno de chave de acesso ADN no provedor IPM',
-        texto:
-          'O provedor IPM passou a retornar a chave de acesso ADN (Acesso de Dados Nacional) na resposta de emissão. Essa chave é necessária para consultas posteriores no portal nacional e agora é persistida junto com os dados da nota emitida.',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Atualização de URL de Grajaú/MA',
-        texto:
-          'A URL do webservice de Grajaú/MA foi atualizada no ConfiguracoesMunicipios.xml. A prefeitura alterou o endereço do serviço, e sem essa atualização as emissões falhavam com erro de conexão.',
+          'Adicionada validação no provedor NfseNacionalV2 que exige código postal para tomadores estrangeiros. Sem o código postal, a nota era rejeitada pela Receita Federal sem mensagem clara. Agora o sistema valida antes do envio e retorna mensagem explicativa ao cliente.',
       },
       {
         icon: '🏙️',
-        destaque: 'Santa Maria de Itabira/MG migrada para BethaV3',
+        destaque: 'Benedito Novo/SC ativado no provedor IPM',
         texto:
-          'O município de Santa Maria de Itabira/MG foi migrado do provedor anterior para o BethaV3. A prefeitura trocou de sistema de NFS-e, exigindo atualização das URLs, namespace e configurações no gateway para manter a emissão funcionando.',
+          'O município de Benedito Novo/SC foi ativado no provedor IPM. As URLs de produção e homologação foram configuradas, permitindo que empresas prestadoras de serviço em Benedito Novo emitam NFS-e pelo gateway.',
       },
       {
-        icon: '📊',
-        destaque: 'Atualização de cenário de alíquota para Cabo Frio/RJ',
+        icon: '🧮',
+        destaque: 'Ajuste de retenção para valor líquido no PDF',
         texto:
-          'O cenário de envio de alíquota ISS para Cabo Frio/RJ foi atualizado, incluindo a URL de produção. A prefeitura exige o envio da alíquota em formato específico, e a configuração foi ajustada para atender ao novo requisito.',
+          'Ajustado o cálculo do valor líquido exibido no PDF da nota para considerar corretamente o tipo de retenção (PIS/COFINS/CSLL). Antes, o valor líquido no PDF não refletia as retenções quando o tipo de retenção era diferente do padrão, causando divergência entre o valor exibido e o valor real.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Validação da discriminação na consulta por RPS',
+        texto:
+          'Atualizada a validação do campo discriminação na consulta por RPS. O campo agora é sanitizado antes da comparação, evitando falsos negativos quando a discriminação retornada pela prefeitura contém formatação diferente da enviada originalmente.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Zera alíquota e valores IBS/CBS para CST 410 (imunidade)',
+        texto:
+          'Para notas com CST 410 (imunidade tributária), os valores de alíquota e IBS/CBS agora são zerados automaticamente. Prefeituras rejeitavam notas imunes que continham valores de IBS/CBS preenchidos, pois a imunidade implica isenção total desses tributos.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Validação de tomador nulo antes do envio',
+        texto:
+          'Adicionada validação que verifica se o tomador é nulo antes de tentar acessar seus dados para montagem do XML. Isso previne NullReferenceException em cenários de emissão sem tomador e retorna mensagem de erro clara ao invés de exceção genérica.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'RemoveInvalidXmlChars na descrição do serviço (xDescServ)',
+        texto:
+          'Adicionada sanitização de caracteres XML inválidos no campo xDescServ (descrição do serviço) antes do envio à prefeitura. Caracteres de controle e outros caracteres não permitidos em XML causavam rejeição silenciosa em alguns provedores.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Itaju/SP ativado no provedor Fiorilli',
+        texto:
+          'O município de Itaju/SP foi ativado no provedor Fiorilli. As URLs de produção e homologação foram configuradas no ConfiguracoesMunicipios.xml, permitindo emissão de NFS-e para empresas prestadoras de serviço em Itaju.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Inclusão de empresaID na lista idsNovoRespTecnico',
+        texto:
+          'Uma empresa foi incluída na lista idsNovoRespTecnico para que seu CNPJ seja considerado no cadastro do responsável técnico junto à prefeitura. Sem essa inclusão, a empresa não conseguia emitir notas pois o responsável técnico não era reconhecido pelo webservice.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Buenópolis/MG ativado no provedor Sintese',
+        texto:
+          'O município de Buenópolis/MG foi ativado no provedor Sintese. As URLs e configurações foram adicionadas ao ConfiguracoesMunicipios.xml, habilitando a emissão de NFS-e para empresas em Buenópolis.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Tratamento para chamar consulta por RPS',
+        texto:
+          'Adicionado tratamento no fluxo de consulta por RPS para garantir que a operação seja chamada corretamente quando o provedor suporta essa funcionalidade. Antes, em alguns cenários o sistema tentava consultar por lote quando deveria consultar por RPS individual, causando timeout.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Removido campo ref da observação (provisório)',
+        texto:
+          'Removido o campo "ref" que havia sido adicionado provisoriamente na observação da nota. O campo foi inserido temporariamente para rastreabilidade durante testes de integração e não deveria permanecer em produção, pois alterava o conteúdo da observação visível ao tomador.',
       },
     ],
   },
@@ -124,108 +224,89 @@
     itens: [
       {
         icon: '🔧',
-        destaque: 'Correção de serialização XML em provedores ABRASF v2',
+        destaque: 'Handle default value para xCidade no endExt',
         texto:
-          'Um problema na serialização XML dos provedores que usam o padrão ABRASF v2 causava falhas na comunicação com prefeituras. O fix corrige a geração do XML para garantir que os campos sejam serializados no formato correto esperado pelo webservice.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Endpoint de sincronização de NF-e (botão sincronizar)',
-        texto:
-          'Foi implementado um novo endpoint para ser usado pelo botão de sincronizar NF-e no painel. Esse endpoint permite que o usuário force a sincronização de uma nota específica quando ela fica travada em status intermediário, sem precisar aguardar o processamento automático.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Inclusão de empresa na lista de envio de alíquota ISS',
-        texto:
-          'Uma empresa específica foi adicionada à lista de empresas que sempre enviam alíquota ISS mesmo sendo optantes do Simples Nacional. Sem essa configuração, a prefeitura rejeitava as notas por falta da informação de alíquota.',
+          'Adicionado tratamento de valor padrão para o campo xCidade no objeto endExt (endereço exterior). Quando o campo vinha nulo ou vazio em notas para tomadores estrangeiros, o XML era gerado com tag vazia, causando rejeição em provedores que exigem o campo preenchido. Agora um valor default é atribuído quando ausente.',
       },
       {
         icon: '🏙️',
-        destaque: 'HM2: ajuste de série do RPS e alíquota ISS em Carpina/PE',
+        destaque: 'Suporte a Rio das Ostras/RJ e atualizações Hotmart',
         texto:
-          'Para o município de Carpina/PE no provedor HM2, foi implementada validação da série do RPS (deve ser numérica entre 1 e 49.999) e zeragem da alíquota ISS para empresas do Simples Nacional quando o ISS não é retido na fonte. A prefeitura rejeitava notas com série inválida ou alíquota preenchida indevidamente.',
+          'Adicionado suporte ao município de Rio das Ostras/RJ com configurações específicas para o provedor utilizado pela prefeitura. Também foram aplicadas atualizações nas configurações de emissão da Hotmart para adequação a novos requisitos municipais.',
       },
       {
-        icon: '📊',
-        destaque: 'Ajuste no envio do codigoNBS para conter somente números',
+        icon: '⚙️',
+        destaque: '[Danfe v2] Aumento de réplicas do microservice',
         texto:
-          'O campo codigoNBS (Nomenclatura Brasileira de Serviços) estava sendo enviado com caracteres não numéricos (pontos, traços) que causavam rejeição em algumas prefeituras. Agora o campo é sanitizado para conter apenas dígitos antes do envio.',
+          'Aumentada a quantidade de réplicas do microservice ms-gw-danfe-v2-service. O serviço de geração de DANFE v2 estava sobrecarregado em horários de pico, causando lentidão na geração de PDFs. Com mais réplicas, a capacidade de processamento paralelo aumenta e o tempo de resposta melhora.',
+      },
+      {
+        icon: '🆕',
+        destaque:
+          'Característica PermiteEvento adicionada ao modelo de provedores',
+        texto:
+          'A propriedade PermiteEvento foi adicionada ao modelo de características dos provedores. Essa flag indica quais provedores suportam operações baseadas em evento (como cancelamento por evento). O Portal Nacional e Barueri já vêm com PermiteEvento = true por padrão.',
       },
       {
         icon: '🔧',
-        destaque: 'Ajuste no tipo de retenção para privilegiar o retido',
+        destaque: 'Limite de reenvio no erro E0440',
         texto:
-          'O cálculo do tipo de retenção de PIS/COFINS foi ajustado para privilegiar o cenário de retenção quando há ambiguidade. Antes, em alguns casos o sistema enviava como não retido mesmo havendo valores de retenção, causando divergência fiscal no PDF da nota.',
+          'Adicionado limite de 2 tentativas de reenvio quando ocorre o erro E0440 (valor da nota excede o permitido). Antes, o sistema reenviava indefinidamente tentando reduzir o valor, o que gerava loops infinitos em casos onde a redução não resolvia o problema. Agora, após 2 tentativas sem sucesso, o lote é marcado como erro definitivo.',
       },
       {
         icon: '🏙️',
-        destaque: 'Santa Inês/MA atualizada para ABRASF 2.02 com ajuste de NBS',
+        destaque: 'Glorinha/RS ativada no provedor GOVBRv3',
         texto:
-          'O município de Santa Inês/MA foi atualizado para a versão 2.02 do padrão ABRASF. Além da versão, foram ajustados o envio da data de emissão do RPS e o campo codigoNBS, que agora é limpo (apenas números) antes do envio. A prefeitura exigia esses formatos específicos.',
+          'O município de Glorinha/RS foi adicionado ao ConfiguracoesMunicipios.xml com o provedor GOVBRv3. As URLs de produção e homologação foram configuradas, incluindo emissão sem certificado digital. Empresas prestadoras de serviço em Glorinha agora podem emitir NFS-e pelo gateway.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Desativa emissão por lote para empresa (Grupo Fleury)',
+        texto:
+          'Uma empresa foi adicionada à lista de emissão unitária (1 nota por lote), forçando o envio individual de notas. A emissão em lote causava timeouts e rejeições para essa empresa específica devido ao volume e complexidade das notas enviadas simultaneamente.',
       },
       {
         icon: '📊',
         destaque:
-          'Portal Nacional: exceção de envio de NBS para empresa do Simples',
+          'iClips na lista de subscriptions para envio de NBS no Simples',
         texto:
-          'Foi adicionada uma exceção no Portal Nacional para permitir o envio do código NBS em notas de empresas optantes do Simples Nacional. Normalmente o NBS não é enviado para Simples, mas algumas integrações específicas exigem esse campo para processamento correto.',
+          'A subscription da iClips foi incluída na lista SubscriptionsSempreEnviarNBS. Isso garante que notas emitidas por essa empresa no regime Simples Nacional sempre enviem o código NBS (Nomenclatura Brasileira de Serviços), requisito do Portal Nacional para determinadas atividades.',
       },
       {
         icon: '🔧',
-        destaque: 'Correção no envio do ValorInss',
+        destaque: 'Tratamento de erro do provedor ADN (EtheriumTech)',
         texto:
-          'O valor do INSS retido estava sendo enviado incorretamente em alguns cenários, causando divergência entre o valor calculado e o valor informado à prefeitura. A correção garante que o ValorInss seja preenchido corretamente conforme as regras de retenção configuradas.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Código de serviço nacional com desdobramento municipal no ISSIntel',
-        texto:
-          'O provedor ISSIntel passou a aceitar o envio do código de serviço nacional com desdobramento municipal. Foi criado o método FormatarCodigoServicoNacionalCodigoTributacaoMunicipio que sanitiza, valida e separa o código em CodigoServicoNacional e CodigoTributacaoMunicipio, atendendo ao formato exigido pela prefeitura.',
+          'Robustecido o tratamento do retorno HTTP 204 do provedor ADN (EtheriumTech). O XML agora é pré-processado e sanitizado antes da desserialização, mensagens de erro são analisadas e mapeadas corretamente, e a lógica que determina se um lote foi processado com erro foi reforçada com checagens null-safe para evitar NullReferenceException.',
       },
       {
         icon: '🔧',
-        destaque: 'Ajuste na sincronia do provedor GIFs',
+        destaque: 'Retorno de respostas HTTP 422 em XML no provedor GIFv2',
         texto:
-          'A sincronização de notas no provedor GIFs estava falhando em alguns cenários. O ajuste corrige o fluxo de consulta para garantir que as notas sejam sincronizadas corretamente após o processamento pela prefeitura.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Envio de IBSCBS liberado para subscription da Sankhya',
-        texto:
-          'A subscription da Sankhya foi adicionada à lista de integrações que enviam os campos IBS/CBS (impostos da reforma tributária). Isso permite que empresas integradas via Sankhya emitam notas com os novos campos tributários exigidos por algumas prefeituras.',
+          'O provedor GIFv2 foi ajustado para tratar respostas HTTP 422 (Unprocessable Entity) como XML válido ao invés de lançar exceção. Quando a prefeitura retorna 422 com detalhes do erro no corpo da resposta, o sistema agora normaliza o JSON e extrai a mensagem de erro para exibir ao cliente.',
       },
       {
         icon: '🔧',
-        destaque: 'Tratamento para emissão sem assinatura digital',
+        destaque: 'Retorno de chave de acesso ADN no provedor IPM',
         texto:
-          'Foi adicionado tratamento para permitir emissão de NFS-e sem assinatura do XML com certificado digital em provedores que não exigem essa assinatura. Esses provedores usam apenas usuário e senha para autenticação, e a tentativa de assinar causava erro quando o certificado não estava configurado.',
+          'Adicionado suporte ao retorno da chave de acesso ADN (Acesso de Dados Nacional) no provedor IPM. A propriedade ChaveAcessoNFSeNacional foi mapeada no XML de resposta e agora é extraída e preenchida em DadosPrefeitura.ChaveAcesso, permitindo consultas futuras pela chave nacional.',
+      },
+      {
+        icon: '🔗',
+        destaque: 'Atualização de URL de Grajaú/MA',
+        texto:
+          'O endpoint de recepção de lote de Grajaú/MA foi atualizado para o novo domínio SpeedGov (speedgov.com.br/wsgru/Nfes). A prefeitura migrou de provedor e o endereço anterior deixou de responder, causando falhas de emissão.',
       },
       {
         icon: '🏙️',
-        destaque:
-          'Portal Nacional: Nibo adicionada à exceção de NBS para Simples',
+        destaque: 'Santa Maria de Itabira/MG migrada para BethaV3',
         texto:
-          'A integração Nibo foi incluída na lista de exceções que permite o envio do código NBS para empresas do Simples Nacional no Portal Nacional. Sem essa exceção, notas emitidas via Nibo para empresas do Simples eram rejeitadas por falta do NBS.',
+          'O município de Santa Maria de Itabira/MG foi migrado para o provedor BethaV3. A prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas para o novo provedor, incluindo URLs e namespace.',
       },
       {
-        icon: '🏙️',
-        destaque: 'Piedade/SP migrada para provedor GissOnline',
+        icon: '🔗',
+        destaque: 'Atualização de URL e alíquota de Cabo Frio/RJ',
         texto:
-          'O município de Piedade/SP teve seu provedor atualizado para GissOnline. A prefeitura migrou de sistema de NFS-e, exigindo atualização das configurações no gateway para manter a emissão funcionando.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Barra do Choça/BA ativada no provedor EeLv3',
-        texto:
-          'O município de Barra do Choça/BA foi ativado para emissão de NFS-e através do provedor EeLv3. Empresas prestadoras de serviço nesse município agora podem emitir notas pelo gateway.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Implementação de consulta por RPS no provedor CoplanV2',
-        texto:
-          'Foi implementada a operação de consulta de NFS-e por número de RPS no provedor CoplanV2. Essa operação é essencial para sincronização — quando o sistema precisa verificar se uma nota específica foi processada pela prefeitura. Sem ela, notas ficavam travadas em status "em emissão" sem retorno.',
+          'A URL de produção de Cabo Frio/RJ foi atualizada e a lógica de alíquota foi ajustada. Quando ISS não é retido na fonte, ValorIss e Aliquota agora são anulados somente se a empresa possui RegimeEspecialTributacao diferente de "0". Isso corrige cenários onde a alíquota era zerada indevidamente para empresas sem regime especial.',
       },
     ],
   },
@@ -236,90 +317,72 @@
     itens: [
       {
         icon: '🔧',
-        destaque: 'Cenário de extração de lote no SIGISS v1',
+        destaque: 'Botão sincronizar NF-e — novo endpoint',
         texto:
-          'O provedor SIGISS v1 apresentava falhas ao extrair o número da NF-e em cenários onde a mensagem de erro tinha formato diferente do esperado. A lógica de leitura de erros foi reorganizada para tentar extrair o número da nota a partir de mensagens alternativas e campos de resposta diferentes, resolvendo notas que ficavam travadas.',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Atualização de URL de São Gabriel do Oeste/MS no Fiorilli',
-        texto:
-          'A URL do webservice de São Gabriel do Oeste/MS no provedor Fiorilli foi atualizada. A prefeitura alterou o endereço do serviço e sem essa correção as emissões falhavam com timeout ou erro de conexão.',
+          'Implementado novo endpoint para ser usado pelo botão de sincronizar NF-e no painel. O endpoint permite que o usuário force a sincronização de uma nota específica quando ela está travada em status intermediário, sem precisar aguardar o ciclo automático de reprocessamento.',
       },
       {
         icon: '🔧',
-        destaque: 'Remoção de XML declaration duplicado na tag ListaNfse',
+        destaque: 'Fix: serialização XML em provedores ABRASF v2',
         texto:
-          'Algumas prefeituras retornavam a resposta de consulta de lote com uma declaração XML duplicada dentro da tag ListaNfse, causando erro de desserialização no gateway. Agora o XML é pré-processado para remover declarações duplicadas antes de ser interpretado.',
+          'Corrigido problema de serialização XML em provedores que utilizam o padrão ABRASF v2. Em determinados cenários, o XML gerado continha estrutura inválida que causava rejeição pelo webservice da prefeitura. A correção garante que a serialização respeite o schema ABRASF v2 em todos os casos.',
       },
       {
-        icon: '🔗',
-        destaque:
-          'GIAPv2: endpoints de Vinhedo/SP atualizados para domínio Balker',
+        icon: '📊',
+        destaque: 'Inclusão de empresaID na lista de envio de alíquota',
         texto:
-          'Os endpoints do provedor GIAPv2 para Vinhedo/SP foram atualizados para o novo domínio Balker. A empresa responsável pelo sistema da prefeitura migrou de domínio, e sem essa atualização as emissões falhavam.',
+          'Uma empresa foi incluída na lista de empresas que enviam alíquota IBS/CBS. Sem essa inclusão, a empresa não conseguia emitir notas em municípios que exigem o envio dos novos tributos da reforma tributária, recebendo rejeição por campos obrigatórios ausentes.',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Carpina/PE — ajuste de série RPS e alíquota ISS para Simples',
+        texto:
+          'Ajustada a série do RPS e zerada a alíquota de ISS para empresas do Simples Nacional em Carpina/PE (provedor HM2). A prefeitura exige série numérica entre 1 e 49.999 e não aceita alíquota de ISS para optantes do Simples. Também aplicado para Arapiranga/PE que tem a mesma regra.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Ajuste no envio do código NBS — somente números',
+        texto:
+          'O campo codigoNBS agora é sanitizado para conter somente caracteres numéricos antes do envio. Alguns integradores enviavam o NBS com pontos ou traços (ex: "1.01.01"), causando rejeição no Portal Nacional que aceita apenas o formato numérico puro.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Ajuste no envio do tipo de retenção — privilegiar o retido',
+        texto:
+          'A lógica de envio do tipo de retenção foi ajustada para privilegiar o valor "retido" quando há ambiguidade. Em cenários onde tanto o PIS quanto o COFINS possuem valores informados, o sistema agora prioriza o tipo de retenção que indica retenção efetiva, evitando que o valor líquido seja calculado incorretamente.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Santa Inês/MA — versão ABRASF 2.02 e ajuste de NBS',
+        texto:
+          'O município de Santa Inês/MA foi atualizado para a versão ABRASF 2.02. A data de emissão do RPS e o código NBS agora são tratados de forma específica para esse município, com reposicionamento do nó CodigoNbs no XML para ficar após MunicipioIncidencia, conforme exigido pelo webservice local.',
       },
       {
         icon: '📊',
         destaque:
-          'PIS/COFINS apuração própria no NfseNacional integração alternativa',
+          'Portal Nacional: exceção de NBS para empresa do Simples (Arte Midas)',
         texto:
-          'Foi implementado o cálculo de apuração própria de PIS/COFINS na emissão via NFS-e Nacional para a integração alternativa (sem certificado). O valor líquido da nota era calculado incorretamente quando havia retenção de PIS/COFINS. Agora o sistema calcula corretamente vPisProprio, vCofinsProprio, vBCPisCofins e normaliza o CST.',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Atualização de endpoint de Nova Resende/MG',
-        texto:
-          'O endpoint do webservice de Nova Resende/MG foi atualizado. A prefeitura alterou a URL do serviço de NFS-e, e a configuração foi corrigida para manter a emissão funcionando.',
+          'Uma nova subscription foi adicionada à lista SubscriptionsSempreEnviarNBS no Portal Nacional. A empresa precisava enviar o código NBS mesmo sendo optante do Simples Nacional, pois sua atividade exige o código para processamento correto pela Receita Federal.',
       },
       {
         icon: '🔧',
-        destaque: 'Tratamento de num_rps nulo na consulta de lote',
+        destaque: 'Correção no envio do ValorInss',
         texto:
-          'Na desserialização da resposta de consulta de lote, o campo num_rps podia vir nulo em algumas respostas de prefeituras, causando erro de conversão. Agora o valor nulo é substituído por 0 (padrão), evitando a exceção e permitindo que a consulta prossiga normalmente.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Itacoatiara/AM migrada para BethaV3',
-        texto:
-          'O município de Itacoatiara/AM foi migrado para o provedor BethaV3. A prefeitura trocou de sistema de NFS-e, exigindo atualização completa das configurações (URLs, namespace, versão) no gateway.',
+          'Corrigido o envio do campo ValorInss que em determinados cenários era preenchido com valor incorreto. O campo agora é calculado corretamente considerando a base de cálculo e a alíquota informada, evitando divergências entre o valor retido e o valor declarado na nota.',
       },
       {
         icon: '🔧',
-        destaque: 'Atualização de CNPJ no ConfigurarCertificadoTesteCommand',
-        texto:
-          'O CNPJ utilizado no comando de configuração de certificado de teste foi atualizado. Essa mudança é necessária para que os testes automatizados de emissão em homologação funcionem corretamente com o certificado digital válido.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Barra do Choça/BA ativada no provedor EeLv3',
-        texto:
-          'Configuração complementar do município de Barra do Choça/BA no provedor EeLv3, incluindo ajustes nos testes automatizados para validar o cenário de emissão nesse município.',
-      },
-      {
-        icon: '📊',
         destaque:
-          'Tratamento de subscriptionID para MunicipioIncidenciaService no SIGISSv5',
+          'Código de serviço nacional com desdobramento municipal (ISSIntel)',
         texto:
-          'Foi adicionado tratamento especial no provedor SIGISSv5 para uma subscription específica, permitindo que a dedução do município de incidência seja feita pelo MunicipioIncidenciaService. Isso resolve casos onde o município de incidência era determinado incorretamente, causando rejeição pela prefeitura.',
+          'Implementado suporte ao envio do código de serviço nacional com desdobramento municipal no provedor ISSIntel. O novo método FormatarCodigoServicoNacionalCodigoTributacaoMunicipio sanitiza o input, valida tamanho (máximo 9 caracteres) e numericidade, e popula os campos CodigoServicoNacional e CodigoTributacaoMunicipio corretamente.',
       },
       {
         icon: '🔧',
-        destaque: 'Mapeamento do erro ER004 no provedor GIFv2',
+        destaque: 'Sincronia do provedor GIF — remoção de namespace duplicado',
         texto:
-          'O código de erro ER004 do provedor GIFv2 agora é tratado como erro estruturado na resposta XML, em vez de lançar uma exceção de comunicação. Isso permite que a mensagem de erro da prefeitura seja exibida ao cliente de forma legível, em vez de gerar um erro genérico de "falha de comunicação".',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Atualiza Salto Grande/SP para provedor ISSMAP',
-        texto:
-          'O município de Salto Grande/SP foi migrado para o provedor ISSMAP. A prefeitura trocou de sistema de NFS-e, e as configurações foram atualizadas com as novas URLs e parâmetros do provedor.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Desabilita envio em lote para empresa específica',
-        texto:
-          'Uma empresa específica estava enfrentando problemas ao enviar notas em lote. Foi configurada a regra de emissão unitária (1 nota por lote) para essa empresa, resolvendo falhas de processamento que ocorriam quando múltiplas notas eram agrupadas.',
+          'Corrigida a sincronização do provedor GIF removendo uma declaração de namespace duplicada na resposta XML do webservice. O namespace "xmlns:ns2" aparecia duas vezes no XML retornado, causando erro de desserialização na consulta por RPS. A sanitização remove a duplicata antes do processamento.',
       },
     ],
   },
@@ -329,177 +392,97 @@
     data: '19/05/2026',
     itens: [
       {
-        icon: '📊',
-        destaque:
-          'Tratamento de subscriptionID para MunicipioIncidenciaService',
+        icon: '🔧',
+        destaque: 'Cenário de extração de lote no SIGISS v1',
         texto:
-          'Foi adicionado tratamento no provedor NfseNacional para que uma subscription específica utilize o MunicipioIncidenciaService para deduzir o município de incidência. Isso corrige cenários onde o município era determinado incorretamente, causando rejeição pela prefeitura.',
+          'Adicionado novo cenário de extração de lote no provedor SIGISS v1. A lógica de leitura de erros foi reestruturada para tentar extrair o número da NF-e a partir de mensagens alternativas (DescricaoErro e DescricaoProcesso), com regex de fallback para padrões como "Id_sis_legado" e "Processo finalizado". Isso resolve casos onde notas ficavam travadas sem número.',
+      },
+      {
+        icon: '🔗',
+        destaque: 'URL de São Gabriel do Oeste/MS atualizada (Fiorilli)',
+        texto:
+          'A URL do webservice de São Gabriel do Oeste/MS foi atualizada para o novo endereço do provedor Fiorilli. A prefeitura migrou o domínio do serviço e o endereço anterior deixou de responder, causando falhas de emissão e consulta.',
       },
       {
         icon: '🔧',
-        destaque: 'Correção de ticket FRCAP-3763',
+        destaque: 'Remoção de XML declaration duplicado no provedor Freire',
         texto:
-          'Correção aplicada conforme solicitação do ticket FRCAP-3763, ajustando o comportamento do sistema para o cenário reportado pela equipe de suporte.',
+          'Corrigido erro de desserialização no provedor Freire causado por declaração XML duplicada dentro da tag ListaNfse. O webservice retornava um segundo "<?xml version=..." dentro do corpo da resposta, impedindo o parse correto. A sanitização remove a declaração duplicada antes da desserialização.',
+      },
+      {
+        icon: '🔗',
+        destaque:
+          'Vinhedo/SP — endpoints atualizados para novo domínio Balker (GIAPv2)',
+        texto:
+          'Os endpoints de Vinhedo/SP no provedor GIAPv2 foram atualizados para o novo domínio Balker. A prefeitura migrou o sistema de NFS-e para um novo fornecedor e os endereços antigos foram desativados.',
+      },
+      {
+        icon: '🧮',
+        destaque:
+          'PIS/COFINS apuração própria na NFSe Nacional (integração alternativa)',
+        texto:
+          'Implementada a apuração própria de PIS/COFINS na emissão de NFSe Nacional para a integração alternativa. O novo fluxo calcula vPisProprio/vCofinsProprio, deriva alíquotas com arredondamento, normaliza CST e calcula vRetCSLL. Corrige o cálculo incorreto do valor líquido que ocorria quando a empresa tinha apuração própria mas os valores não eram computados.',
+      },
+      {
+        icon: '🔗',
+        destaque: 'Atualização de endpoint de Nova Resende/MG',
+        texto:
+          'O endpoint do webservice de Nova Resende/MG foi atualizado para o novo endereço da prefeitura. A URL anterior foi desativada, causando falhas de conexão na emissão e consulta de NFS-e.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Tratamento de num_rps nulo na desserialização (SIGISS v1)',
+        texto:
+          'Corrigido erro de desserialização no provedor SIGISS v1 quando o campo num_rps vem nulo (xsi:nil="true") na resposta da consulta de lote. O sistema agora substitui a tag nula pelo valor padrão 0 antes de desserializar, evitando exceção que travava o processamento do lote.',
       },
       {
         icon: '🏙️',
-        destaque:
-          'Expansão da lógica de tratamento de cidades no ServicoControleLotesNFe',
+        destaque: 'Itacoatiara/AM migrada para BethaV3',
         texto:
-          'A lógica de tratamento de cidades no serviço de controle de lotes foi expandida para cobrir novos cenários. Isso permite que o sistema identifique e processe corretamente notas de municípios que possuem regras especiais de envio.',
+          'O município de Itacoatiara/AM foi migrado para o provedor BethaV3. A prefeitura trocou de sistema de NFS-e e as URLs, namespace e configurações foram atualizadas para o novo provedor.',
       },
       {
         icon: '🔧',
-        destaque: 'Correção de ticket SUSFS-7546',
+        destaque: 'Atualização de CNPJ no ConfigurarCertificadoTesteCommand',
         texto:
-          'Correção aplicada conforme solicitação do ticket SUSFS-7546, resolvendo um problema reportado no fluxo de emissão que afetava empresas específicas.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Ajuste na validação de NBS para o serviço 99.01.01',
-        texto:
-          'A validação do código NBS no provedor GovDigital foi ajustada para permitir que o serviço 99.01.01 (outros serviços) seja emitido sem NBS obrigatório. Antes, todas as notas sem NBS eram rejeitadas com erro GW0001, mas para esse código de serviço específico o NBS não é aplicável.',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Melhoria no tratamento de exportação de notas para o exterior',
-        texto:
-          'O fluxo de exportação de notas para tomadores do exterior recebeu melhorias na cobertura de testes e no tratamento de campos específicos. Isso garante maior confiabilidade na emissão de notas para clientes internacionais.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Remoção de MunicipioIncidencia quando ISS não retido e prestação fora do município (CPQD)',
-        texto:
-          'No provedor CPQD, quando o ISS não é retido na fonte e a prestação do serviço ocorre fora do município da empresa, o campo MunicipioIncidencia agora é removido. Antes, esse campo era enviado preenchido incorretamente, causando rejeição pela prefeitura de Camaçari/BA e outros municípios CPQD.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Mapeamento do erro ER004 no GIFv2 para retornar XML estruturado',
-        texto:
-          'O código de erro ER004 foi adicionado à lista de erros tratados no provedor GIFv2. Agora a resposta é processada como XML estruturado em vez de lançar exceção, permitindo que o cliente veja a mensagem real de erro da prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Desabilita envio em lote para empresa específica',
-        texto:
-          'Uma empresa foi adicionada à lista de exceções que enviam notas uma por vez (em vez de em lote). A prefeitura rejeitava o lote agrupado, e com a emissão unitária o problema foi resolvido.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Remoção de acentuação no endereço do tomador',
-        texto:
-          'O provedor estava retornando erro genérico de tamanho de arquivo quando o endereço ou nome do tomador continha acentuação. Foi adicionado RemoveAccent nos campos Logradouro, Numero, Complemento e Bairro do endereço do tomador, resolvendo o problema.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Envio de apuração própria zerada para ContaAzul (PIS/COFINS)',
-        texto:
-          'Para a integração ContaAzul, quando o prestador não informa o bloco pisCofinsApuracaoPropria, o sistema agora envia os valores zerados (vBCPisCofins, alíquotas e valores = 0) com CST padrão "01". Antes, a ausência desses campos causava erro de validação na prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Verificação nula em dadosTomador para evitar NullReferenceException',
-        texto:
-          'Foi adicionada verificação de nulidade no objeto dadosTomador antes de acessar IdentificacaoTomador no provedor NotaControl. Notas sem tomador (consumidor final) causavam NullReferenceException que travava o processamento. Agora o campo é acessado com operador null-conditional.',
-      },
-      {
-        icon: '📊',
-        destaque: '[WebApi] Novo campo regimeApuracaoTributosSN nas Empresas',
-        texto:
-          'Foi adicionado o campo RegimeApuracaoTributosSN (regime de apuração de tributos para Simples Nacional) no modelo de Empresa. O campo é persistido em ExtendedProperties (JSON) e permite que integrações informem o regime de apuração, necessário para o cálculo correto de tributos na reforma tributária.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Ajuste na emissão para tomador do exterior no GovDigital',
-        texto:
-          'A emissão de NFS-e para tomadores do exterior no provedor GovDigital foi corrigida. Foram criados modelos específicos (GovDigitalIdentificacaoTomador com NIF/CodNaoNIF, GovDigitalComercioExterior) e ajustada a serialização XML para o formato exigido pela prefeitura. Campos como cidade e país agora são serializados como texto em vez de numérico.',
+          'Atualizado o CNPJ utilizado no comando de configuração de certificado de teste. O CNPJ anterior havia expirado ou sido desativado, impedindo a execução de testes automatizados que dependem de certificado digital válido.',
       },
       {
         icon: '🏙️',
-        destaque: 'Salto Grande/SP atualizada para provedor ISSMAP',
+        destaque: 'Barra do Choça/BA ativada no provedor EeLv3',
         texto:
-          'O município de Salto Grande/SP foi migrado para o provedor ISSMAP no ConfiguracoesMunicipios.xml. A prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas.',
-      },
-      {
-        icon: '🌐',
-        destaque:
-          'Validação de código postal obrigatório para tomador estrangeiro (NfseNacionalV2)',
-        texto:
-          'No provedor NfseNacionalV2, foi adicionada validação que exige o código postal do tomador estrangeiro. Notas para o exterior sem CEP agora retornam erro GW3003 com mensagem clara, em vez de serem rejeitadas pela prefeitura com erro genérico.',
+          'O município de Barra do Choça/BA foi ativado no provedor EeLv3. As URLs de produção e homologação foram configuradas no ConfiguracoesMunicipios.xml, habilitando a emissão de NFS-e para empresas prestadoras de serviço nesse município.',
       },
       {
         icon: '🏙️',
-        destaque: 'Benedito Novo/SC ativada no provedor IPM',
+        destaque: 'Piedade/SP atualizada para GissOnline',
         texto:
-          'O município de Benedito Novo/SC foi ativado para emissão de NFS-e através do provedor IPM. Empresas prestadoras de serviço nesse município agora podem emitir notas pelo gateway.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Ajuste no tipo de retenção para valor líquido no PDF (GissOnline)',
-        texto:
-          'O cálculo do valor líquido no PDF da NFS-e para o provedor GissOnline foi ajustado para considerar o tipo de retenção de PIS/COFINS/CSLL. Antes, o valor líquido era calculado sem considerar o tipo de retenção, gerando divergência entre o valor exibido no PDF e o valor real da nota.',
+          'O município de Piedade/SP foi migrado para o provedor GissOnline e adicionado à lista NaoObrigaNBS. Isso significa que notas emitidas em Piedade não precisam informar código NBS válido, pois a prefeitura não exige esse campo na recepção de lotes RPS.',
       },
       {
         icon: '📊',
-        destaque: 'Zera alíquota e valores de IBSCBS para CST 410 (imunidade)',
-        texto:
-          'Quando o CST do IBSCBS é 410 (imunidade), as alíquotas e valores de IBS/CBS agora são zerados automaticamente. Antes, notas com imunidade tributária eram enviadas com valores de IBS/CBS preenchidos, causando rejeição pela prefeitura que esperava valores zerados nesse cenário.',
-      },
-      {
-        icon: '🔧',
         destaque:
-          'Atualização da validação de discriminação na consulta por RPS',
+          'Portal Nacional: Nibo na exceção de NBS para Simples Nacional',
         texto:
-          'A validação da discriminação do serviço na consulta por RPS (ABRASF v2) foi refatorada. O método CompararDiscriminacaoServico agora normaliza o texto (remove diacríticos, quebras de linha, caracteres especiais) antes de comparar com a discriminação esperada. Isso resolve falsos negativos na sincronização de notas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Validação de tomador nulo no provedor NotaControl',
-        texto:
-          'Adicionada verificação null-conditional no acesso a dadosTomador.IdentificacaoTomador para evitar NullReferenceException. Notas sem tomador informado (consumidor final) agora são processadas corretamente sem gerar exceção.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Remoção de caracteres XML inválidos na descrição do serviço (xDescServ)',
-        texto:
-          'Caracteres inválidos para XML na descrição do serviço (xDescServ) causavam falha na geração do XML com assinatura digital. Foi adicionado RemoveInvalidXmlChars() após o Trim() na montagem da tag, sanitizando o conteúdo antes da assinatura.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Itaju/SP ativada no provedor Fiorilli',
-        texto:
-          'O município de Itaju/SP foi ativado para emissão de NFS-e através do provedor Fiorilli. Empresas prestadoras de serviço nesse município agora podem emitir notas pelo gateway.',
+          'A subscription da Nibo foi adicionada à lista de exceções para envio de NBS em empresas do Simples Nacional no Portal Nacional. Isso garante que notas emitidas pela Nibo sempre incluam o código NBS, requisito específico para a atividade dessa empresa.',
       },
       {
         icon: '📊',
-        destaque: 'Inclusão de empresaID na lista idsNovoRespTecnico',
+        destaque: 'Envio de IBS/CBS para subscription da Sankhya',
         texto:
-          'Uma empresa foi adicionada à lista idsNovoRespTecnico para que o CNPJ seja considerado no cadastro de responsável técnico na geração do XML da NFe. Sem essa inclusão, o XML era gerado sem os dados do responsável técnico, causando rejeição pela SEFAZ.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Buenópolis/MG ativada no provedor Sintese',
-        texto:
-          'O município de Buenópolis/MG foi ativado para emissão de NFS-e através do provedor Sintese. Empresas prestadoras de serviço nesse município agora podem emitir notas pelo gateway.',
+          'Liberado o envio do código IBS/CBS para a subscription da Sankhya. A empresa precisava enviar os novos tributos da reforma tributária mas estava bloqueada pela regra que restringe o envio apenas a subscriptions autorizadas.',
       },
       {
         icon: '🔧',
-        destaque: 'Tratamento para consulta por RPS no PublicaV1',
+        destaque: 'Emissão sem assinatura digital para provedor específico',
         texto:
-          'Notas com erro "Problemas ao processar arquivo" estavam sendo autorizadas na prefeitura mas o gateway não conseguia sincronizar. Foi adicionado tratamento para chamar a consulta por RPS nesses casos, permitindo recuperar a nota autorizada e atualizar o status no sistema.',
+          'Adicionado tratamento para permitir emissão sem assinatura digital do XML em provedor que utiliza apenas usuário e senha para autenticação. O certificado digital não é usado na comunicação com o webservice, apenas credenciais de acesso, tornando a assinatura do XML opcional.',
       },
       {
-        icon: '🔧',
-        destaque: 'Remoção do campo ref da observação no NFS-e Nacional',
+        icon: '🆕',
+        destaque: 'Consulta por RPS implementada no CoplanV2',
         texto:
-          'O campo de referência de ID nas observações da NFS-e Nacional havia sido adicionado provisoriamente para evitar duplicidade, mas estava gerando problemas. Foi removido pois a duplicidade já é tratada por outro mecanismo.',
+          'Implementada a operação de consulta de NFS-e por RPS (DPS) no provedor CoplanV2. A nova operação permite verificar se uma nota específica foi processada pela prefeitura usando o identificador do RPS. Inclui tratamento de certificado, proxy, validação de chave/XML e desserialização da resposta JSON.',
       },
     ],
   },
@@ -510,15 +493,109 @@
     itens: [
       {
         icon: '🔧',
-        destaque: 'Restauração de encoding no BarueriProvedorNFeTest',
+        destaque: 'Retirada de apikey dos testes e consulta de lote',
         texto:
-          'O encoding original do arquivo de teste do provedor Barueri foi restaurado e os testes de exportação foram readicionados. Uma alteração anterior havia corrompido o encoding do arquivo, causando falhas nos testes automatizados de emissão para o exterior.',
+          'Removida a apikey hardcoded dos testes unitários por questões de segurança. Também foi ajustado o campo ultima_nota na consulta de lote para retornar a nota consultada (valor 0) ao invés da última nota (valor 1), corrigindo cenários onde a consulta retornava uma nota diferente da solicitada.',
       },
       {
-        icon: '🌐',
-        destaque: 'Lógica de exportação para o exterior no provedor Barueri',
+        icon: '🔧',
+        destaque: 'Reenvio de lote quando tipo de dedução não permitido',
         texto:
-          'Foi adicionada a lógica de exportação para tomadores do exterior no provedor Barueri, incluindo melhorias na cobertura de testes. Notas para clientes internacionais emitidas em Barueri/SP agora são processadas corretamente com os campos específicos de comércio exterior.',
+          'Adicionada lógica para reenviar o lote automaticamente quando o tipo de dedução utilizado não é permitido pelo município de incidência. Antes, a nota ficava travada com erro sem possibilidade de recuperação automática. Agora o sistema tenta reenviar com o tipo de dedução correto para o município.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Soma PIS/COFINS/CSLL retidos na tag ValorCsll (São Paulo)',
+        texto:
+          'Ajustado o cálculo e mapeamento de retenções de PIS, COFINS e CSLL para o provedor de São Paulo. Os valores retidos agora são somados na tag ValorCsll conforme exigido pelo webservice paulistano, e o tipo de retenção (tpRet) é enviado corretamente com base nos valores informados.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Remoção de emojis das descrições de serviço (Hotmart)',
+        texto:
+          'Removidos emojis que estavam presentes nas descrições de serviço da Hotmart. Alguns provedores rejeitam caracteres Unicode especiais (emojis) no campo de descrição do serviço, causando erro de emissão. A sanitização garante compatibilidade com todos os webservices.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Palma Sola/SC migrada para IPMv2',
+        texto:
+          'O município de Palma Sola/SC foi migrado para o provedor IPMv2. A prefeitura atualizou seu sistema de NFS-e e as configurações foram ajustadas para o novo provedor.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Correção da DescricaoOriginal dos serviços municipais de Barueri',
+        texto:
+          'Corrigido o campo DescricaoOriginal dos serviços municipais de Barueri que estava sendo preenchido incorretamente. O campo agora reflete a descrição original cadastrada na prefeitura, evitando divergências entre o que é exibido no painel e o que é enviado no XML da nota.',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Santana do Ipanema/AL, São Sebastião da Amoreira/PR, Caconde/SP e Riachão do Jacuípe/BA no Portal Nacional',
+        texto:
+          'Quatro municípios aderiram ao Portal Nacional de NFS-e: Santana do Ipanema/AL, São Sebastião da Amoreira/PR, Caconde/SP e Riachão do Jacuípe/BA. As configurações foram adicionadas ao ConfiguracoesMunicipios.xml com o provedor NfseNacional, permitindo emissão de NFS-e pelo portal unificado.',
+      },
+      {
+        icon: '⚙️',
+        destaque: '[Dashboard] TraceEvent para alterações de ApiKey',
+        texto:
+          'Adicionado TraceEvent no dashboard para registrar alterações de ApiKey realizadas pelos usuários. Isso permite auditoria e rastreabilidade quando uma empresa tem sua chave de API modificada, facilitando investigação de problemas de autenticação.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'ValidationException para CodigoServicoMunicipio incorreto (NotaJoseenseV2)',
+        texto:
+          'Ajustada a validação do campo Código CNAE no provedor NotaJoseenseV2 para exigir entre 7 e 9 dígitos. Antes, valores com até 6 dígitos eram aceitos e causavam rejeição na prefeitura. Agora o sistema valida antes do envio e retorna ValidationException com mensagem clara ao integrador.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Mapeamento do Error3450 no GIFv2',
+        texto:
+          'O erro Error3450 do provedor GIFv2 foi adicionado à lista de erros tratados sem exceção, junto com E999, RNG9999 e E0014. Quando a prefeitura retorna esse código, o sistema agora normaliza o JSON e extrai a mensagem de erro para exibir ao cliente, ao invés de lançar exceção de comunicação.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Alíquota IBS/CBS para empresas do Simples em Ilhabela/SP',
+        texto:
+          'Adicionado suporte ao envio de alíquotas IBS/CBS para empresas optantes do Simples Nacional em Ilhabela/SP. A lógica de cálculo no método CriarIIBrasilValoresServico foi ajustada para incluir os novos tributos da reforma tributária quando a empresa é do Simples e está emitindo em Ilhabela.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Tratamento no nome do tomador',
+        texto:
+          'Adicionado tratamento de sanitização no nome do tomador antes do envio à prefeitura. Caracteres especiais e formatação inválida no nome causavam rejeição em provedores que validam estritamente os dados do tomador.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Inclusão de empresaID na lista de envio de alíquota',
+        texto:
+          'Uma empresa foi incluída na lista de empresas que enviam alíquota IBS/CBS. A empresa precisava enviar os novos tributos da reforma tributária mas estava bloqueada pela regra de whitelist que restringe o envio a subscriptions autorizadas.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Ibaté/SP aderiu ao Portal Nacional',
+        texto:
+          'O município de Ibaté/SP aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao ConfiguracoesMunicipios.xml com o provedor NfseNacional, permitindo que empresas em Ibaté emitam NFS-e pelo portal unificado da Receita Federal.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Regra de Substituição Tributária independente do município (EGoverneISS)',
+        texto:
+          'Ajustada a regra de ativação da Substituição Tributária no provedor EGoverneISS. A validação que exigia que o município da prestação coincidisse com o do prestador foi removida. Agora a substituição é ativada apenas com base no CNPJ do tomador (pessoa jurídica), independente do município, corrigindo cenários de prestação interestadual.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Validação na consulta do lote (BethaV3)',
+        texto:
+          'Adicionada validação de integridade na consulta de lote do provedor BethaV3. Após extrair o XML da nota, o sistema agora verifica se a chaveAcesso retornada corresponde à esperada. Se divergir, o lote é marcado como "ainda não processado" ao invés de aceitar uma nota incorreta, evitando vinculação errada.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Campos da reforma tributária no provedor Ginfes',
+        texto:
+          'Adicionado suporte completo aos campos da Reforma Tributária do Consumo (RTC) no provedor GINFES. Foram criados mais de 15 novos modelos (InfoTributacao, TribFederal, TribTotal, RTCInfoIBSCBS, etc.) e implementada a classe GINFESRecepcionarLoteNFeV2 que estende o provedor para suportar os novos campos tributários exigidos pela legislação.',
       },
     ],
   },
@@ -528,9 +605,16 @@
     data: '17/05/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
+        icon: '🔧',
+        destaque: 'Restauração de encoding e testes de exportação (Barueri)',
+        texto:
+          'Restaurado o encoding original do arquivo BarueriProvedorNFeTest e readicionados os testes de exportação que haviam sido removidos acidentalmente em commit anterior. Os testes validam o fluxo de exportação de notas para o exterior no provedor Barueri.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Lógica de Exportação Exterior e cobertura de testes',
+        texto:
+          'Adicionada lógica de exportação para o exterior no provedor Barueri, incluindo o preenchimento do campo PaisPrestacaoServico com o país do tomador quando a prestação é para o exterior. Também foi ampliada a cobertura de testes unitários para validar os cenários de exportação internacional.',
       },
     ],
   },
@@ -540,86 +624,9 @@
     data: '16/05/2026',
     itens: [
       {
-        icon: '🔧',
-        destaque: 'Mapeamento do erro E0014 no GIFv2 para evitar exceção',
-        texto:
-          'O código de erro E0014 do provedor GIFv2 foi mapeado para ser tratado como resposta estruturada em vez de lançar exceção de comunicação. Além disso, a mensagem de "RPS já informado" foi atualizada para um texto mais claro, facilitando o entendimento pelo cliente sobre o que aconteceu.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Mensagem de tratamento para emissão em homologação (NotaControl)',
-        texto:
-          'As URLs de homologação do provedor NotaControl na versão ABRASF foram desativadas pela prefeitura. Foi adicionada uma mensagem de tratamento informando que o ambiente de homologação não está disponível, em vez de retornar erro genérico de conexão.',
-      },
-      {
-        icon: '🔗',
-        destaque: 'Atualização de URL de Heliodora/MG',
-        texto:
-          'A URL do webservice de Heliodora/MG foi atualizada no ConfiguracoesMunicipios.xml. A prefeitura alterou o endereço do serviço de NFS-e.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Valores default para TpRetPisCofins e SituacaoTributaria no ISSIntel',
-        texto:
-          'Foram adicionados valores padrão para os campos TpRetPisCofins ("0") e SituacaoTributaria ("00") no provedor ISSIntel. Notas sem PIS e COFINS informados agora possuem valores válidos, evitando campos nulos que causavam erro de validação na transmissão para a prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Ajuste no envio de impostos retidos',
-        texto:
-          'O envio de impostos retidos (PIS, COFINS, CSLL, IR, INSS) foi ajustado para garantir que os valores sejam calculados e enviados corretamente conforme o tipo de retenção configurado. Antes, em alguns cenários os valores retidos não eram enviados ou eram enviados com valor incorreto.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Raposos/MG migrada para BethaV3',
-        texto:
-          'O município de Raposos/MG foi migrado para o provedor BethaV3. A prefeitura trocou de sistema de NFS-e, exigindo atualização das URLs e configurações no gateway.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Inclusão de empresaID na regra de incidência para município do prestador',
-        texto:
-          'Uma empresa específica foi adicionada à regra de incidência que considera o município do prestador. Isso resolve cenários onde o município de incidência era determinado incorretamente para essa empresa, causando rejeição pela prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualização da consulta por RPS (ABRASF v2)',
-        texto:
-          'A consulta por RPS no padrão ABRASF v2 foi atualizada para tratar prefeituras que removem o nó XML do tomador quando este não possui documento (CPF/CNPJ). Foi introduzida validação opcional da discriminação do serviço comparando com a descrição do item da nota.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Envio de CST 00 quando apuração própria zerada (GissOnline)',
-        texto:
-          'No provedor GissOnline, quando a apuração própria de PIS/COFINS está zerada, o sistema agora envia CST "00" e define TipoRetencaoPisCofins = 0. Antes, o CST era enviado incorretamente, causando divergência no cálculo tributário da prefeitura.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Inclusão de empresa na regra de emissão unitária para Sobral/CE (SpeedGov)',
-        texto:
-          'Uma empresa foi adicionada à regra de emissão unitária por lote (1 NF por lote) para o provedor SpeedGov em Sobral/CE. A prefeitura rejeitava lotes com múltiplas notas dessa empresa, e com a emissão unitária o problema foi resolvido.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Envio de alíquota IBS/CBS para empresa em Limeira/SP',
-        texto:
-          'Foi implementado o envio de alíquota IBS e CBS para uma empresa específica optante do Simples Nacional em Limeira/SP no provedor IIBrasil. A prefeitura exige esses campos da reforma tributária para emissão, e sem eles as notas eram rejeitadas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualização de Rio Doce/MG para provedor Futurize',
-        texto:
-          'O município de Rio Doce/MG teve seu provedor atualizado para Futurize no ConfiguracoesMunicipios.xml. A prefeitura migrou de sistema de NFS-e.',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Correção no PaisPrestacaoServico para exterior em Barueri',
-        texto:
-          'No provedor Barueri, quando a nota é para tomador do exterior, o campo PaisPrestacaoServico agora é preenchido com o país do tomador. Antes, o campo ficava vazio ou com valor incorreto, causando rejeição pela prefeitura em notas de exportação de serviço.',
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
@@ -629,136 +636,9 @@
     data: '15/05/2026',
     itens: [
       {
-        icon: '🔧',
-        destaque: 'Retirada de apikey dos testes',
-        texto:
-          'As apikeys foram removidas dos arquivos de teste para evitar exposição acidental de credenciais em repositórios. Os testes agora utilizam mocks ou variáveis de ambiente para autenticação.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Correção na consulta de lote — campo ultima_nota ajustado para 0',
-        texto:
-          'O campo ultima_nota na consulta de lote estava configurado como 1, fazendo com que a consulta sempre retornasse a última nota em vez da nota específica solicitada. Ajustado para 0, garantindo que a nota correta seja retornada na consulta.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Reenvio de lote quando tipo de dedução não permitido pelo município',
-        texto:
-          'Quando o tipo de dedução utilizado não era permitido pelo município de incidência, o lote falhava sem possibilidade de correção automática. Agora o sistema detecta esse cenário e reenvia o lote com o tipo de dedução correto para o município.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Soma de PIS, COFINS e CSLL retidos na tag ValorCsll (São Paulo)',
-        texto:
-          'Para o provedor de São Paulo, os valores de PIS, COFINS e CSLL retidos agora são somados na tag ValorCsll e o tipo de retenção é enviado corretamente. Foi criado o helper NfeServicoCalculoHelper com métodos para determinar o tipo de retenção e calcular os impostos federais retidos conforme as regras da prefeitura.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Remoção de emojis da descrição de serviço (Hotmart)',
-        texto:
-          'Descrições de serviço que continham emojis causavam falha na geração do XML ou rejeição pela prefeitura. Os emojis agora são removidos automaticamente antes do envio, garantindo que apenas caracteres válidos sejam incluídos na nota fiscal.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Palma Sola/SC migrada para IPMv2',
-        texto:
-          'O município de Palma Sola/SC foi migrado para o provedor IPMv2. A prefeitura atualizou seu sistema de NFS-e, exigindo atualização das configurações no gateway.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Correção na descrição original de serviços municipais de Barueri',
-        texto:
-          'A DescricaoOriginal dos serviços municipais de Barueri estava incorreta, causando divergência na sincronização de notas. O campo foi corrigido para refletir a descrição real cadastrada na prefeitura, resolvendo problemas de validação na consulta.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Santana do Ipanema/AL aderiu ao Portal Nacional',
-        texto:
-          'O município de Santana do Ipanema/AL aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao gateway para permitir emissão de notas nesse município.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'São Sebastião da Amoreira/PR aderiu ao Portal Nacional',
-        texto:
-          'O município de São Sebastião da Amoreira/PR aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao gateway.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Caconde/SP aderiu ao Portal Nacional',
-        texto:
-          'O município de Caconde/SP aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao gateway para permitir emissão.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Riachão do Jacuípe/BA aderiu ao Portal Nacional',
-        texto:
-          'O município de Riachão do Jacuípe/BA aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao gateway.',
-      },
-      {
-        icon: '📊',
-        destaque: '[Dashboard] TraceEvent para alterações de ApiKey',
-        texto:
-          'Foi adicionada telemetria para rastrear alterações de ApiKey no dashboard. Agora quando uma ApiKey é regenerada, o sistema registra um TraceEvent com SubscriptionId, email do usuário, IP (via X-Forwarded-For) e User-Agent. Isso permite auditoria completa de quem alterou credenciais de API.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'ValidationException para CodigoServicoMunicipio incorreto (NotaJoseenseV2)',
-        texto:
-          'A validação do campo Código CNAE no provedor NotaJoseenseV2 foi ajustada para exigir entre 7 e 9 dígitos. Antes, valores com até 6 dígitos eram aceitos e causavam rejeição pela prefeitura com erro genérico. Agora o erro GW é retornado imediatamente com mensagem clara.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Mapeamento do Error3450 no GIFv2 para retornar XML',
-        texto:
-          'O código de erro Error3450 do provedor GIFv2 foi adicionado à lista de erros tratados como resposta XML estruturada. Antes, esse erro gerava exceção de comunicação genérica. Agora a mensagem real da prefeitura é retornada ao cliente.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Envio de alíquota IBS/CBS para empresa em Ilhabela/SP',
-        texto:
-          'Foi adicionado suporte ao envio de alíquotas IBS/CBS para empresas optantes do Simples Nacional em Ilhabela/SP no provedor IIBrasil. A prefeitura exige esses campos da reforma tributária, e sem eles as notas eram rejeitadas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Tratamento no nome do tomador — remoção de acentuação',
-        texto:
-          'O nome do tomador com acentuação causava erro genérico de tamanho de arquivo na prefeitura. Foi adicionado RemoveAccent no campo nome do tomador, resolvendo o problema identificado em múltiplos tickets de suporte.',
-      },
-      {
-        icon: '📊',
-        destaque:
-          'Inclusão de empresaID na lista de envio de alíquota (Contagem/MG)',
-        texto:
-          'Uma empresa de Contagem/MG foi adicionada à lista de empresas que sempre enviam alíquota ISS no provedor GOVBRv3, mesmo sendo optante do Simples Nacional. A prefeitura exige a alíquota para processamento correto da nota.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ibaté/SP aderiu ao Portal Nacional',
-        texto:
-          'O município de Ibaté/SP aderiu ao Portal Nacional de NFS-e. As configurações foram atualizadas no gateway, migrando do provedor anterior para o Portal Nacional.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Ajuste na regra de Substituição Tributária no EGoverneISS',
-        texto:
-          'A regra de ativação da Substituição Tributária no provedor EGoverneISS foi ajustada para não exigir mais que o município da prestação coincida com o do prestador. Agora basta que o tomador seja pessoa jurídica (CNPJ com 14 dígitos) para ativar a substituição, independente do município.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Validação na consulta de lote do BethaV3',
-        texto:
-          'Foi adicionada validação de integridade na consulta de lote do provedor BethaV3. Agora o sistema verifica se a chave de acesso retornada no XML corresponde à chave esperada. Se for diferente, o lote é marcado como "ainda não processado" em vez de aceitar uma nota errada.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Campos da reforma tributária no provedor Ginfes',
-        texto:
-          'Foi implementado suporte completo aos campos da reforma tributária (RTC) no provedor Ginfes. Mais de 15 novos modelos foram criados (GINFESInfRps, GINFESServico, TCInfoTributacao, TCTribFederal, TCRTCInfoIBSCBS, etc.) e a classe GINFESRecepcionarLoteNFeV2 foi implementada para enviar os dados tributários no formato exigido.',
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },
@@ -768,9 +648,86 @@
     data: '14/05/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
+        icon: '🔧',
+        destaque:
+          'Mapeamento do erro E0014 no GIFv2 e mensagem de RPS já informado',
+        texto:
+          'O erro E0014 do provedor GIFv2 foi mapeado como caso não-bloqueante, tratado junto com E999 e RNG9999 para não gerar exceção de comunicação. Também foi normalizada a mensagem "Nota fiscal já foi emitida" para "RPS já foi emitido", tornando mais claro para o cliente que o RPS já foi processado anteriormente.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Mensagem de tratamento para emissão em homologação (NotaControl)',
+        texto:
+          'Adicionada mensagem de tratamento quando a emissão é tentada em ambiente de homologação no provedor NotaControl (integração ABRASF). As URLs de homologação foram desativadas pela prefeitura e o sistema agora retorna mensagem explicativa ao invés de erro genérico de conexão.',
+      },
+      {
+        icon: '🔗',
+        destaque: 'Atualização de URL de Heliodora/MG',
+        texto:
+          'A URL do webservice de Heliodora/MG foi atualizada para o novo endereço da prefeitura. O domínio anterior foi desativado, causando falhas de conexão na emissão de NFS-e.',
+      },
+      {
+        icon: '🧮',
+        destaque:
+          'Valor default em TpRetPisCofins e SituacaoTributaria (ISSIntel)',
+        texto:
+          'Adicionados valores padrão para TpRetPisCofins ("0") e SituacaoTributaria ("00") no provedor ISSIntel. Notas sem PIS e COFINS agora possuem valores válidos nesses campos, evitando rejeição em prefeituras que exigem os campos preenchidos mesmo quando zerados.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'Ajuste no envio de impostos retidos (Publica)',
+        texto:
+          'Refatorado o cálculo e envio dos impostos federais retidos no provedor Publica. A implementação local foi substituída pelo helper compartilhado NfeServicoCalculoHelper.RetornarTpRetPisCofinsCsll, removendo código duplicado. O CST PIS/COFINS agora é normalizado (apenas numérico) e valores inválidos são convertidos para null.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Raposos/MG migrada para BethaV3',
+        texto:
+          'O município de Raposos/MG foi migrado para o provedor BethaV3. A prefeitura atualizou seu sistema de NFS-e e as configurações foram ajustadas para o novo provedor.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Regra de incidência para considerar município do prestador',
+        texto:
+          'Uma empresa foi incluída na regra de incidência que considera o município do prestador ao invés do município de prestação do serviço. Isso corrige cenários onde o ISS era calculado com a alíquota do município errado para essa empresa específica.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Atualização da consulta por RPS',
+        texto:
+          'Atualizada a lógica de consulta por RPS para tratar corretamente cenários onde a resposta da prefeitura vem em formato diferente do esperado. A consulta agora é mais resiliente a variações no XML de retorno.',
+      },
+      {
+        icon: '🧮',
+        destaque: 'CST 00 quando apuração própria zerada',
+        texto:
+          'Quando a apuração própria de PIS/COFINS resulta em valores zerados, o sistema agora envia CST 00 (tributação normal) ao invés de omitir o campo. Prefeituras que validam a presença do CST rejeitavam notas sem esse campo, mesmo quando os valores eram zero.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Empresa da Pacto Soluções na regra de emissão unitária por lote',
+        texto:
+          'Uma empresa foi incluída na regra de emissão unitária (1 nota por lote). A emissão em lote causava problemas de processamento para essa empresa específica, e o envio individual resolve os timeouts e rejeições que ocorriam.',
+      },
+      {
+        icon: '📊',
+        destaque: 'Alíquota IBS/CBS para empresa específica em Limeira/SP',
+        texto:
+          'Implementado o envio de alíquota IBS e CBS para uma empresa específica em Limeira/SP. A empresa precisava enviar os novos tributos da reforma tributária mas o provedor IIBrasil só aceita esses campos para empresas autorizadas na whitelist.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Rio Doce/MG migrada para provedor Futurize',
+        texto:
+          'O município de Rio Doce/MG foi migrado para o provedor Futurize. A prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas no ConfiguracoesMunicipios.xml.',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Barueri: PaisPrestacaoServico com país do tomador exterior',
+        texto:
+          'Corrigido o preenchimento do campo PaisPrestacaoServico no provedor Barueri para usar o país do tomador quando a prestação é para o exterior. Antes o campo ficava vazio em notas internacionais, causando rejeição pela prefeitura de Barueri que exige esse dado para exportação de serviços.',
       },
     ],
   },
