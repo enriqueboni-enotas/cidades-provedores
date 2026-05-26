@@ -5,9 +5,24 @@ var jiraChangelogData = [
     data: '25/05/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
+        icon: '📋',
+        destaque: 'Importação de vendas indisponível',
+        texto: '2 cards (CE-27235, CE-27226)',
+      },
+      {
+        icon: '🤖',
+        destaque: 'Autofix — retornar NF negada',
+        texto: '1 card (CE-27206)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Integração Shopify',
+        texto: '3 cards (CE-26763, CE-26756, CE-25222)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Emissão tomador exterior em Rio das Ostras/RJ',
+        texto: '1 card (CE-25551)',
       },
     ],
   },

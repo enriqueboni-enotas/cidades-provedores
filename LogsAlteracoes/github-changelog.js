@@ -5,18 +5,6 @@
     data: '25/05/2026',
     itens: [
       {
-        icon: '📭',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '24/05/2026',
-    titulo: 'Sábado — 24 de Maio',
-    data: '24/05/2026',
-    itens: [
-      {
         icon: '🆕',
         destaque: 'Característica PermiteEvento nos provedores',
         texto:
@@ -35,6 +23,18 @@
           'Lógica de cancelamento de NF-e específica para Hotmart (TiplanV3)',
         texto:
           'Foi implementada lógica de cancelamento de NF-e específica para o provedor TiplanV3, sobrescrevendo o método FormatarPedidoRegistroEventoCancelamento para definir a versão do evento como "1.01". Também foi desabilitado o suporte a emissão sem cliente (SuportaEmissaoNFeSemCliente = false) e adicionado tratamento de erro para cenários onde o Tomador é nulo e ocorre InternalServerError, retornando resposta detalhada ao invés de exceção genérica.',
+      },
+    ],
+  },
+  {
+    tag: '24/05/2026',
+    titulo: 'Sábado — 24 de Maio',
+    data: '24/05/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
       },
     ],
   },

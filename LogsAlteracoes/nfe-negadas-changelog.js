@@ -7,54 +7,56 @@ var nfeNegadasData = [
       {
         icon: '🔒',
         destaque: 'Certificado digital vencido',
-        texto: '879 notas',
+        texto: '2.076 notas',
       },
       {
-        icon: '👤',
-        destaque: 'CPF/CNPJ do tomador não é válido',
-        texto: '201 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '143 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Lista de Serviço sem desdobramento nacional',
-        texto: '140 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Sistema temporariamente indisponível',
-        texto: '113 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Código NBS inválido para o Subitem LC informado',
-        texto: '112 notas',
+        icon: '🏙️',
+        destaque: 'Cidade não encontrada no cadastro IBGE',
+        texto: '1.685 notas',
       },
       {
         icon: '❌',
         destaque:
           'Rejeição 591 — CSOSN para emissor que não é Simples Nacional',
-        texto: '92 notas',
+        texto: '1.294 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Cidade do endereço do cliente não encontrada no cadastro IBGE',
+        texto: '939 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ não informado para tomador nacional',
+        texto: '704 notas',
       },
       {
         icon: '❌',
-        destaque: 'Rejeição: Falha no Schema XML do lote de NFe',
-        texto: '90 notas',
+        destaque:
+          'Erro no script de assinatura XML (NFENotaFiscalWSXMLAssinaturaValidar)',
+        texto: '475 notas',
       },
       {
         icon: '🧮',
         destaque:
           'Rejeição 930 — CST com benefício fiscal sem código informado',
-        texto: '83 notas',
+        texto: '441 notas',
       },
       {
         icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '71 notas',
+        destaque: 'CPF/CNPJ do tomador inválido (configuração da empresa)',
+        texto: '425 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '416 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado (número duplicado)',
+        texto: '414 notas',
       },
     ],
   },
