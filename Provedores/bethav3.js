@@ -3,12 +3,12 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 136
+    municipios: 138
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '136' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'MG', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'BA', 'AM'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '138' },
+    { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'AM', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -125,6 +125,7 @@
       { nome: 'Ibiam', uf: 'SC', ibge: '4206751' },
       { nome: 'Ilhota', uf: 'SC', ibge: '4207106' },
       { nome: 'Imbuia', uf: 'SC', ibge: '4207403' },
+      { nome: 'Itacoatiara', uf: 'AM', ibge: '1301902' },
       { nome: 'Itagi', uf: 'BA', ibge: '2915106' },
       { nome: 'Itaguara', uf: 'MG', ibge: '3132206' },
       { nome: 'Itiquira', uf: 'MT', ibge: '5104609' },
@@ -175,6 +176,7 @@
       { nome: 'Sacramento', uf: 'MG', ibge: '3156908' },
       { nome: 'Santa Cecília', uf: 'SC', ibge: '4215505' },
       { nome: 'Santa Fé do Sul', uf: 'SP', ibge: '3546603' },
+      { nome: 'Santa Maria de Itabira', uf: 'MG', ibge: '3158003' },
       { nome: 'Santa Terezinha', uf: 'SC', ibge: '4215679' },
       { nome: 'Santana da Vargem', uf: 'MG', ibge: '3158300' },
       { nome: 'Santo Amaro da Imperatriz', uf: 'SC', ibge: '4215703' },

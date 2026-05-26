@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 85
+    municipios: 86
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '85' },
+    { key: 'Total Municipios', val: '86' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -88,6 +88,7 @@
       { nome: 'Faxinal do Soturno', uf: 'RS', ibge: '4308003' },
       { nome: 'Feliz', uf: 'RS', ibge: '4308102' },
       { nome: 'Getúlio Vargas', uf: 'RS', ibge: '4308904' },
+      { nome: 'Glorinha', uf: 'RS', ibge: '4309050' },
       { nome: 'Guaporé', uf: 'RS', ibge: '4309407' },
       { nome: 'Guarani das Missões', uf: 'RS', ibge: '4309506' },
       { nome: 'Ibiraiaras', uf: 'RS', ibge: '4309902' },

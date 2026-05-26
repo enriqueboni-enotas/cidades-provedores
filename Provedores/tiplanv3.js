@@ -3,11 +3,11 @@
   nome: 'TiplanV3',
   empresa: 'TiplanV3',
   stats: {
-    municipios: 1
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'TiplanV3' },
-    { key: 'Total Municipios', val: '1' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -28,12 +28,13 @@
     usaDescricaoServico: false,
     usaCNAE: false,
     usaNBS: true,
-    usaItemListaServico: false,
+    usaItemListaServico: true,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
-    suportaEmissaoNFeSemCliente: true,
+    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 5 dígitos (com formatação).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 01.01 ou 14.02',
+    suportaEmissaoNFeSemCliente: false,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
@@ -59,7 +60,8 @@
   },
   municipiosLista: {
     'tiplanv3': [
-      { nome: 'Itaguaí', uf: 'RJ', ibge: '3302007' }
+      { nome: 'Itaguaí', uf: 'RJ', ibge: '3302007' },
+      { nome: 'Rio das Ostras', uf: 'RJ', ibge: '3304524' }
     ]
   }
 };

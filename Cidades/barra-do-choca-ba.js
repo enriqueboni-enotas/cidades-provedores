@@ -1,30 +1,30 @@
 ﻿var cidadeDetalhe = {
-  id: 'santa-ines-ma',
-  nome: 'Santa Inês',
-  uf: 'MA',
-  ibge: '2109908',
-  constante: 'CodigoIBGE.SantaInesMA',
+  id: 'barra-do-choca-ba',
+  nome: 'Barra do Choça',
+  uf: 'BA',
+  ibge: '2902906',
+  constante: 'CodigoIBGE.BarraDoChocaBA',
   provedorAtual: {
-    nome: 'PortalFacil',
-    namespace: 'http://ws.oportaltributario.com.br/santaines/schema/nfse_v202.xsd',
+    nome: 'EeLv3',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    versaoAbrasf: '2.02',
-    infoAdicional: 'Preferir ativar versao 2.04 pois a versao 2.01 tem q adicionar o ws de cada cidade. Essa cidade o soapction dele estava errado\n        na chamado da classe do ws PortalFacilWS204 o soapaction e o envelope soap são criados manualmente. Então dá para usar todos as versões. Só ficar atento ao soapaction\n        (verificar pelo fiddler junto com o soapui)',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://ws.oportaltributario.com.br/santaines/homologacao/servicos'
       },
       producao: {
-        recepcaoLote: 'https://ws.oportaltributario.com.br/santaines/servicos'
+        recepcaoLote: 'https://ba-barradochoca-pm-nfs-backend.cloud.el.com.br/producao22/NfseWSService',
+        consultaRps: 'http://ba-barradochoca-pm-nfs.cloud.el.com.br/'
       }
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 1,
+    assinaturaDigital: 0,
     helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      certificadoDigital: 'Obrigatório a utilização de certificado digital.',
       usuario: null,
       senha: null,
       token: null,
@@ -32,11 +32,12 @@
     },
     suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 60,
-    usaCNAE: true,
+    usaCodigoServicoMunicipal: true,
+    usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal.\r\n\r\nExemplos válidos: 06421008 ou 634812-2',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 3 ou 4 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 801 ou 1401',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 6 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como código de Serviço ou código de serviço nacional. Exemplos válidos: 170901 ou 010201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',

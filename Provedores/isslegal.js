@@ -3,11 +3,11 @@
   nome: 'IssLegal',
   empresa: 'IssLegal',
   stats: {
-    municipios: 3
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'IssLegal' },
-    { key: 'Total Municipios', val: '3' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -52,7 +52,6 @@
   municipiosLista: {
     'isslegal': [
       { nome: 'Brazópolis', uf: 'MG', ibge: '3108909' },
-      { nome: 'Santa Maria de Itabira', uf: 'MG', ibge: '3158003' },
       { nome: 'Serro', uf: 'MG', ibge: '3167103' }
     ]
   }

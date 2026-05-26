@@ -16,11 +16,11 @@
       homologacao: {
       },
       producao: {
-        autenticacao: 'https://vinhedo.presconinformatica.com.br/ords/vinhedo/f?p=2300:70',
-        recepcaoLote: 'https://vinhedo.presconinformatica.com.br/ords/vinhedo/ws/nfe/emitir_nfe',
+        autenticacao: 'https://vinhedo.balker.com.br/ords/vinhedo/f?p=2300:70',
+        recepcaoLote: 'https://vinhedo.balker.com.br/ords/vinhedo/ws/nfe/emitir_nfe',
         consultaRps: 'https://vinhedo.presconinformatica.com.br/ords/prf/',
-        consultaNFe: 'https://vinhedo.presconinformatica.com.br/ords/vinhedo/ws/nfe/consulta_nota',
-        cancelamentoNFe: 'https://vinhedo.presconinformatica.com.br/ords/vinhedo/ws/nfe/cancelar_nota'
+        consultaNFe: 'https://vinhedo.balker.com.br/ords/vinhedo/ws/nfe/consulta_nota',
+        cancelamentoNFe: 'https://vinhedo.balker.com.br/ords/vinhedo/ws/nfe/cancelar_nota'
       }
     }
   },

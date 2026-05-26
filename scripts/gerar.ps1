@@ -4,8 +4,8 @@
 $ErrorActionPreference = 'Stop'
 $xmlPath = "c:\Git-Repositories\app-gw\ENotas.NFeService\ENotas.NFeService.Application.Provedores\Configuration\NFSe\ConfiguracoesMunicipios.xml"
 $csRoot = "c:\Git-Repositories\app-gw\ENotas.NFeService"
-$cidadesDir = Join-Path $PSScriptRoot "Cidades"
-$provedoresDir = Join-Path $PSScriptRoot "Provedores"
+$cidadesDir = Join-Path (Split-Path $PSScriptRoot -Parent) "Cidades"
+$provedoresDir = Join-Path (Split-Path $PSScriptRoot -Parent) "Provedores"
 
 if (!(Test-Path $cidadesDir)) { New-Item -ItemType Directory -Path $cidadesDir | Out-Null }
 if (!(Test-Path $provedoresDir)) { New-Item -ItemType Directory -Path $provedoresDir | Out-Null }

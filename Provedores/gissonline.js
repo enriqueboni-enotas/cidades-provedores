@@ -3,11 +3,11 @@
   nome: 'GissOnline',
   empresa: 'GissOnline',
   stats: {
-    municipios: 21
+    municipios: 22
   },
   visaoGeral: [
     { key: 'Nome', val: 'GissOnline' },
-    { key: 'Total Municipios', val: '21' },
+    { key: 'Total Municipios', val: '22' },
     { key: 'Estados Atendidos', val: ['SP', 'PE', 'RJ', 'PR', 'GO', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -69,6 +69,7 @@
       { nome: 'Mongaguá', uf: 'SP', ibge: '3531100' },
       { nome: 'Paulínia', uf: 'SP', ibge: '3536505' },
       { nome: 'Paulista', uf: 'PE', ibge: '2610707' },
+      { nome: 'Piedade', uf: 'SP', ibge: '3537800' },
       { nome: 'Praia Grande', uf: 'SP', ibge: '3541000' },
       { nome: 'Ribeirão Pires', uf: 'SP', ibge: '3543303' },
       { nome: 'Santos', uf: 'SP', ibge: '3548500' },

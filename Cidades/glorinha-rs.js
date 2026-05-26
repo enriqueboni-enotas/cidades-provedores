@@ -1,22 +1,25 @@
 ﻿var cidadeDetalhe = {
-  id: 'rio-das-ostras-rj',
-  nome: 'Rio das Ostras',
-  uf: 'RJ',
-  ibge: '3304524',
-  constante: 'CodigoIBGE.RioDasOstrasRJ',
+  id: 'glorinha-rs',
+  nome: 'Glorinha',
+  uf: 'RS',
+  ibge: '4309050',
+  constante: 'CodigoIBGE.GlorinhaRS',
   provedorAtual: {
-    nome: 'TiplanV3',
-    namespace: null,
+    nome: 'GOVBRv3',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://riodasostrashomologacao.nfe.com.br/nfse/wsnacional2/nfse.asmx'
+        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://spe.riodasostras.rj.gov.br/api/adn/dps',
+        recepcaoLote: 'https://webapp1-glorinha.cidade360.cloud/nfse.API/NotaNacional',
+        consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
@@ -41,15 +44,14 @@
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
-    usaCNAE: false,
+    usaCNAE: true,
     usaNBS: true,
-    usaItemListaServico: true,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado por 5 dígitos (com formatação).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 01.01 ou 14.02',
-    suportaEmissaoNFeSemCliente: false,
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
+    suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
@@ -57,6 +59,10 @@
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

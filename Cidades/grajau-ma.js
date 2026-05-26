@@ -18,7 +18,7 @@
         recepcaoLote: 'https://speedgov.com.br/wsmod/Nfes'
       },
       producao: {
-        recepcaoLote: 'https://speedgov.com.br/wsgrj/Nfes'
+        recepcaoLote: 'https://speedgov.com.br/wsgru/Nfes'
       }
     },
     emissaoSemCertificado: {

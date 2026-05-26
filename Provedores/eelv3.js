@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 74
+    municipios: 75
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '74' },
+    { key: 'Total Municipios', val: '75' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -68,6 +68,7 @@
       { nome: 'Araçuaí', uf: 'MG', ibge: '3103405' },
       { nome: 'Armação dos Búzios', uf: 'RJ', ibge: '3300233' },
       { nome: 'Baixo Guandu', uf: 'ES', ibge: '3200805' },
+      { nome: 'Barra do Choça', uf: 'BA', ibge: '2902906' },
       { nome: 'Barreiras', uf: 'BA', ibge: '2903201' },
       { nome: 'Boa Esperança', uf: 'ES', ibge: '3201001' },
       { nome: 'Bom Jesus do Norte', uf: 'ES', ibge: '3201100' },

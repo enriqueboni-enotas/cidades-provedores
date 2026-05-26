@@ -1,9 +1,9 @@
 ﻿var cidadeDetalhe = {
-  id: 'sao-gabriel-do-oeste-ms',
-  nome: 'São Gabriel do Oeste',
-  uf: 'MS',
-  ibge: '5007695',
-  constante: 'CodigoIBGE.SaoGabrielDoOesteMS',
+  id: 'itaju-sp',
+  nome: 'Itaju',
+  uf: 'SP',
+  ibge: '3522000',
+  constante: 'CodigoIBGE.ItajuSP',
   provedorAtual: {
     nome: 'Fiorilli',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
@@ -18,7 +18,7 @@
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'https://pmsaogabriel.rcmsuporte.com.br/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'http://187.62.177.92:8084/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

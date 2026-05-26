@@ -3,11 +3,11 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 115
+    municipios: 116
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '115' },
+    { key: 'Total Municipios', val: '116' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -75,6 +75,7 @@
       { nome: 'Balneário Barra do Sul', uf: 'SC', ibge: '4202057' },
       { nome: 'Balneário Piçarras', uf: 'SC', ibge: '4212809' },
       { nome: 'Barra Velha', uf: 'SC', ibge: '4202107' },
+      { nome: 'Benedito Novo', uf: 'SC', ibge: '4202206' },
       { nome: 'Bom Despacho', uf: 'MG', ibge: '3107406' },
       { nome: 'Bom Retiro', uf: 'SC', ibge: '4202602' },
       { nome: 'Bombinhas', uf: 'SC', ibge: '4202453' },

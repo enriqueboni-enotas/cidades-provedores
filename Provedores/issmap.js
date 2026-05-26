@@ -3,11 +3,11 @@
   nome: 'ISSMAP',
   empresa: 'ISSMAP',
   stats: {
-    municipios: 12
+    municipios: 13
   },
   visaoGeral: [
     { key: 'Nome', val: 'ISSMAP' },
-    { key: 'Total Municipios', val: '12' },
+    { key: 'Total Municipios', val: '13' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -53,6 +53,7 @@
       { nome: 'Manduri', uf: 'SP', ibge: '3528601' },
       { nome: 'Piraju', uf: 'SP', ibge: '3538808' },
       { nome: 'Ribeirão do Sul', uf: 'SP', ibge: '3543204' },
+      { nome: 'Salto Grande', uf: 'SP', ibge: '3545407' },
       { nome: 'São Pedro do Turvo', uf: 'SP', ibge: '3550506' },
       { nome: 'Sarutaiá', uf: 'SP', ibge: '3551207' },
       { nome: 'Timburi', uf: 'SP', ibge: '3554607' }

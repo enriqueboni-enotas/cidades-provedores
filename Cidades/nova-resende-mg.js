@@ -15,7 +15,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'https://mg-novaresende-pm-nfs.cloud.el.com.br/NfseWSService'
+        recepcaoLote: 'https://mg-novaresende-pm-nfs-backend.cloud.el.com.br/producao16/NfseWSService'
       }
     }
   },

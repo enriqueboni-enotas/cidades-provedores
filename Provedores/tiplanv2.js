@@ -3,11 +3,11 @@
   nome: 'TIPLANv2',
   empresa: 'TIPLANv2',
   stats: {
-    municipios: 6
+    municipios: 5
   },
   visaoGeral: [
     { key: 'Nome', val: 'TIPLANv2' },
-    { key: 'Total Municipios', val: '6' },
+    { key: 'Total Municipios', val: '5' },
     { key: 'Estados Atendidos', val: ['RJ', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -58,8 +58,7 @@
       { nome: 'Angra dos Reis', uf: 'RJ', ibge: '3300100' },
       { nome: 'Macaé', uf: 'RJ', ibge: '3302403' },
       { nome: 'Mangaratiba', uf: 'RJ', ibge: '3302601' },
-      { nome: 'Piraí', uf: 'RJ', ibge: '3304003' },
-      { nome: 'Rio das Ostras', uf: 'RJ', ibge: '3304524' }
+      { nome: 'Piraí', uf: 'RJ', ibge: '3304003' }
     ]
   }
 };

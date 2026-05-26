@@ -8,7 +8,7 @@
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
     { key: 'Total Municipios', val: '220' },
-    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'AM', 'TO', 'PB', 'RS', 'AL'], type: 'uf-badges' }
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -129,9 +129,9 @@
       { nome: 'Ibirá', uf: 'SP', ibge: '3519402' },
       { nome: 'Igarapava', uf: 'SP', ibge: '3520103' },
       { nome: 'Itaberá', uf: 'SP', ibge: '3521705' },
-      { nome: 'Itacoatiara', uf: 'AM', ibge: '1301902' },
       { nome: 'Itaí', uf: 'SP', ibge: '3521804' },
       { nome: 'Itajobi', uf: 'SP', ibge: '3521903' },
+      { nome: 'Itaju', uf: 'SP', ibge: '3522000' },
       { nome: 'Itambé', uf: 'PE', ibge: '2607653' },
       { nome: 'Itapecerica', uf: 'MG', ibge: '3133501' },
       { nome: 'Itapeva', uf: 'MG', ibge: '3133600' },

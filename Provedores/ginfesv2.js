@@ -3,11 +3,11 @@
   nome: 'GINFESv2',
   empresa: 'GINFESv2',
   stats: {
-    municipios: 16
+    municipios: 15
   },
   visaoGeral: [
     { key: 'Nome', val: 'GINFESv2' },
-    { key: 'Total Municipios', val: '16' },
+    { key: 'Total Municipios', val: '15' },
     { key: 'Estados Atendidos', val: ['SP', 'AL', 'BA'], type: 'uf-badges' }
   ],
   municipiosLista: {
@@ -22,7 +22,6 @@
       { nome: 'Mauá', uf: 'SP', ibge: '3529401' },
       { nome: 'Morro Agudo', uf: 'SP', ibge: '3531902' },
       { nome: 'Olímpia', uf: 'SP', ibge: '3533908' },
-      { nome: 'Piedade', uf: 'SP', ibge: '3537800' },
       { nome: 'Registro', uf: 'SP', ibge: '3542602' },
       { nome: 'Rio Claro', uf: 'SP', ibge: '3543907' },
       { nome: 'Santo André', uf: 'SP', ibge: '3547809' },
