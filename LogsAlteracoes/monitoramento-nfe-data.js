@@ -1,11 +1,11 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 30/05/2026 18:00 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 30/05/2026 19:16 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "30/05/2026 18:00",
+  geradoEm: "30/05/2026 19:16",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
-    "latest.nfe.stuck_in_intermediate_status.count": 202,
+    "latest.nfe.stuck_in_intermediate_status.count": 201,
     "nfe.municipio_servico": "Corbélia"
   },
   {
@@ -102,8 +102,18 @@ var monitoramentoNfeData = {
   tempoMaxProcessamento: [
   {
     "facet": "Canoas",
-    "max.nfe.processing_time.minutes": 52,
+    "max.nfe.processing_time.minutes": 57,
     "nfe.municipio_servico": "Canoas"
+  },
+  {
+    "facet": "Eusébio",
+    "max.nfe.processing_time.minutes": 53,
+    "nfe.municipio_servico": "Eusébio"
+  },
+  {
+    "facet": "Barueri",
+    "max.nfe.processing_time.minutes": 51,
+    "nfe.municipio_servico": "Barueri"
   },
   {
     "facet": "Caxias do Sul",
@@ -111,44 +121,34 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Caxias do Sul"
   },
   {
-    "facet": "Rio de Janeiro",
-    "max.nfe.processing_time.minutes": 47,
-    "nfe.municipio_servico": "Rio de Janeiro"
-  },
-  {
     "facet": "Florianópolis",
     "max.nfe.processing_time.minutes": 37,
     "nfe.municipio_servico": "Florianópolis"
   },
   {
-    "facet": "Belo Horizonte",
-    "max.nfe.processing_time.minutes": 33,
-    "nfe.municipio_servico": "Belo Horizonte"
+    "facet": "Rio de Janeiro",
+    "max.nfe.processing_time.minutes": 34,
+    "nfe.municipio_servico": "Rio de Janeiro"
+  },
+  {
+    "facet": "Curitiba",
+    "max.nfe.processing_time.minutes": 28,
+    "nfe.municipio_servico": "Curitiba"
   },
   {
     "facet": "",
-    "max.nfe.processing_time.minutes": 30,
+    "max.nfe.processing_time.minutes": 26,
     "nfe.municipio_servico": ""
-  },
-  {
-    "facet": "Barueri",
-    "max.nfe.processing_time.minutes": 28,
-    "nfe.municipio_servico": "Barueri"
-  },
-  {
-    "facet": "Eusébio",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Eusébio"
-  },
-  {
-    "facet": "São José de Ribamar",
-    "max.nfe.processing_time.minutes": 22,
-    "nfe.municipio_servico": "São José de Ribamar"
   },
   {
     "facet": "Arraial do Cabo",
     "max.nfe.processing_time.minutes": 19,
     "nfe.municipio_servico": "Arraial do Cabo"
+  },
+  {
+    "facet": "Ibirá",
+    "max.nfe.processing_time.minutes": 16,
+    "nfe.municipio_servico": "Ibirá"
   }
 ],
   travadasPorMotivo: [
@@ -160,17 +160,17 @@ var monitoramentoNfeData = {
 ],
   tempoPorStatus: [
   {
-    "average.nfe.processing_time.minutes": 14.069767441860465,
+    "average.nfe.processing_time.minutes": 9.283333333333333,
     "facet": "14",
     "nfe.status": "14"
   },
   {
-    "average.nfe.processing_time.minutes": 2.3537284894837476,
+    "average.nfe.processing_time.minutes": 2.783651123277327,
     "facet": "6",
     "nfe.status": "6"
   },
   {
-    "average.nfe.processing_time.minutes": 1.1662983425414364,
+    "average.nfe.processing_time.minutes": 1.2026307207305142,
     "facet": "5",
     "nfe.status": "5"
   }
@@ -182,7 +182,7 @@ var monitoramentoNfeData = {
       "13"
     ],
     "max_min": 34,
-    "media_min": 14.069767441860465,
+    "media_min": 9.283333333333333,
     "p95_min": {
       "95": 34
     }
@@ -192,10 +192,10 @@ var monitoramentoNfeData = {
       "6",
       "3"
     ],
-    "max_min": 48,
-    "media_min": 2.3537284894837476,
+    "max_min": 57,
+    "media_min": 2.783651123277327,
     "p95_min": {
-      "95": 13.125
+      "95": 19.25
     }
   },
   {
@@ -203,8 +203,8 @@ var monitoramentoNfeData = {
       "5",
       "4"
     ],
-    "max_min": 52,
-    "media_min": 1.1662983425414364,
+    "max_min": 57,
+    "media_min": 1.2026307207305142,
     "p95_min": {
       "95": 2.03125
     }
@@ -212,17 +212,17 @@ var monitoramentoNfeData = {
 ],
   perfMunicipio: [
   {
-    "average.nfe.processing_time.minutes": 28,
+    "average.nfe.processing_time.minutes": 57,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Canoas",
-    "max.nfe.processing_time.minutes": 52,
+    "max.nfe.processing_time.minutes": 57,
     "nfe.municipio_servico": "Canoas",
     "percentile.nfe.processing_time.minutes": {
-      "95": 47.25
+      "95": 57
     }
   },
   {
-    "average.nfe.processing_time.minutes": 24.416666666666668,
+    "average.nfe.processing_time.minutes": 26.958333333333332,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Caxias do Sul",
     "max.nfe.processing_time.minutes": 48,
@@ -242,23 +242,13 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 18.75,
+    "average.nfe.processing_time.minutes": 18.675,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Florianópolis",
     "max.nfe.processing_time.minutes": 37,
     "nfe.municipio_servico": "Florianópolis",
     "percentile.nfe.processing_time.minutes": {
       "95": 37
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 17.5,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Eusébio",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Eusébio",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 23
     }
   },
   {
@@ -272,33 +262,33 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 14.027777777777779,
-    "count.nfe.processing_time.minutes": 180,
-    "facet": "Rio de Janeiro",
-    "max.nfe.processing_time.minutes": 47,
-    "nfe.municipio_servico": "Rio de Janeiro",
+    "average.nfe.processing_time.minutes": 13.05,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Eusébio",
+    "max.nfe.processing_time.minutes": 53,
+    "nfe.municipio_servico": "Eusébio",
     "percentile.nfe.processing_time.minutes": {
-      "95": 37.5
+      "95": 19.125
     }
   },
   {
-    "average.nfe.processing_time.minutes": 9.208333333333334,
+    "average.nfe.processing_time.minutes": 11.666666666666666,
     "count.nfe.processing_time.minutes": 240,
     "facet": "Barueri",
-    "max.nfe.processing_time.minutes": 28,
+    "max.nfe.processing_time.minutes": 51,
     "nfe.municipio_servico": "Barueri",
     "percentile.nfe.processing_time.minutes": {
-      "95": 28
+      "95": 43.5
     }
   },
   {
-    "average.nfe.processing_time.minutes": 9.083333333333334,
+    "average.nfe.processing_time.minutes": 11.577777777777778,
     "count.nfe.processing_time.minutes": 180,
-    "facet": "",
-    "max.nfe.processing_time.minutes": 30,
-    "nfe.municipio_servico": "",
+    "facet": "Rio de Janeiro",
+    "max.nfe.processing_time.minutes": 34,
+    "nfe.municipio_servico": "Rio de Janeiro",
     "percentile.nfe.processing_time.minutes": {
-      "95": 30
+      "95": 34
     }
   },
   {
@@ -312,33 +302,13 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 8,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "São José de Ribamar",
-    "max.nfe.processing_time.minutes": 22,
-    "nfe.municipio_servico": "São José de Ribamar",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 22
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 6.541666666666667,
+    "average.nfe.processing_time.minutes": 6.958333333333333,
     "count.nfe.processing_time.minutes": 120,
     "facet": "João Pessoa",
     "max.nfe.processing_time.minutes": 13,
     "nfe.municipio_servico": "João Pessoa",
     "percentile.nfe.processing_time.minutes": {
       "95": 13
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 4.166666666666667,
-    "count.nfe.processing_time.minutes": 180,
-    "facet": "Belo Horizonte",
-    "max.nfe.processing_time.minutes": 33,
-    "nfe.municipio_servico": "Belo Horizonte",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 25.25
     }
   },
   {
@@ -352,7 +322,7 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3.75,
+    "average.nfe.processing_time.minutes": 3.7583333333333333,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Salvador",
     "max.nfe.processing_time.minutes": 7,
@@ -362,41 +332,61 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Rondonópolis",
+    "average.nfe.processing_time.minutes": 3.411111111111111,
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "",
+    "max.nfe.processing_time.minutes": 26,
+    "nfe.municipio_servico": "",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 26
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.2666666666666666,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Curitiba",
+    "max.nfe.processing_time.minutes": 28,
+    "nfe.municipio_servico": "Curitiba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 19.125
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.022222222222222,
+    "count.nfe.processing_time.minutes": 180,
+    "facet": "Belo Horizonte",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "Belo Horizonte",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 6
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.275,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Videira",
     "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Rondonópolis",
+    "nfe.municipio_servico": "Videira",
     "percentile.nfe.processing_time.minutes": {
       "95": 3
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.8333333333333335,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Fortaleza",
-    "max.nfe.processing_time.minutes": 7,
-    "nfe.municipio_servico": "Fortaleza",
+    "average.nfe.processing_time.minutes": 2.158333333333333,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Niterói",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Niterói",
     "percentile.nfe.processing_time.minutes": {
-      "95": 7
+      "95": 4
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.75,
+    "average.nfe.processing_time.minutes": 2.1333333333333333,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Belém",
     "max.nfe.processing_time.minutes": 5,
     "nfe.municipio_servico": "Belém",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 5
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.4722222222222223,
-    "count.nfe.processing_time.minutes": 180,
-    "facet": "São Paulo",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "São Paulo",
     "percentile.nfe.processing_time.minutes": {
       "95": 5
     }
@@ -442,37 +432,27 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.625,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Videira",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Videira",
+    "average.nfe.processing_time.minutes": 1.6833333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Urussanga",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Urussanga",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
+      "95": 2
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.5,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Cabo Frio",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Cabo Frio",
+    "average.nfe.processing_time.minutes": 1.4,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Fortaleza",
+    "max.nfe.processing_time.minutes": 7,
+    "nfe.municipio_servico": "Fortaleza",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
+      "95": 7
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.375,
-    "count.nfe.processing_time.minutes": 40,
-    "facet": "Niterói",
-    "max.nfe.processing_time.minutes": 4,
-    "nfe.municipio_servico": "Niterói",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 4
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.2916666666666667,
+    "average.nfe.processing_time.minutes": 1.2833333333333334,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Goiânia",
     "max.nfe.processing_time.minutes": 2,
@@ -482,11 +462,11 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.25,
+    "average.nfe.processing_time.minutes": 1.2666666666666666,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "Araçatuba",
+    "facet": "Rio Grande",
     "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Araçatuba",
+    "nfe.municipio_servico": "Rio Grande",
     "percentile.nfe.processing_time.minutes": {
       "95": 2
     }
@@ -513,7 +493,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 50,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Araucária",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Araucária",
@@ -539,6 +519,16 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Nova Serrana",
     "percentile.nfe.processing_time.minutes": {
       "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Nanuque",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Nanuque",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
     }
   },
   {
@@ -584,6 +574,16 @@ var monitoramentoNfeData = {
   {
     "average.nfe.processing_time.minutes": 1,
     "count.nfe.processing_time.minutes": 60,
+    "facet": "Araçatuba",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Araçatuba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "East Jakarta",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "East Jakarta",
@@ -607,26 +607,6 @@ var monitoramentoNfeData = {
     "facet": "Santana",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Santana",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Montes Claros",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Montes Claros",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Vila Velha",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Vila Velha",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -664,6 +644,16 @@ var monitoramentoNfeData = {
   {
     "average.nfe.processing_time.minutes": 1,
     "count.nfe.processing_time.minutes": 60,
+    "facet": "São Carlos",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "São Carlos",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Istanbul",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Istanbul",
@@ -677,6 +667,16 @@ var monitoramentoNfeData = {
     "facet": "Imbé",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Imbé",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Olinda",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Olinda",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -811,13 +811,13 @@ var monitoramentoNfeData = {
 ],
   statsGlobais: [
   {
-    "average.nfe.processing_time.minutes": 1.9656696125084976,
-    "max.nfe.processing_time.minutes": 52,
+    "average.nfe.processing_time.minutes": 2.0498137802607075,
+    "max.nfe.processing_time.minutes": 57,
     "percentile.nfe.processing_time.minutes": {
       "50": 0,
       "90": 2.03125,
-      "95": 10.125,
-      "99": 37.5
+      "95": 8.125,
+      "99": 48.5
     }
   }
 ],
@@ -828,7 +828,7 @@ var monitoramentoNfeData = {
 ],
   totalMunicipios: [
   {
-    "uniqueCount.nfe.municipio_servico": 195
+    "uniqueCount.nfe.municipio_servico": 198
   }
 ],
   volumeMunicipio: [
@@ -858,7 +858,7 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "São Paulo"
   },
   {
-    "count.nfe.processing_time.minutes": 125,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Recife",
     "nfe.municipio_servico": "Recife"
   },
@@ -989,7 +989,7 @@ var monitoramentoNfeData = {
       "Corbélia",
       "1"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 202
+    "latest.nfe.stuck_in_intermediate_status.count": 201
   },
   {
     "facet": [
@@ -1201,7 +1201,7 @@ var monitoramentoNfeData = {
       "1",
       "Corbélia"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 202
+    "latest.nfe.stuck_in_intermediate_status.count": 201
   },
   {
     "facet": [
@@ -1336,7 +1336,7 @@ var monitoramentoNfeData = {
       "",
       "SIMIONI & CASAROLLI TREINAMENTOS ON LINE LTDA."
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 202
+    "latest.nfe.stuck_in_intermediate_status.count": 201
   },
   {
     "facet": [
@@ -1488,171 +1488,171 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 1,
+    "canceladas": 0,
     "devolucoes": 0,
-    "em_emissao": 60,
+    "em_emissao": 13,
     "email": 0,
-    "emitidas": 4108,
-    "falhas": 262
+    "emitidas": 2340,
+    "falhas": 207
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1780088100,
-    "emitidas": 9784,
-    "endTimeSeconds": 1780091700,
-    "falhas": 392
+    "beginTimeSeconds": 1780092600,
+    "emitidas": 6676,
+    "endTimeSeconds": 1780096200,
+    "falhas": 486
   },
   {
-    "beginTimeSeconds": 1780091700,
-    "emitidas": 6597,
-    "endTimeSeconds": 1780095300,
-    "falhas": 468
+    "beginTimeSeconds": 1780096200,
+    "emitidas": 8401,
+    "endTimeSeconds": 1780099800,
+    "falhas": 150
   },
   {
-    "beginTimeSeconds": 1780095300,
-    "emitidas": 8462,
-    "endTimeSeconds": 1780098900,
-    "falhas": 203
+    "beginTimeSeconds": 1780099800,
+    "emitidas": 7814,
+    "endTimeSeconds": 1780103400,
+    "falhas": 183
   },
   {
-    "beginTimeSeconds": 1780098900,
-    "emitidas": 7913,
-    "endTimeSeconds": 1780102500,
-    "falhas": 162
+    "beginTimeSeconds": 1780103400,
+    "emitidas": 7770,
+    "endTimeSeconds": 1780107000,
+    "falhas": 244
   },
   {
-    "beginTimeSeconds": 1780102500,
-    "emitidas": 7787,
-    "endTimeSeconds": 1780106100,
-    "falhas": 206
+    "beginTimeSeconds": 1780107000,
+    "emitidas": 8800,
+    "endTimeSeconds": 1780110600,
+    "falhas": 266
   },
   {
-    "beginTimeSeconds": 1780106100,
-    "emitidas": 8780,
-    "endTimeSeconds": 1780109700,
-    "falhas": 300
+    "beginTimeSeconds": 1780110600,
+    "emitidas": 6917,
+    "endTimeSeconds": 1780114200,
+    "falhas": 75
   },
   {
-    "beginTimeSeconds": 1780109700,
-    "emitidas": 7128,
-    "endTimeSeconds": 1780113300,
-    "falhas": 122
+    "beginTimeSeconds": 1780114200,
+    "emitidas": 6724,
+    "endTimeSeconds": 1780117800,
+    "falhas": 42
   },
   {
-    "beginTimeSeconds": 1780113300,
-    "emitidas": 6805,
-    "endTimeSeconds": 1780116900,
-    "falhas": 41
+    "beginTimeSeconds": 1780117800,
+    "emitidas": 5963,
+    "endTimeSeconds": 1780121400,
+    "falhas": 66
   },
   {
-    "beginTimeSeconds": 1780116900,
-    "emitidas": 5940,
-    "endTimeSeconds": 1780120500,
-    "falhas": 35
+    "beginTimeSeconds": 1780121400,
+    "emitidas": 2202,
+    "endTimeSeconds": 1780125000,
+    "falhas": 29
   },
   {
-    "beginTimeSeconds": 1780120500,
-    "emitidas": 3569,
-    "endTimeSeconds": 1780124100,
-    "falhas": 59
+    "beginTimeSeconds": 1780125000,
+    "emitidas": 1567,
+    "endTimeSeconds": 1780128600,
+    "falhas": 119
   },
   {
-    "beginTimeSeconds": 1780124100,
-    "emitidas": 1512,
-    "endTimeSeconds": 1780127700,
-    "falhas": 122
+    "beginTimeSeconds": 1780128600,
+    "emitidas": 1420,
+    "endTimeSeconds": 1780132200,
+    "falhas": 37
   },
   {
-    "beginTimeSeconds": 1780127700,
-    "emitidas": 1408,
-    "endTimeSeconds": 1780131300,
-    "falhas": 31
+    "beginTimeSeconds": 1780132200,
+    "emitidas": 938,
+    "endTimeSeconds": 1780135800,
+    "falhas": 91
   },
   {
-    "beginTimeSeconds": 1780131300,
-    "emitidas": 894,
-    "endTimeSeconds": 1780134900,
-    "falhas": 95
+    "beginTimeSeconds": 1780135800,
+    "emitidas": 898,
+    "endTimeSeconds": 1780139400,
+    "falhas": 117
   },
   {
-    "beginTimeSeconds": 1780134900,
-    "emitidas": 1044,
-    "endTimeSeconds": 1780138500,
-    "falhas": 114
+    "beginTimeSeconds": 1780139400,
+    "emitidas": 1497,
+    "endTimeSeconds": 1780143000,
+    "falhas": 172
   },
   {
-    "beginTimeSeconds": 1780138500,
-    "emitidas": 1374,
-    "endTimeSeconds": 1780142100,
-    "falhas": 147
-  },
-  {
-    "beginTimeSeconds": 1780142100,
-    "emitidas": 2115,
-    "endTimeSeconds": 1780145700,
-    "falhas": 264
-  },
-  {
-    "beginTimeSeconds": 1780145700,
-    "emitidas": 3198,
-    "endTimeSeconds": 1780149300,
-    "falhas": 489
-  },
-  {
-    "beginTimeSeconds": 1780149300,
-    "emitidas": 3257,
-    "endTimeSeconds": 1780152900,
-    "falhas": 534
-  },
-  {
-    "beginTimeSeconds": 1780152900,
+    "beginTimeSeconds": 1780143000,
     "emitidas": 2570,
-    "endTimeSeconds": 1780156500,
-    "falhas": 329
+    "endTimeSeconds": 1780146600,
+    "falhas": 320
   },
   {
-    "beginTimeSeconds": 1780156500,
-    "emitidas": 2054,
-    "endTimeSeconds": 1780160100,
-    "falhas": 357
+    "beginTimeSeconds": 1780146600,
+    "emitidas": 3403,
+    "endTimeSeconds": 1780150200,
+    "falhas": 467
   },
   {
-    "beginTimeSeconds": 1780160100,
-    "emitidas": 2497,
-    "endTimeSeconds": 1780163700,
-    "falhas": 249
+    "beginTimeSeconds": 1780150200,
+    "emitidas": 3091,
+    "endTimeSeconds": 1780153800,
+    "falhas": 624
   },
   {
-    "beginTimeSeconds": 1780163700,
-    "emitidas": 4020,
-    "endTimeSeconds": 1780167300,
-    "falhas": 220
+    "beginTimeSeconds": 1780153800,
+    "emitidas": 2130,
+    "endTimeSeconds": 1780157400,
+    "falhas": 219
   },
   {
-    "beginTimeSeconds": 1780167300,
-    "emitidas": 1998,
-    "endTimeSeconds": 1780170900,
-    "falhas": 895
+    "beginTimeSeconds": 1780157400,
+    "emitidas": 2402,
+    "endTimeSeconds": 1780161000,
+    "falhas": 350
   },
   {
-    "beginTimeSeconds": 1780170900,
-    "emitidas": 3943,
-    "endTimeSeconds": 1780174500,
-    "falhas": 293
+    "beginTimeSeconds": 1780161000,
+    "emitidas": 2728,
+    "endTimeSeconds": 1780164600,
+    "falhas": 235
+  },
+  {
+    "beginTimeSeconds": 1780164600,
+    "emitidas": 3455,
+    "endTimeSeconds": 1780168200,
+    "falhas": 240
+  },
+  {
+    "beginTimeSeconds": 1780168200,
+    "emitidas": 2241,
+    "endTimeSeconds": 1780171800,
+    "falhas": 911
+  },
+  {
+    "beginTimeSeconds": 1780171800,
+    "emitidas": 4514,
+    "endTimeSeconds": 1780175400,
+    "falhas": 258
+  },
+  {
+    "beginTimeSeconds": 1780175400,
+    "emitidas": 2618,
+    "endTimeSeconds": 1780179000,
+    "falhas": 211
   }
 ],
   filaOperacoes: [
   {
     "pendentes": 0,
-    "rodando": 0
+    "rodando": 3
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 2,
-    "ok": 27906
+    "falhas": 0,
+    "ok": 19664
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[
@@ -1720,7 +1720,7 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "SIMIONI & CASAROLLI TREINAMENTOS ON LINE LTDA.",
     "facet": "SIMIONI & CASAROLLI TREINAMENTOS ON LINE LTDA.",
-    "latest.nfe.stuck_in_intermediate_status.count": 202
+    "latest.nfe.stuck_in_intermediate_status.count": 201
   },
   {
     "empresa.razao_social": "RACIOCINIO CLINICO VET CURSOS E TREINAMENTOS PROFISSIONAIS LTDA",
