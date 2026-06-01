@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 01/06/2026 06:37 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 01/06/2026 12:42 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "01/06/2026 06:37",
+  geradoEm: "01/06/2026 12:42",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -79,14 +79,14 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Osasco"
   },
   {
-    "facet": "Cataguases",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
-    "nfe.municipio_servico": "Cataguases"
-  },
-  {
     "facet": "Aparecida de Goiânia",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.municipio_servico": "Aparecida de Goiânia"
+  },
+  {
+    "facet": "Cataguases",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Cataguases"
   },
   {
     "facet": "Ouro Preto do Oeste",
@@ -96,54 +96,54 @@ var monitoramentoNfeData = {
 ],
   tempoMaxProcessamento: [
   {
-    "facet": "Maceió",
-    "max.nfe.processing_time.minutes": 58,
-    "nfe.municipio_servico": "Maceió"
-  },
-  {
-    "facet": "Petrópolis",
-    "max.nfe.processing_time.minutes": 57,
-    "nfe.municipio_servico": "Petrópolis"
-  },
-  {
-    "facet": "Balneário Camboriú",
-    "max.nfe.processing_time.minutes": 56,
-    "nfe.municipio_servico": "Balneário Camboriú"
-  },
-  {
-    "facet": "Rio Grande",
-    "max.nfe.processing_time.minutes": 56,
-    "nfe.municipio_servico": "Rio Grande"
-  },
-  {
-    "facet": "Campina Grande",
-    "max.nfe.processing_time.minutes": 41,
-    "nfe.municipio_servico": "Campina Grande"
+    "facet": "Ibitinga",
+    "max.nfe.processing_time.minutes": 59,
+    "nfe.municipio_servico": "Ibitinga"
   },
   {
     "facet": "Nova Lima",
-    "max.nfe.processing_time.minutes": 27,
+    "max.nfe.processing_time.minutes": 57,
     "nfe.municipio_servico": "Nova Lima"
   },
   {
-    "facet": "Feira de Santana",
-    "max.nfe.processing_time.minutes": 25,
-    "nfe.municipio_servico": "Feira de Santana"
+    "facet": "Vila Velha",
+    "max.nfe.processing_time.minutes": 55,
+    "nfe.municipio_servico": "Vila Velha"
   },
   {
-    "facet": "Orlândia",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Orlândia"
+    "facet": "Fortaleza",
+    "max.nfe.processing_time.minutes": 55,
+    "nfe.municipio_servico": "Fortaleza"
   },
   {
-    "facet": "Eusébio",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Eusébio"
+    "facet": "Balneário Camboriú",
+    "max.nfe.processing_time.minutes": 47,
+    "nfe.municipio_servico": "Balneário Camboriú"
   },
   {
-    "facet": "Ribeirão Preto",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Ribeirão Preto"
+    "facet": "São Paulo",
+    "max.nfe.processing_time.minutes": 41,
+    "nfe.municipio_servico": "São Paulo"
+  },
+  {
+    "facet": "Porto Alegre",
+    "max.nfe.processing_time.minutes": 37,
+    "nfe.municipio_servico": "Porto Alegre"
+  },
+  {
+    "facet": "Blumenau",
+    "max.nfe.processing_time.minutes": 31,
+    "nfe.municipio_servico": "Blumenau"
+  },
+  {
+    "facet": "Piracicaba",
+    "max.nfe.processing_time.minutes": 29,
+    "nfe.municipio_servico": "Piracicaba"
+  },
+  {
+    "facet": "São José de Ribamar",
+    "max.nfe.processing_time.minutes": 24,
+    "nfe.municipio_servico": "São José de Ribamar"
   }
 ],
   travadasPorMotivo: [
@@ -155,31 +155,42 @@ var monitoramentoNfeData = {
 ],
   tempoPorStatus: [
   {
-    "average.nfe.processing_time.minutes": 3.5876543209876544,
+    "average.nfe.processing_time.minutes": 13.56326530612245,
+    "facet": "14",
+    "nfe.status": "14"
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.9121149897330596,
     "facet": "6",
     "nfe.status": "6"
   },
   {
-    "average.nfe.processing_time.minutes": 2.975170562576893,
+    "average.nfe.processing_time.minutes": 1.8991709339185565,
     "facet": "5",
     "nfe.status": "5"
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.6766666666666667,
-    "facet": "14",
-    "nfe.status": "14"
   }
 ],
   tempoPorStatusDetalhe: [
   {
     "facet": [
+      "14",
+      "13"
+    ],
+    "max_min": 55,
+    "media_min": 13.56326530612245,
+    "p95_min": {
+      "95": 55
+    }
+  },
+  {
+    "facet": [
       "6",
       "3"
     ],
-    "max_min": 58,
-    "media_min": 3.5876543209876544,
+    "max_min": 55,
+    "media_min": 1.9291485394655066,
     "p95_min": {
-      "95": 25.25
+      "95": 8.125
     }
   },
   {
@@ -187,87 +198,117 @@ var monitoramentoNfeData = {
       "5",
       "4"
     ],
-    "max_min": 57,
-    "media_min": 2.975170562576893,
+    "max_min": 59,
+    "media_min": 1.8991709339185565,
     "p95_min": {
-      "95": 21.25
+      "95": 6.0625
     }
   },
   {
     "facet": [
-      "14",
-      "13"
+      "6",
+      "0"
     ],
-    "max_min": 7,
-    "media_min": 2.6766666666666667,
+    "max_min": 0,
+    "media_min": 0,
     "p95_min": {
-      "95": 7
+      "95": 0
     }
   }
 ],
   perfMunicipio: [
   {
-    "average.nfe.processing_time.minutes": 49.575,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Balneário Camboriú",
-    "max.nfe.processing_time.minutes": 56,
-    "nfe.municipio_servico": "Balneário Camboriú",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 56
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 38,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Campina Grande",
-    "max.nfe.processing_time.minutes": 41,
-    "nfe.municipio_servico": "Campina Grande",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 41
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 38,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Petrópolis",
+    "average.nfe.processing_time.minutes": 35.38333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Nova Lima",
     "max.nfe.processing_time.minutes": 57,
-    "nfe.municipio_servico": "Petrópolis",
+    "nfe.municipio_servico": "Nova Lima",
     "percentile.nfe.processing_time.minutes": {
       "95": 57
     }
   },
   {
-    "average.nfe.processing_time.minutes": 35,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Rio Grande",
-    "max.nfe.processing_time.minutes": 56,
-    "nfe.municipio_servico": "Rio Grande",
+    "average.nfe.processing_time.minutes": 33,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Ibitinga",
+    "max.nfe.processing_time.minutes": 59,
+    "nfe.municipio_servico": "Ibitinga",
     "percentile.nfe.processing_time.minutes": {
-      "95": 56
+      "95": 59
     }
   },
   {
-    "average.nfe.processing_time.minutes": 29.175,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Maceió",
-    "max.nfe.processing_time.minutes": 58,
-    "nfe.municipio_servico": "Maceió",
+    "average.nfe.processing_time.minutes": 29.286956521739132,
+    "count.nfe.processing_time.minutes": 115,
+    "facet": "Fortaleza",
+    "max.nfe.processing_time.minutes": 55,
+    "nfe.municipio_servico": "Fortaleza",
     "percentile.nfe.processing_time.minutes": {
-      "95": 58
+      "95": 55
     }
   },
   {
-    "average.nfe.processing_time.minutes": 23,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Orlândia",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Orlândia",
+    "average.nfe.processing_time.minutes": 23.5,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Balneário Camboriú",
+    "max.nfe.processing_time.minutes": 47,
+    "nfe.municipio_servico": "Balneário Camboriú",
     "percentile.nfe.processing_time.minutes": {
-      "95": 23
+      "95": 47
     }
   },
   {
-    "average.nfe.processing_time.minutes": 22.1,
+    "average.nfe.processing_time.minutes": 20,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Maranguape",
+    "max.nfe.processing_time.minutes": 20,
+    "nfe.municipio_servico": "Maranguape",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 20
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 17.71232876712329,
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Vila Velha",
+    "max.nfe.processing_time.minutes": 55,
+    "nfe.municipio_servico": "Vila Velha",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 55
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 13.45945945945946,
+    "count.nfe.processing_time.minutes": 37,
+    "facet": "Piracicaba",
+    "max.nfe.processing_time.minutes": 29,
+    "nfe.municipio_servico": "Piracicaba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 29
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 11.85276073619632,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Porto Alegre",
+    "max.nfe.processing_time.minutes": 37,
+    "nfe.municipio_servico": "Porto Alegre",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 37
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 10.54601226993865,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "São Paulo",
+    "max.nfe.processing_time.minutes": 41,
+    "nfe.municipio_servico": "São Paulo",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 41
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 9.183333333333334,
     "count.nfe.processing_time.minutes": 60,
     "facet": "Eusébio",
     "max.nfe.processing_time.minutes": 23,
@@ -277,108 +318,178 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 22,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Feira de Santana",
-    "max.nfe.processing_time.minutes": 25,
-    "nfe.municipio_servico": "Feira de Santana",
+    "average.nfe.processing_time.minutes": 7.166666666666667,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Blumenau",
+    "max.nfe.processing_time.minutes": 31,
+    "nfe.municipio_servico": "Blumenau",
     "percentile.nfe.processing_time.minutes": {
-      "95": 25
+      "95": 27.125
     }
   },
   {
-    "average.nfe.processing_time.minutes": 18.5,
+    "average.nfe.processing_time.minutes": 6.65,
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Nova Lima",
-    "max.nfe.processing_time.minutes": 27,
-    "nfe.municipio_servico": "Nova Lima",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 27
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 18,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Ribeirão Preto",
-    "max.nfe.processing_time.minutes": 23,
-    "nfe.municipio_servico": "Ribeirão Preto",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 23
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 10.6,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Salvador",
-    "max.nfe.processing_time.minutes": 21,
-    "nfe.municipio_servico": "Salvador",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 21
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 10.5,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Chapecó",
-    "max.nfe.processing_time.minutes": 21,
-    "nfe.municipio_servico": "Chapecó",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 21
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 9.5,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Fortaleza",
+    "facet": "Jundiaí",
     "max.nfe.processing_time.minutes": 19,
-    "nfe.municipio_servico": "Fortaleza",
+    "nfe.municipio_servico": "Jundiaí",
     "percentile.nfe.processing_time.minutes": {
       "95": 19
     }
   },
   {
-    "average.nfe.processing_time.minutes": 9,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Formiga",
-    "max.nfe.processing_time.minutes": 9,
-    "nfe.municipio_servico": "Formiga",
+    "average.nfe.processing_time.minutes": 5.922330097087379,
+    "count.nfe.processing_time.minutes": 103,
+    "facet": "São José de Ribamar",
+    "max.nfe.processing_time.minutes": 24,
+    "nfe.municipio_servico": "São José de Ribamar",
     "percentile.nfe.processing_time.minutes": {
-      "95": 9
+      "95": 9.0625
     }
   },
   {
-    "average.nfe.processing_time.minutes": 6,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Nova Iguaçu",
-    "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Nova Iguaçu",
+    "average.nfe.processing_time.minutes": 5.423312883435583,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Belo Horizonte",
+    "max.nfe.processing_time.minutes": 11,
+    "nfe.municipio_servico": "Belo Horizonte",
     "percentile.nfe.processing_time.minutes": {
-      "95": 6
+      "95": 11
     }
   },
   {
     "average.nfe.processing_time.minutes": 5,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Belém",
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Santa Cruz do Sul",
+    "max.nfe.processing_time.minutes": 5,
+    "nfe.municipio_servico": "Santa Cruz do Sul",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 5
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 5,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "São Leopoldo",
+    "max.nfe.processing_time.minutes": 5,
+    "nfe.municipio_servico": "São Leopoldo",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 5
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 4.5,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Caruaru",
     "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Belém",
+    "nfe.municipio_servico": "Caruaru",
     "percentile.nfe.processing_time.minutes": {
       "95": 6
     }
   },
   {
+    "average.nfe.processing_time.minutes": 4.108333333333333,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Indaiatuba",
+    "max.nfe.processing_time.minutes": 22,
+    "nfe.municipio_servico": "Indaiatuba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 9.0625
+    }
+  },
+  {
     "average.nfe.processing_time.minutes": 4,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Imbituba",
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Araçatuba",
     "max.nfe.processing_time.minutes": 4,
-    "nfe.municipio_servico": "Imbituba",
+    "nfe.municipio_servico": "Araçatuba",
     "percentile.nfe.processing_time.minutes": {
       "95": 4
     }
   },
   {
+    "average.nfe.processing_time.minutes": 4,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Salgueiro",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Salgueiro",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 4
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.9902912621359223,
+    "count.nfe.processing_time.minutes": 103,
+    "facet": "Maceió",
+    "max.nfe.processing_time.minutes": 17,
+    "nfe.municipio_servico": "Maceió",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 17
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.716666666666667,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Aparecida de Goiânia",
+    "max.nfe.processing_time.minutes": 8,
+    "nfe.municipio_servico": "Aparecida de Goiânia",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 8
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.6625766871165646,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "",
+    "max.nfe.processing_time.minutes": 14,
+    "nfe.municipio_servico": "",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 13.0625
+    }
+  },
+  {
     "average.nfe.processing_time.minutes": 3.5,
-    "count.nfe.processing_time.minutes": 120,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Lauro de Freitas",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Lauro de Freitas",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 4
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3.4383561643835616,
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Curitiba",
+    "max.nfe.processing_time.minutes": 11,
+    "nfe.municipio_servico": "Curitiba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 11
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 3,
+    "count.nfe.processing_time.minutes": 37,
+    "facet": "Ourinhos",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Ourinhos",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.636986301369863,
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Florianópolis",
+    "max.nfe.processing_time.minutes": 5,
+    "nfe.municipio_servico": "Florianópolis",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 5
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.504854368932039,
+    "count.nfe.processing_time.minutes": 103,
     "facet": "Taboão da Serra",
     "max.nfe.processing_time.minutes": 6,
     "nfe.municipio_servico": "Taboão da Serra",
@@ -387,68 +498,28 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Sobral",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Sobral",
+    "average.nfe.processing_time.minutes": 2.3374233128834354,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Rio de Janeiro",
+    "max.nfe.processing_time.minutes": 24,
+    "nfe.municipio_servico": "Rio de Janeiro",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
+      "95": 6.03125
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Criciúma",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Criciúma",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.688888888888889,
-    "count.nfe.processing_time.minutes": 180,
-    "facet": "Brasília",
-    "max.nfe.processing_time.minutes": 7,
-    "nfe.municipio_servico": "Brasília",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 7
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Salgueiro",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Salgueiro",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "São Roque",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "São Roque",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Leopoldina",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Leopoldina",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2,
+    "average.nfe.processing_time.minutes": 2.325,
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Juiz de Fora",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "Juiz de Fora",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 6
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 2.1650485436893203,
+    "count.nfe.processing_time.minutes": 103,
     "facet": "Itajubá",
     "max.nfe.processing_time.minutes": 3,
     "nfe.municipio_servico": "Itajubá",
@@ -457,251 +528,191 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.7916666666666667,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Curitiba",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Curitiba",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.5333333333333334,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Araraquara",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Araraquara",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.2333333333333334,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Santa Maria",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Santa Maria",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1.0732600732600732,
-    "count.nfe.processing_time.minutes": 273,
-    "facet": "Barueri",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Barueri",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Campo Mourão",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Campo Mourão",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Francisco Beltrão",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Francisco Beltrão",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Luziânia",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Luziânia",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Foz do Iguaçu",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Foz do Iguaçu",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Barra do Piraí",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Barra do Piraí",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Guaratuba",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Guaratuba",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Cachoeirinha",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Cachoeirinha",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Nova Serrana",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Nova Serrana",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Nova Petrópolis",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Nova Petrópolis",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Nova Mutum",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Nova Mutum",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Varginha",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Varginha",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Cariacica",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Cariacica",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Botucatu",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Botucatu",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Sumaré",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Sumaré",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Cosmópolis",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Cosmópolis",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
+    "average.nfe.processing_time.minutes": 2.087378640776699,
+    "count.nfe.processing_time.minutes": 103,
     "facet": "Itapema",
-    "max.nfe.processing_time.minutes": 1,
+    "max.nfe.processing_time.minutes": 5,
     "nfe.municipio_servico": "Itapema",
     "percentile.nfe.processing_time.minutes": {
-      "95": 1
+      "95": 5
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1,
+    "average.nfe.processing_time.minutes": 2.066666666666667,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "São José dos Campos",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "São José dos Campos",
+    "facet": "Ribeirão Preto",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Ribeirão Preto",
     "percentile.nfe.processing_time.minutes": {
-      "95": 1
+      "95": 3
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Poá",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Poá",
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Goianésia",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Goianésia",
     "percentile.nfe.processing_time.minutes": {
-      "95": 1
+      "95": 2
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Jundiaí",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Jundiaí",
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Santiago",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Santiago",
     "percentile.nfe.processing_time.minutes": {
-      "95": 1
+      "95": 2
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Goiânia",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Goiânia",
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Nova Andradina",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Nova Andradina",
     "percentile.nfe.processing_time.minutes": {
-      "95": 1
+      "95": 2
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1,
+    "average.nfe.processing_time.minutes": 2,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Urussanga",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Urussanga",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.7916666666666667,
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Santos",
+    "facet": "Taubaté",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Taubaté",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.6333333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Londrina",
+    "max.nfe.processing_time.minutes": 5,
+    "nfe.municipio_servico": "Londrina",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 5
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.6,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "João Pessoa",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "João Pessoa",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.5,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Botucatu",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Botucatu",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.5,
+    "count.nfe.processing_time.minutes": 86,
+    "facet": "Ubá",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Ubá",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.4363636363636363,
+    "count.nfe.processing_time.minutes": 55,
+    "facet": "Ipatinga",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Ipatinga",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.3883495145631068,
+    "count.nfe.processing_time.minutes": 103,
+    "facet": "Socorro",
+    "max.nfe.processing_time.minutes": 4,
+    "nfe.municipio_servico": "Socorro",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 4
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.2833333333333334,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Teresina",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Teresina",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 3
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.125,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Manaus",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Manaus",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.1166666666666667,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "São Carlos",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "São Carlos",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Nova Iguaçu",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Santos",
+    "nfe.municipio_servico": "Nova Iguaçu",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 43,
+    "facet": "Tapejara",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Tapejara",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 37,
+    "facet": "Olímpia",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Olímpia",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -801,13 +812,13 @@ var monitoramentoNfeData = {
 ],
   statsGlobais: [
   {
-    "average.nfe.processing_time.minutes": 3.1799163179916317,
-    "max.nfe.processing_time.minutes": 58,
+    "average.nfe.processing_time.minutes": 2.325247013714791,
+    "max.nfe.processing_time.minutes": 59,
     "percentile.nfe.processing_time.minutes": {
       "50": 0,
-      "90": 6.0625,
-      "95": 21.25,
-      "99": 56.5
+      "90": 4.0625,
+      "95": 11.125,
+      "99": 47.5
     }
   }
 ],
@@ -818,44 +829,54 @@ var monitoramentoNfeData = {
 ],
   totalMunicipios: [
   {
-    "uniqueCount.nfe.municipio_servico": 177
+    "uniqueCount.nfe.municipio_servico": 204
   }
 ],
   volumeMunicipio: [
   {
-    "count.nfe.processing_time.minutes": 273,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Barueri",
     "nfe.municipio_servico": "Barueri"
   },
   {
-    "count.nfe.processing_time.minutes": 180,
+    "count.nfe.processing_time.minutes": 163,
     "facet": "",
     "nfe.municipio_servico": ""
   },
   {
-    "count.nfe.processing_time.minutes": 180,
-    "facet": "Brasília",
-    "nfe.municipio_servico": "Brasília"
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Belo Horizonte",
+    "nfe.municipio_servico": "Belo Horizonte"
   },
   {
-    "count.nfe.processing_time.minutes": 180,
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Rio de Janeiro",
+    "nfe.municipio_servico": "Rio de Janeiro"
+  },
+  {
+    "count.nfe.processing_time.minutes": 163,
     "facet": "São Paulo",
     "nfe.municipio_servico": "São Paulo"
   },
   {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Vinhedo",
-    "nfe.municipio_servico": "Vinhedo"
+    "count.nfe.processing_time.minutes": 163,
+    "facet": "Porto Alegre",
+    "nfe.municipio_servico": "Porto Alegre"
   },
   {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Teresina",
-    "nfe.municipio_servico": "Teresina"
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Curitiba",
+    "nfe.municipio_servico": "Curitiba"
   },
   {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Taboão da Serra",
-    "nfe.municipio_servico": "Taboão da Serra"
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Vila Velha",
+    "nfe.municipio_servico": "Vila Velha"
+  },
+  {
+    "count.nfe.processing_time.minutes": 146,
+    "facet": "Florianópolis",
+    "nfe.municipio_servico": "Florianópolis"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -864,68 +885,13 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Belo Horizonte",
-    "nfe.municipio_servico": "Belo Horizonte"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Araucária",
-    "nfe.municipio_servico": "Araucária"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Cachoeirinha",
-    "nfe.municipio_servico": "Cachoeirinha"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
     "facet": "Juiz de Fora",
     "nfe.municipio_servico": "Juiz de Fora"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Maringá",
-    "nfe.municipio_servico": "Maringá"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Nova Lima",
-    "nfe.municipio_servico": "Nova Lima"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Londrina",
-    "nfe.municipio_servico": "Londrina"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Jaguaruna",
-    "nfe.municipio_servico": "Jaguaruna"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Rio de Janeiro",
-    "nfe.municipio_servico": "Rio de Janeiro"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Campina Grande",
-    "nfe.municipio_servico": "Campina Grande"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Itu",
-    "nfe.municipio_servico": "Itu"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Sumaré",
-    "nfe.municipio_servico": "Sumaré"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Curitiba",
-    "nfe.municipio_servico": "Curitiba"
+    "facet": "Santa Maria",
+    "nfe.municipio_servico": "Santa Maria"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -934,8 +900,13 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "EXTERIOR",
-    "nfe.municipio_servico": "EXTERIOR"
+    "facet": "Jundiaí",
+    "nfe.municipio_servico": "Jundiaí"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Goiânia",
+    "nfe.municipio_servico": "Goiânia"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -944,33 +915,73 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Ribeirão Preto",
-    "nfe.municipio_servico": "Ribeirão Preto"
+    "facet": "Montes Claros",
+    "nfe.municipio_servico": "Montes Claros"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Balneário Camboriú",
-    "nfe.municipio_servico": "Balneário Camboriú"
+    "facet": "Indaiatuba",
+    "nfe.municipio_servico": "Indaiatuba"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Campo Grande",
-    "nfe.municipio_servico": "Campo Grande"
+    "facet": "Taubaté",
+    "nfe.municipio_servico": "Taubaté"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Blumenau",
-    "nfe.municipio_servico": "Blumenau"
+    "facet": "Cotia",
+    "nfe.municipio_servico": "Cotia"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Belém",
-    "nfe.municipio_servico": "Belém"
+    "facet": "Joinville",
+    "nfe.municipio_servico": "Joinville"
   },
   {
     "count.nfe.processing_time.minutes": 120,
-    "facet": "Santo André",
-    "nfe.municipio_servico": "Santo André"
+    "facet": "Salvador",
+    "nfe.municipio_servico": "Salvador"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Manaus",
+    "nfe.municipio_servico": "Manaus"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Recife",
+    "nfe.municipio_servico": "Recife"
+  },
+  {
+    "count.nfe.processing_time.minutes": 117,
+    "facet": "São José dos Campos",
+    "nfe.municipio_servico": "São José dos Campos"
+  },
+  {
+    "count.nfe.processing_time.minutes": 115,
+    "facet": "Uberlândia",
+    "nfe.municipio_servico": "Uberlândia"
+  },
+  {
+    "count.nfe.processing_time.minutes": 115,
+    "facet": "Fortaleza",
+    "nfe.municipio_servico": "Fortaleza"
+  },
+  {
+    "count.nfe.processing_time.minutes": 107,
+    "facet": "Cuiabá",
+    "nfe.municipio_servico": "Cuiabá"
+  },
+  {
+    "count.nfe.processing_time.minutes": 103,
+    "facet": "Taboão da Serra",
+    "nfe.municipio_servico": "Taboão da Serra"
+  },
+  {
+    "count.nfe.processing_time.minutes": 103,
+    "facet": "Artur Nogueira",
+    "nfe.municipio_servico": "Artur Nogueira"
   }
 ],
   municipioStatus: [
@@ -1153,18 +1164,13 @@ var monitoramentoNfeData = {
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.",
-    "facet": "12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.",
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
     "empresa.razao_social": "DOIS DE JULHO EMPREENDIMENTOS E PARTICIPACOES LTDA",
     "facet": "DOIS DE JULHO EMPREENDIMENTOS E PARTICIPACOES LTDA",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
-    "empresa.razao_social": "BUZZ AGENCIA DE LANCAMENTOS DIGITAIS LTDA",
-    "facet": "BUZZ AGENCIA DE LANCAMENTOS DIGITAIS LTDA",
+    "empresa.razao_social": "12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.",
+    "facet": "12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
@@ -1175,6 +1181,11 @@ var monitoramentoNfeData = {
   {
     "empresa.razao_social": "T2T TALENT TO TRAINING TREINAMENTOS EM INFORMATICA LTDA",
     "facet": "T2T TALENT TO TRAINING TREINAMENTOS EM INFORMATICA LTDA",
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "empresa.razao_social": "FACILITA TECNOLOGIA S/A",
+    "facet": "FACILITA TECNOLOGIA S/A",
     "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],
@@ -1464,171 +1475,171 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 1,
-    "devolucoes": 0,
-    "em_emissao": 0,
+    "canceladas": 61,
+    "devolucoes": 3,
+    "em_emissao": 3,
     "email": 0,
-    "emitidas": 2285,
-    "falhas": 96
+    "emitidas": 6323,
+    "falhas": 1658
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1780220100,
-    "emitidas": 5284,
-    "endTimeSeconds": 1780223700,
-    "falhas": 49
+    "beginTimeSeconds": 1780242000,
+    "emitidas": 1443,
+    "endTimeSeconds": 1780245600,
+    "falhas": 789
   },
   {
-    "beginTimeSeconds": 1780223700,
-    "emitidas": 3485,
-    "endTimeSeconds": 1780227300,
-    "falhas": 89
+    "beginTimeSeconds": 1780245600,
+    "emitidas": 1086,
+    "endTimeSeconds": 1780249200,
+    "falhas": 608
   },
   {
-    "beginTimeSeconds": 1780227300,
-    "emitidas": 1319,
-    "endTimeSeconds": 1780230900,
-    "falhas": 152
+    "beginTimeSeconds": 1780249200,
+    "emitidas": 1490,
+    "endTimeSeconds": 1780252800,
+    "falhas": 449
   },
   {
-    "beginTimeSeconds": 1780230900,
-    "emitidas": 5378,
-    "endTimeSeconds": 1780234500,
-    "falhas": 722
+    "beginTimeSeconds": 1780252800,
+    "emitidas": 1500,
+    "endTimeSeconds": 1780256400,
+    "falhas": 111
   },
   {
-    "beginTimeSeconds": 1780234500,
-    "emitidas": 2227,
-    "endTimeSeconds": 1780238100,
-    "falhas": 517
+    "beginTimeSeconds": 1780256400,
+    "emitidas": 1729,
+    "endTimeSeconds": 1780260000,
+    "falhas": 246
   },
   {
-    "beginTimeSeconds": 1780238100,
-    "emitidas": 1993,
-    "endTimeSeconds": 1780241700,
-    "falhas": 564
+    "beginTimeSeconds": 1780260000,
+    "emitidas": 1484,
+    "endTimeSeconds": 1780263600,
+    "falhas": 207
   },
   {
-    "beginTimeSeconds": 1780241700,
-    "emitidas": 1516,
-    "endTimeSeconds": 1780245300,
-    "falhas": 803
+    "beginTimeSeconds": 1780263600,
+    "emitidas": 972,
+    "endTimeSeconds": 1780267200,
+    "falhas": 754
   },
   {
-    "beginTimeSeconds": 1780245300,
-    "emitidas": 1067,
-    "endTimeSeconds": 1780248900,
-    "falhas": 592
+    "beginTimeSeconds": 1780267200,
+    "emitidas": 1356,
+    "endTimeSeconds": 1780270800,
+    "falhas": 288
   },
   {
-    "beginTimeSeconds": 1780248900,
-    "emitidas": 1517,
-    "endTimeSeconds": 1780252500,
-    "falhas": 475
+    "beginTimeSeconds": 1780270800,
+    "emitidas": 2013,
+    "endTimeSeconds": 1780274400,
+    "falhas": 166
   },
   {
-    "beginTimeSeconds": 1780252500,
-    "emitidas": 1476,
-    "endTimeSeconds": 1780256100,
-    "falhas": 138
+    "beginTimeSeconds": 1780274400,
+    "emitidas": 7419,
+    "endTimeSeconds": 1780278000,
+    "falhas": 530
   },
   {
-    "beginTimeSeconds": 1780256100,
-    "emitidas": 1673,
-    "endTimeSeconds": 1780259700,
-    "falhas": 234
+    "beginTimeSeconds": 1780278000,
+    "emitidas": 6613,
+    "endTimeSeconds": 1780281600,
+    "falhas": 1332
   },
   {
-    "beginTimeSeconds": 1780259700,
-    "emitidas": 1535,
-    "endTimeSeconds": 1780263300,
-    "falhas": 134
+    "beginTimeSeconds": 1780281600,
+    "emitidas": 864,
+    "endTimeSeconds": 1780285200,
+    "falhas": 288
   },
   {
-    "beginTimeSeconds": 1780263300,
-    "emitidas": 932,
-    "endTimeSeconds": 1780266900,
-    "falhas": 782
+    "beginTimeSeconds": 1780285200,
+    "emitidas": 507,
+    "endTimeSeconds": 1780288800,
+    "falhas": 132
   },
   {
-    "beginTimeSeconds": 1780266900,
-    "emitidas": 1183,
-    "endTimeSeconds": 1780270500,
-    "falhas": 332
+    "beginTimeSeconds": 1780288800,
+    "emitidas": 2595,
+    "endTimeSeconds": 1780292400,
+    "falhas": 93
   },
   {
-    "beginTimeSeconds": 1780270500,
-    "emitidas": 2242,
-    "endTimeSeconds": 1780274100,
-    "falhas": 165
+    "beginTimeSeconds": 1780292400,
+    "emitidas": 653,
+    "endTimeSeconds": 1780296000,
+    "falhas": 46
   },
   {
-    "beginTimeSeconds": 1780274100,
-    "emitidas": 6592,
-    "endTimeSeconds": 1780277700,
-    "falhas": 329
+    "beginTimeSeconds": 1780296000,
+    "emitidas": 2815,
+    "endTimeSeconds": 1780299600,
+    "falhas": 106
   },
   {
-    "beginTimeSeconds": 1780277700,
-    "emitidas": 7454,
-    "endTimeSeconds": 1780281300,
-    "falhas": 1527
+    "beginTimeSeconds": 1780299600,
+    "emitidas": 706,
+    "endTimeSeconds": 1780303200,
+    "falhas": 47
   },
   {
-    "beginTimeSeconds": 1780281300,
-    "emitidas": 901,
-    "endTimeSeconds": 1780284900,
-    "falhas": 311
+    "beginTimeSeconds": 1780303200,
+    "emitidas": 2445,
+    "endTimeSeconds": 1780306800,
+    "falhas": 113
   },
   {
-    "beginTimeSeconds": 1780284900,
-    "emitidas": 509,
-    "endTimeSeconds": 1780288500,
-    "falhas": 133
+    "beginTimeSeconds": 1780306800,
+    "emitidas": 1109,
+    "endTimeSeconds": 1780310400,
+    "falhas": 98
   },
   {
-    "beginTimeSeconds": 1780288500,
-    "emitidas": 2427,
-    "endTimeSeconds": 1780292100,
-    "falhas": 85
+    "beginTimeSeconds": 1780310400,
+    "emitidas": 3536,
+    "endTimeSeconds": 1780314000,
+    "falhas": 635
   },
   {
-    "beginTimeSeconds": 1780292100,
-    "emitidas": 808,
-    "endTimeSeconds": 1780295700,
-    "falhas": 48
+    "beginTimeSeconds": 1780314000,
+    "emitidas": 3015,
+    "endTimeSeconds": 1780317600,
+    "falhas": 698
   },
   {
-    "beginTimeSeconds": 1780295700,
-    "emitidas": 2511,
-    "endTimeSeconds": 1780299300,
-    "falhas": 108
+    "beginTimeSeconds": 1780317600,
+    "emitidas": 7746,
+    "endTimeSeconds": 1780321200,
+    "falhas": 955
   },
   {
-    "beginTimeSeconds": 1780299300,
-    "emitidas": 1020,
-    "endTimeSeconds": 1780302900,
-    "falhas": 49
+    "beginTimeSeconds": 1780321200,
+    "emitidas": 5454,
+    "endTimeSeconds": 1780324800,
+    "falhas": 1697
   },
   {
-    "beginTimeSeconds": 1780302900,
-    "emitidas": 2197,
-    "endTimeSeconds": 1780306500,
-    "falhas": 96
+    "beginTimeSeconds": 1780324800,
+    "emitidas": 6344,
+    "endTimeSeconds": 1780328400,
+    "falhas": 1672
   }
 ],
   filaOperacoes: [
   {
     "pendentes": 0,
-    "rodando": 1
+    "rodando": 0
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 2,
-    "ok": 34483
+    "falhas": 1,
+    "ok": 47640
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[
