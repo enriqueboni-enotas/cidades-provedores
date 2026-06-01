@@ -1,160 +1,119 @@
 var aguardandoDeployData = [
   {
-    tag: '26/05/2026',
-    titulo: 'Terça-feira — 26 de Maio',
+    tag: '29/05/2026',
+    titulo: 'Quinta-feira — 29 de Maio',
     itens: [
+      {
+        icon: '🏙️',
+        texto:
+          'Volta cidades para o provedor Fiorilli versão Abrasf — municípios que haviam sido migrados para outro provedor retornam ao Fiorilli com a versão ABRASF padrão, restaurando a comunicação com o webservice original.',
+        pr: 9446,
+        autor: 'Thiago Souza',
+      },
+      {
+        icon: '⚡',
+        texto:
+          'Ativa paralelismo no envio de notas para duas empresas de Goiânia/GO — empresas com alto volume em Goiânia agora processam notas em paralelo, reduzindo o tempo total de emissão e evitando acúmulo na fila.',
+        pr: 9442,
+        autor: 'Otávio Augusto Reis',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Configura consumidorFinal para empresa específica — a flag consumidorFinal é ativada para uma empresa que emite notas para pessoa física sem identificação, evitando rejeição em prefeituras que exigem esse campo.',
+        pr: 9437,
+        autor: 'Felippe Salvo de Mendonça',
+      },
       {
         icon: '🆕',
         texto:
-          'Novo provedor PMat implementado como projeto separado com integração SOAP/WCF. Inclui operações de recepção de lote, consulta de lote, cancelamento e geração de PDF. O provedor utiliza Connected Services (WSDL) e possui tratamento específico de TLS para compatibilidade com o webservice da prefeitura. Também inclui validações de negócio como código de serviço municipal (3-4 dígitos) e inscrição municipal (1-8 dígitos).',
-        pr: 9389,
-        autor: 'Thiago Souza',
-      },
-      {
-        icon: '📊',
-        texto:
-          'Adicionada a subscription SaudeViaNet à whitelist de envio de IBS/CBS para empresas do Simples Nacional no provedor São Paulo. A empresa precisava enviar os novos tributos da reforma tributária mas estava bloqueada pela regra que restringe o envio a subscriptions autorizadas. A mudança permite que a SaudeViaNet ignore a regra de "não participante do piloto 2026" ao enviar notas com IBSCBS.',
-        pr: 9397,
-        autor: 'Davidson Souza',
-      },
-      {
-        icon: '🌐',
-        texto:
-          'Ativada a flag UsaEnderecoTomExterior para Nossa Senhora da Glória/PE no provedor TributusV2. Essa flag permite que o endereço do tomador estrangeiro seja enviado corretamente no XML da nota, evitando rejeições quando a prestação é para o exterior nesse município.',
-        pr: 9396,
+          'Criação do novo provedor FiorilliV2 — implementação completa do provedor Fiorilli na versão 2, com suporte a novas operações e formato de comunicação atualizado. Permite migrar municípios que usam a versão mais recente do sistema Fiorilli.',
+        pr: 9404,
         autor: 'Felippe Salvo de Mendonça',
-      },
-      {
-        icon: '🔗',
-        texto:
-          'Atualizado o endpoint de produção de Luziânia/GO no provedor ProData. A prefeitura migrou o domínio do webservice e o endereço anterior deixou de responder, causando falhas de emissão e consulta de NFS-e.',
-        pr: 9395,
-        autor: 'Davidson Souza',
       },
       {
         icon: '🏙️',
         texto:
-          'São Bernardo do Campo/SP ativado na versão GINFES V2 com suporte a IBS/CBS (Reforma Tributária do Consumo). O município foi adicionado ao conjunto UsaVersaoRTC, fazendo com que a recepção de lotes utilize a classe GINFESRecepcionarLoteNFeV2 que suporta os novos campos tributários exigidos pela legislação.',
-        pr: 9393,
+          'Bernardino de Campos/SP migrado para ISSMAP — a prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas para o provedor ISSMAP, restaurando a emissão de notas no município.',
+        pr: 9436,
         autor: 'Thiago Souza',
       },
       {
-        icon: '🧮',
+        icon: '🔗',
         texto:
-          'Zerados os valores de PIS e COFINS de apuração própria para a Conta Azul. Quando não há apuração própria (pisCofinsProprio == null) e existe retenção, o sistema agora zera rps.ValorPIS e rps.ValorCOFINS antes de calcular ValorCSLL e RetencaoPisCofins. Isso corrige o cálculo incorreto do valor líquido que ocorria para notas da Conta Azul com retenção mas sem apuração própria.',
-        pr: 9390,
-        autor: 'Thiago Souza',
+          'Configura URL de download de PDF para Feira de Santana/BA — adicionada a URL específica para download do PDF da nota fiscal em Feira de Santana, permitindo que o sistema recupere o documento diretamente da prefeitura.',
+        pr: 9434,
+        autor: 'Vitor Fernandes',
       },
       {
-        icon: '📊',
+        icon: '🔧',
         texto:
-          'Incluída condição de regime de apuração "1" na regra que zera alíquota ISS no provedor GIFv2. Antes, bastava ser optante do Simples Nacional com ISS não retido para zerar a alíquota. Agora exige também RegimeApuracaoTributosSN == "1", evitando que empresas com outros regimes de apuração tenham a alíquota zerada indevidamente — o que causava rejeições em municípios como Caxias do Sul.',
-        pr: 9388,
+          'Tratamento de mensagem de erro — melhoria na limpeza e formatação de mensagens de erro retornadas pelas prefeituras, removendo HTML e caracteres especiais para exibição legível ao cliente.',
+        pr: 9432,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Ajuste no tratamento de erro de cancelamento para suportar mensagens em português e inglês — o sistema agora reconhece mensagens de erro de cancelamento em ambos os idiomas, evitando que erros em inglês sejam tratados como erro desconhecido.',
+        pr: 9429,
         autor: 'Henrique Cassio',
       },
       {
-        icon: '🌐',
+        icon: '🔧',
         texto:
-          'Ajustada a emissão para tomador do exterior com prestação fora do país no provedor PublicaV1. O campo CodigoPaisLocalPrestacao foi adicionado ao modelo XML, o código NBS é sanitizado (apenas numéricos) antes do envio, e os campos de município/país de prestação são preenchidos corretamente quando o código IBGE é 9999999 (exterior). Também adicionada proteção contra NullReferenceException quando o tomador é nulo.',
-        pr: 9385,
+          'Mapeamento do erro E1000 para retornar XML ao invés de exceção — quando o provedor retorna erro E1000, o sistema agora processa a resposta XML normalmente e extrai a mensagem de erro, ao invés de lançar exceção genérica que ocultava o motivo real da rejeição.',
+        pr: 9428,
         autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '🏙️',
         texto:
-          'Queimados/RJ aderiu ao Portal Nacional de NFS-e. As configurações foram adicionadas ao ConfiguracoesMunicipios.xml com o provedor NfseNacional, permitindo que empresas em Queimados emitam NFS-e pelo portal unificado da Receita Federal.',
-        pr: 9384,
-        autor: 'Davidson Souza',
+          'Cataguases/MG atualizado para o provedor IPMv2 — o município foi migrado para a versão 2 do provedor IPM, com URLs e configurações atualizadas para o novo webservice da prefeitura.',
+        pr: 9427,
+        autor: 'Henrique Cassio',
       },
       {
-        icon: '🔧',
+        icon: '🏙️',
         texto:
-          'Ajuste no PDF de exportação de serviço (DANFSE Nacional). O campo "Código de Tributação Nacional" agora suporta até 3 linhas de texto (antes eram 2) e aplica truncamento com "..." quando excede 71 caracteres. Também corrigido o preenchimento do país de prestação — quando não é Brasil ou não há resultado, exibe "-" ao invés de lançar exceção.',
-        pr: 9381,
-        autor: 'Thales Fonseca',
-      },
-    ],
-  },
-  {
-    tag: '25/05/2026',
-    titulo: 'Segunda-feira — 25 de Maio',
-    itens: [
-      {
-        icon: '🧮',
-        texto:
-          'Corrigido o preenchimento do campo valorCsll no provedor NfseNacional (módulo SemCertificado). A variável vRetCSLL era inicializada como null, causando exceção ao tentar preencher TributacaoFederal.ValorCSLL. Agora é inicializada com 0 (decimal), garantindo tipo compatível. A lógica condicional que só preenche o campo quando vRetCSLL > 0 permanece inalterada.',
-        pr: 9378,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Removidos acentos do local de prestação no provedor Barueri (FormatarLoteRpsV2Base). Os campos Logradouro e Bairro do endereço do tomador agora passam por RemoveAccent() antes do envio, evitando rejeições em provedores que não aceitam caracteres acentuados. Também adicionada navegação segura (?.) para prevenir NullReferenceException quando o endereço do tomador é nulo.',
-        pr: 9377,
+          'Envio de dados de construção civil para serviços que exigem — para códigos de serviço relacionados a construção civil, o sistema agora envia os dados obrigatórios (ART, código da obra, etc.) que antes eram omitidos, causando rejeição em prefeituras que validam esses campos.',
+        pr: 9425,
         autor: 'Thiago Souza',
       },
       {
-        icon: '📊',
-        texto:
-          'Atualizada a regra de envio de alíquota para empresas não optantes do Simples Nacional no provedor ModernizacaoPublica. Quando o ISS não é retido na fonte, ValorIss e Aliquota agora são zerados também para empresas não optantes (além do cenário já existente de regime especial). Afeta múltiplos municípios: Cabo Frio/RJ, Belford Roxo/RJ, Arraial do Cabo/RJ, Armação dos Búzios/RJ, Correntina/BA, Magé/RJ e São Pedro da Aldeia/RJ.',
-        pr: 9376,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Desabilitada a emissão em lote para uma empresa específica, forçando envio unitário (1 nota por lote). A emissão em lote causava timeouts e rejeições para essa empresa devido ao volume e complexidade das notas enviadas simultaneamente.',
-        pr: 9375,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Ajustado o preenchimento do endereço de prestação no provedor eTransparencia quando o local de prestação é diferente do tomador/prestador. O sistema agora valida se LocalPrestacaoServico possui CodigoIbgeCidade, Logradouro, Numero, Bairro e CodigoPostal preenchidos — caso contrário lança ValidationException (GW00105) com mensagem clara. Também corrigida comparação null-safe no CodigoIbgeCidadePrestacaoServico.',
-        pr: 9374,
-        autor: 'Felippe Salvo de Mendonça',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Atualizado o PDF Nacional offline (DANFSE) para preencher email e telefone do tomador com fallback. Quando os dados não estão disponíveis no XML da nota, o sistema agora busca em nfeServico.Tomador?.Telefone e nfeServico.Tomador?.Email como alternativa, exibindo "-" quando nenhuma fonte possui a informação.',
-        pr: 9373,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Adicionado retry automático no provedor WebISSv2 para bloqueio temporário por excesso de requisições. Quando a prefeitura retorna a mensagem "O seu acesso foi bloqueado devido ao grande número de requisições", o sistema agora identifica esse cenário no método IdentificarCaracteristicasErro e popula a Exception com a mensagem formatada, permitindo que o mecanismo de retry reenvie automaticamente.',
-        pr: 9372,
-        autor: 'Davidson Souza',
-      },
-      {
         icon: '🏙️',
         texto:
-          'Machadinho/RS atualizado para GOVBRv3 — adicionado ao conjunto NaoUsaPedRegEventoCancelamento. O município não utiliza pedido de registro de evento de cancelamento, então o campo nPedRegEvento é definido como null ao invés de "001" durante o cancelamento de NFS-e, conforme regras específicas da prefeitura.',
-        pr: 9371,
+          'Envio de endereço de obra para empresa — adicionado suporte ao envio do endereço da obra quando a empresa possui essa informação cadastrada, atendendo exigências de prefeituras que validam o local efetivo da prestação.',
+        pr: 9422,
         autor: 'Felippe Salvo de Mendonça',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Atualiza preenchimento do serviço municipal para o provedor — ajustado o mapeamento do código de serviço municipal para garantir que o campo seja preenchido corretamente conforme esperado pelo webservice do provedor.',
+        pr: 9421,
+        autor: 'Vitor Fernandes',
       },
       {
         icon: '🔗',
         texto:
-          'Atualizada a URL do webservice de Massapê/CE. A prefeitura migrou o domínio do serviço e o endereço anterior deixou de responder, causando falhas de emissão e consulta de NFS-e.',
-        pr: 9370,
-        autor: 'Vitor Fernandes',
+          'Configura proxy estático para Pinhalzinho/SP — adicionada configuração de proxy estático para o município de Pinhalzinho/SP, garantindo que a comunicação com o webservice da prefeitura passe pelo IP correto e evitando bloqueios de firewall.',
+        pr: 9420,
+        autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '🔧',
         texto:
-          'Corrigida a desserialização do objeto Indop no ConsultarInformacoesServicoCommand. O campo indicadorOperacao agora é desserializado como List<Indop> (array) ao invés de objeto único, com validações adicionais para evitar NullReferenceException quando detalheServico.IbsCbs é nulo ou quando o JSON não contém o item esperado.',
-        pr: 9367,
+          'Remove espaços em branco da inscrição municipal com .Trim() — a inscrição municipal agora é sanitizada removendo espaços antes e depois do valor. Espaços extras causavam rejeição em provedores que validam o formato exato do campo.',
+        pr: 9419,
         autor: 'Felippe Salvo de Mendonça',
       },
       {
-        icon: '🏙️',
+        icon: '📋',
         texto:
-          "Alterado o nome do município de Açu/RN para Assú/RN no código (constante CodigoIBGE). A mudança reflete a alteração oficial do nome do município. Requer execução de script SQL no banco para atualizar a tabela Cidade (UPDATE Cidade SET Nome = 'Assú' WHERE CodigoIBGE = 2400208).",
-        pr: 9364,
-        autor: 'Felippe Salvo de Mendonça',
+          'SEFAZ: adiciona informação complementar para empresa específica da Erbon Software — campo infAdFisco preenchido com dados obrigatórios exigidos pela SEFAZ para uma empresa específica da integração Erbon Software, evitando rejeição por campo obrigatório ausente.',
+        pr: 9418,
+        autor: 'Davidson Souza',
       },
     ],
   },
