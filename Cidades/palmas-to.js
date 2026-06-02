@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'WebISSv2',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: 'NaoSuportaEmissaoSemCliente; EnviaCodigoTributacaoEItemLista; EnviaAliquotaISSQNDevidoOutroMunicipioOuOptanteSimplesERetencaoISSQN; NaoSuportaEmissaoClienteSemCpf',
+    codigoNoProvedor: 'EnviaCodigoTributacaoEItemLista; EnviaAliquotaISSQNDevidoOutroMunicipioOuOptanteSimplesERetencaoISSQN; NaoSuportaEmissaoClienteSemCpf',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
@@ -38,20 +38,12 @@
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos:  105, 1.05, 01.05 ou 0105',
-    suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
-    suportaCancelamentoNFeSemCliente: false,
-    suportaCancelamentoNFeClienteSemCpf: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      urlVerificacao: 'https://caldasnovasgo.webiss.com.br/externo/nfse/validar',
-      UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: false,
-      UsaNumeroNota: true,
-      UsaValorNota: false
+      UsaNumeroNota: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },

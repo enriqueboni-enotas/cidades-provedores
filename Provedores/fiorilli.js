@@ -3,12 +3,12 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 220
+    municipios: 218
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '220' },
-    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'RJ', 'PA', 'AP', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '218' },
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'AP', 'RJ', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -108,7 +108,6 @@
       { nome: 'Cosmorama', uf: 'SP', ibge: '3512902' },
       { nome: 'Costa Rica', uf: 'MS', ibge: '5003256' },
       { nome: 'Demerval Lobão', uf: 'PI', ibge: '2203305' },
-      { nome: 'Duartina', uf: 'SP', ibge: '3514502' },
       { nome: 'Dumont', uf: 'SP', ibge: '3514601' },
       { nome: 'Esmeraldas', uf: 'MG', ibge: '3124104' },
       { nome: 'Espigão D\'Oeste', uf: 'RO', ibge: '1100098' },
@@ -116,6 +115,7 @@
       { nome: 'Fartura', uf: 'SP', ibge: '3515400' },
       { nome: 'Formoso', uf: 'MG', ibge: '3126208' },
       { nome: 'Gália', uf: 'SP', ibge: '3516606' },
+      { nome: 'Gilbués', uf: 'PI', ibge: '2204402' },
       { nome: 'Girau do Ponciano', uf: 'AL', ibge: '2702900' },
       { nome: 'Gonçalves', uf: 'MG', ibge: '3127404' },
       { nome: 'Guaimbê', uf: 'SP', ibge: '3517307' },
@@ -178,7 +178,6 @@
       { nome: 'Nova Alvorada do Sul', uf: 'MS', ibge: '5006002' },
       { nome: 'Nova Granada', uf: 'SP', ibge: '3533007' },
       { nome: 'Nova Lacerda', uf: 'MT', ibge: '5106182' },
-      { nome: 'Nova Mamoré', uf: 'RO', ibge: '1100338' },
       { nome: 'Nuporanga', uf: 'SP', ibge: '3533601' },
       { nome: 'Oiapoque', uf: 'AP', ibge: '1600501' },
       { nome: 'Onda Verde', uf: 'SP', ibge: '3534005' },
@@ -242,7 +241,6 @@
       { nome: 'São Bento do Sapucaí', uf: 'SP', ibge: '3548609' },
       { nome: 'São Fidélis', uf: 'RJ', ibge: '3304805' },
       { nome: 'São Gabriel do Oeste', uf: 'MS', ibge: '5007695' },
-      { nome: 'São João da Barra', uf: 'RJ', ibge: '3305000' },
       { nome: 'São Joaquim da Barra', uf: 'SP', ibge: '3549409' },
       { nome: 'São José dos Quatro Marcos', uf: 'MT', ibge: '5107107' },
       { nome: 'São Raimundo Nonato', uf: 'PI', ibge: '2210607' },

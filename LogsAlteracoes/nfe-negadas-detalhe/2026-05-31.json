@@ -1,0 +1,2027 @@
+﻿[
+    {
+        "motivo_situacao":  "Campo Cidade do Tomador de Serviços é Obrigatório \r\nCorreção: Informar Cidade.",
+        "qtd":  1370,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador sem endereço.\r\n",
+        "qtd":  612,
+        "empresa_id":  "cde55d6e-08dd-f1a0-4ab0-a5e979fcee6c"
+    },
+    {
+        "motivo_situacao":  "Local da Prestação do Serviço Inválido\r\nCorreção: Informar o Local Especificado:1 para serviço prestado no Município / 2 para serviço prestado fora do Município / 3 para serviço prestado fora do País",
+        "qtd":  486,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.",
+        "qtd":  391,
+        "empresa_id":  "8929485f-c038-483d-900d-9521d9c40800"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.",
+        "qtd":  331,
+        "empresa_id":  "042fd4ac-ae3b-4ea1-ad68-b97ddbad0600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 401 - Acesso Negado! Verifique se o usuário e senha da empresa estão corretos ou se possui credenciamento para emitir via WebService.",
+        "qtd":  278,
+        "empresa_id":  "8a7a2ec6-17f3-47a8-8cb6-f09d3bec0900"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  260,
+        "empresa_id":  "d9cc5b54-15cd-4a49-94d3-6e74c59f0700"
+    },
+    {
+        "motivo_situacao":  "O artigo 10 do Decreto 47.350 de 06 de junho de 2006 determina que sua empresa somente poderá converter RPS em NF-e até o 10º (décimo) dia subsequente ao de sua emissão, não podendo ultrapassar o dia 5 (cinco) do mês subsequente ao da prestação de serviços, não sendo permitido inclusive postergar ca",
+        "qtd":  255,
+        "empresa_id":  "4453c0db-08dd-8b61-40f5-53cb78ef8d6c"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  248,
+        "empresa_id":  "67bacac5-08dd-15b1-45de-2fbee0db329e"
+    },
+    {
+        "motivo_situacao":  "RPS já informado.(Numero RPS: 24)\r\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.",
+        "qtd":  196,
+        "empresa_id":  "86747a29-08de-cfe2-4786-972e62675104"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Erros de Validacao : \n A relacao entre a Classificacao 08.02 NBS 1.2205.19.00 CCLASSTRIB 410007 INDOP 030101 e invalida",
+        "qtd":  178,
+        "empresa_id":  "3f89af36-46bd-4102-b2f5-ab9869320b00"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO número do endereço do tomador deve conter entre 1 e 10 caracteres\r\nO bairro do endereço do tomador deve conter entre 2 e 60 caracteres\r\n",
+        "qtd":  170,
+        "empresa_id":  "cde55d6e-08dd-f1a0-4ab0-a5e979fcee6c"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.",
+        "qtd":  166,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e",
+        "qtd":  148,
+        "empresa_id":  "ba453838-08dd-bcd7-4e55-8693e705e7a1"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e",
+        "qtd":  142,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.",
+        "qtd":  134,
+        "empresa_id":  "042fd4ac-ae3b-4ea1-ad68-b97ddbad0600"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  116,
+        "empresa_id":  "7ba81be7-1c52-49c9-adbf-64c5f82c0b00"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  111,
+        "empresa_id":  "b021dd4b-69d8-4177-a1c5-d135da2c0b00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 228 - Rejeicao: Data de emissao muito atrasada.",
+        "qtd":  107,
+        "empresa_id":  "1a6f1f96-1e69-4bc0-b964-f24058ac0700"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  88,
+        "empresa_id":  "408201f4-08dd-dd81-440b-2de9522d31be"
+    },
+    {
+        "motivo_situacao":  "O grupo de informações de Atividade/Evento é obrigatório quando o código de tributação nacional pertencer ao item 12 da lista de serviços.",
+        "qtd":  84,
+        "empresa_id":  "e00a2267-2611-49e7-b2ba-e4b793160500"
+    },
+    {
+        "motivo_situacao":  "Esta prefeitura não suporta emissão de nota fiscal para tomador sem CPF",
+        "qtd":  80,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "Emissor nao habilitado para emissao da NF-e/NFC-e. CNPJ:31141736000103",
+        "qtd":  74,
+        "empresa_id":  "33f75430-5347-47a1-ab19-380e05c50400"
+    },
+    {
+        "motivo_situacao":  "Nome do tomador é opcional apenas para NFC-e.",
+        "qtd":  64,
+        "empresa_id":  "d047e67f-e3da-4b75-9aab-2855d25b0600"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  63,
+        "empresa_id":  "78513559-2d29-4cef-bb61-56f130c30400"
+    },
+    {
+        "motivo_situacao":  "Obrigatório envio de dados do IBSCBS para emissão de NFSe em São Bernardo do Campo/SP",
+        "qtd":  61,
+        "empresa_id":  "75961876-08de-5779-4fcc-3b07ce640952"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  58,
+        "empresa_id":  "6321210f-b232-41e1-8894-0cf4324a0400"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO número do endereço do tomador deve conter entre 1 e 60 caracteres\r\nO bairro do endereço do tomador deve conter entre 1 e 60 caracteres\r\n",
+        "qtd":  57,
+        "empresa_id":  "6b078441-08de-31c2-493e-8e763a2059c6"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.",
+        "qtd":  54,
+        "empresa_id":  "f3e5f510-bf0a-45bc-8135-72d7dcc70700"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  48,
+        "empresa_id":  "b641c834-21cd-4461-a94c-8755ce510600"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  45,
+        "empresa_id":  "74143113-1681-49cb-8c27-a3d07d700600"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  44,
+        "empresa_id":  "93213a69-08dd-5101-43ec-4826dfe5e898"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  36,
+        "empresa_id":  "042fd4ac-ae3b-4ea1-ad68-b97ddbad0600"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  34,
+        "empresa_id":  "b0d85d1f-d722-423f-8c93-e235d4c80500"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  33,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "Prestador Bloqueado!\r\nCorreção:",
+        "qtd":  33,
+        "empresa_id":  "898ef138-08de-cb49-44ba-e8bffdada003"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  32,
+        "empresa_id":  "cf25c5a9-0b3f-4474-98e6-693aa80a0900"
+    },
+    {
+        "motivo_situacao":  "Número do RPS inválido.(Numero RPS: 51)\r\nCorreção: Informe um número de RPS que corresponda à seqüência utilizada pelo prestador do serviço.",
+        "qtd":  31,
+        "empresa_id":  "b82bebbf-08de-7772-4f82-da3f88f3f16c"
+    },
+    {
+        "motivo_situacao":  "XML não compatível com Schema.NotaSalvador.IntegrationModel.Utils.XmlValidationException: Documento XML especificado é inválido.\n1 - The \"http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd:RazaoSocial\" element is invalid - The value \"\" is invalid according to its datatype \"http://www.abrasf.org.br/AB",
+        "qtd":  30,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "Os dados de ICMS do item da NFe são de preenchimento obrigatório.",
+        "qtd":  30,
+        "empresa_id":  "f3e5f510-bf0a-45bc-8135-72d7dcc70700"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  28,
+        "empresa_id":  "fc46574a-08dd-5cd6-422c-f86784db7ba7"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  28,
+        "empresa_id":  "7924a9e9-08dd-0bad-4838-af7607656fcc"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  28,
+        "empresa_id":  "ca178b4e-08dd-cc8e-4b48-9d51c9214bd3"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e",
+        "qtd":  28,
+        "empresa_id":  "05587ec2-a126-4c84-9f0b-e3700f020800"
+    },
+    {
+        "motivo_situacao":  "RPS já informado.(Numero RPS: 30333)\r\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.",
+        "qtd":  27,
+        "empresa_id":  "e111f4a1-12da-40c9-a988-6cf9f8320500"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  27,
+        "empresa_id":  "e0d5138f-c990-4e1a-b15e-e09ae0a30900"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  26,
+        "empresa_id":  "3b4905bd-e144-4246-8181-b3697a6f0a00"
+    },
+    {
+        "motivo_situacao":  "O serviço especificado na nota fiscal não permite retenção de ISS.",
+        "qtd":  23,
+        "empresa_id":  "717c98a1-05d6-4155-8c90-0f01b13a0a00"
+    },
+    {
+        "motivo_situacao":  "Informe um código NBS válido. Ex.: \"codigoNBS\": \"1.0905.11.00\"",
+        "qtd":  22,
+        "empresa_id":  "952f0ae5-de84-4140-b8b3-5b19ae000900"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  22,
+        "empresa_id":  "890c3d12-e1f2-43e5-ac29-7f27f1bc0600"
+    },
+    {
+        "motivo_situacao":  "O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.",
+        "qtd":  21,
+        "empresa_id":  "8fc06e7f-c941-4337-83f2-649949270700"
+    },
+    {
+        "motivo_situacao":  "Inscrição Municipal do prestador do serviço não encontrada na base de dados  do município. (correção: Não existe registro de inscrição municipal que corresponda ao número informado.)",
+        "qtd":  21,
+        "empresa_id":  "927a5dfc-9f31-4ced-9561-dda831e60600"
+    },
+    {
+        "motivo_situacao":  "O CPF informado para o cliente é inválido.",
+        "qtd":  20,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional",
+        "qtd":  20,
+        "empresa_id":  "65a68a66-2162-4ac9-98d6-a3928a590a00"
+    },
+    {
+        "motivo_situacao":  "O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.",
+        "qtd":  19,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Erro ao gerar xml de envio entre em contato com suporte técnico.",
+        "qtd":  17,
+        "empresa_id":  "b059ba21-08de-cb2e-497b-cee2800b8af3"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  17,
+        "empresa_id":  "7edd88e1-8d4d-4e58-a6ae-9441bbf90900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Erro ao gerar xml de envio entre em contato com suporte técnico.",
+        "qtd":  16,
+        "empresa_id":  "b75d6af5-08de-b48d-417e-eed7786594d2"
+    },
+    {
+        "motivo_situacao":  "O campo ValorISS informado indevidamente.\r\nCorreção: O valor do ISSQN é calculado pela Prefeitura e não deve ser informado pelo contribuinte. O valor informado foi desconsiderado.",
+        "qtd":  14,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Erros de Validacao : \nO servico no exterior deve conter a indicacao de um tomador e um destinatario,\n A relacao entre a Classificacao 08.02 NBS 1.2205.19.00 CCLASSTRIB 410007 INDOP 030101 e invalida",
+        "qtd":  13,
+        "empresa_id":  "3f89af36-46bd-4102-b2f5-ab9869320b00"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  13,
+        "empresa_id":  "ef4c27d9-f32f-4854-9aea-dae8c6c20900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 203 - Emissor nao habilitado para emissao da NF-e [Notificacao:Suspenso conforme item 6.6 da NPF 63/2012.Para mais informacoes acesse o FAQ: https://atendimento.fazenda.pr.gov.br/sacsefa/portal/assuntosReferente/25 - item: Suspensao]",
+        "qtd":  12,
+        "empresa_id":  "68afa083-08de-4a5d-4fa8-39f3923239e8"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  12,
+        "empresa_id":  "11b1df3e-4ddc-4afe-a68c-f96ed3af0900"
+    },
+    {
+        "motivo_situacao":  "Local da Prestação do Serviço Inválido\r\nCorreção: Informar o Local Especificado:1 para serviço prestado no Município / 2 para serviço prestado fora do Município / 3 para serviço prestado fora do País",
+        "qtd":  12,
+        "empresa_id":  "d6daa88b-deeb-46cd-bd81-922c7d810600"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  12,
+        "empresa_id":  "99a611e3-08de-8f98-49a9-0a96a3da389c"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  12,
+        "empresa_id":  "b9ae1230-c1b4-4f26-9333-33150ea80600"
+    },
+    {
+        "motivo_situacao":  "Código postal do tomador estrangeiro é obrigatório.",
+        "qtd":  12,
+        "empresa_id":  "2e7636cf-fd9b-48f4-bde1-cb3bdbaa0400"
+    },
+    {
+        "motivo_situacao":  "O codigoInternoServicoMunicipal informado pertence a outra cidade.",
+        "qtd":  11,
+        "empresa_id":  "50f7a1e5-c266-4962-809f-7a3317840700"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.",
+        "qtd":  11,
+        "empresa_id":  "0a9bb472-f5b0-4dd6-8645-81724f2c0700"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  11,
+        "empresa_id":  "de582b78-08dd-45a5-41bc-5d1ed918d7be"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\r\n",
+        "qtd":  10,
+        "empresa_id":  "6b078441-08de-31c2-493e-8e763a2059c6"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  10,
+        "empresa_id":  "4204f3d6-c2cd-4f1e-8fd3-23922de80600"
+    },
+    {
+        "motivo_situacao":  "O CFOP do produto deve conter apenas números.",
+        "qtd":  10,
+        "empresa_id":  "f3e5f510-bf0a-45bc-8135-72d7dcc70700"
+    },
+    {
+        "motivo_situacao":  "O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.",
+        "qtd":  10,
+        "empresa_id":  "18b4559c-9b9f-4a5e-b338-21d601620900"
+    },
+    {
+        "motivo_situacao":  "Endereço internacional do Tomador está incompleto.\r\nCorreção: Informe valores para os campos obrigatórios: CEP/Código Postal, Endereço, Número, Bairro/Distrito, Municipio, UF e Código Pais do tomador.",
+        "qtd":  9,
+        "empresa_id":  "16f14da4-08de-34b9-4873-ed334fff236a"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  9,
+        "empresa_id":  "f3e5f510-bf0a-45bc-8135-72d7dcc70700"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  9,
+        "empresa_id":  "3fc03add-2362-458c-941b-d1379c9a0900"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  9,
+        "empresa_id":  "6eabbf8d-dfd4-44b5-8560-06608abf0900"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.",
+        "qtd":  9,
+        "empresa_id":  "cd88f6d9-7b05-4cd7-ae38-7a7fc43e0800"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  9,
+        "empresa_id":  "3663e2ce-8fc1-4fc2-8af1-870b523c0900"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  8,
+        "empresa_id":  "74531e63-cdb1-49e3-b502-2d55606c0a00"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  8,
+        "empresa_id":  "2639480e-dd8b-4037-bebf-4c9107a80a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  8,
+        "empresa_id":  "de582b78-08dd-45a5-41bc-5d1ed918d7be"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 930 - Rejeicao: CST com beneficio fiscal e nao informado o codigo de beneficio fiscal [nItem:1]",
+        "qtd":  8,
+        "empresa_id":  "8a7a2ec6-17f3-47a8-8cb6-f09d3bec0900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 00209 - Já consta uma NFSe para o referido prestador de serviço com o mesmo IDENTIFICADOR de arquivo",
+        "qtd":  8,
+        "empresa_id":  "f7586350-94a1-4340-aa6a-b5db80a00200"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  8,
+        "empresa_id":  "21dbdf42-5ce4-42b3-ba92-86b6d6140900"
+    },
+    {
+        "motivo_situacao":  "CPF/CNPJ do tomador do serviço obrigatório quando o endereço no Brasil for informado.\r\nCorreção:",
+        "qtd":  7,
+        "empresa_id":  "20e696dc-a9db-4a53-bff1-b572c9030600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem: 1]",
+        "qtd":  7,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "O grupo de informações de Atividade/Evento é obrigatório quando o código de tributação nacional pertencer ao item 12 da lista de serviços.",
+        "qtd":  7,
+        "empresa_id":  "4fb2f05d-08de-e420-4379-c8b27316bb81"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  7,
+        "empresa_id":  "76e10306-5acd-4ffe-b896-a224b29c0600"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido",
+        "qtd":  7,
+        "empresa_id":  "4e59c854-3f0d-4fef-8a54-188aec290300"
+    },
+    {
+        "motivo_situacao":  "Emissor nao habilitado para emissao da NF-e. [Notificacao:Suspenso conforme item 6.6 da NPF 63/2012.Para mais informacoes acesse o FAQ: https://atendimento.fazenda.pr.gov.br/sacsefa/portal/assuntosReferente/25 - item: Suspensao]",
+        "qtd":  7,
+        "empresa_id":  "68afa083-08de-4a5d-4fa8-39f3923239e8"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.",
+        "qtd":  7,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Para comércio exterior é obrigatório o preenchido do código NBS.",
+        "qtd":  6,
+        "empresa_id":  "cd88f6d9-7b05-4cd7-ae38-7a7fc43e0800"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador sem endereço.\r\n",
+        "qtd":  6,
+        "empresa_id":  "25f45e0b-0e73-43e0-adcb-275a70c60900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 00196 - Bairro do tomador não definido no arquivo XML..\r\n",
+        "qtd":  6,
+        "empresa_id":  "25f45e0b-0e73-43e0-adcb-275a70c60900"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  6,
+        "empresa_id":  "da60ed39-f85c-458e-bba9-3791919a0500"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\r\n",
+        "qtd":  6,
+        "empresa_id":  "8bcfa26a-08dd-64ff-4af8-d62d27de986f"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  6,
+        "empresa_id":  "0c0cf1e9-b60e-439b-a63d-189b14b30a00"
+    },
+    {
+        "motivo_situacao":  "Indicador de ISSQN retido nao informado.\t\r\nCorreção: \tInforme 1 para ISSQN Nao Retido ou 2 para ISSQN Retido pelo Tomador.",
+        "qtd":  6,
+        "empresa_id":  "bbb54a1e-4fbd-4d61-940a-40d604ca0600"
+    },
+    {
+        "motivo_situacao":  "CPNJ do Tomador Inválido\r\nCorreção: Informar o CPNJ do Tomador Válido",
+        "qtd":  6,
+        "empresa_id":  "d6daa88b-deeb-46cd-bd81-922c7d810600"
+    },
+    {
+        "motivo_situacao":  "Para comércio exterior é obrigatório o preenchido do código NBS.",
+        "qtd":  5,
+        "empresa_id":  "c3e788e6-08dd-ed19-4332-0ef19a38a9a8"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  5,
+        "empresa_id":  "85d728c8-b84d-4736-b6fb-5879a0310300"
+    },
+    {
+        "motivo_situacao":  "Serviço Paralisado sem Previsão",
+        "qtd":  5,
+        "empresa_id":  "9aef32e6-08de-267e-47cb-8ad67e8d64ee"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  5,
+        "empresa_id":  "414a7953-08dd-8aaf-40dc-513eb077b25a"
+    },
+    {
+        "motivo_situacao":  "O RPS informado já foi convertido em NFS. Utilize o serviço esConsultarNfsePorRps antes de enviar o RPS.\r\nCorreção:",
+        "qtd":  5,
+        "empresa_id":  "1c698e9b-08de-1392-4f6c-da6221d39a32"
+    },
+    {
+        "motivo_situacao":  "Foi encontrado mais de um serviço associado vigente parametrizado para o Código Municipal 8599699 e Código Federal 08.02 e Código Nacional 080201. Utilize cIntContrib para informar um código municipal específico. Serviços possíveis: Municipal: 8599699 - Federal: 08.02; Municipal: 8599699 - Federal: ",
+        "qtd":  5,
+        "empresa_id":  "6a474b2e-08de-b3c2-4c2d-9000d73a7fc1"
+    },
+    {
+        "motivo_situacao":  "Campo Cidade do Tomador de Serviços é Obrigatório \r\nCorreção: Informar Cidade.",
+        "qtd":  5,
+        "empresa_id":  "0a9bb472-f5b0-4dd6-8645-81724f2c0700"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  5,
+        "empresa_id":  "cb61cb5d-2d5a-4a78-a6dc-dfcd683b0800"
+    },
+    {
+        "motivo_situacao":  "Não é possível emitir notas com data de competência superior a data atual.",
+        "qtd":  5,
+        "empresa_id":  "76ec647f-fdcd-4ee1-ae59-9e2f62010900"
+    },
+    {
+        "motivo_situacao":  "Rejeição: Falha no Schema XML do lote de NFe",
+        "qtd":  5,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Não existe regra de imposto para o serviço informado\r\nCorreção: Informe um serviço que exista na regra",
+        "qtd":  5,
+        "empresa_id":  "7d9b101a-7aa0-42d5-a01e-9d814e1c0900"
+    },
+    {
+        "motivo_situacao":  "Por gentileza, conclua o cadastro de todas as alíquotas referentes à competência vigente.",
+        "qtd":  5,
+        "empresa_id":  "aa20a21c-0ca9-4097-b370-69ef738d0600"
+    },
+    {
+        "motivo_situacao":  "XML não compatível com Schema. Houve um erro na leitura do XML de envio de loteSystem.NullReferenceException: Object reference not set to an instance of an object.\n   at NotaSalvador.IntegrationModel.EnvioLoteRPS.EnviarLoteRPS(EnviarLoteRPSRequest request) in E:\\Jenkins\\workspace\\1DSV\\FISCALIZACAO\\N",
+        "qtd":  5,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  4,
+        "empresa_id":  "e00a2267-2611-49e7-b2ba-e4b793160500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 306 - Rejeicao: IE do Destinatario nao esta ativa na UF",
+        "qtd":  4,
+        "empresa_id":  "3f9ed5ec-08dd-62c8-4a84-6ac56b3f3150"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  4,
+        "empresa_id":  "75d892b8-08dd-832a-42d3-5b0121e863b1"
+    },
+    {
+        "motivo_situacao":  "RPS já informado.(Numero RPS: 32346)\r\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.",
+        "qtd":  4,
+        "empresa_id":  "76ec647f-fdcd-4ee1-ae59-9e2f62010900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 720 - Rejeicao: Na operacao com Exterior deve ser informada tag idEstrangeiro",
+        "qtd":  4,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  4,
+        "empresa_id":  "85fc0bb3-f0a9-40eb-9986-bdd40e6f0800"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  4,
+        "empresa_id":  "83cdea54-6cf7-493b-8f00-92655c640300"
+    },
+    {
+        "motivo_situacao":  "O campo codigoNBS deve ser informado.",
+        "qtd":  4,
+        "empresa_id":  "fb075c43-4cd6-4067-a301-b393981c0700"
+    },
+    {
+        "motivo_situacao":  "Na operacao com Exterior deve ser informada tag idEstrangeiro",
+        "qtd":  4,
+        "empresa_id":  "2e7636cf-fd9b-48f4-bde1-cb3bdbaa0400"
+    },
+    {
+        "motivo_situacao":  "CPF do tomador não encontrado no cadastro CPF.",
+        "qtd":  4,
+        "empresa_id":  "4c6c16a5-08de-9926-41a8-294f947d84e8"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO bairro do endereço do tomador deve conter entre 2 e 60 caracteres\r\n",
+        "qtd":  4,
+        "empresa_id":  "3281f576-08de-ea52-49cd-85bffa67b73c"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido\r\n",
+        "qtd":  4,
+        "empresa_id":  "7ccc15a9-2d74-4645-a94e-afc384e20700"
+    },
+    {
+        "motivo_situacao":  "Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar em contato pelo Whatsapp: (31) 99705-2109.",
+        "qtd":  4,
+        "empresa_id":  "440ebc30-b298-4f3a-8d87-0f4482da0600"
+    },
+    {
+        "motivo_situacao":  "LoteRps duplicado",
+        "qtd":  4,
+        "empresa_id":  "17169fa7-08de-3494-40a0-f34389c0b6e5"
+    },
+    {
+        "motivo_situacao":  "Erro desconhecido\r\nCorreção:",
+        "qtd":  4,
+        "empresa_id":  "d6daa88b-deeb-46cd-bd81-922c7d810600"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  4,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Falha no esquema XML do DF-e.\r\n The \"http://www.sped.fazenda.gov.br/nfse:xLgr\" element is invalid - The value \"⁠Rua Felipe Schmidt\" is invalid according to its datatype \"http://www.sped.fazenda.gov.br/nfse:TSLogradouro\" - The Pattern constraint failed.",
+        "qtd":  4,
+        "empresa_id":  "707a0052-36c5-4820-b4d8-1aed5f810800"
+    },
+    {
+        "motivo_situacao":  "Esta NFS-e nao devera ter o ISSQN Retido pelo tomador do servico.\t\r\nCorreção: \tConsulte a legislacao vigente para saber as regras de retencao do ISSQN na fonte e selecione ISS Retido = 2 (NaO).",
+        "qtd":  4,
+        "empresa_id":  "bbb54a1e-4fbd-4d61-940a-40d604ca0600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeição: Operação de Exportação com informação de ICMS incompatível",
+        "qtd":  4,
+        "empresa_id":  "8255d08f-fe11-40db-9603-967f345e0500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Emissor nao habilitado para emissao da NF-e/NFC-e CNPJ:31141736000103",
+        "qtd":  4,
+        "empresa_id":  "33f75430-5347-47a1-ab19-380e05c50400"
+    },
+    {
+        "motivo_situacao":  "Não é possível emitir notas com data de competência superior a data atual.",
+        "qtd":  4,
+        "empresa_id":  "78513559-2d29-4cef-bb61-56f130c30400"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  4,
+        "empresa_id":  "d035db2e-d04b-4723-8e89-7667c2eb0a00"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.",
+        "qtd":  3,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  3,
+        "empresa_id":  "1a31ce9f-9ce4-492a-8704-e25536fc0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Rejeicao: Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem:1]",
+        "qtd":  3,
+        "empresa_id":  "2639480e-dd8b-4037-bebf-4c9107a80a00"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.",
+        "qtd":  3,
+        "empresa_id":  "c4c9efc2-4578-4999-8edc-4d025e060200"
+    },
+    {
+        "motivo_situacao":  "Rejeição: Consumo Indevido",
+        "qtd":  3,
+        "empresa_id":  "ae62c4c2-bae4-4de0-969e-a327d4fa0600"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  3,
+        "empresa_id":  "0b41a0f4-f369-4057-80b5-1a7e4ecf0600"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui \r\n",
+        "qtd":  3,
+        "empresa_id":  "ce9a34fa-01f8-4775-914c-aa9c1e7f0900"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  3,
+        "empresa_id":  "cc43656c-9182-4123-b362-ab0f3b650500"
+    },
+    {
+        "motivo_situacao":  "O CNPJ informado para o tomador é inválido.",
+        "qtd":  3,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.",
+        "qtd":  3,
+        "empresa_id":  "2e1a5c6a-a450-41fb-aa55-ade56d3e0300"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior [nItem:1]",
+        "qtd":  3,
+        "empresa_id":  "a162ced3-08de-1654-4bdb-fa6c35e2b389"
+    },
+    {
+        "motivo_situacao":  "O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.",
+        "qtd":  3,
+        "empresa_id":  "cc43656c-9182-4123-b362-ab0f3b650500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e",
+        "qtd":  3,
+        "empresa_id":  "10fcdc56-08de-c71a-4a7d-1b6be56fd00f"
+    },
+    {
+        "motivo_situacao":  "cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento \"dps:xEstProvReg\". Era esperado um dos \"{\"http://www.betha.com.br/e-nota-dps\":xCidade}\". (correção: Verifique a estrutura do XML)",
+        "qtd":  3,
+        "empresa_id":  "927a5dfc-9f31-4ced-9561-dda831e60600"
+    },
+    {
+        "motivo_situacao":  "RPS já informado.(Numero RPS: 8789)\r\nCorreção: Para essa Inscrição Municipal/CNPJ já existe um RPS informado com o mesmo número, série e tipo.",
+        "qtd":  3,
+        "empresa_id":  "31a7daf0-d42e-4dd9-a0d4-d82ae16f0800"
+    },
+    {
+        "motivo_situacao":  "Para comércio exterior é obrigatório o preenchido do código NBS.",
+        "qtd":  3,
+        "empresa_id":  "37911b99-b580-4ead-8530-5db569f30a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada\r\n",
+        "qtd":  3,
+        "empresa_id":  "9d2499f2-08dd-83c9-4668-fc7cf5486e1e"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui \r\n",
+        "qtd":  3,
+        "empresa_id":  "ff8c4c82-08dd-5a0a-46ef-c358f4a8b63b"
+    },
+    {
+        "motivo_situacao":  "Para comércio exterior é obrigatório o preenchido do código NBS.",
+        "qtd":  3,
+        "empresa_id":  "b5660e1d-e851-4490-bbbc-18e9a4020800"
+    },
+    {
+        "motivo_situacao":  "Código do município do tomador do serviço não corresponde ao CEP informado.\r\nCorreção:",
+        "qtd":  3,
+        "empresa_id":  "890c3d12-e1f2-43e5-ac29-7f27f1bc0600"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  3,
+        "empresa_id":  "5ba9ea69-151d-465d-b6ff-96db3d000700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Rejeicao: Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem:1]",
+        "qtd":  3,
+        "empresa_id":  "72d38b27-08dd-f456-427a-d681a4dba7ed"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  3,
+        "empresa_id":  "2f88c812-3b84-4699-b8f9-73726c630900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Erro ao inserir Dados Pessoa: Para avançar, por favor verifique a seguinte situação:1. A série transcrita manualmente para a DPS não pertence à faixa definida para este fim (de 80000 até 89999).",
+        "qtd":  3,
+        "empresa_id":  "ee788567-f99a-490a-af9c-2c4fdfe00700"
+    },
+    {
+        "motivo_situacao":  "Não é possível emitir notas com data de competência superior a data atual.",
+        "qtd":  3,
+        "empresa_id":  "f7586350-94a1-4340-aa6a-b5db80a00200"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  3,
+        "empresa_id":  "13d08c01-ce1a-4236-957b-07c2f0d50700"
+    },
+    {
+        "motivo_situacao":  "O item da lista de serviço deve conter 5 dígitos com formatação (ex: 01.08, 10.02)",
+        "qtd":  3,
+        "empresa_id":  "3a87f8d3-2583-43ad-a674-a1b82cf60a00"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  3,
+        "empresa_id":  "85d1c6a5-bda8-48b8-99f8-59b0158b0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 228 - Rejeicao: Data de Emissao muito atrasada",
+        "qtd":  3,
+        "empresa_id":  "69d7af7a-e2e9-4904-9936-a00ffe120a00"
+    },
+    {
+        "motivo_situacao":  "Falha no esquema XML do DF-e.\r\n The \"http://www.sped.fazenda.gov.br/nfse:xLgr\" element is invalid - The value \"Avenida Eloá Martins Passos Felix – Rod.151\" is invalid according to its datatype \"http://www.sped.fazenda.gov.br/nfse:TSLogradouro\" - The Pattern constraint failed.",
+        "qtd":  3,
+        "empresa_id":  "4c6c16a5-08de-9926-41a8-294f947d84e8"
+    },
+    {
+        "motivo_situacao":  "Exception in endElement: cvc-complex-type.2.4.b: The content of element \"tomador\" is not complete. One of \"{nmUf}\" is expected.\r\nCorreção:",
+        "qtd":  3,
+        "empresa_id":  "1c698e9b-08de-1392-4f6c-da6221d39a32"
+    },
+    {
+        "motivo_situacao":  "CEP do Tomador informado inválido.",
+        "qtd":  3,
+        "empresa_id":  "e9a54883-2563-49b2-9fa1-4071e6770800"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  3,
+        "empresa_id":  "bf09d050-a31f-4969-9810-890167730900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeição: Operação de Exportação com informação de ICMS incompatível",
+        "qtd":  3,
+        "empresa_id":  "54112d68-5e27-4d58-a28c-ecc856a60900"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do cliente deve conter no máximo 50 caracteres.",
+        "qtd":  3,
+        "empresa_id":  "d9cc5b54-15cd-4a49-94d3-6e74c59f0700"
+    },
+    {
+        "motivo_situacao":  "Não é possível emitir notas com data de competência superior a data atual.",
+        "qtd":  3,
+        "empresa_id":  "4c6c16a5-08de-9926-41a8-294f947d84e8"
+    },
+    {
+        "motivo_situacao":  "Número do RPS inválido.(Numero RPS: 2607)\r\nCorreção: Informe um número de RPS que corresponda à seqüência utilizada pelo prestador do serviço.",
+        "qtd":  3,
+        "empresa_id":  "c842c4a6-9ba9-40bd-9a89-8136b4fc0900"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  3,
+        "empresa_id":  "4785ca6f-08dd-7470-4521-886d7e9f54ee"
+    },
+    {
+        "motivo_situacao":  "Campo obrigatório na configuração de Nfe do produdo não preenchido!",
+        "qtd":  3,
+        "empresa_id":  "bc87cfe0-189c-4ec6-9b88-0f86d5e60900"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  3,
+        "empresa_id":  "9be27f4a-4e78-413d-818f-a69db12b0500"
+    },
+    {
+        "motivo_situacao":  "A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.",
+        "qtd":  3,
+        "empresa_id":  "fb966994-db67-4399-8122-3f06d7490a00"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  2,
+        "empresa_id":  "0e484d4c-ba83-4a21-8698-ae4300320700"
+    },
+    {
+        "motivo_situacao":  "Série do RPS incorreta.\r\nCorreção: Esta série de RPS não é permitida para o tipo informado",
+        "qtd":  2,
+        "empresa_id":  "08f8a9c4-5d73-4e44-83e9-3e8782350600"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "ea630b82-08dd-a083-4168-2336da3ff974"
+    },
+    {
+        "motivo_situacao":  "RPS 55590, Para Consumidor Final ou Tomador do Exterior Não Informe o Campo: CEP",
+        "qtd":  2,
+        "empresa_id":  "b89c9aa9-7a01-4d42-9629-ddda9e9c0400"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 720 - Na operacao com Exterior deve ser informada tag idEstrangeiro",
+        "qtd":  2,
+        "empresa_id":  "2e7636cf-fd9b-48f4-bde1-cb3bdbaa0400"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido",
+        "qtd":  2,
+        "empresa_id":  "f62e2290-08dd-8c7f-4bad-d9406a626d53"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  2,
+        "empresa_id":  "8ffa093d-f2fc-4c0e-bd53-f2a549570600"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  2,
+        "empresa_id":  "677949bd-e0b0-4f43-9967-6185fde70700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 781 - Rejeicao: Emissor nao habilitado para emissao da NF-e/NFC-e\r\n",
+        "qtd":  2,
+        "empresa_id":  "05587ec2-a126-4c84-9f0b-e3700f020800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 306 - Rejeição: IE do destinatário não está ativa na UF",
+        "qtd":  2,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  2,
+        "empresa_id":  "0a9bb472-f5b0-4dd6-8645-81724f2c0700"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "6c93239e-0b8f-4739-a04c-d7a2a1730200"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  2,
+        "empresa_id":  "f2395aae-3242-421e-ad66-020649a70500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeição: IE do destinatário não informada",
+        "qtd":  2,
+        "empresa_id":  "c3e788e6-08dd-ed19-4332-0ef19a38a9a8"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.",
+        "qtd":  2,
+        "empresa_id":  "c4c9efc2-4578-4999-8edc-4d025e060200"
+    },
+    {
+        "motivo_situacao":  "O campo codigoNBS deve ser informado.",
+        "qtd":  2,
+        "empresa_id":  "05587ec2-a126-4c84-9f0b-e3700f020800"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO cep do endereço do tomador deve conter 8 caracteres (somente números)\r\n",
+        "qtd":  2,
+        "empresa_id":  "6b078441-08de-31c2-493e-8e763a2059c6"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 302 - Rejeição: Irregularidade fiscal do destinatário",
+        "qtd":  2,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.\r\n",
+        "qtd":  2,
+        "empresa_id":  "a7e84168-530f-4740-9dca-e58807870500"
+    },
+    {
+        "motivo_situacao":  "O CPF informado para o tomador é inválido.\r\n",
+        "qtd":  2,
+        "empresa_id":  "3281f576-08de-ea52-49cd-85bffa67b73c"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "9fa5891e-08dd-47c5-4d19-7476926c804b"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.",
+        "qtd":  2,
+        "empresa_id":  "0725ff62-b02d-4e7e-81fe-e2db465c0700"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido",
+        "qtd":  2,
+        "empresa_id":  "8655ed40-4370-4348-bd9c-44ac42d90800"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  2,
+        "empresa_id":  "6031026d-08de-7878-48cc-ea91c1357e7a"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 356 - Rejeicao: Informar o local de saída do Pais somente no caso da exportação.",
+        "qtd":  2,
+        "empresa_id":  "e6d3554b-bba5-46d3-9d01-22bc5ac00a00"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "c415e906-0bea-477b-a208-2ba21c990400"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  2,
+        "empresa_id":  "8f9c304b-34b2-4867-9cea-f5c6317c0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: GW00005 - Quando ha tomador na nota é necessário informar o cpf/cnpj do tomador.\r\n",
+        "qtd":  2,
+        "empresa_id":  "bc483258-08de-b5c0-4459-8932436691b0"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  2,
+        "empresa_id":  "abf283e6-8ad9-4f25-aae7-63ef7d090b00"
+    },
+    {
+        "motivo_situacao":  "O logradouro do endereço do tomador deve conter entre 2 e 60 caracteres",
+        "qtd":  2,
+        "empresa_id":  "aaf78ff3-0682-4613-a976-60b5f3ed0900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 511 - Rejeicao: Nao e de Operacao com Exterior e Codigo Pais destinatario difere de 1058 (Brasil)",
+        "qtd":  2,
+        "empresa_id":  "2454aed6-de89-411a-b80a-c68b8ff40700"
+    },
+    {
+        "motivo_situacao":  "Falha no esquema XML do DF-e.\r\n The element \"endExt\" in namespace \"http://www.sped.fazenda.gov.br/nfse\" has invalid child element \"xEstProvReg\" in namespace \"http://www.sped.fazenda.gov.br/nfse\". List of possible elements expected: \"xCidade\" in namespace \"http://www.sped.fazenda.gov.br/nfse\".",
+        "qtd":  2,
+        "empresa_id":  "ba453838-08dd-bcd7-4e55-8693e705e7a1"
+    },
+    {
+        "motivo_situacao":  "IE do destinatario bloqueado na UF",
+        "qtd":  2,
+        "empresa_id":  "11004aa8-ecda-4a46-a699-f5c87af70500"
+    },
+    {
+        "motivo_situacao":  "A situação tributária do PIS informada é ínválida.",
+        "qtd":  2,
+        "empresa_id":  "86747a29-08de-cfe2-4786-972e62675104"
+    },
+    {
+        "motivo_situacao":  "O código de tributação nacional informado não existe conforme a lista de serviços nacional do Sistema Nacional NFS-e.",
+        "qtd":  2,
+        "empresa_id":  "b25d47b1-08dd-50c8-46a4-46b5c0c6dc0f"
+    },
+    {
+        "motivo_situacao":  "O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).",
+        "qtd":  2,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal sem tomador.",
+        "qtd":  2,
+        "empresa_id":  "6fe4d648-08de-fc36-4aac-bf3e1069f9e8"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do tomador deve conter entre 2 e 60 caracteres",
+        "qtd":  2,
+        "empresa_id":  "d49b8a62-a7a7-4f2b-aba4-ccad16f50500"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão com Tomador do Exterior via WebService",
+        "qtd":  2,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Falha no esquema XML do DF-e.\r\n The element \"endExt\" in namespace \"http://www.sped.fazenda.gov.br/nfse\" has invalid child element \"xEstProvReg\" in namespace \"http://www.sped.fazenda.gov.br/nfse\". List of possible elements expected: \"xCidade\" in namespace \"http://www.sped.fazenda.gov.br/nfse\".",
+        "qtd":  2,
+        "empresa_id":  "add8a2c8-08dd-41c3-4188-f2a976b7d5a0"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.\r\n",
+        "qtd":  2,
+        "empresa_id":  "69887f30-1b06-4470-9606-68f388350600"
+    },
+    {
+        "motivo_situacao":  "Nao foi possivel autenticar.\r\nCorreção: Verifique suas credenciais.",
+        "qtd":  2,
+        "empresa_id":  "309f8774-2f7a-4f32-a0f0-0a0cf9a90700"
+    },
+    {
+        "motivo_situacao":  "Esta prefeitura não suporta emissão de nota fiscal para tomador sem CPF\r\n",
+        "qtd":  2,
+        "empresa_id":  "f09a7880-08dd-130d-4663-c084ea7aee3d"
+    },
+    {
+        "motivo_situacao":  "Email inválido.",
+        "qtd":  2,
+        "empresa_id":  "9d6383e6-7d7b-491d-b985-2dc115360900"
+    },
+    {
+        "motivo_situacao":  "O município emissor informado na DPS deve estar parametrizado para utilizar os emissores públicos nacionais, conforme parametrização do município no Sistema Nacional NFS-e.",
+        "qtd":  2,
+        "empresa_id":  "e753420a-53aa-4707-b242-15cd7e310700"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido",
+        "qtd":  2,
+        "empresa_id":  "82ed5fc0-3117-49c8-8e51-d13fe3460700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 00383 - Lista de Serviço informada não possui desdobramento nacional",
+        "qtd":  2,
+        "empresa_id":  "e753420a-53aa-4707-b242-15cd7e310700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 225 - Rejeição: Falha no Schema XML do lote de NFe",
+        "qtd":  2,
+        "empresa_id":  "89d8fe1a-08de-8429-4ba5-a597bd13bafd"
+    },
+    {
+        "motivo_situacao":  "O NCM \"4901.99.00\" é inválido! O NCM deve ser numérico e conter 8 dígitos ou 2 dígitos (gênero).",
+        "qtd":  2,
+        "empresa_id":  "e94d9214-c197-4752-9101-f7c9c30f0b00"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  2,
+        "empresa_id":  "5158d9fc-9a19-42ec-9a13-30f129ca0800"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  2,
+        "empresa_id":  "763e9255-fd20-4049-a3b1-4352dec80800"
+    },
+    {
+        "motivo_situacao":  "A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.",
+        "qtd":  2,
+        "empresa_id":  "7c6cb56b-08dd-e7fb-40c0-33fd968fa8e6"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "92e3ee83-08dd-9ea5-4966-7adc688e2950"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "59a0cade-08dd-ea68-4482-f2b415cb1d85"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  2,
+        "empresa_id":  "26f74af5-8103-4d14-ac79-c4a138320900"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  2,
+        "empresa_id":  "f281ea76-ff53-45b4-af13-1b0a33d70100"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não é possivel emitir com a data de competência informada. Não foi encontrado nenhum cadastro referente à inscrição 33468291000104 entre os municípios conveniados ao Sistema Nacional da NFS-e. Por favor, informe outra data de competência.",
+        "qtd":  2,
+        "empresa_id":  "4ae64ce9-08de-38d3-4a1c-e361db759d21"
+    },
+    {
+        "motivo_situacao":  "Informações do Tomador do serviço incompletas. Por favor, entrar em contato com a prefeitura. - CODE: 1\r\nCorreção:",
+        "qtd":  2,
+        "empresa_id":  "122d8109-a093-4f92-b902-5c94300a0700"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  2,
+        "empresa_id":  "26de9e2e-08de-68f8-4b1c-3d04827af316"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.\r\n",
+        "qtd":  2,
+        "empresa_id":  "bd105cc8-08de-3c9f-4172-252ee2fdd10c"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  2,
+        "empresa_id":  "35f665f5-4df6-4988-92dc-6bf49b600600"
+    },
+    {
+        "motivo_situacao":  "Campo Cidade do Tomador de Serviços é Obrigatório \r\nCorreção: Informar Cidade.",
+        "qtd":  2,
+        "empresa_id":  "a11c0a0c-6f7a-4cef-8ee4-78490f3a0a00"
+    },
+    {
+        "motivo_situacao":  "O campo CPF/CNPJ do Tomador: 00000000000 inválido.",
+        "qtd":  2,
+        "empresa_id":  "cf25c5a9-0b3f-4474-98e6-693aa80a0900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeicao: Operacao de Exportacao com informacao de ICMS incompativel",
+        "qtd":  2,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  2,
+        "empresa_id":  "d76c5c5e-1760-4aa6-93d7-f6dd58f80700"
+    },
+    {
+        "motivo_situacao":  "Campo obrigatório na configuração de Nfe do produdo não preenchido!",
+        "qtd":  2,
+        "empresa_id":  "79b63559-a1af-4e7d-8c70-60302c450a00"
+    },
+    {
+        "motivo_situacao":  "Rejeição: Consumo Indevido",
+        "qtd":  1,
+        "empresa_id":  "bddc1405-c502-4545-aa04-9499e0de0500"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeição: Operação de Exportação com informação de ICMS incompatível",
+        "qtd":  1,
+        "empresa_id":  "952f0ae5-de84-4140-b8b3-5b19ae000900"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "1ea792ff-4d38-4831-aa75-447ce6e70700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Rejeitado pelo Emissor Nacional: E0014 - Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente. - Cod. Interno 21489497",
+        "qtd":  1,
+        "empresa_id":  "9f11eea8-08de-d3e0-4cca-3177e59cff88"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: ERRO em xml_ListaRps_Rps[194]_Endereco | Para o tomador informado, é necessário preencher os campos de endereço (CEP, Bairro, Tipo de Logradouro, Logradouro, Número, Código do Município e UF). Verifique os dados de endereço do tomador.\r\n",
+        "qtd":  1,
+        "empresa_id":  "8b7376fa-08de-add2-4d27-7341861d25c7"
+    },
+    {
+        "motivo_situacao":  "A UF do endereço do cliente deve conter apenas 2 caracteres, ex: MG.",
+        "qtd":  1,
+        "empresa_id":  "82ddaa63-9e78-435d-a913-5191c6550600"
+    },
+    {
+        "motivo_situacao":  "A série do RPS configurada deve conter apenas números e estar no intervalo de 1 a 49.999.\r\n",
+        "qtd":  1,
+        "empresa_id":  "ac64d1f2-2466-475a-8719-7f8983f00a00"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  1,
+        "empresa_id":  "41eedf23-4235-40a7-a481-7a11c82f0400"
+    },
+    {
+        "motivo_situacao":  "Código CNAE incompatível com o item da lista.(Numero RPS: 65)\r\nCorreção: Consulte a legislação aplicável e informe o código de subclasse CNAE que seja compatível com o item da lista da LC 116 informado.",
+        "qtd":  1,
+        "empresa_id":  "d9957a5f-08dd-c5bb-49a5-6c4f61cd453a"
+    },
+    {
+        "motivo_situacao":  "Ocorreu um erro desconhecido com código: a72c7102-4b68-4dd2-999a-6cd69c0f9222 \r\nCorreção: Entre em contato com o suporte e informe o código do erro.",
+        "qtd":  1,
+        "empresa_id":  "cb61cb5d-2d5a-4a78-a6dc-dfcd683b0800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.",
+        "qtd":  1,
+        "empresa_id":  "10b083c7-135a-4dd3-a64c-dc3aa1890600"
+    },
+    {
+        "motivo_situacao":  "Os dados de ICMS do item da NFe são de preenchimento obrigatório.",
+        "qtd":  1,
+        "empresa_id":  "5f439244-08de-01a2-4819-5932074d3622"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do tomador deve conter entre 2 e 60 caracteres",
+        "qtd":  1,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  1,
+        "empresa_id":  "a85b7ccb-ded0-4f85-bd0e-ccf0bf120a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Obrigatório informa o codigo NBS para serviço prestados fora do pais!!!",
+        "qtd":  1,
+        "empresa_id":  "a81cff4e-08dd-3b4b-4f73-e0b053ecd0ca"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não é possivel emitir com a data de competência informada. Não foi encontrado nenhum cadastro referente à inscrição 46893299000151 entre os municípios conveniados ao Sistema Nacional da NFS-e. Por favor, informe outra data de competência.",
+        "qtd":  1,
+        "empresa_id":  "e7e79a01-08dd-4ba6-4dc6-0fe7294d501f"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 394 - Usuário não disponível para este serviço.",
+        "qtd":  1,
+        "empresa_id":  "3ded9a2b-5bea-45ec-b5fa-5be5646c0a00"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do cliente deve conter no máximo 50 caracteres.",
+        "qtd":  1,
+        "empresa_id":  "17e4a27b-168d-4433-b3a3-1c5d14cf0800"
+    },
+    {
+        "motivo_situacao":  "O campo codigoNBS deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "35f665f5-4df6-4988-92dc-6bf49b600600"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  1,
+        "empresa_id":  "67b1f68f-d4e7-48b8-a489-ae4646e60a00"
+    },
+    {
+        "motivo_situacao":  "Rejeição: Consumo Indevido",
+        "qtd":  1,
+        "empresa_id":  "4f94f330-08dd-a09f-426e-c55dc5f14e5d"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Rejeicao: Unidade Tributavel incompativel com o NCM informado na operacao com Comercio Exterior [nItem:1]",
+        "qtd":  1,
+        "empresa_id":  "de582b78-08dd-45a5-41bc-5d1ed918d7be"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  1,
+        "empresa_id":  "6f1cd3ec-08de-69ac-4716-8b87ba08adfe"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "26625a03-2785-4590-b3a7-b65b9bd40800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "87405005-c964-417c-a341-25b7f15d0900"
+    },
+    {
+        "motivo_situacao":  "O CPF informado para o cliente é inválido.",
+        "qtd":  1,
+        "empresa_id":  "d6daa88b-deeb-46cd-bd81-922c7d810600"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.",
+        "qtd":  1,
+        "empresa_id":  "b599ec8a-5fb8-4138-ac7c-8b89e5570600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "1d953296-1acc-45c6-8f5e-ddc329590700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Ocorreu um erro inesperado ao tentar realizar a emissao da nota.",
+        "qtd":  1,
+        "empresa_id":  "8929485f-c038-483d-900d-9521d9c40800"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.\r\n",
+        "qtd":  1,
+        "empresa_id":  "29557898-dbd4-490a-b408-eed800ce0100"
+    },
+    {
+        "motivo_situacao":  "Cliente pessoa jurídica não ativo na Receita Federal. Situação: BAIXADA.",
+        "qtd":  1,
+        "empresa_id":  "3ee0066a-08dd-8008-4495-8b364911ee54"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 209 - Rejeicao: IE do emitente invalida",
+        "qtd":  1,
+        "empresa_id":  "d85127bc-4232-4dee-ba65-3e57dbdd0800"
+    },
+    {
+        "motivo_situacao":  "Ocorreu um erro desconhecido com código: d8d0b333-c128-47ad-adf2-92f26e5b217a \r\nCorreção: Entre em contato com o suporte e informe o código do erro.",
+        "qtd":  1,
+        "empresa_id":  "6e2b2b04-e6f1-402d-9feb-e8b6cd100a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "6031026d-08de-7878-48cc-ea91c1357e7a"
+    },
+    {
+        "motivo_situacao":  "Código de tributação informado é inválido",
+        "qtd":  1,
+        "empresa_id":  "891dfbf1-6c24-404b-9842-469312a00900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "7e83e51d-fe7a-4d45-8620-fcf962d90800"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO número do endereço do tomador deve conter entre 1 e 60 caracteres\r\n",
+        "qtd":  1,
+        "empresa_id":  "4a303962-08de-8c47-4e9c-3dc541020a20"
+    },
+    {
+        "motivo_situacao":  "Ocorreu um erro desconhecido com código: 6785f10b-a593-4ee9-820d-66b76a6acfea \r\nCorreção: Entre em contato com o suporte e informe o código do erro.",
+        "qtd":  1,
+        "empresa_id":  "8ffa093d-f2fc-4c0e-bd53-f2a549570600"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do cliente deve conter no máximo 50 caracteres.",
+        "qtd":  1,
+        "empresa_id":  "2e7636cf-fd9b-48f4-bde1-cb3bdbaa0400"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "70541dea-08dd-eff6-4470-a572fce96027"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "3f9ed5ec-08dd-62c8-4a84-6ac56b3f3150"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: ORA-20311 - Não é possível obter a situação de devedor contumaz para este contribuinte",
+        "qtd":  1,
+        "empresa_id":  "c483326e-71cb-40bd-98d2-253807590300"
+    },
+    {
+        "motivo_situacao":  "O código do serviço municipal deve conter de 1 a 5 caracteres numéricos",
+        "qtd":  1,
+        "empresa_id":  "d3cd8965-19dd-4ab3-9d65-cb9fa45d0600"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  1,
+        "empresa_id":  "3ee0066a-08dd-8008-4495-8b364911ee54"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "c061a087-3c05-456a-a73b-05d5ff440a00"
+    },
+    {
+        "motivo_situacao":  "O código de tributação municipal informado não existe ou não está administrado pelo município de incidência do ISSQN na data de competência informada na DPS.",
+        "qtd":  1,
+        "empresa_id":  "7e6a512d-206d-403b-b295-7ddd4a240200"
+    },
+    {
+        "motivo_situacao":  "Falha no esquema XML do DF-e.\r\n The \"http://www.sped.fazenda.gov.br/nfse:xCpl\" element is invalid - The value \"Olho D’Água do Manoel Luís\" is invalid according to its datatype \"http://www.sped.fazenda.gov.br/nfse:TSComplementoEndereco\" - The Pattern constraint failed.",
+        "qtd":  1,
+        "empresa_id":  "98064ea0-fc46-40ed-94e9-1281c2470700"
+    },
+    {
+        "motivo_situacao":  "O CFOP do produto deve conter apenas números.",
+        "qtd":  1,
+        "empresa_id":  "ac27b3dd-06f0-4949-9f94-5955efdf0600"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  1,
+        "empresa_id":  "a0089565-08de-a4ab-4aab-d4d3b9019193"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador sem endereço.\r\n",
+        "qtd":  1,
+        "empresa_id":  "64dd1129-08de-411f-48b4-cd515da0d40d"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.",
+        "qtd":  1,
+        "empresa_id":  "7377ffc5-08dd-8a22-478c-2028d8bced3f"
+    },
+    {
+        "motivo_situacao":  "Código de tributação nacional inválido. Informe o código no seguinte formato \"codigoServicoMunicipio\": \"010701\"",
+        "qtd":  1,
+        "empresa_id":  "dc2ccf56-c6b9-49ae-9b34-5d9e283f0600"
+    },
+    {
+        "motivo_situacao":  "Campo Cidade do Tomador de Serviços é Obrigatório \r\nCorreção: Informar Cidade.",
+        "qtd":  1,
+        "empresa_id":  "6bc09595-6a2d-44cc-afab-df5668670900"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Atencao - O campo CEP do destinatario informado nao existe 68925027",
+        "qtd":  1,
+        "empresa_id":  "3f89af36-46bd-4102-b2f5-ab9869320b00"
+    },
+    {
+        "motivo_situacao":  "CPF do tomador não encontrado no cadastro CPF.",
+        "qtd":  1,
+        "empresa_id":  "7c6c3dfa-0495-4136-b35a-73d787f90700"
+    },
+    {
+        "motivo_situacao":  "A data da emissão do RPS não poderá ser superior a data de hoje. / Informe uma data de emissão de RPS válida.\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "3d8842fb-08de-9dd4-4350-bc55024081c0"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeição: IE do destinatário não informada\r\n",
+        "qtd":  1,
+        "empresa_id":  "ba95eac6-d42d-4f06-874d-d203ddef0700"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "f3fb6536-b271-40c6-830b-f13c008d0400"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado:  00017 - CPF/CNPJ do tomador não é um CPF/CNPJ válido..",
+        "qtd":  1,
+        "empresa_id":  "56f76bdf-58f1-48d0-a567-ff469a260b00"
+    },
+    {
+        "motivo_situacao":  "Este estado não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO número do endereço do tomador deve conter entre 1 e 10 caracteres\r\nO bairro do endereço do tomador deve conter entre 2 e 60 caracteres\r\n",
+        "qtd":  1,
+        "empresa_id":  "3281f576-08de-ea52-49cd-85bffa67b73c"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "550b4634-a652-44f9-ba23-3cc33f620600"
+    },
+    {
+        "motivo_situacao":  "CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.",
+        "qtd":  1,
+        "empresa_id":  "d247033d-9344-4b00-b9df-32c5d0b10800"
+    },
+    {
+        "motivo_situacao":  "O codigoInternoServicoMunicipal deve ser um número inteiro",
+        "qtd":  1,
+        "empresa_id":  "5f439244-08de-01a2-4819-5932074d3622"
+    },
+    {
+        "motivo_situacao":  "CPF do tomador informado na RPS é inválido.\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "aca9eea5-6e8f-49ce-b6ac-a381299f0800"
+    },
+    {
+        "motivo_situacao":  "O código do serviço municipal deve conter de 1 a 11 caracteres numéricos",
+        "qtd":  1,
+        "empresa_id":  "ba2f86e3-ae43-44be-9501-0c5bcf300600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "278aafd7-5c27-4ad7-be80-4c3459060700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Rejeitado pelo Emissor Nacional: E0014 - Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente. - Cod. Interno 21487872",
+        "qtd":  1,
+        "empresa_id":  "9f11eea8-08de-d3e0-4cca-3177e59cff88"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: The \"http://www.portalfiscal.inf.br/nfe:UF\" element is invalid - The value \"mg\" is invalid according to its datatype \"http://www.portalfiscal.inf.br/nfe:TUf\" - The Enumeration constraint failed.",
+        "qtd":  1,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "UF do tomador do serviço não corresponde ao CEP informado.\r\nCorreção: Corrija a sigla da UF ou o CEP do tomador do serviço.",
+        "qtd":  1,
+        "empresa_id":  "1604f2bc-b198-45dd-9e71-2dd7a91a0b00"
+    },
+    {
+        "motivo_situacao":  "Numero de RPS já enviado\r\nCorreção: Informe um número de RPS ainda não utilizado",
+        "qtd":  1,
+        "empresa_id":  "c3e788e6-08dd-ed19-4332-0ef19a38a9a8"
+    },
+    {
+        "motivo_situacao":  "País do tomador não encontrado",
+        "qtd":  1,
+        "empresa_id":  "3d8842fb-08de-9dd4-4350-bc55024081c0"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do cliente deve conter no máximo 50 caracteres.",
+        "qtd":  1,
+        "empresa_id":  "b5660e1d-e851-4490-bbbc-18e9a4020800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 225 - Rejeição: Falha no Schema XML do lote de NFe",
+        "qtd":  1,
+        "empresa_id":  "db3fb743-4b89-46a4-87f4-30739fd70300"
+    },
+    {
+        "motivo_situacao":  "Informações do Tomador do serviço incompletas. Por favor, entrar em contato com a prefeitura. - CODE: 1\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "544c0eaf-e93c-49b1-86ad-eb96dc750a00"
+    },
+    {
+        "motivo_situacao":  "Usuário não tem autorização para solicitar o serviço.; Informações personalizadas: Encontramos uma NFS-e emitida no ambiente Nacional, por esse motivo não será possível utilizar o emissor da prefeitura.\r\nCorreção: A pessoa física ou jurídica, identificada pelo CPF ou CNPJ, não está autorizada a soli",
+        "qtd":  1,
+        "empresa_id":  "e97592de-78e6-4ebc-9774-787b64010a00"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador com endereço incompleto ou inválido.\r\nO número do endereço do tomador deve conter entre 1 e 60 caracteres\r\n",
+        "qtd":  1,
+        "empresa_id":  "6b078441-08de-31c2-493e-8e763a2059c6"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.",
+        "qtd":  1,
+        "empresa_id":  "93ced590-08dd-e217-4b08-6602ebd1417a"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Rejeitado pelo Emissor Nacional: E0014 - Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente. - Cod. Interno 21488003",
+        "qtd":  1,
+        "empresa_id":  "9f11eea8-08de-d3e0-4cca-3177e59cff88"
+    },
+    {
+        "motivo_situacao":  "Campo razão social do tomador não informado\r\nCorreção: O campo razão social do tomador deverá ser informado quando o campo Indicador de CPF/CNPJ do tomador for preenchido com 1 - CPF ou 2 - CNPJ.",
+        "qtd":  1,
+        "empresa_id":  "a3ab61f8-060d-402b-9ff5-bd33b5c20500"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  1,
+        "empresa_id":  "52874d45-69ba-42db-a874-7225333e0700"
+    },
+    {
+        "motivo_situacao":  "O Código de Serviço municipal deve ser informado para a emissão da Nota Fiscal",
+        "qtd":  1,
+        "empresa_id":  "2e737859-afba-4333-9a3a-1fee6d3e0500"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "a90237c3-1726-4c21-a7ba-37896a820a00"
+    },
+    {
+        "motivo_situacao":  "O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).\r\n",
+        "qtd":  1,
+        "empresa_id":  "e0eb3650-08dd-80b8-4f3c-70a8d4c8ed52"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Nao foi possivel autenticar com as credenciais fornecidas",
+        "qtd":  1,
+        "empresa_id":  "7bc92506-08de-7095-4cf8-3d2c03c7d592"
+    },
+    {
+        "motivo_situacao":  "O CFOP do produto deve conter apenas números.",
+        "qtd":  1,
+        "empresa_id":  "a545d54f-b450-4384-b6a9-b1e6e01d0600"
+    },
+    {
+        "motivo_situacao":  "O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).\r\n",
+        "qtd":  1,
+        "empresa_id":  "bc483258-08de-b5c0-4459-8932436691b0"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "9bb58a87-afa1-4fb2-9066-4127636c0600"
+    },
+    {
+        "motivo_situacao":  "O logradouro do endereço do tomador deve conter entre 2 e 60 caracteres",
+        "qtd":  1,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "Arquivo enviado fora da estrutura do arquivo XML de entrada.\r\nCorreção: Envie um arquivo dentro do schema do arquivo XML de entrada.",
+        "qtd":  1,
+        "empresa_id":  "2f7f4e5e-5e1b-4d54-af0d-d967887a0a00"
+    },
+    {
+        "motivo_situacao":  "Não é permitido informar 000 para o codigo de tributação municipal na DPS.",
+        "qtd":  1,
+        "empresa_id":  "342933fb-08de-4a71-43bd-907e3d163ed0"
+    },
+    {
+        "motivo_situacao":  "O CEP deverá pertencer ao município indicado - verificar os dados informados do Tomador.\r\n",
+        "qtd":  1,
+        "empresa_id":  "00239078-08de-fa6c-41b8-4dd46bcfc940"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "7afb65f8-6940-4fa1-b1a4-d74c1f5d0900"
+    },
+    {
+        "motivo_situacao":  "Código postal do tomador estrangeiro é obrigatório.",
+        "qtd":  1,
+        "empresa_id":  "11b026d4-e622-421d-b918-8259a68c0600"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  1,
+        "empresa_id":  "6b078441-08de-31c2-493e-8e763a2059c6"
+    },
+    {
+        "motivo_situacao":  "O campo codigoNBS deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "763e9255-fd20-4049-a3b1-4352dec80800"
+    },
+    {
+        "motivo_situacao":  "O bairro do endereço do cliente deve conter no máximo 50 caracteres.",
+        "qtd":  1,
+        "empresa_id":  "c3e788e6-08dd-ed19-4332-0ef19a38a9a8"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "f3625a98-c947-47d1-9fb4-3bce55ae0a00"
+    },
+    {
+        "motivo_situacao":  "Código do município do tomador do serviço não corresponde ao CEP informado.(Numero RPS: 54341)\r\nCorreção: Corrija o código do município ou o CEP do tomador do serviço.",
+        "qtd":  1,
+        "empresa_id":  "e53f5e74-97a9-4e1e-ab36-74136ba20800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O seguinte campo nao pode ficar vazio - Bairro/Regiao/Privincia no exterior deve ser informada",
+        "qtd":  1,
+        "empresa_id":  "3f89af36-46bd-4102-b2f5-ab9869320b00"
+    },
+    {
+        "motivo_situacao":  "O CFOP do produto deve conter apenas números.",
+        "qtd":  1,
+        "empresa_id":  "8536733c-b232-4d77-b9b6-264e8ca60a00"
+    },
+    {
+        "motivo_situacao":  "Cliente pessoa jurídica não ativo na Receita Federal. Situação: BAIXADA.",
+        "qtd":  1,
+        "empresa_id":  "8c99778c-08dd-3a50-49ff-b96ef7b81826"
+    },
+    {
+        "motivo_situacao":  "Não é permitido Tomador Não Identificado para atividade selecionada\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "64eba5e8-08de-6b3c-4336-eee615a715ba"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: The \"http://www.portalfiscal.inf.br/nfe:UF\" element is invalid - The value \"go\" is invalid according to its datatype \"http://www.portalfiscal.inf.br/nfe:TUf\" - The Enumeration constraint failed.",
+        "qtd":  1,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: The \"http://www.portalfiscal.inf.br/nfe:UF\" element is invalid - The value \"sp\" is invalid according to its datatype \"http://www.portalfiscal.inf.br/nfe:TUf\" - The Enumeration constraint failed.",
+        "qtd":  1,
+        "empresa_id":  "808e64d0-787f-40a1-ad34-9d412eb50800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeição: Operação de Exportação com informação de ICMS incompatível",
+        "qtd":  1,
+        "empresa_id":  "bf09d050-a31f-4969-9810-890167730900"
+    },
+    {
+        "motivo_situacao":  "Obrigatório envio de dados do IBSCBS para emissão de NFSe em São Bernardo do Campo/SP",
+        "qtd":  1,
+        "empresa_id":  "31b030ec-08dd-e5fb-4939-4094e826c39a"
+    },
+    {
+        "motivo_situacao":  "CPF/CNPJ do tomador do serviço obrigatório quando o endereço no Brasil for informado.\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "37dfeee6-208d-4b14-9249-d0c9a2fb0600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 531 - Rejeição: Total da BC ICMS difere do somatório dos itens",
+        "qtd":  1,
+        "empresa_id":  "7753a7f2-6d21-4cb7-a611-bb2b9bdf0800"
+    },
+    {
+        "motivo_situacao":  "O Telefone do cliente é inválido. O mesmo deve conter de 10 a 11 caracteres (apenas números, sem formatação).\r\n",
+        "qtd":  1,
+        "empresa_id":  "5e8d3eb0-08de-384a-495d-d9cc66b87626"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.",
+        "qtd":  1,
+        "empresa_id":  "1ea792ff-4d38-4831-aa75-447ce6e70700"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "236419cb-240e-4d5e-989f-82c23b040400"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "3106b948-08de-086f-4ff7-acf800f3ad4b"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 817 - Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior [nItem:1]",
+        "qtd":  1,
+        "empresa_id":  "89d8fe1a-08de-8429-4ba5-a597bd13bafd"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  1,
+        "empresa_id":  "be35ef57-519f-496f-9759-f252b9af0900"
+    },
+    {
+        "motivo_situacao":  "O cpf/cnpj do tomador deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "1c698e9b-08de-1392-4f6c-da6221d39a32"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado:  00017 - CPF/CNPJ do tomador não é um CPF/CNPJ válido..",
+        "qtd":  1,
+        "empresa_id":  "d21852e5-3ccf-402e-b21c-8bd43e230a00"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  1,
+        "empresa_id":  "7d4884b2-acf8-4c3a-ba46-dca846a10200"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  1,
+        "empresa_id":  "c9f0d7ea-08dd-2868-4c4a-04d2afd7a5e8"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: The \"http://www.portalfiscal.inf.br/nfe:xNome\" element is invalid - The value \"\" is invalid according to its datatype \"String\" - The Pattern constraint failed.",
+        "qtd":  1,
+        "empresa_id":  "3f9ed5ec-08dd-62c8-4a84-6ac56b3f3150"
+    },
+    {
+        "motivo_situacao":  "Empresa não está configurada para emissão de notas fiscais de produto. Por favor, configure a emissão.",
+        "qtd":  1,
+        "empresa_id":  "38bd026b-c7a0-434f-b93f-915ac7410400"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "7116a23f-018c-4805-97ba-5bc2770e0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "3cb8ef4f-db65-4b0f-bce9-0f7e182e0700"
+    },
+    {
+        "motivo_situacao":  "Opcao pelo SIMPLES Nacional nao consta do cadastro do contribuinte.\r\nCorreção: Nao ha registro no cadastro do contribuinte de opcao pelo SIMPLES Nacional. Procure a Prefeitura para regularizar a situacao.",
+        "qtd":  1,
+        "empresa_id":  "730b3cf2-08de-2911-4641-fddb471b8228"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "5c5d9e26-8bc7-4494-a69d-e32e4f3e0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 527 - Rejeição: Operação de Exportação com informação de ICMS incompatível",
+        "qtd":  1,
+        "empresa_id":  "46549778-3d91-4cbf-beed-fd1f219f0900"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente na chamada a API.\r\n",
+        "qtd":  1,
+        "empresa_id":  "00e6f6a1-08de-f177-4877-f86902145ae1"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  1,
+        "empresa_id":  "7dce4198-cd7a-401a-968e-59d6aadb0800"
+    },
+    {
+        "motivo_situacao":  "Código de tributação inexistente.\r\nCorreção: Consulte a legislação vigente para saber o Código de tributação que deverá ser informado.",
+        "qtd":  1,
+        "empresa_id":  "67cccdf6-08de-6057-4389-ec317ec75597"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "1c79f313-08de-687a-4fe5-fc096d425e09"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "43754b14-6b0a-42a0-9140-0ae4e1b70600"
+    },
+    {
+        "motivo_situacao":  "Empresa está configurada para não emitir NFe com cliente que tenha o Cpf/Cnpj inválido.",
+        "qtd":  1,
+        "empresa_id":  "46dbb372-bc1e-4f91-b748-44103da30a00"
+    },
+    {
+        "motivo_situacao":  "O codigoInternoServicoMunicipal informado pertence a outra cidade.",
+        "qtd":  1,
+        "empresa_id":  "3a87f8d3-2583-43ad-a674-a1b82cf60a00"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "981ada79-5cc6-40df-9202-bc5b7f4c0a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: O Limite de tentativas de conexão com o sistema da prefeitura foi atingido.",
+        "qtd":  1,
+        "empresa_id":  "e111f4a1-12da-40c9-a988-6cf9f8320500"
+    },
+    {
+        "motivo_situacao":  "O endereço do tomador é obrigatório para o indicador de operação informado ou quando a incidência do ISSQN definida para o serviço prestado ocorrer no local do estabelecimento/domicílio do tomador.",
+        "qtd":  1,
+        "empresa_id":  "539b16d8-9cb9-4628-9c46-997d78180600"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  1,
+        "empresa_id":  "19ae8198-c88e-4ece-8c54-8088f8540600"
+    },
+    {
+        "motivo_situacao":  "Ocorreu um erro desconhecido com código: eeafafea-08fe-4eea-9c91-f2e152bdd885 \r\nCorreção: Entre em contato com o suporte e informe o código do erro.",
+        "qtd":  1,
+        "empresa_id":  "a2e5565d-08dd-9106-40e7-24425a4b5ab9"
+    },
+    {
+        "motivo_situacao":  "Bloqueio temporário da conta realizado pelo Suporte eNotas. Caso não reconheça essa ação da nossa parte, favor entrar em contato pelo Whatsapp: (31) 99705-2109.",
+        "qtd":  1,
+        "empresa_id":  "41756488-50ef-4cff-b33d-533d1c640300"
+    },
+    {
+        "motivo_situacao":  "O email do cliente é inválido.",
+        "qtd":  1,
+        "empresa_id":  "d9cc5b54-15cd-4a49-94d3-6e74c59f0700"
+    },
+    {
+        "motivo_situacao":  "A data da emissão do RPS não poderá ser superior a data de hoje.\r\nCorreção: Informe uma data de emissão de RPS válida.",
+        "qtd":  1,
+        "empresa_id":  "2ccb4c3c-18c3-4ef9-a54f-29c650f40a00"
+    },
+    {
+        "motivo_situacao":  "Essa prefeitura não suporta emissão de Nota Fiscal com tomador sem endereço",
+        "qtd":  1,
+        "empresa_id":  "c3e788e6-08dd-ed19-4332-0ef19a38a9a8"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  1,
+        "empresa_id":  "35d44f99-08dd-3d4b-472a-7a2a0adc63cf"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "2639480e-dd8b-4037-bebf-4c9107a80a00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Rejeitado pelo Emissor Nacional: E0014 - Conjunto de Série, Número, Código do Município Emissor e CNPJ/CPF informado nesta DPS já existe em uma NFS-e gerada a partir de uma DPS enviada anteriormente. - Cod. Interno 21487870",
+        "qtd":  1,
+        "empresa_id":  "9f11eea8-08de-d3e0-4cca-3177e59cff88"
+    },
+    {
+        "motivo_situacao":  "A Cidade informada no endereço do cliente não foi encontrada no cadastro de Cidades do IBGE. \r\nVerifique se informou a Cidade e UF corretamente.",
+        "qtd":  1,
+        "empresa_id":  "8a7a2ec6-17f3-47a8-8cb6-f09d3bec0900"
+    },
+    {
+        "motivo_situacao":  "Ocorreu um erro desconhecido com código: 4cadba08-81d2-4730-9d90-6cb40cf1aaf2 \r\nCorreção: Entre em contato com o suporte e informe o código do erro.",
+        "qtd":  1,
+        "empresa_id":  "8ffa093d-f2fc-4c0e-bd53-f2a549570600"
+    },
+    {
+        "motivo_situacao":  "Campo Bairro do Tomador de Serviços é Obrigatório\r\nCorreção: Informar Bairro.",
+        "qtd":  1,
+        "empresa_id":  "2765285d-3cd3-4a54-9bb2-28f0a81e0a00"
+    },
+    {
+        "motivo_situacao":  "O CEP informado para o endereço nacional do tomador do serviço não existe ou não pertence ao município do endereço do tomador.",
+        "qtd":  1,
+        "empresa_id":  "dc7d1868-e66c-41dd-84dc-6cdda04b0800"
+    },
+    {
+        "motivo_situacao":  "Seu certificado digital está vencido. Clique aqui e veja como inserir um novo certificado no eNotas. Caso ainda não tenha um novo certificado, Clique aqui para renová-lo.",
+        "qtd":  1,
+        "empresa_id":  "9014adf2-63f0-4bcf-a19f-60f06a210800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 302 - Rejeição: Irregularidade fiscal do destinatário",
+        "qtd":  1,
+        "empresa_id":  "550b4634-a652-44f9-ba23-3cc33f620600"
+    },
+    {
+        "motivo_situacao":  "CNPJ do emitente prestador não possui estabelecimento ou domicílio em um município correspondente ao município emissor, na data de competência informada na DPS, conforme cadastros CNPJ e CNC NFS-e.",
+        "qtd":  1,
+        "empresa_id":  "d85127bc-4232-4dee-ba65-3e57dbdd0800"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 233 - Rejeicao: IE do destinatario nao cadastrada",
+        "qtd":  1,
+        "empresa_id":  "2f88c812-3b84-4699-b8f9-73726c630900"
+    },
+    {
+        "motivo_situacao":  "Endereço do tomador do serviço obrigatório quando houver identificação ou razão social.\r\nCorreção:",
+        "qtd":  1,
+        "empresa_id":  "995bb9cb-08dd-8b4b-4177-fd22ca1cf3e3"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: Não foi possível autenticar com as credenciais fornecidas, verifique se o usuário e senha de acesso ao portal da prefeitura estão configurados corretamente.",
+        "qtd":  1,
+        "empresa_id":  "db813452-b9b1-4712-b223-24a49e4c0800"
+    },
+    {
+        "motivo_situacao":  "CPNJ do Tomador Inválido\r\nCorreção: Informar o CPNJ do Tomador Válido",
+        "qtd":  1,
+        "empresa_id":  "c4c9efc2-4578-4999-8edc-4d025e060200"
+    },
+    {
+        "motivo_situacao":  "Erro ao criar rascunho da nota fiscal.\r\nCorreção: ---",
+        "qtd":  1,
+        "empresa_id":  "62bc8761-08de-671f-4fc8-5da8c707218f"
+    },
+    {
+        "motivo_situacao":  "Emissão e cancelamento de notas fiscais bloqueada por falta de pagamento. Entre em contato com o nosso time financeiro para regularizar sua situação clicando aqui ",
+        "qtd":  1,
+        "empresa_id":  "046adde4-e0c7-4a50-82d6-257ccd590700"
+    },
+    {
+        "motivo_situacao":  "RPS não assinado.\r\nCorreção: Assine o  RPS",
+        "qtd":  1,
+        "empresa_id":  "b021dd4b-69d8-4177-a1c5-d135da2c0b00"
+    },
+    {
+        "motivo_situacao":  "Para tomadores residentes no Brasil o CPF ou CNPJ deve ser informado.",
+        "qtd":  1,
+        "empresa_id":  "b0c49a96-b078-47e4-aa50-2becc40c0b00"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: 232 - Rejeicao: IE do destinatario nao informada",
+        "qtd":  1,
+        "empresa_id":  "f782021c-3623-4fcf-acd2-cc97141b0200"
+    },
+    {
+        "motivo_situacao":  "Apenas empresas inscritas neste municipio podem efetuar retencao de ISSQN.\t\r\nCorreção: \tO tomador do servico nao foi encontrado na base de dados do municipio, nao sendo permitida a retencao. Acerte o CNPJ e/ou Inscricao Municipal ou altere o campo ISSQN Retido para 2 (Sem retencao de ISSQN).",
+        "qtd":  1,
+        "empresa_id":  "bbb54a1e-4fbd-4d61-940a-40d604ca0600"
+    },
+    {
+        "motivo_situacao":  "Erro não identificado: The element \"IPI\" in namespace \"http://www.portalfiscal.inf.br/nfe\" has incomplete content. List of possible elements expected: \"CNPJProd, cSelo, qSelo, cEnq\" in namespace \"http://www.portalfiscal.inf.br/nfe\".",
+        "qtd":  1,
+        "empresa_id":  "86747a29-08de-cfe2-4786-972e62675104"
+    }
+]

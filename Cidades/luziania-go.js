@@ -16,7 +16,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'https://gestaoluziania.com.br/prodataws/services/NfseWSService/'
+        recepcaoLote: 'https://luziania.prodataweb.inf.br/prodataws/services/NfseWSService'
       }
     }
   },

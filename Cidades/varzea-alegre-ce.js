@@ -5,7 +5,7 @@
   ibge: '2314003',
   constante: 'CodigoIBGE.VarzeaAlegreCE',
   provedorAtual: {
-    nome: 'XTROnline',
+    nome: 'PMat',
     namespace: null,
     codigoNoProvedor: null,
     robo: false,
@@ -15,7 +15,7 @@
       homologacao: {
       },
       producao: {
-        recepcaoLote: 'http://www.xtronline.com.br/samadmin/webservice.php'
+        recepcaoLote: 'https://www.pmat.com.br/wsnf/ServicosNF.asmx'
       }
     }
   },
@@ -39,11 +39,11 @@
     usaCNAE: false,
     usaItemListaServico: false,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 4 a 5 dígitos sem formatação.\r\nExemplo válido: 101, 1701',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 3 a 4 dígitos sem formatação.\r\nExemplo válido: 101, 1701',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaEmissaoNFeSemCliente: false,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: true,
     enviaEmailCliente: true,

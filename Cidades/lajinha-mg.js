@@ -5,64 +5,48 @@
   ibge: '3137700',
   constante: 'CodigoIBGE.LajinhaMG',
   provedorAtual: {
-    nome: 'NfseNacionalV2',
-    namespace: 'http://www.sped.fazenda.gov.br/nfse',
+    nome: 'EeLv3',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
-        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
+        recepcaoLote: 'https://mg-lajinha-pm-nfs-backend.cloud.el.com.br/producao36/NfseWSService',
+        consultaRps: 'http://mg-lajinha-pm-nfs.cloud.el.com.br/'
       }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
-    assinaturaDigital: 2,
+    assinaturaDigital: 0,
     helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      certificadoDigital: 'Obrigatório a utilização de certificado digital.',
       usuario: null,
       senha: null,
       token: null,
       fraseSecreta: null
     },
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 30,
-    usaAEDF: false,
-    usaRegimeEspecialTributacao: true,
+    valorCancelamentoNFe: 60,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: false,
     usaCNAE: false,
-    usaNBS: true,
-    usaItemListaServico: false,
-    usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    usaItemListaServico: true,
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal.\r\n\r\nExemplos válidos: 06421008 ou 634812-2',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 6 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como código de Serviço ou código de serviço nacional. Exemplos válidos: 170901 ou 010201',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
+    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: false,
-    suportaEmissaoNFeClienteSemEndereco: true,
-    suportaCancelamentoNFeSemCliente: true,
+    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemEndereco: false,
+    suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    suportaEmissaoParalela: true,
-    enviaEmailCliente: false,
-    suportaConsultaSequencialRps: true,
-    numeroNotasPorLote: 1,
-    numeroLotesParalelos: 5,
-    autenticidadeNota: {
-      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
-      UsaChaveAcesso: true
-    },
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -73,10 +57,13 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Operação tributável' },
-      { codigo: '2', nome: 'Imunidade' },
-      { codigo: '3', nome: 'Exportação de Serviço' },
-      { codigo: '4', nome: 'Não incidência' }
+      { codigo: '1', nome: 'Exigível' },
+      { codigo: '2', nome: 'Não incidência' },
+      { codigo: '3', nome: 'Isenção' },
+      { codigo: '4', nome: 'Exportação' },
+      { codigo: '5', nome: 'Imunidade' },
+      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
+      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
     ]
   }
 };

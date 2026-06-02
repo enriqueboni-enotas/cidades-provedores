@@ -3,11 +3,11 @@
   nome: 'ISSMAP',
   empresa: 'ISSMAP',
   stats: {
-    municipios: 13
+    municipios: 14
   },
   visaoGeral: [
     { key: 'Nome', val: 'ISSMAP' },
-    { key: 'Total Municipios', val: '13' },
+    { key: 'Total Municipios', val: '14' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -46,6 +46,7 @@
     'issmap': [
       { nome: 'Águas de Santa Bárbara', uf: 'SP', ibge: '3500550' },
       { nome: 'Arandu', uf: 'SP', ibge: '3503109' },
+      { nome: 'Bernardino de Campos', uf: 'SP', ibge: '3506300' },
       { nome: 'Canitar', uf: 'SP', ibge: '3510153' },
       { nome: 'Chavantes', uf: 'SP', ibge: '3557204' },
       { nome: 'Espírito Santo do Turvo', uf: 'SP', ibge: '3515194' },

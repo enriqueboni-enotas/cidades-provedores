@@ -3,11 +3,11 @@
   nome: 'CittaV2',
   empresa: 'CittaV2',
   stats: {
-    municipios: 4
+    municipios: 5
   },
   visaoGeral: [
     { key: 'Nome', val: 'CittaV2' },
-    { key: 'Total Municipios', val: '4' },
+    { key: 'Total Municipios', val: '5' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -58,6 +58,7 @@
   municipiosLista: {
     'cittav2': [
       { nome: 'Casca', uf: 'RS', ibge: '4304903' },
+      { nome: 'Colorado', uf: 'RS', ibge: '4305603' },
       { nome: 'David Canabarro', uf: 'RS', ibge: '4306304' },
       { nome: 'Nova Araçá', uf: 'RS', ibge: '4312807' },
       { nome: 'Paraí', uf: 'RS', ibge: '4314001' }

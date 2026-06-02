@@ -3,12 +3,12 @@
   nome: 'Agili',
   empresa: 'Agili',
   stats: {
-    municipios: 29
+    municipios: 28
   },
   visaoGeral: [
     { key: 'Nome', val: 'Agili' },
-    { key: 'Total Municipios', val: '29' },
-    { key: 'Estados Atendidos', val: ['MT', 'AL', 'RN', 'MS', 'PB', 'PE', 'PA', 'PR'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '28' },
+    { key: 'Estados Atendidos', val: ['MT', 'AL', 'MS', 'PE', 'PB', 'PA', 'PR', 'RN'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
@@ -75,7 +75,6 @@
       { nome: 'Carlinda', uf: 'MT', ibge: '5102793' },
       { nome: 'Conquista D\'Oeste', uf: 'MT', ibge: '5103361' },
       { nome: 'Delmiro Gouveia', uf: 'AL', ibge: '2702405' },
-      { nome: 'Florânia', uf: 'RN', ibge: '2403806' },
       { nome: 'Ipiranga do Norte', uf: 'MT', ibge: '5104526' },
       { nome: 'Japaratinga', uf: 'AL', ibge: '2703601' },
       { nome: 'Jateí', uf: 'MS', ibge: '5005103' },

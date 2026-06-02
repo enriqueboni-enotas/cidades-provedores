@@ -3,11 +3,11 @@
   nome: 'VersaTecnologia',
   empresa: 'VersaTecnologia',
   stats: {
-    municipios: 10
+    municipios: 9
   },
   visaoGeral: [
     { key: 'Nome', val: 'VersaTecnologia' },
-    { key: 'Total Municipios', val: '10' },
+    { key: 'Total Municipios', val: '9' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -52,7 +52,6 @@
   },
   municipiosLista: {
     'versatecnologia': [
-      { nome: 'Cataguases', uf: 'MG', ibge: '3115300' },
       { nome: 'Entre Folhas', uf: 'MG', ibge: '3123858' },
       { nome: 'Iapu', uf: 'MG', ibge: '3129301' },
       { nome: 'Inhapim', uf: 'MG', ibge: '3130903' },

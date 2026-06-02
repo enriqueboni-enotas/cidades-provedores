@@ -3,11 +3,11 @@
   nome: 'IPMv2',
   empresa: 'IPMv2',
   stats: {
-    municipios: 32
+    municipios: 33
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPMv2' },
-    { key: 'Total Municipios', val: '32' },
+    { key: 'Total Municipios', val: '33' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -65,6 +65,7 @@
       { nome: 'Camboriú', uf: 'SC', ibge: '4203204' },
       { nome: 'Canoinhas', uf: 'SC', ibge: '4203808' },
       { nome: 'Carazinho', uf: 'RS', ibge: '4304705' },
+      { nome: 'Cataguases', uf: 'MG', ibge: '3115300' },
       { nome: 'Céu Azul', uf: 'PR', ibge: '4105300' },
       { nome: 'Clevelândia', uf: 'PR', ibge: '4105706' },
       { nome: 'Cunha Porã', uf: 'SC', ibge: '4204707' },

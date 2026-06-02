@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'TributusV2',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaEnderecoTomExterior',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,

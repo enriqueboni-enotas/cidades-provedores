@@ -3,11 +3,11 @@
   nome: 'XTROnline',
   empresa: 'XTROnline',
   stats: {
-    municipios: 5
+    municipios: 4
   },
   visaoGeral: [
     { key: 'Nome', val: 'XTROnline' },
-    { key: 'Total Municipios', val: '5' },
+    { key: 'Total Municipios', val: '4' },
     { key: 'Estados Atendidos', val: ['CE'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -51,8 +51,7 @@
       { nome: 'Baturité', uf: 'CE', ibge: '2302107' },
       { nome: 'Brejo Santo', uf: 'CE', ibge: '2302503' },
       { nome: 'Jaguaruana', uf: 'CE', ibge: '2307007' },
-      { nome: 'Marco', uf: 'CE', ibge: '2307809' },
-      { nome: 'Várzea Alegre', uf: 'CE', ibge: '2314003' }
+      { nome: 'Marco', uf: 'CE', ibge: '2307809' }
     ]
   }
 };

@@ -39,7 +39,9 @@
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal. O mesmo deve conter 7 dígitos (somente números).',
     helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
+    suportaEmissaoParalela: true,
     numeroRpsDeveSerSequencial: true,
+    numeroLotesParalelos: 1,
     autenticidadeNota: {
       urlVerificacao: 'https://df.issnetonline.com.br/online/NotaDigital/VerificaAutenticidade.aspx',
       UsaChaveAcesso: false,

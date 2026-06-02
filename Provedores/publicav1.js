@@ -56,7 +56,7 @@
   },
   municipiosLista: {
     'publicav1': [
-      { nome: 'Açu', uf: 'RN', ibge: '2400208' },
+      { nome: 'Assú', uf: 'RN', ibge: '2400208' },
       { nome: 'Joinville', uf: 'SC', ibge: '4209102' },
       { nome: 'Lebon Régis', uf: 'SC', ibge: '4209706' },
       { nome: 'Peritiba', uf: 'SC', ibge: '4212601' },

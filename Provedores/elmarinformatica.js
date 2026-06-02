@@ -3,12 +3,12 @@
   nome: 'ElmarInformatica',
   empresa: 'ElmarInformatica',
   stats: {
-    municipios: 10
+    municipios: 11
   },
   visaoGeral: [
     { key: 'Nome', val: 'ElmarInformatica' },
-    { key: 'Total Municipios', val: '10' },
-    { key: 'Estados Atendidos', val: ['PB', 'PI'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '11' },
+    { key: 'Estados Atendidos', val: ['PB', 'PE', 'PI'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     assinaturaDigital: 0,
@@ -59,6 +59,7 @@
       { nome: 'Nova Floresta', uf: 'PB', ibge: '2510105' },
       { nome: 'Princesa Isabel', uf: 'PB', ibge: '2512309' },
       { nome: 'Rio Tinto', uf: 'PB', ibge: '2512903' },
+      { nome: 'São José do Egito', uf: 'PE', ibge: '2613602' },
       { nome: 'Solânea', uf: 'PB', ibge: '2516003' },
       { nome: 'Soledade', uf: 'PB', ibge: '2516102' }
     ]

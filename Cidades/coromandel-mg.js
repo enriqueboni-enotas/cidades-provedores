@@ -5,19 +5,20 @@
   ibge: '3119302',
   constante: 'CodigoIBGE.CoromandelMG',
   provedorAtual: {
-    nome: 'NfseNacional',
+    nome: 'NfseNacionalV2',
     namespace: 'http://www.sped.fazenda.gov.br/nfse',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    infoAdicional: 'ExtendedProperties(Empresa):\n					emissaoWSPortalNacional = define q será executado pelo ws quando houver certificado.\n					regimeApuracaoTributosSN = define regime usado pela empresa para emissão da nota\n					"valorPercentualTributosFederal": {\n					"PercentualTotalFederal": define valor padrao para pecentual federal,\n					"PercentualTotalEstadual": define valor padrao para percentual estadual,\n					"PercentualTotalMunicipal": define valor padrao para percentual municipal\n					}',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse'
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional/nfse'
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
     },
     emissaoSemCertificado: {
@@ -27,7 +28,7 @@
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
-    assinaturaDigital: 0,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
       usuario: null,
@@ -42,21 +43,26 @@
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
     usaCNAE: false,
+    usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\n– Destina-se a receber a indicação do tratamento específico de cada Município (Ex: O contribuinte possui um benefício especial que tem \r\no código 123, está classificado na atividade 07.02 que no município recebeu um detalhamento criando então o item 07.02.01). Este campo deverá ser preenchido\r\nentão com o código 123070201. Antes de informar este código é importante que consulte a Secretaria de Fazenda de seu Município',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpCNAE: 'Informar a Classificação no CNAE que se relacione com Item da Lista de Serviço',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
     numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -67,7 +73,6 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '', nome: 'Selecione' },
       { codigo: '1', nome: 'Operação tributável' },
       { codigo: '2', nome: 'Imunidade' },
       { codigo: '3', nome: 'Exportação de Serviço' },

@@ -3,12 +3,12 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 90
+    municipios: 88
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '90' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MS', 'AC', 'MG', 'MT', 'BA', 'AM', 'SP', 'RJ'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '88' },
+    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MS', 'AC', 'MG', 'MT', 'AM', 'BA', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -73,10 +73,8 @@
       { nome: 'Goioerê', uf: 'PR', ibge: '4108601' },
       { nome: 'Guaranésia', uf: 'MG', ibge: '3128303' },
       { nome: 'Igaratinga', uf: 'MG', ibge: '3130200' },
-      { nome: 'Igrapiúna', uf: 'BA', ibge: '2913457' },
       { nome: 'Iomerê', uf: 'SC', ibge: '4207577' },
       { nome: 'Ipê', uf: 'RS', ibge: '4310439' },
-      { nome: 'Ipira', uf: 'SC', ibge: '4207601' },
       { nome: 'Ipuaçu', uf: 'SC', ibge: '4207684' },
       { nome: 'Ipumirim', uf: 'SC', ibge: '4207700' },
       { nome: 'Iracema do Oeste', uf: 'PR', ibge: '4110656' },

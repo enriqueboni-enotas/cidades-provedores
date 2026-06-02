@@ -5,61 +5,63 @@
   ibge: '2403806',
   constante: 'CodigoIBGE.FloraniaRN',
   provedorAtual: {
-    nome: 'Agili',
-    namespace: 'http://www.agili.com.br/nfse_v_1.00.xsd',
-    codigoNoProvedor: '081815620001902',
+    nome: 'NfseNacionalV2',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
+    codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    infoAdicional: 'codigonoprovedor é Cnpj Município(Cidade)\n					NaoUsaCodigoCnae = não envia código do Cnae\n					NaoItemLei116 = não envia Item Lei 116\n					UsaItemLei116AtividadeEconomica = para enviar o ItemLei116AtividadeEconomica no xml\n					UsaCodigoCnaeAtividadeEconomica = para enviar o CodigoCnaeAtividadeEconomica no xml\n\n					Metadados Cadastro da empresa:\n					naturezaOperacaoPadrao\n					naturezaOperacaoPadraoExterior',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://agiliblue.agilicloud.com.br/api/GerarNfse/',
-        consultaNFe: 'https://agiliblue.agilicloud.com.br/api/ConsultarNfseRps/',
-        cancelamentoNFe: 'https://agiliblue.agilicloud.com.br/api/CancelarNfse/'
+        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://agilicloud.agilirn.com.br/api/GerarNfse',
-        consultaNFe: 'https://agilicloud.agilirn.com.br/api/ConsultarNfseRps/',
-        cancelamentoNFe: 'https://agilicloud.agilirn.com.br/api/CancelarNfse/'
+        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 3,
-    assinaturaDigital: 0,
+    tipoAutenticacao: 1,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
-      certificadoDigital: null,
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
       usuario: null,
       senha: null,
-      token: 'Informe o token de acesso a api do sistema de emissão da prefeitura',
+      token: null,
       fraseSecreta: null
     },
-    campoLoginProvedor: 0,
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 45,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
-    usaCNAE: true,
+    usaDescricaoServico: false,
+    usaCNAE: false,
     usaNBS: true,
-    usaItemListaServico: true,
+    usaItemListaServico: false,
     usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter somente números.\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplos: 17.14.01 e 4.12.01',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Ele possui geralmente 4 ou 5 dígitos com formatação. Exemplo válido: 4.03 ou 14.03',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
-    enviaEmailCliente: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    suportaEmissaoParalela: true,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
+    numeroLotesParalelos: 5,
     autenticidadeNota: {
-      urlVerificacao: 'https://blue.rondonopolis.mt.gov.br/portal/rondonopolis/#/autenticidade',
-      UsaCodigoVerificacao: true
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -71,15 +73,10 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '-1', nome: 'Exigível' },
-      { codigo: '-2', nome: 'Não incidência' },
-      { codigo: '-3', nome: 'Isento' },
-      { codigo: '-4', nome: 'Exportação' },
-      { codigo: '-5', nome: 'Imune' },
-      { codigo: '-6', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '-7', nome: 'Exigibilidade suspensa por processo administrativo' },
-      { codigo: '-8', nome: 'Fixo' },
-      { codigo: '-9', nome: 'Isento por lei específica' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

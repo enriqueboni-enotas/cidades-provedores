@@ -3,12 +3,12 @@
   nome: 'SIGISSv5',
   empresa: 'SIGISSv5',
   stats: {
-    municipios: 8
+    municipios: 6
   },
   visaoGeral: [
     { key: 'Nome', val: 'SIGISSv5' },
-    { key: 'Total Municipios', val: '8' },
-    { key: 'Estados Atendidos', val: ['SP', 'MA', 'MG', 'SC'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '6' },
+    { key: 'Estados Atendidos', val: ['SP', 'MA', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -55,12 +55,10 @@
     'sigissv5': [
       { nome: 'Bacabal', uf: 'MA', ibge: '2101202' },
       { nome: 'Caraguatatuba', uf: 'SP', ibge: '3510500' },
-      { nome: 'Chapecó', uf: 'SC', ibge: '4204202' },
       { nome: 'Franco da Rocha', uf: 'SP', ibge: '3516408' },
       { nome: 'Ipatinga', uf: 'MG', ibge: '3131307' },
       { nome: 'Itapecuru Mirim', uf: 'MA', ibge: '2105401' },
-      { nome: 'Mogi Mirim', uf: 'SP', ibge: '3530805' },
-      { nome: 'Nova Serrana', uf: 'MG', ibge: '3145208' }
+      { nome: 'Mogi Mirim', uf: 'SP', ibge: '3530805' }
     ]
   }
 };

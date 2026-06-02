@@ -3,11 +3,11 @@
   nome: 'WebISSv2',
   empresa: 'WebISSv2',
   stats: {
-    municipios: 73
+    municipios: 72
   },
   visaoGeral: [
     { key: 'Nome', val: 'WebISSv2' },
-    { key: 'Total Municipios', val: '73' },
+    { key: 'Total Municipios', val: '72' },
     { key: 'Estados Atendidos', val: ['BA', 'MG', 'SE', 'TO', 'RO', 'RJ', 'PB', 'GO', 'RS', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -28,20 +28,12 @@
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
     helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado.\r\n \r\n Você precisa preencher o item da lista de serviço mantendo a formatação.\r\n Exemplos válidos:  105, 1.05, 01.05 ou 0105',
-    suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemEndereco: false,
-    suportaCancelamentoNFeSemCliente: false,
-    suportaCancelamentoNFeClienteSemCpf: false,
     tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     autenticidadeNota: {
-      urlVerificacao: 'https://caldasnovasgo.webiss.com.br/externo/nfse/validar',
-      UsaChaveAcesso: false,
       UsaCnpjPrestador: true,
       UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: false,
-      UsaNumeroNota: true,
-      UsaValorNota: false
+      UsaNumeroNota: true
     },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
@@ -119,7 +111,6 @@
       { nome: 'Porto Nacional', uf: 'TO', ibge: '1718204' },
       { nome: 'Porto Seguro', uf: 'BA', ibge: '2925303' },
       { nome: 'Propriá', uf: 'SE', ibge: '2805703' },
-      { nome: 'Queimados', uf: 'RJ', ibge: '3304144' },
       { nome: 'Ribeira do Pombal', uf: 'BA', ibge: '2926608' },
       { nome: 'Rio Bonito', uf: 'RJ', ibge: '3304300' },
       { nome: 'Rolim de Moura', uf: 'RO', ibge: '1100288' },

@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 75
+    municipios: 76
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '75' },
+    { key: 'Total Municipios', val: '76' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -98,6 +98,7 @@
       { nome: 'Jequié', uf: 'BA', ibge: '2918001' },
       { nome: 'João Monlevade', uf: 'MG', ibge: '3136207' },
       { nome: 'João Neiva', uf: 'ES', ibge: '3203130' },
+      { nome: 'Lajinha', uf: 'MG', ibge: '3137700' },
       { nome: 'Linhares', uf: 'ES', ibge: '3203205' },
       { nome: 'Manhuaçu', uf: 'MG', ibge: '3139409' },
       { nome: 'Mantenópolis', uf: 'ES', ibge: '3203304' },

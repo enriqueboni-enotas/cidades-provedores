@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'GOVBRv3',
     namespace: 'http://www.sped.fazenda.gov.br/nfse',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaAbrasf203;REGRAPADRAOALIQUOTAABRASFV204',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
@@ -18,7 +18,7 @@
         downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://webapp1-arroiodosal.cidade360.cloud/nfse.API/NotaNacional',
+        recepcaoLote: 'https://webapp1-arroiodosal.cidade360.cloud//NFSe.Api/NotaNacional',
         consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
         downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
@@ -46,6 +46,7 @@
     usaDescricaoServico: false,
     usaCNAE: true,
     usaNBS: true,
+    usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',

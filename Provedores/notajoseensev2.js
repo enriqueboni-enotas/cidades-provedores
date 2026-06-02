@@ -16,6 +16,9 @@
     usaCNAE: false,
     usaItemListaServico: false,
     helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 863050400 ou 620150101',
+    suportaEmissaoParalela: true,
+    numeroRpsDeveSerSequencial: false,
+    numeroLotesParalelos: 1,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

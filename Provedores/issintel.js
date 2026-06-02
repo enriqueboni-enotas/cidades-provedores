@@ -3,12 +3,12 @@
   nome: 'IssIntel',
   empresa: 'IssIntel',
   stats: {
-    municipios: 6
+    municipios: 5
   },
   visaoGeral: [
     { key: 'Nome', val: 'IssIntel' },
-    { key: 'Total Municipios', val: '6' },
-    { key: 'Estados Atendidos', val: ['PA', 'RJ', 'MG'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '5' },
+    { key: 'Estados Atendidos', val: ['PA', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -67,8 +67,7 @@
       { nome: 'Capitão Poço', uf: 'PA', ibge: '1502301' },
       { nome: 'Curionópolis', uf: 'PA', ibge: '1502772' },
       { nome: 'Porto de Moz', uf: 'PA', ibge: '1505908' },
-      { nome: 'São Francisco', uf: 'MG', ibge: '3161106' },
-      { nome: 'São Gonçalo', uf: 'RJ', ibge: '3304904' }
+      { nome: 'São Francisco', uf: 'MG', ibge: '3161106' }
     ]
   }
 };
