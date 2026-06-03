@@ -1,124 +1,69 @@
 var aguardandoDeployData = [
   {
-    tag: '01/06/2026',
-    titulo: 'Segunda-feira — 01 de Junho',
+    tag: '02/06/2026',
+    titulo: 'Terça-feira — 02 de Junho',
     itens: [
       {
         icon: '🏙️',
         texto:
-          'Ipira/SC aderiu ao Portal Nacional de NFS-e. O município migrou para o provedor NfseNacionalV2, passando a utilizar a infraestrutura centralizada da Receita Federal para emissão e consulta de notas fiscais de serviço.',
-        pr: 9462,
-        autor: 'Davidson Souza',
+          'Correção do link de integração de Campo Bom/RS após migração para o provedor GIFv2. O município havia sido migrado do provedor anterior para o GIFv2, mas a URL de comunicação com a prefeitura estava incorreta no XML de configuração. Sem o link correto, as notas não conseguiam ser transmitidas ao webservice municipal. O ajuste corrige a URL para que a emissão e consulta de NFS-e voltem a funcionar normalmente.',
+        pr: 9479,
+        autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'São Gonçalo/RJ aderiu ao Portal Nacional de NFS-e. O município, que é o segundo mais populoso do estado do Rio de Janeiro, migrou para o provedor NfseNacionalV2. Empresas prestadoras de serviço em São Gonçalo agora emitem NFS-e pelo Portal Nacional.',
-        pr: 9461,
-        autor: 'Davidson Souza',
+          'Migração de Campo Bom/RS para o provedor GIFv2. O município utilizava um provedor anterior e foi reconfigurado para utilizar o GIFv2, que é o sistema atualmente adotado pela prefeitura para emissão de NFS-e. As configurações de URL, namespace e parâmetros de comunicação foram atualizadas no XML de municípios para refletir o novo provedor.',
+        pr: 9435,
+        autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Chapecó/SC aderiu ao Portal Nacional de NFS-e. Município importante do oeste catarinense, agora utiliza o provedor NfseNacionalV2 para emissão de notas fiscais de serviço eletrônicas, em conformidade com o novo padrão nacional.',
-        pr: 9458,
+          'Campos Belos/GO aderiu ao Portal Nacional de NFS-e. O município goiano migrou para o provedor NfseNacionalV2, passando a utilizar a infraestrutura centralizada da Receita Federal para emissão e consulta de notas fiscais de serviço eletrônicas. Empresas prestadoras de serviço em Campos Belos agora emitem pelo padrão nacional.',
+        pr: 9472,
         autor: 'Davidson Souza',
       },
       {
-        icon: '🏙️',
+        icon: '📄',
         texto:
-          'Nova Serrana/MG aderiu ao Portal Nacional de NFS-e. Conhecida como polo calçadista de Minas Gerais, a cidade migrou para o provedor NfseNacionalV2, centralizando a emissão de NFS-e pela infraestrutura da Receita Federal.',
-        pr: 9460,
-        autor: 'Davidson Souza',
+          "Novo layout de PDF padrão nacional para o provedor GovDigital. Foi implementada uma arquitetura completa de geração de PDF de NFS-e seguindo o padrão visual nacional (DANFSE), com suporte a QR Code, marca d'água para notas canceladas, quebra de linha dinâmica e campos de tributação municipal/federal. A implementação inicial está habilitada para Fortaleza/CE como piloto, permitindo que empresas visualizem e imprimam suas notas no formato padronizado pela Receita Federal.",
+        pr: 8939,
+        autor: 'Thales Fonseca',
       },
       {
-        icon: '🔧',
+        icon: '�',
         texto:
-          'Ajuste de timeout para 30 segundos na emissão e consulta automática por DPS quando ocorre erro de "DPS já emitido" no Portal Nacional. Quando o provedor retorna que a DPS já foi processada, o sistema agora faz uma consulta automática para recuperar a nota existente ao invés de retornar erro. Isso resolve cenários de timeout onde a nota foi aceita pela prefeitura mas a resposta não chegou a tempo, evitando duplicidade e notas travadas "em emissão".',
-        pr: 9459,
+          'Ajuste no número de lote para empresa específica no provedor SIGISSv5. Uma empresa em Bacabal/MA estava com conflito de numeração de lote — o número configurado colidia com lotes já processados pela prefeitura. A correção soma um valor alto (2.147.483.634) ao número de lote configurado, gerando uma sequência única que evita a rejeição por duplicidade. Isso resolve o erro de "lote já processado" que impedia a emissão de novas notas.',
+        pr: 9471,
         autor: 'Thiago Souza',
       },
       {
-        icon: '🏙️',
+        icon: '🧾',
         texto:
-          'Gilbués/PI ativado no provedor Fiorilli. O município do Piauí teve suas URLs de produção e homologação configuradas no ConfiguracoesMunicipios.xml, habilitando a emissão de NFS-e para empresas prestadoras de serviço na cidade.',
-        pr: 9456,
-        autor: 'Thiago Souza',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Florânia/RN atualizada para o provedor NfseNacionalV2. O município do Rio Grande do Norte migrou do provedor anterior para o Portal Nacional, passando a utilizar a infraestrutura centralizada da Receita Federal.',
-        pr: 9454,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Duartina/SP atualizada para o provedor NfseNacionalV2. O município paulista migrou para o Portal Nacional de NFS-e, centralizando a emissão pela infraestrutura da Receita Federal.',
-        pr: 9453,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Colorado/RS ativado no provedor CittaV2. O município gaúcho teve as configurações de produção e homologação adicionadas, permitindo emissão de NFS-e pelo gateway para empresas prestadoras de serviço na cidade.',
-        pr: 9452,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🆕',
-        texto:
-          'Implementação do fluxo de geração de NFS-e em homologação para o provedor NotaControlV2. Foi criado um proxy (GerarNFSeProxy) que roteia automaticamente entre o fluxo de homologação e produção. O modo homologação valida que apenas 1 nota por lote é permitida, formata DPS/XML, mapeia tributos, assina digitalmente e envia ao webservice. Inclui tratamento especial para código IBGE de Campo Grande/MS em ambiente de teste.',
-        pr: 9449,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Melhoria na detecção de mensagens de erro na consulta por RPS do provedor PublicaV1 (Fortknox). A comparação passou a ser case-insensitive (usando IndexOf com OrdinalIgnoreCase) e foi incluída a mensagem "Email inválido" no conjunto de condições que indicam RPS já processado. Isso evita que notas fiquem travadas quando a prefeitura retorna variações de capitalização nas mensagens de erro.',
-        pr: 9447,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'São José do Egito/PE ativado no provedor ElmarInformatica. O município pernambucano teve URLs e configurações adicionadas ao ConfiguracoesMunicipios.xml, habilitando emissão de NFS-e pelo gateway.',
-        pr: 9444,
-        autor: 'Thiago Souza',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Correção do erro de XML ao enviar PercentualAproximadoTributosSimplesNacionalNFeServico com valor 0 no provedor GINFES v2. Quando a alíquota do Simples Nacional era zero, o XML gerado era inválido. Agora o sistema popula TributacaoTotalPercentual (com federal/estadual/municipal = 0) ao invés de TributacaoTotalSimplesNacional, evitando rejeição por validação XML na prefeitura.',
-        pr: 9451,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Validação para impedir cancelamento de NFS-e após 10 dias em Dourados/MS. A prefeitura permite cancelamento direto apenas até 10 dias após a autorização. Antes dessa validação, o sistema enviava a requisição e recebia erro genérico da prefeitura. Agora o gateway valida localmente e retorna mensagem clara (GW212) informando que o prazo foi excedido, melhorando a experiência do usuário.',
-        pr: 9441,
+          'Remoção do tratamento especial de imunidade tributária (tpImunidade) no provedor RLZv3. Uma empresa específica possuía uma exceção no código que suprimia o envio da tag tpImunidade no XML, pois anteriormente emitia com imunidade. Como a empresa não emite mais com esse benefício, o tratamento especial foi removido, simplificando o código e evitando comportamentos inesperados caso a tag seja necessária futuramente para outras empresas do mesmo provedor.',
+        pr: 9468,
         autor: 'Henrique Cassio',
       },
-    ],
-  },
-  {
-    tag: '29/05/2026',
-    titulo: 'Quinta-feira — 29 de Maio',
-    itens: [
       {
-        icon: '🔧',
+        icon: '📊',
         texto:
-          'SIGISSv5: geração automática da base de inscrição municipal (IM) por CNPJ via template T4 e aplicação de fallback para a Shopee em Franco da Rocha/SP. O template T4 gera automaticamente o mapeamento CNPJ→IM para sellers da Shopee, evitando manutenção manual. Quando o tomador é Shopee e a IM não está mapeada, o sistema aplica um fallback ao invés de rejeitar a nota.',
-        pr: null,
-        autor: 'Davidson Souza',
+          'Envio do código NBS no XML da NFS-e Nacional para integrações alternativas. Quando a nota é emitida via integração alternativa (API diferente da padrão), o campo cNBS (código da Nomenclatura Brasileira de Serviços) não estava sendo enviado no XML do DPS, ficando sempre nulo. Isso podia causar rejeição em municípios que exigem o NBS. Agora o código NBS informado pelo cliente é corretamente incluído no XML, garantindo conformidade com a especificação do Portal Nacional.',
+        pr: 9466,
+        autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'SIGISSv5: preenchimento da inscrição municipal do tomador por CNPJ para a Shopee em Franco da Rocha/SP. A prefeitura exige a IM do tomador para emissão de NFS-e, mas a Shopee não informa esse dado na integração. O sistema agora busca a IM automaticamente pelo CNPJ do tomador no cadastro da prefeitura, resolvendo rejeições de notas para sellers da Shopee nesse município.',
-        pr: null,
+          'Correção no envio de IRRF e INSS para notas sem PIS/COFINS retidos no Portal Nacional. Quando uma nota não tinha retenção de PIS/COFINS mas tinha IRRF ou INSS, esses valores não estavam sendo enviados corretamente no XML. O ajuste garante que os tributos federais retidos (IRRF e INSS) sejam transmitidos independentemente da presença de PIS/COFINS, evitando divergências entre o valor cobrado e o declarado à Receita.',
+        pr: 9465,
+        autor: 'Thiago Souza',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Reprocessamento automático de consultas com erro temporário do ADN em Carpina/PE (provedor HM2). Quando o sistema ADN da prefeitura de Carpina retorna "Ocorreu um erro inesperado ao tentar realizar a emissão da NFS-e", o gateway agora identifica isso como erro temporário e reprocessa a consulta automaticamente (até 10 tentativas). Anteriormente, a mensagem de erro esperada era diferente e a comparação era case-sensitive, fazendo com que notas ficassem travadas "em consulta" sem retentativa. O ajuste também corrige a série do RPS e zera a alíquota ISS para empresas do Simples Nacional neste município.',
+        pr: 9457,
         autor: 'Davidson Souza',
       },
     ],
