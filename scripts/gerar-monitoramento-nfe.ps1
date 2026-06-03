@@ -35,7 +35,7 @@ function Invoke-Nrql {
 
 Write-Host "=== Gerando dados de monitoramento NFe ===" -ForegroundColor Cyan
 $step = 0
-$total = 20
+$total = 26
 
 # 1. Notas travadas por município
 $step++; Write-Host "[$step/$total] Notas travadas por municipio..."
@@ -129,6 +129,30 @@ $travadasStatusEmpresa = '{"6":' + $st6 + ',"3":' + $st3 + ',"1":' + $st1 + ',"0
 $step++; Write-Host "[$step/$total] Total municipios com pendentes..."
 $totalMunicipiosPendentes = Invoke-Nrql "SELECT uniqueCount(nfe.municipio_servico) FROM Metric WHERE metricName = 'nfe.stuck_in_intermediate_status.count' SINCE 1 day ago"
 
+# 21. Taxa sucesso/rejeição NFSe
+$step++; Write-Host "[$step/$total] Taxa sucesso/rejeicao NFSe..."
+$taxaNfse = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' AND nfe.tipo_nota = 'NFSe' SINCE 4 hours ago"
+
+# 22. Taxa sucesso/rejeição NFe
+$step++; Write-Host "[$step/$total] Taxa sucesso/rejeicao NFe..."
+$taxaNfe = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' AND nfe.tipo_nota = 'NFe' SINCE 4 hours ago"
+
+# 23. Taxa sucesso por município
+$step++; Write-Host "[$step/$total] Taxa sucesso por municipio..."
+$taxaSucessoMunicipio = Invoke-Nrql "SELECT latest(nfe.success_rate) AS 'taxa_sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
+
+# 24. Taxa rejeição por município
+$step++; Write-Host "[$step/$total] Taxa rejeicao por municipio..."
+$taxaRejeicaoMunicipio = Invoke-Nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
+
+# 25. Timeseries taxa sucesso/rejeição (global)
+$step++; Write-Host "[$step/$total] Timeseries taxa sucesso/rejeicao..."
+$taxaTimeseries = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' SINCE 4 hours ago TIMESERIES 20 minutes"
+
+# 26. Taxa sucesso por tipo de nota
+$step++; Write-Host "[$step/$total] Taxa sucesso por tipo nota..."
+$taxaPorTipo = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET nfe.tipo_nota SINCE 4 hours ago LIMIT 5"
+
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
 
 $content = @"
@@ -155,11 +179,17 @@ var monitoramentoNfeData = {
   filaOperacoes: $filaOperacoes,
   webhooks: $webhooks,
   travadasStatusEmpresa: $travadasStatusEmpresa,
-  totalMunicipiosPendentes: $totalMunicipiosPendentes
+  totalMunicipiosPendentes: $totalMunicipiosPendentes,
+  taxaNfse: $taxaNfse,
+  taxaNfe: $taxaNfe,
+  taxaSucessoMunicipio: $taxaSucessoMunicipio,
+  taxaRejeicaoMunicipio: $taxaRejeicaoMunicipio,
+  taxaTimeseries: $taxaTimeseries,
+  taxaPorTipo: $taxaPorTipo
 };
 "@
 
-$fullPath = Join-Path $PSScriptRoot $outFile
+$fullPath = Join-Path (Split-Path $PSScriptRoot) $outFile
 [System.IO.File]::WriteAllText($fullPath, $content, (New-Object System.Text.UTF8Encoding $false))
 [Console]::OutputEncoding = $prevEncoding
 

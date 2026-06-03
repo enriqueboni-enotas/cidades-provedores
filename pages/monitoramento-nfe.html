@@ -1059,6 +1059,7 @@
     h += '<button class="tab-btn" data-tab="visao-geral">Vis\u00e3o Geral</button>';
     h += '<button class="tab-btn" data-tab="erros">Erros & Motivos</button>';
     h += '<button class="tab-btn" data-tab="empresas">Empresas</button>';
+    h += '<button class="tab-btn" data-tab="taxas">Taxas</button>';
     h += '</div>';
 
     /* â•â•â•â•â•â•â•â•â•â• TAB: VISÃƒO GERAL â•â•â•â•â•â•â•â•â•â• */
@@ -1335,7 +1336,56 @@
     });
     h += '</tbody></table></div></div>';
 
-    h += '</div></div>'; /* close grid + tab */
+    h += '</div></div>'; /* close grid + tab empresas */
+
+    /* ══════════ TAB 5: TAXAS ══════════ */
+    h += '<div class="tab-panel" id="tab-taxas">';
+
+    /* Stat cards: NFSe e NFe */
+    var txNfse = (D.taxaNfse && D.taxaNfse[0]) || {};
+    var txNfe = (D.taxaNfe && D.taxaNfe[0]) || {};
+    h += '<div class="stats-row" style="grid-template-columns:repeat(4,1fr);margin-bottom:24px">';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + (txNfse.sucesso != null ? Number(txNfse.sucesso).toFixed(1) : '\u2014') + '</div><div class="stat-label">Sucesso NFSe (%)' + infoTip('Taxa m\u00e9dia de sucesso de NFSe nas \u00faltimas 4 horas.') + '</div><div class="stat-sub">\u00faltimas 4h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + (txNfse.rejeicao != null ? Number(txNfse.rejeicao).toFixed(1) : '\u2014') + '</div><div class="stat-label">Rejei\u00e7\u00e3o NFSe (%)' + infoTip('Taxa m\u00e9dia de rejei\u00e7\u00e3o de NFSe nas \u00faltimas 4 horas.') + '</div><div class="stat-sub">\u00faltimas 4h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--success)">' + (txNfe.sucesso != null ? Number(txNfe.sucesso).toFixed(1) : '\u2014') + '</div><div class="stat-label">Sucesso NFe (%)' + infoTip('Taxa m\u00e9dia de sucesso de NFe (Nota de Produto) nas \u00faltimas 4 horas.') + '</div><div class="stat-sub">\u00faltimas 4h</div></div>';
+    h += '<div class="card stat-card"><div class="stat-val" style="color:var(--danger)">' + (txNfe.rejeicao != null ? Number(txNfe.rejeicao).toFixed(1) : '\u2014') + '</div><div class="stat-label">Rejei\u00e7\u00e3o NFe (%)' + infoTip('Taxa m\u00e9dia de rejei\u00e7\u00e3o de NFe (Nota de Produto) nas \u00faltimas 4 horas.') + '</div><div class="stat-sub">\u00faltimas 4h</div></div>';
+    h += '</div>';
+
+    h += '<div class="grid">';
+
+    /* Tabela taxa sucesso por município */
+    var txSucMun = D.taxaSucessoMunicipio || [];
+    h += '<div class="card panel"><h2 class="panel-title">Taxa de Sucesso por munic\u00edpio' + infoTip('Taxa de sucesso mais recente por munic\u00edpio nas \u00faltimas 4 horas.') + '</h2>';
+    h += '<input class="filter-input" id="filterTxSuc" placeholder="Filtrar munic\u00edpio...">';
+    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Taxa Sucesso (%)</th></tr></thead><tbody id="tbTxSuc">';
+    txSucMun.sort(function (a, b) { return (a.taxa_sucesso || 0) - (b.taxa_sucesso || 0) });
+    txSucMun.forEach(function (r) {
+      var nome = r['municipio.nome'] || r.facet || '';
+      var val = r.taxa_sucesso != null ? Number(r.taxa_sucesso).toFixed(1) : '\u2014';
+      var color = (r.taxa_sucesso != null && r.taxa_sucesso < 50) ? 'var(--danger)' : (r.taxa_sucesso != null && r.taxa_sucesso < 80) ? 'var(--warn)' : 'var(--success)';
+      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + val + '</td></tr>';
+    });
+    h += '</tbody></table></div></div>';
+
+    /* Tabela taxa rejeição por município */
+    var txRejMun = D.taxaRejeicaoMunicipio || [];
+    h += '<div class="card panel"><h2 class="panel-title">Taxa de Rejei\u00e7\u00e3o por munic\u00edpio' + infoTip('Taxa de rejei\u00e7\u00e3o mais recente por munic\u00edpio nas \u00faltimas 4 horas.') + '</h2>';
+    h += '<input class="filter-input" id="filterTxRej" placeholder="Filtrar munic\u00edpio...">';
+    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Taxa Rejei\u00e7\u00e3o (%)</th></tr></thead><tbody id="tbTxRej">';
+    txRejMun.sort(function (a, b) { return (b.taxa_rejeicao || 0) - (a.taxa_rejeicao || 0) });
+    txRejMun.forEach(function (r) {
+      var nome = r['municipio.nome'] || r.facet || '';
+      var val = r.taxa_rejeicao != null ? Number(r.taxa_rejeicao).toFixed(1) : '\u2014';
+      var color = (r.taxa_rejeicao != null && r.taxa_rejeicao > 50) ? 'var(--danger)' : (r.taxa_rejeicao != null && r.taxa_rejeicao > 20) ? 'var(--warn)' : 'var(--success)';
+      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + val + '</td></tr>';
+    });
+    h += '</tbody></table></div></div>';
+
+    /* Gráfico timeseries sucesso + rejeição global */
+    h += '<div class="card panel full"><h2 class="panel-title">Evolu\u00e7\u00e3o das Taxas (Sucesso vs Rejei\u00e7\u00e3o)' + infoTip('Evolu\u00e7\u00e3o da taxa m\u00e9dia de sucesso e rejei\u00e7\u00e3o global ao longo das \u00faltimas 4 horas (intervalos de 20 min).') + ' <span class="badge-count">\u00faltimas 4h</span></h2>';
+    h += '<canvas id="chartTaxas" style="width:100%;height:280px"></canvas></div>';
+
+    h += '</div></div>'; /* close grid + tab taxas */
 
     document.getElementById('app-root').innerHTML = h;
 
@@ -1600,6 +1650,103 @@
     });
 
     if (window._authLogEvent) window._authLogEvent('page_view', 'monitoramento-nfe');
+
+    /* ── Filtros tabela Taxas ── */
+    (function () {
+      function setupTxFilter(inputId, tbodyId) {
+        var input = document.getElementById(inputId);
+        if (!input) return;
+        input.addEventListener('input', function () {
+          var q = this.value.toLowerCase();
+          document.querySelectorAll('#' + tbodyId + ' tr').forEach(function (row) {
+            row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+          });
+        });
+      }
+      setupTxFilter('filterTxSuc', 'tbTxSuc');
+      setupTxFilter('filterTxRej', 'tbTxRej');
+    })();
+
+    /* ── Gráfico timeseries Taxas (sucesso + rejeição global) ── */
+    (function () {
+      var canvas = document.getElementById('chartTaxas');
+      if (!canvas) return;
+      var tsData = D.taxaTimeseries || [];
+      if (!tsData.length) { canvas.parentNode.style.display = 'none'; return; }
+
+      var dpr = window.devicePixelRatio || 1;
+      var rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      var ctx = canvas.getContext('2d');
+      ctx.scale(dpr, dpr);
+      var W = rect.width, H = rect.height;
+      var padL = 48, padR = 16, padT = 16, padB = 36;
+      var gW = W - padL - padR, gH = H - padT - padB;
+
+      var cs = getComputedStyle(document.documentElement);
+      var colMuted = cs.getPropertyValue('--muted').trim() || '#8A8A8A';
+      var colBorder = cs.getPropertyValue('--border').trim() || '#333';
+
+      var labels = [], sucesso = [], rejeicao = [];
+      tsData.forEach(function (r) {
+        var t = r.beginTimeSeconds || r.endTimeSeconds || 0;
+        var brDate = new Date((t - 3 * 3600) * 1000);
+        var hh = brDate.getUTCHours(), mm = brDate.getUTCMinutes();
+        labels.push((hh < 10 ? '0' : '') + hh + ':' + (mm < 10 ? '0' : '') + mm);
+        sucesso.push(r.sucesso || 0);
+        rejeicao.push(r.rejeicao || 0);
+      });
+
+      /* Grid */
+      ctx.strokeStyle = colBorder;
+      ctx.lineWidth = 0.5;
+      ctx.font = '11px Nunito Sans, sans-serif';
+      ctx.fillStyle = colMuted;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      for (var g = 0; g <= 5; g++) {
+        var yy = padT + gH - (g / 5) * gH;
+        var val = Math.round((g / 5) * 100);
+        ctx.beginPath(); ctx.moveTo(padL, yy); ctx.lineTo(padL + gW, yy); ctx.stroke();
+        ctx.fillText(val + '%', padL - 8, yy);
+      }
+
+      /* X labels */
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      var n = labels.length;
+      var labelStep = n <= 12 ? 1 : 2;
+      for (var i = 0; i < n; i++) {
+        if (i % labelStep !== 0 && i !== n - 1) continue;
+        var xx = padL + (i / Math.max(n - 1, 1)) * gW;
+        ctx.fillText(labels[i], xx, padT + gH + 8);
+      }
+
+      function drawLine(data, color) {
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2.5;
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+        for (var i = 0; i < data.length; i++) {
+          var x = padL + (i / Math.max(data.length - 1, 1)) * gW;
+          var y = padT + gH - (data[i] / 100) * gH;
+          if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      drawLine(sucesso, '#009d43');
+      drawLine(rejeicao, '#d6342c');
+
+      /* Legenda */
+      ctx.font = '11px Nunito Sans, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'top';
+      var lx = padL + gW - 160, ly = padT + 8;
+      ctx.fillStyle = '#009d43'; ctx.fillRect(lx, ly, 12, 3); ctx.fillText('Sucesso', lx + 16, ly - 4);
+      ctx.fillStyle = '#d6342c'; ctx.fillRect(lx + 80, ly, 12, 3); ctx.fillText('Rejei\u00e7\u00e3o', lx + 96, ly - 4);
+    })();
 
     /* Countdown para prÃ³xima atualizaÃ§Ã£o (a cada 20 min, baseado no timestamp dos dados) */
     (function () {
