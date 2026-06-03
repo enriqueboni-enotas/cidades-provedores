@@ -139,11 +139,11 @@ $taxaNfe = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(n
 
 # 23. Taxa sucesso por município
 $step++; Write-Host "[$step/$total] Taxa sucesso por municipio..."
-$taxaSucessoMunicipio = Invoke-Nrql "SELECT latest(nfe.success_rate) AS 'taxa_sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
+$taxaSucessoMunicipio = Invoke-Nrql "SELECT latest(nfe.success_rate) AS 'taxa_sucesso', latest(nfe.rejected_count) AS 'rejeitadas', latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
 
 # 24. Taxa rejeição por município
 $step++; Write-Host "[$step/$total] Taxa rejeicao por municipio..."
-$taxaRejeicaoMunicipio = Invoke-Nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
+$taxaRejeicaoMunicipio = Invoke-Nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao', latest(nfe.rejected_count) AS 'rejeitadas', latest(nfe.success_rate) AS 'taxa_sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX"
 
 # 25. Timeseries taxa sucesso/rejeição (global)
 $step++; Write-Host "[$step/$total] Timeseries taxa sucesso/rejeicao..."

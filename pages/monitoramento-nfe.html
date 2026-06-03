@@ -1357,13 +1357,19 @@
     var txSucMun = D.taxaSucessoMunicipio || [];
     h += '<div class="card panel"><h2 class="panel-title">Taxa de Sucesso por munic\u00edpio' + infoTip('Taxa de sucesso mais recente por munic\u00edpio nas \u00faltimas 4 horas.') + '</h2>';
     h += '<input class="filter-input" id="filterTxSuc" placeholder="Filtrar munic\u00edpio...">';
-    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Taxa Sucesso (%)</th></tr></thead><tbody id="tbTxSuc">';
+    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Total</th><th style="text-align:right">Sucesso</th><th style="text-align:right">Taxa Sucesso (%)</th></tr></thead><tbody id="tbTxSuc">';
     txSucMun.sort(function (a, b) { return (a.taxa_sucesso || 0) - (b.taxa_sucesso || 0) });
     txSucMun.forEach(function (r) {
       var nome = r['municipio.nome'] || r.facet || '';
-      var val = r.taxa_sucesso != null ? Number(r.taxa_sucesso).toFixed(1) : '\u2014';
-      var color = (r.taxa_sucesso != null && r.taxa_sucesso < 50) ? 'var(--danger)' : (r.taxa_sucesso != null && r.taxa_sucesso < 80) ? 'var(--warn)' : 'var(--success)';
-      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + val + '</td></tr>';
+      if (!nome) return;
+      var taxa = r.taxa_sucesso != null ? Number(r.taxa_sucesso) : null;
+      var rejeitadas = r.rejeitadas || 0;
+      var taxaRej = r.taxa_rejeicao || 0;
+      var total = taxaRej > 0 ? Math.round(rejeitadas / (taxaRej / 100)) : (rejeitadas === 0 ? 0 : 0);
+      var sucesso = Math.max(0, total - rejeitadas);
+      var color = (taxa != null && taxa < 50) ? 'var(--danger)' : (taxa != null && taxa < 80) ? 'var(--warn)' : 'var(--success)';
+      var valTaxa = taxa != null ? taxa.toFixed(1) : '\u2014';
+      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right">' + fmtNum(total) + '</td><td style="text-align:right;color:var(--success)">' + fmtNum(sucesso) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + valTaxa + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
 
@@ -1371,13 +1377,17 @@
     var txRejMun = D.taxaRejeicaoMunicipio || [];
     h += '<div class="card panel"><h2 class="panel-title">Taxa de Rejei\u00e7\u00e3o por munic\u00edpio' + infoTip('Taxa de rejei\u00e7\u00e3o mais recente por munic\u00edpio nas \u00faltimas 4 horas.') + '</h2>';
     h += '<input class="filter-input" id="filterTxRej" placeholder="Filtrar munic\u00edpio...">';
-    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Taxa Rejei\u00e7\u00e3o (%)</th></tr></thead><tbody id="tbTxRej">';
+    h += '<div class="table-wrap" style="max-height:400px;overflow-y:auto"><table><thead><tr><th>Munic\u00edpio</th><th style="text-align:right">Total</th><th style="text-align:right">Rejeitadas</th><th style="text-align:right">Taxa Rejei\u00e7\u00e3o (%)</th></tr></thead><tbody id="tbTxRej">';
     txRejMun.sort(function (a, b) { return (b.taxa_rejeicao || 0) - (a.taxa_rejeicao || 0) });
     txRejMun.forEach(function (r) {
       var nome = r['municipio.nome'] || r.facet || '';
-      var val = r.taxa_rejeicao != null ? Number(r.taxa_rejeicao).toFixed(1) : '\u2014';
-      var color = (r.taxa_rejeicao != null && r.taxa_rejeicao > 50) ? 'var(--danger)' : (r.taxa_rejeicao != null && r.taxa_rejeicao > 20) ? 'var(--warn)' : 'var(--success)';
-      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + val + '</td></tr>';
+      if (!nome) return;
+      var taxa = r.taxa_rejeicao != null ? Number(r.taxa_rejeicao) : null;
+      var rejeitadas = r.rejeitadas || 0;
+      var total = taxa > 0 ? Math.round(rejeitadas / (taxa / 100)) : (rejeitadas === 0 ? 0 : 0);
+      var color = (taxa != null && taxa > 50) ? 'var(--danger)' : (taxa != null && taxa > 20) ? 'var(--warn)' : 'var(--success)';
+      var valTaxa = taxa != null ? taxa.toFixed(1) : '\u2014';
+      h += '<tr><td>' + esc(nome) + '</td><td style="text-align:right">' + fmtNum(total) + '</td><td style="text-align:right;color:var(--danger)">' + fmtNum(rejeitadas) + '</td><td style="text-align:right;font-weight:600;color:' + color + '">' + valTaxa + '</td></tr>';
     });
     h += '</tbody></table></div></div>';
 

@@ -89,10 +89,10 @@ echo "[23/27] Taxa sucesso/rejeicao NFe..."
 Q23=$(nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' AND nfe.tipo_nota = 'NFe' SINCE 4 hours ago")
 
 echo "[24/27] Taxa sucesso por municipio..."
-Q24=$(nrql "SELECT latest(nfe.success_rate) AS 'taxa_sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX")
+Q24=$(nrql "SELECT latest(nfe.success_rate) AS 'taxa_sucesso', latest(nfe.rejected_count) AS 'rejeitadas', latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX")
 
 echo "[25/27] Taxa rejeicao por municipio..."
-Q25=$(nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX")
+Q25=$(nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao', latest(nfe.rejected_count) AS 'rejeitadas', latest(nfe.success_rate) AS 'taxa_sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago LIMIT MAX")
 
 echo "[26/27] Timeseries taxa sucesso (global)..."
 Q26=$(nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' SINCE 4 hours ago TIMESERIES 20 minutes")
