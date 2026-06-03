@@ -29,6 +29,8 @@ jobs:
           newrelic profile default --profile hotmart
 
       - name: Coletar dados do New Relic
+        env:
+          NEW_RELIC_API_KEY: ${{ secrets.NEW_RELIC_API_KEY }}
         run: bash scripts/coletar-monitoramento-nfe.sh
 
       - name: Commit e push

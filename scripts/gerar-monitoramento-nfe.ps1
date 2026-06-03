@@ -149,9 +149,23 @@ $taxaRejeicaoMunicipio = Invoke-Nrql "SELECT latest(nfe.rejection_rate) AS 'taxa
 $step++; Write-Host "[$step/$total] Timeseries taxa sucesso/rejeicao..."
 $taxaTimeseries = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' SINCE 4 hours ago TIMESERIES 20 minutes"
 
-# 26. Taxa sucesso por tipo de nota
-$step++; Write-Host "[$step/$total] Taxa sucesso por tipo nota..."
-$taxaPorTipo = Invoke-Nrql "SELECT average(nfe.success_rate) AS 'sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET nfe.tipo_nota SINCE 4 hours ago LIMIT 5"
+# 26. Timeseries taxa sucesso por município (NerdGraph)
+$step++; Write-Host "[$step/$total] Timeseries taxa sucesso por municipio (NerdGraph)..."
+$nrqlTs = "SELECT average(nfe.success_rate) AS 'sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago TIMESERIES 20 minutes LIMIT 15"
+$credFile = Join-Path $env:USERPROFILE ".newrelic\credentials.jsonX"
+if (-not (Test-Path $credFile)) { $credFile = Join-Path $env:USERPROFILE ".newrelic\credentials.json" }
+$taxaSucessoMunicipioTs = "[]"
+if (Test-Path $credFile) {
+  $nrCreds = Get-Content $credFile -Raw | ConvertFrom-Json
+  $nrApiKey = $nrCreds.hotmart.apiKey
+  $gqlBody = @{ query = "{ actor { account(id: $accountId) { nrql(query: `"$nrqlTs`") { results } } } }" } | ConvertTo-Json -Compress
+  try {
+    $gqlResp = Invoke-RestMethod -Uri "https://api.newrelic.com/graphql" -Method POST -ContentType "application/json" -Headers @{ "Api-Key" = $nrApiKey } -Body ([System.Text.Encoding]::UTF8.GetBytes($gqlBody))
+    $tsResults = $gqlResp.data.actor.account.nrql.results
+    if ($tsResults) { $taxaSucessoMunicipioTs = $tsResults | ConvertTo-Json -Depth 10 -Compress }
+  }
+  catch { Write-Host "  NerdGraph falhou: $_" -ForegroundColor Yellow }
+}
 
 $ts = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId((Get-Date), 'E. South America Standard Time').ToString('dd/MM/yyyy HH:mm')
 
@@ -185,7 +199,7 @@ var monitoramentoNfeData = {
   taxaSucessoMunicipio: $taxaSucessoMunicipio,
   taxaRejeicaoMunicipio: $taxaRejeicaoMunicipio,
   taxaTimeseries: $taxaTimeseries,
-  taxaPorTipo: $taxaPorTipo
+  taxaSucessoMunicipioTs: $taxaSucessoMunicipioTs
 };
 "@
 

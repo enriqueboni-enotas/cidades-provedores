@@ -97,8 +97,15 @@ Q25=$(nrql "SELECT latest(nfe.rejection_rate) AS 'taxa_rejeicao' FROM Metric WHE
 echo "[26/27] Timeseries taxa sucesso (global)..."
 Q26=$(nrql "SELECT average(nfe.success_rate) AS 'sucesso', average(nfe.rejection_rate) AS 'rejeicao' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' SINCE 4 hours ago TIMESERIES 20 minutes")
 
-echo "[27/27] Timeseries taxa sucesso NFSe vs NFe..."
-Q27=$(nrql "SELECT average(nfe.success_rate) AS 'sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET nfe.tipo_nota SINCE 4 hours ago LIMIT 5")
+echo "[27/27] Timeseries taxa sucesso por municipio (NerdGraph)..."
+# TIMESERIES + FACET nao funciona no CLI, usar NerdGraph API diretamente
+NRQL_TS="SELECT average(nfe.success_rate) AS 'sucesso' FROM Metric WHERE entity.name = 'eNotas.Gateway.Microservice.Monitoring' FACET municipio.nome SINCE 4 hours ago TIMESERIES 20 minutes LIMIT 15"
+GQL_BODY=$(printf '{"query":"{ actor { account(id: %s) { nrql(query: \\"%s\\") { results } } } }"}' "$ACCOUNT" "$NRQL_TS")
+Q27_RAW=$(curl -s -X POST "https://api.newrelic.com/graphql" \
+  -H "Content-Type: application/json" \
+  -H "Api-Key: ${NEW_RELIC_API_KEY:-$(newrelic profile list 2>/dev/null | grep -oP 'apiKey:\s*\K\S+' | head -1)}" \
+  -d "$GQL_BODY")
+Q27=$(echo "$Q27_RAW" | python3 -c "import sys,json; d=json.load(sys.stdin); print(json.dumps(d.get('data',{}).get('actor',{}).get('account',{}).get('nrql',{}).get('results',[])))" 2>/dev/null || echo "[]")
 
 TS=$(TZ='America/Sao_Paulo' date '+%d/%m/%Y %H:%M')
 
@@ -133,7 +140,7 @@ TS=$(TZ='America/Sao_Paulo' date '+%d/%m/%Y %H:%M')
   echo "  taxaSucessoMunicipio: $Q24,"
   echo "  taxaRejeicaoMunicipio: $Q25,"
   echo "  taxaTimeseries: $Q26,"
-  echo "  taxaPorTipo: $Q27"
+  echo "  taxaSucessoMunicipioTs: $Q27"
   echo "};"
 } > "$OUT"
 
