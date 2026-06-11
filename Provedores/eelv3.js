@@ -3,11 +3,11 @@
   nome: 'EeLv3',
   empresa: 'EeLv3',
   stats: {
-    municipios: 76
+    municipios: 75
   },
   visaoGeral: [
     { key: 'Nome', val: 'EeLv3' },
-    { key: 'Total Municipios', val: '76' },
+    { key: 'Total Municipios', val: '75' },
     { key: 'Estados Atendidos', val: ['ES', 'MG', 'BA', 'RJ', 'PE', 'RO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -71,7 +71,6 @@
       { nome: 'Barra do Choça', uf: 'BA', ibge: '2902906' },
       { nome: 'Barreiras', uf: 'BA', ibge: '2903201' },
       { nome: 'Boa Esperança', uf: 'ES', ibge: '3201001' },
-      { nome: 'Bom Jesus do Norte', uf: 'ES', ibge: '3201100' },
       { nome: 'Cantagalo', uf: 'RJ', ibge: '3301108' },
       { nome: 'Carmo', uf: 'RJ', ibge: '3301207' },
       { nome: 'Conceição do Castelo', uf: 'ES', ibge: '3201704' },
@@ -84,7 +83,7 @@
       { nome: 'Fundão', uf: 'ES', ibge: '3202207' },
       { nome: 'Guaçuí', uf: 'ES', ibge: '3202306' },
       { nome: 'Guanhães', uf: 'MG', ibge: '3128006' },
-      { nome: 'Guaratinga', uf: 'ES', ibge: '2911808' },
+      { nome: 'Guaratinga', uf: 'BA', ibge: '2911808' },
       { nome: 'Ibatiba', uf: 'ES', ibge: '3202454' },
       { nome: 'Ibicoara', uf: 'BA', ibge: '2912202' },
       { nome: 'Ibiraci', uf: 'MG', ibge: '3129707' },

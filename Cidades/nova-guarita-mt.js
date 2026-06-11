@@ -1,15 +1,27 @@
-﻿var provedorDetalhe = {
-  id: 'agili',
-  nome: 'Agili',
-  empresa: 'Agili',
-  stats: {
-    municipios: 31
+﻿var cidadeDetalhe = {
+  id: 'nova-guarita-mt',
+  nome: 'Nova Guarita',
+  uf: 'MT',
+  ibge: '5108808',
+  constante: 'CodigoIBGE.NovaGuaritaMT',
+  provedorAtual: {
+    nome: 'Agili',
+    namespace: 'http://www.agili.com.br/nfse_v_1.00.xsd',
+    codigoNoProvedor: '37465598000102;UsaItemLei116AtividadeEconomica',
+    robo: false,
+    webService: true,
+    naoEnviaSerieRPS: false,
+    infoAdicional: 'codigonoprovedor é Cnpj Município(Cidade)\n					NaoUsaCodigoCnae = não envia código do Cnae\n					NaoItemLei116 = não envia Item Lei 116\n					UsaItemLei116AtividadeEconomica = para enviar o ItemLei116AtividadeEconomica no xml\n					UsaCodigoCnaeAtividadeEconomica = para enviar o CodigoCnaeAtividadeEconomica no xml\n\n					Metadados Cadastro da empresa:\n					naturezaOperacaoPadrao\n					naturezaOperacaoPadraoExterior',
+    urls: {
+      homologacao: {
+      },
+      producao: {
+        recepcaoLote: 'https://agiliblue.agilicloud.com.br/api/GerarNfse/',
+        consultaNFe: 'https://agiliblue.agilicloud.com.br/api/ConsultarNfseRps/',
+        cancelamentoNFe: 'https://agiliblue.agilicloud.com.br/api/CancelarNfse/'
+      }
+    }
   },
-  visaoGeral: [
-    { key: 'Nome', val: 'Agili' },
-    { key: 'Total Municipios', val: '31' },
-    { key: 'Estados Atendidos', val: ['MT', 'AL', 'RN', 'MS', 'PB', 'PE', 'PA', 'PR'], type: 'uf-badges' }
-  ],
   configuracaoProvedor: {
     tipoAutenticacao: 3,
     assinaturaDigital: 0,
@@ -65,41 +77,6 @@
       { codigo: '-7', nome: 'Exigibilidade suspensa por processo administrativo' },
       { codigo: '-8', nome: 'Fixo' },
       { codigo: '-9', nome: 'Isento por lei específica' }
-    ]
-  },
-  municipiosLista: {
-    'agili': [
-      { nome: 'Aliança', uf: 'PE', ibge: '2600708' },
-      { nome: 'Almino Afonso', uf: 'RN', ibge: '2400604' },
-      { nome: 'Apodi', uf: 'RN', ibge: '2401008' },
-      { nome: 'Aripuanã', uf: 'MT', ibge: '5101407' },
-      { nome: 'Carlinda', uf: 'MT', ibge: '5102793' },
-      { nome: 'Conquista D\'Oeste', uf: 'MT', ibge: '5103361' },
-      { nome: 'Delmiro Gouveia', uf: 'AL', ibge: '2702405' },
-      { nome: 'Ipiranga do Norte', uf: 'MT', ibge: '5104526' },
-      { nome: 'Japaratinga', uf: 'AL', ibge: '2703601' },
-      { nome: 'Jateí', uf: 'MS', ibge: '5005103' },
-      { nome: 'Juara', uf: 'MT', ibge: '5105101' },
-      { nome: 'Juína', uf: 'MT', ibge: '5105150' },
-      { nome: 'Marcelândia', uf: 'MT', ibge: '5105580' },
-      { nome: 'Mata Grande', uf: 'AL', ibge: '2705002' },
-      { nome: 'Nobres', uf: 'MT', ibge: '5105903' },
-      { nome: 'Nova Guarita', uf: 'MT', ibge: '5108808' },
-      { nome: 'Nova Monte Verde', uf: 'MT', ibge: '5108956' },
-      { nome: 'Novo Progresso', uf: 'PA', ibge: '1505031' },
-      { nome: 'Palmeira dos Índios', uf: 'AL', ibge: '2706307' },
-      { nome: 'Paranaíta', uf: 'MT', ibge: '5106299' },
-      { nome: 'Poconé', uf: 'MT', ibge: '5106505' },
-      { nome: 'Porto Alegre do Norte', uf: 'MT', ibge: '5106778' },
-      { nome: 'Rondonópolis', uf: 'MT', ibge: '5107602' },
-      { nome: 'Sanharó', uf: 'PE', ibge: '2612406' },
-      { nome: 'Santa Cecília do Pavão', uf: 'PR', ibge: '4123204' },
-      { nome: 'Santa Rita', uf: 'PB', ibge: '2513703' },
-      { nome: 'São João do Rio do Peixe', uf: 'PB', ibge: '2500700' },
-      { nome: 'Sorriso', uf: 'MT', ibge: '5107925' },
-      { nome: 'Terra Nova do Norte', uf: 'MT', ibge: '5108055' },
-      { nome: 'Vera', uf: 'MT', ibge: '5108501' },
-      { nome: 'Vicentina', uf: 'MS', ibge: '5008404' }
     ]
   }
 };

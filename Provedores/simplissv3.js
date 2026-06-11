@@ -1,30 +1,15 @@
-﻿var cidadeDetalhe = {
-  id: 'presidente-prudente-sp',
-  nome: 'Presidente Prudente',
-  uf: 'SP',
-  ibge: '3541406',
-  constante: 'CodigoIBGE.PresidentePrudenteSP',
-  provedorAtual: {
-    nome: 'SimplissV3',
-    namespace: null,
-    codigoNoProvedor: null,
-    robo: false,
-    webService: true,
-    naoEnviaSerieRPS: false,
-    urls: {
-      homologacao: {
-        recepcaoLote: 'https://producaorestrita.simplissweb.com.br'
-      },
-      producao: {
-        recepcaoLote: 'https://issprudente.sp.gov.br/nfsenacional',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
-      }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
-    }
+﻿var provedorDetalhe = {
+  id: 'simplissv3',
+  nome: 'SimplissV3',
+  empresa: 'SimplissV3',
+  stats: {
+    municipios: 2
   },
+  visaoGeral: [
+    { key: 'Nome', val: 'SimplissV3' },
+    { key: 'Total Municipios', val: '2' },
+    { key: 'Estados Atendidos', val: ['SP', 'SC'], type: 'uf-badges' }
+  ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
@@ -69,6 +54,12 @@
       { codigo: '2', nome: 'Imunidade' },
       { codigo: '3', nome: 'Exportação de Serviço' },
       { codigo: '4', nome: 'Não incidência' }
+    ]
+  },
+  municipiosLista: {
+    'simplissv3': [
+      { nome: 'Blumenau', uf: 'SC', ibge: '4202404' },
+      { nome: 'Presidente Prudente', uf: 'SP', ibge: '3541406' }
     ]
   }
 };

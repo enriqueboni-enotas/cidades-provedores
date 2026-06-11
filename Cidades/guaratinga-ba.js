@@ -1,50 +1,53 @@
 ﻿var cidadeDetalhe = {
-  id: 'bertioga-sp',
-  nome: 'Bertioga',
-  uf: 'SP',
-  ibge: '3506359',
-  constante: 'CodigoIBGE.BertiogaSP',
+  id: 'guaratinga-ba',
+  nome: 'Guaratinga',
+  uf: 'BA',
+  ibge: '2911808',
+  constante: 'CodigoIBGE.GuaratingaBA',
   provedorAtual: {
-    nome: 'GissOnline',
+    nome: 'EeLv3',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaCertificado',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     versaoAbrasf: '2.04',
+    infoAdicional: 'Links com https tem que adicionar a tag <codigoNoProvedor>UsaCertificado</codigoNoProvedor>',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws'
       },
       producao: {
-        recepcaoLote: 'https://ws-bertioga.giss.com.br/service-ws/nf/nfse-ws'
+        recepcaoLote: 'https://ba-guaratinga-pm-nfs-backend.cloud.el.com.br/producao05/NfseWSService'
       }
     }
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
-    assinaturaDigital: 2,
+    assinaturaDigital: 0,
+    helpTipoAutenticacao: {
+      certificadoDigital: 'Obrigatório a utilização de certificado digital.',
+      usuario: null,
+      senha: null,
+      token: null,
+      fraseSecreta: null
+    },
+    suportaCancelamentoNFe: true,
     valorCancelamentoNFe: 60,
     usaCodigoServicoMunicipal: true,
     usaCNAE: false,
     usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplo válido: 6038',
+    helpInscricaoMunicipal: 'Informe sua inscrição municipal.\r\n\r\nExemplos válidos: 06421008 ou 634812-2',
     helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Código de tributação que identifica o serviço prestado.\r\nExemplos válido: 08.02.00, 17.01.00',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal com 6 dígitos (somente números) que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como código de Serviço ou código de serviço nacional. Exemplos válidos: 170901 ou 010201',
     helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
     helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
-    helpItemListaServico: 'Esse código complementa a identificação do serviço prestado na nota fiscal e é formado 5 dígitos (formatado com ponto).\r\n\r\nEsse código é identificado na sua prefeitura como Sub-Item e é  possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, no seção Código de Serviço.\r\nExemplo válido: 01.03',
+    helpItemListaServico: 'Informe aqui o item da lista de serviço, é também um identificador do serviço prestado. \r\n \r\n Você precisa preencher o item da lista de serviço com 5 dígitos mantendo a formatação.\r\n Exemplos válidos: 17.02 ou 08.02',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemEndereco: false,
     suportaCancelamentoNFeSemCliente: false,
     suportaCancelamentoNFeClienteSemCpf: false,
-    numeroRpsDeveSerSequencial: false,
-    numeroNotasPorLote: 10,
-    autenticidadeNota: {
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaNumeroNota: true
-    },
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },

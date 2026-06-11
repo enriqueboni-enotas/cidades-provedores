@@ -1,543 +1,690 @@
 var nfeNegadasData = [
   {
+    tag: '11/06/2026',
+    titulo: 'Quinta-feira — 11 de Junho',
+    data: '11/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.696 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '373 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '365 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '343 notas',
+      },
+      {
+        icon: '📋',
+        destaque: 'NCM inválido (deve ser numérico com 8 ou 2 dígitos)',
+        texto: '339 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '328 notas',
+      },
+      {
+        icon: '🔢',
+        destaque:
+          'Série/Número/Município/CNPJ já existe em NFS-e gerada (DPS duplicada)',
+        texto: '274 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '266 notas',
+      },
+      {
+        icon: '❌',
+        destaque:
+          'Emissor não habilitado para emissão da NF-e/NFC-e (rejeição 781)',
+        texto: '246 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '199 notas',
+      },
+    ],
+  },
+  {
+    tag: '10/06/2026',
+    titulo: 'Quarta-feira — 10 de Junho',
+    data: '10/06/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '7.351 notas',
+      },
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '3.589 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Campo Cidade do Tomador de Serviços obrigatório',
+        texto: '1.990 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio temporário da conta pelo Suporte eNotas',
+        texto: '1.843 notas',
+      },
+      {
+        icon: '🔢',
+        destaque:
+          'Série da DPS não pertence à faixa definida para o tipo de emissor',
+        texto: '1.085 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '934 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '696 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '692 notas',
+      },
+      {
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido (deve conter 10-11 dígitos)',
+        texto: '583 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '579 notas',
+      },
+    ],
+  },
+  {
+    tag: '09/06/2026',
+    titulo: 'Segunda-feira — 09 de Junho',
+    data: '09/06/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço',
+        texto: '3.548 notas',
+      },
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '3.133 notas',
+      },
+      {
+        icon: '🌐',
+        destaque:
+          'Falha no schema XML — elemento endExt inválido (tomador exterior)',
+        texto: '1.386 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '861 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '821 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Número do RPS inválido (sequência incorreta)',
+        texto: '620 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '586 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'IE do destinatário não informada (rejeição 232)',
+        texto: '470 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '437 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão interrompida — app desativado',
+        texto: '428 notas',
+      },
+    ],
+  },
+  {
+    tag: '08/06/2026',
+    titulo: 'Domingo — 08 de Junho',
+    data: '08/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '2.401 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série da DPS não pertence à faixa do tipo de emissor',
+        texto: '1.283 notas',
+      },
+      {
+        icon: '📅',
+        destaque: 'Data de emissão do RPS refere-se a competência já encerrada',
+        texto: '763 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '687 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '522 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '481 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'DPS duplicada — Série/Número/Município/CNPJ já existe',
+        texto: '448 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '426 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '399 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão interrompida — app desativado',
+        texto: '394 notas',
+      },
+    ],
+  },
+  {
+    tag: '07/06/2026',
+    titulo: 'Sábado — 07 de Junho',
+    data: '07/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.719 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '775 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '423 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '406 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '405 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '355 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série transcrita para DPS fora da faixa permitida (80000+)',
+        texto: '347 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '340 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Retornada para negada (erro não identificado)',
+        texto: '291 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '281 notas',
+      },
+    ],
+  },
+  {
+    tag: '06/06/2026',
+    titulo: 'Sexta-feira — 06 de Junho',
+    data: '06/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.722 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '869 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '833 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '678 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '559 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '373 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '325 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Série transcrita para DPS fora da faixa permitida (80000+)',
+        texto: '321 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissão monitorada — rejeição 997 (Fazenda MG)',
+        texto: '311 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'Consumidor Final ou Tomador Exterior — não informar CEP',
+        texto: '300 notas',
+      },
+    ],
+  },
+  {
+    tag: '05/06/2026',
+    titulo: 'Quinta-feira — 05 de Junho',
+    data: '05/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.794 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Endereço do tomador obrigatório para o indicador de operação',
+        texto: '1.711 notas',
+      },
+      {
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido (deve conter 10-11 dígitos)',
+        texto: '2.898 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'Consumidor Final ou Tomador Exterior — não informar CEP',
+        texto: '1.078 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '938 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '744 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '498 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '487 notas',
+      },
+      {
+        icon: '📅',
+        destaque: 'Prazo legal para conversão de RPS em NFS-e expirado',
+        texto: '478 notas',
+      },
+    ],
+  },
+  {
+    tag: '04/06/2026',
+    titulo: 'Quarta-feira — 04 de Junho',
+    data: '04/06/2026',
+    itens: [
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.776 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '1.819 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '797 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '618 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Campo Cidade do Tomador de Serviços obrigatório',
+        texto: '586 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Erro desconhecido (sem mensagem detalhada)',
+        texto: '552 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '420 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '344 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'DPS duplicada — Série/Número/Município/CNPJ já existe',
+        texto: '296 notas',
+      },
+    ],
+  },
+  {
+    tag: '03/06/2026',
+    titulo: 'Terça-feira — 03 de Junho',
+    data: '03/06/2026',
+    itens: [
+      {
+        icon: '🏙️',
+        destaque: 'Tomador com cidade não identificada e sem país informado',
+        texto: '3.115 notas',
+      },
+      {
+        icon: '🔢',
+        destaque: 'Número do RPS inválido (sequência incorreta)',
+        texto: '2.528 notas',
+      },
+      {
+        icon: '🔑',
+        destaque: 'Certificado digital vencido',
+        texto: '1.792 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Consumo indevido (rejeição 656)',
+        texto: '1.704 notas',
+      },
+      {
+        icon: '🧾',
+        destaque: 'Código de tributação informado é inválido',
+        texto: '1.680 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '963 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '929 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '906 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '873 notas',
+      },
+      {
+        icon: '📮',
+        destaque: 'CEP do tomador não existe ou não pertence ao município',
+        texto: '531 notas',
+      },
+    ],
+  },
+  {
     tag: '02/06/2026',
     titulo: 'Terça-feira — 02 de Junho',
     data: '02/06/2026',
     itens: [
       {
-        icon: '🔒',
+        icon: '🔑',
         destaque: 'Certificado digital vencido',
-        texto: '2.913 notas',
-      },
-      {
-        icon: '📅',
-        destaque: 'Data de emissão do RPS excedeu o prazo válido',
-        texto: '1.838 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '1.210 notas',
+        texto: '1.811 notas',
       },
       {
         icon: '💰',
         destaque: 'Bloqueio por falta de pagamento',
-        texto: '1.142 notas',
+        texto: '1.290 notas',
+      },
+      {
+        icon: '❌',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '845 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '723 notas',
       },
       {
         icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '680 notas',
+      },
+      {
+        icon: '📊',
         destaque:
-          'Obrigatório envio de dados IBSCBS — São Bernardo do Campo/SP',
-        texto: '1.015 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Endereço do tomador obrigatório quando há identificação',
-        texto: '886 notas',
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '512 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '743 notas',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '445 notas',
       },
       {
-        icon: '🧾',
-        destaque: 'Código de tributação informado é inválido',
-        texto: '614 notas',
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido (deve conter 10-11 dígitos)',
+        texto: '398 notas',
       },
       {
-        icon: '🏙️',
-        destaque: 'Campo Cidade do Tomador de Serviços obrigatório',
-        texto: '557 notas',
+        icon: '🔢',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '367 notas',
       },
       {
-        icon: '📋',
-        destaque: 'Dados obrigatórios da empresa não preenchidos',
-        texto: '553 notas',
+        icon: '⏸️',
+        destaque: 'Emissão interrompida — app desativado',
+        texto: '312 notas',
       },
     ],
   },
   {
     tag: '01/06/2026',
-    titulo: 'Domingo — 01 de Junho',
+    titulo: 'Segunda-feira — 01 de Junho',
     data: '01/06/2026',
     itens: [
       {
-        icon: '🔒',
+        icon: '🔑',
         destaque: 'Certificado digital vencido',
-        texto: '8.766 notas',
+        texto: '1.650 notas',
       },
       {
         icon: '💰',
         destaque: 'Bloqueio por falta de pagamento',
-        texto: '3.257 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '2.220 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Arquivo XML fora da estrutura de entrada esperada',
-        texto: '1.970 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Obrigatório envio de dados IBSCBS — São Bernardo do Campo/SP',
-        texto: '1.856 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '1.555 notas',
-      },
-      {
-        icon: '📋',
-        destaque: 'Endereço do tomador obrigatório quando há identificação',
-        texto: '1.425 notas',
+        texto: '987 notas',
       },
       {
         icon: '❌',
-        destaque: 'Erro desconhecido',
-        texto: '1.298 notas',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '712 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '589 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '534 notas',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '412 notas',
+      },
+      {
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '389 notas',
       },
       {
         icon: '🔢',
-        destaque: 'Série da DPS não pertence à faixa do tipo de emissor',
-        texto: '1.274 notas',
+        destaque: 'RPS já informado (duplicidade)',
+        texto: '345 notas',
       },
       {
-        icon: '📋',
-        destaque:
-          'Endereço do tomador obrigatório — enviar como consumidor final',
-        texto: '1.249 notas',
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido',
+        texto: '298 notas',
+      },
+      {
+        icon: '⏸️',
+        destaque: 'Emissão interrompida — app desativado',
+        texto: '276 notas',
       },
     ],
   },
   {
     tag: '31/05/2026',
-    titulo: 'Sábado — 31 de Maio',
+    titulo: 'Domingo — 31 de Maio',
     data: '31/05/2026',
     itens: [
       {
-        icon: '🏙️',
-        destaque: 'Campo Cidade do Tomador obrigatório',
-        texto: '1.378 notas',
-      },
-      {
-        icon: '🌐',
-        destaque: 'Estado não suporta emissão com tomador sem documento',
-        texto: '619 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '531 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Local da Prestação do Serviço inválido',
-        texto: '498 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Falha na autenticação com credenciais',
-        texto: '395 notas',
-      },
-    ],
-  },
-  {
-    tag: '30/05/2026',
-    titulo: 'Sexta-feira — 30 de Maio',
-    data: '30/05/2026',
-    itens: [
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '824 notas',
-      },
-      {
-        icon: '🔒',
+        icon: '🔑',
         destaque: 'Certificado digital vencido',
-        texto: '629 notas',
+        texto: '1.423 notas',
+      },
+      {
+        icon: '💰',
+        destaque: 'Bloqueio por falta de pagamento',
+        texto: '876 notas',
       },
       {
         icon: '❌',
-        destaque: 'Emissor não habilitado para emissão da NF-e',
-        texto: '456 notas',
+        destaque: 'Emissor não habilitado para emissão da NF-e (rejeição 781)',
+        texto: '654 notas',
+      },
+      {
+        icon: '👤',
+        destaque: 'CPF ou CNPJ do tomador não informado',
+        texto: '521 notas',
       },
       {
         icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '370 notas',
+        destaque: 'Endereço do tomador obrigatório quando houver identificação',
+        texto: '398 notas',
       },
       {
-        icon: '📮',
-        destaque: 'CEP do tomador inválido ou inexistente',
-        texto: '318 notas',
-      },
-    ],
-  },
-  {
-    tag: '29/05/2026',
-    titulo: 'Quinta-feira — 29 de Maio',
-    data: '29/05/2026',
-    itens: [
-      {
-        icon: '❌',
-        destaque: 'Rejeição: Consumo Indevido',
-        texto: '4.094 notas',
+        icon: '🏙️',
+        destaque: 'Cidade do IBGE não encontrada no endereço do cliente',
+        texto: '367 notas',
       },
       {
-        icon: '📋',
-        destaque: 'NCM inválido (deve ser numérico)',
-        texto: '2.653 notas',
-      },
-      { icon: '🔧', destaque: 'Erro desconhecido', texto: '1.289 notas' },
-      {
-        icon: '🌐',
-        destaque: 'Estado não suporta emissão com tomador sem documento',
-        texto: '1.268 notas',
+        icon: '📊',
+        destaque:
+          'Obrigatório envio de dados do IBS/CBS — São Bernardo do Campo/SP',
+        texto: '312 notas',
       },
       {
         icon: '🔢',
         destaque: 'RPS já informado (duplicidade)',
-        texto: '960 notas',
-      },
-    ],
-  },
-  {
-    tag: '28/05/2026',
-    titulo: 'Quarta-feira — 28 de Maio',
-    data: '28/05/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '4.283 notas',
+        texto: '289 notas',
       },
       {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada',
-        texto: '1.413 notas',
+        icon: '📞',
+        destaque: 'Telefone do cliente inválido',
+        texto: '245 notas',
       },
       {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.058 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Rejeição: IE do destinatário não cadastrada',
-        texto: '912 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador obrigatório',
-        texto: '904 notas',
-      },
-    ],
-  },
-  {
-    tag: '27/05/2026',
-    titulo: 'Terça-feira — 27 de Maio',
-    data: '27/05/2026',
-    itens: [
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador obrigatório',
-        texto: '3.040 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Rejeição: IE do emitente inválida',
-        texto: '811 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '773 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'RPS já informado (duplicidade)',
-        texto: '758 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '736 notas',
-      },
-    ],
-  },
-  {
-    tag: '26/05/2026',
-    titulo: 'Segunda-feira — 26 de Maio',
-    data: '26/05/2026',
-    itens: [
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '3.339 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada',
-        texto: '1.585 notas',
-      },
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '781 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ do tomador obrigatório',
-        texto: '614 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação municipal inválido',
-        texto: '501 notas',
-      },
-    ],
-  },
-  {
-    tag: '25/05/2026',
-    titulo: 'Segunda-feira — 25 de Maio',
-    data: '25/05/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '2.076 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade não encontrada no cadastro IBGE',
-        texto: '1.685 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Rejeição 591 — CSOSN para emissor que não é Simples Nacional',
-        texto: '1.294 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque:
-          'Cidade do endereço do cliente não encontrada no cadastro IBGE',
-        texto: '939 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '704 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Erro no script de assinatura XML (NFENotaFiscalWSXMLAssinaturaValidar)',
-        texto: '475 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Rejeição 930 — CST com benefício fiscal sem código informado',
-        texto: '441 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ do tomador inválido (configuração da empresa)',
-        texto: '425 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '416 notas',
-      },
-      {
-        icon: '🔢',
-        destaque: 'RPS já informado (número duplicado)',
-        texto: '414 notas',
-      },
-    ],
-  },
-  {
-    tag: '24/05/2026',
-    titulo: 'Sábado — 24 de Maio',
-    data: '24/05/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.761 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '544 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '285 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Rejeição 930 — CST com benefício fiscal sem código informado',
-        texto: '241 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Rejeição 781 — Emissor não habilitado para NF-e/NFC-e',
-        texto: '223 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro no script de assinatura XML (NotaSalvador)',
-        texto: '216 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Rejeição 591 — CSOSN para emissor que não é Simples Nacional',
-        texto: '204 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ inválido — empresa configurada para bloquear',
-        texto: '199 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '178 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'XML inválido — RazaoSocial vazia no schema ABRASF',
-        texto: '150 notas',
-      },
-    ],
-  },
-  {
-    tag: '23/05/2026',
-    titulo: 'Sexta-feira — 23 de Maio',
-    data: '23/05/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '1.831 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '508 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Limite de tentativas de conexão com a prefeitura atingido',
-        texto: '479 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '323 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '297 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Rejeição 781 — Emissor não habilitado para NF-e/NFC-e',
-        texto: '280 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Rejeição 930 — CST com benefício fiscal sem código informado',
-        texto: '251 notas',
-      },
-      {
-        icon: '❌',
-        destaque:
-          'Rejeição 591 — CSOSN para emissor que não é Simples Nacional',
-        texto: '235 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '234 notas',
-      },
-      {
-        icon: '📅',
-        destaque: 'Data de competência superior à data atual',
-        texto: '234 notas',
-      },
-    ],
-  },
-  {
-    tag: '22/05/2026',
-    titulo: 'Quinta-feira — 22 de Maio',
-    data: '22/05/2026',
-    itens: [
-      {
-        icon: '🔒',
-        destaque: 'Certificado digital vencido',
-        texto: '2.433 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Erro desconhecido',
-        texto: '1.212 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF ou CNPJ não informado para tomador nacional',
-        texto: '658 notas',
-      },
-      {
-        icon: '❌',
-        destaque: 'Falha de comunicação com a prefeitura',
-        texto: '389 notas',
-      },
-      {
-        icon: '💰',
-        destaque: 'Bloqueio por falta de pagamento',
-        texto: '362 notas',
-      },
-      {
-        icon: '🧮',
-        destaque:
-          'Rejeição 930 — CST com benefício fiscal sem código informado',
-        texto: '306 notas',
-      },
-      {
-        icon: '👤',
-        destaque: 'CPF/CNPJ do tomador do serviço incorreto',
-        texto: '303 notas',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Cidade do endereço do cliente não encontrada no IBGE',
-        texto: '300 notas',
-      },
-      {
-        icon: '📮',
-        destaque: 'CEP do tomador não existe ou não pertence ao município',
-        texto: '282 notas',
-      },
-      {
-        icon: '🧾',
-        destaque: 'Código de tributação informado é inválido',
-        texto: '277 notas',
+        icon: '⏸️',
+        destaque: 'Emissão interrompida — app desativado',
+        texto: '198 notas',
       },
     ],
   },

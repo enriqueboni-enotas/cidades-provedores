@@ -3,11 +3,11 @@
   nome: 'BethaV2',
   empresa: 'BethaV2',
   stats: {
-    municipios: 88
+    municipios: 87
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV2' },
-    { key: 'Total Municipios', val: '88' },
+    { key: 'Total Municipios', val: '87' },
     { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MS', 'AC', 'MG', 'MT', 'AM', 'BA', 'SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -71,7 +71,6 @@
       { nome: 'Dona Emma', uf: 'SC', ibge: '4205100' },
       { nome: 'Formosa do Sul', uf: 'SC', ibge: '4205431' },
       { nome: 'Goioerê', uf: 'PR', ibge: '4108601' },
-      { nome: 'Guaranésia', uf: 'MG', ibge: '3128303' },
       { nome: 'Igaratinga', uf: 'MG', ibge: '3130200' },
       { nome: 'Iomerê', uf: 'SC', ibge: '4207577' },
       { nome: 'Ipê', uf: 'RS', ibge: '4310439' },

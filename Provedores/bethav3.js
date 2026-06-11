@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 138
+    municipios: 139
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '138' },
+    { key: 'Total Municipios', val: '139' },
     { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'AM', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -120,6 +120,7 @@
       { nome: 'Frei Rogério', uf: 'SC', ibge: '4205555' },
       { nome: 'Gavião Peixoto', uf: 'SP', ibge: '3516853' },
       { nome: 'General Carneiro', uf: 'PR', ibge: '4108502' },
+      { nome: 'Guaranésia', uf: 'MG', ibge: '3128303' },
       { nome: 'Guatapará', uf: 'SP', ibge: '3518859' },
       { nome: 'Honório Serpa', uf: 'PR', ibge: '4109658' },
       { nome: 'Ibiam', uf: 'SC', ibge: '4206751' },

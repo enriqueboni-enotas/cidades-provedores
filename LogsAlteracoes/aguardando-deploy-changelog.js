@@ -1,70 +1,105 @@
 var aguardandoDeployData = [
   {
-    tag: '02/06/2026',
-    titulo: 'Terça-feira — 02 de Junho',
+    tag: '11/06/2026',
+    titulo: 'Quarta-feira — 11 de Junho',
     itens: [
       {
-        icon: '🏙️',
+        icon: '🔧',
         texto:
-          'Correção do link de integração de Campo Bom/RS após migração para o provedor GIFv2. O município havia sido migrado do provedor anterior para o GIFv2, mas a URL de comunicação com a prefeitura estava incorreta no XML de configuração. Sem o link correto, as notas não conseguiam ser transmitidas ao webservice municipal. O ajuste corrige a URL para que a emissão e consulta de NFS-e voltem a funcionar normalmente.',
-        pr: 9479,
-        autor: 'Alex Ramos Fernandes',
+          'Configura empresa específica para respeitar o município de incidência informado na nota ao invés de usar o padrão. Resolve rejeições em prefeituras que validam estritamente o local de prestação do serviço quando o município de incidência difere do endereço do prestador.',
+        pr: 9543,
+        autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '🏙️',
         texto:
-          'Migração de Campo Bom/RS para o provedor GIFv2. O município utilizava um provedor anterior e foi reconfigurado para utilizar o GIFv2, que é o sistema atualmente adotado pela prefeitura para emissão de NFS-e. As configurações de URL, namespace e parâmetros de comunicação foram atualizadas no XML de municípios para refletir o novo provedor.',
-        pr: 9435,
-        autor: 'Alex Ramos Fernandes',
+          'Retorna Nova Mamoré/RO para a versão ABRASF do provedor anterior. O município havia sido migrado para uma versão mais recente que apresentou incompatibilidades. O rollback garante continuidade na emissão até que a integração seja estabilizada na nova versão.',
+        pr: 9552,
+        autor: 'Felippe Salvo de Mendonça',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Adiciona suporte para empresas que possuem múltiplas Inscrições Municipais (IM). Anteriormente o sistema assumia uma única IM por empresa, causando conflitos em empresas que operam em múltiplos municípios com IMs distintas. Agora o sistema identifica qual IM usar baseado no município de emissão.',
+        pr: 9532,
+        autor: 'Vitor Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Campos Belos/GO aderiu ao Portal Nacional de NFS-e. O município goiano migrou para o provedor NfseNacionalV2, passando a utilizar a infraestrutura centralizada da Receita Federal para emissão e consulta de notas fiscais de serviço eletrônicas. Empresas prestadoras de serviço em Campos Belos agora emitem pelo padrão nacional.',
-        pr: 9472,
-        autor: 'Davidson Souza',
-      },
-      {
-        icon: '📄',
-        texto:
-          "Novo layout de PDF padrão nacional para o provedor GovDigital. Foi implementada uma arquitetura completa de geração de PDF de NFS-e seguindo o padrão visual nacional (DANFSE), com suporte a QR Code, marca d'água para notas canceladas, quebra de linha dinâmica e campos de tributação municipal/federal. A implementação inicial está habilitada para Fortaleza/CE como piloto, permitindo que empresas visualizem e imprimam suas notas no formato padronizado pela Receita Federal.",
-        pr: 8939,
-        autor: 'Thales Fonseca',
-      },
-      {
-        icon: '�',
-        texto:
-          'Ajuste no número de lote para empresa específica no provedor SIGISSv5. Uma empresa em Bacabal/MA estava com conflito de numeração de lote — o número configurado colidia com lotes já processados pela prefeitura. A correção soma um valor alto (2.147.483.634) ao número de lote configurado, gerando uma sequência única que evita a rejeição por duplicidade. Isso resolve o erro de "lote já processado" que impedia a emissão de novas notas.',
-        pr: 9471,
-        autor: 'Thiago Souza',
-      },
-      {
-        icon: '🧾',
-        texto:
-          'Remoção do tratamento especial de imunidade tributária (tpImunidade) no provedor RLZv3. Uma empresa específica possuía uma exceção no código que suprimia o envio da tag tpImunidade no XML, pois anteriormente emitia com imunidade. Como a empresa não emite mais com esse benefício, o tratamento especial foi removido, simplificando o código e evitando comportamentos inesperados caso a tag seja necessária futuramente para outras empresas do mesmo provedor.',
-        pr: 9468,
-        autor: 'Henrique Cassio',
+          'Horizonte/CE é migrado para o novo provedor SpeedGovV2. O município utiliza o sistema SpeedGov na versão 2 (padrão nacional), e a configuração foi atualizada com as URLs e operações do novo provedor, permitindo emissão, consulta e cancelamento padronizados.',
+        pr: 9550,
+        autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '📊',
         texto:
-          'Envio do código NBS no XML da NFS-e Nacional para integrações alternativas. Quando a nota é emitida via integração alternativa (API diferente da padrão), o campo cNBS (código da Nomenclatura Brasileira de Serviços) não estava sendo enviado no XML do DPS, ficando sempre nulo. Isso podia causar rejeição em municípios que exigem o NBS. Agora o código NBS informado pelo cliente é corretamente incluído no XML, garantindo conformidade com a especificação do Portal Nacional.',
-        pr: 9466,
+          'Configura a subscription Per2Park para enviar o código NBS (Nomenclatura Brasileira de Serviços) em notas do Simples Nacional. O NBS é exigido por alguns municípios para classificação de serviços, especialmente em operações internacionais.',
+        pr: 9549,
+        autor: 'Davidson Souza',
+      },
+      {
+        icon: '🌐',
+        texto:
+          'Implementa comércio exterior completo no provedor, atualizando a lista de países disponíveis para tomadores estrangeiros. Permite emissão correta de notas para tomadores em países que antes não estavam cadastrados no sistema, ampliando a cobertura de exportação de serviços.',
+        pr: 9525,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Correção no envio de IRRF e INSS para notas sem PIS/COFINS retidos no Portal Nacional. Quando uma nota não tinha retenção de PIS/COFINS mas tinha IRRF ou INSS, esses valores não estavam sendo enviados corretamente no XML. O ajuste garante que os tributos federais retidos (IRRF e INSS) sejam transmitidos independentemente da presença de PIS/COFINS, evitando divergências entre o valor cobrado e o declarado à Receita.',
-        pr: 9465,
-        autor: 'Thiago Souza',
+          'Ajusta a validação do código de serviço para aceitar formatos variados e padroniza o formato da data de emissão (DtEmissao) no XML enviado ao provedor. Resolve rejeições causadas por diferença de formato entre o que o sistema gerava e o que a prefeitura esperava.',
+        pr: 9544,
+        autor: 'Henrique Cassio',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Ativa a flag NaoUsaAssinatura para Cafelândia/SP. Essa configuração indica que o município não exige assinatura digital no XML de envio do RPS, simplificando o fluxo de emissão e evitando rejeições por certificado em prefeituras que não validam a assinatura.',
+        pr: 9548,
+        autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '🔧',
         texto:
-          'Reprocessamento automático de consultas com erro temporário do ADN em Carpina/PE (provedor HM2). Quando o sistema ADN da prefeitura de Carpina retorna "Ocorreu um erro inesperado ao tentar realizar a emissão da NFS-e", o gateway agora identifica isso como erro temporário e reprocessa a consulta automaticamente (até 10 tentativas). Anteriormente, a mensagem de erro esperada era diferente e a comparação era case-sensitive, fazendo com que notas ficassem travadas "em consulta" sem retentativa. O ajuste também corrige a série do RPS e zera a alíquota ISS para empresas do Simples Nacional neste município.',
-        pr: 9457,
+          'Adiciona validação que retorna erro claro quando a prefeitura não suporta ambiente de homologação. Antes, tentar emitir em homologação em municípios sem suporte resultava em erros genéricos de conexão. Agora o sistema informa antecipadamente que o município só aceita emissão em produção.',
+        pr: 9547,
+        autor: 'Henrique Cassio',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Monte Aprazível/SP adere ao Portal Nacional de NFS-e. O município foi configurado com o provedor NfseNacional, com suporte a emissão via DPS, consulta padronizada e cancelamento via evento.',
+        pr: 9546,
         autor: 'Davidson Souza',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Pilar do Sul/SP é atualizado para o provedor NfseNacionalV2. A migração para a versão 2 do Portal Nacional oferece funcionalidades adicionais como substituição de notas e consulta por DPS aprimorada.',
+        pr: 9542,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Atualiza o parser para extrair o valorISS diretamente do XML de resposta do provedor. Antes, o valor do ISS era calculado internamente, podendo divergir do valor que a prefeitura efetivamente registrou. Agora o valor exibido ao cliente é o mesmo registrado na prefeitura.',
+        pr: 9541,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Configura o envio do campo cIntContrib (código de contribuinte integrado) para empresa específica. Esse campo é exigido por determinados provedores para identificar o contribuinte junto à prefeitura, e sua ausência causava rejeição na emissão.',
+        pr: 9539,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Inclui empresaID na regra de incidência para considerar o município do prestador. Para essa empresa específica, o ISS deve incidir no município do prestador (e não no do tomador), conforme legislação local. A configuração garante que o município correto seja enviado no XML.',
+        pr: 9535,
+        autor: 'Henrique Cassio',
       },
     ],
   },

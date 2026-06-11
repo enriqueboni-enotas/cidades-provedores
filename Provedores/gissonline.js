@@ -3,11 +3,11 @@
   nome: 'GissOnline',
   empresa: 'GissOnline',
   stats: {
-    municipios: 22
+    municipios: 24
   },
   visaoGeral: [
     { key: 'Nome', val: 'GissOnline' },
-    { key: 'Total Municipios', val: '22' },
+    { key: 'Total Municipios', val: '24' },
     { key: 'Estados Atendidos', val: ['SP', 'PE', 'RJ', 'PR', 'GO', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -55,6 +55,7 @@
   },
   municipiosLista: {
     'gissonline': [
+      { nome: 'Bertioga', uf: 'SP', ibge: '3506359' },
       { nome: 'Campos dos Goytacazes', uf: 'RJ', ibge: '3301009' },
       { nome: 'Caruaru', uf: 'PE', ibge: '2604106' },
       { nome: 'Diadema', uf: 'SP', ibge: '3513801' },
@@ -72,6 +73,7 @@
       { nome: 'Piedade', uf: 'SP', ibge: '3537800' },
       { nome: 'Praia Grande', uf: 'SP', ibge: '3541000' },
       { nome: 'Ribeirão Pires', uf: 'SP', ibge: '3543303' },
+      { nome: 'Rio Claro', uf: 'SP', ibge: '3543907' },
       { nome: 'Santos', uf: 'SP', ibge: '3548500' },
       { nome: 'São Caetano do Sul', uf: 'SP', ibge: '3548807' },
       { nome: 'São José do Rio Preto', uf: 'SP', ibge: '3549805' },

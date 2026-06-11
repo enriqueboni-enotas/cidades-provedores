@@ -3,11 +3,11 @@
   nome: 'ArrecadaNet',
   empresa: 'ArrecadaNet',
   stats: {
-    municipios: 54
+    municipios: 52
   },
   visaoGeral: [
     { key: 'Nome', val: 'ArrecadaNet' },
-    { key: 'Total Municipios', val: '54' },
+    { key: 'Total Municipios', val: '52' },
     { key: 'Estados Atendidos', val: ['GO', 'TO', 'MS', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -59,7 +59,6 @@
       { nome: 'Bom Jesus do Tocantins', uf: 'TO', ibge: '1703305' },
       { nome: 'Bonfinópolis', uf: 'GO', ibge: '5203559' },
       { nome: 'Campinorte', uf: 'GO', ibge: '5204706' },
-      { nome: 'Campos Belos', uf: 'GO', ibge: '5204904' },
       { nome: 'Campos Lindos', uf: 'TO', ibge: '1703842' },
       { nome: 'Caseara', uf: 'TO', ibge: '1703909' },
       { nome: 'Cezarina', uf: 'GO', ibge: '5205455' },
@@ -67,7 +66,7 @@
       { nome: 'Colméia', uf: 'TO', ibge: '1716703' },
       { nome: 'Corumbá de Goiás', uf: 'GO', ibge: '5205802' },
       { nome: 'Cristianópolis', uf: 'GO', ibge: '5206305' },
-      { nome: 'Danivnópolis', uf: 'GO', ibge: '5206909' },
+      { nome: 'Davinópolis', uf: 'GO', ibge: '5206909' },
       { nome: 'Eldorado', uf: 'MS', ibge: '5003751' },
       { nome: 'Formoso', uf: 'GO', ibge: '5208103' },
       { nome: 'Gameleira de Goiás', uf: 'GO', ibge: '5208152' },
@@ -91,12 +90,11 @@
       { nome: 'Palmeiras de Goiás', uf: 'GO', ibge: '5215702' },
       { nome: 'Peixe', uf: 'TO', ibge: '1716604' },
       { nome: 'Pontalina', uf: 'GO', ibge: '5217708' },
-      { nome: 'Porto Alegre do Tocantins', uf: 'GO', ibge: '1718006' },
+      { nome: 'Porto Alegre do Tocantins', uf: 'TO', ibge: '1718006' },
       { nome: 'Professor Jamil', uf: 'GO', ibge: '5218391' },
       { nome: 'Rialma', uf: 'GO', ibge: '5218607' },
       { nome: 'Santa Fé do Araguaia', uf: 'TO', ibge: '1718865' },
       { nome: 'Santo Antônio de Goiás', uf: 'GO', ibge: '5219738' },
-      { nome: 'São João d\'Aliança', uf: 'GO', ibge: '5220009' },
       { nome: 'São Raimundo das Mangabeiras', uf: 'MA', ibge: '2111607' },
       { nome: 'Silvânia', uf: 'GO', ibge: '5220603' },
       { nome: 'Vianópolis', uf: 'GO', ibge: '5222005' }

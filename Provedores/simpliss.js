@@ -3,11 +3,11 @@
   nome: 'Simpliss',
   empresa: 'Simpliss',
   stats: {
-    municipios: 11
+    municipios: 10
   },
   visaoGeral: [
     { key: 'Nome', val: 'Simpliss' },
-    { key: 'Total Municipios', val: '11' },
+    { key: 'Total Municipios', val: '10' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -77,7 +77,6 @@
       { nome: 'Paraisópolis', uf: 'MG', ibge: '3147303' },
       { nome: 'Patrocínio', uf: 'MG', ibge: '3148103' },
       { nome: 'Pirapora do Bom Jesus', uf: 'SP', ibge: '3539103' },
-      { nome: 'Presidente Prudente', uf: 'SP', ibge: '3541406' },
       { nome: 'Tupã', uf: 'SP', ibge: '3555000' },
       { nome: 'Vargem Grande do Sul', uf: 'SP', ibge: '3556404' }
     ]

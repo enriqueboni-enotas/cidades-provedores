@@ -1,30 +1,15 @@
-﻿var cidadeDetalhe = {
-  id: 'presidente-prudente-sp',
-  nome: 'Presidente Prudente',
-  uf: 'SP',
-  ibge: '3541406',
-  constante: 'CodigoIBGE.PresidentePrudenteSP',
-  provedorAtual: {
-    nome: 'SimplissV3',
-    namespace: null,
-    codigoNoProvedor: null,
-    robo: false,
-    webService: true,
-    naoEnviaSerieRPS: false,
-    urls: {
-      homologacao: {
-        recepcaoLote: 'https://producaorestrita.simplissweb.com.br'
-      },
-      producao: {
-        recepcaoLote: 'https://issprudente.sp.gov.br/nfsenacional',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
-      }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
-    }
+﻿var provedorDetalhe = {
+  id: 'speedgovv2',
+  nome: 'SpeedGovV2',
+  empresa: 'SpeedGovV2',
+  stats: {
+    municipios: 1
   },
+  visaoGeral: [
+    { key: 'Nome', val: 'SpeedGovV2' },
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['MA'], type: 'uf-badges' }
+  ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
@@ -35,22 +20,23 @@
       token: null,
       fraseSecreta: null
     },
+    suportaCancelamentoNFe: false,
     valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
     usaDescricaoServico: false,
-    usaCNAE: true,
+    usaCNAE: false,
     usaNBS: true,
     usaItemListaServico: false,
     usaNaturezaOperacao: true,
     helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
     helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
     helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
-    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
     enviaEmailCliente: false,
     suportaConsultaSequencialRps: true,
@@ -69,6 +55,11 @@
       { codigo: '2', nome: 'Imunidade' },
       { codigo: '3', nome: 'Exportação de Serviço' },
       { codigo: '4', nome: 'Não incidência' }
+    ]
+  },
+  municipiosLista: {
+    'speedgovv2': [
+      { nome: 'Barreirinhas', uf: 'MA', ibge: '2101707' }
     ]
   }
 };

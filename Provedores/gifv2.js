@@ -3,11 +3,11 @@
   nome: 'GIFv2',
   empresa: 'GIFv2',
   stats: {
-    municipios: 1
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'GIFv2' },
-    { key: 'Total Municipios', val: '1' },
+    { key: 'Total Municipios', val: '2' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -60,6 +60,7 @@
   },
   municipiosLista: {
     'gifv2': [
+      { nome: 'Campo Bom', uf: 'RS', ibge: '4303905' },
       { nome: 'Caxias do Sul', uf: 'RS', ibge: '4305108' }
     ]
   }

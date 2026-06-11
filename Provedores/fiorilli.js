@@ -3,11 +3,11 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 218
+    municipios: 217
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '218' },
+    { key: 'Total Municipios', val: '217' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'AP', 'RJ', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -128,7 +128,6 @@
       { nome: 'Holambra', uf: 'SP', ibge: '3519055' },
       { nome: 'Ibirá', uf: 'SP', ibge: '3519402' },
       { nome: 'Igarapava', uf: 'SP', ibge: '3520103' },
-      { nome: 'Itaberá', uf: 'SP', ibge: '3521705' },
       { nome: 'Itaí', uf: 'SP', ibge: '3521804' },
       { nome: 'Itajobi', uf: 'SP', ibge: '3521903' },
       { nome: 'Itaju', uf: 'SP', ibge: '3522000' },

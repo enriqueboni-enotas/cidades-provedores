@@ -3,11 +3,11 @@
   nome: 'GovDigital',
   empresa: 'GovDigital',
   stats: {
-    municipios: 21
+    municipios: 19
   },
   visaoGeral: [
     { key: 'Nome', val: 'GovDigital' },
-    { key: 'Total Municipios', val: '21' },
+    { key: 'Total Municipios', val: '19' },
     { key: 'Estados Atendidos', val: ['MG', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -47,7 +47,6 @@
       { nome: 'Conceição do Mato Dentro', uf: 'MG', ibge: '3117504' },
       { nome: 'Dores do Indaiá', uf: 'MG', ibge: '3123205' },
       { nome: 'Frutal', uf: 'MG', ibge: '3127107' },
-      { nome: 'Guaxupé', uf: 'MG', ibge: '3128709' },
       { nome: 'Itanhandu', uf: 'MG', ibge: '3133105' },
       { nome: 'Jaguariúna', uf: 'SP', ibge: '3524709' },
       { nome: 'Lavras', uf: 'MG', ibge: '3138203' },
@@ -58,7 +57,6 @@
       { nome: 'Santa Vitória', uf: 'MG', ibge: '3159803' },
       { nome: 'São Francisco de Sales', uf: 'MG', ibge: '3161304' },
       { nome: 'São José da Lapa', uf: 'MG', ibge: '3162955' },
-      { nome: 'São José do Rio Pardo', uf: 'SP', ibge: '3549706' },
       { nome: 'Vargem Grande Paulista', uf: 'SP', ibge: '3556453' },
       { nome: 'Várzea Paulista', uf: 'SP', ibge: '3556503' }
     ]

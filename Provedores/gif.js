@@ -3,11 +3,11 @@
   nome: 'GIF',
   empresa: 'GIF',
   stats: {
-    municipios: 8
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'GIF' },
-    { key: 'Total Municipios', val: '8' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -49,7 +49,6 @@
   },
   municipiosLista: {
     'gif': [
-      { nome: 'Campo Bom', uf: 'RS', ibge: '4303905' },
       { nome: 'Canoas', uf: 'RS', ibge: '4304606' },
       { nome: 'Carlos Barbosa', uf: 'RS', ibge: '4304804' },
       { nome: 'Farroupilha', uf: 'RS', ibge: '4307906' },

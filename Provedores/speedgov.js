@@ -3,11 +3,11 @@
   nome: 'SpeedGov',
   empresa: 'SpeedGov',
   stats: {
-    municipios: 47
+    municipios: 46
   },
   visaoGeral: [
     { key: 'Nome', val: 'SpeedGov' },
-    { key: 'Total Municipios', val: '47' },
+    { key: 'Total Municipios', val: '46' },
     { key: 'Estados Atendidos', val: ['CE', 'PE', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -65,7 +65,6 @@
       { nome: 'Aracati', uf: 'CE', ibge: '2301109' },
       { nome: 'Araripe', uf: 'CE', ibge: '2301307' },
       { nome: 'Barbalha', uf: 'CE', ibge: '2301901' },
-      { nome: 'Barreirinhas', uf: 'MA', ibge: '2101707' },
       { nome: 'Beberibe', uf: 'CE', ibge: '2302206' },
       { nome: 'Cabrobó', uf: 'PE', ibge: '2603009' },
       { nome: 'Camocim', uf: 'CE', ibge: '2302602' },
@@ -82,7 +81,7 @@
       { nome: 'Iguatu', uf: 'CE', ibge: '2305506' },
       { nome: 'Ipu', uf: 'CE', ibge: '2305803' },
       { nome: 'Itapipoca', uf: 'CE', ibge: '2306405' },
-      { nome: 'Jijoca de Jericoacoara', uf: 'PE', ibge: '2307254' },
+      { nome: 'Jijoca de Jericoacoara', uf: 'CE', ibge: '2307254' },
       { nome: 'Juazeiro do Norte', uf: 'CE', ibge: '2307304' },
       { nome: 'Lagoa Grande', uf: 'PE', ibge: '2608750' },
       { nome: 'Limoeiro do Norte', uf: 'CE', ibge: '2307601' },
