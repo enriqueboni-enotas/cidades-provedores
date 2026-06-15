@@ -3,11 +3,11 @@
   nome: 'eReceita',
   empresa: 'eReceita',
   stats: {
-    municipios: 9
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'eReceita' },
-    { key: 'Total Municipios', val: '9' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,9 +61,7 @@
       { nome: 'Itamogi', uf: 'MG', ibge: '3132909' },
       { nome: 'Jacuí', uf: 'MG', ibge: '3134806' },
       { nome: 'Japaraíba', uf: 'MG', ibge: '3135308' },
-      { nome: 'Juruaia', uf: 'MG', ibge: '3136900' },
-      { nome: 'Pratápolis', uf: 'MG', ibge: '3152907' },
-      { nome: 'São José da Barra', uf: 'MG', ibge: '3162948' }
+      { nome: 'Pratápolis', uf: 'MG', ibge: '3152907' }
     ]
   }
 };

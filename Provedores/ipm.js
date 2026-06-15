@@ -3,11 +3,11 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 116
+    municipios: 115
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '116' },
+    { key: 'Total Municipios', val: '115' },
     { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -108,7 +108,6 @@
       { nome: 'Ibirama', uf: 'SC', ibge: '4206900' },
       { nome: 'Igrejinha', uf: 'RS', ibge: '4310108' },
       { nome: 'Indaial', uf: 'SC', ibge: '4207502' },
-      { nome: 'Itá', uf: 'SC', ibge: '4208005' },
       { nome: 'Itapoá', uf: 'SC', ibge: '4208450' },
       { nome: 'Ituporanga', uf: 'SC', ibge: '4208500' },
       { nome: 'Jaboticaba', uf: 'RS', ibge: '4310850' },

@@ -3,11 +3,11 @@
   nome: 'Equiplano',
   empresa: 'Equiplano',
   stats: {
-    municipios: 30
+    municipios: 31
   },
   visaoGeral: [
     { key: 'Nome', val: 'Equiplano' },
-    { key: 'Total Municipios', val: '30' },
+    { key: 'Total Municipios', val: '31' },
     { key: 'Estados Atendidos', val: ['PR'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -51,6 +51,7 @@
   },
   municipiosLista: {
     'equiplano': [
+      { nome: 'Bandeirantes', uf: 'PR', ibge: '4102406' },
       { nome: 'Cafelândia', uf: 'PR', ibge: '4103453' },
       { nome: 'Cantagalo', uf: 'PR', ibge: '4104451' },
       { nome: 'Capanema', uf: 'PR', ibge: '4104501' },

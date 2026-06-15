@@ -5,25 +5,20 @@
   ibge: '4102406',
   constante: 'CodigoIBGE.BandeirantesPR',
   provedorAtual: {
-    nome: 'BethaV3',
-    namespace: 'http://www.betha.com.br/e-nota-contribuinte-ws',
-    codigoNoProvedor: null,
+    nome: 'Equiplano',
+    namespace: 'http://www.equiplano.com.br/esnfs',
+    codigoNoProvedor: '33',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
+    infoAdicional: 'Colocar o código do provedor correto no xml se não tiver no comentario dos provedores do equiplano pegar no portal',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
-        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
+        recepcaoLote: 'https://www.esnfs.com.br:9444/homologacaows/services/Enfs'
       },
       producao: {
-        recepcaoLote: 'https://nota-eletronica.betha.cloud/dps/ws',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
+        recepcaoLote: 'https://www.esnfs.com.br:8444/enfsws/services/Enfs'
       }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
@@ -37,40 +32,32 @@
       fraseSecreta: null
     },
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 30,
+    valorCancelamentoNFe: 45,
     usaAEDF: false,
-    usaRegimeEspecialTributacao: true,
+    usaRegimeEspecialTributacao: false,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: false,
+    usaDescricaoServico: true,
     usaCNAE: false,
-    usaNBS: true,
     usaItemListaServico: false,
-    usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter 8 dígitos (somente números). Exemplo válido: 11356083',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Ele possui geralmente 5 dígitos (somente números). Exemplo válido: 14.01',
+    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
     suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: false,
-    enviaEmailCliente: false,
-    suportaConsultaSequencialRps: true,
-    numeroNotasPorLote: 1,
-    regimesEspecialTributacao: [
-      { codigo: '0', nome: ' - ' },
-      { codigo: '1', nome: 'Microempresa Municipal' },
-      { codigo: '2', nome: 'Estimativa' },
-      { codigo: '3', nome: 'Sociedade de Profissionais' },
-      { codigo: '4', nome: 'Cooperativa' },
-      { codigo: '5', nome: 'MEI - Simples Nacional' },
-      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
-    ],
+    suportaCancelamentoNFeClienteSemCpf: true,
+    enviaEmailCliente: true,
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    autenticidadeNota: {
+      urlVerificacao: 'https://esnfs.com.br/nfsautenticidade.edit.logic',
+      UsaCodigoVerificacao: true
+    },
     naturezasOperacao: [
-      { codigo: '1', nome: 'Operação tributável' },
-      { codigo: '2', nome: 'Imunidade' },
-      { codigo: '3', nome: 'Exportação de Serviço' },
-      { codigo: '4', nome: 'Não incidência' }
+      { codigo: '1', nome: 'Tributado no municipio' },
+      { codigo: '2', nome: 'Em outro município' },
+      { codigo: '3', nome: 'Isento/imune' },
+      { codigo: '4', nome: 'Suspenso/decisão judicial' }
     ]
   }
 };

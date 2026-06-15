@@ -1,105 +1,147 @@
 var aguardandoDeployData = [
   {
-    tag: '11/06/2026',
-    titulo: 'Quarta-feira — 11 de Junho',
+    tag: '15/06/2026',
+    titulo: 'Domingo — 15 de Junho',
     itens: [
       {
-        icon: '🔧',
+        icon: '🧾',
         texto:
-          'Configura empresa específica para respeitar o município de incidência informado na nota ao invés de usar o padrão. Resolve rejeições em prefeituras que validam estritamente o local de prestação do serviço quando o município de incidência difere do endereço do prestador.',
-        pr: 9543,
-        autor: 'Felippe Salvo de Mendonça',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Retorna Nova Mamoré/RO para a versão ABRASF do provedor anterior. O município havia sido migrado para uma versão mais recente que apresentou incompatibilidades. O rollback garante continuidade na emissão até que a integração seja estabilizada na nova versão.',
-        pr: 9552,
-        autor: 'Felippe Salvo de Mendonça',
+          'Implementação dos novos campos da reforma tributária (IBS/CBS) no provedor Equiplano — foram criadas classes para Comércio Exterior, Dados de Evento, Dados de Obra e endereço reutilizável. O provedor Equiplano agora suporta envio de NBS, IBS/CBS, dados de obra e evento no XML da nota, com validação de campos e integração ao serviço de cálculo tributário.',
+        pr: 9590,
+        autor: 'Davidson Souza',
       },
       {
         icon: '🔧',
         texto:
-          'Adiciona suporte para empresas que possuem múltiplas Inscrições Municipais (IM). Anteriormente o sistema assumia uma única IM por empresa, causando conflitos em empresas que operam em múltiplos municípios com IMs distintas. Agora o sistema identifica qual IM usar baseado no município de emissão.',
-        pr: 9532,
+          'Adiciona tratamento para desserializar corretamente respostas do provedor GIAPv2 — a prefeitura estava retornando texto fora da estrutura XML esperada, causando falha na desserialização. O fix sanitiza o XML antes de processar, injetando tags faltantes quando necessário e removendo texto espúrio antes do elemento raiz.',
+        pr: 9594,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Horizonte/CE é migrado para o novo provedor SpeedGovV2. O município utiliza o sistema SpeedGov na versão 2 (padrão nacional), e a configuração foi atualizada com as URLs e operações do novo provedor, permitindo emissão, consulta e cancelamento padronizados.',
-        pr: 9550,
-        autor: 'Felippe Salvo de Mendonça',
+          'Rio da Conceição/TO ativado no provedor NfseNacionalV2 — o município aderiu ao Portal Nacional de NFS-e na versão 2, com suporte completo a emissão, consulta por DPS e cancelamento padronizado.',
+        pr: 9593,
+        autor: 'Alex Ramos Fernandes',
       },
       {
-        icon: '📊',
+        icon: '🏙️',
         texto:
-          'Configura a subscription Per2Park para enviar o código NBS (Nomenclatura Brasileira de Serviços) em notas do Simples Nacional. O NBS é exigido por alguns municípios para classificação de serviços, especialmente em operações internacionais.',
-        pr: 9549,
-        autor: 'Davidson Souza',
+          'Paraná/TO ativado no provedor Publica V1 — a prefeitura utiliza o sistema Publica para emissão de NFS-e, e o município foi configurado no gateway.',
+        pr: 9592,
+        autor: 'Alex Ramos Fernandes',
       },
       {
-        icon: '🌐',
+        icon: '🏙️',
         texto:
-          'Implementa comércio exterior completo no provedor, atualizando a lista de países disponíveis para tomadores estrangeiros. Permite emissão correta de notas para tomadores em países que antes não estavam cadastrados no sistema, ampliando a cobertura de exportação de serviços.',
-        pr: 9525,
+          'Paraíso do Norte/PR ativado no provedor IPM — a prefeitura utiliza o sistema IPM para NFS-e, e agora pode emitir, consultar e cancelar notas pelo gateway.',
+        pr: 9591,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Ajusta a validação do código de serviço para aceitar formatos variados e padroniza o formato da data de emissão (DtEmissao) no XML enviado ao provedor. Resolve rejeições causadas por diferença de formato entre o que o sistema gerava e o que a prefeitura esperava.',
-        pr: 9544,
+          'Ajusta validação do CodigoTributacaoMunicipio em casos de uso do código de benefício fiscal — quando o contribuinte usa código de benefício fiscal, a validação do código de tributação municipal não deve ser aplicada da mesma forma, evitando rejeições indevidas.',
+        pr: 9589,
         autor: 'Henrique Cassio',
       },
       {
         icon: '🏙️',
         texto:
-          'Ativa a flag NaoUsaAssinatura para Cafelândia/SP. Essa configuração indica que o município não exige assinatura digital no XML de envio do RPS, simplificando o fluxo de emissão e evitando rejeições por certificado em prefeituras que não validam a assinatura.',
-        pr: 9548,
+          'Ativa municípios no provedor Fiorilli — novos municípios foram configurados para emissão de NFS-e via provedor Fiorilli, que atende diversas prefeituras com sistema próprio.',
+        pr: 9588,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Remove flag que estava causando erro em produção — uma flag de controle temporária estava gerando comportamento inesperado e foi removida para restaurar o funcionamento normal.',
+        pr: 9586,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Remove condição temporária de geração de PDF — a configuração temporária de diagnóstico de PDF adicionada anteriormente foi removida após resolução do caso investigado.',
+        pr: 9584,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Atualiza parse do valorISS no XML retornado pela prefeitura — o provedor estava falhando ao interpretar o valor do ISS retornado no XML da prefeitura em formato diferente do esperado. O ajuste corrige o parsing para aceitar variações de formato numérico.',
+        pr: 9583,
+        autor: 'Vitor Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Santo Antônio do Grama/MG ativado no provedor NfseNacional — o município aderiu ao Portal Nacional de NFS-e e foi configurado no gateway com suporte a emissão, consulta e cancelamento.',
+        pr: 9581,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Campo Alegre de Lourdes/BA migra para provedor Saatri — a prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas para o provedor Saatri.',
+        pr: 9580,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Adiciona envio de endereço de obra para empresas que necessitam — quando a nota é de construção civil, o endereço da obra agora é enviado corretamente no XML para empresas que possuem essa configuração, evitando rejeições por falta de dados obrigatórios.',
+        pr: 9579,
         autor: 'Felippe Salvo de Mendonça',
       },
       {
-        icon: '🔧',
+        icon: '🏙️',
         texto:
-          'Adiciona validação que retorna erro claro quando a prefeitura não suporta ambiente de homologação. Antes, tentar emitir em homologação em municípios sem suporte resultava em erros genéricos de conexão. Agora o sistema informa antecipadamente que o município só aceita emissão em produção.',
-        pr: 9547,
-        autor: 'Henrique Cassio',
+          'Itajobi/SP migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e, substituindo o provedor anterior.',
+        pr: 9577,
+        autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Monte Aprazível/SP adere ao Portal Nacional de NFS-e. O município foi configurado com o provedor NfseNacional, com suporte a emissão via DPS, consulta padronizada e cancelamento via evento.',
-        pr: 9546,
+          'Biritiba Mirim/SP migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e com suporte completo a emissão padronizada.',
+        pr: 9575,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Monte Negro/RO migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e.',
+        pr: 9574,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Implementa cancelamento no provedor FiorilliV2 — a operação de cancelamento de NFS-e foi implementada para o provedor FiorilliV2, permitindo que municípios que usam esse provedor possam cancelar notas diretamente pelo gateway.',
+        pr: 9573,
+        autor: 'Thiago Souza',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Ingá/PB ativado no provedor Eticons — a prefeitura utiliza o sistema Eticons para NFS-e, e o município foi configurado no gateway.',
+        pr: 9571,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '🏙️',
+        texto:
+          'Abaiara/CE ativado no provedor XtronLine — a prefeitura utiliza o sistema XtronLine para NFS-e, e o município foi configurado no gateway.',
+        pr: 9570,
+        autor: 'Alex Ramos Fernandes',
+      },
+      {
+        icon: '📊',
+        texto:
+          'Removida lista de Subscriptions do Simples Nacional que forçava envio de NBS — a condição estava obrigando o envio do código NBS para determinadas subscriptions do Simples Nacional de forma incorreta, causando rejeições. A remoção permite que o NBS seja enviado apenas quando efetivamente preenchido pelo contribuinte.',
+        pr: 9569,
         autor: 'Davidson Souza',
-      },
-      {
-        icon: '🏙️',
-        texto:
-          'Pilar do Sul/SP é atualizado para o provedor NfseNacionalV2. A migração para a versão 2 do Portal Nacional oferece funcionalidades adicionais como substituição de notas e consulta por DPS aprimorada.',
-        pr: 9542,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Atualiza o parser para extrair o valorISS diretamente do XML de resposta do provedor. Antes, o valor do ISS era calculado internamente, podendo divergir do valor que a prefeitura efetivamente registrou. Agora o valor exibido ao cliente é o mesmo registrado na prefeitura.',
-        pr: 9541,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Configura o envio do campo cIntContrib (código de contribuinte integrado) para empresa específica. Esse campo é exigido por determinados provedores para identificar o contribuinte junto à prefeitura, e sua ausência causava rejeição na emissão.',
-        pr: 9539,
-        autor: 'Vitor Fernandes',
-      },
-      {
-        icon: '🔧',
-        texto:
-          'Inclui empresaID na regra de incidência para considerar o município do prestador. Para essa empresa específica, o ISS deve incidir no município do prestador (e não no do tomador), conforme legislação local. A configuração garante que o município correto seja enviado no XML.',
-        pr: 9535,
-        autor: 'Henrique Cassio',
       },
     ],
   },

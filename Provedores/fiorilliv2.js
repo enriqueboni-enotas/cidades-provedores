@@ -3,12 +3,12 @@
   nome: 'FiorilliV2',
   empresa: 'FiorilliV2',
   stats: {
-    municipios: 2
+    municipios: 1
   },
   visaoGeral: [
     { key: 'Nome', val: 'FiorilliV2' },
-    { key: 'Total Municipios', val: '2' },
-    { key: 'Estados Atendidos', val: ['RJ', 'RO'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '1' },
+    { key: 'Estados Atendidos', val: ['RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -59,7 +59,6 @@
   },
   municipiosLista: {
     'fiorilliv2': [
-      { nome: 'Nova Mamoré', uf: 'RO', ibge: '1100338' },
       { nome: 'São João da Barra', uf: 'RJ', ibge: '3305000' }
     ]
   }

@@ -3,11 +3,11 @@
   nome: 'BethaV3',
   empresa: 'BethaV3',
   stats: {
-    municipios: 139
+    municipios: 137
   },
   visaoGeral: [
     { key: 'Nome', val: 'BethaV3' },
-    { key: 'Total Municipios', val: '139' },
+    { key: 'Total Municipios', val: '137' },
     { key: 'Estados Atendidos', val: ['SC', 'MG', 'PR', 'RS', 'MS', 'SP', 'AC', 'MT', 'RJ', 'AM', 'BA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -75,7 +75,6 @@
       { nome: 'Atalanta', uf: 'SC', ibge: '4201802' },
       { nome: 'Balneário Gaivota', uf: 'SC', ibge: '4202073' },
       { nome: 'Bandeira do Sul', uf: 'MG', ibge: '3105301' },
-      { nome: 'Bandeirantes', uf: 'PR', ibge: '4102406' },
       { nome: 'Barracão', uf: 'PR', ibge: '4102604' },
       { nome: 'Bela Vista do Toldo', uf: 'SC', ibge: '4202131' },
       { nome: 'Boa Esperança', uf: 'MG', ibge: '3107109' },
@@ -190,7 +189,6 @@
       { nome: 'Schroeder', uf: 'SC', ibge: '4217402' },
       { nome: 'Sertão Santana', uf: 'RS', ibge: '4320552' },
       { nome: 'Socorro', uf: 'SP', ibge: '3552106' },
-      { nome: 'Sombrio', uf: 'SC', ibge: '4217709' },
       { nome: 'Tarauacá', uf: 'AC', ibge: '1200609' },
       { nome: 'Torres', uf: 'RS', ibge: '4321501' },
       { nome: 'Três Passos', uf: 'RS', ibge: '4321907' },

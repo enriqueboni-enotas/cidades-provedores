@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'Fiorilli',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: 'UsaCodigoServicoMunicipal',
+    codigoNoProvedor: 'UsaCodigoServicoMunicipal;NaoUsaAssinatura',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,

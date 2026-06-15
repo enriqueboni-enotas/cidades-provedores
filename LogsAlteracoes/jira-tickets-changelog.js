@@ -1,7 +1,80 @@
 var jiraChangelogData = [
   {
+    tag: '15/06/2026',
+    titulo: 'Domingo — 15 de Junho',
+    data: '15/06/2026',
+    itens: [
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas em Americana/SP',
+        texto: '1 card (CE-27807)',
+      },
+      {
+        icon: '🔄',
+        destaque: 'Sincronização de notas',
+        texto: '1 card (CE-27584)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Atualização automática de cadastro ignorando configuração',
+        texto: '1 card (CE-28001)',
+      },
+    ],
+  },
+  {
+    tag: '14/06/2026',
+    titulo: 'Sábado — 14 de Junho',
+    data: '14/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '13/06/2026',
+    titulo: 'Sexta-feira — 13 de Junho',
+    data: '13/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem tickets resolvidos',
+        texto: 'Nenhum ticket resolvido neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '12/06/2026',
+    titulo: 'Quinta-feira — 12 de Junho',
+    data: '12/06/2026',
+    itens: [
+      {
+        icon: '🔧',
+        destaque: 'Erro ao reprocessar vendas em Belo Horizonte/MG',
+        texto: '1 card (CE-27845)',
+      },
+      {
+        icon: '📋',
+        destaque: 'Inclusão de código NBS no sistema em Maringá/PR',
+        texto: '1 card (CE-27581)',
+      },
+      {
+        icon: '🔗',
+        destaque: 'Ajuste integração Pagar.me 2.0',
+        texto: '1 card (CE-27067)',
+      },
+      {
+        icon: '🌐',
+        destaque: 'Erro emissão tomador exterior em Itapipoca/CE',
+        texto: '1 card (CE-27061)',
+      },
+    ],
+  },
+  {
     tag: '11/06/2026',
-    titulo: 'Quinta-feira — 11 de Junho',
+    titulo: 'Quarta-feira — 11 de Junho',
     data: '11/06/2026',
     itens: [
       {
@@ -10,15 +83,25 @@ var jiraChangelogData = [
         texto: '1 card (CE-27774)',
       },
       {
+        icon: '💰',
+        destaque: 'Financeiro — e-mail de recebimento',
+        texto: '1 card (CE-27759)',
+      },
+      {
         icon: '🌐',
         destaque: 'Tratamento de erro endereço exterior',
         texto: '1 card (CE-27450)',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Falha carregamento do histórico do cliente na aba empresa',
+        texto: '1 card (CE-27211)',
       },
     ],
   },
   {
     tag: '10/06/2026',
-    titulo: 'Quarta-feira — 10 de Junho',
+    titulo: 'Terça-feira — 10 de Junho',
     data: '10/06/2026',
     itens: [
       {
@@ -27,13 +110,13 @@ var jiraChangelogData = [
         texto: '1 card (CE-27938)',
       },
       {
-        icon: '🔄',
+        icon: '❌',
         destaque: 'Análise de emissão em Osasco/SP',
         texto: '1 card (CE-27604)',
       },
       {
-        icon: '🔄',
-        destaque: 'Falha na importação de vendas — Hotmart',
+        icon: '🔗',
+        destaque: 'Falha na importação Hotmart',
         texto: '1 card (CE-27593)',
       },
       {
@@ -50,23 +133,27 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '🤖',
-        destaque: '[Autofix] Inutilização e retorno de NF-e negada',
-        texto: '3 cards (CE-27878, CE-27860, CE-27857)',
+        destaque: '[Autofix] Inutilização de NF-e',
+        texto: '1 card (CE-27878)',
+      },
+      {
+        icon: '🤖',
+        destaque: '[Autofix] Retornar NF negada',
+        texto: '2 cards (CE-27860, CE-27857)',
       },
       {
         icon: '🔧',
-        destaque: 'Ampliação do período do Turbo de Emissão para alto volume',
+        destaque: 'Ampliação do Turbo de Emissão para alto volume',
         texto: '1 card (CE-27787)',
       },
       {
-        icon: '❌',
+        icon: '🏙️',
         destaque: 'Instabilidade Portal Nacional — MEI plano Start',
         texto: '1 card (CE-27738)',
       },
       {
-        icon: '🏙️',
-        destaque:
-          'Rejeição exigindo bairro do serviço prestado para evento online',
+        icon: '❌',
+        destaque: 'Rejeição NFS-e exigindo Bairro do Serviço Prestado',
         texto: '1 card (CE-27735)',
       },
       {
@@ -83,28 +170,27 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '🤖',
-        destaque: '[Autofix] Retorno de NF-e negada',
+        destaque: '[Autofix] Retornar NF negada',
         texto: '1 card (CE-27769)',
       },
       {
         icon: '💰',
-        destaque: 'Financeiro / Faturamento',
+        destaque: 'Faturamento / Financeiro',
         texto: '1 card (CE-27648)',
       },
       {
         icon: '❌',
-        destaque: 'Erro em nota de afiliado — Belo Horizonte/MG',
+        destaque: 'Erro em nota de afiliado em Belo Horizonte/MG',
         texto: '1 card (CE-27332)',
       },
       {
-        icon: '🔄',
-        destaque:
-          'LoteRps duplicado — dado não informado no XML em Araraquara/SP',
+        icon: '🔧',
+        destaque: 'LoteRps duplicado / dado não informado em Araraquara/SP',
         texto: '1 card (CE-27310)',
       },
       {
-        icon: '📊',
-        destaque: 'IBS/CBS não enviado no XML de emissão — Brasília/DF',
+        icon: '🧾',
+        destaque: 'IBS/CBS não enviado no XML de emissão em Brasília/DF',
         texto: '1 card (CE-26961)',
       },
     ],
@@ -140,13 +226,12 @@ var jiraChangelogData = [
     itens: [
       {
         icon: '❌',
-        destaque:
-          'Erro emissão provedor GINFES — São Bernardo do Campo/SP e Santo André/SP',
-        texto: '3 cards (CE-27586, CE-27412, CE-27284)',
+        destaque: 'Erro emissão provedor Ginfes em São Bernardo do Campo/SP',
+        texto: '2 cards (CE-27586, CE-27412)',
       },
       {
-        icon: '🔄',
-        destaque: 'Notas emitidas antes do término da garantia',
+        icon: '🔧',
+        destaque: 'Notas emitidas antes do término da garantia — Hotmart',
         texto: '1 card (CE-27542)',
       },
       {
@@ -154,97 +239,17 @@ var jiraChangelogData = [
         destaque: 'Integração Shopify',
         texto: '1 card (CE-27339)',
       },
+      {
+        icon: '❌',
+        destaque: 'Erro emissão provedor Ginfes em Santo André/SP',
+        texto: '1 card (CE-27284)',
+      },
     ],
   },
   {
     tag: '04/06/2026',
     titulo: 'Quarta-feira — 04 de Junho',
     data: '04/06/2026',
-    itens: [
-      {
-        icon: '📭',
-        destaque: 'Sem tickets resolvidos',
-        texto: 'Nenhum ticket resolvido neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '03/06/2026',
-    titulo: 'Terça-feira — 03 de Junho',
-    data: '03/06/2026',
-    itens: [
-      {
-        icon: '🔄',
-        destaque: 'Vendas não alteram o status / não emitidas',
-        texto:
-          '14 cards (CE-27590, CE-27550, CE-27544, CE-27524, CE-27518, CE-27516, CE-27513, CE-27510, CE-27504, CE-27503, CE-27498, CE-27495, CE-27491, CE-27489)',
-      },
-      {
-        icon: '❌',
-        destaque: 'Análise de bug no processo de emissão de NFS-e',
-        texto: '1 card (CE-27653)',
-      },
-      {
-        icon: '🤖',
-        destaque: '[Autofix] Retorno de NF-e negada',
-        texto: '1 card (CE-27637)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Vendas não alterando o status — diversos municípios',
-        texto: '2 cards (CE-27448, CE-27368)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Adequação fiscal — fila travada em Navegantes/SC',
-        texto: '1 card (CE-27104)',
-      },
-    ],
-  },
-  {
-    tag: '02/06/2026',
-    titulo: 'Terça-feira — 02 de Junho',
-    data: '02/06/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: '[Autofix] Retorno de NF-e negada',
-        texto: '2 cards (CE-27620, CE-27599)',
-      },
-      {
-        icon: '🔄',
-        destaque: 'Emissão retroativa bloqueada',
-        texto: '1 card (CE-27515)',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Fixação de configuração nos produtos',
-        texto: '1 card (CE-27409)',
-      },
-      {
-        icon: '🔑',
-        destaque:
-          'Clientes MEI com nota negada por autenticação usuário e senha',
-        texto: '1 card (CE-27103)',
-      },
-    ],
-  },
-  {
-    tag: '01/06/2026',
-    titulo: 'Segunda-feira — 01 de Junho',
-    data: '01/06/2026',
-    itens: [
-      {
-        icon: '🤖',
-        destaque: '[Autofix] Localizar numerações',
-        texto: '2 cards (CE-27525, CE-27490)',
-      },
-    ],
-  },
-  {
-    tag: '31/05/2026',
-    titulo: 'Domingo — 31 de Maio',
-    data: '31/05/2026',
     itens: [
       {
         icon: '📭',

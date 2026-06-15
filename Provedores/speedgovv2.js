@@ -3,12 +3,12 @@
   nome: 'SpeedGovV2',
   empresa: 'SpeedGovV2',
   stats: {
-    municipios: 1
+    municipios: 2
   },
   visaoGeral: [
     { key: 'Nome', val: 'SpeedGovV2' },
-    { key: 'Total Municipios', val: '1' },
-    { key: 'Estados Atendidos', val: ['MA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '2' },
+    { key: 'Estados Atendidos', val: ['CE', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -59,7 +59,8 @@
   },
   municipiosLista: {
     'speedgovv2': [
-      { nome: 'Barreirinhas', uf: 'MA', ibge: '2101707' }
+      { nome: 'Barreirinhas', uf: 'MA', ibge: '2101707' },
+      { nome: 'Horizonte', uf: 'CE', ibge: '2305233' }
     ]
   }
 };

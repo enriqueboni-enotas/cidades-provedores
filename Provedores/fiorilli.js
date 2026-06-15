@@ -3,11 +3,11 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 217
+    municipios: 216
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '217' },
+    { key: 'Total Municipios', val: '216' },
     { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'AP', 'RJ', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -80,8 +80,8 @@
       { nome: 'Brasilândia', uf: 'MS', ibge: '5002308' },
       { nome: 'Braúna', uf: 'SP', ibge: '3507704' },
       { nome: 'Brodowski', uf: 'SP', ibge: '3507803' },
-      { nome: 'Buritis', uf: 'RO', ibge: '1100452' },
       { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
+      { nome: 'Buritis', uf: 'RO', ibge: '1100452' },
       { nome: 'Cachoeira de Minas', uf: 'MG', ibge: '3109709' },
       { nome: 'Cafelândia', uf: 'SP', ibge: '3508801' },
       { nome: 'Cajobi', uf: 'SP', ibge: '3509304' },
@@ -168,7 +168,6 @@
       { nome: 'Mirandópolis', uf: 'SP', ibge: '3530102' },
       { nome: 'Monsenhor Paulo', uf: 'MG', ibge: '3142601' },
       { nome: 'Monte Alto', uf: 'SP', ibge: '3531308' },
-      { nome: 'Monte Aprazível', uf: 'SP', ibge: '3531407' },
       { nome: 'Monte Azul Paulista', uf: 'SP', ibge: '3531506' },
       { nome: 'Monte Sião', uf: 'MG', ibge: '3143401' },
       { nome: 'Montividiu', uf: 'GO', ibge: '5213756' },
@@ -177,6 +176,7 @@
       { nome: 'Nova Alvorada do Sul', uf: 'MS', ibge: '5006002' },
       { nome: 'Nova Granada', uf: 'SP', ibge: '3533007' },
       { nome: 'Nova Lacerda', uf: 'MT', ibge: '5106182' },
+      { nome: 'Nova Mamoré', uf: 'RO', ibge: '1100338' },
       { nome: 'Nuporanga', uf: 'SP', ibge: '3533601' },
       { nome: 'Oiapoque', uf: 'AP', ibge: '1600501' },
       { nome: 'Onda Verde', uf: 'SP', ibge: '3534005' },
@@ -201,7 +201,6 @@
       { nome: 'Pedreira', uf: 'SP', ibge: '3537107' },
       { nome: 'Pedreiras', uf: 'MA', ibge: '2108207' },
       { nome: 'Picos', uf: 'PI', ibge: '2208007' },
-      { nome: 'Pilar do Sul', uf: 'SP', ibge: '3537909' },
       { nome: 'Pimenta Bueno', uf: 'RO', ibge: '1100189' },
       { nome: 'Pinhalzinho', uf: 'SP', ibge: '3538204' },
       { nome: 'Pio XII', uf: 'MA', ibge: '2108702' },
