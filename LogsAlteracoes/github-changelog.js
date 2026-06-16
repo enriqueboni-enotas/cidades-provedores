@@ -1,5 +1,17 @@
 var changelogData = [
   {
+    tag: '16/06/2026',
+    titulo: 'Segunda-feira — 16 de Junho',
+    data: '16/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
     tag: '15/06/2026',
     titulo: 'Domingo — 15 de Junho',
     data: '15/06/2026',
@@ -17,7 +29,7 @@ var changelogData = [
     data: '14/06/2026',
     itens: [
       {
-        icon: '�',
+        icon: '📭',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
       },
@@ -36,7 +48,7 @@ var changelogData = [
           'O envio dos dados de PIS/COFINS foi revertido para o formato anterior, que era mais compatível com os provedores. Adicionalmente, foi implementada a lógica de envio dos dados de apuração própria quando o contribuinte informa apenas os tributos não retidos (sem retenção na fonte). Isso resolve rejeições em prefeituras que não aceitavam o novo formato e garante que empresas com apuração própria tenham seus dados fiscais corretamente transmitidos.',
       },
       {
-        icon: '📊',
+        icon: '�',
         destaque: 'Atribui valor correto ao campo aliqPis',
         texto:
           'O campo aliqPis (alíquota do PIS) não estava sendo preenchido corretamente em determinados cenários de apuração própria, causando divergência entre o valor calculado e o informado no XML. O ajuste garante que a alíquota seja atribuída ao campo antes do envio, evitando rejeições em provedores que validam a consistência entre alíquota e valor do tributo.',
@@ -117,7 +129,7 @@ var changelogData = [
     data: '11/06/2026',
     itens: [
       {
-        icon: '📭',
+        icon: '�',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
       },
@@ -187,7 +199,7 @@ var changelogData = [
           'No filtro de consulta de notas, quando uma nota é substituída por outra, a nota substituída também é incluída nos resultados, permitindo rastrear a cadeia de substituições e facilitando a sincronização de sistemas integrados.',
       },
       {
-        icon: '🔧',
+        icon: '�',
         destaque:
           'Tratamentos para subscriptionID usar MunicipioIncidenciaService',
         texto:
@@ -225,7 +237,7 @@ var changelogData = [
           'Na emissão de NFS-e Nacional sem certificado digital (via crawler), o campo EhConvenioVigente podia retornar null, causando crash (NullReferenceException) no robô de emissão. O fix adiciona tratamento para o caso nullable, permitindo que a emissão prossiga normalmente quando o convênio não está definido. Referência: CE-27738.',
       },
       {
-        icon: '�',
+        icon: '🔧',
         destaque:
           'Correção de crash quando EhConvenioVigente retorna null no robô',
         texto:
@@ -258,7 +270,7 @@ var changelogData = [
           'Uma empresa foi adicionada à lista EmpresasNewLock, que controla o mecanismo de lock de emissão para evitar duplicidade de notas. Quando uma empresa está nessa lista, o sistema usa o novo mecanismo de lock distribuído que é mais confiável e evita cenários de nota duplicada em alta concorrência.',
       },
       {
-        icon: '�️',
+        icon: '🏙️',
         destaque: "São João d'Aliança/GO migra para NfseNacionalV2",
         texto:
           "O município de São João d'Aliança/GO foi atualizado para usar o provedor NfseNacionalV2. A cidade aderiu ao Portal Nacional de NFS-e e agora suas notas são emitidas pelo padrão nacional, que oferece mais funcionalidades como consulta por DPS e cancelamento padronizado.",
@@ -326,7 +338,7 @@ var changelogData = [
     data: '07/06/2026',
     itens: [
       {
-        icon: '�',
+        icon: '📭',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
       },
@@ -338,7 +350,7 @@ var changelogData = [
     data: '06/06/2026',
     itens: [
       {
-        icon: '📭',
+        icon: '�',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
       },
@@ -369,7 +381,7 @@ var changelogData = [
           'Na operação de consulta de lote, os dados de input da nota substituída (número original, série, motivo da substituição) agora são retornados junto com o resultado. Isso complementa a funcionalidade de substituição de NFS-e, permitindo que integradores identifiquem qual nota foi substituída sem precisar de consulta adicional.',
       },
       {
-        icon: '🆕',
+        icon: '�',
         destaque: 'Implementa substituição de NFSe para NfseNacionalV2',
         texto:
           'A operação de substituição de NFS-e foi implementada para o provedor NfseNacionalV2. Essa operação permite emitir uma nova nota em substituição a uma anterior (corrigindo dados fiscais), mantendo o vínculo entre as duas notas. É uma exigência do padrão nacional e agora está disponível para todos os municípios que usam o NfseNacionalV2.',
@@ -423,41 +435,16 @@ var changelogData = [
           'Uma empresa específica foi configurada para enviar alíquota de forma diferenciada. Alguns municípios exigem que a alíquota seja enviada em formato específico ou com valor fixo para determinadas atividades, e essa configuração por empresa resolve rejeições pontuais sem afetar as demais.',
       },
       {
-        icon: '�',
+        icon: '📊',
         destaque: 'Implementa retenção de PIS/COFINS no provedor Agili',
         texto:
           'O provedor Agili passou a suportar o envio de informações de retenção de PIS/COFINS no XML da nota. Foram criados os enums SituacaoTributaria e TipoRetencao, e a lógica de preenchimento dos campos no XML foi implementada. Empresas que possuem retenção na fonte agora terão esses valores corretamente informados à prefeitura.',
       },
       {
-        icon: '�',
+        icon: '🆕',
         destaque: 'Novo provedor SpeedGovV2 criado',
         texto:
           'Foi criado o provedor SpeedGovV2 com suporte a emissão, consulta por RPS, cancelamento (via evento) e geração de PDF. Municípios que migraram para a versão 2 do SpeedGov agora podem ser integrados ao gateway.',
-      },
-    ],
-  },
-  {
-    tag: '04/06/2026',
-    titulo: 'Quarta-feira — 04 de Junho',
-    data: '04/06/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque: 'Atualiza URL para baixar PDF de nota emitida',
-        texto:
-          'As URLs de download de PDF de notas emitidas estavam apontando para endpoints antigos que foram deprecados pela infraestrutura. O ajuste corrige os links para que clientes e integradores consigam baixar o PDF da nota corretamente, tanto via API quanto via painel.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Corrige URLs no método ValidaNotaEmitida',
-        texto:
-          'Complemento da correção anterior — o método ValidaNotaEmitida também continha URLs hardcoded que precisavam ser atualizadas para os novos endpoints do sistema.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Ajusta consulta do XML e PDF da nota emitida',
-        texto:
-          'A consulta de XML e PDF de notas já emitidas foi ajustada para usar as URLs corretas dos novos endpoints. Essa operação é utilizada quando o integrador solicita o download do XML assinado ou do PDF da nota após a emissão, e as URLs precisam apontar para o storage atualizado.',
       },
     ],
   },

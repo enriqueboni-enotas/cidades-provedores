@@ -4,144 +4,144 @@ var aguardandoDeployData = [
     titulo: 'Domingo — 15 de Junho',
     itens: [
       {
-        icon: '🧾',
+        icon: '📊',
         texto:
-          'Implementação dos novos campos da reforma tributária (IBS/CBS) no provedor Equiplano — foram criadas classes para Comércio Exterior, Dados de Evento, Dados de Obra e endereço reutilizável. O provedor Equiplano agora suporta envio de NBS, IBS/CBS, dados de obra e evento no XML da nota, com validação de campos e integração ao serviço de cálculo tributário.',
+          'Implementação dos novos campos da reforma tributária no provedor Equiplano — foram criadas 5 novas classes de modelo (ComercioExterior, DadosEvento, DadosObra, EnderecoObraOuEvento, IBSCBS) e implementado o processamento de NBS, IBS/CBS, dados de obra e evento. O provedor Equiplano agora suporta os campos exigidos pela reforma tributária do consumo, incluindo validação do indicador de operação (IndOp) e integração com o serviço externo de cálculo de IBS/CBS.',
         pr: 9590,
         autor: 'Davidson Souza',
       },
       {
         icon: '🔧',
         texto:
-          'Adiciona tratamento para desserializar corretamente respostas do provedor GIAPv2 — a prefeitura estava retornando texto fora da estrutura XML esperada, causando falha na desserialização. O fix sanitiza o XML antes de processar, injetando tags faltantes quando necessário e removendo texto espúrio antes do elemento raiz.',
+          'Removida a lista de Subscriptions que forçava o envio condicional de NBS (código de Nomenclatura Brasileira de Serviços). Antes, o campo cNBS só era enviado para empresas específicas listadas em SubscriptionsSempreEnviarNBS. Agora o cNBS é sempre preenchido a partir do CodigoNBS do serviço, simplificando a lógica e garantindo que todas as empresas enviem o código NBS corretamente no XML da nota.',
+        pr: 9569,
+        autor: 'Davidson Souza',
+      },
+      {
+        icon: '🔧',
+        texto:
+          'Adicionado tratamento para desserializar corretamente respostas do provedor GIAPv2 quando a prefeitura retorna texto fora da estrutura XML esperada. O código agora detecta e remove conteúdo estranho antes da tag <nfeResposta>, e injeta a tag <notaFiscal> quando ausente mas há <messages> na resposta. Resolve falhas de desserialização que travavam notas em status de consulta. Referências: CE-100506, CE-100516, CE-100515.',
         pr: 9594,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Rio da Conceição/TO ativado no provedor NfseNacionalV2 — o município aderiu ao Portal Nacional de NFS-e na versão 2, com suporte completo a emissão, consulta por DPS e cancelamento padronizado.',
+          'Rio da Conceição/TO ativado no provedor NfseNacionalV2. O município aderiu ao Portal Nacional de NFS-e na versão 2, com suporte a DPS, consulta padronizada e cancelamento via evento.',
         pr: 9593,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Paraná/TO ativado no provedor Publica V1 — a prefeitura utiliza o sistema Publica para emissão de NFS-e, e o município foi configurado no gateway.',
+          'Paraná/TO ativado no provedor Publica V1. O município agora pode emitir, consultar e cancelar NFS-e através do gateway via o provedor Publica.',
         pr: 9592,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Paraíso do Norte/PR ativado no provedor IPM — a prefeitura utiliza o sistema IPM para NFS-e, e agora pode emitir, consultar e cancelar notas pelo gateway.',
+          'Paraíso do Norte/PR ativado no provedor IPM. O município paranaense agora está configurado no gateway para emissão de NFS-e pelo sistema IPM utilizado pela prefeitura.',
         pr: 9591,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Ajusta validação do CodigoTributacaoMunicipio em casos de uso do código de benefício fiscal — quando o contribuinte usa código de benefício fiscal, a validação do código de tributação municipal não deve ser aplicada da mesma forma, evitando rejeições indevidas.',
+          'Ajustada a validação do CodigoTributacaoMunicipio para aceitar códigos com benefício fiscal. Antes, apenas o formato CTISS de 7 dígitos era aceito. Agora também são aceitos códigos de 11 dígitos, onde os 4 últimos correspondem a um código de benefício fiscal válido (3013, 3014, 4001 ou 4004). A mensagem de erro GW1991 foi atualizada para refletir ambos os formatos aceitos.',
         pr: 9589,
         autor: 'Henrique Cassio',
       },
       {
         icon: '🏙️',
         texto:
-          'Ativa municípios no provedor Fiorilli — novos municípios foram configurados para emissão de NFS-e via provedor Fiorilli, que atende diversas prefeituras com sistema próprio.',
+          "Ativados 5 municípios no provedor Fiorilli: Guaiçara/SP, Santa Salete/SP, Estrela d'Oeste/SP, Piacatu/SP e Amapá/AP. Essas cidades agora podem emitir, consultar e cancelar NFS-e através do gateway integrado ao sistema Fiorilli.",
         pr: 9588,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Remove flag que estava causando erro em produção — uma flag de controle temporária estava gerando comportamento inesperado e foi removida para restaurar o funcionamento normal.',
+          'Removida flag duplicada "Cancelada" na geração de PDF que causava erro "An item with the same key has already been added". A flag já era populada pela classe base, e a adição manual duplicava a entrada no dataSource. Também foi implementado tratamento de erro no cancelamento do provedor Fortaleza/CE: quando a mensagem de erro contém referência a reflexão interna, agora popula a Exception para acionar o mecanismo de retry da infraestrutura.',
         pr: 9586,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Remove condição temporária de geração de PDF — a configuração temporária de diagnóstico de PDF adicionada anteriormente foi removida após resolução do caso investigado.',
+          'Removida condição temporária de geração de PDF que tratava notas de Blumenau/SC de forma especial. A lógica que verificava se a cidade era Blumenau combinada com uma lista de notas autorizadas pelo provedor anterior foi eliminada. Agora apenas a empresa Sankhya mantém tratamento especial de PDF, simplificando o código.',
         pr: 9584,
         autor: 'Vitor Fernandes',
       },
       {
-        icon: '🔧',
+        icon: '📊',
         texto:
-          'Atualiza parse do valorISS no XML retornado pela prefeitura — o provedor estava falhando ao interpretar o valor do ISS retornado no XML da prefeitura em formato diferente do esperado. O ajuste corrige o parsing para aceitar variações de formato numérico.',
+          'Atualizado o parse do valorISS no XML retornado pela prefeitura no provedor DSFv2. O método ExtrairDadosNFe agora processa corretamente a resposta XML via XPath, extraindo número da NFSe, código de verificação, data de emissão e valor do ISS. O valor do ISS só é gravado quando a alíquota é diferente de zero, evitando divergências com o PDF da prefeitura.',
         pr: 9583,
         autor: 'Vitor Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Santo Antônio do Grama/MG ativado no provedor NfseNacional — o município aderiu ao Portal Nacional de NFS-e e foi configurado no gateway com suporte a emissão, consulta e cancelamento.',
+          'Santo Antônio do Grama/MG ativado no gateway. O município mineiro agora pode emitir NFS-e através do provedor configurado.',
         pr: 9581,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Campo Alegre de Lourdes/BA migra para provedor Saatri — a prefeitura trocou de sistema de NFS-e e as configurações foram atualizadas para o provedor Saatri.',
+          'Campo Alegre de Lourdes/BA migrado para o provedor Saatri. A prefeitura trocou de sistema de NFS-e, e as configurações no gateway foram ajustadas para o novo provedor, garantindo continuidade na emissão e consulta de notas.',
         pr: 9580,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Adiciona envio de endereço de obra para empresas que necessitam — quando a nota é de construção civil, o endereço da obra agora é enviado corretamente no XML para empresas que possuem essa configuração, evitando rejeições por falta de dados obrigatórios.',
+          'Centralizada e aprimorada a validação de endereço de obra no envio de NFS-e. Agora são exigidos campos completos (Logradouro, Número, Bairro, CEP e município/UF válidos) quando o serviço é de construção civil. O código de serviço municipal também passou a ser normalizado (remoção de caracteres não numéricos). Novas empresas foram adicionadas à lista de exceções que não enviam dados de obra. Resolve rejeições por endereço incompleto em notas de construção civil.',
         pr: 9579,
         autor: 'Felippe Salvo de Mendonça',
       },
       {
         icon: '🏙️',
         texto:
-          'Itajobi/SP migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e, substituindo o provedor anterior.',
+          'Itajobi/SP migrado para o provedor NfseNacional. O município paulista aderiu ao Portal Nacional de NFS-e, e as configurações foram atualizadas com URLs, namespace e operações do padrão nacional.',
         pr: 9577,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Biritiba Mirim/SP migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e com suporte completo a emissão padronizada.',
+          'Biritiba-Mirim/SP migrado para o provedor NfseNacional. O município aderiu ao Portal Nacional de NFS-e, substituindo o provedor anterior. Agora emite notas pelo padrão nacional com suporte a DPS, consulta padronizada e cancelamento via evento.',
         pr: 9575,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Monte Negro/RO migra para NfseNacional — o município aderiu ao Portal Nacional de NFS-e.',
+          'Monte Negro/RO migrado para o provedor NfseNacional. O município rondoniense aderiu ao Portal Nacional de NFS-e, e as configurações foram atualizadas para o novo provedor.',
         pr: 9574,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🔧',
         texto:
-          'Implementa cancelamento no provedor FiorilliV2 — a operação de cancelamento de NFS-e foi implementada para o provedor FiorilliV2, permitindo que municípios que usam esse provedor possam cancelar notas diretamente pelo gateway.',
+          'Implementado cancelamento de NFS-e no provedor FiorilliV2. Foram criados novos modelos (CancelarNFSeEnvio, CancelarNFSeResposta), implementada a comunicação SOAP para RecepcionarEventoNFSe, e desenvolvida a operação completa de cancelamento com assinatura digital XML (canonicalização exclusiva C14n). O wsClient agora é descartado via using pattern, evitando problemas de descarte duplicado.',
         pr: 9573,
         autor: 'Thiago Souza',
       },
       {
         icon: '🏙️',
         texto:
-          'Ingá/PB ativado no provedor Eticons — a prefeitura utiliza o sistema Eticons para NFS-e, e o município foi configurado no gateway.',
+          'Ingá/PB ativado no provedor Eticons. O município paraibano agora pode emitir NFS-e através do gateway integrado ao sistema Eticons usado pela prefeitura.',
         pr: 9571,
         autor: 'Alex Ramos Fernandes',
       },
       {
         icon: '🏙️',
         texto:
-          'Abaiara/CE ativado no provedor XtronLine — a prefeitura utiliza o sistema XtronLine para NFS-e, e o município foi configurado no gateway.',
+          'Abaiara/CE ativado no provedor Xtronline. O município cearense agora está configurado no gateway para emissão, consulta e cancelamento de NFS-e pelo sistema Xtronline.',
         pr: 9570,
         autor: 'Alex Ramos Fernandes',
-      },
-      {
-        icon: '📊',
-        texto:
-          'Removida lista de Subscriptions do Simples Nacional que forçava envio de NBS — a condição estava obrigando o envio do código NBS para determinadas subscriptions do Simples Nacional de forma incorreta, causando rejeições. A remoção permite que o NBS seja enviado apenas quando efetivamente preenchido pelo contribuinte.',
-        pr: 9569,
-        autor: 'Davidson Souza',
       },
     ],
   },
