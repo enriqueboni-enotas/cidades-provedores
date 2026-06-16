@@ -5,6 +5,14 @@ var emAndamentoData = {
       icon: '🔍',
       itens: [
         {
+          key: 'CE-28050',
+          destaque: 'Sincronização de nota — Portal Nacional',
+        },
+        {
+          key: 'CE-27992',
+          destaque: 'Sincronização de nota — Portal Nacional',
+        },
+        {
           key: 'CE-27344',
           destaque:
             'Destaque PIS e COFINS NFS-e Portal Nacional em Florianópolis/SC',
@@ -12,6 +20,16 @@ var emAndamentoData = {
         {
           key: 'CE-27276',
           destaque: 'Destaque PIS e COFINS NFS-e Portal Nacional em Betim/MG',
+        },
+      ],
+    },
+    {
+      status: 'Waiting Partner',
+      icon: '⏳',
+      itens: [
+        {
+          key: 'CE-27269',
+          destaque: 'Ajuste emissão tomador exterior em Sarandi/PR',
         },
       ],
     },
@@ -31,9 +49,29 @@ var emAndamentoData = {
       icon: '📋',
       itens: [
         {
-          key: 'CE-28050',
-          destaque: 'Sincronização de nota — Portal Nacional',
+          key: 'CE-28145',
+          destaque: 'Emissão para clientes estrangeiros em Taboão da Serra/SP',
         },
+        { key: 'CE-28136', destaque: 'Plano Start — tela em criação de conta' },
+        {
+          key: 'CE-28132',
+          destaque: 'Alterar tipo de entrada para assinatura — Pagar.me 2.0',
+        },
+        {
+          key: 'CE-28131',
+          destaque: 'Sincronização de notas Portal Nacional em Porto Alegre/RS',
+        },
+        {
+          key: 'CE-28128',
+          destaque: 'Ajuste endereço tomador estrangeiro em Taboão da Serra/SP',
+        },
+        {
+          key: 'CE-28119',
+          destaque:
+            'Possibilidade de extrair relatório de produtos em Florianópolis/SC',
+        },
+        { key: 'CE-28113', destaque: 'Falha no tratamento de erro de emissão' },
+        { key: 'CE-28110', destaque: 'Bug no App eNotas' },
         { key: 'CE-28023', destaque: 'Problemas de acesso ao painel' },
         {
           key: 'CE-28008',
@@ -41,10 +79,6 @@ var emAndamentoData = {
             'Tratamentos de erro para clientes sem endereço/documento não aplicados automaticamente',
         },
         { key: 'CE-27995', destaque: 'Baixar PDF e XML em massa' },
-        {
-          key: 'CE-27992',
-          destaque: 'Sincronização de nota — Portal Nacional',
-        },
         {
           key: 'CE-27960',
           destaque: 'Bug no envio de dados eventos e município de prestação',
@@ -58,16 +92,12 @@ var emAndamentoData = {
         {
           key: 'CE-27892',
           destaque:
-            'Chapecó — Rejeição de DPS duplicada após migração para Portal Nacional',
-        },
-        {
-          key: 'CE-27871',
-          destaque: 'Rejeição na emissão de NFS-e para tomadores estrangeiros',
+            'Chapecó — Rejeição de DPS duplicada após migração Portal Nacional',
         },
         {
           key: 'CE-27840',
           destaque:
-            'Vinculação incorreta de notas fiscais em múltiplas vendas da Kiwify',
+            'Análise de recorrência — vinculação incorreta de notas em múltiplas vendas Kiwify',
         },
         {
           key: 'CE-27795',
@@ -76,8 +106,7 @@ var emAndamentoData = {
         },
         {
           key: 'CE-27778',
-          destaque:
-            'Falha de autenticação na integração com a Iugu — Fretebras',
+          destaque: 'Falha de autenticação na integração Iugu — Fretebras',
         },
         {
           key: 'CE-27777',
@@ -108,34 +137,25 @@ var emAndamentoData = {
         { key: 'CE-27435', destaque: 'Ajuste XML BC-ISSQN em Porto Alegre/RS' },
         {
           key: 'CE-27420',
-          destaque: 'Campo código de serviço bloqueado em Caetité/BA',
+          destaque:
+            'Campo código de serviço bloqueado para ajustes em Caetité/BA',
         },
-        { key: 'CE-27419', destaque: 'Bug integração com Apps' },
+        { key: 'CE-27419', destaque: 'Bug integração com APPs' },
         { key: 'CE-27415', destaque: 'Bug no App eNotas' },
         { key: 'CE-27404', destaque: 'Emissão exterior' },
         {
           key: 'CE-27389',
-          destaque: 'Destaque IBS/CBS em São Bernardo do Campo/SP',
+          destaque: 'Destaque de IBS/CBS em São Bernardo do Campo/SP',
         },
         { key: 'CE-27315', destaque: 'Bug entrada de vendas Sympla' },
         { key: 'CE-27092', destaque: 'Integração Pagar.me' },
       ],
     },
-    {
-      status: 'Waiting Partner',
-      icon: '⏳',
-      itens: [
-        {
-          key: 'CE-27269',
-          destaque: 'Ajuste emissão tomador exterior em Sarandi/PR',
-        },
-      ],
-    },
   ],
   compiladoSemanal: {
     periodo: '15/06 a 21/06/2026',
-    totalTickets: 35,
-    sincronizacao: 3,
+    totalTickets: 39,
+    sincronizacao: 4,
     semAssignee: 0,
     reaberturas: 2,
     camadas: [
@@ -143,167 +163,138 @@ var emAndamentoData = {
         nome: 'GW',
         cor: '#F04E23',
         descricao: 'Gateway NFS-e/NF-e com prefeituras',
-        total: 16,
-        pct: '45,7',
+        total: 18,
+        pct: '46,2',
         assuntos: [
           {
             assunto: 'Emissão exterior / Tomador estrangeiro',
             qtd: 5,
-            pct: '14,3',
-            keys: 'CE-27061,CE-27772,CE-27871,CE-27404,CE-27269',
+            pct: '12,8',
+            keys: 'CE-28145,CE-28128,CE-27772,CE-27404,CE-27061',
           },
           {
-            assunto: 'Sincronização de notas — Portal Nacional',
+            assunto: 'Sincronização Portal Nacional',
+            qtd: 4,
+            pct: '10,3',
+            keys: 'CE-28131,CE-28050,CE-27992,CE-27892',
+          },
+          {
+            assunto: 'IBS/CBS e PIS/COFINS Portal Nacional',
             qtd: 3,
-            pct: '8,6',
-            keys: 'CE-28050,CE-27992,CE-27892',
+            pct: '7,7',
+            keys: 'CE-27389,CE-27344,CE-27276',
           },
           {
-            assunto: 'PIS/COFINS no Portal Nacional',
+            assunto: 'Tratamento de erro / Notas negadas',
+            qtd: 3,
+            pct: '7,7',
+            keys: 'CE-28113,CE-27719,CE-27909',
+          },
+          {
+            assunto: 'Ajuste XML / Layout NFS-e',
             qtd: 2,
-            pct: '5,7',
-            keys: 'CE-27344,CE-27276',
+            pct: '5,1',
+            keys: 'CE-27435,CE-27673',
           },
           {
-            assunto: 'IBS/CBS obrigatório',
+            assunto: 'Configuração municipal (natureza, código serviço)',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27389',
-          },
-          {
-            assunto: 'Natureza da operação — Portal Nacional',
-            qtd: 1,
-            pct: '2,9',
+            pct: '2,6',
             keys: 'CE-27739',
-          },
-          {
-            assunto: 'Nota negada / MEI',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27909',
-          },
-          {
-            assunto: 'Notas travadas em geração de PDF',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27940',
-          },
-          {
-            assunto: 'Tratamento de erro automático',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27719',
-          },
-          {
-            assunto: 'Ajuste XML BC-ISSQN',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27435',
           },
         ],
       },
       {
         nome: 'Emissor',
         cor: '#8A8A8A',
-        descricao: 'Painel/Emissor — faturamento, config, importação',
-        total: 10,
-        pct: '28,6',
+        descricao: 'Painel / Emissor eNotas',
+        total: 13,
+        pct: '33,3',
         assuntos: [
           {
-            assunto: 'Integração Pagar.me / Iugu / WooCommerce',
-            qtd: 4,
-            pct: '11,4',
-            keys: 'CE-27067,CE-27092,CE-27778,CE-27917',
+            assunto:
+              'Integração plataformas (Pagar.me, WooCommerce, Iugu, Sympla)',
+            qtd: 6,
+            pct: '15,4',
+            keys: 'CE-28132,CE-27917,CE-27778,CE-27548,CE-27315,CE-27092',
           },
           {
-            assunto: 'Bug entrada de vendas (Sympla/Kiwify)',
+            assunto: 'Bugs no App / Painel',
             qtd: 3,
-            pct: '8,6',
-            keys: 'CE-27315,CE-27548,CE-27840',
+            pct: '7,7',
+            keys: 'CE-28110,CE-27415,CE-27419',
           },
           {
-            assunto: 'Baixar PDF e XML em massa',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27995',
+            assunto: 'Relatórios e download em massa',
+            qtd: 2,
+            pct: '5,1',
+            keys: 'CE-28119,CE-27995',
           },
           {
-            assunto: 'Problemas de acesso',
+            assunto: 'Alteração cadastro / Produtos',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-28023',
-          },
-          {
-            assunto: 'Alteração descrição de produtos',
-            qtd: 1,
-            pct: '2,9',
+            pct: '2,6',
             keys: 'CE-27760',
+          },
+          {
+            assunto: 'Plano Start / Criação de conta',
+            qtd: 1,
+            pct: '2,6',
+            keys: 'CE-28136',
           },
         ],
       },
       {
         nome: 'GW/Emissor',
         cor: '#707780',
-        descricao: 'Ambíguo — pode ser GW ou Emissor',
-        total: 5,
-        pct: '14,3',
+        descricao: 'Pode ser GW ou Emissor',
+        total: 6,
+        pct: '15,4',
         assuntos: [
           {
-            assunto: 'Tratamentos de erro não aplicados automaticamente',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-28008',
+            assunto: 'Tratamento automático de erros de emissão',
+            qtd: 2,
+            pct: '5,1',
+            keys: 'CE-28008,CE-27067',
           },
           {
-            assunto: 'Bug envio dados eventos e município prestação',
-            qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27960',
+            assunto: 'Notas travadas (geração PDF / vinculação)',
+            qtd: 2,
+            pct: '5,1',
+            keys: 'CE-27940,CE-27840',
           },
           {
-            assunto: 'Divergência competência/emissão em relatório',
+            assunto: 'CNPJ contabilidade no XML',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27795',
-          },
-          {
-            assunto: 'CNPJ da contabilidade no XML',
-            qtd: 1,
-            pct: '2,9',
+            pct: '2,6',
             keys: 'CE-27777',
           },
           {
-            assunto: 'Código de serviço bloqueado em Caetité/BA',
+            assunto: 'Nota de devolução código 221',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27420',
+            pct: '2,6',
+            keys: 'CE-27553',
           },
         ],
       },
       {
         nome: 'Outros',
         cor: '#C8C5BC',
-        descricao: 'Melhorias, layout, apps',
-        total: 4,
-        pct: '11,4',
+        descricao: 'Melhorias, acessos, dúvidas',
+        total: 2,
+        pct: '5,1',
         assuntos: [
           {
-            assunto: 'Atualização layout nota fiscal 2.0',
+            assunto: 'Problemas de acesso',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27673',
+            pct: '2,6',
+            keys: 'CE-28023',
           },
           {
-            assunto: 'Código 221 nota devolução',
+            assunto: 'Divergência de datas no relatório',
             qtd: 1,
-            pct: '2,9',
-            keys: 'CE-27553',
-          },
-          {
-            assunto: 'Bug no App eNotas / integração Apps',
-            qtd: 2,
-            pct: '5,7',
-            keys: 'CE-27415,CE-27419',
+            pct: '2,6',
+            keys: 'CE-27795',
           },
         ],
       },

@@ -1,9 +1,9 @@
 // Gerado automaticamente pelo crawler de reforma tributária
 // Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos
-// Última verificação: 15/06/2026
+// Última verificação: 16/06/2026
 // NAO EDITAR MANUALMENTE
 var reformaTributariaData = {
-  atualizadoEm: '15/06/2026',
+  atualizadoEm: '16/06/2026',
   fonteAtualizadaEm: '06/05/2026',
   resumoGeral:
     'A reforma tributária do consumo simplifica os impostos sobre compras e serviços no Brasil. Em vez de vários impostos diferentes (PIS, COFINS, IPI, ICMS, ISS), teremos basicamente dois novos: CBS (federal) e IBS (estadual/municipal), além do Imposto Seletivo (IS) sobre produtos prejudiciais à saúde/meio ambiente. A alíquota combinada será de aproximadamente 28%, com transição gradual de 2026 a 2033.',
