@@ -3,11 +3,11 @@
   nome: 'Eticons',
   empresa: 'Eticons',
   stats: {
-    municipios: 1
+    municipios: 4
   },
   visaoGeral: [
     { key: 'Nome', val: 'Eticons' },
-    { key: 'Total Municipios', val: '1' },
+    { key: 'Total Municipios', val: '4' },
     { key: 'Estados Atendidos', val: ['PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -47,7 +47,10 @@
   },
   municipiosLista: {
     'eticons': [
-      { nome: 'Jacaraú', uf: 'PB', ibge: '2507309' }
+      { nome: 'Ibiara', uf: 'PB', ibge: '2506608' },
+      { nome: 'Ingá', uf: 'PB', ibge: '2506806' },
+      { nome: 'Jacaraú', uf: 'PB', ibge: '2507309' },
+      { nome: 'São Mamede', uf: 'PB', ibge: '2514909' }
     ]
   }
 };

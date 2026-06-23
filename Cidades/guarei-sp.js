@@ -5,24 +5,31 @@
   ibge: '3518503',
   constante: 'CodigoIBGE.GuareiSP',
   provedorAtual: {
-    nome: 'GeisWeb',
-    namespace: 'http://www.gerenciadecidades.com.br/xsd/envio_lote_rps.xsd',
-    codigoNoProvedor: 'UsaUsuarioESenhaAutenticacao',
+    nome: 'GOVBRv3',
+    namespace: 'http://www.sped.fazenda.gov.br/nfse',
+    codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
-    infoAdicional: 'UsaUsuarioSenhaAutenticacao -> Usado para instaciar o ws que usa usuario e senha para autenticação',
     urls: {
       homologacao: {
-        recepcaoLote: 'https://www.gerenciadecidades.com.br/homologacao/modelo/webservice/GeisWebServiceImpl.php'
+        recepcaoLote: 'https://reformatributaria.govbr.cloud/NFSe.Api.Teste/NotaNacional',
+        consultaLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional/nfse',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        recepcaoLote: 'https://www.gerenciadecidades.com.br/producao/guarei/webservice/GeisWebServiceImpl.php',
-        downloadPDF: 'https://geisweb.net.br/guarei/'
+        recepcaoLote: 'https://webapp1-guarei.cidade360.cloud/nfse.API/NotaNacional',
+        consultaLote: 'https://sefin.nfse.gov.br/SefinNacional/nfse',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 1,
     assinaturaDigital: 2,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
@@ -32,22 +39,31 @@
       fraseSecreta: null
     },
     suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 45,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
-    usaCNAE: false,
+    usaDescricaoServico: false,
+    usaCNAE: true,
+    usaNBS: true,
     usaItemListaServico: false,
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 5 dígitos (somente números).\r\nExemplo válido: 03115',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    suportaEmissaoNFeSemCliente: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
+    suportaEmissaoNFeSemCliente: true,
     suportaEmissaoNFeClienteSemCpf: false,
-    suportaEmissaoNFeClienteSemEndereco: false,
-    suportaCancelamentoNFeSemCliente: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
+    suportaCancelamentoNFeSemCliente: true,
     suportaCancelamentoNFeClienteSemCpf: false,
-    enviaEmailCliente: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
+    autenticidadeNota: {
+      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
+      UsaChaveAcesso: true
+    },
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -58,10 +74,10 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: 'N', nome: 'devido no município pelo prestador' },
-      { codigo: 'T', nome: 'devido no município pelo tomador' },
-      { codigo: 'P', nome: 'prestadores de serviços cadastrados no Simples Nacional ou MEI' },
-      { codigo: 'R', nome: 'prestadores estabelecidos no município com o imposto devido em outro município' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

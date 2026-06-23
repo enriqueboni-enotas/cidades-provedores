@@ -3,12 +3,12 @@
   nome: 'Fiorilli',
   empresa: 'Fiorilli',
   stats: {
-    municipios: 216
+    municipios: 221
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fiorilli' },
-    { key: 'Total Municipios', val: '216' },
-    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'AP', 'RJ', 'GO', 'PB', 'TO', 'AM', 'RS', 'AL'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '221' },
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'MS', 'RO', 'MT', 'MA', 'PE', 'PI', 'PA', 'AP', 'RJ', 'GO', 'AL', 'TO', 'RS', 'AM', 'PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -54,6 +54,7 @@
       { nome: 'Alexânia', uf: 'GO', ibge: '5200308' },
       { nome: 'Alto Alegre do Maranhão', uf: 'MA', ibge: '2100436' },
       { nome: 'Amambai', uf: 'MS', ibge: '5000609' },
+      { nome: 'Amapá', uf: 'AP', ibge: '1600105' },
       { nome: 'Amarante do Maranhão', uf: 'MA', ibge: '2100600' },
       { nome: 'Américo de Campos', uf: 'SP', ibge: '3501806' },
       { nome: 'Anastácio', uf: 'MS', ibge: '5000708' },
@@ -80,8 +81,8 @@
       { nome: 'Brasilândia', uf: 'MS', ibge: '5002308' },
       { nome: 'Braúna', uf: 'SP', ibge: '3507704' },
       { nome: 'Brodowski', uf: 'SP', ibge: '3507803' },
-      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Buritis', uf: 'RO', ibge: '1100452' },
+      { nome: 'Buritis', uf: 'MG', ibge: '3109303' },
       { nome: 'Cachoeira de Minas', uf: 'MG', ibge: '3109709' },
       { nome: 'Cafelândia', uf: 'SP', ibge: '3508801' },
       { nome: 'Cajobi', uf: 'SP', ibge: '3509304' },
@@ -112,12 +113,15 @@
       { nome: 'Esmeraldas', uf: 'MG', ibge: '3124104' },
       { nome: 'Espigão D\'Oeste', uf: 'RO', ibge: '1100098' },
       { nome: 'Estiva', uf: 'MG', ibge: '3124500' },
+      { nome: 'Estrela d\'Oeste', uf: 'SP', ibge: '3515202' },
       { nome: 'Fartura', uf: 'SP', ibge: '3515400' },
       { nome: 'Formoso', uf: 'MG', ibge: '3126208' },
       { nome: 'Gália', uf: 'SP', ibge: '3516606' },
+      { nome: 'Getulina', uf: 'SP', ibge: '3517000' },
       { nome: 'Gilbués', uf: 'PI', ibge: '2204402' },
       { nome: 'Girau do Ponciano', uf: 'AL', ibge: '2702900' },
       { nome: 'Gonçalves', uf: 'MG', ibge: '3127404' },
+      { nome: 'Guaiçara', uf: 'SP', ibge: '3517208' },
       { nome: 'Guaimbê', uf: 'SP', ibge: '3517307' },
       { nome: 'Guará', uf: 'SP', ibge: '3517703' },
       { nome: 'Guaraçaí', uf: 'SP', ibge: '3517802' },
@@ -129,7 +133,6 @@
       { nome: 'Ibirá', uf: 'SP', ibge: '3519402' },
       { nome: 'Igarapava', uf: 'SP', ibge: '3520103' },
       { nome: 'Itaí', uf: 'SP', ibge: '3521804' },
-      { nome: 'Itajobi', uf: 'SP', ibge: '3521903' },
       { nome: 'Itaju', uf: 'SP', ibge: '3522000' },
       { nome: 'Itambé', uf: 'PE', ibge: '2607653' },
       { nome: 'Itapecerica', uf: 'MG', ibge: '3133501' },
@@ -200,6 +203,7 @@
       { nome: 'Pedralva', uf: 'MG', ibge: '3149101' },
       { nome: 'Pedreira', uf: 'SP', ibge: '3537107' },
       { nome: 'Pedreiras', uf: 'MA', ibge: '2108207' },
+      { nome: 'Piacatu', uf: 'SP', ibge: '3537701' },
       { nome: 'Picos', uf: 'PI', ibge: '2208007' },
       { nome: 'Pimenta Bueno', uf: 'RO', ibge: '1100189' },
       { nome: 'Pinhalzinho', uf: 'SP', ibge: '3538204' },
@@ -232,6 +236,7 @@
       { nome: 'Santa Luzia do Paruá', uf: 'MA', ibge: '2110039' },
       { nome: 'Santa Rita do Pardo', uf: 'MS', ibge: '5007554' },
       { nome: 'Santa Rita do Passa Quatro', uf: 'SP', ibge: '3547502' },
+      { nome: 'Santa Salete', uf: 'SP', ibge: '3547650' },
       { nome: 'Santana', uf: 'AP', ibge: '1600600' },
       { nome: 'Santo Anastácio', uf: 'SP', ibge: '3547700' },
       { nome: 'Santo Antônio de Posse', uf: 'SP', ibge: '3548005' },

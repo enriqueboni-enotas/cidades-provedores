@@ -5,49 +5,59 @@
   ibge: '2610400',
   constante: 'CodigoIBGE.ParnamirimPE',
   provedorAtual: {
-    nome: 'Tributus',
-    namespace: 'http://tributosInformatica.com.br',
+    nome: 'SpeedGovV2',
+    namespace: null,
     codigoNoProvedor: null,
-    robo: true,
-    webService: false,
+    robo: false,
+    webService: true,
     naoEnviaSerieRPS: false,
-    infoAdicional: 'verificar as propriedades no provedor: EmiteVersao1, UsaItemListaServicoProp, UsaCNAEProp',
     urls: {
       homologacao: {
+        recepcaoLote: 'https://tributario.speedgov.com.br/integracao/api/v1/nfse/v101',
+        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
       },
       producao: {
-        autenticacao: 'https://www.tributosmunicipais.com.br/NFE-parnamirim/',
-        recepcaoLote: 'https://www.tributosmunicipais.com.br/NFE-parnamirim/'
+        recepcaoLote: 'https://tributario.speedgov.com.br/parnamirim/api/v1/nfse/v101',
+        cancelamentoNFe: 'https://tributario.speedgov.com.br/parnamirim/api/v1/nfse',
+        downloadPDF: 'https://tributario.speedgov.com.br/parnamirim/api/v1/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
-    tipoAutenticacao: 2,
-    assinaturaDigital: 0,
+    tipoAutenticacao: 1,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
-      certificadoDigital: null,
-      usuario: 'Informe o usuário utilizado para acessar o sistema de sua prefeitura.',
-      senha: 'Informe a senha utilizada para acessar o sistema de sua prefeitura.',
+      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
+      usuario: null,
+      senha: null,
       token: null,
       fraseSecreta: null
     },
     suportaCancelamentoNFe: false,
-    valorCancelamentoNFe: 45,
+    valorCancelamentoNFe: 30,
     usaAEDF: false,
     usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 1 a 8 dígitos (somente números).\r\n\r\nExemplo válido: 11356',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. \r\n\r\nEle possui geralmente 4 a 5 dígitos com formatação.\r\nExemplo válido: 1.01',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal',
-    helpItemListaServico: 'Informe aqui o item da lista de serviço que identifica o item atividade na nota fiscal. \r\n\r\nEle possui 3 a 4 dígitos sem formatação.\r\nExemplo válidos:  104 ou 1706',
+    usaDescricaoServico: false,
+    usaCNAE: false,
+    usaNBS: true,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
+    suportaEmissaoNFeClienteSemCpf: false,
     suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: true,
-    enviaEmailCliente: true,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
+    suportaCancelamentoNFeClienteSemCpf: false,
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -58,9 +68,10 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Tributado no município' },
-      { codigo: '2', nome: 'tributado fora do município' },
-      { codigo: '3', nome: 'Serviço no exterior sem resultados no território nacional' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

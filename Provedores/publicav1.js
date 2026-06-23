@@ -3,12 +3,12 @@
   nome: 'PublicaV1',
   empresa: 'PublicaV1',
   stats: {
-    municipios: 7
+    municipios: 8
   },
   visaoGeral: [
     { key: 'Nome', val: 'PublicaV1' },
-    { key: 'Total Municipios', val: '7' },
-    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RN'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '8' },
+    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RN', 'TO'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 0,
@@ -59,6 +59,7 @@
       { nome: 'Assú', uf: 'RN', ibge: '2400208' },
       { nome: 'Joinville', uf: 'SC', ibge: '4209102' },
       { nome: 'Lebon Régis', uf: 'SC', ibge: '4209706' },
+      { nome: 'Paranã', uf: 'TO', ibge: '1716208' },
       { nome: 'Peritiba', uf: 'SC', ibge: '4212601' },
       { nome: 'Pinheiro Preto', uf: 'SC', ibge: '4213005' },
       { nome: 'Quatro Pontes', uf: 'PR', ibge: '4120853' },

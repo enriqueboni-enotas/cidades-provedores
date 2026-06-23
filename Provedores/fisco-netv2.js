@@ -3,11 +3,11 @@
   nome: 'Fisco.NetV2',
   empresa: 'Fisco.NetV2',
   stats: {
-    municipios: 14
+    municipios: 15
   },
   visaoGeral: [
     { key: 'Nome', val: 'Fisco.NetV2' },
-    { key: 'Total Municipios', val: '14' },
+    { key: 'Total Municipios', val: '15' },
     { key: 'Estados Atendidos', val: ['BA', 'PI'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -51,6 +51,7 @@
       { nome: 'Paulo Afonso', uf: 'BA', ibge: '2924009' },
       { nome: 'Rafael Jambeiro', uf: 'BA', ibge: '2925956' },
       { nome: 'São Felipe', uf: 'BA', ibge: '2929107' },
+      { nome: 'Teofilândia', uf: 'BA', ibge: '2931509' },
       { nome: 'Ubaíra', uf: 'BA', ibge: '2932101' },
       { nome: 'Várzea do Poço', uf: 'BA', ibge: '2933109' }
     ]

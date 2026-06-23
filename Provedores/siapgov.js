@@ -3,11 +3,11 @@
   nome: 'SiapGov',
   empresa: 'SiapGov',
   stats: {
-    municipios: 4
+    municipios: 3
   },
   visaoGeral: [
     { key: 'Nome', val: 'SiapGov' },
-    { key: 'Total Municipios', val: '4' },
+    { key: 'Total Municipios', val: '3' },
     { key: 'Estados Atendidos', val: ['SP', 'RJ'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -44,7 +44,6 @@
   },
   municipiosLista: {
     'siapgov': [
-      { nome: 'Biritiba Mirim', uf: 'SP', ibge: '3506607' },
       { nome: 'Japeri', uf: 'RJ', ibge: '3302270' },
       { nome: 'Salesópolis', uf: 'SP', ibge: '3545001' },
       { nome: 'Santa Branca', uf: 'SP', ibge: '3546009' }

@@ -3,11 +3,11 @@
   nome: 'Saatri',
   empresa: 'Saatri',
   stats: {
-    municipios: 44
+    municipios: 46
   },
   visaoGeral: [
     { key: 'Nome', val: 'Saatri' },
-    { key: 'Total Municipios', val: '44' },
+    { key: 'Total Municipios', val: '46' },
     { key: 'Estados Atendidos', val: ['BA', 'RR', 'SC'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,6 +61,7 @@
       { nome: 'Brejões', uf: 'BA', ibge: '2904308' },
       { nome: 'Caem', uf: 'BA', ibge: '2905107' },
       { nome: 'Camacan', uf: 'BA', ibge: '2905602' },
+      { nome: 'Campo Alegre de Lourdes', uf: 'BA', ibge: '2905909' },
       { nome: 'Campo Formoso', uf: 'BA', ibge: '2906006' },
       { nome: 'Canavieiras', uf: 'BA', ibge: '2906303' },
       { nome: 'Cansanção', uf: 'BA', ibge: '2906808' },
@@ -88,6 +89,7 @@
       { nome: 'Nova Viçosa', uf: 'BA', ibge: '2923001' },
       { nome: 'Paratinga', uf: 'BA', ibge: '2923704' },
       { nome: 'Paripiranga', uf: 'BA', ibge: '2923803' },
+      { nome: 'Pojuca', uf: 'BA', ibge: '2925204' },
       { nome: 'Rorainópolis', uf: 'RR', ibge: '1400472' },
       { nome: 'Santa Bárbara', uf: 'BA', ibge: '2927507' },
       { nome: 'Santana', uf: 'BA', ibge: '2928208' },

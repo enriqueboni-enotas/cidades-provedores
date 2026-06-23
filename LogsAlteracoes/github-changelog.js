@@ -1,5 +1,209 @@
 var changelogData = [
   {
+    tag: '22/06/2026',
+    titulo: 'Domingo — 22 de Junho',
+    data: '22/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '21/06/2026',
+    titulo: 'Sábado — 21 de Junho',
+    data: '21/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '20/06/2026',
+    titulo: 'Sexta-feira — 20 de Junho',
+    data: '20/06/2026',
+    itens: [
+      {
+        icon: '📭',
+        destaque: 'Sem alterações',
+        texto: 'Nenhum commit na dev neste dia.',
+      },
+    ],
+  },
+  {
+    tag: '19/06/2026',
+    titulo: 'Quinta-feira — 19 de Junho',
+    data: '19/06/2026',
+    itens: [
+      {
+        icon: '🔧',
+        destaque:
+          'Correção no download de XML de nota cancelada no Portal Nacional',
+        texto:
+          'A função de download de XML via headless browser (Browserless/Playwright) para o Portal Nacional estava falhando ao tentar baixar o XML de notas que já haviam sido canceladas. O fluxo não tratava corretamente o estado "cancelada" da nota no portal, impedindo a obtenção do arquivo. A correção ajusta a lógica para identificar e processar notas canceladas corretamente, além de adicionar uma nova função para baixar XML de notas tomadas (notas recebidas de terceiros), ampliando a cobertura do download headless.',
+      },
+    ],
+  },
+  {
+    tag: '18/06/2026',
+    titulo: 'Quarta-feira — 18 de Junho',
+    data: '18/06/2026',
+    itens: [
+      {
+        icon: '🆕',
+        destaque: 'Download de XML do Portal Nacional via headless browser',
+        texto:
+          'Foi implementado um endpoint completo para download de XML de NFS-e emitidas pelo Portal Nacional, utilizando Browserless (Playwright via CDP). O novo endpoint POST /v1/nfsenacional/xml navega no portal, resolve CAPTCHAs automaticamente, localiza a nota pela chave de acesso e baixa o XML. Isso substitui o fluxo anterior que dependia de navegação direta no portal e era mais frágil. Também foram adicionados geradores offline de PDF para notas do padrão nacional.',
+      },
+      {
+        icon: '🆕',
+        destaque:
+          'Endpoint de geração de PDF (DANFSe) para NFSe Padrão Nacional',
+        texto:
+          'O componente DanfeMS ganhou um novo endpoint POST v1/nfs-e/danfse que recebe o XML em base64 e gera o PDF da NFS-e no formato do padrão nacional. Inclui um helper de lookup de municípios (via municipios.csv) para resolver cidade/UF pelo código IBGE, tratamento de encoding com fallback (Windows-1252), e suporte aos estados de cancelada/substituída no layout do PDF. Isso centraliza a geração de PDF nacional em um microserviço dedicado.',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Porciúncula/RJ — remove porta da URL e adiciona User-Agent contra Cloudflare',
+        texto:
+          'O município de Porciúncula/RJ estava com a porta explícita na URL do webservice, o que causava problemas de roteamento. Além disso, as requisições ao provedor Fiorilli de Porciúncula estavam sendo bloqueadas pelo Cloudflare por falta de User-Agent. Foi criado um comportamento WCF reutilizável (CustomUserAgentEndpointBehavior) que injeta o header User-Agent nas requisições, aplicado especificamente para Porciúncula. O provedor Futurize também foi refatorado para usar esse mesmo componente centralizado.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Ajusta tratativa de documento do prestador no provedor Parintins',
+        texto:
+          'No provedor Parintins/AM, o campo iDocPrest (documento do prestador) estava sendo enviado sem formatação de CPF/CNPJ, causando rejeição no portal da prefeitura. Além disso, quando o portal retornava erro via HTML (tag <p id="msg">), o sistema não detectava e continuava o fluxo normalmente. A correção aplica FormatarCpfCnpj() ao UserName e adiciona validação de erro HTML antes de prosseguir com a emissão, lançando ValidationException com código GW6 quando a prefeitura rejeita.',
+      },
+      {
+        icon: '🏙️',
+        destaque:
+          'Fallback de endereço do tomador como endereço da obra em Fortaleza/CE',
+        texto:
+          'Para emissões de NFS-e de construção civil (código 0719) em Fortaleza/CE, quando a empresa não informa o endereço da obra mas possui o endereço do tomador preenchido, o sistema agora usa o endereço do tomador como fallback. Isso evita rejeições por falta de dados de obra em cenários onde o serviço é prestado no endereço do próprio tomador. A regra é aplicada apenas para empresas específicas configuradas na lista.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Nazaré/BA ativada no provedor Freire',
+        texto:
+          'O município de Nazaré/BA foi ativado no gateway utilizando o provedor Freire. A prefeitura utiliza o sistema Freire para emissão de NFS-e, e o município agora está configurado com as URLs e operações corretas para emissão, consulta e cancelamento de notas fiscais de serviço.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Correção de bug na consulta por RPS — validação antes de marcar sucesso',
+        texto:
+          'Na consulta de nota por RPS, o resultado estava sendo marcado como Sucesso=true antes de validar os dados retornados pela prefeitura via ExtrairDadosNFe(). Isso permitia que autorizações avançassem sem dados municipais válidos, causando travamento no status de PDF (sem dados da prefeitura para gerar o documento). A correção garante que o sucesso só é marcado após a extração e validação completa dos dados da nota.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Teofilândia/BA ativada no provedor Fisco.NetV2',
+        texto:
+          'O município de Teofilândia/BA foi ativado no gateway com o provedor Fisco.NetV2. A prefeitura baiana utiliza o sistema Fisco.Net na versão 2 para emissão de NFS-e, e o município agora está configurado corretamente para todas as operações de nota fiscal de serviço.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'São Mamede/PB ativada no provedor Eticons',
+        texto:
+          'O município de São Mamede/PB foi ativado no gateway utilizando o provedor Eticons. A cidade paraibana agora está integrada ao gateway para emissão, consulta e cancelamento de NFS-e através do sistema Eticons.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Tratamento de IM do tomador com hífen para empresa específica',
+        texto:
+          'Algumas prefeituras exigem que a Inscrição Municipal (IM) do tomador seja enviada com hífen (formato original), enquanto a maioria aceita apenas dígitos numéricos. Foi adicionado um tratamento que preserva o hífen na IM quando a empresa está em uma lista específica, mantendo a remoção de caracteres não numéricos como comportamento padrão para as demais. Também foi adicionada proteção contra NullReferenceException quando a IM vem nula.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Migração de cidades do Simpliss para SimplissV3',
+        texto:
+          'Diversos municípios que utilizavam o provedor Simpliss foram migrados para o SimplissV3 (versão 3 do sistema). A nova versão traz melhorias na comunicação e nas operações de consulta. Os municípios afetados tiveram suas configurações atualizadas para apontar para o novo provedor, incluindo constantes de formato de data/hora para parsing correto do campo dhProc.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Validação de sincronização de nota sem tomador no TinusV2',
+        texto:
+          'O provedor TinusV2 estava reprovando indevidamente a sincronização de notas quando o tomador não possuía CPF/CNPJ. A validação foi aprimorada para, nesses casos, comparar a discriminação do serviço (descrição) extraída do XML com a discriminação formatada da nota. Se os textos coincidirem (após normalização de encoding ISO-8859-1→UTF-8, remoção de acentos e quebras de linha), a nota é aceita. Isso evita que notas válidas fiquem presas em "sincronização pendente".',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Parnamirim/PE migra de Tributus para SpeedGovV2',
+        texto:
+          'O município de Parnamirim/PE teve seu provedor alterado de Tributus para SpeedGovV2. A prefeitura migrou de sistema de NFS-e, e o gateway foi atualizado para utilizar o novo provedor SpeedGovV2 com suas URLs e operações correspondentes, garantindo continuidade na emissão de notas no município.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Processamento de NFS-e substituta no GissOnline (ABRASF v2)',
+        texto:
+          'O provedor GissOnline (ABRASF v2) passou a detectar e processar NFS-e substitutas durante a extração do lote. Quando a nota contém o nó NfseSubstituida no XML, o sistema agora extrai o número da nota substituída e marca a NFeProcessada com os flags NotaSubstituta e NumeroNotaSubstituida. Também foi criado o fluxo síncrono (GissOnlineConsultarLoteNFeSincrono) e adicionadas proteções contra NullReference na leitura dos nós XML.',
+      },
+    ],
+  },
+  {
+    tag: '17/06/2026',
+    titulo: 'Terça-feira — 17 de Junho',
+    data: '17/06/2026',
+    itens: [
+      {
+        icon: '🔧',
+        destaque:
+          'Suporte a CNPJ e Chave de Acesso alfanuméricos no NFeNacional',
+        texto:
+          'A legislação brasileira passou a permitir CNPJ alfanumérico (com letras) e consequentemente a chave de acesso da NF-e/NFS-e também passa a conter caracteres alfanuméricos. Este commit atualiza toda a cadeia de validação: regex de extração da chave, validação no construtor de ChaveAcessoNFe, schemas XSD, método MOD11, utilitários CpfCnpjUtil (FormatarCpfCnpj, NormalizeCnpj), e bibliotecas de geração de DANFE/DACTE. Diversos provedores receberam ajustes de import para compilar com os utilitários reorganizados.',
+      },
+      {
+        icon: '🏙️',
+        destaque: 'Guareí/SP atualizado para o provedor GOVBRv3',
+        texto:
+          'O município de Guareí/SP teve seu provedor atualizado para GOVBRv3. A prefeitura migrou para a versão 3 do sistema GOVBR de NFS-e, e as configurações de URL e operações foram atualizadas no gateway para garantir continuidade na emissão e consulta de notas fiscais de serviço.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Hora de emissão fracionada no SimplissV3',
+        texto:
+          'O provedor SimplissV3 retornava o campo dhProc (data/hora de processamento) com diferentes quantidades de casas decimais nos frações de segundo (1 a 7 dígitos), causando falha no parsing. Foi criada uma lista de formatos aceitos (SimplissV3Constants.FormatosDhProc) e o ParseExact agora tenta todos os formatos válidos. Aplicado tanto na consulta de lote quanto na consulta por RPS, resolvendo erros intermitentes de sincronização em municípios que usam o SimplissV3.',
+      },
+      {
+        icon: '🔧',
+        destaque:
+          'Ajuste no envio de dados para emissão no provedor Parintins/AM',
+        texto:
+          'O fluxo completo de emissão do provedor Parintins foi reestruturado: o identificador passou de iCodigo para iDocPrest (documento do prestador com CPF/CNPJ formatado), novos campos Hidden foram incluídos no payload (iContPrest, iFantasiaPrest, iEnderecoPrest, iRegime, iObs1-5, etc.), a validação municipal agora exige CodigoServicoMunicipal normalizado para 6 dígitos, e foi incluído cálculo de IRRF. A busca de nota para PDF e cancelamento também foi atualizada para usar iDocPrest. Essas mudanças corrigem rejeições que ocorriam quando o portal de Parintins atualizou seu layout HTML.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Correção de erro de compilação por falta de referência',
+        texto:
+          'Após a reorganização dos utilitários de CpfCnpj (movidos para CpfCnpjUtil), alguns projetos ficaram sem a referência correta, causando erro de compilação. Este commit adiciona o using necessário para restaurar a build.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'NFS-e com exigibilidade suspensa no Portal Nacional V2',
+        texto:
+          'O Portal Nacional V2 (NfseNacionalV2) não permitia a emissão de NFS-e com exigibilidade do ISS suspensa por decisão judicial ou administrativa. O ajuste permite que a nota seja emitida com essa configuração fiscal, atendendo empresas que possuem liminar judicial suspendendo a cobrança do ISS em determinados municípios.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Implementação de PDF no layout Padrão Nacional (async)',
+        texto:
+          'A geração de PDF no formato do Padrão Nacional foi refatorada para funcionar de forma assíncrona. A implementação anterior travava ao tentar regerar o PDF de uma NFS-e já emitida. A nova versão utiliza processamento async, evitando deadlocks e permitindo a regeração de PDFs em lote sem impactar o throughput do sistema.',
+      },
+      {
+        icon: '🔧',
+        destaque: 'Tratamento de metadados regimeApuracaoTributosSN vazio',
+        texto:
+          'Quando o campo regimeApuracaoTributosSN vinha vazio (string vazia ou null), a conversão para Int32 falhava com FormatException, causando erro na emissão. O fix adiciona verificação de IsNullOrWhiteSpace antes de tentar converter, evitando crash em notas onde esse metadado não está preenchido.',
+      },
+    ],
+  },
+  {
     tag: '16/06/2026',
     titulo: 'Segunda-feira — 16 de Junho',
     data: '16/06/2026',
@@ -41,14 +245,14 @@ var changelogData = [
     data: '13/06/2026',
     itens: [
       {
-        icon: '�',
+        icon: '📊',
         destaque:
           'Retorno ao formato antigo de PIS/COFINS com envio de apuração própria',
         texto:
           'O envio dos dados de PIS/COFINS foi revertido para o formato anterior, que era mais compatível com os provedores. Adicionalmente, foi implementada a lógica de envio dos dados de apuração própria quando o contribuinte informa apenas os tributos não retidos (sem retenção na fonte). Isso resolve rejeições em prefeituras que não aceitavam o novo formato e garante que empresas com apuração própria tenham seus dados fiscais corretamente transmitidos.',
       },
       {
-        icon: '�',
+        icon: '📊',
         destaque: 'Atribui valor correto ao campo aliqPis',
         texto:
           'O campo aliqPis (alíquota do PIS) não estava sendo preenchido corretamente em determinados cenários de apuração própria, causando divergência entre o valor calculado e o informado no XML. O ajuste garante que a alíquota seja atribuída ao campo antes do envio, evitando rejeições em provedores que validam a consistência entre alíquota e valor do tributo.',
@@ -129,322 +333,9 @@ var changelogData = [
     data: '11/06/2026',
     itens: [
       {
-        icon: '�',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '10/06/2026',
-    titulo: 'Terça-feira — 10 de Junho',
-    data: '10/06/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque:
-          'Revert — Desfaz auto-incremento de RPS duplicado no eTransparência',
-        texto:
-          'Os commits anteriores (PRs #859, #860, #861) que implementavam o auto-incremento de RPS quando o eTransparência rejeitava por duplicidade foram revertidos. O fix causou efeitos colaterais graves: zerou os campos SerieNFe e SequencialLoteNFe no banco de dados, gerando o erro GW000412 em notas subsequentes. A funcionalidade precisa de retrabalho antes de ser reimplantada.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Inclui SerieNFe e SequencialLoteNFe no UpdateSequenciaisNFeAsync',
-        texto:
-          'Ao incrementar o RPS automaticamente no eTransparência, o método UpdateSequenciaisNFeAsync não atualizava os campos SerieNFe e SequencialLoteNFe, causando zeramento desses valores no banco. Este commit corrigiu a query para incluir esses campos na atualização. Porém, o fix foi posteriormente revertido junto com os demais commits da feature.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Fix reenvio RPS duplicado — seta Sucesso=true para handler processar',
-        texto:
-          'No fluxo de auto-incremento de RPS no eTransparência, ao detectar a rejeição e incrementar o RPS, era necessário setar Sucesso=true no resultado para que o handler de ConsultarLote processasse o ReiniciarEnvio corretamente. Sem isso, o lote ficava em estado indefinido. Este commit fazia parte do conjunto revertido.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Incremento automático de RPS duplicado no eTransparência',
-        texto:
-          'Implementação original do auto-incremento de RPS para o provedor eTransparência (Taboão da Serra/SP). Quando a prefeitura rejeitava a nota com "Já Existe uma Nota Fiscal com este RPS/Série", o sistema detectava via regex, incrementava o número do RPS (+1), atualizava o sequencial da empresa e reenviava automaticamente. Evitava loop de rejeição manual. Feature revertida por efeitos colaterais.',
-      },
-    ],
-  },
-  {
-    tag: '09/06/2026',
-    titulo: 'Segunda-feira — 09 de Junho',
-    data: '09/06/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque: 'Corrige links e tag Tomador no NfseNacional',
-        texto:
-          'O provedor NfseNacional estava enviando a tag <Tomador> onde deveria enviar <TomadorServico> no XML de integração. Além disso, os links de consulta/download de PDF estavam apontando para URLs erradas. As correções garantem que o XML gerado esteja em conformidade com o layout nacional e que os links de integração funcionem corretamente para prefeituras que usam o padrão nacional.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Melhora repasse de mensagens de erro ao cliente',
-        texto:
-          'As mensagens de erro retornadas por certos provedores não estavam sendo repassadas corretamente ao cliente. O ajuste garante que a mensagem original da prefeitura seja retornada de forma legível, sem truncamento ou formatação incorreta, melhorando a experiência do usuário ao visualizar rejeições.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualiza validação em serviços específicos',
-        texto:
-          'Algumas validações de campos obrigatórios não estavam sendo aplicadas corretamente. A atualização adiciona validações específicas para determinados códigos de serviço, evitando rejeições desnecessárias pela prefeitura quando os dados da nota estão corretos mas não atendiam ao formato esperado pelo provedor.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Acrescenta nota substituída no filtro de busca',
-        texto:
-          'No filtro de consulta de notas, quando uma nota é substituída por outra, a nota substituída também é incluída nos resultados, permitindo rastrear a cadeia de substituições e facilitando a sincronização de sistemas integrados.',
-      },
-      {
-        icon: '�',
-        destaque:
-          'Tratamentos para subscriptionID usar MunicipioIncidenciaService',
-        texto:
-          'Ajuste no tratamento de subscriptionID para utilizar o serviço MunicipioIncidenciaService, garantindo que a nota use o município de incidência correto ao invés do município padrão, evitando rejeições em cidades que validam estritamente o local de prestação do serviço.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Configura envio de código de serviço municipal',
-        texto:
-          'Configuração adicionada para envio do código de serviço municipal no XML, necessário para prefeituras que validam esse campo.',
-      },
-      {
-        icon: '💰',
-        destaque: 'Zera valorISS para prestador Imune no serviço 080101',
-        texto:
-          'Quando o prestador é classificado como Imune e o serviço é 080101 (construção civil), o valor do ISS deve ser zero. Antes, o sistema calculava e enviava o ISS normalmente, causando divergência com a prefeitura. Agora, a regra zera o valorISS automaticamente nessa combinação específica, evitando rejeições e alertas fiscais.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Fortaleza/CE passa a usar PDF modelo nacional',
-        texto:
-          'O provedor Fortaleza foi ajustado para gerar o PDF da NFS-e usando o layout do modelo nacional (Padrão Nacional), em vez do layout anterior customizado. Isso padroniza a aparência do documento e facilita a manutenção, já que o layout nacional é compartilhado entre diversos provedores.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ajuste na nomenclatura de certas cidades',
-        texto:
-          'Alguns nomes de municípios no sistema estavam com grafia desatualizada ou diferente do padrão IBGE. A nomenclatura foi corrigida para refletir os nomes oficiais, evitando inconsistências em consultas e relatórios que dependem do nome exato do município.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Fix — trata EhConvenioVigente nullable na emissão NFS-e Nacional sem certificado',
-        texto:
-          'Na emissão de NFS-e Nacional sem certificado digital (via crawler), o campo EhConvenioVigente podia retornar null, causando crash (NullReferenceException) no robô de emissão. O fix adiciona tratamento para o caso nullable, permitindo que a emissão prossiga normalmente quando o convênio não está definido. Referência: CE-27738.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'Correção de crash quando EhConvenioVigente retorna null no robô',
-        texto:
-          'Commit complementar ao fix anterior — o ajuste adiciona verificação segura antes de acessar o valor do convênio vigente, resolvendo o crash em produção para notas emitidas sem certificado.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Ajuste complementar no tratamento de convênio vigente',
-        texto:
-          'Commit complementar que completa a correção dos campos nullable de emissão sem certificado digital.',
-      },
-    ],
-  },
-  {
-    tag: '08/06/2026',
-    titulo: 'Domingo — 08 de Junho',
-    data: '08/06/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque:
-          'Tratamento para subscriptionID não enviar Outras Retenções em Rio Claro/SP',
-        texto:
-          'Em Rio Claro/SP, o provedor não aceita que se envie o campo OutrasRetencoes no XML, evitando rejeições no momento da emissão.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Adiciona empresa em EmpresasNewLock',
-        texto:
-          'Uma empresa foi adicionada à lista EmpresasNewLock, que controla o mecanismo de lock de emissão para evitar duplicidade de notas. Quando uma empresa está nessa lista, o sistema usa o novo mecanismo de lock distribuído que é mais confiável e evita cenários de nota duplicada em alta concorrência.',
-      },
-      {
-        icon: '🏙️',
-        destaque: "São João d'Aliança/GO migra para NfseNacionalV2",
-        texto:
-          "O município de São João d'Aliança/GO foi atualizado para usar o provedor NfseNacionalV2. A cidade aderiu ao Portal Nacional de NFS-e e agora suas notas são emitidas pelo padrão nacional, que oferece mais funcionalidades como consulta por DPS e cancelamento padronizado.",
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Vila Maria/RS ativada no provedor CittaV2',
-        texto:
-          'O município de Vila Maria/RS foi ativado no provedor CittaV2. A prefeitura utiliza o sistema Citta para emissão de NFS-e, e o município agora está configurado corretamente no gateway para emissão, consulta e cancelamento de notas fiscais de serviço.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Consulta por RPS via crawler para NfseNacional',
-        texto:
-          'Implementada a consulta por RPS via crawler para o provedor NfseNacional. Essa operação é essencial para a sincronização de notas — quando o sistema precisa verificar se uma nota específica foi processada pela prefeitura. Antes, apenas a consulta por lote estava disponível via crawler.',
-      },
-      {
-        icon: '🔧',
-        destaque:
-          'BethaV3 aceita envio de pisCofinsApuracaoPropria mantendo compatibilidade',
-        texto:
-          'O provedor BethaV3 passou a aceitar o envio do campo pisCofinsApuracaoPropria quando preenchido pelo contribuinte. Anteriormente, o campo era ignorado mesmo quando preenchido, causando divergência entre o valor declarado e o que a prefeitura recebia.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Validação na data de emissão',
-        texto:
-          'Adicionada validação mais rigorosa na data de emissão para identificar problemas de data antecipadamente.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Empresa adicionada à lista de envio de alíquota obrigatório',
-        texto:
-          'Uma empresaID específica foi incluída na lista de empresas que sempre enviam alíquota no XML, independente da configuração padrão do município. Isso resolve rejeições em prefeituras que exigem o campo alíquota preenchido para determinadas atividades econômicas.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Bertioga/SP migra para GissOnline',
-        texto:
-          'O município de Bertioga/SP teve seu provedor atualizado para GissOnline. A prefeitura trocou de sistema de NFS-e, e a configuração no gateway foi ajustada com as novas URLs, namespace e operações do provedor GissOnline, garantindo continuidade na emissão de notas.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Atualiza preenchimento de CST e tipo retenção PisCofins',
-        texto:
-          'O preenchimento do CST (Código de Situação Tributária) de PIS/COFINS foi atualizado para refletir corretamente as situações tributárias vigentes. A correção evita envio de valores incorretos que causavam rejeição em provedores que validam esses campos de acordo com a legislação federal.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Rio das Ostras/RJ migra para TiplanV3',
-        texto:
-          'O município de Rio das Ostras/RJ foi migrado do provedor anterior para o TiplanV3. A prefeitura atualizou seu sistema de NFS-e, exigindo nova integração com URLs, schemas e comportamentos diferentes. A migração garante que notas continuem sendo emitidas corretamente no município.',
-      },
-      {
-        icon: '🆕',
-        destaque: 'Novo provedor SimplissV3 criado',
-        texto:
-          'Foi criado o provedor SimplissV3, que implementa a versão 3 do sistema Simpliss usado por diversas prefeituras. Municípios que migraram para a versão 3 podem agora ser integrados ao gateway.',
-      },
-    ],
-  },
-  {
-    tag: '07/06/2026',
-    titulo: 'Sábado — 07 de Junho',
-    data: '07/06/2026',
-    itens: [
-      {
         icon: '📭',
         destaque: 'Sem alterações',
         texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '06/06/2026',
-    titulo: 'Sexta-feira — 06 de Junho',
-    data: '06/06/2026',
-    itens: [
-      {
-        icon: '�',
-        destaque: 'Sem alterações',
-        texto: 'Nenhum commit na dev neste dia.',
-      },
-    ],
-  },
-  {
-    tag: '05/06/2026',
-    titulo: 'Quinta-feira — 05 de Junho',
-    data: '05/06/2026',
-    itens: [
-      {
-        icon: '🔧',
-        destaque:
-          'Ajusta consulta para gravar metadado de substituição de nota',
-        texto:
-          'Ao consultar o lote de notas emitidas, o sistema agora grava o metadado de substituição (nota original substituída), permitindo a rastreabilidade da cadeia de substituições pelo integrador.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'ToFormattedString() retorna todos os erros da nota',
-        texto:
-          'O método ToFormattedString() que formata mensagens de erro para o cliente foi ajustado para retornar TODOS os erros encontrados na nota, não apenas o primeiro. Anteriormente, quando a prefeitura retornava múltiplos erros de validação, apenas o primeiro era exibido, dificultando a correção dos dados pelo usuário.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Acrescenta input da nota substituída na consulta',
-        texto:
-          'Na operação de consulta de lote, os dados de input da nota substituída (número original, série, motivo da substituição) agora são retornados junto com o resultado. Isso complementa a funcionalidade de substituição de NFS-e, permitindo que integradores identifiquem qual nota foi substituída sem precisar de consulta adicional.',
-      },
-      {
-        icon: '�',
-        destaque: 'Implementa substituição de NFSe para NfseNacionalV2',
-        texto:
-          'A operação de substituição de NFS-e foi implementada para o provedor NfseNacionalV2. Essa operação permite emitir uma nova nota em substituição a uma anterior (corrigindo dados fiscais), mantendo o vínculo entre as duas notas. É uma exigência do padrão nacional e agora está disponível para todos os municípios que usam o NfseNacionalV2.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Ativa municípios no provedor Agili',
-        texto:
-          'Novos municípios foram ativados no provedor Agili. O provedor Agili atende diversas prefeituras com sistema próprio de NFS-e, e os municípios adicionados agora podem emitir, consultar e cancelar notas fiscais de serviço através do gateway.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Nanuque/MG migra para EeLv3',
-        texto:
-          'O município de Nanuque/MG foi migrado para o provedor EeLv3. A prefeitura atualizou seu sistema de NFS-e para a versão 3 do EeL, com novo formato de comunicação. A migração garante continuidade na emissão de notas no município.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Adiciona empresa em idsNovoRespTecnico',
-        texto:
-          'Uma empresaID foi adicionada à lista idsNovoRespTecnico, que controla quais empresas utilizam o novo formato de responsável técnico no XML da nota. Essa configuração por empresa é necessária porque alguns municípios exigem o campo em formato diferente do padrão.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Rio Claro/SP migra para GissOnline',
-        texto:
-          'O município de Rio Claro/SP teve seu provedor atualizado para GissOnline. A prefeitura migrou de sistema, e as configurações de URL, namespace e operações foram atualizadas no gateway para o novo provedor, garantindo emissão e consulta de NFS-e sem interrupção.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Rollback configuração temporária',
-        texto:
-          'Uma configuração temporária de produção foi removida (rollback). Configurações temporárias são usadas pontualmente para investigar problemas específicos e devem ser revertidas após a resolução.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'São José do Rio Pardo/SP migra para Portal Nacional',
-        texto:
-          'O município de São José do Rio Pardo/SP aderiu ao Portal Nacional de NFS-e. A cidade agora emite notas pelo padrão nacional com suporte a DPS, consulta padronizada e cancelamento via evento.',
-      },
-      {
-        icon: '🏙️',
-        destaque: 'Guaranésia/MG migra para BethaV3',
-        texto:
-          'O município de Guaranésia/MG foi atualizado para o provedor BethaV3. A prefeitura migrou para o sistema Betha na versão 3, que segue o padrão nacional de NFS-e. URLs, schemas e configurações foram ajustadas para o novo provedor.',
-      },
-      {
-        icon: '🔧',
-        destaque: 'Configura envio de alíquota específico para empresa',
-        texto:
-          'Uma empresa específica foi configurada para enviar alíquota de forma diferenciada. Alguns municípios exigem que a alíquota seja enviada em formato específico ou com valor fixo para determinadas atividades, e essa configuração por empresa resolve rejeições pontuais sem afetar as demais.',
-      },
-      {
-        icon: '📊',
-        destaque: 'Implementa retenção de PIS/COFINS no provedor Agili',
-        texto:
-          'O provedor Agili passou a suportar o envio de informações de retenção de PIS/COFINS no XML da nota. Foram criados os enums SituacaoTributaria e TipoRetencao, e a lógica de preenchimento dos campos no XML foi implementada. Empresas que possuem retenção na fonte agora terão esses valores corretamente informados à prefeitura.',
-      },
-      {
-        icon: '🆕',
-        destaque: 'Novo provedor SpeedGovV2 criado',
-        texto:
-          'Foi criado o provedor SpeedGovV2 com suporte a emissão, consulta por RPS, cancelamento (via evento) e geração de PDF. Municípios que migraram para a versão 2 do SpeedGov agora podem ser integrados ao gateway.',
       },
     ],
   },

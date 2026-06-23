@@ -7,7 +7,7 @@
   provedorAtual: {
     nome: 'Fiorilli',
     namespace: 'http://www.abrasf.org.br/nfse.xsd',
-    codigoNoProvedor: null,
+    codigoNoProvedor: 'UsaProxy',
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
@@ -18,7 +18,7 @@
         recepcaoLote: 'http://fi1.fiorilli.com.br:5663/IssWeb-ejb/IssWebWS/IssWebWS'
       },
       producao: {
-        recepcaoLote: 'http://nfse.porciuncula.rj.gov.br:8080/IssWeb-ejb/IssWebWS/IssWebWS'
+        recepcaoLote: 'https://nfse.porciuncula.rj.gov.br/IssWeb-ejb/IssWebWS/IssWebWS'
       }
     }
   },

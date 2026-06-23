@@ -3,11 +3,11 @@
   nome: 'GovDigital',
   empresa: 'GovDigital',
   stats: {
-    municipios: 19
+    municipios: 20
   },
   visaoGeral: [
     { key: 'Nome', val: 'GovDigital' },
-    { key: 'Total Municipios', val: '19' },
+    { key: 'Total Municipios', val: '20' },
     { key: 'Estados Atendidos', val: ['MG', 'SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -47,6 +47,7 @@
       { nome: 'Conceição do Mato Dentro', uf: 'MG', ibge: '3117504' },
       { nome: 'Dores do Indaiá', uf: 'MG', ibge: '3123205' },
       { nome: 'Frutal', uf: 'MG', ibge: '3127107' },
+      { nome: 'Guaxupé', uf: 'MG', ibge: '3128709' },
       { nome: 'Itanhandu', uf: 'MG', ibge: '3133105' },
       { nome: 'Jaguariúna', uf: 'SP', ibge: '3524709' },
       { nome: 'Lavras', uf: 'MG', ibge: '3138203' },

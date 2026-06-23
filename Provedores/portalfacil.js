@@ -3,12 +3,12 @@
   nome: 'PortalFacil',
   empresa: 'PortalFacil',
   stats: {
-    municipios: 10
+    municipios: 11
   },
   visaoGeral: [
     { key: 'Nome', val: 'PortalFacil' },
-    { key: 'Total Municipios', val: '10' },
-    { key: 'Estados Atendidos', val: ['MG', 'MA', 'PA'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '11' },
+    { key: 'Estados Atendidos', val: ['MA', 'MG', 'PA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     helpTipoAutenticacao: {
@@ -63,6 +63,7 @@
       { nome: 'Ipaba', uf: 'MG', ibge: '3131158' },
       { nome: 'João Lisboa', uf: 'MA', ibge: '2105500' },
       { nome: 'Marliéria', uf: 'MG', ibge: '3140308' },
+      { nome: 'Porto Franco', uf: 'MA', ibge: '2109007' },
       { nome: 'Santa Inês', uf: 'MA', ibge: '2109908' },
       { nome: 'Santa Izabel do Pará', uf: 'PA', ibge: '1506500' }
     ]

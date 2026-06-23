@@ -1,0 +1,325 @@
+﻿[
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "[Autofix][ENOTAS] gw-nf-carta-correcao | FOTOCITANDO LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2333446",
+    "key": "CE-28403",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2333446",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "[Autofix][ENOTAS] gw-nf-carta-correcao | FOTOCITANDO LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2333048",
+    "key": "CE-28389",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2333048",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "[Autofix][ENOTAS] gw-retornar-nf-negada | CUMINO CURSOS LIVRES E EDUCACAO LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2332957",
+    "key": "CE-28388",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2332957",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "SINCRONIZA├ç├âO DE NOTAS FISCAIS l GMNLR EDITORA E TREINAMENTO LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2329277",
+    "key": "CE-28271",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2329277",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Busca de chave de acesso em massa | DESTRUINDO METAS TREINAMENTOS DIGITAIS LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2327907",
+    "key": "CE-28209",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2327907",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Atualiza├º├úo de Cadastro via Importa├º├úo  l CURTA EDUCACAO LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2327868",
+    "key": "CE-28207",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2327868",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Erro na emiss├úo de nota - ADOLETA PEDAGOGICA LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2327764",
+    "key": "CE-28197",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2327764",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Ajuste da empresa l O LASTRO - ENEM E VESTIBULARES LTDA l Guaxup├® / MG"
+    },
+    "fieldsToInclude": null,
+    "id": "2327756",
+    "key": "CE-28196",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2327756",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Ajuste da empresa | AGENCIA STEPS MARKETING DIGITAL LTDA l Guaxup├® / MG"
+    },
+    "fieldsToInclude": null,
+    "id": "2326381",
+    "key": "CE-28166",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2326381",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Plano Start - Tela em cria├º├úo de conta"
+    },
+    "fieldsToInclude": null,
+    "id": "2325906",
+    "key": "CE-28136",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2325906",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Possibilidade de extrair relat├│rio de produtos | ADVBOX CONSULTORIA E TECNOLOGIA LTDA l Florian├│polis / SC"
+    },
+    "fieldsToInclude": null,
+    "id": "2325422",
+    "key": "CE-28119",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2325422",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "SINCRONIZA├ç├âO DE NOTA - PORTAL NACIONAL | ESCOLA MOTION INSIDER LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2323789",
+    "key": "CE-28050",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2323789",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Reclame aqui:   Diverg├¬ncia entre compet├¬ncia, data de emiss├úo e exibi├º├úo em relat├│rio de notas emitidas l ROBERTA ROCCO - ME"
+    },
+    "fieldsToInclude": null,
+    "id": "2318653",
+    "key": "CE-27795",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2318653",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "INCLUIR CNPJ DA CONTABILIDADE NO XML DA NF-E | LCL INVESTIMENTOS E PRODUTOS DIGITAIS LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2318256",
+    "key": "CE-27777",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2318256",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Altera├º├úo descri├º├úo Produtos l GRUPO FOCUS DE EDUCACAO LTDA l Barueri / SP"
+    },
+    "fieldsToInclude": null,
+    "id": "2317959",
+    "key": "CE-27760",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2317959",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "Tratamento de erro autom├ítico em Notas Fiscais l  STRACT SOLUCOES EM TECNOLOGIA LTDA"
+    },
+    "fieldsToInclude": null,
+    "id": "2317099",
+    "key": "CE-27719",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2317099",
+    "transitions": null,
+    "versionedRepresentations": null
+  },
+  {
+    "changelog": null,
+    "editmeta": null,
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "fields": {
+      "summary": "DESTAQUE PIS E CONFINS NFS-e PORTAL NACIONAL l SIMPLIFICA TREINAMENTOS LTDA l Betim / MG"
+    },
+    "fieldsToInclude": null,
+    "id": "2306796",
+    "key": "CE-27276",
+    "names": null,
+    "operations": null,
+    "properties": null,
+    "renderedFields": null,
+    "schema": null,
+    "self": "https://jira-prod-us-61-2.prod.atl-paas.net/rest/api/3/issue/2306796",
+    "transitions": null,
+    "versionedRepresentations": null
+  }
+]

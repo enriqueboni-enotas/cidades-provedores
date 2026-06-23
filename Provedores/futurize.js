@@ -3,11 +3,11 @@
   nome: 'Futurize',
   empresa: 'Futurize',
   stats: {
-    municipios: 31
+    municipios: 33
   },
   visaoGeral: [
     { key: 'Nome', val: 'Futurize' },
-    { key: 'Total Municipios', val: '31' },
+    { key: 'Total Municipios', val: '33' },
     { key: 'Estados Atendidos', val: ['MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -68,6 +68,7 @@
       { nome: 'Guarani', uf: 'MG', ibge: '3128402' },
       { nome: 'Ibitiúra de Minas', uf: 'MG', ibge: '3129905' },
       { nome: 'Itaipé', uf: 'MG', ibge: '3132305' },
+      { nome: 'Liberdade', uf: 'MG', ibge: '3138500' },
       { nome: 'Lima Duarte', uf: 'MG', ibge: '3138609' },
       { nome: 'Maria da Fé', uf: 'MG', ibge: '3139904' },
       { nome: 'Matias Barbosa', uf: 'MG', ibge: '3140803' },
@@ -78,6 +79,7 @@
       { nome: 'Rio Doce', uf: 'MG', ibge: '3155009' },
       { nome: 'Rio Pomba', uf: 'MG', ibge: '3155801' },
       { nome: 'Santa Rita de Jacutinga', uf: 'MG', ibge: '3159308' },
+      { nome: 'Santo Antônio do Grama', uf: 'MG', ibge: '3160108' },
       { nome: 'São José do Alegre', uf: 'MG', ibge: '3163201' },
       { nome: 'Senhora dos Remédios', uf: 'MG', ibge: '3166204' },
       { nome: 'Serranos', uf: 'MG', ibge: '3167004' },

@@ -3,11 +3,11 @@
   nome: 'Tributus',
   empresa: 'Tributus',
   stats: {
-    municipios: 23
+    municipios: 22
   },
   visaoGeral: [
     { key: 'Nome', val: 'Tributus' },
-    { key: 'Total Municipios', val: '23' },
+    { key: 'Total Municipios', val: '22' },
     { key: 'Estados Atendidos', val: ['PE', 'AL', 'PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -68,7 +68,6 @@
       { nome: 'Machados', uf: 'PE', ibge: '2609105' },
       { nome: 'Olho d\'Água das Flores', uf: 'AL', ibge: '2705705' },
       { nome: 'Palmares', uf: 'PE', ibge: '2610004' },
-      { nome: 'Parnamirim', uf: 'PE', ibge: '2610400' },
       { nome: 'Penedo', uf: 'AL', ibge: '2706703' },
       { nome: 'Pesqueira', uf: 'PE', ibge: '2610905' },
       { nome: 'Poção', uf: 'PE', ibge: '2611200' },

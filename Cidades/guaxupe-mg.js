@@ -5,64 +5,30 @@
   ibge: '3128709',
   constante: 'CodigoIBGE.GuaxupeMG',
   provedorAtual: {
-    nome: 'NfseNacionalV2',
-    namespace: 'http://www.sped.fazenda.gov.br/nfse',
+    nome: 'GovDigital',
+    namespace: 'http://www.abrasf.org.br/nfse.xsd',
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'https://sefin.producaorestrita.nfse.gov.br/SefinNacional',
-        downloadPDF: 'https://adn.producaorestrita.nfse.gov.br/danfse'
+        recepcaoLote: 'https://ws.homolog.nfe-cidades.com.br/ws/guax'
       },
       producao: {
-        recepcaoLote: 'https://sefin.nfse.gov.br/sefinnacional',
-        downloadPDF: 'https://adn.nfse.gov.br/danfse'
+        recepcaoLote: 'https://ws.nfe-cidades.com.br/ws/guax'
       }
-    },
-    emissaoSemCertificado: {
-      homologacao: 'https://www.producaorestrita.nfse.gov.br',
-      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
     tipoAutenticacao: 1,
     assinaturaDigital: 2,
-    helpTipoAutenticacao: {
-      certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
-      usuario: null,
-      senha: null,
-      token: null,
-      fraseSecreta: null
-    },
-    suportaCancelamentoNFe: true,
-    valorCancelamentoNFe: 30,
-    usaAEDF: false,
-    usaRegimeEspecialTributacao: true,
     usaCodigoServicoMunicipal: true,
-    usaDescricaoServico: false,
     usaCNAE: false,
-    usaNBS: true,
     usaItemListaServico: false,
-    usaNaturezaOperacao: true,
-    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
-    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCodigoServicoMunicipal: 'Informe aqui o código municipal que identifica o serviço prestado na nota fiscal. \r\nEm algumas cidades esse código é conhecido como código de tributação.\r\n\r\nDeve seguir a formatação como nos exemplos: 01.03, 16.02',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: false,
-    suportaEmissaoNFeClienteSemEndereco: true,
-    suportaCancelamentoNFeSemCliente: true,
-    suportaCancelamentoNFeClienteSemCpf: false,
-    suportaEmissaoParalela: true,
-    enviaEmailCliente: false,
-    suportaConsultaSequencialRps: true,
-    numeroNotasPorLote: 1,
-    numeroLotesParalelos: 5,
-    autenticidadeNota: {
-      urlVerificacao: 'https://www.nfse.gov.br/consultapublica',
-      UsaChaveAcesso: true
-    },
+    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
     regimesEspecialTributacao: [
       { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
@@ -73,10 +39,13 @@
       { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Operação tributável' },
-      { codigo: '2', nome: 'Imunidade' },
-      { codigo: '3', nome: 'Exportação de Serviço' },
-      { codigo: '4', nome: 'Não incidência' }
+      { codigo: '1', nome: 'Exigível' },
+      { codigo: '2', nome: 'Não incidência' },
+      { codigo: '3', nome: 'Isenção' },
+      { codigo: '4', nome: 'Exportação' },
+      { codigo: '5', nome: 'Imunidade' },
+      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
+      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
     ]
   }
 };

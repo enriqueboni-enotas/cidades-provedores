@@ -3,11 +3,11 @@
   nome: 'NFOnline',
   empresa: 'NFOnline',
   stats: {
-    municipios: 6
+    municipios: 7
   },
   visaoGeral: [
     { key: 'Nome', val: 'NFOnline' },
-    { key: 'Total Municipios', val: '6' },
+    { key: 'Total Municipios', val: '7' },
     { key: 'Estados Atendidos', val: ['AL', 'PB'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -48,7 +48,8 @@
       { nome: 'Coruripe', uf: 'AL', ibge: '2702306' },
       { nome: 'São Bento', uf: 'PB', ibge: '2513901' },
       { nome: 'São Miguel dos Campos', uf: 'AL', ibge: '2708600' },
-      { nome: 'São Miguel dos Milagres', uf: 'AL', ibge: '2708709' }
+      { nome: 'São Miguel dos Milagres', uf: 'AL', ibge: '2708709' },
+      { nome: 'São Sebastião', uf: 'AL', ibge: '2708808' }
     ]
   }
 };

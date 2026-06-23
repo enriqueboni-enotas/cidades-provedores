@@ -5,22 +5,29 @@
   ibge: '3510807',
   constante: 'CodigoIBGE.CasaBrancaSP',
   provedorAtual: {
-    nome: 'Simpliss',
-    namespace: 'http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd',
+    nome: 'SimplissV3',
+    namespace: null,
     codigoNoProvedor: null,
     robo: false,
     webService: true,
     naoEnviaSerieRPS: false,
     urls: {
       homologacao: {
-        recepcaoLote: 'http://wshomologacao.simplissweb.com.br/nfseservice.svc'
+        recepcaoLote: 'https://producaorestrita.simplissweb.com.br'
       },
       producao: {
-        recepcaoLote: 'http://wscasabranca.simplissweb.com.br/nfseservice.svc'
+        recepcaoLote: 'https://nfsecasabranca.simplissweb.com.br',
+        downloadPDF: 'https://adn.nfse.gov.br/danfse'
       }
+    },
+    emissaoSemCertificado: {
+      homologacao: 'https://www.producaorestrita.nfse.gov.br',
+      producao: 'https://www.nfse.gov.br'
     }
   },
   configuracaoProvedor: {
+    tipoAutenticacao: 1,
+    assinaturaDigital: 2,
     helpTipoAutenticacao: {
       certificadoDigital: 'Sua prefeitura exige a utilização de certificado digital, portanto, inclua aqui o arquivo de seu certificado A1.',
       usuario: null,
@@ -28,53 +35,40 @@
       token: null,
       fraseSecreta: null
     },
-    valorCancelamentoNFe: 60,
+    valorCancelamentoNFe: 30,
+    usaAEDF: false,
+    usaRegimeEspecialTributacao: true,
+    usaCodigoServicoMunicipal: true,
+    usaDescricaoServico: false,
     usaCNAE: true,
-    usaItemListaServico: true,
-    helpInscricaoMunicipal: 'Informe sua inscrição municipal (somente números).\r\n\r\nExemplos válidos: 06421008 ou 6348122',
-    helpRegimeEspecialTributacao: 'Isso identifica o regime de tributação de sua empresa, se desejar deixar sem nenhuma opção marcada selecione o traço (\\',
-    helpCodigoServicoMunicipal: 'Informe aqui o código municipal, com 4 ou 5 dígitos, que identifica o serviço prestado na nota fiscal.\r\n\r\nEsse código é identificado na sua prefeitura como Serviço e é possível visualizá-lo ao tentar emitir uma nota fiscal manualmente, na seção Código de Serviço.\r\nExemplos válidos: 8.01 ou 17.01',
-    helpDescricaoServico: 'Texto descritivo municipal que descreve o serviço prestado. Essa informação não é transmitida à prefeitura e é utilizada somente na impressão do PDF da nota fiscal.',
-    helpCNAE: 'Informe aqui o código CNAE que identifica o serviço prestado na nota fiscal',
+    usaNBS: true,
+    usaItemListaServico: false,
+    usaNaturezaOperacao: true,
+    helpInscricaoMunicipal: 'A inscrição municipal da empresa deve conter de 8 dígitos (com formatação).\r\n\r\nExemplo válido: 14.05.01',
+    helpRegimeEspecialTributacao: 'Isso identifica o regime especial de tributação de sua empresa',
+    helpCodigoServicoMunicipal: 'Informe aqui o código de serviço municipal que identifica o serviço prestado na nota fiscal. Exemplo: 07.01.01',
+    helpCNAE: 'Informe aqui o CNAE o Serviço municipal conforme usado no portal de NFS-e da prefeitura. Exemplo: 4329103, 1813001',
     suportaEmissaoNFeSemCliente: true,
-    suportaEmissaoNFeClienteSemCpf: true,
-    suportaEmissaoNFeClienteSemEndereco: false,
-    suportaCancelamentoNFeSemCliente: false,
+    suportaEmissaoNFeClienteSemCpf: false,
+    suportaEmissaoNFeClienteSemEndereco: true,
     suportaCancelamentoNFeClienteSemCpf: false,
-    tempoEsperaParaConsultaLoteNFeEmMinutos: 0,
-    autenticidadeNota: {
-      urlVerificacao: 'https://saogoncalo.simplissweb.com.br/contrib/',
-      UsaChaveAcesso: false,
-      UsaCnpjPrestador: true,
-      UsaCodigoVerificacao: true,
-      UsaCpfCnpjTomador: false,
-      UsaInscricaoMunicipalPrestador: false,
-      UsaNumeroNota: true,
-      UsaValorNota: false
-    },
+    enviaEmailCliente: false,
+    suportaConsultaSequencialRps: true,
+    numeroNotasPorLote: 1,
     regimesEspecialTributacao: [
-      { codigo: '0', nome: 'Nenhum' },
+      { codigo: '0', nome: ' - ' },
       { codigo: '1', nome: 'Microempresa Municipal' },
       { codigo: '2', nome: 'Estimativa' },
       { codigo: '3', nome: 'Sociedade de Profissionais' },
       { codigo: '4', nome: 'Cooperativa' },
-      { codigo: '5', nome: 'Microempresário Individual (MEI)' },
-      { codigo: '6', nome: 'Microempresário e Empresa de Pequeno Porte (ME EPP)' },
-      { codigo: '7', nome: 'Tributação por Faturamento (Variável)' },
-      { codigo: '8', nome: 'Fixo' },
-      { codigo: '9', nome: 'Isenção' },
-      { codigo: '10', nome: 'Imune' },
-      { codigo: '11', nome: 'Exigibilidade Suspensa por Decisão Judicial' },
-      { codigo: '12', nome: 'Exigibilidade Suspensa por Procedimento Administrativo' }
+      { codigo: '5', nome: 'MEI - Simples Nacional' },
+      { codigo: '6', nome: 'ME EPP - Simples Nacional' }
     ],
     naturezasOperacao: [
-      { codigo: '1', nome: 'Exigível' },
-      { codigo: '2', nome: 'Não incidência' },
-      { codigo: '3', nome: 'Isenção' },
-      { codigo: '4', nome: 'Exportação' },
-      { codigo: '5', nome: 'Imunidade' },
-      { codigo: '6', nome: 'Exigibilidade suspensa por decisão judicial' },
-      { codigo: '7', nome: 'Exigilidade suspensa por procedimento administrativo' }
+      { codigo: '1', nome: 'Operação tributável' },
+      { codigo: '2', nome: 'Imunidade' },
+      { codigo: '3', nome: 'Exportação de Serviço' },
+      { codigo: '4', nome: 'Não incidência' }
     ]
   }
 };

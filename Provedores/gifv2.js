@@ -3,11 +3,11 @@
   nome: 'GIFv2',
   empresa: 'GIFv2',
   stats: {
-    municipios: 2
+    municipios: 9
   },
   visaoGeral: [
     { key: 'Nome', val: 'GIFv2' },
-    { key: 'Total Municipios', val: '2' },
+    { key: 'Total Municipios', val: '9' },
     { key: 'Estados Atendidos', val: ['RS'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,7 +61,14 @@
   municipiosLista: {
     'gifv2': [
       { nome: 'Campo Bom', uf: 'RS', ibge: '4303905' },
-      { nome: 'Caxias do Sul', uf: 'RS', ibge: '4305108' }
+      { nome: 'Canoas', uf: 'RS', ibge: '4304606' },
+      { nome: 'Carlos Barbosa', uf: 'RS', ibge: '4304804' },
+      { nome: 'Caxias do Sul', uf: 'RS', ibge: '4305108' },
+      { nome: 'Farroupilha', uf: 'RS', ibge: '4307906' },
+      { nome: 'Garibaldi', uf: 'RS', ibge: '4308607' },
+      { nome: 'Santiago', uf: 'RS', ibge: '4317400' },
+      { nome: 'São Borja', uf: 'RS', ibge: '4318002' },
+      { nome: 'Sapucaia do Sul', uf: 'RS', ibge: '4320008' }
     ]
   }
 };

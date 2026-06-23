@@ -3,12 +3,12 @@
   nome: 'SimplissV3',
   empresa: 'SimplissV3',
   stats: {
-    municipios: 2
+    municipios: 15
   },
   visaoGeral: [
     { key: 'Nome', val: 'SimplissV3' },
-    { key: 'Total Municipios', val: '2' },
-    { key: 'Estados Atendidos', val: ['SP', 'SC'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '15' },
+    { key: 'Estados Atendidos', val: ['SP', 'MG', 'PR', 'SC'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 1,
@@ -58,8 +58,21 @@
   },
   municipiosLista: {
     'simplissv3': [
+      { nome: 'Arceburgo', uf: 'MG', ibge: '3104106' },
+      { nome: 'Bela Vista do Paraíso', uf: 'PR', ibge: '4102802' },
       { nome: 'Blumenau', uf: 'SC', ibge: '4202404' },
-      { nome: 'Presidente Prudente', uf: 'SP', ibge: '3541406' }
+      { nome: 'Casa Branca', uf: 'SP', ibge: '3510807' },
+      { nome: 'Dois Córregos', uf: 'SP', ibge: '3514106' },
+      { nome: 'Espírito Santo do Pinhal', uf: 'SP', ibge: '3515186' },
+      { nome: 'Indiana', uf: 'SP', ibge: '3520608' },
+      { nome: 'Paraisópolis', uf: 'MG', ibge: '3147303' },
+      { nome: 'Patrocínio', uf: 'MG', ibge: '3148103' },
+      { nome: 'Pirapora do Bom Jesus', uf: 'SP', ibge: '3539103' },
+      { nome: 'Presidente Prudente', uf: 'SP', ibge: '3541406' },
+      { nome: 'Santa Cruz do Rio Pardo', uf: 'SP', ibge: '3546405' },
+      { nome: 'Santana de Parnaíba', uf: 'SP', ibge: '3547304' },
+      { nome: 'Tupã', uf: 'SP', ibge: '3555000' },
+      { nome: 'Vargem Grande do Sul', uf: 'SP', ibge: '3556404' }
     ]
   }
 };

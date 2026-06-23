@@ -3,12 +3,12 @@
   nome: 'IPM',
   empresa: 'IPM',
   stats: {
-    municipios: 115
+    municipios: 116
   },
   visaoGeral: [
     { key: 'Nome', val: 'IPM' },
-    { key: 'Total Municipios', val: '115' },
-    { key: 'Estados Atendidos', val: ['SC', 'RS', 'PR', 'MG'], type: 'uf-badges' }
+    { key: 'Total Municipios', val: '116' },
+    { key: 'Estados Atendidos', val: ['SC', 'PR', 'RS', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
     tipoAutenticacao: 2,
@@ -135,6 +135,7 @@
       { nome: 'Palmitinho', uf: 'RS', ibge: '4313805' },
       { nome: 'Panambi', uf: 'RS', ibge: '4313904' },
       { nome: 'Paraíso', uf: 'SC', ibge: '4212239' },
+      { nome: 'Paraíso do Norte', uf: 'PR', ibge: '4118006' },
       { nome: 'Paranaguá', uf: 'PR', ibge: '4118204' },
       { nome: 'Paranavaí', uf: 'PR', ibge: '4118402' },
       { nome: 'Penha', uf: 'SC', ibge: '4212502' },

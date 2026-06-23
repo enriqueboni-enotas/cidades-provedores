@@ -3,11 +3,11 @@
   nome: 'GeisWeb',
   empresa: 'GeisWeb',
   stats: {
-    municipios: 6
+    municipios: 5
   },
   visaoGeral: [
     { key: 'Nome', val: 'GeisWeb' },
-    { key: 'Total Municipios', val: '6' },
+    { key: 'Total Municipios', val: '5' },
     { key: 'Estados Atendidos', val: ['SP'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -57,7 +57,6 @@
       { nome: 'Anhembi', uf: 'SP', ibge: '3502309' },
       { nome: 'Cajamar', uf: 'SP', ibge: '3509205' },
       { nome: 'Campo Limpo Paulista', uf: 'SP', ibge: '3509601' },
-      { nome: 'Guareí', uf: 'SP', ibge: '3518503' },
       { nome: 'Pardinho', uf: 'SP', ibge: '3536109' },
       { nome: 'Tietê', uf: 'SP', ibge: '3554508' }
     ]

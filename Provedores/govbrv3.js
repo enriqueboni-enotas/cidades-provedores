@@ -3,11 +3,11 @@
   nome: 'GOVBRv3',
   empresa: 'GOVBRv3',
   stats: {
-    municipios: 86
+    municipios: 88
   },
   visaoGeral: [
     { key: 'Nome', val: 'GOVBRv3' },
-    { key: 'Total Municipios', val: '86' },
+    { key: 'Total Municipios', val: '88' },
     { key: 'Estados Atendidos', val: ['RS', 'SP', 'PR', 'RJ', 'MG'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -70,6 +70,7 @@
       { nome: 'Araruama', uf: 'RJ', ibge: '3300209' },
       { nome: 'Arroio do Sal', uf: 'RS', ibge: '4301057' },
       { nome: 'Assis Chateaubriand', uf: 'PR', ibge: '4102000' },
+      { nome: 'Augusto Pestana', uf: 'RS', ibge: '4301503' },
       { nome: 'Boituva', uf: 'SP', ibge: '3507001' },
       { nome: 'Bom Jardim', uf: 'RJ', ibge: '3300506' },
       { nome: 'Cachoeira do Sul', uf: 'RS', ibge: '4303004' },
@@ -91,6 +92,7 @@
       { nome: 'Glorinha', uf: 'RS', ibge: '4309050' },
       { nome: 'Guaporé', uf: 'RS', ibge: '4309407' },
       { nome: 'Guarani das Missões', uf: 'RS', ibge: '4309506' },
+      { nome: 'Guareí', uf: 'SP', ibge: '3518503' },
       { nome: 'Ibiraiaras', uf: 'RS', ibge: '4309902' },
       { nome: 'Ijuí', uf: 'RS', ibge: '4310207' },
       { nome: 'Itabira', uf: 'MG', ibge: '3131703' },

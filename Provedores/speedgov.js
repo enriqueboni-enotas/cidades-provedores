@@ -3,11 +3,11 @@
   nome: 'SpeedGov',
   empresa: 'SpeedGov',
   stats: {
-    municipios: 45
+    municipios: 47
   },
   visaoGeral: [
     { key: 'Nome', val: 'SpeedGov' },
-    { key: 'Total Municipios', val: '45' },
+    { key: 'Total Municipios', val: '47' },
     { key: 'Estados Atendidos', val: ['CE', 'PE', 'MA'], type: 'uf-badges' }
   ],
   configuracaoProvedor: {
@@ -61,6 +61,7 @@
       { nome: 'Açailândia', uf: 'MA', ibge: '2100055' },
       { nome: 'Acaraú', uf: 'CE', ibge: '2300200' },
       { nome: 'Alto Santo', uf: 'CE', ibge: '2300705' },
+      { nome: 'Amontada', uf: 'CE', ibge: '2300754' },
       { nome: 'Aquiraz', uf: 'CE', ibge: '2301000' },
       { nome: 'Aracati', uf: 'CE', ibge: '2301109' },
       { nome: 'Araripe', uf: 'CE', ibge: '2301307' },
@@ -99,6 +100,7 @@
       { nome: 'Santa Luzia', uf: 'MA', ibge: '2110005' },
       { nome: 'Santa Maria da Boa Vista', uf: 'PE', ibge: '2612604' },
       { nome: 'Sobral', uf: 'CE', ibge: '2312908' },
+      { nome: 'Tabuleiro do Norte', uf: 'CE', ibge: '2313104' },
       { nome: 'Tauá', uf: 'CE', ibge: '2313302' },
       { nome: 'Tianguá', uf: 'CE', ibge: '2313401' },
       { nome: 'Timon', uf: 'MA', ibge: '2112209' },
