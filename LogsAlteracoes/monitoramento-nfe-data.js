@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 19/07/2026 14:39 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 19/07/2026 15:38 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "19/07/2026 14:39",
+  geradoEm: "19/07/2026 15:38",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -112,11 +112,6 @@ var monitoramentoNfeData = {
     "facet": "Florianópolis",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.municipio_servico": "Florianópolis"
-  },
-  {
-    "facet": "Faxinal do Soturno",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
-    "nfe.municipio_servico": "Faxinal do Soturno"
   },
   {
     "facet": "Guarulhos",
@@ -332,11 +327,6 @@ var monitoramentoNfeData = {
     "uniqueCount.empresa.razao_social": 1
   },
   {
-    "facet": "Faxinal do Soturno",
-    "nfe.municipio_servico": "Faxinal do Soturno",
-    "uniqueCount.empresa.razao_social": 1
-  },
-  {
     "facet": "Guarulhos",
     "nfe.municipio_servico": "Guarulhos",
     "uniqueCount.empresa.razao_social": 1
@@ -360,6 +350,11 @@ var monitoramentoNfeData = {
     "facet": "Porto Alegre",
     "nfe.municipio_servico": "Porto Alegre",
     "uniqueCount.empresa.razao_social": 1
+  },
+  {
+    "facet": "Alumínio",
+    "nfe.municipio_servico": "Alumínio",
+    "uniqueCount.empresa.razao_social": 1
   }
 ],
   statsGlobais: [
@@ -376,7 +371,7 @@ var monitoramentoNfeData = {
 ],
   totalEmpresas: [
   {
-    "uniqueCount.empresa.razao_social": 74
+    "uniqueCount.empresa.razao_social": 73
   }
 ],
   totalMunicipios: [
@@ -507,13 +502,6 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Faxinal do Soturno",
-      "EmProcessoDeAutorizacao"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
       "Florianópolis",
       "SolicitandoAutorizacao"
     ],
@@ -593,6 +581,13 @@ var monitoramentoNfeData = {
     "facet": [
       "Sarandi",
       "EmProcessoDeAutorizacao"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Serra Negra",
+      "SolicitandoAutorizacao"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   }
@@ -680,13 +675,6 @@ var monitoramentoNfeData = {
     "facet": [
       "EmProcessoDeAutorizacao",
       "Aparecida de Goiânia"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "EmProcessoDeAutorizacao",
-      "Faxinal do Soturno"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -1192,13 +1180,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "ICDS INFOPRODUTOS E TREINAMENTOS LTDA."
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
       "IDIOMUS PLATAFORMA DIGITAL LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -1411,19 +1392,13 @@ var monitoramentoNfeData = {
   {
     "canceladas": 0,
     "devolucoes": 0,
-    "em_emissao": 75,
-    "email": 902,
-    "emitidas": 1483,
-    "falhas": 141
+    "em_emissao": 16,
+    "email": 155,
+    "emitidas": 1336,
+    "falhas": 234
   }
 ],
   volumetriaTimeseries: [
-  {
-    "beginTimeSeconds": 1784396100,
-    "emitidas": 1988,
-    "endTimeSeconds": 1784399700,
-    "falhas": 308
-  },
   {
     "beginTimeSeconds": 1784399700,
     "emitidas": 1440,
@@ -1561,6 +1536,12 @@ var monitoramentoNfeData = {
     "emitidas": 1531,
     "endTimeSeconds": 1784482500,
     "falhas": 144
+  },
+  {
+    "beginTimeSeconds": 1784482500,
+    "emitidas": 1421,
+    "endTimeSeconds": 1784486100,
+    "falhas": 242
   }
 ],
   filaOperacoes: [
@@ -1572,14 +1553,14 @@ var monitoramentoNfeData = {
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 2,
-    "ok": 20765
+    "falhas": 1,
+    "ok": 18662
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
   totalMunicipiosPendentes: [
   {
-    "uniqueCount.nfe.municipio_servico": 39
+    "uniqueCount.nfe.municipio_servico": 38
   }
 ],
   taxaNfse: [
@@ -1598,74 +1579,74 @@ var monitoramentoNfeData = {
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1784468280,
-    "endTimeSeconds": 1784469480,
+    "beginTimeSeconds": 1784471820,
+    "endTimeSeconds": 1784473020,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784469480,
-    "endTimeSeconds": 1784470680,
+    "beginTimeSeconds": 1784473020,
+    "endTimeSeconds": 1784474220,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784470680,
-    "endTimeSeconds": 1784471880,
+    "beginTimeSeconds": 1784474220,
+    "endTimeSeconds": 1784475420,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784471880,
-    "endTimeSeconds": 1784473080,
+    "beginTimeSeconds": 1784475420,
+    "endTimeSeconds": 1784476620,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784473080,
-    "endTimeSeconds": 1784474280,
+    "beginTimeSeconds": 1784476620,
+    "endTimeSeconds": 1784477820,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784474280,
-    "endTimeSeconds": 1784475480,
+    "beginTimeSeconds": 1784477820,
+    "endTimeSeconds": 1784479020,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784475480,
-    "endTimeSeconds": 1784476680,
+    "beginTimeSeconds": 1784479020,
+    "endTimeSeconds": 1784480220,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784476680,
-    "endTimeSeconds": 1784477880,
+    "beginTimeSeconds": 1784480220,
+    "endTimeSeconds": 1784481420,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784477880,
-    "endTimeSeconds": 1784479080,
+    "beginTimeSeconds": 1784481420,
+    "endTimeSeconds": 1784482620,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784479080,
-    "endTimeSeconds": 1784480280,
+    "beginTimeSeconds": 1784482620,
+    "endTimeSeconds": 1784483820,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784480280,
-    "endTimeSeconds": 1784481480,
+    "beginTimeSeconds": 1784483820,
+    "endTimeSeconds": 1784485020,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1784481480,
-    "endTimeSeconds": 1784482680,
+    "beginTimeSeconds": 1784485020,
+    "endTimeSeconds": 1784486220,
     "rejeicao": null,
     "sucesso": null
   }
