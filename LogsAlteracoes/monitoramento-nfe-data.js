@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 26/07/2026 18:15 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 26/07/2026 19:15 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "26/07/2026 18:15",
+  geradoEm: "26/07/2026 19:15",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -1293,21 +1293,15 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 0,
+    "canceladas": 2,
     "devolucoes": 0,
-    "em_emissao": 20,
-    "email": 499,
-    "emitidas": 1707,
-    "falhas": 236
+    "em_emissao": 37,
+    "email": 171,
+    "emitidas": 1611,
+    "falhas": 143
   }
 ],
   volumetriaTimeseries: [
-  {
-    "beginTimeSeconds": 1785013800,
-    "emitidas": 1514,
-    "endTimeSeconds": 1785017400,
-    "falhas": 17229
-  },
   {
     "beginTimeSeconds": 1785017400,
     "emitidas": 1347,
@@ -1445,19 +1439,25 @@ var monitoramentoNfeData = {
     "emitidas": 1892,
     "endTimeSeconds": 1785100200,
     "falhas": 888
+  },
+  {
+    "beginTimeSeconds": 1785100200,
+    "emitidas": 1620,
+    "endTimeSeconds": 1785103800,
+    "falhas": 149
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 0
+    "rodando": 1
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 1,
-    "ok": 20340
+    "falhas": 0,
+    "ok": 19243
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -1481,24 +1481,6 @@ var monitoramentoNfeData = {
   taxaSucessoMunicipio: [],
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
-  {
-    "beginTimeSeconds": 1785086040,
-    "endTimeSeconds": 1785087240,
-    "rejeicao": null,
-    "sucesso": null
-  },
-  {
-    "beginTimeSeconds": 1785087240,
-    "endTimeSeconds": 1785088440,
-    "rejeicao": null,
-    "sucesso": null
-  },
-  {
-    "beginTimeSeconds": 1785088440,
-    "endTimeSeconds": 1785089640,
-    "rejeicao": null,
-    "sucesso": null
-  },
   {
     "beginTimeSeconds": 1785089640,
     "endTimeSeconds": 1785090840,
@@ -1550,6 +1532,24 @@ var monitoramentoNfeData = {
   {
     "beginTimeSeconds": 1785099240,
     "endTimeSeconds": 1785100440,
+    "rejeicao": null,
+    "sucesso": null
+  },
+  {
+    "beginTimeSeconds": 1785100440,
+    "endTimeSeconds": 1785101640,
+    "rejeicao": null,
+    "sucesso": null
+  },
+  {
+    "beginTimeSeconds": 1785101640,
+    "endTimeSeconds": 1785102840,
+    "rejeicao": null,
+    "sucesso": null
+  },
+  {
+    "beginTimeSeconds": 1785102840,
+    "endTimeSeconds": 1785104040,
     "rejeicao": null,
     "sucesso": null
   }
