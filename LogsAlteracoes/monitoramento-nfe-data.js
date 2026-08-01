@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 01/08/2026 18:12 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 01/08/2026 19:13 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "01/08/2026 18:12",
+  geradoEm: "01/08/2026 19:13",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -317,13 +317,13 @@ var monitoramentoNfeData = {
     "uniqueCount.empresa.razao_social": 2
   },
   {
-    "facet": "Campina Grande",
-    "nfe.municipio_servico": "Campina Grande",
+    "facet": "Barra Mansa",
+    "nfe.municipio_servico": "Barra Mansa",
     "uniqueCount.empresa.razao_social": 1
   },
   {
-    "facet": "Barra Mansa",
-    "nfe.municipio_servico": "Barra Mansa",
+    "facet": "Campina Grande",
+    "nfe.municipio_servico": "Campina Grande",
     "uniqueCount.empresa.razao_social": 1
   },
   {
@@ -1579,21 +1579,15 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 0,
+    "canceladas": 7,
     "devolucoes": 0,
-    "em_emissao": 630,
-    "email": 165,
-    "emitidas": 3404,
-    "falhas": 1552
+    "em_emissao": 592,
+    "email": 629,
+    "emitidas": 3288,
+    "falhas": 1565
   }
 ],
   volumetriaTimeseries: [
-  {
-    "beginTimeSeconds": 1785532200,
-    "emitidas": 9982,
-    "endTimeSeconds": 1785535800,
-    "falhas": 1841
-  },
   {
     "beginTimeSeconds": 1785535800,
     "emitidas": 12515,
@@ -1731,19 +1725,25 @@ var monitoramentoNfeData = {
     "emitidas": 3408,
     "endTimeSeconds": 1785618600,
     "falhas": 1551
+  },
+  {
+    "beginTimeSeconds": 1785618600,
+    "emitidas": 3260,
+    "endTimeSeconds": 1785622200,
+    "falhas": 1560
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 3
+    "rodando": 4
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 1,
-    "ok": 26024
+    "falhas": 0,
+    "ok": 25984
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -1768,74 +1768,74 @@ var monitoramentoNfeData = {
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1785604260,
-    "endTimeSeconds": 1785605460,
+    "beginTimeSeconds": 1785607920,
+    "endTimeSeconds": 1785609120,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785605460,
-    "endTimeSeconds": 1785606660,
+    "beginTimeSeconds": 1785609120,
+    "endTimeSeconds": 1785610320,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785606660,
-    "endTimeSeconds": 1785607860,
+    "beginTimeSeconds": 1785610320,
+    "endTimeSeconds": 1785611520,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785607860,
-    "endTimeSeconds": 1785609060,
+    "beginTimeSeconds": 1785611520,
+    "endTimeSeconds": 1785612720,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785609060,
-    "endTimeSeconds": 1785610260,
+    "beginTimeSeconds": 1785612720,
+    "endTimeSeconds": 1785613920,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785610260,
-    "endTimeSeconds": 1785611460,
+    "beginTimeSeconds": 1785613920,
+    "endTimeSeconds": 1785615120,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785611460,
-    "endTimeSeconds": 1785612660,
+    "beginTimeSeconds": 1785615120,
+    "endTimeSeconds": 1785616320,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785612660,
-    "endTimeSeconds": 1785613860,
+    "beginTimeSeconds": 1785616320,
+    "endTimeSeconds": 1785617520,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785613860,
-    "endTimeSeconds": 1785615060,
+    "beginTimeSeconds": 1785617520,
+    "endTimeSeconds": 1785618720,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785615060,
-    "endTimeSeconds": 1785616260,
+    "beginTimeSeconds": 1785618720,
+    "endTimeSeconds": 1785619920,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785616260,
-    "endTimeSeconds": 1785617460,
+    "beginTimeSeconds": 1785619920,
+    "endTimeSeconds": 1785621120,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1785617460,
-    "endTimeSeconds": 1785618660,
+    "beginTimeSeconds": 1785621120,
+    "endTimeSeconds": 1785622320,
     "rejeicao": null,
     "sucesso": null
   }
