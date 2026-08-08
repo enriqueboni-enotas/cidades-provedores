@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 08/08/2026 18:03 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 08/08/2026 18:49 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "08/08/2026 18:03",
+  geradoEm: "08/08/2026 18:49",
   travadasPorMunicipio: [
   {
     "facet": "Ribeirão Preto",
@@ -27,16 +27,6 @@ var monitoramentoNfeData = {
     "facet": "Itapipoca",
     "latest.nfe.stuck_in_intermediate_status.count": 2,
     "nfe.municipio_servico": "Itapipoca"
-  },
-  {
-    "facet": "Seropédica",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
-    "nfe.municipio_servico": "Seropédica"
-  },
-  {
-    "facet": "Naviraí",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
-    "nfe.municipio_servico": "Naviraí"
   },
   {
     "facet": "Urupá",
@@ -84,7 +74,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Ribeirão Preto",
     "nfe.municipio_servico": "Ribeirão Preto",
-    "uniqueCount.empresa.razao_social": 11
+    "uniqueCount.empresa.razao_social": 7
   },
   {
     "facet": "São José dos Campos",
@@ -109,16 +99,6 @@ var monitoramentoNfeData = {
   {
     "facet": "EXTERIOR",
     "nfe.municipio_servico": "EXTERIOR",
-    "uniqueCount.empresa.razao_social": 1
-  },
-  {
-    "facet": "Seropédica",
-    "nfe.municipio_servico": "Seropédica",
-    "uniqueCount.empresa.razao_social": 1
-  },
-  {
-    "facet": "Naviraí",
-    "nfe.municipio_servico": "Naviraí",
     "uniqueCount.empresa.razao_social": 1
   },
   {
@@ -161,7 +141,7 @@ var monitoramentoNfeData = {
 ],
   totalEmpresas: [
   {
-    "uniqueCount.empresa.razao_social": 29
+    "uniqueCount.empresa.razao_social": 23
   }
 ],
   totalMunicipios: [
@@ -208,13 +188,6 @@ var monitoramentoNfeData = {
   },
   {
     "facet": [
-      "Naviraí",
-      "EmProcessoDeAutorizacao"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
       "Presidente Prudente",
       "EmProcessoDeAutorizacao"
     ],
@@ -223,13 +196,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "Santa Maria",
-      "EmProcessoDeAutorizacao"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "Seropédica",
       "EmProcessoDeAutorizacao"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -310,13 +276,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "EmProcessoDeAutorizacao",
-      "Naviraí"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "EmProcessoDeAutorizacao",
       "Presidente Prudente"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -325,13 +284,6 @@ var monitoramentoNfeData = {
     "facet": [
       "EmProcessoDeAutorizacao",
       "Santa Maria"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "EmProcessoDeAutorizacao",
-      "Seropédica"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -438,13 +390,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "CONTABILISTA PLAY TREINAMENTOS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
       "DIOGO VITOR DE SOUZA OLIVEIRA 36316721870"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -467,13 +412,6 @@ var monitoramentoNfeData = {
     "facet": [
       "",
       "ESPACO CULTURAL A COISA LTDA - ME"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "GABRIELA AFFONSO PSICOLOGIA LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
   },
@@ -515,27 +453,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "L. R. PASSARI IDIOMAS"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "MENTE INTERATIVA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
-      "MENTORIA CARDIOEASY LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
       "MESTRE EM SAUDE CURSOS LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -550,13 +467,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "",
-      "NISHIO TREINAMENTOS LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 1
-  },
-  {
-    "facet": [
-      "",
       "PADOCA CURSOS E TREINAMENTOS LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
@@ -564,177 +474,177 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 2,
+    "canceladas": 0,
     "devolucoes": 0,
-    "em_emissao": 35,
+    "em_emissao": 4766,
     "email": 0,
-    "emitidas": 1492,
-    "falhas": 554
+    "emitidas": 10038,
+    "falhas": 703
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1786136400,
-    "emitidas": 5822,
-    "endTimeSeconds": 1786140000,
-    "falhas": 1880
+    "beginTimeSeconds": 1786139100,
+    "emitidas": 4143,
+    "endTimeSeconds": 1786142700,
+    "falhas": 1511
   },
   {
-    "beginTimeSeconds": 1786140000,
-    "emitidas": 2988,
-    "endTimeSeconds": 1786143600,
-    "falhas": 1613
+    "beginTimeSeconds": 1786142700,
+    "emitidas": 4057,
+    "endTimeSeconds": 1786146300,
+    "falhas": 1802
   },
   {
-    "beginTimeSeconds": 1786143600,
-    "emitidas": 3903,
-    "endTimeSeconds": 1786147200,
-    "falhas": 1628
+    "beginTimeSeconds": 1786146300,
+    "emitidas": 5242,
+    "endTimeSeconds": 1786149900,
+    "falhas": 1395
   },
   {
-    "beginTimeSeconds": 1786147200,
-    "emitidas": 6035,
-    "endTimeSeconds": 1786150800,
-    "falhas": 1387
+    "beginTimeSeconds": 1786149900,
+    "emitidas": 7199,
+    "endTimeSeconds": 1786153500,
+    "falhas": 1804
   },
   {
-    "beginTimeSeconds": 1786150800,
-    "emitidas": 7965,
-    "endTimeSeconds": 1786154400,
-    "falhas": 1833
+    "beginTimeSeconds": 1786153500,
+    "emitidas": 3397,
+    "endTimeSeconds": 1786157100,
+    "falhas": 1937
   },
   {
-    "beginTimeSeconds": 1786154400,
-    "emitidas": 2577,
-    "endTimeSeconds": 1786158000,
-    "falhas": 1924
+    "beginTimeSeconds": 1786157100,
+    "emitidas": 3132,
+    "endTimeSeconds": 1786160700,
+    "falhas": 343
   },
   {
-    "beginTimeSeconds": 1786158000,
-    "emitidas": 2065,
-    "endTimeSeconds": 1786161600,
-    "falhas": 252
+    "beginTimeSeconds": 1786160700,
+    "emitidas": 9561,
+    "endTimeSeconds": 1786164300,
+    "falhas": 2495
   },
   {
-    "beginTimeSeconds": 1786161600,
-    "emitidas": 9512,
-    "endTimeSeconds": 1786165200,
-    "falhas": 2493
+    "beginTimeSeconds": 1786164300,
+    "emitidas": 1416,
+    "endTimeSeconds": 1786167900,
+    "falhas": 178
   },
   {
-    "beginTimeSeconds": 1786165200,
-    "emitidas": 1381,
-    "endTimeSeconds": 1786168800,
-    "falhas": 164
+    "beginTimeSeconds": 1786167900,
+    "emitidas": 1765,
+    "endTimeSeconds": 1786171500,
+    "falhas": 337
   },
   {
-    "beginTimeSeconds": 1786168800,
-    "emitidas": 1737,
-    "endTimeSeconds": 1786172400,
-    "falhas": 336
+    "beginTimeSeconds": 1786171500,
+    "emitidas": 782,
+    "endTimeSeconds": 1786175100,
+    "falhas": 141
   },
   {
-    "beginTimeSeconds": 1786172400,
-    "emitidas": 927,
-    "endTimeSeconds": 1786176000,
-    "falhas": 159
+    "beginTimeSeconds": 1786175100,
+    "emitidas": 1223,
+    "endTimeSeconds": 1786178700,
+    "falhas": 211
   },
   {
-    "beginTimeSeconds": 1786176000,
-    "emitidas": 1217,
-    "endTimeSeconds": 1786179600,
-    "falhas": 232
+    "beginTimeSeconds": 1786178700,
+    "emitidas": 1018,
+    "endTimeSeconds": 1786182300,
+    "falhas": 312
   },
   {
-    "beginTimeSeconds": 1786179600,
-    "emitidas": 1366,
-    "endTimeSeconds": 1786183200,
-    "falhas": 489
+    "beginTimeSeconds": 1786182300,
+    "emitidas": 1912,
+    "endTimeSeconds": 1786185900,
+    "falhas": 645
   },
   {
-    "beginTimeSeconds": 1786183200,
-    "emitidas": 2521,
-    "endTimeSeconds": 1786186800,
-    "falhas": 543
+    "beginTimeSeconds": 1786185900,
+    "emitidas": 4324,
+    "endTimeSeconds": 1786189500,
+    "falhas": 753
   },
   {
-    "beginTimeSeconds": 1786186800,
-    "emitidas": 3985,
-    "endTimeSeconds": 1786190400,
-    "falhas": 828
+    "beginTimeSeconds": 1786189500,
+    "emitidas": 5297,
+    "endTimeSeconds": 1786193100,
+    "falhas": 2000
   },
   {
-    "beginTimeSeconds": 1786190400,
-    "emitidas": 5592,
-    "endTimeSeconds": 1786194000,
-    "falhas": 2886
+    "beginTimeSeconds": 1786193100,
+    "emitidas": 6676,
+    "endTimeSeconds": 1786196700,
+    "falhas": 3239
   },
   {
-    "beginTimeSeconds": 1786194000,
-    "emitidas": 6749,
-    "endTimeSeconds": 1786197600,
-    "falhas": 2468
+    "beginTimeSeconds": 1786196700,
+    "emitidas": 4740,
+    "endTimeSeconds": 1786200300,
+    "falhas": 900
   },
   {
-    "beginTimeSeconds": 1786197600,
-    "emitidas": 4239,
-    "endTimeSeconds": 1786201200,
-    "falhas": 700
+    "beginTimeSeconds": 1786200300,
+    "emitidas": 2384,
+    "endTimeSeconds": 1786203900,
+    "falhas": 577
   },
   {
-    "beginTimeSeconds": 1786201200,
-    "emitidas": 3025,
-    "endTimeSeconds": 1786204800,
-    "falhas": 617
+    "beginTimeSeconds": 1786203900,
+    "emitidas": 3951,
+    "endTimeSeconds": 1786207500,
+    "falhas": 478
   },
   {
-    "beginTimeSeconds": 1786204800,
-    "emitidas": 8721,
-    "endTimeSeconds": 1786208400,
-    "falhas": 1165
+    "beginTimeSeconds": 1786207500,
+    "emitidas": 9995,
+    "endTimeSeconds": 1786211100,
+    "falhas": 1200
   },
   {
-    "beginTimeSeconds": 1786208400,
-    "emitidas": 4200,
-    "endTimeSeconds": 1786212000,
-    "falhas": 439
+    "beginTimeSeconds": 1786211100,
+    "emitidas": 3616,
+    "endTimeSeconds": 1786214700,
+    "falhas": 514
   },
   {
-    "beginTimeSeconds": 1786212000,
-    "emitidas": 3698,
-    "endTimeSeconds": 1786215600,
-    "falhas": 548
+    "beginTimeSeconds": 1786214700,
+    "emitidas": 1471,
+    "endTimeSeconds": 1786218300,
+    "falhas": 515
   },
   {
-    "beginTimeSeconds": 1786215600,
-    "emitidas": 2595,
-    "endTimeSeconds": 1786219200,
-    "falhas": 534
+    "beginTimeSeconds": 1786218300,
+    "emitidas": 3636,
+    "endTimeSeconds": 1786221900,
+    "falhas": 613
   },
   {
-    "beginTimeSeconds": 1786219200,
-    "emitidas": 2379,
-    "endTimeSeconds": 1786222800,
-    "falhas": 564
+    "beginTimeSeconds": 1786221900,
+    "emitidas": 9486,
+    "endTimeSeconds": 1786225500,
+    "falhas": 691
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 0
+    "rodando": 7
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
-    "falhas": 1,
-    "ok": 17918
+    "falhas": 0,
+    "ok": 45327
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
   totalMunicipiosPendentes: [
   {
-    "uniqueCount.nfe.municipio_servico": 13
+    "uniqueCount.nfe.municipio_servico": 11
   }
 ],
   taxaNfse: [
@@ -753,74 +663,74 @@ var monitoramentoNfeData = {
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1786208520,
-    "endTimeSeconds": 1786209720,
+    "beginTimeSeconds": 1786211280,
+    "endTimeSeconds": 1786212480,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786209720,
-    "endTimeSeconds": 1786210920,
+    "beginTimeSeconds": 1786212480,
+    "endTimeSeconds": 1786213680,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786210920,
-    "endTimeSeconds": 1786212120,
+    "beginTimeSeconds": 1786213680,
+    "endTimeSeconds": 1786214880,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786212120,
-    "endTimeSeconds": 1786213320,
+    "beginTimeSeconds": 1786214880,
+    "endTimeSeconds": 1786216080,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786213320,
-    "endTimeSeconds": 1786214520,
+    "beginTimeSeconds": 1786216080,
+    "endTimeSeconds": 1786217280,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786214520,
-    "endTimeSeconds": 1786215720,
+    "beginTimeSeconds": 1786217280,
+    "endTimeSeconds": 1786218480,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786215720,
-    "endTimeSeconds": 1786216920,
+    "beginTimeSeconds": 1786218480,
+    "endTimeSeconds": 1786219680,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786216920,
-    "endTimeSeconds": 1786218120,
+    "beginTimeSeconds": 1786219680,
+    "endTimeSeconds": 1786220880,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786218120,
-    "endTimeSeconds": 1786219320,
+    "beginTimeSeconds": 1786220880,
+    "endTimeSeconds": 1786222080,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786219320,
-    "endTimeSeconds": 1786220520,
+    "beginTimeSeconds": 1786222080,
+    "endTimeSeconds": 1786223280,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786220520,
-    "endTimeSeconds": 1786221720,
+    "beginTimeSeconds": 1786223280,
+    "endTimeSeconds": 1786224480,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786221720,
-    "endTimeSeconds": 1786222920,
+    "beginTimeSeconds": 1786224480,
+    "endTimeSeconds": 1786225680,
     "rejeicao": null,
     "sucesso": null
   }
