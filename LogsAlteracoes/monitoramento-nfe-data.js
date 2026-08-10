@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 10/08/2026 16:37 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 10/08/2026 17:21 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "10/08/2026 16:37",
+  geradoEm: "10/08/2026 17:21",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -112,6 +112,11 @@ var monitoramentoNfeData = {
     "uniqueCount.empresa.razao_social": 2
   },
   {
+    "facet": "EXTERIOR",
+    "nfe.municipio_servico": "EXTERIOR",
+    "uniqueCount.empresa.razao_social": 1
+  },
+  {
     "facet": "Duque de Caxias",
     "nfe.municipio_servico": "Duque de Caxias",
     "uniqueCount.empresa.razao_social": 1
@@ -119,11 +124,6 @@ var monitoramentoNfeData = {
   {
     "facet": "Seropédica",
     "nfe.municipio_servico": "Seropédica",
-    "uniqueCount.empresa.razao_social": 1
-  },
-  {
-    "facet": "EXTERIOR",
-    "nfe.municipio_servico": "EXTERIOR",
     "uniqueCount.empresa.razao_social": 1
   },
   {
@@ -142,13 +142,13 @@ var monitoramentoNfeData = {
     "uniqueCount.empresa.razao_social": 1
   },
   {
-    "facet": "Santa Maria",
-    "nfe.municipio_servico": "Santa Maria",
+    "facet": "Itapipoca",
+    "nfe.municipio_servico": "Itapipoca",
     "uniqueCount.empresa.razao_social": 1
   },
   {
-    "facet": "Itapipoca",
-    "nfe.municipio_servico": "Itapipoca",
+    "facet": "Santa Maria",
+    "nfe.municipio_servico": "Santa Maria",
     "uniqueCount.empresa.razao_social": 1
   },
   {
@@ -629,171 +629,171 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 17,
-    "devolucoes": 1,
-    "em_emissao": 1471,
+    "canceladas": 19,
+    "devolucoes": 2,
+    "em_emissao": 1163,
     "email": 0,
-    "emitidas": 6412,
-    "falhas": 1780
+    "emitidas": 8055,
+    "falhas": 1606
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1786304100,
-    "emitidas": 4335,
-    "endTimeSeconds": 1786307700,
-    "falhas": 646
+    "beginTimeSeconds": 1786306500,
+    "emitidas": 4629,
+    "endTimeSeconds": 1786310100,
+    "falhas": 1084
   },
   {
-    "beginTimeSeconds": 1786307700,
-    "emitidas": 2913,
-    "endTimeSeconds": 1786311300,
-    "falhas": 1008
+    "beginTimeSeconds": 1786310100,
+    "emitidas": 5037,
+    "endTimeSeconds": 1786313700,
+    "falhas": 575
   },
   {
-    "beginTimeSeconds": 1786311300,
-    "emitidas": 4661,
-    "endTimeSeconds": 1786314900,
-    "falhas": 471
+    "beginTimeSeconds": 1786313700,
+    "emitidas": 3758,
+    "endTimeSeconds": 1786317300,
+    "falhas": 821
   },
   {
-    "beginTimeSeconds": 1786314900,
-    "emitidas": 3873,
-    "endTimeSeconds": 1786318500,
-    "falhas": 862
+    "beginTimeSeconds": 1786317300,
+    "emitidas": 2586,
+    "endTimeSeconds": 1786320900,
+    "falhas": 734
   },
   {
-    "beginTimeSeconds": 1786318500,
-    "emitidas": 5036,
-    "endTimeSeconds": 1786322100,
-    "falhas": 743
+    "beginTimeSeconds": 1786320900,
+    "emitidas": 6723,
+    "endTimeSeconds": 1786324500,
+    "falhas": 677
   },
   {
-    "beginTimeSeconds": 1786322100,
-    "emitidas": 6898,
-    "endTimeSeconds": 1786325700,
-    "falhas": 674
+    "beginTimeSeconds": 1786324500,
+    "emitidas": 5604,
+    "endTimeSeconds": 1786328100,
+    "falhas": 787
   },
   {
-    "beginTimeSeconds": 1786325700,
-    "emitidas": 2597,
-    "endTimeSeconds": 1786329300,
-    "falhas": 671
+    "beginTimeSeconds": 1786328100,
+    "emitidas": 1846,
+    "endTimeSeconds": 1786331700,
+    "falhas": 230
   },
   {
-    "beginTimeSeconds": 1786329300,
-    "emitidas": 1979,
-    "endTimeSeconds": 1786332900,
-    "falhas": 261
+    "beginTimeSeconds": 1786331700,
+    "emitidas": 8229,
+    "endTimeSeconds": 1786335300,
+    "falhas": 2225
   },
   {
-    "beginTimeSeconds": 1786332900,
-    "emitidas": 9097,
-    "endTimeSeconds": 1786336500,
-    "falhas": 2391
+    "beginTimeSeconds": 1786335300,
+    "emitidas": 2157,
+    "endTimeSeconds": 1786338900,
+    "falhas": 369
   },
   {
-    "beginTimeSeconds": 1786336500,
-    "emitidas": 980,
-    "endTimeSeconds": 1786340100,
-    "falhas": 319
+    "beginTimeSeconds": 1786338900,
+    "emitidas": 684,
+    "endTimeSeconds": 1786342500,
+    "falhas": 311
   },
   {
-    "beginTimeSeconds": 1786340100,
-    "emitidas": 987,
-    "endTimeSeconds": 1786343700,
-    "falhas": 129
+    "beginTimeSeconds": 1786342500,
+    "emitidas": 855,
+    "endTimeSeconds": 1786346100,
+    "falhas": 100
   },
   {
-    "beginTimeSeconds": 1786343700,
-    "emitidas": 778,
-    "endTimeSeconds": 1786347300,
-    "falhas": 93
+    "beginTimeSeconds": 1786346100,
+    "emitidas": 923,
+    "endTimeSeconds": 1786349700,
+    "falhas": 110
   },
   {
-    "beginTimeSeconds": 1786347300,
-    "emitidas": 810,
-    "endTimeSeconds": 1786350900,
-    "falhas": 112
+    "beginTimeSeconds": 1786349700,
+    "emitidas": 1056,
+    "endTimeSeconds": 1786353300,
+    "falhas": 208
   },
   {
-    "beginTimeSeconds": 1786350900,
-    "emitidas": 1027,
-    "endTimeSeconds": 1786354500,
-    "falhas": 254
+    "beginTimeSeconds": 1786353300,
+    "emitidas": 1407,
+    "endTimeSeconds": 1786356900,
+    "falhas": 631
   },
   {
-    "beginTimeSeconds": 1786354500,
-    "emitidas": 1703,
-    "endTimeSeconds": 1786358100,
-    "falhas": 745
+    "beginTimeSeconds": 1786356900,
+    "emitidas": 2334,
+    "endTimeSeconds": 1786360500,
+    "falhas": 514
   },
   {
-    "beginTimeSeconds": 1786358100,
-    "emitidas": 2899,
-    "endTimeSeconds": 1786361700,
-    "falhas": 516
+    "beginTimeSeconds": 1786360500,
+    "emitidas": 4828,
+    "endTimeSeconds": 1786364100,
+    "falhas": 1199
   },
   {
-    "beginTimeSeconds": 1786361700,
-    "emitidas": 5714,
-    "endTimeSeconds": 1786365300,
-    "falhas": 1904
+    "beginTimeSeconds": 1786364100,
+    "emitidas": 6721,
+    "endTimeSeconds": 1786367700,
+    "falhas": 2587
   },
   {
-    "beginTimeSeconds": 1786365300,
-    "emitidas": 8802,
-    "endTimeSeconds": 1786368900,
-    "falhas": 2444
+    "beginTimeSeconds": 1786367700,
+    "emitidas": 10661,
+    "endTimeSeconds": 1786371300,
+    "falhas": 2703
   },
   {
-    "beginTimeSeconds": 1786368900,
-    "emitidas": 10057,
-    "endTimeSeconds": 1786372500,
-    "falhas": 3271
+    "beginTimeSeconds": 1786371300,
+    "emitidas": 9921,
+    "endTimeSeconds": 1786374900,
+    "falhas": 4028
   },
   {
-    "beginTimeSeconds": 1786372500,
-    "emitidas": 7979,
-    "endTimeSeconds": 1786376100,
-    "falhas": 3107
+    "beginTimeSeconds": 1786374900,
+    "emitidas": 7679,
+    "endTimeSeconds": 1786378500,
+    "falhas": 1417
   },
   {
-    "beginTimeSeconds": 1786376100,
-    "emitidas": 7618,
-    "endTimeSeconds": 1786379700,
-    "falhas": 1452
+    "beginTimeSeconds": 1786378500,
+    "emitidas": 4954,
+    "endTimeSeconds": 1786382100,
+    "falhas": 1099
   },
   {
-    "beginTimeSeconds": 1786379700,
-    "emitidas": 7293,
-    "endTimeSeconds": 1786383300,
-    "falhas": 1032
+    "beginTimeSeconds": 1786382100,
+    "emitidas": 6397,
+    "endTimeSeconds": 1786385700,
+    "falhas": 911
   },
   {
-    "beginTimeSeconds": 1786383300,
-    "emitidas": 3825,
-    "endTimeSeconds": 1786386900,
-    "falhas": 881
+    "beginTimeSeconds": 1786385700,
+    "emitidas": 6218,
+    "endTimeSeconds": 1786389300,
+    "falhas": 1027
   },
   {
-    "beginTimeSeconds": 1786386900,
-    "emitidas": 6542,
-    "endTimeSeconds": 1786390500,
-    "falhas": 1753
+    "beginTimeSeconds": 1786389300,
+    "emitidas": 8148,
+    "endTimeSeconds": 1786392900,
+    "falhas": 1916
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 1
+    "rodando": 2
   }
 ],
   webhooks: [
   {
-    "dead_letter": 4,
-    "falhas": 5,
-    "ok": 42637
+    "dead_letter": 2,
+    "falhas": 7,
+    "ok": 50229
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -818,74 +818,74 @@ var monitoramentoNfeData = {
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1786376160,
-    "endTimeSeconds": 1786377360,
+    "beginTimeSeconds": 1786378800,
+    "endTimeSeconds": 1786380000,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786377360,
-    "endTimeSeconds": 1786378560,
+    "beginTimeSeconds": 1786380000,
+    "endTimeSeconds": 1786381200,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786378560,
-    "endTimeSeconds": 1786379760,
+    "beginTimeSeconds": 1786381200,
+    "endTimeSeconds": 1786382400,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786379760,
-    "endTimeSeconds": 1786380960,
+    "beginTimeSeconds": 1786382400,
+    "endTimeSeconds": 1786383600,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786380960,
-    "endTimeSeconds": 1786382160,
+    "beginTimeSeconds": 1786383600,
+    "endTimeSeconds": 1786384800,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786382160,
-    "endTimeSeconds": 1786383360,
+    "beginTimeSeconds": 1786384800,
+    "endTimeSeconds": 1786386000,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786383360,
-    "endTimeSeconds": 1786384560,
+    "beginTimeSeconds": 1786386000,
+    "endTimeSeconds": 1786387200,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786384560,
-    "endTimeSeconds": 1786385760,
+    "beginTimeSeconds": 1786387200,
+    "endTimeSeconds": 1786388400,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786385760,
-    "endTimeSeconds": 1786386960,
+    "beginTimeSeconds": 1786388400,
+    "endTimeSeconds": 1786389600,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786386960,
-    "endTimeSeconds": 1786388160,
+    "beginTimeSeconds": 1786389600,
+    "endTimeSeconds": 1786390800,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786388160,
-    "endTimeSeconds": 1786389360,
+    "beginTimeSeconds": 1786390800,
+    "endTimeSeconds": 1786392000,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786389360,
-    "endTimeSeconds": 1786390560,
+    "beginTimeSeconds": 1786392000,
+    "endTimeSeconds": 1786393200,
     "rejeicao": null,
     "sucesso": null
   }
