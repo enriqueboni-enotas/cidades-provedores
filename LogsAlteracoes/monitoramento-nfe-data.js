@@ -1,11 +1,11 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 13/08/2026 16:42 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 13/08/2026 17:44 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "13/08/2026 16:42",
+  geradoEm: "13/08/2026 17:44",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
-    "latest.nfe.stuck_in_intermediate_status.count": 36,
+    "latest.nfe.stuck_in_intermediate_status.count": 33,
     "nfe.municipio_servico": "Corbélia"
   },
   {
@@ -24,11 +24,6 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Naviraí"
   },
   {
-    "facet": "Urupá",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
-    "nfe.municipio_servico": "Urupá"
-  },
-  {
     "facet": "Itapipoca",
     "latest.nfe.stuck_in_intermediate_status.count": 2,
     "nfe.municipio_servico": "Itapipoca"
@@ -37,6 +32,11 @@ var monitoramentoNfeData = {
     "facet": "Santo André",
     "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.municipio_servico": "Santo André"
+  },
+  {
+    "facet": "Urupá",
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "nfe.municipio_servico": "Urupá"
   },
   {
     "facet": "Lauro de Freitas",
@@ -63,7 +63,7 @@ var monitoramentoNfeData = {
   travadasPorMotivo: [
   {
     "facet": "",
-    "latest.nfe.stuck_in_intermediate_status.count": 1,
+    "latest.nfe.stuck_in_intermediate_status.count": 33,
     "nfe.motivo_status": ""
   }
 ],
@@ -156,7 +156,7 @@ var monitoramentoNfeData = {
       "Corbélia",
       "SolicitandoAutorizacao"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 36
+    "latest.nfe.stuck_in_intermediate_status.count": 33
   },
   {
     "facet": [
@@ -182,13 +182,6 @@ var monitoramentoNfeData = {
   {
     "facet": [
       "Itapipoca",
-      "Cancelada"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
-  },
-  {
-    "facet": [
-      "Urupá",
       "Cancelada"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
@@ -227,6 +220,13 @@ var monitoramentoNfeData = {
       "EmProcessoDeAutorizacao"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 1
+  },
+  {
+    "facet": [
+      "Urupá",
+      "Cancelada"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
   }
 ],
   topEmpresasTravadas: [],
@@ -236,7 +236,7 @@ var monitoramentoNfeData = {
       "SolicitandoAutorizacao",
       "Corbélia"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 36
+    "latest.nfe.stuck_in_intermediate_status.count": 33
   },
   {
     "facet": [
@@ -271,7 +271,7 @@ var monitoramentoNfeData = {
       "Cancelada",
       "Urupá"
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 2
+    "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "facet": [
@@ -315,7 +315,7 @@ var monitoramentoNfeData = {
       "",
       "SIMIONI & CASAROLLI TREINAMENTOS ON LINE LTDA."
     ],
-    "latest.nfe.stuck_in_intermediate_status.count": 36
+    "latest.nfe.stuck_in_intermediate_status.count": 33
   },
   {
     "facet": [
@@ -323,13 +323,6 @@ var monitoramentoNfeData = {
       "ENSINO PROFISSIONALIZANTE LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 8
-  },
-  {
-    "facet": [
-      "",
-      "AC CREATOR HUB LTDA"
-    ],
-    "latest.nfe.stuck_in_intermediate_status.count": 4
   },
   {
     "facet": [
@@ -351,6 +344,13 @@ var monitoramentoNfeData = {
       "NEILA MARQUES DE FREITAS F LTDA"
     ],
     "latest.nfe.stuck_in_intermediate_status.count": 2
+  },
+  {
+    "facet": [
+      "",
+      "AC CREATOR HUB LTDA"
+    ],
+    "latest.nfe.stuck_in_intermediate_status.count": 1
   },
   {
     "facet": [
@@ -390,21 +390,15 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 44,
-    "devolucoes": 4,
-    "em_emissao": 233,
+    "canceladas": 37,
+    "devolucoes": 2,
+    "em_emissao": 109,
     "email": 0,
-    "emitidas": 4633,
-    "falhas": 2408
+    "emitidas": 5251,
+    "falhas": 5521
   }
 ],
   volumetriaTimeseries: [
-  {
-    "beginTimeSeconds": 1786563600,
-    "emitidas": 6629,
-    "endTimeSeconds": 1786567200,
-    "falhas": 2068
-  },
   {
     "beginTimeSeconds": 1786567200,
     "emitidas": 5982,
@@ -542,19 +536,25 @@ var monitoramentoNfeData = {
     "emitidas": 4899,
     "endTimeSeconds": 1786650000,
     "falhas": 2411
+  },
+  {
+    "beginTimeSeconds": 1786650000,
+    "emitidas": 5667,
+    "endTimeSeconds": 1786653600,
+    "falhas": 5523
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 9
+    "rodando": 1
   }
 ],
   webhooks: [
   {
-    "dead_letter": 2,
-    "falhas": 2,
-    "ok": 43373
+    "dead_letter": 0,
+    "falhas": 0,
+    "ok": 51595
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -579,74 +579,74 @@ var monitoramentoNfeData = {
   taxaRejeicaoMunicipio: [],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1786635660,
-    "endTimeSeconds": 1786636860,
+    "beginTimeSeconds": 1786639380,
+    "endTimeSeconds": 1786640580,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786636860,
-    "endTimeSeconds": 1786638060,
+    "beginTimeSeconds": 1786640580,
+    "endTimeSeconds": 1786641780,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786638060,
-    "endTimeSeconds": 1786639260,
+    "beginTimeSeconds": 1786641780,
+    "endTimeSeconds": 1786642980,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786639260,
-    "endTimeSeconds": 1786640460,
+    "beginTimeSeconds": 1786642980,
+    "endTimeSeconds": 1786644180,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786640460,
-    "endTimeSeconds": 1786641660,
+    "beginTimeSeconds": 1786644180,
+    "endTimeSeconds": 1786645380,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786641660,
-    "endTimeSeconds": 1786642860,
+    "beginTimeSeconds": 1786645380,
+    "endTimeSeconds": 1786646580,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786642860,
-    "endTimeSeconds": 1786644060,
+    "beginTimeSeconds": 1786646580,
+    "endTimeSeconds": 1786647780,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786644060,
-    "endTimeSeconds": 1786645260,
+    "beginTimeSeconds": 1786647780,
+    "endTimeSeconds": 1786648980,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786645260,
-    "endTimeSeconds": 1786646460,
+    "beginTimeSeconds": 1786648980,
+    "endTimeSeconds": 1786650180,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786646460,
-    "endTimeSeconds": 1786647660,
+    "beginTimeSeconds": 1786650180,
+    "endTimeSeconds": 1786651380,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786647660,
-    "endTimeSeconds": 1786648860,
+    "beginTimeSeconds": 1786651380,
+    "endTimeSeconds": 1786652580,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786648860,
-    "endTimeSeconds": 1786650060,
+    "beginTimeSeconds": 1786652580,
+    "endTimeSeconds": 1786653780,
     "rejeicao": null,
     "sucesso": null
   }
