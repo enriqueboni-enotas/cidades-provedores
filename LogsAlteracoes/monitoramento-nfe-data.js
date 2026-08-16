@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 16/08/2026 20:20 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 16/08/2026 20:53 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "16/08/2026 20:20",
+  geradoEm: "16/08/2026 20:53",
   travadasPorMunicipio: [
   {
     "facet": "Corbélia",
@@ -71,11 +71,6 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "São José do Rio Preto"
   },
   {
-    "facet": "São Paulo",
-    "max.nfe.processing_time.minutes": 7,
-    "nfe.municipio_servico": "São Paulo"
-  },
-  {
     "facet": "Brasília",
     "max.nfe.processing_time.minutes": 6,
     "nfe.municipio_servico": "Brasília"
@@ -86,31 +81,36 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Goiânia"
   },
   {
-    "facet": "Salvador",
-    "max.nfe.processing_time.minutes": 5,
-    "nfe.municipio_servico": "Salvador"
+    "facet": "São Paulo",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "São Paulo"
   },
   {
     "facet": "Biguaçu",
     "max.nfe.processing_time.minutes": 5,
     "nfe.municipio_servico": "Biguaçu"
+  },
+  {
+    "facet": "Uberaba",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Uberaba"
   }
 ],
   travadasPorMotivo: [
   {
     "facet": "",
-    "latest.nfe.stuck_in_intermediate_status.count": 2,
+    "latest.nfe.stuck_in_intermediate_status.count": 1,
     "nfe.motivo_status": ""
   }
 ],
   tempoPorStatus: [
   {
-    "average.nfe.processing_time.minutes": 0.6597884962599948,
+    "average.nfe.processing_time.minutes": 0.7006109979633401,
     "facet": "Negada",
     "nfe.status": "Negada"
   },
   {
-    "average.nfe.processing_time.minutes": 0.6267622180451128,
+    "average.nfe.processing_time.minutes": 0.6781766501737025,
     "facet": "Autorizada",
     "nfe.status": "Autorizada"
   },
@@ -127,7 +127,7 @@ var monitoramentoNfeData = {
       "EmProcessoDeAutorizacao"
     ],
     "max_min": 10,
-    "media_min": 0.6597884962599948,
+    "media_min": 0.7006109979633401,
     "p95_min": {
       "95": 5.03125
     }
@@ -138,7 +138,7 @@ var monitoramentoNfeData = {
       "AutorizadaAguardandoGeracaoPDF"
     ],
     "max_min": 31,
-    "media_min": 0.6267622180451128,
+    "media_min": 0.6781766501737025,
     "p95_min": {
       "95": 1.0078125
     }
@@ -157,8 +157,8 @@ var monitoramentoNfeData = {
 ],
   perfMunicipio: [
   {
-    "average.nfe.processing_time.minutes": 14.366336633663366,
-    "count.nfe.processing_time.minutes": 101,
+    "average.nfe.processing_time.minutes": 16.816666666666666,
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Caraguatatuba",
     "max.nfe.processing_time.minutes": 31,
     "nfe.municipio_servico": "Caraguatatuba",
@@ -167,8 +167,8 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 8.571428571428571,
-    "count.nfe.processing_time.minutes": 56,
+    "average.nfe.processing_time.minutes": 5.166666666666667,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Aracaju",
     "max.nfe.processing_time.minutes": 10,
     "nfe.municipio_servico": "Aracaju",
@@ -177,17 +177,7 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 6.0588235294117645,
-    "count.nfe.processing_time.minutes": 17,
-    "facet": "Mauá",
-    "max.nfe.processing_time.minutes": 8,
-    "nfe.municipio_servico": "Mauá",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 8
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 4.566666666666666,
+    "average.nfe.processing_time.minutes": 5,
     "count.nfe.processing_time.minutes": 60,
     "facet": "Biguaçu",
     "max.nfe.processing_time.minutes": 5,
@@ -197,8 +187,18 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 3.4954954954954953,
-    "count.nfe.processing_time.minutes": 111,
+    "average.nfe.processing_time.minutes": 4.421686746987952,
+    "count.nfe.processing_time.minutes": 83,
+    "facet": "Mauá",
+    "max.nfe.processing_time.minutes": 8,
+    "nfe.municipio_servico": "Mauá",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 8
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 4.241666666666666,
+    "count.nfe.processing_time.minutes": 120,
     "facet": "São José do Rio Preto",
     "max.nfe.processing_time.minutes": 8,
     "nfe.municipio_servico": "São José do Rio Preto",
@@ -207,17 +207,7 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2.933333333333333,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Marília",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Marília",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 2.5055555555555555,
+    "average.nfe.processing_time.minutes": 3.577777777777778,
     "count.nfe.processing_time.minutes": 180,
     "facet": "Taboão da Serra",
     "max.nfe.processing_time.minutes": 10,
@@ -227,13 +217,13 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 2,
+    "average.nfe.processing_time.minutes": 3,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "Itabaiana",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "Itabaiana",
+    "facet": "Marília",
+    "max.nfe.processing_time.minutes": 3,
+    "nfe.municipio_servico": "Marília",
     "percentile.nfe.processing_time.minutes": {
-      "95": 2
+      "95": 3
     }
   },
   {
@@ -247,23 +237,43 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 1.4083333333333334,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "São Paulo",
-    "max.nfe.processing_time.minutes": 7,
-    "nfe.municipio_servico": "São Paulo",
+    "average.nfe.processing_time.minutes": 1.6833333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Itabaiana",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Itabaiana",
     "percentile.nfe.processing_time.minutes": {
-      "95": 6.03125
+      "95": 2
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.6583333333333334,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Goiânia",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "Goiânia",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 6
     }
   },
   {
     "average.nfe.processing_time.minutes": 1.2,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Tapejara",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Tapejara",
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "São Paulo",
+    "max.nfe.processing_time.minutes": 6,
+    "nfe.municipio_servico": "São Paulo",
     "percentile.nfe.processing_time.minutes": {
-      "95": 3
+      "95": 6
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1.1333333333333333,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Eusébio",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Eusébio",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
     }
   },
   {
@@ -277,8 +287,38 @@ var monitoramentoNfeData = {
     }
   },
   {
+    "average.nfe.processing_time.minutes": 1.075,
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Maceió",
+    "max.nfe.processing_time.minutes": 2,
+    "nfe.municipio_servico": "Maceió",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 2
+    }
+  },
+  {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 16,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Ipirá",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Ipirá",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "São Vicente",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "São Vicente",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 49,
     "facet": "Caldas Novas",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Caldas Novas",
@@ -308,10 +348,30 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 26,
+    "count.nfe.processing_time.minutes": 19,
+    "facet": "Rio Bonito",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Rio Bonito",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 59,
     "facet": "Araçatuba",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Araçatuba",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 29,
+    "facet": "Teresópolis",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Teresópolis",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -328,20 +388,10 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Goiânia",
-    "max.nfe.processing_time.minutes": 6,
-    "nfe.municipio_servico": "Goiânia",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 5.03125
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Mateiros",
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Panambi",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Mateiros",
+    "nfe.municipio_servico": "Panambi",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -352,6 +402,16 @@ var monitoramentoNfeData = {
     "facet": "Registro",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Registro",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 19,
+    "facet": "Socorro",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Socorro",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -398,7 +458,17 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 16,
+    "count.nfe.processing_time.minutes": 9,
+    "facet": "Alfredo Chaves",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Alfredo Chaves",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 49,
     "facet": "Pontes e Lacerda",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Pontes e Lacerda",
@@ -408,7 +478,17 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 46,
+    "count.nfe.processing_time.minutes": 29,
+    "facet": "Santo Antônio da Patrulha",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Santo Antônio da Patrulha",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Rio das Ostras",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Rio das Ostras",
@@ -419,16 +499,6 @@ var monitoramentoNfeData = {
   {
     "average.nfe.processing_time.minutes": 1,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "Bauru",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Bauru",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 51,
     "facet": "Timbó",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Timbó",
@@ -438,27 +508,17 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Rio Doce",
+    "count.nfe.processing_time.minutes": 19,
+    "facet": "Itabuna",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Rio Doce",
+    "nfe.municipio_servico": "Itabuna",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Maceió",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Maceió",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 21,
+    "count.nfe.processing_time.minutes": 54,
     "facet": "Lagoa Santa",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Lagoa Santa",
@@ -468,7 +528,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 56,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Cataguases",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Cataguases",
@@ -478,7 +538,17 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 60,
+    "facet": "Franca",
+    "max.nfe.processing_time.minutes": 1,
+    "nfe.municipio_servico": "Franca",
+    "percentile.nfe.processing_time.minutes": {
+      "95": 1
+    }
+  },
+  {
+    "average.nfe.processing_time.minutes": 1,
+    "count.nfe.processing_time.minutes": 34,
     "facet": "Piraju",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Piraju",
@@ -508,7 +578,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 56,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Assis Chateaubriand",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Assis Chateaubriand",
@@ -528,7 +598,7 @@ var monitoramentoNfeData = {
   },
   {
     "average.nfe.processing_time.minutes": 1,
-    "count.nfe.processing_time.minutes": 56,
+    "count.nfe.processing_time.minutes": 60,
     "facet": "Santa Rita do Sapucaí",
     "max.nfe.processing_time.minutes": 1,
     "nfe.municipio_servico": "Santa Rita do Sapucaí",
@@ -547,27 +617,7 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 0.9375,
-    "count.nfe.processing_time.minutes": 16,
-    "facet": "Içara",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Içara",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.9333333333333333,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Panambi",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Panambi",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.9166666666666666,
+    "average.nfe.processing_time.minutes": 0.95,
     "count.nfe.processing_time.minutes": 120,
     "facet": "Lauro de Freitas",
     "max.nfe.processing_time.minutes": 1,
@@ -577,81 +627,31 @@ var monitoramentoNfeData = {
     }
   },
   {
-    "average.nfe.processing_time.minutes": 0.85,
+    "average.nfe.processing_time.minutes": 0.9166666666666666,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "São Vicente",
+    "facet": "Niterói",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "São Vicente",
+    "nfe.municipio_servico": "Niterói",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
   },
   {
-    "average.nfe.processing_time.minutes": 0.85,
+    "average.nfe.processing_time.minutes": 0.9,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "Suzano",
+    "facet": "Indaiatuba",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Suzano",
+    "nfe.municipio_servico": "Indaiatuba",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
   },
   {
-    "average.nfe.processing_time.minutes": 0.8333333333333334,
+    "average.nfe.processing_time.minutes": 0.9,
     "count.nfe.processing_time.minutes": 60,
-    "facet": "São Luís",
+    "facet": "Vitória da Conquista",
     "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "São Luís",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.8333333333333334,
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Vitória",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Vitória",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.8166666666666667,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "São Caetano do Sul",
-    "max.nfe.processing_time.minutes": 2,
-    "nfe.municipio_servico": "São Caetano do Sul",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 2
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.8166666666666667,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Uberaba",
-    "max.nfe.processing_time.minutes": 3,
-    "nfe.municipio_servico": "Uberaba",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 3
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.803921568627451,
-    "count.nfe.processing_time.minutes": 51,
-    "facet": "Franca",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Franca",
-    "percentile.nfe.processing_time.minutes": {
-      "95": 1
-    }
-  },
-  {
-    "average.nfe.processing_time.minutes": 0.75,
-    "count.nfe.processing_time.minutes": 60,
-    "facet": "Contagem",
-    "max.nfe.processing_time.minutes": 1,
-    "nfe.municipio_servico": "Contagem",
+    "nfe.municipio_servico": "Vitória da Conquista",
     "percentile.nfe.processing_time.minutes": {
       "95": 1
     }
@@ -701,13 +701,13 @@ var monitoramentoNfeData = {
 ],
   statsGlobais: [
   {
-    "average.nfe.processing_time.minutes": 0.6355072463768116,
+    "average.nfe.processing_time.minutes": 0.6823579911289168,
     "max.nfe.processing_time.minutes": 31,
     "percentile.nfe.processing_time.minutes": {
       "50": 0,
       "90": 1.0078125,
       "95": 2.015625,
-      "99": 8.0625
+      "99": 9.0625
     }
   }
 ],
@@ -718,12 +718,12 @@ var monitoramentoNfeData = {
 ],
   totalMunicipios: [
   {
-    "uniqueCount.nfe.municipio_servico": 180
+    "uniqueCount.nfe.municipio_servico": 191
   }
 ],
   volumeMunicipio: [
   {
-    "count.nfe.processing_time.minutes": 221,
+    "count.nfe.processing_time.minutes": 240,
     "facet": "Barueri",
     "nfe.municipio_servico": "Barueri"
   },
@@ -733,7 +733,7 @@ var monitoramentoNfeData = {
     "nfe.municipio_servico": "Taboão da Serra"
   },
   {
-    "count.nfe.processing_time.minutes": 151,
+    "count.nfe.processing_time.minutes": 180,
     "facet": "Florianópolis",
     "nfe.municipio_servico": "Florianópolis"
   },
@@ -749,8 +749,23 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Belo Horizonte",
+    "nfe.municipio_servico": "Belo Horizonte"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Pelotas",
+    "nfe.municipio_servico": "Pelotas"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Nova Lima",
     "nfe.municipio_servico": "Nova Lima"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Londrina",
+    "nfe.municipio_servico": "Londrina"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -764,6 +779,11 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Botucatu",
+    "nfe.municipio_servico": "Botucatu"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "Curitiba",
     "nfe.municipio_servico": "Curitiba"
   },
@@ -771,6 +791,11 @@ var monitoramentoNfeData = {
     "count.nfe.processing_time.minutes": 120,
     "facet": "São José dos Campos",
     "nfe.municipio_servico": "São José dos Campos"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Caraguatatuba",
+    "nfe.municipio_servico": "Caraguatatuba"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -794,13 +819,33 @@ var monitoramentoNfeData = {
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Cascavel",
+    "nfe.municipio_servico": "Cascavel"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "São Paulo",
     "nfe.municipio_servico": "São Paulo"
   },
   {
     "count.nfe.processing_time.minutes": 120,
+    "facet": "Guarapuava",
+    "nfe.municipio_servico": "Guarapuava"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "São José do Rio Preto",
+    "nfe.municipio_servico": "São José do Rio Preto"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
     "facet": "São Carlos",
     "nfe.municipio_servico": "São Carlos"
+  },
+  {
+    "count.nfe.processing_time.minutes": 120,
+    "facet": "Belém",
+    "nfe.municipio_servico": "Belém"
   },
   {
     "count.nfe.processing_time.minutes": 120,
@@ -826,51 +871,6 @@ var monitoramentoNfeData = {
     "count.nfe.processing_time.minutes": 120,
     "facet": "Taubaté",
     "nfe.municipio_servico": "Taubaté"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Lauro de Freitas",
-    "nfe.municipio_servico": "Lauro de Freitas"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Videira",
-    "nfe.municipio_servico": "Videira"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Joinville",
-    "nfe.municipio_servico": "Joinville"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "São José",
-    "nfe.municipio_servico": "São José"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Salvador",
-    "nfe.municipio_servico": "Salvador"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Santana de Parnaíba",
-    "nfe.municipio_servico": "Santana de Parnaíba"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Cuiabá",
-    "nfe.municipio_servico": "Cuiabá"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Maceió",
-    "nfe.municipio_servico": "Maceió"
-  },
-  {
-    "count.nfe.processing_time.minutes": 120,
-    "facet": "Guanambi",
-    "nfe.municipio_servico": "Guanambi"
   }
 ],
   municipioStatus: [
@@ -1086,171 +1086,171 @@ var monitoramentoNfeData = {
 ],
   volumetriaHora: [
   {
-    "canceladas": 0,
+    "canceladas": 1,
     "devolucoes": 0,
-    "em_emissao": 288,
+    "em_emissao": 172,
     "email": 0,
-    "emitidas": 3463,
-    "falhas": 549
+    "emitidas": 3733,
+    "falhas": 545
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1786835700,
-    "emitidas": 2928,
-    "endTimeSeconds": 1786839300,
-    "falhas": 354
+    "beginTimeSeconds": 1786837800,
+    "emitidas": 5734,
+    "endTimeSeconds": 1786841400,
+    "falhas": 394
   },
   {
-    "beginTimeSeconds": 1786839300,
-    "emitidas": 8716,
-    "endTimeSeconds": 1786842900,
-    "falhas": 360
+    "beginTimeSeconds": 1786841400,
+    "emitidas": 6234,
+    "endTimeSeconds": 1786845000,
+    "falhas": 862
   },
   {
-    "beginTimeSeconds": 1786842900,
-    "emitidas": 3471,
-    "endTimeSeconds": 1786846500,
-    "falhas": 1066
-  },
-  {
-    "beginTimeSeconds": 1786846500,
-    "emitidas": 1882,
-    "endTimeSeconds": 1786850100,
-    "falhas": 166
-  },
-  {
-    "beginTimeSeconds": 1786850100,
-    "emitidas": 6774,
-    "endTimeSeconds": 1786853700,
-    "falhas": 1825
-  },
-  {
-    "beginTimeSeconds": 1786853700,
-    "emitidas": 511,
-    "endTimeSeconds": 1786857300,
-    "falhas": 120
-  },
-  {
-    "beginTimeSeconds": 1786857300,
-    "emitidas": 1039,
-    "endTimeSeconds": 1786860900,
-    "falhas": 87
-  },
-  {
-    "beginTimeSeconds": 1786860900,
-    "emitidas": 701,
-    "endTimeSeconds": 1786864500,
-    "falhas": 73
-  },
-  {
-    "beginTimeSeconds": 1786864500,
-    "emitidas": 654,
-    "endTimeSeconds": 1786868100,
-    "falhas": 67
-  },
-  {
-    "beginTimeSeconds": 1786868100,
-    "emitidas": 1090,
-    "endTimeSeconds": 1786871700,
-    "falhas": 108
-  },
-  {
-    "beginTimeSeconds": 1786871700,
-    "emitidas": 1343,
-    "endTimeSeconds": 1786875300,
-    "falhas": 195
-  },
-  {
-    "beginTimeSeconds": 1786875300,
-    "emitidas": 1877,
-    "endTimeSeconds": 1786878900,
-    "falhas": 301
-  },
-  {
-    "beginTimeSeconds": 1786878900,
-    "emitidas": 4001,
-    "endTimeSeconds": 1786882500,
+    "beginTimeSeconds": 1786845000,
+    "emitidas": 2054,
+    "endTimeSeconds": 1786848600,
     "falhas": 465
   },
   {
-    "beginTimeSeconds": 1786882500,
-    "emitidas": 5053,
-    "endTimeSeconds": 1786886100,
-    "falhas": 806
+    "beginTimeSeconds": 1786848600,
+    "emitidas": 1658,
+    "endTimeSeconds": 1786852200,
+    "falhas": 77
   },
   {
-    "beginTimeSeconds": 1786886100,
-    "emitidas": 7830,
-    "endTimeSeconds": 1786889700,
-    "falhas": 886
+    "beginTimeSeconds": 1786852200,
+    "emitidas": 6681,
+    "endTimeSeconds": 1786855800,
+    "falhas": 1894
   },
   {
-    "beginTimeSeconds": 1786889700,
-    "emitidas": 5829,
-    "endTimeSeconds": 1786893300,
-    "falhas": 402
+    "beginTimeSeconds": 1786855800,
+    "emitidas": 923,
+    "endTimeSeconds": 1786859400,
+    "falhas": 95
   },
   {
-    "beginTimeSeconds": 1786893300,
-    "emitidas": 4935,
-    "endTimeSeconds": 1786896900,
+    "beginTimeSeconds": 1786859400,
+    "emitidas": 724,
+    "endTimeSeconds": 1786863000,
+    "falhas": 72
+  },
+  {
+    "beginTimeSeconds": 1786863000,
+    "emitidas": 648,
+    "endTimeSeconds": 1786866600,
+    "falhas": 55
+  },
+  {
+    "beginTimeSeconds": 1786866600,
+    "emitidas": 936,
+    "endTimeSeconds": 1786870200,
+    "falhas": 89
+  },
+  {
+    "beginTimeSeconds": 1786870200,
+    "emitidas": 1056,
+    "endTimeSeconds": 1786873800,
+    "falhas": 114
+  },
+  {
+    "beginTimeSeconds": 1786873800,
+    "emitidas": 1452,
+    "endTimeSeconds": 1786877400,
+    "falhas": 271
+  },
+  {
+    "beginTimeSeconds": 1786877400,
+    "emitidas": 2952,
+    "endTimeSeconds": 1786881000,
+    "falhas": 323
+  },
+  {
+    "beginTimeSeconds": 1786881000,
+    "emitidas": 4842,
+    "endTimeSeconds": 1786884600,
+    "falhas": 734
+  },
+  {
+    "beginTimeSeconds": 1786884600,
+    "emitidas": 7587,
+    "endTimeSeconds": 1786888200,
+    "falhas": 922
+  },
+  {
+    "beginTimeSeconds": 1786888200,
+    "emitidas": 6676,
+    "endTimeSeconds": 1786891800,
+    "falhas": 598
+  },
+  {
+    "beginTimeSeconds": 1786891800,
+    "emitidas": 5058,
+    "endTimeSeconds": 1786895400,
+    "falhas": 350
+  },
+  {
+    "beginTimeSeconds": 1786895400,
+    "emitidas": 3345,
+    "endTimeSeconds": 1786899000,
+    "falhas": 263
+  },
+  {
+    "beginTimeSeconds": 1786899000,
+    "emitidas": 4602,
+    "endTimeSeconds": 1786902600,
+    "falhas": 335
+  },
+  {
+    "beginTimeSeconds": 1786902600,
+    "emitidas": 3676,
+    "endTimeSeconds": 1786906200,
+    "falhas": 316
+  },
+  {
+    "beginTimeSeconds": 1786906200,
+    "emitidas": 3849,
+    "endTimeSeconds": 1786909800,
+    "falhas": 351
+  },
+  {
+    "beginTimeSeconds": 1786909800,
+    "emitidas": 1836,
+    "endTimeSeconds": 1786913400,
     "falhas": 331
   },
   {
-    "beginTimeSeconds": 1786896900,
-    "emitidas": 4731,
-    "endTimeSeconds": 1786900500,
-    "falhas": 294
+    "beginTimeSeconds": 1786913400,
+    "emitidas": 3633,
+    "endTimeSeconds": 1786917000,
+    "falhas": 341
   },
   {
-    "beginTimeSeconds": 1786900500,
-    "emitidas": 2435,
-    "endTimeSeconds": 1786904100,
-    "falhas": 315
+    "beginTimeSeconds": 1786917000,
+    "emitidas": 4363,
+    "endTimeSeconds": 1786920600,
+    "falhas": 579
   },
   {
-    "beginTimeSeconds": 1786904100,
-    "emitidas": 3619,
-    "endTimeSeconds": 1786907700,
-    "falhas": 318
-  },
-  {
-    "beginTimeSeconds": 1786907700,
-    "emitidas": 3818,
-    "endTimeSeconds": 1786911300,
-    "falhas": 337
-  },
-  {
-    "beginTimeSeconds": 1786911300,
-    "emitidas": 3581,
-    "endTimeSeconds": 1786914900,
-    "falhas": 402
-  },
-  {
-    "beginTimeSeconds": 1786914900,
-    "emitidas": 2619,
-    "endTimeSeconds": 1786918500,
-    "falhas": 478
-  },
-  {
-    "beginTimeSeconds": 1786918500,
-    "emitidas": 3805,
-    "endTimeSeconds": 1786922100,
-    "falhas": 555
+    "beginTimeSeconds": 1786920600,
+    "emitidas": 3674,
+    "endTimeSeconds": 1786924200,
+    "falhas": 570
   }
 ],
   filaOperacoes: [
   {
     "pendentes": 0,
-    "rodando": 2
+    "rodando": 1
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
     "falhas": 0,
-    "ok": 26275
+    "ok": 27976
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -1261,14 +1261,14 @@ var monitoramentoNfeData = {
 ],
   taxaNfse: [
   {
-    "rejeicao": 55.106488360574545,
-    "sucesso": 44.893511639425455
+    "rejeicao": 55.976264481491945,
+    "sucesso": 44.023735518508055
   }
 ],
   taxaNfe: [
   {
-    "rejeicao": 97.36059479553903,
-    "sucesso": 2.6394052044609664
+    "rejeicao": 97.44847890088322,
+    "sucesso": 2.551521099116781
   }
 ],
   taxaSucessoMunicipio: [
@@ -1289,8 +1289,8 @@ var monitoramentoNfeData = {
   {
     "facet": "Teresina",
     "municipio.nome": "Teresina",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 100,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
@@ -1304,13 +1304,6 @@ var monitoramentoNfeData = {
     "facet": "Poços de Caldas",
     "municipio.nome": "Poços de Caldas",
     "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Engenheiro Coelho",
-    "municipio.nome": "Engenheiro Coelho",
-    "rejeitadas": 1,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -1371,6 +1364,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Guaratuba",
+    "municipio.nome": "Guaratuba",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Siqueira Campos",
     "municipio.nome": "Siqueira Campos",
     "rejeitadas": 0,
@@ -1399,10 +1399,10 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Juiz de Fora",
-    "municipio.nome": "Juiz de Fora",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 0,
+    "facet": "Pelotas",
+    "municipio.nome": "Pelotas",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1434,10 +1434,17 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Cravinhos",
+    "municipio.nome": "Cravinhos",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Boituva",
     "municipio.nome": "Boituva",
     "rejeitadas": 1,
-    "taxa_rejeicao": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1451,7 +1458,7 @@ var monitoramentoNfeData = {
     "facet": "Londrina",
     "municipio.nome": "Londrina",
     "rejeitadas": 1,
-    "taxa_rejeicao": 100,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
@@ -1504,6 +1511,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Rio Bonito",
+    "municipio.nome": "Rio Bonito",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Matias Barbosa",
     "municipio.nome": "Matias Barbosa",
     "rejeitadas": 0,
@@ -1527,8 +1541,8 @@ var monitoramentoNfeData = {
   {
     "facet": "Itu",
     "municipio.nome": "Itu",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 0,
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1536,6 +1550,13 @@ var monitoramentoNfeData = {
     "municipio.nome": "Sumaré",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Santa Maria",
+    "municipio.nome": "Santa Maria",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1555,6 +1576,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Camaquã",
     "municipio.nome": "Camaquã",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Teresópolis",
+    "municipio.nome": "Teresópolis",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -1597,8 +1625,8 @@ var monitoramentoNfeData = {
   {
     "facet": "Caraguatatuba",
     "municipio.nome": "Caraguatatuba",
-    "rejeitadas": 4,
-    "taxa_rejeicao": 0,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1611,7 +1639,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Serra",
     "municipio.nome": "Serra",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
@@ -1682,7 +1710,7 @@ var monitoramentoNfeData = {
     "facet": "Aracaju",
     "municipio.nome": "Aracaju",
     "rejeitadas": 0,
-    "taxa_rejeicao": 100,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
@@ -1702,15 +1730,8 @@ var monitoramentoNfeData = {
   {
     "facet": "João Pessoa",
     "municipio.nome": "João Pessoa",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Registro",
-    "municipio.nome": "Registro",
     "rejeitadas": 1,
-    "taxa_rejeicao": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -1723,6 +1744,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Canoas",
     "municipio.nome": "Canoas",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Socorro",
+    "municipio.nome": "Socorro",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -1766,7 +1794,7 @@ var monitoramentoNfeData = {
     "facet": "Guarapuava",
     "municipio.nome": "Guarapuava",
     "rejeitadas": 1,
-    "taxa_rejeicao": 100,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
@@ -1798,16 +1826,30 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "São José do Rio Preto",
+    "municipio.nome": "São José do Rio Preto",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "São Carlos",
     "municipio.nome": "São Carlos",
     "rejeitadas": 0,
-    "taxa_rejeicao": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
     "facet": "Juquitiba",
     "municipio.nome": "Juquitiba",
     "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Santa Teresa",
+    "municipio.nome": "Santa Teresa",
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -1861,6 +1903,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Florianópolis",
+    "municipio.nome": "Florianópolis",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Itapetininga",
     "municipio.nome": "Itapetininga",
     "rejeitadas": 0,
@@ -1875,13 +1924,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "São Caetano do Sul",
-    "municipio.nome": "São Caetano do Sul",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Governador Valadares",
     "municipio.nome": "Governador Valadares",
     "rejeitadas": 0,
@@ -1891,6 +1933,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Itumbiara",
     "municipio.nome": "Itumbiara",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Alfredo Chaves",
+    "municipio.nome": "Alfredo Chaves",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -1920,13 +1969,6 @@ var monitoramentoNfeData = {
     "facet": "Parnamirim",
     "municipio.nome": "Parnamirim",
     "rejeitadas": 0,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Taubaté",
-    "municipio.nome": "Taubaté",
-    "rejeitadas": 8,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
@@ -1980,6 +2022,27 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Santo Antônio da Patrulha",
+    "municipio.nome": "Santo Antônio da Patrulha",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Fortaleza",
+    "municipio.nome": "Fortaleza",
+    "rejeitadas": 2,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Lauro de Freitas",
+    "municipio.nome": "Lauro de Freitas",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Rio das Ostras",
     "municipio.nome": "Rio das Ostras",
     "rejeitadas": 0,
@@ -1996,7 +2059,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Videira",
     "municipio.nome": "Videira",
-    "rejeitadas": 0,
+    "rejeitadas": 3,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
@@ -2004,6 +2067,13 @@ var monitoramentoNfeData = {
     "facet": "Osasco",
     "municipio.nome": "Osasco",
     "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Uberaba",
+    "municipio.nome": "Uberaba",
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -2036,10 +2106,24 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Araranguá",
+    "municipio.nome": "Araranguá",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Rio Claro",
     "municipio.nome": "Rio Claro",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Santana de Parnaíba",
+    "municipio.nome": "Santana de Parnaíba",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
@@ -2085,13 +2169,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Maceió",
-    "municipio.nome": "Maceió",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Lagoa Santa",
     "municipio.nome": "Lagoa Santa",
     "rejeitadas": 0,
@@ -2113,17 +2190,17 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Pindamonhangaba",
-    "municipio.nome": "Pindamonhangaba",
-    "rejeitadas": 0,
+    "facet": "Americana",
+    "municipio.nome": "Americana",
+    "rejeitadas": 3,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Americana",
-    "municipio.nome": "Americana",
+    "facet": "Pindamonhangaba",
+    "municipio.nome": "Pindamonhangaba",
     "rejeitadas": 0,
-    "taxa_rejeicao": 100,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
@@ -2158,6 +2235,20 @@ var monitoramentoNfeData = {
     "facet": "Campinas",
     "municipio.nome": "Campinas",
     "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Guanambi",
+    "municipio.nome": "Guanambi",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Caruaru",
+    "municipio.nome": "Caruaru",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
@@ -2186,13 +2277,6 @@ var monitoramentoNfeData = {
     "facet": "Franca",
     "municipio.nome": "Franca",
     "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Recife",
-    "municipio.nome": "Recife",
-    "rejeitadas": 25,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -2281,15 +2365,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Resende",
-    "municipio.nome": "Resende",
+    "facet": "Santa Rita do Sapucaí",
+    "municipio.nome": "Santa Rita do Sapucaí",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Santa Rita do Sapucaí",
-    "municipio.nome": "Santa Rita do Sapucaí",
+    "facet": "Resende",
+    "municipio.nome": "Resende",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -2311,7 +2395,7 @@ var monitoramentoNfeData = {
   {
     "facet": "",
     "municipio.nome": "",
-    "rejeitadas": 14,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2325,8 +2409,8 @@ var monitoramentoNfeData = {
   {
     "facet": "Francisco Beltrão",
     "municipio.nome": "Francisco Beltrão",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 100,
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
@@ -2344,16 +2428,23 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
+    "facet": "Engenheiro Coelho",
+    "municipio.nome": "Engenheiro Coelho",
+    "rejeitadas": 4,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
+  },
+  {
     "facet": "Taboão da Serra",
     "municipio.nome": "Taboão da Serra",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "São Bernardo do Campo",
     "municipio.nome": "São Bernardo do Campo",
-    "rejeitadas": 6,
+    "rejeitadas": 7,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2367,21 +2458,21 @@ var monitoramentoNfeData = {
   {
     "facet": "Tapejara",
     "municipio.nome": "Tapejara",
-    "rejeitadas": 8,
+    "rejeitadas": 6,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "São Vicente",
     "municipio.nome": "São Vicente",
-    "rejeitadas": 1,
+    "rejeitadas": 4,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Belo Horizonte",
     "municipio.nome": "Belo Horizonte",
-    "rejeitadas": 1,
+    "rejeitadas": 0,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2402,28 +2493,21 @@ var monitoramentoNfeData = {
   {
     "facet": "Alegre",
     "municipio.nome": "Alegre",
-    "rejeitadas": 2,
+    "rejeitadas": 4,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
-    "facet": "Pelotas",
-    "municipio.nome": "Pelotas",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Cravinhos",
-    "municipio.nome": "Cravinhos",
+    "facet": "Juiz de Fora",
+    "municipio.nome": "Juiz de Fora",
     "rejeitadas": 1,
-    "taxa_rejeicao": 100,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
     "facet": "Nova Lima",
     "municipio.nome": "Nova Lima",
-    "rejeitadas": 7,
+    "rejeitadas": 10,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2437,7 +2521,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Nova Mutum",
     "municipio.nome": "Nova Mutum",
-    "rejeitadas": 2,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2451,28 +2535,35 @@ var monitoramentoNfeData = {
   {
     "facet": "Duque de Caxias",
     "municipio.nome": "Duque de Caxias",
-    "rejeitadas": 0,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
     "facet": "Barueri",
     "municipio.nome": "Barueri",
-    "rejeitadas": 27,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Rio de Janeiro",
     "municipio.nome": "Rio de Janeiro",
-    "rejeitadas": 4,
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "São Pedro",
+    "municipio.nome": "São Pedro",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Sapiranga",
     "municipio.nome": "Sapiranga",
-    "rejeitadas": 4,
+    "rejeitadas": 8,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2500,20 +2591,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Tacaratu",
     "municipio.nome": "Tacaratu",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Jaú",
     "municipio.nome": "Jaú",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Santa Maria",
-    "municipio.nome": "Santa Maria",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
@@ -2521,8 +2605,8 @@ var monitoramentoNfeData = {
   {
     "facet": "Curitiba",
     "municipio.nome": "Curitiba",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 100,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
@@ -2535,7 +2619,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Natal",
     "municipio.nome": "Natal",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2543,6 +2627,13 @@ var monitoramentoNfeData = {
     "facet": "Serra Negra",
     "municipio.nome": "Serra Negra",
     "rejeitadas": 3,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Porto Seguro",
+    "municipio.nome": "Porto Seguro",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2564,7 +2655,7 @@ var monitoramentoNfeData = {
     "facet": "Goiânia",
     "municipio.nome": "Goiânia",
     "rejeitadas": 5,
-    "taxa_rejeicao": 0,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
@@ -2584,7 +2675,7 @@ var monitoramentoNfeData = {
   {
     "facet": "São Pedro da Aldeia",
     "municipio.nome": "São Pedro da Aldeia",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2627,13 +2718,20 @@ var monitoramentoNfeData = {
     "facet": "Cascavel",
     "municipio.nome": "Cascavel",
     "rejeitadas": 1,
-    "taxa_rejeicao": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Registro",
+    "municipio.nome": "Registro",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Paranavaí",
     "municipio.nome": "Paranavaí",
-    "rejeitadas": 2,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2652,13 +2750,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "São José do Rio Preto",
-    "municipio.nome": "São José do Rio Preto",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
     "facet": "Petrolina",
     "municipio.nome": "Petrolina",
     "rejeitadas": 1,
@@ -2668,28 +2759,21 @@ var monitoramentoNfeData = {
   {
     "facet": "Blumenau",
     "municipio.nome": "Blumenau",
-    "rejeitadas": 7,
-    "taxa_rejeicao": 0,
+    "rejeitadas": 8,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Belém",
     "municipio.nome": "Belém",
     "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Santa Teresa",
-    "municipio.nome": "Santa Teresa",
-    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
-    "facet": "Florianópolis",
-    "municipio.nome": "Florianópolis",
-    "rejeitadas": 0,
+    "facet": "São Caetano do Sul",
+    "municipio.nome": "São Caetano do Sul",
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2703,7 +2787,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Uberlândia",
     "municipio.nome": "Uberlândia",
-    "rejeitadas": 4,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2724,7 +2808,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Porto Alegre",
     "municipio.nome": "Porto Alegre",
-    "rejeitadas": 1,
+    "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -2738,7 +2822,14 @@ var monitoramentoNfeData = {
   {
     "facet": "Presidente Prudente",
     "municipio.nome": "Presidente Prudente",
-    "rejeitadas": 2,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Taubaté",
+    "municipio.nome": "Taubaté",
+    "rejeitadas": 9,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -2752,7 +2843,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Ourinhos",
     "municipio.nome": "Ourinhos",
-    "rejeitadas": 10,
+    "rejeitadas": 11,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2771,23 +2862,9 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Fortaleza",
-    "municipio.nome": "Fortaleza",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Lauro de Freitas",
-    "municipio.nome": "Lauro de Freitas",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
     "facet": "Bauru",
     "municipio.nome": "Bauru",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2796,13 +2873,6 @@ var monitoramentoNfeData = {
     "municipio.nome": "Joinville",
     "rejeitadas": 0,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Uberaba",
-    "municipio.nome": "Uberaba",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
@@ -2829,20 +2899,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Feira de Santana",
     "municipio.nome": "Feira de Santana",
-    "rejeitadas": 0,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
     "facet": "Salvador",
     "municipio.nome": "Salvador",
-    "rejeitadas": 18,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Araranguá",
-    "municipio.nome": "Araranguá",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
@@ -2850,35 +2913,35 @@ var monitoramentoNfeData = {
   {
     "facet": "Correntina",
     "municipio.nome": "Correntina",
-    "rejeitadas": 3,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Santana de Parnaíba",
-    "municipio.nome": "Santana de Parnaíba",
-    "rejeitadas": 0,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "São Joaquim da Barra",
     "municipio.nome": "São Joaquim da Barra",
-    "rejeitadas": 2,
+    "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
     "facet": "Cuiabá",
     "municipio.nome": "Cuiabá",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Itabuna",
+    "municipio.nome": "Itabuna",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Rio Doce",
     "municipio.nome": "Rio Doce",
-    "rejeitadas": 5,
+    "rejeitadas": 6,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2890,9 +2953,16 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Guanambi",
-    "municipio.nome": "Guanambi",
+    "facet": "Maceió",
+    "municipio.nome": "Maceió",
     "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Umuarama",
+    "municipio.nome": "Umuarama",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2904,10 +2974,10 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Caruaru",
-    "municipio.nome": "Caruaru",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
+    "facet": "Recife",
+    "municipio.nome": "Recife",
+    "rejeitadas": 6,
+    "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
@@ -2934,7 +3004,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Piracicaba",
     "municipio.nome": "Piracicaba",
-    "rejeitadas": 7,
+    "rejeitadas": 10,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -2964,20 +3034,13 @@ var monitoramentoNfeData = {
   {
     "facet": "",
     "municipio.nome": "",
-    "rejeitadas": 14,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Andradina",
     "municipio.nome": "Andradina",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Francisco Beltrão",
-    "municipio.nome": "Francisco Beltrão",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
@@ -2990,13 +3053,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Teresina",
-    "municipio.nome": "Teresina",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Dois Irmãos",
     "municipio.nome": "Dois Irmãos",
     "rejeitadas": 1,
@@ -3006,14 +3062,14 @@ var monitoramentoNfeData = {
   {
     "facet": "Taboão da Serra",
     "municipio.nome": "Taboão da Serra",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "São Bernardo do Campo",
     "municipio.nome": "São Bernardo do Campo",
-    "rejeitadas": 6,
+    "rejeitadas": 7,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3027,21 +3083,21 @@ var monitoramentoNfeData = {
   {
     "facet": "Tapejara",
     "municipio.nome": "Tapejara",
-    "rejeitadas": 8,
+    "rejeitadas": 6,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "São Vicente",
     "municipio.nome": "São Vicente",
-    "rejeitadas": 1,
+    "rejeitadas": 4,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Belo Horizonte",
     "municipio.nome": "Belo Horizonte",
-    "rejeitadas": 1,
+    "rejeitadas": 0,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3062,7 +3118,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Alegre",
     "municipio.nome": "Alegre",
-    "rejeitadas": 2,
+    "rejeitadas": 4,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3071,19 +3127,26 @@ var monitoramentoNfeData = {
     "municipio.nome": "Pelotas",
     "rejeitadas": 0,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Cravinhos",
     "municipio.nome": "Cravinhos",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Boituva",
+    "municipio.nome": "Boituva",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
   },
   {
     "facet": "Nova Lima",
     "municipio.nome": "Nova Lima",
-    "rejeitadas": 7,
+    "rejeitadas": 10,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3097,16 +3160,9 @@ var monitoramentoNfeData = {
   {
     "facet": "Nova Mutum",
     "municipio.nome": "Nova Mutum",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Londrina",
-    "municipio.nome": "Londrina",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
+    "taxa_sucesso": 0
   },
   {
     "facet": "Dois Vizinhos",
@@ -3118,21 +3174,28 @@ var monitoramentoNfeData = {
   {
     "facet": "Barueri",
     "municipio.nome": "Barueri",
-    "rejeitadas": 27,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Rio de Janeiro",
     "municipio.nome": "Rio de Janeiro",
-    "rejeitadas": 4,
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "São Pedro",
+    "municipio.nome": "São Pedro",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Sapiranga",
     "municipio.nome": "Sapiranga",
-    "rejeitadas": 4,
+    "rejeitadas": 8,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3153,35 +3216,35 @@ var monitoramentoNfeData = {
   {
     "facet": "Tacaratu",
     "municipio.nome": "Tacaratu",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Jaú",
     "municipio.nome": "Jaú",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Santa Maria",
-    "municipio.nome": "Santa Maria",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
-    "facet": "Curitiba",
-    "municipio.nome": "Curitiba",
+    "facet": "Itu",
+    "municipio.nome": "Itu",
     "rejeitadas": 0,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Santa Maria",
+    "municipio.nome": "Santa Maria",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
   },
   {
     "facet": "Natal",
     "municipio.nome": "Natal",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3200,6 +3263,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Porto Seguro",
+    "municipio.nome": "Porto Seguro",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
     "facet": "Conselheiro Lafaiete",
     "municipio.nome": "Conselheiro Lafaiete",
     "rejeitadas": 1,
@@ -3207,9 +3277,16 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
+    "facet": "Caraguatatuba",
+    "municipio.nome": "Caraguatatuba",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Serra",
     "municipio.nome": "Serra",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
@@ -3217,6 +3294,13 @@ var monitoramentoNfeData = {
     "facet": "Biguaçu",
     "municipio.nome": "Biguaçu",
     "rejeitadas": 2,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Goiânia",
+    "municipio.nome": "Goiânia",
+    "rejeitadas": 5,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3230,7 +3314,7 @@ var monitoramentoNfeData = {
   {
     "facet": "São Pedro da Aldeia",
     "municipio.nome": "São Pedro da Aldeia",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3263,13 +3347,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Aracaju",
-    "municipio.nome": "Aracaju",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Ribeirão Preto",
     "municipio.nome": "Ribeirão Preto",
     "rejeitadas": 0,
@@ -3284,9 +3361,30 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
+    "facet": "João Pessoa",
+    "municipio.nome": "João Pessoa",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Cascavel",
+    "municipio.nome": "Cascavel",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Registro",
+    "municipio.nome": "Registro",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
     "facet": "Paranavaí",
     "municipio.nome": "Paranavaí",
-    "rejeitadas": 2,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3305,13 +3403,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Guarapuava",
-    "municipio.nome": "Guarapuava",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Petrolina",
     "municipio.nome": "Petrolina",
     "rejeitadas": 1,
@@ -3319,9 +3410,23 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
-    "facet": "Santa Teresa",
-    "municipio.nome": "Santa Teresa",
-    "rejeitadas": 1,
+    "facet": "São Carlos",
+    "municipio.nome": "São Carlos",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Blumenau",
+    "municipio.nome": "Blumenau",
+    "rejeitadas": 8,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Belém",
+    "municipio.nome": "Belém",
+    "rejeitadas": 0,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3329,6 +3434,13 @@ var monitoramentoNfeData = {
     "facet": "Florianópolis",
     "municipio.nome": "Florianópolis",
     "rejeitadas": 0,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "São Caetano do Sul",
+    "municipio.nome": "São Caetano do Sul",
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3342,7 +3454,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Uberlândia",
     "municipio.nome": "Uberlândia",
-    "rejeitadas": 4,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3375,13 +3487,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Taubaté",
-    "municipio.nome": "Taubaté",
-    "rejeitadas": 8,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Sapucaia do Sul",
     "municipio.nome": "Sapucaia do Sul",
     "rejeitadas": 1,
@@ -3391,7 +3496,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Ourinhos",
     "municipio.nome": "Ourinhos",
-    "rejeitadas": 10,
+    "rejeitadas": 11,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3414,19 +3519,19 @@ var monitoramentoNfeData = {
     "municipio.nome": "Fortaleza",
     "rejeitadas": 2,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Videira",
     "municipio.nome": "Videira",
-    "rejeitadas": 0,
+    "rejeitadas": 3,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 100
   },
   {
     "facet": "Bauru",
     "municipio.nome": "Bauru",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3461,7 +3566,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Salvador",
     "municipio.nome": "Salvador",
-    "rejeitadas": 18,
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3470,26 +3575,33 @@ var monitoramentoNfeData = {
     "municipio.nome": "Araranguá",
     "rejeitadas": 1,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Correntina",
     "municipio.nome": "Correntina",
-    "rejeitadas": 3,
+    "rejeitadas": 2,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Santana de Parnaíba",
     "municipio.nome": "Santana de Parnaíba",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Itabuna",
+    "municipio.nome": "Itabuna",
+    "rejeitadas": 1,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
   {
     "facet": "Rio Doce",
     "municipio.nome": "Rio Doce",
-    "rejeitadas": 5,
+    "rejeitadas": 6,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3503,28 +3615,14 @@ var monitoramentoNfeData = {
   {
     "facet": "Maceió",
     "municipio.nome": "Maceió",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Americana",
-    "municipio.nome": "Americana",
     "rejeitadas": 0,
     "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
+    "taxa_sucesso": 0
   },
   {
-    "facet": "Campinas",
-    "municipio.nome": "Campinas",
+    "facet": "Umuarama",
+    "municipio.nome": "Umuarama",
     "rejeitadas": 1,
-    "taxa_rejeicao": 100,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Guanambi",
-    "municipio.nome": "Guanambi",
-    "rejeitadas": 0,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3536,9 +3634,23 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 0
   },
   {
+    "facet": "Caruaru",
+    "municipio.nome": "Caruaru",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Garibaldi",
     "municipio.nome": "Garibaldi",
     "rejeitadas": 4,
+    "taxa_rejeicao": 100,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Recife",
+    "municipio.nome": "Recife",
+    "rejeitadas": 6,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3559,7 +3671,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Piracicaba",
     "municipio.nome": "Piracicaba",
-    "rejeitadas": 7,
+    "rejeitadas": 10,
     "taxa_rejeicao": 100,
     "taxa_sucesso": 0
   },
@@ -3599,6 +3711,20 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Francisco Beltrão",
+    "municipio.nome": "Francisco Beltrão",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Teresina",
+    "municipio.nome": "Teresina",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Itabaiana",
     "municipio.nome": "Itabaiana",
     "rejeitadas": 0,
@@ -3615,9 +3741,9 @@ var monitoramentoNfeData = {
   {
     "facet": "Engenheiro Coelho",
     "municipio.nome": "Engenheiro Coelho",
-    "rejeitadas": 1,
+    "rejeitadas": 4,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
+    "taxa_sucesso": 0
   },
   {
     "facet": "Mandaguaçu",
@@ -3676,6 +3802,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Guaratuba",
+    "municipio.nome": "Guaratuba",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Siqueira Campos",
     "municipio.nome": "Siqueira Campos",
     "rejeitadas": 0,
@@ -3708,7 +3841,7 @@ var monitoramentoNfeData = {
     "municipio.nome": "Juiz de Fora",
     "rejeitadas": 1,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
+    "taxa_sucesso": 0
   },
   {
     "facet": "Nova Venécia",
@@ -3739,16 +3872,16 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Boituva",
-    "municipio.nome": "Boituva",
-    "rejeitadas": 1,
+    "facet": "Varginha",
+    "municipio.nome": "Varginha",
+    "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Varginha",
-    "municipio.nome": "Varginha",
-    "rejeitadas": 0,
+    "facet": "Londrina",
+    "municipio.nome": "Londrina",
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -3769,7 +3902,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Duque de Caxias",
     "municipio.nome": "Duque de Caxias",
-    "rejeitadas": 0,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -3809,6 +3942,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Rio Bonito",
+    "municipio.nome": "Rio Bonito",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Matias Barbosa",
     "municipio.nome": "Matias Barbosa",
     "rejeitadas": 0,
@@ -3837,18 +3977,18 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Itu",
-    "municipio.nome": "Itu",
-    "rejeitadas": 2,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Sumaré",
     "municipio.nome": "Sumaré",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
+  },
+  {
+    "facet": "Curitiba",
+    "municipio.nome": "Curitiba",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
   },
   {
     "facet": "Praia Grande",
@@ -3874,6 +4014,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Camaquã",
     "municipio.nome": "Camaquã",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Teresópolis",
+    "municipio.nome": "Teresópolis",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -3907,13 +4054,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Caraguatatuba",
-    "municipio.nome": "Caraguatatuba",
-    "rejeitadas": 4,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Araras",
     "municipio.nome": "Araras",
     "rejeitadas": 0,
@@ -3940,13 +4080,6 @@ var monitoramentoNfeData = {
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
-  },
-  {
-    "facet": "Goiânia",
-    "municipio.nome": "Goiânia",
-    "rejeitadas": 5,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
   },
   {
     "facet": "Santa Bárbara d'Oeste",
@@ -3991,6 +4124,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Aracaju",
+    "municipio.nome": "Aracaju",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Indaiatuba",
     "municipio.nome": "Indaiatuba",
     "rejeitadas": 0,
@@ -4005,27 +4145,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "João Pessoa",
-    "municipio.nome": "João Pessoa",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Cascavel",
-    "municipio.nome": "Cascavel",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Registro",
-    "municipio.nome": "Registro",
-    "rejeitadas": 1,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Porto Feliz",
     "municipio.nome": "Porto Feliz",
     "rejeitadas": 0,
@@ -4035,6 +4154,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Canoas",
     "municipio.nome": "Canoas",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Socorro",
+    "municipio.nome": "Socorro",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -4075,6 +4201,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Guarapuava",
+    "municipio.nome": "Guarapuava",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "São José dos Pinhais",
     "municipio.nome": "São José dos Pinhais",
     "rejeitadas": 0,
@@ -4105,14 +4238,7 @@ var monitoramentoNfeData = {
   {
     "facet": "São José do Rio Preto",
     "municipio.nome": "São José do Rio Preto",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "São Carlos",
-    "municipio.nome": "São Carlos",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -4124,18 +4250,11 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Blumenau",
-    "municipio.nome": "Blumenau",
-    "rejeitadas": 7,
+    "facet": "Santa Teresa",
+    "municipio.nome": "Santa Teresa",
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
-  },
-  {
-    "facet": "Belém",
-    "municipio.nome": "Belém",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Jales",
@@ -4201,13 +4320,6 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "São Caetano do Sul",
-    "municipio.nome": "São Caetano do Sul",
-    "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
     "facet": "Governador Valadares",
     "municipio.nome": "Governador Valadares",
     "rejeitadas": 0,
@@ -4217,6 +4329,13 @@ var monitoramentoNfeData = {
   {
     "facet": "Itumbiara",
     "municipio.nome": "Itumbiara",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Alfredo Chaves",
+    "municipio.nome": "Alfredo Chaves",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -4245,14 +4364,21 @@ var monitoramentoNfeData = {
   {
     "facet": "Porto Alegre",
     "municipio.nome": "Porto Alegre",
-    "rejeitadas": 1,
+    "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
   {
     "facet": "Presidente Prudente",
     "municipio.nome": "Presidente Prudente",
-    "rejeitadas": 2,
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 0
+  },
+  {
+    "facet": "Taubaté",
+    "municipio.nome": "Taubaté",
+    "rejeitadas": 9,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -4306,11 +4432,18 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Santo Antônio da Patrulha",
+    "municipio.nome": "Santo Antônio da Patrulha",
+    "rejeitadas": 0,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Lauro de Freitas",
     "municipio.nome": "Lauro de Freitas",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Rio das Ostras",
@@ -4336,9 +4469,9 @@ var monitoramentoNfeData = {
   {
     "facet": "Uberaba",
     "municipio.nome": "Uberaba",
-    "rejeitadas": 0,
+    "rejeitadas": 1,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Santa Cruz do Sul",
@@ -4364,7 +4497,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Feira de Santana",
     "municipio.nome": "Feira de Santana",
-    "rejeitadas": 0,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -4385,7 +4518,7 @@ var monitoramentoNfeData = {
   {
     "facet": "São Joaquim da Barra",
     "municipio.nome": "São Joaquim da Barra",
-    "rejeitadas": 2,
+    "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -4406,7 +4539,7 @@ var monitoramentoNfeData = {
   {
     "facet": "Cuiabá",
     "municipio.nome": "Cuiabá",
-    "rejeitadas": 1,
+    "rejeitadas": 2,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 0
   },
@@ -4460,6 +4593,13 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
+    "facet": "Americana",
+    "municipio.nome": "Americana",
+    "rejeitadas": 3,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
     "facet": "Pindamonhangaba",
     "municipio.nome": "Pindamonhangaba",
     "rejeitadas": 0,
@@ -4495,11 +4635,18 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Caruaru",
-    "municipio.nome": "Caruaru",
+    "facet": "Campinas",
+    "municipio.nome": "Campinas",
+    "rejeitadas": 1,
+    "taxa_rejeicao": 0,
+    "taxa_sucesso": 100
+  },
+  {
+    "facet": "Guanambi",
+    "municipio.nome": "Guanambi",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
-    "taxa_sucesso": 0
+    "taxa_sucesso": 100
   },
   {
     "facet": "Ji-Paraná",
@@ -4526,13 +4673,6 @@ var monitoramentoNfeData = {
     "facet": "Franca",
     "municipio.nome": "Franca",
     "rejeitadas": 0,
-    "taxa_rejeicao": 0,
-    "taxa_sucesso": 100
-  },
-  {
-    "facet": "Recife",
-    "municipio.nome": "Recife",
-    "rejeitadas": 25,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
@@ -4621,15 +4761,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Resende",
-    "municipio.nome": "Resende",
+    "facet": "Santa Rita do Sapucaí",
+    "municipio.nome": "Santa Rita do Sapucaí",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Santa Rita do Sapucaí",
-    "municipio.nome": "Santa Rita do Sapucaí",
+    "facet": "Resende",
+    "municipio.nome": "Resende",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -4651,77 +4791,77 @@ var monitoramentoNfeData = {
 ],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1786907940,
-    "endTimeSeconds": 1786909140,
+    "beginTimeSeconds": 1786909920,
+    "endTimeSeconds": 1786911120,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786909140,
-    "endTimeSeconds": 1786910340,
+    "beginTimeSeconds": 1786911120,
+    "endTimeSeconds": 1786912320,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786910340,
-    "endTimeSeconds": 1786911540,
+    "beginTimeSeconds": 1786912320,
+    "endTimeSeconds": 1786913520,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786911540,
-    "endTimeSeconds": 1786912740,
+    "beginTimeSeconds": 1786913520,
+    "endTimeSeconds": 1786914720,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786912740,
-    "endTimeSeconds": 1786913940,
+    "beginTimeSeconds": 1786914720,
+    "endTimeSeconds": 1786915920,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786913940,
-    "endTimeSeconds": 1786915140,
+    "beginTimeSeconds": 1786915920,
+    "endTimeSeconds": 1786917120,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1786915140,
-    "endTimeSeconds": 1786916340,
-    "rejeicao": null,
-    "sucesso": null
+    "beginTimeSeconds": 1786917120,
+    "endTimeSeconds": 1786918320,
+    "rejeicao": 56.100478468899524,
+    "sucesso": 43.899521531100476
   },
   {
-    "beginTimeSeconds": 1786916340,
-    "endTimeSeconds": 1786917540,
-    "rejeicao": null,
-    "sucesso": null
+    "beginTimeSeconds": 1786918320,
+    "endTimeSeconds": 1786919520,
+    "rejeicao": 56.61670733124201,
+    "sucesso": 43.38329266875799
   },
   {
-    "beginTimeSeconds": 1786917540,
-    "endTimeSeconds": 1786918740,
-    "rejeicao": 56.33772403368603,
-    "sucesso": 43.66227596631397
+    "beginTimeSeconds": 1786919520,
+    "endTimeSeconds": 1786920720,
+    "rejeicao": 58.368313421590784,
+    "sucesso": 41.631686578409216
   },
   {
-    "beginTimeSeconds": 1786918740,
-    "endTimeSeconds": 1786919940,
-    "rejeicao": 56.95123337501421,
-    "sucesso": 43.04876662498579
+    "beginTimeSeconds": 1786920720,
+    "endTimeSeconds": 1786921920,
+    "rejeicao": 60.11344069684999,
+    "sucesso": 39.88655930315001
   },
   {
-    "beginTimeSeconds": 1786919940,
-    "endTimeSeconds": 1786921140,
-    "rejeicao": 59.21699989532084,
-    "sucesso": 40.78300010467916
+    "beginTimeSeconds": 1786921920,
+    "endTimeSeconds": 1786923120,
+    "rejeicao": 60.69671324542413,
+    "sucesso": 39.30328675457587
   },
   {
-    "beginTimeSeconds": 1786921140,
-    "endTimeSeconds": 1786922340,
-    "rejeicao": 60.356213728236945,
-    "sucesso": 39.643786271763055
+    "beginTimeSeconds": 1786923120,
+    "endTimeSeconds": 1786924320,
+    "rejeicao": 60.965833174269896,
+    "sucesso": 39.034166825730104
   }
 ],
-  taxaSucessoMunicipioTs: [{"facet": "Aracati", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786907940, "endTimeSeconds": 1786909140, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786909140, "endTimeSeconds": 1786910340, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786910340, "endTimeSeconds": 1786911540, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786911540, "endTimeSeconds": 1786912740, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786912740, "endTimeSeconds": 1786913940, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786913940, "endTimeSeconds": 1786915140, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786915140, "endTimeSeconds": 1786916340, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786916340, "endTimeSeconds": 1786917540, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786917540, "endTimeSeconds": 1786918740, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786918740, "endTimeSeconds": 1786919940, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786919940, "endTimeSeconds": 1786921140, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786921140, "endTimeSeconds": 1786922340, "municipio.nome": "Governador Valadares", "sucesso": 100.0}]
+  taxaSucessoMunicipioTs: [{"facet": "Aracati", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Aracati", "sucesso": null}, {"facet": "Aracati", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Aracati", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Aracati", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Palmas", "sucesso": null}, {"facet": "Palmas", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Palmas", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Palmas", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": null}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Po\u00e7os de Caldas", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Po\u00e7os de Caldas", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Patos de Minas", "sucesso": null}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Patos de Minas", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Patos de Minas", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Barra do Pira\u00ed", "sucesso": null}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Barra do Pira\u00ed", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Barra do Pira\u00ed", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Itapetininga", "sucesso": null}, {"facet": "Itapetininga", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Itapetininga", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Itapetininga", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Cambu\u00ed", "sucesso": null}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Cambu\u00ed", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Cambu\u00ed", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786909920, "endTimeSeconds": 1786911120, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786911120, "endTimeSeconds": 1786912320, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786912320, "endTimeSeconds": 1786913520, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786913520, "endTimeSeconds": 1786914720, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786914720, "endTimeSeconds": 1786915920, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786915920, "endTimeSeconds": 1786917120, "municipio.nome": "Governador Valadares", "sucesso": null}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786917120, "endTimeSeconds": 1786918320, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786918320, "endTimeSeconds": 1786919520, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786919520, "endTimeSeconds": 1786920720, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786920720, "endTimeSeconds": 1786921920, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786921920, "endTimeSeconds": 1786923120, "municipio.nome": "Governador Valadares", "sucesso": 100.0}, {"facet": "Governador Valadares", "beginTimeSeconds": 1786923120, "endTimeSeconds": 1786924320, "municipio.nome": "Governador Valadares", "sucesso": 100.0}]
 };
