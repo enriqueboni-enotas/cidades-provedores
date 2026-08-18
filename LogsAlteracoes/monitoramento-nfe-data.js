@@ -1,7 +1,7 @@
-// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 18/08/2026 10:59 (Brasilia)
+// Gerado automaticamente pelo workflow monitoramento-nfe.yml em 18/08/2026 11:43 (Brasilia)
 // NAO EDITAR MANUALMENTE
 var monitoramentoNfeData = {
-  geradoEm: "18/08/2026 10:59",
+  geradoEm: "18/08/2026 11:43",
   travadasPorMunicipio: [
   {
     "facet": "Paranapanema",
@@ -403,170 +403,170 @@ var monitoramentoNfeData = {
   volumetriaHora: [
   {
     "canceladas": 16,
-    "devolucoes": 1,
-    "em_emissao": 972,
-    "email": 2140,
-    "emitidas": 12342,
-    "falhas": 1576
+    "devolucoes": 3,
+    "em_emissao": 342,
+    "email": 0,
+    "emitidas": 5447,
+    "falhas": 825
   }
 ],
   volumetriaTimeseries: [
   {
-    "beginTimeSeconds": 1786974900,
-    "emitidas": 7927,
-    "endTimeSeconds": 1786978500,
-    "falhas": 3028
+    "beginTimeSeconds": 1786977600,
+    "emitidas": 9023,
+    "endTimeSeconds": 1786981200,
+    "falhas": 853
   },
   {
-    "beginTimeSeconds": 1786978500,
-    "emitidas": 7649,
-    "endTimeSeconds": 1786982100,
-    "falhas": 362
+    "beginTimeSeconds": 1786981200,
+    "emitidas": 7376,
+    "endTimeSeconds": 1786984800,
+    "falhas": 602
   },
   {
-    "beginTimeSeconds": 1786982100,
-    "emitidas": 6920,
-    "endTimeSeconds": 1786985700,
-    "falhas": 619
+    "beginTimeSeconds": 1786984800,
+    "emitidas": 10094,
+    "endTimeSeconds": 1786988400,
+    "falhas": 1507
   },
   {
-    "beginTimeSeconds": 1786985700,
-    "emitidas": 12188,
-    "endTimeSeconds": 1786989300,
-    "falhas": 2109
+    "beginTimeSeconds": 1786988400,
+    "emitidas": 6414,
+    "endTimeSeconds": 1786992000,
+    "falhas": 1553
   },
   {
-    "beginTimeSeconds": 1786989300,
-    "emitidas": 5301,
-    "endTimeSeconds": 1786992900,
-    "falhas": 1011
+    "beginTimeSeconds": 1786992000,
+    "emitidas": 6725,
+    "endTimeSeconds": 1786995600,
+    "falhas": 661
   },
   {
-    "beginTimeSeconds": 1786992900,
-    "emitidas": 6058,
-    "endTimeSeconds": 1786996500,
-    "falhas": 1626
+    "beginTimeSeconds": 1786995600,
+    "emitidas": 5816,
+    "endTimeSeconds": 1786999200,
+    "falhas": 2381
   },
   {
-    "beginTimeSeconds": 1786996500,
-    "emitidas": 5529,
-    "endTimeSeconds": 1787000100,
-    "falhas": 1390
+    "beginTimeSeconds": 1786999200,
+    "emitidas": 4036,
+    "endTimeSeconds": 1787002800,
+    "falhas": 540
   },
   {
-    "beginTimeSeconds": 1787000100,
-    "emitidas": 6169,
-    "endTimeSeconds": 1787003700,
+    "beginTimeSeconds": 1787002800,
+    "emitidas": 6653,
+    "endTimeSeconds": 1787006400,
     "falhas": 541
   },
   {
-    "beginTimeSeconds": 1787003700,
-    "emitidas": 4738,
-    "endTimeSeconds": 1787007300,
-    "falhas": 627
+    "beginTimeSeconds": 1787006400,
+    "emitidas": 5171,
+    "endTimeSeconds": 1787010000,
+    "falhas": 815
   },
   {
-    "beginTimeSeconds": 1787007300,
-    "emitidas": 5215,
-    "endTimeSeconds": 1787010900,
-    "falhas": 801
+    "beginTimeSeconds": 1787010000,
+    "emitidas": 6265,
+    "endTimeSeconds": 1787013600,
+    "falhas": 897
   },
   {
-    "beginTimeSeconds": 1787010900,
-    "emitidas": 9520,
-    "endTimeSeconds": 1787014500,
-    "falhas": 860
+    "beginTimeSeconds": 1787013600,
+    "emitidas": 9291,
+    "endTimeSeconds": 1787017200,
+    "falhas": 731
   },
   {
-    "beginTimeSeconds": 1787014500,
-    "emitidas": 6426,
-    "endTimeSeconds": 1787018100,
-    "falhas": 1013
+    "beginTimeSeconds": 1787017200,
+    "emitidas": 2992,
+    "endTimeSeconds": 1787020800,
+    "falhas": 692
   },
   {
-    "beginTimeSeconds": 1787018100,
-    "emitidas": 2946,
-    "endTimeSeconds": 1787021700,
-    "falhas": 355
+    "beginTimeSeconds": 1787020800,
+    "emitidas": 3479,
+    "endTimeSeconds": 1787024400,
+    "falhas": 305
   },
   {
-    "beginTimeSeconds": 1787021700,
-    "emitidas": 2463,
-    "endTimeSeconds": 1787025300,
-    "falhas": 245
+    "beginTimeSeconds": 1787024400,
+    "emitidas": 11583,
+    "endTimeSeconds": 1787028000,
+    "falhas": 3964
   },
   {
-    "beginTimeSeconds": 1787025300,
-    "emitidas": 11457,
-    "endTimeSeconds": 1787028900,
-    "falhas": 3952
+    "beginTimeSeconds": 1787028000,
+    "emitidas": 1097,
+    "endTimeSeconds": 1787031600,
+    "falhas": 157
   },
   {
-    "beginTimeSeconds": 1787028900,
-    "emitidas": 1052,
-    "endTimeSeconds": 1787032500,
-    "falhas": 134
+    "beginTimeSeconds": 1787031600,
+    "emitidas": 1528,
+    "endTimeSeconds": 1787035200,
+    "falhas": 157
   },
   {
-    "beginTimeSeconds": 1787032500,
-    "emitidas": 3359,
-    "endTimeSeconds": 1787036100,
-    "falhas": 222
+    "beginTimeSeconds": 1787035200,
+    "emitidas": 2456,
+    "endTimeSeconds": 1787038800,
+    "falhas": 172
   },
   {
-    "beginTimeSeconds": 1787036100,
-    "emitidas": 681,
-    "endTimeSeconds": 1787039700,
-    "falhas": 105
+    "beginTimeSeconds": 1787038800,
+    "emitidas": 2208,
+    "endTimeSeconds": 1787042400,
+    "falhas": 322
   },
   {
-    "beginTimeSeconds": 1787039700,
-    "emitidas": 2620,
-    "endTimeSeconds": 1787043300,
-    "falhas": 393
+    "beginTimeSeconds": 1787042400,
+    "emitidas": 1599,
+    "endTimeSeconds": 1787046000,
+    "falhas": 236
   },
   {
-    "beginTimeSeconds": 1787043300,
-    "emitidas": 1601,
-    "endTimeSeconds": 1787046900,
-    "falhas": 262
+    "beginTimeSeconds": 1787046000,
+    "emitidas": 2196,
+    "endTimeSeconds": 1787049600,
+    "falhas": 364
   },
   {
-    "beginTimeSeconds": 1787046900,
-    "emitidas": 2624,
-    "endTimeSeconds": 1787050500,
-    "falhas": 372
+    "beginTimeSeconds": 1787049600,
+    "emitidas": 5063,
+    "endTimeSeconds": 1787053200,
+    "falhas": 529
   },
   {
-    "beginTimeSeconds": 1787050500,
-    "emitidas": 5326,
-    "endTimeSeconds": 1787054100,
-    "falhas": 519
+    "beginTimeSeconds": 1787053200,
+    "emitidas": 6485,
+    "endTimeSeconds": 1787056800,
+    "falhas": 1062
   },
   {
-    "beginTimeSeconds": 1787054100,
-    "emitidas": 7034,
-    "endTimeSeconds": 1787057700,
-    "falhas": 1265
+    "beginTimeSeconds": 1787056800,
+    "emitidas": 13216,
+    "endTimeSeconds": 1787060400,
+    "falhas": 1805
   },
   {
-    "beginTimeSeconds": 1787057700,
-    "emitidas": 12752,
-    "endTimeSeconds": 1787061300,
-    "falhas": 1711
+    "beginTimeSeconds": 1787060400,
+    "emitidas": 5202,
+    "endTimeSeconds": 1787064000,
+    "falhas": 827
   }
 ],
   filaOperacoes: [
   {
     "pendentes": null,
-    "rodando": 0
+    "rodando": 36
   }
 ],
   webhooks: [
   {
     "dead_letter": 0,
     "falhas": 0,
-    "ok": 113467
+    "ok": 86172
   }
 ],
   travadasStatusEmpresa: {"6":[],"3":[],"1":[],"0":[],"12":[]},
@@ -577,14 +577,14 @@ var monitoramentoNfeData = {
 ],
   taxaNfse: [
   {
-    "rejeicao": 51.379258491921604,
-    "sucesso": 48.620741508078396
+    "rejeicao": 52.13516746411483,
+    "sucesso": 47.86483253588517
   }
 ],
   taxaNfe: [
   {
-    "rejeicao": 97.53326123339674,
-    "sucesso": 2.466738766603248
+    "rejeicao": 97.633278791629,
+    "sucesso": 2.366721208370998
   }
 ],
   taxaSucessoMunicipio: [
@@ -1695,15 +1695,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Teutônia",
-    "municipio.nome": "Teutônia",
+    "facet": "Jaraguá do Sul",
+    "municipio.nome": "Jaraguá do Sul",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Jaraguá do Sul",
-    "municipio.nome": "Jaraguá do Sul",
+    "facet": "Teutônia",
+    "municipio.nome": "Teutônia",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -1814,15 +1814,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Aracati",
-    "municipio.nome": "Aracati",
+    "facet": "Guarapuava",
+    "municipio.nome": "Guarapuava",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Guarapuava",
-    "municipio.nome": "Guarapuava",
+    "facet": "Aracati",
+    "municipio.nome": "Aracati",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -2992,15 +2992,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Itu",
-    "municipio.nome": "Itu",
+    "facet": "Sumaré",
+    "municipio.nome": "Sumaré",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Sumaré",
-    "municipio.nome": "Sumaré",
+    "facet": "Itu",
+    "municipio.nome": "Itu",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -4035,15 +4035,15 @@ var monitoramentoNfeData = {
     "taxa_sucesso": 100
   },
   {
-    "facet": "Olinda",
-    "municipio.nome": "Olinda",
+    "facet": "Florianópolis",
+    "municipio.nome": "Florianópolis",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
   },
   {
-    "facet": "Florianópolis",
-    "municipio.nome": "Florianópolis",
+    "facet": "Olinda",
+    "municipio.nome": "Olinda",
     "rejeitadas": 0,
     "taxa_rejeicao": 0,
     "taxa_sucesso": 100
@@ -4345,77 +4345,77 @@ var monitoramentoNfeData = {
 ],
   taxaTimeseries: [
   {
-    "beginTimeSeconds": 1787047080,
-    "endTimeSeconds": 1787048280,
-    "rejeicao": 51.66809238665526,
-    "sucesso": 48.33190761334474
+    "beginTimeSeconds": 1787049720,
+    "endTimeSeconds": 1787050920,
+    "rejeicao": 53.38092672413793,
+    "sucesso": 46.61907327586207
   },
   {
-    "beginTimeSeconds": 1787048280,
-    "endTimeSeconds": 1787049480,
-    "rejeicao": 52.360453436648015,
-    "sucesso": 47.639546563351985
+    "beginTimeSeconds": 1787050920,
+    "endTimeSeconds": 1787052120,
+    "rejeicao": 54.6501439479284,
+    "sucesso": 45.3498560520716
   },
   {
-    "beginTimeSeconds": 1787049480,
-    "endTimeSeconds": 1787050680,
-    "rejeicao": 53.181321682140904,
-    "sucesso": 46.818678317859096
+    "beginTimeSeconds": 1787052120,
+    "endTimeSeconds": 1787053320,
+    "rejeicao": 55.47447020015257,
+    "sucesso": 44.52552979984743
   },
   {
-    "beginTimeSeconds": 1787050680,
-    "endTimeSeconds": 1787051880,
-    "rejeicao": 54.46235876602768,
-    "sucesso": 45.53764123397232
+    "beginTimeSeconds": 1787053320,
+    "endTimeSeconds": 1787054520,
+    "rejeicao": 56.066052572455625,
+    "sucesso": 43.933947427544375
   },
   {
-    "beginTimeSeconds": 1787051880,
-    "endTimeSeconds": 1787053080,
-    "rejeicao": 55.33081269396667,
-    "sucesso": 44.66918730603333
+    "beginTimeSeconds": 1787054520,
+    "endTimeSeconds": 1787055720,
+    "rejeicao": 57.240674501788455,
+    "sucesso": 42.759325498211545
   },
   {
-    "beginTimeSeconds": 1787053080,
-    "endTimeSeconds": 1787054280,
-    "rejeicao": 55.9377838328792,
-    "sucesso": 44.0622161671208
+    "beginTimeSeconds": 1787055720,
+    "endTimeSeconds": 1787056920,
+    "rejeicao": 59.45309670409272,
+    "sucesso": 40.54690329590728
   },
   {
-    "beginTimeSeconds": 1787054280,
-    "endTimeSeconds": 1787055480,
-    "rejeicao": 56.86315569050361,
-    "sucesso": 43.13684430949639
+    "beginTimeSeconds": 1787056920,
+    "endTimeSeconds": 1787058120,
+    "rejeicao": 59.68586387434555,
+    "sucesso": 40.31413612565445
   },
   {
-    "beginTimeSeconds": 1787055480,
-    "endTimeSeconds": 1787056680,
-    "rejeicao": 59.146341463414636,
-    "sucesso": 40.853658536585364
-  },
-  {
-    "beginTimeSeconds": 1787056680,
-    "endTimeSeconds": 1787057880,
-    "rejeicao": 59.71492873218305,
-    "sucesso": 40.28507126781695
-  },
-  {
-    "beginTimeSeconds": 1787057880,
-    "endTimeSeconds": 1787059080,
+    "beginTimeSeconds": 1787058120,
+    "endTimeSeconds": 1787059320,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1787059080,
-    "endTimeSeconds": 1787060280,
+    "beginTimeSeconds": 1787059320,
+    "endTimeSeconds": 1787060520,
     "rejeicao": null,
     "sucesso": null
   },
   {
-    "beginTimeSeconds": 1787060280,
-    "endTimeSeconds": 1787061480,
+    "beginTimeSeconds": 1787060520,
+    "endTimeSeconds": 1787061720,
+    "rejeicao": null,
+    "sucesso": null
+  },
+  {
+    "beginTimeSeconds": 1787061720,
+    "endTimeSeconds": 1787062920,
+    "rejeicao": null,
+    "sucesso": null
+  },
+  {
+    "beginTimeSeconds": 1787062920,
+    "endTimeSeconds": 1787064120,
     "rejeicao": null,
     "sucesso": null
   }
 ],
-  taxaSucessoMunicipioTs: [{"facet": "Barra Mansa", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": 100.0}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": null}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": null}, {"facet": "Santa Rita do Passa Quatro", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Santa Rita do Passa Quatro", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Jales", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787047080, "endTimeSeconds": 1787048280, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787048280, "endTimeSeconds": 1787049480, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787049480, "endTimeSeconds": 1787050680, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787050680, "endTimeSeconds": 1787051880, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787051880, "endTimeSeconds": 1787053080, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787053080, "endTimeSeconds": 1787054280, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787054280, "endTimeSeconds": 1787055480, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787055480, "endTimeSeconds": 1787056680, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787056680, "endTimeSeconds": 1787057880, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787057880, "endTimeSeconds": 1787059080, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787059080, "endTimeSeconds": 1787060280, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787060280, "endTimeSeconds": 1787061480, "municipio.nome": "Olinda", "sucesso": null}]
+  taxaSucessoMunicipioTs: [{"facet": "Barra Mansa", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Barra Mansa", "sucesso": 100.0}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Barra Mansa", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Barra Mansa", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": 100.0}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Jo\u00e3o Monlevade", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Jo\u00e3o Monlevade", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Cerquilho", "sucesso": 100.0}, {"facet": "Cerquilho", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Cerquilho", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Cerquilho", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Caic\u00f3", "sucesso": 100.0}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Caic\u00f3", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Caic\u00f3", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Itabaiana", "sucesso": 100.0}, {"facet": "Itabaiana", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Itabaiana", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Itabaiana", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Campo Belo", "sucesso": 100.0}, {"facet": "Campo Belo", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Campo Belo", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Campo Belo", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Juquitiba", "sucesso": 100.0}, {"facet": "Juquitiba", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Juquitiba", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Juquitiba", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Gua\u00edra", "sucesso": 100.0}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Gua\u00edra", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Gua\u00edra", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Jales", "sucesso": 100.0}, {"facet": "Jales", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Jales", "sucesso": null}, {"facet": "Jales", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Jales", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": 100.0}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "S\u00e3o Gon\u00e7alo do Par\u00e1", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "S\u00e3o Gon\u00e7alo do Par\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Urup\u00e1", "sucesso": 100.0}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Urup\u00e1", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Urup\u00e1", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Alegre", "sucesso": 100.0}, {"facet": "Alegre", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Alegre", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Alegre", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Angra dos Reis", "sucesso": 100.0}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Angra dos Reis", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Angra dos Reis", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Olinda", "sucesso": 100.0}, {"facet": "Olinda", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Olinda", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Olinda", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787049720, "endTimeSeconds": 1787050920, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787050920, "endTimeSeconds": 1787052120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787052120, "endTimeSeconds": 1787053320, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787053320, "endTimeSeconds": 1787054520, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787054520, "endTimeSeconds": 1787055720, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787055720, "endTimeSeconds": 1787056920, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787056920, "endTimeSeconds": 1787058120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": 100.0}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787058120, "endTimeSeconds": 1787059320, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787059320, "endTimeSeconds": 1787060520, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787060520, "endTimeSeconds": 1787061720, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787061720, "endTimeSeconds": 1787062920, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}, {"facet": "Par\u00e1 de Minas", "beginTimeSeconds": 1787062920, "endTimeSeconds": 1787064120, "municipio.nome": "Par\u00e1 de Minas", "sucesso": null}]
 };
